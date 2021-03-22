@@ -1,0 +1,15 @@
+Morphine 30 
+Epi 30
+Plasma (all)
+Packing 100
+Elastic 100
+Quicklots 100
+tourniqets 20
+
+Multibox(Column,Olive)
+Multibox(column,orange)
+
+Class CfgVehicles
+
+Land_optre_milcrate_h2smallcrate_nuclear
+Land_optre_milcrate_h2smallcrate_medic

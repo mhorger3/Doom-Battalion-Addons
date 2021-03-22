@@ -1,0 +1,71 @@
+Completed
+	AT Rifle
+		this may not shoot straight, rounds angle up
+		eye mempoint issues with some scopes
+	Boma GL
+
+	Gundark
+		New Model Implemented
+
+	DC15A
+		Eye mem point needs to go up a smidge
+	
+	DC15S
+
+	DC15S Sidearm
+		Replaces Shield, equip with riotshield
+	Maalras
+		Needs finalized texture/Match with 15SGL(?)
+	Zakkeg
+
+	DC15 LE
+
+	DC15SGL
+
+	Kath Hound
+
+	PDW SMG
+		New Model Done
+
+	DC15AGL
+	
+	Sando
+
+	RPS6 Dumbfire
+
+	W4LRUS
+
+	Valken
+
+	Chaingun
+		Handanim doesn't work, but I don't have a better one either
+			Experiment with Optre Rocket???
+	Z6
+
+	Cannok Pistol
+
+	Verpine
+
+	Westar 35
+
+	DC17
+
+	PDW Pistol
+	
+Completed - Has Issues
+	DC15LSW
+		3AS has fixed, 3AS planned update before standdown ends
+	
+	
+Low Priority/Needs Rework - Current plan is to hide model for now, then revisit
+	Quad Cannon
+		Pending Rework/Further Dev Time
+	Westar 34
+		Needs scaling down to normal size
+		Needs Rework
+	Westar SP1
+		Technically works, but needs rework to be up to standards/balance
+	Scuba
+		Potentially rework to be up to standards
+	Boma Shotgun
+		???

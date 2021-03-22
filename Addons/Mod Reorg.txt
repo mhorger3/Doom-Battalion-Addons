@@ -1,0 +1,9 @@
+These should have their own config.cpp and can be packed separately now. 
+
+	101st Custom Armor - Textures
+	101st Custom Helmets - Helmets
+	Vehicles - Vehicles
+	Weapons - Weapons
+	Ammo - _ammo
+	Misc/Other - Main
+	Holosights - Holosights

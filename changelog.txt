@@ -1,0 +1,63 @@
+CHANGELOG 12.14.20
+
+Major Restructuring of Mod into separate parts, to accelerate further development, testing, and changes.
+
+101st Aux LAATs
+	Change of lockon sounds
+	Change of Cockpit/Interior sounds to be quieter
+
+101st Holosights
+	change of sights position for the following weapons (better sight visibility, and matches where sights should actually be)
+		-Zakkeg
+		-DC15S
+		-DC15S(Sidearm)
+		-DC17
+		-SM-01 PDW
+		-PDW Defender
+
+Helmets
+	Updated Shotty's Helmet
+	Fixes for the Tech Helmet
+
+101st Weapons
+	Removed Dependancy on Legacy RD501 Ammunition for small arms
+
+Preparation Files for Future MBT and Manadalorian Ship projects.
+
+
+
+CHANGELOG 12.7.20
+	
+101st Aux LAATs
+	Slightly reduced systems armor
+	Greatly reduced Air to ground munitions to encourage use of VTOLs
+	Adding Searchlight LAAT
+	Adding Command versions of LAAT
+	Added RD501 Laat Switcher, LAAT comes in many flavors now.
+	Reduced Mk3's Armor to be equivalent to Mk5/6
+
+101st Nu Class Shuttle
+	Fixed texture to be correct green, still has issues but is better now.
+	Increased armor to 1300 as testbed, systems are fragile, however hull is not. Will be able to shrug off several hits before being disabled, and even when disabled, will be able to land safely. (Tested 1 King AAT shot disables, 6 shots to destroy)
+	Added Impulse
+
+15SGL
+	Model and Textures adjusted, removed Vanilla HAMR sight
+
+Quad Cannon
+	Massive ROF Increase
+	Fixed the ability to ADS
+	Added 101st Holos to the sights
+
+Helmets
+	Fixed Firestarter's Helmet not being a medical helmet
+	Fixed the default pilot helmet not having thermals
+	Added Shawgrass Helmet
+
+Resupplies
+	Attempted to fix HE GL rounds not showing up in resupplies
+
+101st Holosights
+	Added 101st Custom Holosights courtesy of RD501 and a lot of hard work. There is a CQC variant, a 2x-4x with CQC sights on top, and a 2x-6x with CQC sights on top. Please give feedback on the sights to CX-P Frisk
+
+	Additionally, if you think you can do it better, also speak to CX-P Frisk, he's accepting submissions for holo sight designs.
