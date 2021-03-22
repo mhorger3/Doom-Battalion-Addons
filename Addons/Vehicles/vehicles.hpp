@@ -27,7 +27,15 @@
 	};
 
 	// custom vehicles
-	class LandVehicle;
+	class All;
+	class Strategic;
+	class Land;
+	class LandVehicle: Land
+	{
+		class ViewPilot;
+		class ViewGunner;
+		class NewTurret;
+	};
 	class Tank: LandVehicle
 	{
 		class NewTurret;
@@ -18333,108 +18341,25 @@
 	};
 	class 101st_Crab_Droid: StaticMGWeapon
 	{
+		author="Dutch";
 		displayName="LM-432 Crab Droid (Prototype) ";
 		armor=600;
 		scope=2;
 		forceInGarage=1;
-		class EventHandlers: DefaultEventhandlers
+		scopeCurator=2;
+		class Armory
 		{
+			description="";
 		};
-		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_heavy_armored_infantry";
-		vehicleClass="RD501_Vehicle_Class_heavy_armored_infantry";
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				turretInfoType = "RscOptics_crows";
-				animationSourceBody = "Mainturret";
-				Body = "Mainturret";
-				animationSourceGun = "Maingun";
-				Gun = "Maingun";
-				optics = 0;
-				minElev = -5;
-				maxElev = 35;
-				minTurn = -360;
-				maxTurn = +360;
-				selectionFireAnim = "zasleh";
-				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
-				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
-				weapons[]=
-				{
-					"101st_CIS_Mech"
-				};
-				magazines[]=
-				{
-					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
-				};
-				memoryPointGunnerOptics = "gunnerview";
-				//gunnerLeftHandAnimName = "Heavygun";
-				//gunnerRightHandAnimName = "Heavygun";
-				gunnergetInAction = "";
-				gunnergetOutAction = "";
-				displayName = "";
-				gunnerInAction = "Disabled";
-				gunnerAction = "Disabled";
-				gunnerForceOptics = 1;
-				memoryPointGun[] = {"usti hlavne"};
-				//gunBeg[]={"Usti hlavne L","Usti hlavne R"}; 
-				//Gunend[]={"Konec hlavne L","Konec hlavne R"};
-				class ViewOptics: ViewOptics
-				{
-					minFov = 0.25;
-					maxFov = 1.25;
-					initFov = 0.75;
-				};
-				class HitPoints
-				{
-					class HitGun
-					{
-						armor = 1;
-						material = -1;
-						name = "gun";
-						visual = "autonomous_unhide";
-						passThrough = 0;
-						radius = 0.2;
-					};
-					class HitTurret: HitGun
-					{
-						armor = 1;
-						name = "turret";
-						class DestructionEffects
-						{
-							class Smoke
-							{
-								simulation = "particles";
-								type = "WeaponWreckSmoke";
-								position = "destructionEffect";
-								intensity = 1;
-								interval = 1;
-								lifeTime = 5;
-							};
-						};
-					};
-				};
-			};
-		};
-		crew = "B_UAV_AI";
 		model = "101st_Aux_Mod\Addons\Vehicles\Crab\Crab.p3d";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Crab\data\Body_co.paa", "101st_Aux_Mod\Addons\Vehicles\Crab\data\Legs_co.paa"};
-	};
-
-	class 101st_DSD3_Droid: StaticMGWeapon
-	{
-		displayName="DSD3 Spider Droid (Prototype)";
-		armor=800;
-		scope=2;
-		forceInGarage=1;
-		class EventHandlers: DefaultEventhandlers
-		{
-		};
-		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_heavy_armored_infantry";
-		vehicleClass="RD501_Vehicle_Class_heavy_armored_infantry";
+		editorCategory = "DBA_CIS";
+        editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Crab_Droid_F.jpg";
 		threat[]={1,0.30000001,0.30000001};
 		cost=150000;
 		getInAction="";
@@ -18459,19 +18384,29 @@
 		{
 			class MainTurret: MainTurret
 			{
-				turretInfoType = "RscOptics_crows";
-				animationSourceBody = "Mainturret";
-				Body = "Mainturret";
-				animationSourceGun = "Maingun";
-				Gun = "Maingun";
-				optics = 0;
-				minElev = -5;
-				maxElev = 35;
-				minTurn = -360;
-				maxTurn = +360;
-				selectionFireAnim = "zasleh";
-				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
-				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
+				optics=1;
+				discreteDistance[]={100,200,300,400,600,800,1000,1200,1500,1600,1700,1800,1900,2000};
+				discreteDistanceInitIndex=2;
+				turretInfoType="RscOptics_crows";
+				gunnerOpticsModel="\a3\weapons_f_gamma\reticle\HMG_01_Optics_Gunner_F";
+				minElev=-20;
+				maxElev=15;
+				minTurn=-360;
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",
+					1.4125376,
+					1,
+					30
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",
+					1.4125376,
+					1,
+					30
+				};
+				maxTurn=360;
 				weapons[]=
 				{
 					"101st_CIS_Mech"
@@ -18480,166 +18415,71 @@
 				{
 					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
 				};
-				memoryPointGunnerOptics = "gunnerview";
-				//gunnerLeftHandAnimName = "Heavygun";
-				//gunnerRightHandAnimName = "Heavygun";
-				gunnergetInAction = "";
-				gunnergetOutAction = "";
-				displayName = "";
-				gunnerInAction = "Disabled";
-				gunnerAction = "Disabled";
-				gunnerForceOptics = 1;
-				memoryPointGun[] = {"usti hlavne"};
-				//gunBeg[]={"Usti hlavne L","Usti hlavne R"}; 
-				//Gunend[]={"Konec hlavne L","Konec hlavne R"};
+				gunnerAction="FieldCannon_Gunner";
+				gunnergetInAction="";
+				gunnergetOutAction="";
+				displayName="";
+				memoryPointsGetInGunner="pos_gunner";
+				memoryPointsGetInGunnerDir="pos_gunner_dir";
 				class ViewOptics: ViewOptics
 				{
-					minFov = 0.25;
-					maxFov = 1.25;
-					initFov = 0.75;
-				};
-				class HitPoints
-				{
-					class HitGun
+					initAngleX=0;
+					minAngleX=-30;
+					maxAngleX=30;
+					initAngleY=0;
+					minAngleY=-100;
+					maxAngleY=100;
+					initFov=0.117;
+					minFov=0.028999999;
+					maxFov=0.117;
+					visionMode[]=
 					{
-						armor = 1;
-						material = -1;
-						name = "gun";
-						visual = "autonomous_unhide";
-						passThrough = 0;
-						radius = 0.2;
+						"Normal",
+						"NVG",
+						"Ti"
 					};
-					class HitTurret: HitGun
-					{
-						armor = 1;
-						name = "turret";
-						class DestructionEffects
-						{
-							class Smoke
-							{
-								simulation = "particles";
-								type = "WeaponWreckSmoke";
-								position = "destructionEffect";
-								intensity = 1;
-								interval = 1;
-								lifeTime = 5;
-							};
-						};
-					};
+					thermalMode[]={0,1};
 				};
+				gunnerRightHandAnimName="OtocHlaven_shake";
+				gunnerLeftHandAnimName="OtocHlaven_shake";
+				ejectDeadGunner=1;
 			};
 		};
+		soundGetOut[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.001,
+			1,
+			5
+		};
+		soundGetIn[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			5
+		};
+	};
+
+	class 101st_DSD3_Droid: 101st_Crab_Droid
+	{
+		displayName="DSD3 Spider Droid (Prototype)";
+		armor=800;
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
 		crew = "B_UAV_AI";
 		model = "101st_Aux_Mod\Addons\Vehicles\DSD3\DSD3.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\DSD3\data\yeet_co.paa"};
 	};
-	class 101st_Octo_Droid: StaticMGWeapon
+	class 101st_Octo_Droid: 101st_DSD3_Droid
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=1200;
 		scope=2;
+		scopeCurator=2;
 		forceInGarage=1;
-		class EventHandlers: DefaultEventhandlers
-		{
-		};
-		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_heavy_armored_infantry";
-		vehicleClass="RD501_Vehicle_Class_heavy_armored_infantry";
-		threat[]={1,0.30000001,0.30000001};
-		cost=150000;
-		getInAction="";
-		getOutAction="";
-		class Damage
-		{
-			tex[]={};
-			mat[]=
-			{
-				"A3\Static_F_Gamma\data\StaticTurret_01.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_02.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_03.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_03_damage.rvmat",
-				"A3\Static_F_Gamma\data\StaticTurret_03_destruct.rvmat"
-			};
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				turretInfoType = "RscOptics_crows";
-				animationSourceBody = "Mainturret";
-				Body = "Mainturret";
-				animationSourceGun = "Maingun";
-				Gun = "Maingun";
-				optics = 0;
-				minElev = -5;
-				maxElev = 35;
-				minTurn = -360;
-				maxTurn = +360;
-				selectionFireAnim = "zasleh";
-				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
-				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
-				weapons[]=
-				{
-					"101st_CIS_Mech"
-				};
-				magazines[]=
-				{
-					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
-				};
-				memoryPointGunnerOptics = "gunnerview";
-				//gunnerLeftHandAnimName = "Heavygun";
-				//gunnerRightHandAnimName = "Heavygun";
-				gunnergetInAction = "";
-				gunnergetOutAction = "";
-				displayName = "";
-				gunnerInAction = "Disabled";
-				gunnerAction = "Disabled";
-				gunnerForceOptics = 1;
-				memoryPointGun[] = {"usti hlavne"};
-				//gunBeg[]={"Usti hlavne L","Usti hlavne R"}; 
-				//Gunend[]={"Konec hlavne L","Konec hlavne R"};
-				class ViewOptics: ViewOptics
-				{
-					minFov = 0.25;
-					maxFov = 1.25;
-					initFov = 0.75;
-				};
-				class HitPoints
-				{
-					class HitGun
-					{
-						armor = 1;
-						material = -1;
-						name = "gun";
-						visual = "autonomous_unhide";
-						passThrough = 0;
-						radius = 0.2;
-					};
-					class HitTurret: HitGun
-					{
-						armor = 1;
-						name = "turret";
-						class DestructionEffects
-						{
-							class Smoke
-							{
-								simulation = "particles";
-								type = "WeaponWreckSmoke";
-								position = "destructionEffect";
-								intensity = 1;
-								interval = 1;
-								lifeTime = 5;
-							};
-						};
-					};
-				};
-			};
-		};
 		crew="B_UAV_AI";
 		model = "101st_Aux_Mod\Addons\Vehicles\Octo\Octo.p3d";
 		hiddenSelections[] = {"camo1"};
