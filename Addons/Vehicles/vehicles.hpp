@@ -18331,18 +18331,7 @@
 			};
 		};
 	};
-	class SpiderDSD: StaticMGWeapon //swop needs to die
-	{
-		scope=0;
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class ViewOptics;
-			};
-		};
-	};
-	class 101st_Crab_Droid: SpiderDSD
+	class 101st_Crab_Droid: StaticMGWeapon
 	{
 		displayName="LM-432 Crab Droid (Prototype) ";
 		armor=600;
@@ -18373,11 +18362,11 @@
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
 				weapons[]=
 				{
-					"Cannon_droideka"
+					"101st_CIS_Mech"
 				};
 				magazines[]=
 				{
-					"DBA_GL_HE_ammo", "DBA_GL_HE_ammo", "DBA_GL_HE_ammo", "DBA_GL_HE_ammo","DBA_GL_HE_ammo","DBA_GL_HE_ammo","DBA_GL_HE_ammo"
+					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
 				};
 				memoryPointGunnerOptics = "gunnerview";
 				//gunnerLeftHandAnimName = "Heavygun";
@@ -18434,7 +18423,7 @@
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Crab\data\Body_co.paa", "101st_Aux_Mod\Addons\Vehicles\Crab\data\Legs_co.paa"};
 	};
 
-	class 101st_DSD3_Droid: SpiderDSD
+	class 101st_DSD3_Droid: StaticMGWeapon
 	{
 		displayName="DSD3 Spider Droid (Prototype)";
 		armor=800;
@@ -18545,7 +18534,7 @@
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\DSD3\data\yeet_co.paa"};
 	};
-	class 101st_Octo_Droid: SpiderDSD
+	class 101st_Octo_Droid: StaticMGWeapon
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=1200;
