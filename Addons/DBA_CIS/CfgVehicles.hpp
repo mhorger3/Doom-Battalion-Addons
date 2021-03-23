@@ -10,6 +10,7 @@ class CfgVehicles {
     class RD501_HMP_transport;
     class RD501_HMP_gunship;
     class 101st_Crab_Droid;
+	class 101st_DSD_Droid;
     class 101st_DSD3_Droid;
     class 101st_NR99_Droid_Tank;
     class 101st_Octo_Droid;
