@@ -18605,7 +18605,7 @@
 		scopeCurator=2;
 		forceInGarage=1;
 		crew = "B_UAV_AI";
-		model = "101st_Aux_Mod\Addons\Vehicles\DSD1\DSD1.p3d";
+		model = "101st_Aux_Mod\Addons\Vehicles\DSD1\DSD.p3d";
 		hiddenSelections[] = {"body", "lights"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\DSD1\DSD_Main_CO.paa","101st_Aux_Mod\Addons\Vehicles\DSD1\DSD_Lights_CO.paa"};
 		scope=2;
