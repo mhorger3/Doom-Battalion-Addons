@@ -59,7 +59,7 @@ class CfgMagazines
 		ammo="101st_imploder_ammo";
 		descriptionShort="101st Thermal Imploder";
 		type = 256;
-		model="\3AS\3AS_Equipment\model\3AS_thermaldet.p3d";
+		model="\101st_Aux_Mod\Addons\_ammo\imploder.p3d";
 		
 	};
 	class 101st_throwable_c_type_x1_mag: HandGrenade
@@ -71,10 +71,10 @@ class CfgMagazines
 		count=1;
 		initSpeed=12;
 		mass = 70;
-		initSpeed = 15;
 		ammo="101st_throwable_c_type_ammo";
 		descriptionShort="101st Throwable C-Type";
 		type = 256;
+		model="\101st_Aux_Mod\Addons\_ammo\ctype.p3d";
 	};
 	class 101st_thermaldet_x1_mag: HandGrenade
 	{
@@ -87,7 +87,7 @@ class CfgMagazines
 		mass = 10;
 		descriptionShort="101st Thermal Detonator";
 		type = 256;
-		model="3AS\3AS_Equipment\model\3AS_Sonic.p3d";
+		model="\101st_Aux_Mod\Addons\_ammo\thermal.p3d";
 		initSpeed=18;
 		nameSound="handgrenade";
 		maxLeadSpeed=7;
@@ -1809,7 +1809,16 @@ class CfgAmmo
 			};
 		};
 		typicalspeed=18;
-		model="\3AS\3AS_Equipment\model\3AS_coredetonator.p3d";
+		model="\101st_Aux_Mod\Addons\_ammo\imploder.p3d";
+		hiddenselections[]=
+		{
+			"camo1",
+		};
+		hiddenselectionstextures[]=
+		{
+			"\101st_Aux_Mod\Addons\_ammo\ThermalImploder_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\_ammo\imploder.rvmat"};
 	};
 	class 101st_throwable_c_type_ammo: Grenade
 	{
@@ -1823,7 +1832,16 @@ class CfgAmmo
 		typicalspeed = 15;
 		explosionTime=15;
 		timeToLive=20;
-		model="\A3\Weapons_F\Explosives\satchel";
+		model="\101st_Aux_Mod\Addons\_ammo\ctype.p3d";
+		hiddenselections[]=
+		{
+			"camo1",
+		};
+		hiddenselectionstextures[]=
+		{
+			"\101st_Aux_Mod\Addons\_ammo\TypeC_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\_ammo\ctype.rvmat"};
 		ExplosionEffects="MineNondirectionalExplosion";
 		CraterEffects="MineNondirectionalCrater";
 		soundFly[] = {"\101st_Aux_Mod\Addons\_ammo\ctypeFly.ogg",1,1,90};
@@ -1924,7 +1942,16 @@ class CfgAmmo
 			};
 		};
 		typicalspeed=18;
-		model="\3AS\3AS_Equipment\model\3AS_sonic.p3d";
+		model="\101st_Aux_Mod\Addons\_ammo\thermal.p3d";
+		hiddenselections[]=
+		{
+			"camo1",
+		};
+		hiddenselectionstextures[]=
+		{
+			"\101st_Aux_Mod\Addons\_ammo\ThermalDetonator_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\_ammo\thermal.rvmat"};
 		fuseDistance=0;
 	};
 	class DBA_GL_AT_ammo: G_40mm_HE
@@ -2254,9 +2281,9 @@ class CfgWeapons
 			"101st_Ctype"
 		};
 		class ThrowMuzzle;
-		class 101st_CType_Throw: ThrowMuzzle
+		class 101st_Ctype: ThrowMuzzle
 		{
-			model="\A3\Weapons_F\Explosives\satchel";
+			model="\101st_Aux_Mod\Addons\_ammo\ctype.p3d";
 			magazines[]=
 			{
 				"101st_throwable_c_type_x1_mag"
@@ -2264,7 +2291,7 @@ class CfgWeapons
 		};
 		class 101st_Imploder: ThrowMuzzle
 		{
-			model="3AS\3AS_Equipment\model\3AS_Sonic.p3d";
+			model="\101st_Aux_Mod\Addons\_ammo\imploder.p3d";
 			magazines[]=
 			{
 				"101st_imploder_x1_mag"
@@ -2272,7 +2299,7 @@ class CfgWeapons
 		};
 		class 101st_Detonator: ThrowMuzzle
 		{
-			model="\3AS\3AS_Equipment\model\3AS_thermaldet.p3d";
+			model="\101st_Aux_Mod\Addons\_ammo\thermal.p3d";
 			magazines[]=
 			{
 				"101st_thermaldet_x1_mag"

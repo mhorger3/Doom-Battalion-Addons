@@ -2204,7 +2204,6 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "LM-432 Crab Droid (Prototype)";
-        editorCategory = "DBA_CIS";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2218,7 +2217,6 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "DSD3 Spider Droid (Prototype)";
-        editorCategory = "DBA_CIS";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2232,7 +2230,6 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Octuptarra Tri-Droid (Prototype)";
-        editorCategory = "DBA_CIS";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
