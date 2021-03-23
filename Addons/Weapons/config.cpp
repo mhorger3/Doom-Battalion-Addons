@@ -912,14 +912,19 @@ class CfgWeapons
 	class autocannon_35mm;
 	class GMG_40mm;
 	class cannon_120mm;
-	class Cannon_TurretUAVSW1;
-	class 101st_CIS_Mech : Cannon_TurretUAVSW1
+	class 3AS_HeavyRepeater;
+	class 101st_CIS_Mech : 3AS_HeavyRepeater
 	{
 		displayName="CIS Long Range Cannon";
 		displayNameShort="CIS LR Cannon";
 		author="Dutch";
 		magazines[] = {"101st_CIS_LR_Mag"};
 		reloadTime = 0.375;
+		sounds[] = {"StandardSound"};
+		class StandardSound {
+			begin1[] = {"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",0.75,1,2100};
+			soundBegin[] = {"begin1",1};
+		};
 	};
 	class 101st_TX130_mg: autocannon_35mm
 	{
