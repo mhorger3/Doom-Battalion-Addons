@@ -33,7 +33,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid";
 		hiddenSelectionsTextures[] = {"\212th\Units\3AS_LPB1_V3\Model\textures\3AS_LPB1_BSC_V3_CA.paa"};
 		speaker="Male01ENGVR";
@@ -316,7 +318,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid (Spec)";
 		linkedItems[]=
 		{
@@ -345,7 +349,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid (Aqua)";
 		linkedItems[]=
 		{
@@ -374,7 +380,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid (Snow)";
 		linkedItems[]=
 		{
@@ -402,7 +410,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid (Forest)";
 		linkedItems[]=
 		{
@@ -431,7 +441,9 @@
 		scopeCurator = 2;
 		side = 0;
 		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "O_DBA_CIS_B1_Droids";
+        vehicleClass = "O_DBA_CIS_B1_Droids";
 		displayName="CIS AT Rifle Droid (Desert)";
 		linkedItems[]=
 		{

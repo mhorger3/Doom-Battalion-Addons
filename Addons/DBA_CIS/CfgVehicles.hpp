@@ -351,7 +351,7 @@ class CfgVehicles {
         scope = 0;
         scopeCurator = 0;
         displayName = "";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_B1_Droids";
         vehicleClass = "O_DBA_CIS_B1_Droids";
         side = 0;
@@ -485,7 +485,7 @@ class CfgVehicles {
         scope = 0;
         scopeCurator = 0;
         displayName = "";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Spec_Ops";
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         side = 0;
@@ -622,7 +622,7 @@ class CfgVehicles {
         scope = 0;
         scopeCurator = 0;
         displayName = "";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Spec_Ops";
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         side = 0;
@@ -763,7 +763,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_F.jpg";
@@ -797,7 +797,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "OOM Command Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Command_Droid_F.jpg";
@@ -832,7 +832,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 Crew Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Crew_Droid_F.jpg";
@@ -866,7 +866,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 Heavy Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Heavy_Droid_F.jpg";
@@ -896,7 +896,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "OOM Marine Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Marine_Droid_F.jpg";
@@ -930,7 +930,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "OOM Security Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Security_Droid_F.jpg";
@@ -964,7 +964,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "OOM Pilot Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Pilot_Droid_F.jpg";
@@ -998,7 +998,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 Sniper Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Sniper_Droid_F.jpg";
@@ -1032,7 +1032,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 AA Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_AA_Droid_F.jpg";
@@ -1062,7 +1062,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 AT Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_AT_Droid_F.jpg";
@@ -1092,7 +1092,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B1 Rocket Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Rocket_Droid_F.jpg";
@@ -1438,7 +1438,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B2 Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Droid_F.jpg";
@@ -1476,7 +1476,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "B2 Super Droid";
-        editorCategory = "DBA_CIS";
+       
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Super_Droid_F.jpg";
@@ -1513,7 +1513,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "BX Commando Droid";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Spec_Ops";
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         side = 0;
@@ -1573,7 +1573,7 @@ class CfgVehicles {
     {
         scope = 0;
         scopeCurator = 0;
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Spec_Ops";
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         faction = "O_DBA_CIS_F";
@@ -1677,7 +1677,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Hover Droid MK.II";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Drones";
         vehicleClass = "O_DBA_CIS_Drones";
         side = 0;
@@ -1690,7 +1690,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "HMP-Class Droid Transport";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Helicopters";
         vehicleClass = "O_DBA_CIS_Helicopters";
         side = 0;
@@ -1704,7 +1704,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "HMP Gunship";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Helicopters";
         vehicleClass = "O_DBA_CIS_Helicopters";
         side = 0;
@@ -1718,7 +1718,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1732,7 +1732,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT (Olive)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1746,7 +1746,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT (Tan)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1760,7 +1760,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT (Urban)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1774,7 +1774,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT Light";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1788,7 +1788,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT Light (Olive)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1802,7 +1802,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT Light (Tan)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1816,7 +1816,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "GAT Light (Urban)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1830,7 +1830,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1844,7 +1844,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Tan)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1858,7 +1858,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Snow)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1872,7 +1872,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Tropic)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1886,7 +1886,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Urban)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1900,7 +1900,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "NR-N99 Snail Tank";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -1914,7 +1914,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "CIS Speeder";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -1927,7 +1927,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Plasma Artillery";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Artillery";
         vehicleClass = "O_DBA_CIS_Artillery";
         side = 0;
@@ -1941,7 +1941,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rocket Artillery";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Artillery";
         vehicleClass = "O_DBA_CIS_Artillery";
         side = 0;
@@ -1955,7 +1955,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "BEARD AA";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_AAs";
         vehicleClass = "O_DBA_CIS_AAs";
         side = 0;
@@ -1969,7 +1969,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "MTT";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_APCs";
         vehicleClass = "O_DBA_CIS_APCs";
         side = 0;
@@ -1983,7 +1983,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Assault Craft";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -1997,7 +1997,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Ammo Truck";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2011,7 +2011,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Device Carrier";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2025,7 +2025,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Fuel Truck";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2039,7 +2039,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Medical Truck";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2053,7 +2053,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Repair Truck";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2067,7 +2067,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Transport Truck";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2081,7 +2081,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Argon Transport Truck (Covered)";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Cars";
         vehicleClass = "O_DBA_CIS_Cars";
         side = 0;
@@ -2095,7 +2095,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Plasma Mortar";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2109,7 +2109,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Droideka";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2122,7 +2122,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Dwarf Spider Droid Mk1";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2135,7 +2135,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Dwarf Spider Droid Mk2";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2148,7 +2148,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "E-web";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2162,7 +2162,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "OG-10 Homing Spider";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2176,7 +2176,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Particle Cannon";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2190,7 +2190,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Proton Cannon";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2203,7 +2203,7 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "LM-432 Crab Droid (Prototype)";
+        displayName = "LM-432 Crab Droid";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2216,7 +2216,19 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "DSD3 Spider Droid (Prototype)";
+        displayName = "DSD3 Spider Droid";
+        editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
+        crew = "O_DBA_CIS_B1_Crew_Droid_F";
+    };
+	 class O_DBA_CIS_DSD1_F : 101st_DSD_Droid
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Dwarf Spider Droid";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2229,7 +2241,7 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "Octuptarra Tri-Droid (Prototype)";
+        displayName = "Octuptarra Tri-Droid";
         editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
         side = 0;
@@ -2243,7 +2255,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Speedboat";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Boats";
         vehicleClass = "O_DBA_CIS_Boats";
         side = 0;
@@ -2257,7 +2269,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Vulture-Class Droid Fighter";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_3as_Planes";
         vehicleClass = "O_DBA_CIS_3as_Planes";
         side = 0;
@@ -2271,7 +2283,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Vulture-Class Droid Fighter";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Kalani_Planes";
         vehicleClass = "O_DBA_CIS_Kalani_Planes";
         side = 0;
@@ -2285,7 +2297,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Hyena Bomber Droid";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_Kalani_Planes";
         vehicleClass = "O_DBA_CIS_Kalani_Planes";
         side = 0;
@@ -2299,7 +2311,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Vulture-Class Droid Fighter";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_RD501_Planes";
         vehicleClass = "O_DBA_CIS_RD501_Planes";
         side = 0;
@@ -2313,7 +2325,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Tri Fighter Droid";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_RD501_Planes";
         vehicleClass = "O_DBA_CIS_RD501_Planes";
         side = 0;
@@ -2327,7 +2339,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Hyena Bomber Droid";
-        editorCategory = "DBA_CIS";
+       
         editorSubcategory = "O_DBA_CIS_RD501_Planes";
         vehicleClass = "O_DBA_CIS_RD501_Planes";
         side = 0;

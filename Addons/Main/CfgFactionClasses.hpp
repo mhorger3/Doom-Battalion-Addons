@@ -1,4 +1,4 @@
 class Republic_101st
 {
-	displayName="101st Doom Company";
+	displayName="101st Doom Battalion";
 };

@@ -17026,9 +17026,9 @@
 			"RD501_Vehicles\FE_Vehicles\textures\grey.paa"
 		};
 		dlc="101st_Aux_Mod";
-		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_AA";
-		vehicleClass="RD501_Vehicle_Class_AA";
+		faction = "O_DBA_CIS_F";
+		 editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
 		class TransportBackpacks;
 		class TransportItems;
 		class TransportWeapons;
@@ -17100,9 +17100,9 @@
 			"RD501_Vehicles\FE_Vehicles\textures\grey.paa"
 		};
 		dlc="101st_Aux_Mod";
-		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_AA";
-		vehicleClass="RD501_Vehicle_Class_AA";
+			faction = "O_DBA_CIS_F";
+		 editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
 		class TransportBackpacks;
 		class TransportItems;
 		class TransportWeapons;
@@ -18344,13 +18344,6 @@
 		author="Dutch";
 		displayName="LM-432 Crab Droid (Prototype) ";
 		armor=600;
-		scope=2;
-		forceInGarage=1;
-		scopeCurator=2;
-		class Armory
-		{
-			description="";
-		};
 		model = "101st_Aux_Mod\Addons\Vehicles\Crab\Crab.p3d";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Crab\data\Body_co.paa", "101st_Aux_Mod\Addons\Vehicles\Crab\data\Legs_co.paa"};
@@ -18360,6 +18353,13 @@
 		crew = "B_UAV_AI";
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Crab_Droid_F.jpg";
+		scope=2;
+		forceInGarage=1;
+		scopeCurator=2;
+		class Armory
+		{
+			description="";
+		};
 		threat[]={1,0.30000001,0.30000001};
 		cost=150000;
 		getInAction="";
@@ -18470,7 +18470,7 @@
 		};
 	};
 
-	class 101st_DSD3_Droid: 101st_Crab_Droid
+	class 101st_DSD3_Droid: StaticMGWeapon
 	{
 		displayName="DSD3 Spider Droid (Prototype)";
 		armor=800;
@@ -18481,6 +18481,33 @@
 		model = "101st_Aux_Mod\Addons\Vehicles\DSD3\DSD3.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\DSD3\data\yeet_co.paa"};
+		scope=2;
+		forceInGarage=1;
+		scopeCurator=2;
+		class Armory
+		{
+			description="";
+		};
+		threat[]={1,0.30000001,0.30000001};
+		cost=150000;
+		getInAction="";
+		getOutAction="";
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\Static_F_Gamma\data\StaticTurret_01.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_destruct.rvmat"
+			};
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -18555,8 +18582,22 @@
 				};
 			};
 		};
+		soundGetOut[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.001,
+			1,
+			5
+		};
+		soundGetIn[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			5
+		};
 	};
-	class 101st_DSD_Droid: 101st_Crab_Droid
+	class 101st_DSD_Droid: StaticMGWeapon
 	{
 		displayName="CIS Dwarf Spider Droid";
 		armor=800;
@@ -18567,6 +18608,33 @@
 		model = "101st_Aux_Mod\Addons\Vehicles\DSD1\DSD1.p3d";
 		hiddenSelections[] = {"body", "lights"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\DSD1\DSD_Main_CO.paa","101st_Aux_Mod\Addons\Vehicles\DSD1\DSD_Lights_CO.paa"};
+		scope=2;
+		forceInGarage=1;
+		scopeCurator=2;
+		class Armory
+		{
+			description="";
+		};
+		threat[]={1,0.30000001,0.30000001};
+		cost=150000;
+		getInAction="";
+		getOutAction="";
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\Static_F_Gamma\data\StaticTurret_01.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_destruct.rvmat"
+			};
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -18641,8 +18709,22 @@
 				};
 			};
 		};
+		soundGetOut[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.001,
+			1,
+			5
+		};
+		soundGetIn[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			5
+		};
 	};
-	class 101st_Octo_Droid: 101st_DSD3_Droid
+	class 101st_Octo_Droid: StaticMGWeapon
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=1200;
@@ -18653,6 +18735,33 @@
 		model = "101st_Aux_Mod\Addons\Vehicles\Octo\Octo.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Octo\data\crab_co.paa"};
+		scope=2;
+		forceInGarage=1;
+		scopeCurator=2;
+		class Armory
+		{
+			description="";
+		};
+		threat[]={1,0.30000001,0.30000001};
+		cost=150000;
+		getInAction="";
+		getOutAction="";
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\Static_F_Gamma\data\StaticTurret_01.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_damage.rvmat",
+				"A3\Static_F_Gamma\data\StaticTurret_03_destruct.rvmat"
+			};
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -18726,5 +18835,19 @@
 					};
 				};
 			};
+		};
+		soundGetOut[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.001,
+			1,
+			5
+		};
+		soundGetIn[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			5
 		};
 	};

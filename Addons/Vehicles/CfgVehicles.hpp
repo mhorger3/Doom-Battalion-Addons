@@ -346,14 +346,18 @@ class CfgVehicles
 	{
 		displayName = "OPFOR Tyrant";
 		side = 0;
-		faction="Republic_101st";
+		editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
+        faction = "O_DBA_CIS_F";
 		scopeCurator=2;
 	};
 	class 101st_Overlord : B_SAM_System_01_F
 	{
 		displayName = "OPFOR Overlord";
 		side = 0;
-		faction="Republic_101st";
+		editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
+        faction = "O_DBA_CIS_F";
 		scopeCurator=2;
 	};
 

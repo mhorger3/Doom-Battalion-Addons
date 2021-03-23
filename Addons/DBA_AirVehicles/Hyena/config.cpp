@@ -1062,7 +1062,9 @@ class CfgVehicles
 		Displayname="CIS Hyena-Class Bomber";
 		side=0;
 		forceingarage=1;
-		faction="Republic_101st";
+		editorSubcategory = "O_DBA_CIS_3as_Planes";
+        vehicleClass = "O_DBA_CIS_3as_Planes";
+        faction = "O_DBA_CIS_F";
 		crew="JLTS_Droid_B1_Crew";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
