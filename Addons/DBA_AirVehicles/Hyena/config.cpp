@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"101st_Hyena"
+			"101st_Hyena_Bomber"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=

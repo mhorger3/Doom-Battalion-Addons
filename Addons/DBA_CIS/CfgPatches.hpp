@@ -106,7 +106,13 @@ class CfgPatches {
             "O_DBA_CIS_Hyena_Bomber_Droid_Kalani_F",
             "O_DBA_CIS_Vulture_Droid_RD501_F",
             "O_DBA_CIS_Tri_Fighter_Droid_RD501_F",
-            "O_DBA_CIS_Hyena_Bomber_Droid_RD501_F"
+            "O_DBA_CIS_Hyena_Bomber_Droid_RD501_F",
+			"O_DBA_CIS_DSD1_F",
+			"O_DBA_CIS_Hyena_Bomber_F",
+			"O_DBA_CIS_Crab_Droid_F",
+			"O_DBA_CIS_DSD3_F",
+			"O_DBA_CIS_Tri_Droid_F"
+			
         };
         weapons[] = {
             "DBA_B1",
