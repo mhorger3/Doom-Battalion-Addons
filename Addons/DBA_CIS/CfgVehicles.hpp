@@ -14,6 +14,7 @@ class CfgVehicles {
     class 101st_DSD3_Droid;
     class 101st_NR99_Droid_Tank;
     class 101st_Octo_Droid;
+	class 101st_Hyena_Bomber;
     class 3AS_GAT;
     class 3AS_GAT_Olive;
     class 3AS_GAT_tan;
@@ -1713,7 +1714,19 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
-
+	
+	class O_DBA_CIS_Hyena_Bomber_F : 101st_Hyena_Bomber
+	{
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Hyena-Class Bomber";
+        editorSubcategory = "O_DBA_CIS_RD501_Planes";
+        vehicleClass = "O_DBA_CIS_RD501_Planes";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
+        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+	};
     class O_DBA_CIS_GAT_F : 3AS_GAT
     {
         scope = 2;
