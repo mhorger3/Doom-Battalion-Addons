@@ -5361,7 +5361,8 @@ class cfgVehicles
 		{
 			class TransportPylonsComponent
 			{
-				class Pylons
+				UIPicture="3as\3as_z95\data\plane_z95_pylon_ca.paa";
+				class pylons
 				{
 					class pylons1
 					{
@@ -5369,7 +5370,7 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_lgm_x3_mag";
+						attachment="DBA_pylon_agm_x4_mag";
 						priority=10;
 						maxweight=300;
 						UIposition[]={0.60000002,0.44999999};
@@ -5385,20 +5386,13 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_generic_aircraft_cannon_green_x500_mag";
+						attachment="DBA_pylon_aa_x3_mag";
 						priority=9;
 						maxweight=2500;
 						UIposition[]={0.55000001,0.34999999};
 					};
 					class pylons4: pylons3
 					{
-						hardpoints[]=
-						{
-							"DBA_Universal_rail"
-						};
-						attachment="DBA_pylon_generic_aircraft_cannon_green_x500_mag";
-						priority=13;
-						maxweight=5000;
 						UIposition[]={0.1,0.34999999};
 						mirroredMissilePos=3;
 					};
@@ -5408,20 +5402,13 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_aa_x3_mag";
+						attachment="DBA_pylon_stomper_aa_x3_mag";
 						priority=7;
 						maxweight=5000;
 						UIposition[]={0.5,0.25};
 					};
 					class pylons6: pylons5
 					{
-						hardpoints[]=
-						{
-							"DBA_Universal_rail"
-						};
-						attachment="DBA_pylon_aa_x3_mag";
-						priority=12;
-						maxweight=5000;
 						UIposition[]={0.15000001,0.25};
 						mirroredMissilePos=5;
 					};
@@ -5432,14 +5419,14 @@ class cfgVehicles
 							"DBA_Universal_rail"
 						};
 						priority=5;
-						attachment="empty";
+						attachment="DBA_Kannon_Pylon";
 						maxweight=4000;
-						UIposition[]={0.1,0.25};
+						UIposition[]={0.32499999,0.15000001};
 					};
 				};
-				class Presets
+				class presets
 				{
-					class Empty
+					class empty
 					{
 						displayName="$STR_empty";
 						attachment[]={};
@@ -5447,6 +5434,189 @@ class cfgVehicles
 				};
 			};
 		};
+	};
+	
+	class CopilotTurret;
+	class VTOL_01_base_F
+	{
+		class Turrets
+		{
+			class MainTurret
+			{
+			};
+		};
+		class Components
+		{
+		};
+	};
+	class NewTurret;
+	class 3as_arc_170_base: Plane_Fighter_03_dynamicLoadout_base_F
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent;
+		};
+	};
+	class 3as_arc_170_green: 3as_arc_170_base
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent;
+		};
+	};
+	class 101st_ARC_Modified : 3as_arc_170_green
+	{
+		author = "Mutt";
+		displayname = "101st ARC-170 (FM)"
+		weapons[]=
+		{
+			"DBA_Aircraft_Lasers_Blue",
+			"DBA_generic_kannon",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera"
+		};
+		magazines[]=
+		{
+			"DBA_generic_aircraft_gun_blue_x1000_mag",
+			"DBA_generic_aircraft_gun_blue_x1000_mag",
+			"DBA_Kannon_x100_mag",
+			"Laserbatteries",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine",
+			"120Rnd_CMFlare_Chaff_Magazine"
+		};
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName="WFOV";
+					initAngleX=0;
+					minAngleX=0;
+					maxAngleX=0;
+					initAngleY=0;
+					minAngleY=0;
+					maxAngleY=0;
+					initFov="(25 / 120)";
+					minFov="(25 / 120)";
+					maxFov="(25 / 120)";
+					directionStabilized=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[]={0,1};
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera2",
+						"OpticsBlur2"
+					};
+				};
+				class Medium: Wide
+				{
+					opticsDisplayName="MFOV";
+					initFov="(10 / 120)";
+					minFov="(10 / 120)";
+					maxFov="(10 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class Narrow: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(1.5 / 120)";
+					minFov="(1.5 / 120)";
+					maxFov="(1.5 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics=1;
+				showUAVViewInOptics=0;
+				showSlingLoadManagerInOptics=0;
+			};
+			minTurn=-180;
+			maxTurn=180;
+			initTurn=0;
+			minElev=-10;
+			maxElev=90;
+			initElev=0;
+			maxXRotSpeed=0.30000001;
+			maxYRotSpeed=0.30000001;
+			pilotOpticsShowCursor=1;
+			controllable=1;
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				UIPicture="3as\3as_arc170\data\plane_arc_pylon_ca.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[]=
+						{
+							"DBA_Universal_rail"
+						};
+						attachment="DBA_pylon_stomper_aa_x3_mag";
+						priority=10;
+						maxweight=300;
+						UIposition[]={0.5,0.25};
+					};
+					class pylons2: pylons1
+					{
+						UIposition[]={0.15000001,0.25};
+						mirroredMissilePos=1;
+					};
+					class pylons3: pylons1
+					{
+						hardpoints[]=
+						{
+							"DBA_Universal_rail",
+							"B_BOMB_PYLON",
+							"ARC_EMP_RAIL"
+						};
+						attachment="PylonMissile_1Rnd_Bomb_04_F";
+						priority=9;
+						maxweight=2500;
+						UIposition[]={0.55000001,0.34999999};
+					};
+					class pylons4: pylons3
+					{
+						UIposition[]={0.1,0.34999999};
+						mirroredMissilePos=3;
+					};
+					class pylons5: pylons1
+					{
+						hardpoints[]=
+						{
+							"DBA_Universal_rail",
+							"B_HARM_RAIL",
+						};
+						attachment="DBA_pylon_aa_x3_mag";
+						priority=7;
+						maxweight=5000;
+						UIposition[]={0.60000002,0.44999999};
+					};
+					class pylons6: pylons5
+					{
+						UIposition[]={0.050000001,0.44999999};
+						mirroredMissilePos=5;
+					};
+				};
+				class presets
+				{
+					class empty
+					{
+						displayName="$STR_empty";
+						attachment[]={};
+					};
+				};
+			};
+		};	
 	};
 	
 	//Experimental LAAT
