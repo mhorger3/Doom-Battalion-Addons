@@ -1820,7 +1820,7 @@ class CfgAmmo
 		};
 		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\_ammo\imploder.rvmat"};
 	};
-	/*class 101st_throwable_c_type_ammo: Grenade
+	class 101st_throwable_c_type_ammo: Grenade
 	{
 		displayName = "101st Throwable C-Type Explosive";
 		simulation = "shotGrenade";
@@ -1888,7 +1888,7 @@ class CfgAmmo
 			};
 		};
 		typicalspeed=18;
-	};*/
+	};
 	class 101st_thermaldet_ammo: Grenade
 	{
 		displayName = "101st Thermal Detonator";

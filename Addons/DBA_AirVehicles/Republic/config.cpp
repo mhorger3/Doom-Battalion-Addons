@@ -11,6 +11,7 @@ class CfgPatches
 			"101st_laatUnarmed_Command",
 			"101st_laatFloodLight_Command",
 			"101st_Z95_base",
+			"101st_ARC_Modified",
 			"101st_Nuclass",
 			"DBA_arc_170_green",
 			"DBA_LAAT_Pylons"
@@ -5328,6 +5329,7 @@ class cfgVehicles
 		scope=2;
 		displayName="101st Z-95 Headhunter";
 		faction="Republic_101st";
+		crew="101st_Pilot_212th";
 		alwaysTarget=0;
 		weapons[]=
 		{
@@ -5419,7 +5421,7 @@ class cfgVehicles
 							"DBA_Universal_rail"
 						};
 						priority=5;
-						attachment="DBA_Kannon_Pylon";
+						attachment= "empty";
 						maxweight=4000;
 						UIposition[]={0.32499999,0.15000001};
 					};
@@ -5468,12 +5470,17 @@ class cfgVehicles
 	{
 		author = "Mutt";
 		displayname = "101st ARC-170 (FM)"
+		scope = 2;
+		scopeCurator = 2;
+		faction="Republic_101st";
+		crew="101st_Pilot_212th";
 		weapons[]=
 		{
+			"Laserdesignator_pilotCamera",
 			"DBA_Aircraft_Lasers_Blue",
 			"DBA_generic_kannon",
-			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera"
+			"CMFlareLauncher"
+			
 		};
 		magazines[]=
 		{
@@ -5561,7 +5568,7 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_stomper_aa_x3_mag";
+						attachment="DBA_pylon_aa_x3_mag";
 						priority=10;
 						maxweight=300;
 						UIposition[]={0.5,0.25};
