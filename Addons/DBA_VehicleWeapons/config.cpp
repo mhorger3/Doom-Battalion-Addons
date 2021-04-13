@@ -2232,6 +2232,8 @@ class CfgAmmo
 		indirectHitRange=3;
 		cameraViewAvailable=1;
 		maneuvrability=40;
+		maxSpeed = 1800; 
+		thrustTime = 1;
 	};
 	class DBA_Stomper_a2a_ammo: M_Air_AA
 	{
