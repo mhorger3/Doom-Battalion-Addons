@@ -5010,7 +5010,7 @@ class cfgVehicles
 		fuelCapacity=700;
 		fuelConsumptionRate=0.2;
 		bodyFrictionCoef=1.9845001;
-		maxSpeed=700;
+		maxSpeed=800;
 		startDuration=4.5;
 		castDriverShadow=0;
 		canFloat=1;
@@ -5022,22 +5022,22 @@ class cfgVehicles
 		waterAngularDampingCoef=3;
 		maxFordingDepth=110.65;
 		vtol=4;
-		VTOLYawInfluence=2;
-		VTOLPitchInfluence=4;
-		VTOLRollInfluence=4;
+		VTOLYawInfluence=10;
+		VTOLPitchInfluence=10;
+		VTOLRollInfluence=6;
 		envelope[]={0,0.0099999998,0.2,4,6,7.5999999,8.3999996,9.1999998,9.3999996,9.6000004,9.6999998,9.8000002,8,1};
 		aileronSensitivity=1;
-		aileronControlsSensitivityCoef=0.80000001;
-		aileronCoef[]={0.60000002,0.80000001,1,1.1,1.2,1.15,0.1};
+		aileronControlsSensitivityCoef=2;
+		aileronCoef[]={.8,1,1,1.1,1.2,1.15,0.1};
 		elevatorSensitivity=1;
-		elevatorControlsSensitivityCoef=0.80000001;
-		elevatorCoef[]={0.60000002,0.80000001,1,1.1,1.2,1.15,0.1};
-		rudderInfluence=0.0099999998;
-		rudderControlsSensitivityCoef=1;
+		elevatorControlsSensitivityCoef=2;
+		elevatorCoef[]={.8,1,1,1.1,1.2,1.15,0.1};
+		rudderInfluence=1;
+		rudderControlsSensitivityCoef=3;
 		rudderCoef[]={10,10.5,12,13,13.05,13.1,13.15};
 		flaps=0;
 		airbrake=1;
-		airBrakeFrictionCoef=5;
+		airBrakeFrictionCoef=30;
 		tailhook=0;
 		draconicForceXCoef=6.5999999;
 		draconicForceYCoef=1.5;
@@ -5110,374 +5110,210 @@ class cfgVehicles
 		};
 		class Sounds
 		{
-			class EngineExt
+			class EngineLowOut
 			{
 				sound[]=
 				{
 					"3as\3as_laat\sounds\LAAT_Idle.ogg",
-					1.25893,
 					1,
-					400
+					1,
+					2100
 				};
-				frequency="rotorSpeed";
-				volume="3 * camPos * (0 max (rotorSpeed-0.4))";
+				frequency="1.0 min (rpm + 0.5)";
+				volume="camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
 			};
-			class RotorExt
+			class EngineHighOut
 			{
 				sound[]=
 				{
 					"3as\3as_laat\sounds\LAAT_Idle.ogg",
-					1.25893,
 					1,
-					1000
-				};
-				frequency="(rotorSpeed factor [0.3, 0.7]) * (rotorSpeed factor [0.3, 1]) * (1 - rotorThrust/4)";
-				volume="3*camPos * (rotorSpeed factor [0.3, 1]) * (1 + rotorThrust)";
-			};
-			class RotorSwist
-			{
-				sound[]=
-				{
-					"",
-					0.707946,
-					1,
-					300
+					1.2,
+					2500
 				};
 				frequency=1;
-				volume=0;
+				volume="camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
 			};
-			class EngineInt
+			class ForsageOut
+			{
+				sound[]=
+				{
+					"A3\Sounds_F_Exp\vehicles\air\VTOL_02\VTOL_02_forsage_ext",
+					1.41254,
+					1.2,
+					2800
+				};
+				frequency="1";
+				volume="engineOn*camPos*(thrust factor[0.4, 1.0])";
+				cone[]={3.1400001,3.9200001,2,0.5};
+			};
+			class TurbineOut
 			{
 				sound[]=
 				{
 					"3as\3as_laat\sounds\LAAT_Idle.ogg",
-					0.79432797,
-					1
+					1,
+					1,
+					1800
 				};
-				frequency="rotorSpeed";
-				volume="3*(1-camPos)*2*(0 max (rotorSpeed-0.4))";
+				frequency="rpm * (thrust/4 + 0.5)";
+				volume="camPos * 2 * rpm * thrust * (rpm factor[0, 0.4])";
 			};
-			class RotorInt
+			class TurbineHighOut
+			{
+				sound[]=
+				{
+					"3as\3as_laat\sounds\LAAT_Idle.ogg",
+					1,
+					1,
+					1800
+				};
+				frequency="1.7 * (rpm factor[-5,1])";
+				volume="0.8 * camPos * (rpm factor[-1,1]) * (rpm factor[0, 0.4])";
+			};
+			class WindNoiseOut
+			{
+				sound[]=
+				{
+					"A3\Sounds_F_EPC\CAS_02\noise",
+					0.56234097,
+					1,
+					150
+				};
+				frequency="(0.1+(1.2*(speed factor[1, 150])))";
+				volume="camPos*(speed factor[1, 150])";
+			};
+			class EngineLowInt
 			{
 				sound[]=
 				{
 					"3as\3as_laat\sounds\LAAT_Idle.ogg",
 					0.63095701,
-					1
+					1,
+					2100
 				};
-				frequency="(rotorSpeed factor [0.3, 0.7]) * (rotorSpeed factor [0.3, 1]) * (1 - rotorThrust/4)";
-				volume="3*(1 - camPos) * (rotorSpeed factor [0.3, 0.7]) * (1 + rotorThrust) * 0.7";
+				frequency="1.0 min (rpm + 0.5)";
+				volume="(1-camPos)*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
 			};
-			class RotorBench
+			class EngineHighInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\Heli_Light_01\Heli_Light_01_int_rotor_normal_bench",
-					0.50118703,
-					1,
-					1000
-				};
-				frequency="(rotorSpeed factor [0.3, 0.7]) * (rotorSpeed factor [0.3, 1]) * (1 - rotorThrust/4)";
-				volume="(playerPos factor [3.9, 4]) * (1 - camPos) * (rotorSpeed factor [0.3, 1]) * (1 + rotorThrust) * 0.4";
-				cone[]={1.6,3.1400001,1.6,0.94999999};
-			};
-			class EngineBench
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\Heli_Light_01\Heli_Light_01_ext_engine_bench",
-					0.35481301,
-					1,
-					400
-				};
-				frequency="rotorSpeed";
-				volume="(playerPos factor [3.9, 4]) * (1 - camPos) * (0 max (rotorSpeed-0.4))";
-			};
-			class WindBench
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\wind_open_out",
-					0.56234097,
-					1,
-					50
+					"3as\3as_laat\sounds\LAAT_Idle.ogg",
+					0.63095701,
+					1.2,
+					2500
 				};
 				frequency=1;
-				volume="3 * (playerPos factor [3.9, 4]) * (1 - camPos) * ((speed factor[0, 30]) + (speed factor[0, -30]))";
+				volume="(1-camPos)*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
 			};
-			class TransmissionDamageExt_phase1
+			class TurbineInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\heli_damage_transmission_ext_1",
+					"3as\3as_laat\sounds\LAAT_Idle.ogg",
+					0.63095701,
 					1,
-					1,
-					150
+					1800
 				};
-				frequency="0.66 + rotorSpeed / 3";
-				volume="camPos * (transmissionDamage factor [0.3, 0.35]) * (transmissionDamage factor [0.5, 0.45]) * (rotorSpeed factor [0.2, 0.5])";
+				frequency="rpm * (thrust/4 + 0.5)";
+				volume="(1-camPos) * 2 * rpm * thrust * (rpm factor[0, 0.4])";
 			};
-			class TransmissionDamageExt_phase2
+			class TurbineHighInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\heli_damage_transmission_ext_2",
+					"3as\3as_laat\sounds\LAAT_Idle.ogg",
+					0.63095701,
 					1,
-					1,
-					150
+					1800
 				};
-				frequency="0.66 + rotorSpeed / 3";
-				volume="camPos * (transmissionDamage factor [0.45, 0.5]) * (rotorSpeed factor [0.2, 0.5])";
-			};
-			class TransmissionDamageInt_phase1
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_damage_transmission_int_1",
-					1,
-					1,
-					150
-				};
-				frequency="0.66 + rotorSpeed / 3";
-				volume="(1 - camPos) * (transmissionDamage factor [0.3, 0.35]) * (transmissionDamage factor [0.5, 0.45]) * (rotorSpeed factor [0.2, 0.5])";
-			};
-			class TransmissionDamageInt_phase2
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_damage_transmission_int_2",
-					1,
-					1,
-					150
-				};
-				frequency="0.66 + rotorSpeed / 3";
-				volume="(1 - camPos) * (transmissionDamage factor [0.45, 0.5]) * (rotorSpeed factor [0.2, 0.5])";
-			};
-			class damageAlarmInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_alarm_bluefor",
-					0.316228,
-					1
-				};
-				frequency=1;
-				volume="engineOn * (1 - camPos) * ( 1 - ((transmissionDamage factor [0.61, 0.60]) * (motorDamage factor [0.61, 0.60]) * (rotorDamage factor [0.51, 0.50]))) * (rotorSpeed factor [0.0, 0.001])";
-			};
-			class damageAlarmExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_alarm_bluefor",
-					0.22387201,
-					1,
-					20
-				};
-				frequency=1;
-				volume="engineOn * camPos * ( 1 - ((transmissionDamage factor [0.61, 0.60]) * (motorDamage factor [0.61, 0.60]) * (rotorDamage factor [0.51, 0.50]))) * (rotorSpeed factor [0, 0.001])";
-			};
-			class rotorLowAlarmInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_alarm_rotor_low",
-					0.316228,
-					1
-				};
-				frequency=1;
-				volume="engineOn * (1 - camPos) * (rotorSpeed factor [0.9, 0.8999]) * (rotorSpeed factor [-0.5, 1]) * (speed factor [3, 3.01])";
-			};
-			class rotorLowAlarmExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\heli_alarm_rotor_low",
-					0.22387201,
-					1,
-					20
-				};
-				frequency=1;
-				volume="engineOn * camPos * (rotorSpeed factor [0.9, 0.8999]) * (rotorSpeed factor [-0.5, 1]) * (speed factor [3, 3.01])";
+				frequency="1.7 * (rpm factor[-5,1])";
+				volume="0.8 * (1-camPos) * (rpm factor[-1,1]) * (rpm factor[0, 0.4])";
 			};
 			class scrubLandInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\scrubLandInt_open",
+					"A3\Sounds_F\vehicles\air\noises\wheelsInt",
 					1,
 					1,
 					100
 				};
 				frequency=1;
-				volume="2 * (1-camPos) * (scrubLand factor[0.02, 0.05])";
+				volume="2 * (1-camPos) * (scrubLand factor[0.02, 0.05]) * (1 - (lateralMovement factor [0.7,1]))";
 			};
 			class scrubLandExt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\scrubLandExt",
+					"A3\Sounds_F\dummysound",
 					1,
 					1,
 					100
 				};
 				frequency=1;
-				volume="camPos * (scrubLand factor[0.02, 0.05])";
-			};
-			class scrubBuildingInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\scrubBuildingInt",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="2 * (1 - camPos) * (scrubBuilding factor[0.02, 0.05])";
-			};
-			class scrubBuildingExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\scrubBuildingExt",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="camPos * (scrubBuilding factor[0.02, 0.05])";
-			};
-			class scrubTreeInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\scrubTreeExt",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="(1 - camPos) * ((scrubTree) factor [0, 0.01])";
-			};
-			class scrubTreeExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\scrubTreeExt",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="camPos * ((scrubTree) factor [0, 0.01])";
+				volume="camPos * (scrubLand factor[0.02, 0.05]) * (1 - (lateralMovement factor [0.7,1]))";
 			};
 			class RainExt
 			{
 				sound[]=
 				{
 					"A3\Sounds_F\vehicles\noises\rain1_ext",
-					1,
+					1.77828,
 					1,
 					100
 				};
 				frequency=1;
-				volume="camPos * (rain - rotorSpeed/2) * 2";
+				volume="camPos * rain * (speed factor[50, 0])";
 			};
 			class RainInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\noises\rain1_int_open",
+					"A3\Sounds_F\vehicles\noises\rain1_int",
 					1,
 					1,
 					100
 				};
 				frequency=1;
-				volume="(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
-			class SlingLoadDownExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\SL_engineDownEXT",
-					1.25893,
-					1,
-					500
-				};
-				frequency=1;
-				volume="camPos*(slingLoadActive factor [0,-1])";
-			};
-			class SlingLoadUpExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\SL_engineUpEXT",
-					1.25893,
-					1,
-					500
-				};
-				frequency=1;
-				volume="camPos*(slingLoadActive factor [0,1])";
-			};
-			class SlingLoadDownInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\SL_engineDownINT",
-					1,
-					1,
-					700
-				};
-				frequency=1;
-				volume="(1-camPos)*(slingLoadActive factor [0,-1])";
-			};
-			class SlingLoadUpInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\air\noises\SL_engineUpINT",
-					1,
-					1,
-					700
-				};
-				frequency=1;
-				volume="(1-camPos)*(slingLoadActive factor [0,1])";
+				volume="(1-camPos) * rain * (speed factor[50, 0])";
 			};
 			class WindInt
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\wind_open_int",
-					1.12202,
+					"A3\Sounds_F\vehicles\air\noises\wind_closed",
+					0.56234097,
 					1,
 					50
 				};
 				frequency=1;
 				volume="(1-camPos)*(speed factor[5, 50])*(speed factor[5, 50])";
 			};
-			class WindLateralMovementInt
+			class GStress
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\air\noises\wind_lateral_open_int",
+					"A3\Sounds_F\vehicles\noises\vehicle_stress2c",
 					1.99526,
 					1,
 					50
 				};
 				frequency=1;
-				volume="(1-camPos)*lateralMovement*((speed factor [5,40]) + (speed factor [-5,-40]))";
+				volume="engineOn * (1-camPos) * (gmeterZ factor[1.0, 2.5])";
 			};
-			class GStress
+			class SpeedStress
 			{
 				sound[]=
 				{
-					"A3\Sounds_F\vehicles\noises\vehicle_stress2b",
-					0.316228,
+					"A3\Sounds_F\vehicles\noises\vehicle_stress3",
+					0.50118703,
 					1,
 					50
 				};
 				frequency=1;
-				volume="engineOn * (1-camPos) * ((gmeterZ factor[1.5, 2.5]) + (gmeterZ factor[0.5, -0.5]))";
+				volume="(1-camPos)*(speed factor[60,80])";
 			};
 		};
 		class SoundsExt
@@ -16574,7 +16410,7 @@ class cfgVehicles
 		scopeArsenal=2;
 		side=1;
 		author = "Muttie The Modder";
-		displayName = "101st LAAT VTOL Refit";
+		displayName = "101st LAAT/I VTOL Refit";
 		faction="Republic_101st";	
 	};
 
