@@ -190,7 +190,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 20;
-			class CowsSlot{};
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
+			};
 			class PointerSlot: PointerSlot
 			{
 				compatibleItems[] = {};
@@ -232,9 +235,9 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 110;
-			class CowsSlot: CowsSlot
+				class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"101st_Aux_Pistol_A","101st_Aux_Pistol_B"};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -278,9 +281,9 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 20;
-			class CowsSlot
+			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -314,7 +317,7 @@ class CfgWeapons
 			mass = 110;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
