@@ -285,7 +285,7 @@ class CfgWeapons
 			soundContinuous=0;
 			soundBurst=0;
 			multiplier=3;
-			reloadTime=0.033333302;
+			reloadTime=0.1;
 			dispersion=0.0115;
 			aiRateOfFire=1;
 			aiRateOfFireDistance=10;
