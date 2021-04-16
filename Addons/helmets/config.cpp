@@ -1049,7 +1049,7 @@ class CfgWeapons
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
-	class 101st_Remnant_Helmet: 101st_Dagger_Helmet
+	class 101st_Remnant_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -1061,7 +1061,6 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Remnant_Helm_CO.paa"
 		};
-		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
 	class 101st_Itachi_Helmet: 101st_Dagger_Helmet
 	{
@@ -2651,19 +2650,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Hog_Helm_CO.paa"
 		};
 	};
-	class 101st_Pizza_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Pizza)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Pizza_Helm_CO.paa"
-		};
-	};
 	class 101st_Whale_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2959,7 +2945,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Krusader_Helmet_CO.paa"
 		};
 	};
-	/*class 101st_Ronin_Helmet: 101st_Dagger_Helmet
+	class 101st_Ronin_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -2972,7 +2958,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Ronin_Helm_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
-	};*/
+	};
 	class 101st_Synn_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -3079,7 +3065,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Warlord_Helm_CO.paa"
 		};
 	};
-	class 101st_Zera_Helmet: JLTS_CloneHelmetP2
+	class 101st_Zera_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -3091,6 +3077,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Zera_Helm_CO.paa"
 		};
+		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
 	class 101st_Alfredo_Helmet: JLTS_CloneHelmetP2
 	{

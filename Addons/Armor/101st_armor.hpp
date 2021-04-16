@@ -76,7 +76,7 @@ class 101st_Suspender_Grey : V_RebreatherB
 	};
 };
 
-class 101st_Custom_Sgt_Pauldron: V_RebreatherB
+class 101st_Custom_Sgt_Pauldron: JLTS_CloneVestReconOfficer
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -104,7 +104,7 @@ class 101st_Custom_Sgt_Pauldron: V_RebreatherB
 		vestType = "Rebreather";
 	};
 };
-class 101st_Custom_SSgt_Pauldron: V_RebreatherB
+class 101st_Custom_SSgt_Pauldron: JLTS_CloneVestReconOfficer
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -173,7 +173,7 @@ class 101st_Custom_RTOCP_Pauldron: V_RebreatherB
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 	};
 };
-class 101st_Custom_MedCS_Pauldron: V_RebreatherB
+class 101st_Custom_MedCS_Pauldron: JLTS_CloneVestReconOfficer
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -201,7 +201,7 @@ class 101st_Custom_MedCS_Pauldron: V_RebreatherB
 		vestType = "Rebreather";
 	};
 };
-class 101st_Custom_RTOCS_Pauldron: V_RebreatherB
+class 101st_Custom_RTOCS_Pauldron: JLTS_CloneVestReconOfficer
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -273,7 +273,7 @@ class 101st_Custom_SrCpl_Pauldron: V_RebreatherB
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 	};
 };
-class 101st_Custom_Airborne_Vest: V_RebreatherB
+class 101st_Custom_Airborne_Vest: JLTS_CloneVestAirborne
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -301,7 +301,7 @@ class 101st_Custom_Airborne_Vest: V_RebreatherB
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
 	};
 };
-class 101st_Custom_Airborne_Medic_Vest: V_RebreatherB
+class 101st_Custom_Airborne_Medic_Vest: JLTS_CloneVestAirborne
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -329,7 +329,7 @@ class 101st_Custom_Airborne_Medic_Vest: V_RebreatherB
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
 	};
 };
-class 101st_Custom_Airborne_Base_Vest: V_RebreatherB
+class 101st_Custom_Airborne_Base_Vest: JLTS_CloneVestAirborne
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -357,7 +357,7 @@ class 101st_Custom_Airborne_Base_Vest: V_RebreatherB
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
 	};
 };
-class 101st_Custom_Airborne_RTO_Vest: V_RebreatherB
+class 101st_Custom_Airborne_RTO_Vest: JLTS_CloneVestAirborne
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
@@ -539,7 +539,7 @@ class 101st_Custom_2LT_Pauldron: V_RebreatherB
 		hiddenSelections[] = {"camo1"};
 	};
 };
-class 101st_AirborneNCO_Pauldron: V_RebreatherB
+class 101st_AirborneNCO_Pauldron: JLTS_CloneVestAirborneNCO
 {
 	author="Dutch";
 	dlc = "101st_Aux_Mod";
