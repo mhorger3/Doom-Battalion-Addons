@@ -1268,8 +1268,8 @@ class CfgVehicles
 
 class CfgAmmo
 {
-		class BulletBase;
-		class 101st_Wrist_Rocket_Ammo : BulletBase {
+		class JLTS_bullet_carbine_red;
+		class 101st_Wrist_Rocket_Ammo : JLTS_bullet_carbine_red {
 			cost = 200;
 			caliber = 3;
 			dangerRadiusBulletClose = 16;
@@ -1300,6 +1300,7 @@ class CfgAmmo
 			soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,2000};
 			soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,2000};
 			soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,2000};
+			SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet","RocketsHeavy_Tail_SoundSet","Explosion_Debris_SoundSet"};
 			thrust = 210;
 			thrustTime = 1.5;
 			timeToLive = 6;
@@ -1309,7 +1310,7 @@ class CfgAmmo
 			tracerScale = 1;
 			typicalSpeed = 30;
 		};
-		class 101st_B2_Ammo : BulletBase {
+		class 101st_B2_Ammo : JLTS_bullet_carbine_red {
 			cost = 1;
 			caliber = 3;
 			dangerRadiusBulletClose = 16;
@@ -1321,8 +1322,8 @@ class CfgAmmo
 			explosionEffects = "3AS_ImpactPlasma";
 			effectsSmoke = "SmokeShellWhite";
 			effectsFire = "CannonFire";
-			indirectHit = 5;
-			indirectHitRange = 3;
+			indirectHit = 0.1;
+			indirectHitRange = 0.2;
 			model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 			muzzleEffect = "";
 			simulation = "shotBullet";
