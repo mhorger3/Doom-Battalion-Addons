@@ -9,15 +9,49 @@ class CfgPatches
 			"DBA_Weapons"
 		};
 		requiredVersion=0.1;
-		units[]={};
+		units[]={
+			"DBA_VH_Ramer",
+			"DBA_VH_DC15C",
+		};
 		weapons[]=
 		{
 			"101st_RAMER_Refit",
-			"101st_DC15C"
+			"101st_15C_Refit"
 		};
 	};
 };
-class cfgWeapons
+class CfgVehicles {
+	class Weapon_Base_F;
+	class DBA_VH_Ramer: Weapon_Base_F
+	{
+		author = "Dutch";
+		displayName = "$STR_DBA_RAMER";
+		scope = 2;
+		class TransportWeapons
+		{
+			class 101st_RAMER_Refit
+			{
+				count = 1;
+				weapon = "101st_RAMER_Refit";
+			};
+		};
+	};
+	class DBA_VH_DC15C: Weapon_Base_F
+	{
+		author = "Dutch";
+		displayName = "$STR_DBA_DC15C";
+		scope = 2;
+		class TransportWeapons
+		{
+			class 101st_15C_Refit
+			{
+				count = 1;
+				weapon = "101st_15C_Refit";
+			};
+		};
+	};
+};
+class CfgWeapons
 {
 	class arifle_MX_Base_F;
 	class JLTS_EPL2: arifle_MX_Base_F
@@ -26,6 +60,8 @@ class cfgWeapons
 	};
 	class 101st_RAMER_Refit: JLTS_EPL2
 	{
+		scope = 2;
+		scopeArsenal = 2;
 		baseWeapon="101st_RAMER_Refit";
 		displayname="101st T21 (FM)";
 		ACE_Overheating_mrbs=300000;
@@ -60,9 +96,11 @@ class cfgWeapons
 		};
 	};
 	class 3AS_DC15C_F;
-	class 101st_15C : 3AS_DC15C_F
+	class 101st_15C_Refit : 3AS_DC15C_F
 	{
 		displayname = "101st DC15C";
+		scope = 2;
+		scopeArsenal = 2;
 		magazines[]=
 		{
 			"DBA_DC15a_Med_x30_mag",

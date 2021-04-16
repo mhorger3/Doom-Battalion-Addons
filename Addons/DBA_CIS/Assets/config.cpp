@@ -194,9 +194,11 @@ class CfgWeapons
 				};
 				class CowsSlot: CowsSlot
 				{
+					compatibleItems[] = {};
 				};
 				class UnderBarrelSlot: UnderBarrelSlot
 				{
+					compatibleItems[] = {};
 				};
 			};
 		};
@@ -318,9 +320,11 @@ class CfgWeapons
 			};
 			class CowsSlot: CowsSlot
 			{
+				compatibleItems[] = {};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
+				compatibleItems[] = {};
 			};
 		};
 	};
@@ -502,8 +506,7 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		respawnMagazines[]=
 		{
@@ -524,8 +527,7 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		items[]={};
 		respawnItems[]={};
@@ -778,8 +780,7 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		respawnMagazines[]=
 		{
@@ -800,8 +801,7 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		items[]={};
 		respawnItems[]={};
@@ -1023,61 +1023,53 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"JLTS_E5",
-			"JLTS_RG4D",
+			"DBA_B2_Weapon",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"JLTS_E5",
-			"JLTS_RG4D",
+			"DBA_B2_Weapon",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
 			"SmokeShell",
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		respawnMagazines[]=
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
 			"SmokeShell",
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
 		};
 		items[]={};
 		respawnItems[]={};
@@ -1286,9 +1278,13 @@ class CfgAmmo
 			explosionAngle = 60;
 			explosive = 0.8;
 			hit = 100;
-			explosionEffects = "GrenadeExplosion";
-			effectsSmoke = "SmokeShellWhite";
+			effectFlare = "FlareShell";
 			effectsFire = "CannonFire";
+			explosionDir = "explosionDir";
+			explosionEffects = "ATMissileExplosion";
+			explosionEffectsDir = "explosionDir";
+			explosionPos = "explosionPos";
+			explosionType = "explosive";
 			indirectHit = 5;
 			indirectHitRange = 3;
 			model = "\A3\Weapons_F\Ammo\ugl_slug";
@@ -1300,6 +1296,10 @@ class CfgAmmo
 			soundSetSonicCrack[] = {"bulletSonicCrack_SoundSet","bulletSonicCrackTail_SoundSet"};
 			supersonicCrackFar[] = {"A3\sounds_f\arsenal\sfx\supersonic_crack\scrack_middle",3.16228,1,500};
 			supersonicCrackNear[] = {"A3\sounds_f\arsenal\sfx\supersonic_crack\scrack_close",3.16228,1,500};
+			soundHit[] = {"",100,1};
+			soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,2000};
+			soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,2000};
+			soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,2000};
 			thrust = 210;
 			thrustTime = 1.5;
 			timeToLive = 6;
@@ -1316,9 +1316,9 @@ class CfgAmmo
 			dangerRadiusHit = 40;
 			effectfly = "JLTS_plasma_red";
 			explosionAngle = 60;
-			explosive = 0.8;
+			explosive = 0;
 			hit = 20;
-			explosionEffects = "GrenadeExplosion";
+			explosionEffects = "3AS_ImpactPlasma";
 			effectsSmoke = "SmokeShellWhite";
 			effectsFire = "CannonFire";
 			indirectHit = 5;

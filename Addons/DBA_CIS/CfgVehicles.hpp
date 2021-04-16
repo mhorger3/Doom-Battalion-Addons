@@ -495,7 +495,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "ux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Base_F.jpg";
         genericNames = "JLTS_DroidsB1";
-        model = "\SWOP_Droids\B2.p3d";
+        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1459,12 +1459,55 @@ class CfgVehicles {
 
         uniformClass = "DBA_B2";
         
-        weapons[] = { "`_b2gun" };
-        respawnWeapons[] = { "SWOP_b2gun" };
-
-        magazines[] = { "SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag" };
-        respawnMagazines[] = { "SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag" };
-
+        weapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		respawnMagazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
         items[] = {};
         respawnItems[] = {};
 
@@ -1497,11 +1540,55 @@ class CfgVehicles {
 
         uniformClass = "DBA_B2_Super";
         
-        weapons[] = { "SWOP_b2gun" };
-        respawnWeapons[] = { "SWOP_b2gun" };
-
-        magazines[] = { "SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2rocket_Mag","SWOP_b2rocket_Mag","SWOP_b2rocket_Mag" };
-        respawnMagazines[] = { "SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2gun_Mag","SWOP_b2rocket_Mag","SWOP_b2rocket_Mag","SWOP_b2rocket_Mag" };
+        weapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		respawnMagazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
 
         items[] = {};
         respawnItems[] = {};
