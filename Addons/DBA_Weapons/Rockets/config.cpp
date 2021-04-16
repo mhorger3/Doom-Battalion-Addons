@@ -252,7 +252,7 @@ class CfgWeapons
 				discreteInitIndex = 0;
 			};
 		};
-		modelOptics = "Scope\4x_xm8.p3d";
+		modelOptics = "101st_Aux_Mod\Addons\Holosights\data\DBA_Pistol_Holo_A.p3d";
 		optics = 1;
 		opticsDisablePeripherialVision = 1;
 		opticsFlare = 1;

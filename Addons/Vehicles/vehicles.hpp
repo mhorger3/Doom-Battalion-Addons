@@ -140,16 +140,16 @@
 			{
 				weapons[]=
 				{
-					"SCI_autocannon_Z20_HBB",
+					"212th_autocannon_Z20_HBB",
 					"missiles_DAGR",
 					"missiles_titan"
 				};
 				magazines[]=
 				{
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
 					"12Rnd_PG_missiles",
 					"12Rnd_PG_missiles",
 					"2Rnd_GAT_missiles",
@@ -279,16 +279,16 @@
 			{
 				weapons[]=
 				{
-					"SCI_autocannon_Z20_HBB",
+					"212th_autocannon_Z20_HBB",
 					"missiles_DAGR",
 					"missiles_titan"
 				};
 				magazines[]=
 				{
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
-					"SCI_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
+					"212th_500Rnd_Z20_HBB",
 					"12Rnd_PG_missiles",
 					"12Rnd_PG_missiles",
 					"2Rnd_GAT_missiles",
@@ -406,8 +406,8 @@
 		};	
 	};
 
-	class RD501_bantha_501st_MkI;
-	class 101st_Doom_Bantha : RD501_bantha_501st_MkI
+	class 212th_B_APC_Wheeled_01_cannon_F;
+	class 101st_Doom_Bantha : 212th_B_APC_Wheeled_01_cannon_F
 	{
 		ace_cargo_space = 400;
 		scope=2;
@@ -531,12 +531,12 @@
 			{
 				weapons[]=
 				{
-					"SCI_autocannon_Z20_HBB"
+					"212th_autocannon_Z20_HBB"
 				};
 				magazines[]=
 				{
-					"SCI_500Rnd_Z20_HBB", 
-					"SCI_500Rnd_Z20_HBB"
+					"212th_500Rnd_Z20_HBB", 
+					"212th_500Rnd_Z20_HBB"
 				};
 			};
 			class CommanderTurret : CommanderTurret
@@ -666,12 +666,12 @@
 			{
 				weapons[]=
 				{
-					"SCI_autocannon_Z20_HBB"
+					"212th_autocannon_Z20_HBB"
 				};
 				magazines[]=
 				{
-					"SCI_500Rnd_Z20_HBB", 
-					"SCI_500Rnd_Z20_HBB"
+					"212th_500Rnd_Z20_HBB", 
+					"212th_500Rnd_Z20_HBB"
 				};
 			};
 			class CommanderTurret : CommanderTurret
@@ -989,15 +989,15 @@
 					{
 						weapons[]=
 						{
-							"SCI_autocannon_Z20_HBB",
+							"212th_autocannon_Z20_HBB",
 							"CMFlareLauncher",
 							"SmokeLauncher",
 							"Laserdesignator_vehicle"
 						};
 						magazines[]=
 						{
-							"SCI_500Rnd_Z20_HBB",
-							"SCI_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
 							"300Rnd_CMFlare_Chaff_Magazine",
 							"SmokeLauncherMag",
 							"SmokeLauncherMag",
@@ -1161,7 +1161,7 @@
 					{
 						weapons[]=
 						{
-							"SCI_autocannon_Z20_HBB",
+							"212th_autocannon_Z20_HBB",
 							"CMFlareLauncher",
 							"SmokeLauncher",
 							"Laserdesignator_vehicle",
@@ -1169,8 +1169,8 @@
 						};
 						magazines[]=
 						{
-							"SCI_500Rnd_Z20_HBB",
-							"SCI_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
 							"300Rnd_CMFlare_Chaff_Magazine",
 							"SmokeLauncherMag",
 							"SmokeLauncherMag",
@@ -1319,15 +1319,15 @@
 					{
 						weapons[]=
 						{
-							"SCI_autocannon_Z20_HBB",
+							"212th_autocannon_Z20_HBB",
 							"CMFlareLauncher",
 							"SmokeLauncher",
 							"Laserdesignator_vehicle"
 						};
 						magazines[]=
 						{
-							"SCI_500Rnd_Z20_HBB",
-							"SCI_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
+							"212th_500Rnd_Z20_HBB",
 							"300Rnd_CMFlare_Chaff_Magazine",
 							"SmokeLauncherMag",
 							"SmokeLauncherMag",

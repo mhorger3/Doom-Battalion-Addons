@@ -1018,7 +1018,7 @@ class CfgMagazines
 	//SWOP STUFF BELOW
 	class 101st_flash_GL_x3_mag : CA_Magazine
 	{
-		ammo = "ACE_G_M84";
+		ammo = "DBA_GL_Flash_ammo";
 		author = "Dutch";
 		count = 3;
 		descriptionShort = "3Rnd Breach Flash DC-15A Grenade";
@@ -1476,14 +1476,15 @@ class CfgAmmo
 		proximityExplosionDistance = 5;
 		CraterEffects = "ExploAmmoCrater";
 		effectFlare = "FlareShell";
-		effectFly = "";
+		effectFly = "AmmoClassic";
 		effectsFire = "CannonFire";
 		effectsMissile = "EmptyEffect";
 		effectsMissileInit = "";
-		effectsSmoke = "";
+		effectsSmoke = "SmokeShellWhite";
 		explosionAngle = 60;
-		explosionEffects = "ImpactMetalSabotSmall";
+		explosionEffects = "3AS_ImpactPlasma";
 		explosionEffectsDir = "explosionDir";
+		
 		explosionSoundEffect="";
 		muzzleEffect="";
 		soundHit[]=
@@ -1986,6 +1987,17 @@ class CfgAmmo
 		lightcolor[] = {1,0.37,0};
 		effectfly = "JLTS_plasma_orange";
 		fuseDistance = 3;
+	};
+	class DBA_GL_Flash_ammo: G_40mm_HE
+	{
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0.2;
+		timeToLive = 6;
+		model = "\z\ace\addons\grenades\models\ACE_m84_thrown.p3d";
+		effectsSmoke = "ACE_M84FlashbangEffect";
+		fuseDistance = 0;
+		explosive = "1E-7";
 	};
 	class SmokeClusterShot: GrenadeHand
 	{
