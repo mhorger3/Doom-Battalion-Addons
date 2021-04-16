@@ -231,7 +231,7 @@ class CfgWeapons
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 500;
 		};
-		class close: manual
+		class close: Single
 		{
 			showToPlayer = 0;
 			aiRateOfFire = 0.5;
