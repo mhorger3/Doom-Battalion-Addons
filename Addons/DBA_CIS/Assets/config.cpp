@@ -77,6 +77,7 @@ class CfgWeapons
 		ace_overpressure_range = 0;
 		author = "Dutch";
 		scope = 2;
+		scopeArsenal = 2;
 		model = "101st_Aux_Mod\Addons\DBA_CIS\Assets\b2gun.p3d";
 		muzzles[] = {"this","Secondary"};
 		magazines[] = {"101st_B2_Mag"};
@@ -122,6 +123,7 @@ class CfgWeapons
 			ace_overpressure_range = 0;
 			author = "Dutch";
 			scope = 2;
+			scopeArsenal = 2;
 			model = "101st_Aux_Mod\Addons\DBA_CIS\Assets\b2gun.p3d";
 			muzzles[] = {"this"};
 			magazines[] = {"101st_B2_Rocket"};
