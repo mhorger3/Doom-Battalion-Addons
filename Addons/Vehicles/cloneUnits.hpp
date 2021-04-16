@@ -5714,6 +5714,210 @@
 		};
 		
 	};
+	class 101st_Gustavo_212th: 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Gustavo (JLTS)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		uniformClass="101st_Vin_212th";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Legs_CO.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Gustavo_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Gustavo_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_medic";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		
+	};
+	class 101st_Ronin_212th: 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Ronin (JLTS)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		uniformClass="101st_Ronin_212th";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Ronin_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Ronin_Legs_CO.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Ronin_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Ronin_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_medic";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		
+	};
 	class 101st_KommandoV1_unit: RD501_opfor_unit_B1_spec_op
 	{
 		dlc = "101st_Aux_Mod";

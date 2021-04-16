@@ -190,7 +190,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 20;
-			class CowsSlot{};
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
+			};
 			class PointerSlot: PointerSlot
 			{
 				compatibleItems[] = {};
@@ -232,9 +235,9 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 110;
-			class CowsSlot: CowsSlot
+				class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"101st_Aux_Pistol_A","101st_Aux_Pistol_B"};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -247,6 +250,8 @@ class CfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[] = {"JLTS_riot_shield_attachment","JLTS_riot_shield_212_attachment","JLTS_riot_shield_501_attachment","JLTS_riot_shield_101_attachment","JLTS_riot_shield_CG_attachment","JLTS_riot_shield_GD_attachment","JLTS_riot_shield_droid_attachment"};
+					access = 1;
+				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
 	};
@@ -276,9 +281,9 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 20;
-			class CowsSlot
+			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -312,7 +317,7 @@ class CfgWeapons
 			mass = 110;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -325,6 +330,8 @@ class CfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[] = {"JLTS_riot_shield_attachment","JLTS_riot_shield_212_attachment","JLTS_riot_shield_501_attachment","JLTS_riot_shield_101_attachment","JLTS_riot_shield_CG_attachment","JLTS_riot_shield_GD_attachment","JLTS_riot_shield_droid_attachment"};
+					access = 1;
+				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
 	};
@@ -494,6 +501,8 @@ class CfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[] = {"JLTS_riot_shield_attachment","JLTS_riot_shield_212_attachment","JLTS_riot_shield_501_attachment","JLTS_riot_shield_101_attachment","JLTS_riot_shield_CG_attachment","JLTS_riot_shield_GD_attachment","JLTS_riot_shield_droid_attachment"};
+					access = 1;
+				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
 	};
@@ -624,6 +633,8 @@ class CfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[] = {"JLTS_riot_shield_attachment","JLTS_riot_shield_212_attachment","JLTS_riot_shield_501_attachment","JLTS_riot_shield_101_attachment","JLTS_riot_shield_CG_attachment","JLTS_riot_shield_GD_attachment","JLTS_riot_shield_droid_attachment"};
+					access = 1;
+				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
 	};
@@ -700,6 +711,7 @@ class CfgWeapons
 		displayName = "[101st] Dual Westar-35 'Hammerhead'";
 		baseweapon="DBA_Dual_Westar35_Mod_0";
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\DualWestar35m0.p3d";
+		weaponInfoType="RscWeaponZeroing";
 		reloadAction="3AS_GestureReloadDualDC17S";
 		handAnim[]=
 		{

@@ -250,9 +250,10 @@ class CfgWeapons
 				opticsDisablePeripherialVision = 1;
 				discretefov[] = {0.125,"0.125/4","0.125/8"};
 				discreteInitIndex = 0;
+				modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 			};
 		};
-		modelOptics = "Scope\4x_xm8.p3d";
+		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 		optics = 1;
 		opticsDisablePeripherialVision = 1;
 		opticsFlare = 1;

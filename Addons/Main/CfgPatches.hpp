@@ -21,8 +21,11 @@
 		units[] = 
 		{
 			"101st_Kel_212th",
+			"101st_Gustavo_212th",
+			"101st_212_Ronin",
 			"101st_Hambino_212th",
 			"101st_Kai_212th",
+			"101st_Ronin_212th",
 			"101st_BabyYoda",
 			"101st_Rancor",
 			"101st_ARF_Night_MedBackpack_LR",
@@ -164,6 +167,10 @@
 			"101st_Flag_White",
 			"101st_Flag_Jerec",	
 			"101st_Flag_Logo",
+			"101st_Flag_Seatie",
+			"101st_Flag_Republic",
+			"101st_Flag_CIS2",
+			"101st_Flag_CIS1",
 			"101st_Flag_Formal",
 			"101st_Flag_Senate",			
 			"101st_Landing_Pod", 
