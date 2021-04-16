@@ -84,13 +84,22 @@ class 101st_Custom_Sgt_Pauldron: V_RebreatherB
 	scopeArsenal=2;
 	displayName="101st Sgt Pauldron (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
 	hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Sgt_Pauldron_CO.paa"};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
 		uniformType="Default";
 		mass=80;
-		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		vestType = "Rebreather";
 	};
@@ -105,6 +114,11 @@ class 101st_Custom_SSgt_Pauldron: V_RebreatherB
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 	hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_SSGT_Pauldron_CO.paa"};
 	ballisticsComputer = 0;
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
@@ -172,6 +186,11 @@ class 101st_Custom_MedCS_Pauldron: V_RebreatherB
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Medical_Kama_CP_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Medical_Pauldron_CP_CO.paa"
 	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
@@ -194,6 +213,11 @@ class 101st_Custom_RTOCS_Pauldron: V_RebreatherB
 	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_RTO_Kama_CP_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_RTO_Pauldron_CP_CO.paa"
+	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
 	};
 	class ItemInfo: VestItem
 	{
@@ -262,6 +286,11 @@ class 101st_Custom_Airborne_Vest: V_RebreatherB
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Kama_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_CO.paa"
 	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
@@ -284,6 +313,11 @@ class 101st_Custom_Airborne_Medic_Vest: V_RebreatherB
 	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Medic_Kama_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_Medical_CO.paa"
+	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
 	};
 	class ItemInfo: VestItem
 	{
@@ -308,6 +342,11 @@ class 101st_Custom_Airborne_Base_Vest: V_RebreatherB
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Base_Kama_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_Base_CO.paa"
 	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
@@ -330,6 +369,11 @@ class 101st_Custom_Airborne_RTO_Vest: V_RebreatherB
 	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_RTO_Kama_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_RTO_CO.paa"
+	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
 	};
 	class ItemInfo: VestItem
 	{
@@ -507,6 +551,11 @@ class 101st_AirborneNCO_Pauldron: V_RebreatherB
 	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Kama_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_CO.paa"
+	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
 	};
 	class ItemInfo: VestItem
 	{
@@ -2116,6 +2165,37 @@ class 101st_212_Vin: Uniform_Base
 	{
 		uniformModel="-";
 		uniformClass="101st_Vin_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Gustavo: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Gustavo (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Gustavo_212th";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=

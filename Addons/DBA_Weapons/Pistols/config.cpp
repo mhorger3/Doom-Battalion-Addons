@@ -700,6 +700,7 @@ class CfgWeapons
 		displayName = "[101st] Dual Westar-35 'Hammerhead'";
 		baseweapon="DBA_Dual_Westar35_Mod_0";
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\DualWestar35m0.p3d";
+		weaponInfoType="RscWeaponZeroing";
 		reloadAction="3AS_GestureReloadDualDC17S";
 		handAnim[]=
 		{

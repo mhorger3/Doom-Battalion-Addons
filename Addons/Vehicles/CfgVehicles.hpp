@@ -374,6 +374,50 @@ class CfgVehicles
 			init = "(_this select 0) setFlagTexture ""\101st_Aux_Mod\Addons\textures\101st\flags\FlagGreenOnGreen.paa""";
 		};
 	};
+	class 101st_Flag_CIS1 : ACE_Flag_Black
+	{
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayname="101st CIS Flag 1";
+		editorSubcategory = "101st_Flags";
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture ""\101st_Aux_Mod\Addons\textures\101st\flags\CIS1.paa""";
+		};
+	};
+	class 101st_Flag_CIS2 : ACE_Flag_Black
+	{
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayname="101st CIS Flag 2";
+		editorSubcategory = "101st_Flags";
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture ""\101st_Aux_Mod\Addons\textures\101st\flags\CIS2.paa""";
+		};
+	};
+	class 101st_Flag_Republic : ACE_Flag_Black
+	{
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayname="101st Republic Flag";
+		editorSubcategory = "101st_Flags";
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture ""\101st_Aux_Mod\Addons\textures\101st\flags\Republic.paa""";
+		};
+	};
+	class 101st_Flag_Seatie : ACE_Flag_Black
+	{
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayname="101st Seatie Flag";
+		editorSubcategory = "101st_Flags";
+		class EventHandlers 
+		{
+			init = "(_this select 0) setFlagTexture ""\101st_Aux_Mod\Addons\textures\101st\flags\Seatie.paa""";
+		};
+	};
 	
 	class 101st_Flag_Black : ACE_Flag_Black
 	{

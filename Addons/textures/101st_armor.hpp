@@ -2250,6 +2250,37 @@ class 101st_212_Vin: Uniform_Base
 		mass=40;
 	};
 };
+class 101st_212_Gustavo: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Gustavo (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Gustavo_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Gustavo_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
 class 101st_212_Dutch: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
