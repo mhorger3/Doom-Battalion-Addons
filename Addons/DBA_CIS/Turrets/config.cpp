@@ -392,7 +392,7 @@ class CfgAmmo
 	class 101st_Sniper_Ammo_Red;
 	class 101st_PlasmaBase_Turret: 101st_Sniper_Ammo_Red
 	{
-		hit=45;
-		caliber=10;
+		hit=30;
+		caliber=07;
 	};
 };
