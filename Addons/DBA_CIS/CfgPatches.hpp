@@ -66,6 +66,7 @@ class CfgPatches {
             "O_DBA_CIS_Hover_Droid_MKII_F",
             "O_DBA_CIS_HMP_Transport_F",
             "O_DBA_CIS_HMP_Gunship_F",
+            "CIS_Marid",
             "O_DBA_CIS_GAT_F",
             "O_DBA_CIS_GAT_Olive_F",
             "O_DBA_CIS_GAT_Tan_F",

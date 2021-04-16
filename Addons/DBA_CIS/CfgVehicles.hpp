@@ -5,6 +5,7 @@
 class CfgVehicles {
     // Base class definitions
     class O_Soldier_F;
+    class Car_F;
     class RD501_opfor_unit_IG_88;
     class RD501_drone_cis_Hover_Droid;
     class RD501_HMP_transport;
@@ -791,7 +792,6 @@ class CfgVehicles {
         respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
 
         backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
-
     };
 
     class O_DBA_CIS_OOM_Command_Droid_F : O_DBA_CIS_B1_Base_F
@@ -826,7 +826,6 @@ class CfgVehicles {
         respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
 
         backpack = "O_DBA_CIS_B1_Antenna";
-
     };
 
     class O_DBA_CIS_B1_Crew_Droid_F : O_DBA_CIS_B1_Base_F
@@ -860,7 +859,6 @@ class CfgVehicles {
         respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
 
         backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
-
     };
 
     class O_DBA_CIS_B1_Heavy_Droid_F : O_DBA_CIS_B1_Base_F
@@ -890,7 +888,6 @@ class CfgVehicles {
         respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
 
         backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
-
     };
 
     class O_DBA_CIS_OOM_Marine_Droid_F : O_DBA_CIS_B1_Base_F
@@ -1726,6 +1723,82 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+	};
+	class Wheeled_APC_F : Car_F
+	{
+		class NewTurret;
+		class Turrets
+		{
+			class MainTurret : NewTurret
+			{
+				class ViewOptics;
+				class ViewGunner;
+			};
+		};
+		class CommanderOptics;
+	};
+	class APC_Wheeled_02_base_F : Wheeled_APC_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+			};
+			class CommanderOptics : CommanderOptics
+			{
+			};
+		};
+	};
+	class APC_Wheeled_02_base_v2_F : APC_Wheeled_02_base_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+			};
+			class CommanderOptics : CommanderOptics
+			{
+			};
+		};
+	};
+	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_v2_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+			};
+			class CommanderOptics : CommanderOptics
+			{
+			};
+		};
+	};
+	class CIS_Marid : O_APC_Wheeled_02_rcws_v2_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CIS Marid";
+		editorSubcategory = "O_DBA_CIS_Tanks"
+		vehicleClass = "O_DBA_CIS_Tanks";
+		side = 0;
+		faction = "O_DBA_CIS_F";
+		crew = "O_DBA_CIS_B1_Crew_Droid_F"
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[]= 
+				{
+					"3AS_GATRepeater",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"3AS_500Rnd_GAT_redPlasma",
+					"SmokeLauncherMag"
+				};
+			};
+		};
 	};
     class O_DBA_CIS_GAT_F : 3AS_GAT
     {
