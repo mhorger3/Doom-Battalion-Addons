@@ -231,6 +231,8 @@ class CfgWeapons
 		baseWeapon = "DBA_DC15S_Secondary_Shield";
 		scope = 1;
 		JLTS_isShielded = 1;
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\DC15S\data\DC15S_CO.paa", "\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
 		JLTS_baseWeapon = "DBA_DC15S_Secondary_Base";
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\DC15S\DC15S_Shielded.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC17SA\anims\DC17SA_shielded_handanim.rtm"};
