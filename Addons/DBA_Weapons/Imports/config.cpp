@@ -4,10 +4,6 @@ class CfgPatches
 	{
 		author="Muttie the Modder";
 		addonRootClass="DBA_Weapons";
-		requiredAddons[]=
-		{
-			"DBA_Weapons"
-		};
 		requiredVersion=0.1;
 		units[]={
 			"DBA_VH_Ramer",
