@@ -389,8 +389,8 @@ class CfgMagazines
 };
 class CfgAmmo
 {
-	class 3AS_PlasmaBase;
-	class 101st_PlasmaBase_Turret: 3AS_PlasmaBase
+	class 101st_Sniper_Ammo_Red;
+	class 101st_PlasmaBase_Turret: 101st_Sniper_Ammo_Red
 	{
 		hit=45;
 		caliber=10;
