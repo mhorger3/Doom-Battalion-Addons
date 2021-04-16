@@ -1592,6 +1592,7 @@ class CfgVehicles {
 
         items[] = {};
         respawnItems[] = {};
+		backpack = "O_DBA_CIS_B1_Backpack_Rocket";
     };
 
     class O_DBA_CIS_BX_Commando_Droid_F : O_DBA_CIS_BX_Base_F
