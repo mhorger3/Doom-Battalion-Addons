@@ -32,7 +32,7 @@ class CfgPatches
 			"JLTS_IG88",
 			"JLTS_B2",
 			"JLTS_Magna",
-			"DBA_B2"
+			"DBA_B2_Weapon"
 		};
 	};
 
@@ -64,7 +64,7 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class DBA_B2: Rifle_Long_Base_F
+	class DBA_B2_Weapon: Rifle_Long_Base_F
 	{
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -1265,10 +1265,10 @@ class CfgVehicles
 		scope = 2;
 		class TransportWeapons
 		{
-			class DBA_B2
+			class DBA_B2_Weapon
 			{
 				count = 1;
-				weapon = "DBA_B2";
+				weapon = "DBA_B2_Weapon";
 			};
 		};
 	};
