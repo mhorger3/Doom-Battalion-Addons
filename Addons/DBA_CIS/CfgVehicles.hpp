@@ -1720,7 +1720,7 @@ class CfgVehicles {
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {""};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna_CO.paa"};
         linkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         respawnLinkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         

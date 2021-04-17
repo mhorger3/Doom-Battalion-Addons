@@ -25,14 +25,18 @@ class CfgPatches
 			"101st_IG88",
 			"101st_B2",
 			"101st_Magna",
-			"DBA_VH_B2"
+			"DBA_VH_B2",
+			"101st_B2_Red",
+			"101st_B2_Blue"
 		};
 		weapons[]=
 		{
 			"JLTS_IG88",
 			"JLTS_B2",
 			"JLTS_Magna",
-			"DBA_B2_Weapon"
+			"DBA_B2_Weapon",
+			"JLTS_B2_Blue",
+			"JLTS_B2_Red"
 		};
 	};
 
@@ -361,7 +365,7 @@ class CfgWeapons
 		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {""};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna_CO.paa"};
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -381,11 +385,51 @@ class CfgWeapons
 		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
 		hiddenSelections[] = {"camo1", "camo2", "camo3"};
-		hiddenSelectionsTextures[] = {"", "", ""};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
 			uniformClass="101st_B2";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
+	class JLTS_B2_Red: U_I_CombatUniform
+	{
+		JLTS_isDroid=1;
+		JLTS_hasEMPProtection=0;
+		JLTS_deathSounds="DeathDroid";
+		author="MrClock + Dutch";
+		scope=2;
+		displayName="101st B2 Red";
+		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Legs_CO.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="101st_B2_Red";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
+	class JLTS_B2_Blue: U_I_CombatUniform
+	{
+		JLTS_isDroid=1;
+		JLTS_hasEMPProtection=0;
+		JLTS_deathSounds="DeathDroid";
+		author="MrClock + Dutch";
+		scope=2;
+		displayName="101st B2 Blue";
+		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Legs_CO.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="101st_B2_Blue";
 			containerClass="Supply150";
 			mass=40;
 		};
@@ -722,7 +766,7 @@ class CfgVehicles
 		backpack="";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {""};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna_CO.paa"};
 		linkedItems[]=
 		{
 			"ItemMap",
@@ -1232,7 +1276,528 @@ class CfgVehicles
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
 	}
-
+	class 101st_B2_Blue: O_Soldier_F
+	{
+		author="MrClock + Dutch";
+		scope=2;
+		displayName="101st B2 Blue";
+		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
+		genericNames="101st_CIS_B2";
+		faction="O_DBA_CIS_F";
+		editorSubcategory="O_DBA_CIS_B1_Droids";
+		vehicleClass = "O_DBA_CIS_B1_Droids";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		uniformClass="JLTS_B2_Blue";
+		backpack="";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Legs_CO.paa"};
+		linkedItems[]=
+		{
+			"ItemMap",
+			"JLTS_droid_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ItemMap",
+			"JLTS_droid_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		respawnMagazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		items[]={};
+		respawnItems[]={};
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor=10;
+				material=-1;
+				name="face_hub";
+				passThrough=0.1;
+				radius=0.079999998;
+				explosionShielding=0.1;
+				minimalHit=0.0099999998;
+			};
+			class HitNeck: HitFace
+			{
+				armor=15;
+				material=-1;
+				name="neck";
+				passThrough=0.1;
+				radius=0.1;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+			};
+			class HitHead: HitNeck
+			{
+				armor=10;
+				material=-1;
+				name="head";
+				passThrough=0.1;
+				radius=0.2;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor=15;
+				material=-1;
+				name="pelvis";
+				passThrough=0.1;
+				radius=0.23999999;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor=15;
+				material=-1;
+				name="spine1";
+				passThrough=0.1;
+				radius=0.16;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor=20;
+				material=-1;
+				name="spine2";
+				passThrough=01;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor=25;
+				material=-1;
+				name="spine3";
+				passThrough=0.1;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=0.1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor=25;
+				material=-1;
+				name="arms";
+				passThrough=0.5;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor=20;
+				material=-1;
+				name="hands";
+				passThrough=0.5;
+				radius=0.1;
+				explosionShielding=1;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor=20;
+				material=-1;
+				name="legs";
+				passThrough=0.5;
+				radius=0.14;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=3;
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor=6;
+				material=-1;
+				name="hand_l";
+				passThrough=0.1;
+				radius=0.079999998;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor=6;
+				material=-1;
+				name="leg_l";
+				passThrough=0.1;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};
+		};
+		armor=12;
+		armorStructural=30;
+		explosionShielding=0.40000001;
+		minTotalDamageThreshold=0.001;
+		impactDamageMultiplier=0.5;
+	}
+	class 101st_B2_Red: O_Soldier_F
+	{
+		author="MrClock + Dutch";
+		scope=2;
+		displayName="101st B2 Red";
+		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
+		genericNames="101st_CIS_B2";
+		faction="O_DBA_CIS_F";
+		editorSubcategory="O_DBA_CIS_B1_Droids";
+		vehicleClass = "O_DBA_CIS_B1_Droids";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		uniformClass="JLTS_B2_Red";
+		backpack="";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Legs_CO.paa"};
+		linkedItems[]=
+		{
+			"ItemMap",
+			"JLTS_droid_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ItemMap",
+			"JLTS_droid_comlink",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		respawnMagazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		items[]={};
+		respawnItems[]={};
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor=10;
+				material=-1;
+				name="face_hub";
+				passThrough=0.1;
+				radius=0.079999998;
+				explosionShielding=0.1;
+				minimalHit=0.0099999998;
+			};
+			class HitNeck: HitFace
+			{
+				armor=15;
+				material=-1;
+				name="neck";
+				passThrough=0.1;
+				radius=0.1;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+			};
+			class HitHead: HitNeck
+			{
+				armor=10;
+				material=-1;
+				name="head";
+				passThrough=0.1;
+				radius=0.2;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor=15;
+				material=-1;
+				name="pelvis";
+				passThrough=0.1;
+				radius=0.23999999;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor=15;
+				material=-1;
+				name="spine1";
+				passThrough=0.1;
+				radius=0.16;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor=20;
+				material=-1;
+				name="spine2";
+				passThrough=01;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor=25;
+				material=-1;
+				name="spine3";
+				passThrough=0.1;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=0.1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor=25;
+				material=-1;
+				name="arms";
+				passThrough=0.5;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor=20;
+				material=-1;
+				name="hands";
+				passThrough=0.5;
+				radius=0.1;
+				explosionShielding=1;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor=20;
+				material=-1;
+				name="legs";
+				passThrough=0.5;
+				radius=0.14;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=3;
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor=6;
+				material=-1;
+				name="hand_l";
+				passThrough=0.1;
+				radius=0.079999998;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor=6;
+				material=-1;
+				name="leg_l";
+				passThrough=0.1;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};
+		};
+		armor=12;
+		armorStructural=30;
+		explosionShielding=0.40000001;
+		minTotalDamageThreshold=0.001;
+		impactDamageMultiplier=0.5;
+	}
 	class Weapon_Base_F;
 	class DBA_VH_B2: Weapon_Base_F
 	{
