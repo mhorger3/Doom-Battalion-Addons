@@ -128,7 +128,6 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="101st BARC Helmet";
-		model = "\MRC\JLTS\characters\CloneArmor2\CloneHelmetBARC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\CloneHelmetBARC_ui_ca.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[]=
@@ -1649,6 +1648,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Edge_Helm_CO.paa"
+		};
+	};
+	class 101st_Euget_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Euget)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Euget_Helmet_CO.paa"
 		};
 	};
 	class 101st_Grif_Helmet: JLTS_CloneHelmetP2

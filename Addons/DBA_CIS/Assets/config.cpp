@@ -340,8 +340,8 @@ class CfgWeapons
 		displayName="101st IG88";
 		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88.p3d";
-		hiddenSelections[] = {"head", "body", "arms"};
-		hiddenSelectionsTextures[] = {"", "", ""};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"};
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -360,8 +360,8 @@ class CfgWeapons
 		displayName="101st Magna";
 		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
-		hiddenSelections[] = {"head", "body", "arms"};
-		hiddenSelectionsTextures[] = {"", "", ""};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {""};
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -380,7 +380,7 @@ class CfgWeapons
 		displayName="101st B2";
 		picture="\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
-		hiddenSelections[] = {"head", "body", "arms"};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[] = {"", "", ""};
 		class ItemInfo: UniformItem
 		{
@@ -437,12 +437,13 @@ class CfgVehicles
 	{
 		author="MrClock + Dutch";
 		scope=2;
+		scopeCurator = 2;
 		displayName="101st IG88";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
 		genericNames="101st_CIS_IG88";
 		faction="O_DBA_CIS_F";
-		editorSubcategory="O_DBA_CIS_B1_Droids";
-		vehicleClass = "O_DBA_CIS_B1_Droids";
+		 editorSubcategory = "O_DBA_CIS_Spec_Ops";
+        vehicleClass = "O_DBA_CIS_Spec_Ops";
 		identityTypes[]=
 		{
 			"LanguageENG_F",
@@ -451,14 +452,8 @@ class CfgVehicles
 		uniformClass="JLTS_IG88";
 		backpack="";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88.p3d";
-		hiddenSelections[]=
-		{
-			"head", "body", "arms"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"", "", ""
-		};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"};
 		linkedItems[]=
 		{
 			"ItemMap",
@@ -535,30 +530,30 @@ class CfgVehicles
 		{
 			class HitFace
 			{
-				armor=1;
+				armor=20;
 				material=-1;
 				name="face_hub";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=0.1;
 				minimalHit=0.0099999998;
 			};
 			class HitNeck: HitFace
 			{
-				armor=1;
+				armor=30;
 				material=-1;
 				name="neck";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
 			};
 			class HitHead: HitNeck
 			{
-				armor=1;
+				armor=20;
 				material=-1;
 				name="head";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.2;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
@@ -566,10 +561,10 @@ class CfgVehicles
 			};
 			class HitPelvis: HitHead
 			{
-				armor=8;
+				armor=30;
 				material=-1;
 				name="pelvis";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.23999999;
 				explosionShielding=3;
 				visual="injury_body";
@@ -578,10 +573,10 @@ class CfgVehicles
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor=6;
+				armor=30;
 				material=-1;
 				name="spine1";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.16;
 				explosionShielding=3;
 				visual="injury_body";
@@ -589,10 +584,10 @@ class CfgVehicles
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor=6;
+				armor=50;
 				material=-1;
 				name="spine2";
-				passThrough=0.33000001;
+				passThrough=01;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -600,10 +595,10 @@ class CfgVehicles
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor=8;
+				armor=50;
 				material=-1;
 				name="spine3";
-				passThrough=0.33000001;
+				passThrough=0.1;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -614,7 +609,7 @@ class CfgVehicles
 				armor=1000;
 				material=-1;
 				name="body";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0;
 				explosionShielding=6;
 				visual="injury_body";
@@ -623,10 +618,10 @@ class CfgVehicles
 			};
 			class HitArms: HitBody
 			{
-				armor=6;
+				armor=50;
 				material=-1;
 				name="arms";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -635,10 +630,10 @@ class CfgVehicles
 			};
 			class HitHands: HitArms
 			{
-				armor=6;
+				armor=40;
 				material=-1;
 				name="hands";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=1;
 				visual="injury_hands";
@@ -647,10 +642,10 @@ class CfgVehicles
 			};
 			class HitLegs: HitHands
 			{
-				armor=6;
+				armor=40;
 				material=-1;
 				name="legs";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.14;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -671,10 +666,10 @@ class CfgVehicles
 			};
 			class HitLeftArm
 			{
-				armor=6;
+				armor=15;
 				material=-1;
 				name="hand_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -686,10 +681,10 @@ class CfgVehicles
 			};
 			class HitLeftLeg
 			{
-				armor=6;
+				armor=15;
 				material=-1;
 				name="leg_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -700,8 +695,8 @@ class CfgVehicles
 				name="leg_r";
 			};
 		};
-		armor=2;
-		armorStructural=4;
+		armor=12;
+		armorStructural=30;
 		explosionShielding=0.40000001;
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
@@ -711,12 +706,13 @@ class CfgVehicles
 	{
 		author="MrClock + Dutch";
 		scope=2;
+		scopeCurator = 2;
 		displayName="101st Magna";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
 		genericNames="101st_CIS_Magna";
 		faction="O_DBA_CIS_F";
-		editorSubcategory="O_DBA_CIS_B1_Droids";
-		vehicleClass = "O_DBA_CIS_B1_Droids";
+		editorSubcategory = "O_DBA_CIS_Spec_Ops";
+        vehicleClass = "O_DBA_CIS_Spec_Ops";
 		identityTypes[]=
 		{
 			"LanguageENG_F",
@@ -725,14 +721,8 @@ class CfgVehicles
 		uniformClass="JLTS_Magna";
 		backpack="";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
-		hiddenSelections[]=
-		{
-			"head", "body", "arms"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"", "", ""
-		};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {""};
 		linkedItems[]=
 		{
 			"ItemMap",
@@ -809,30 +799,30 @@ class CfgVehicles
 		{
 			class HitFace
 			{
-				armor=1;
+				armor=20;
 				material=-1;
 				name="face_hub";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=0.1;
 				minimalHit=0.0099999998;
 			};
 			class HitNeck: HitFace
 			{
-				armor=1;
+				armor=30;
 				material=-1;
 				name="neck";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
 			};
 			class HitHead: HitNeck
 			{
-				armor=1;
+				armor=20;
 				material=-1;
 				name="head";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.2;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
@@ -840,10 +830,10 @@ class CfgVehicles
 			};
 			class HitPelvis: HitHead
 			{
-				armor=8;
+				armor=25;
 				material=-1;
 				name="pelvis";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.23999999;
 				explosionShielding=3;
 				visual="injury_body";
@@ -852,10 +842,10 @@ class CfgVehicles
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor=6;
+				armor=25;
 				material=-1;
 				name="spine1";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.16;
 				explosionShielding=3;
 				visual="injury_body";
@@ -863,10 +853,10 @@ class CfgVehicles
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor=6;
+				armor=35;
 				material=-1;
 				name="spine2";
-				passThrough=0.33000001;
+				passThrough=01;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -874,10 +864,10 @@ class CfgVehicles
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor=8;
+				armor=50;
 				material=-1;
 				name="spine3";
-				passThrough=0.33000001;
+				passThrough=0.1;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -888,7 +878,7 @@ class CfgVehicles
 				armor=1000;
 				material=-1;
 				name="body";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0;
 				explosionShielding=6;
 				visual="injury_body";
@@ -897,10 +887,10 @@ class CfgVehicles
 			};
 			class HitArms: HitBody
 			{
-				armor=6;
+				armor=25;
 				material=-1;
 				name="arms";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -909,10 +899,10 @@ class CfgVehicles
 			};
 			class HitHands: HitArms
 			{
-				armor=6;
+				armor=25;
 				material=-1;
 				name="hands";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=1;
 				visual="injury_hands";
@@ -921,10 +911,10 @@ class CfgVehicles
 			};
 			class HitLegs: HitHands
 			{
-				armor=6;
+				armor=25;
 				material=-1;
 				name="legs";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.14;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -948,7 +938,7 @@ class CfgVehicles
 				armor=6;
 				material=-1;
 				name="hand_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -963,7 +953,7 @@ class CfgVehicles
 				armor=6;
 				material=-1;
 				name="leg_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -974,8 +964,8 @@ class CfgVehicles
 				name="leg_r";
 			};
 		};
-		armor=2;
-		armorStructural=4;
+		armor=12;
+		armorStructural=30;
 		explosionShielding=0.40000001;
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
@@ -999,14 +989,8 @@ class CfgVehicles
 		uniformClass="JLTS_B2";
 		backpack="";
 		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
-		hiddenSelections[]=
-		{
-			"head", "body", "arms"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"", "", ""
-		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
 		linkedItems[]=
 		{
 			"ItemMap",
@@ -1077,30 +1061,30 @@ class CfgVehicles
 		{
 			class HitFace
 			{
-				armor=1;
+				armor=10;
 				material=-1;
 				name="face_hub";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=0.1;
 				minimalHit=0.0099999998;
 			};
 			class HitNeck: HitFace
 			{
-				armor=1;
+				armor=15;
 				material=-1;
 				name="neck";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
 			};
 			class HitHead: HitNeck
 			{
-				armor=1;
+				armor=10;
 				material=-1;
 				name="head";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.2;
 				explosionShielding=0.5;
 				minimalHit=0.0099999998;
@@ -1108,10 +1092,10 @@ class CfgVehicles
 			};
 			class HitPelvis: HitHead
 			{
-				armor=8;
+				armor=15;
 				material=-1;
 				name="pelvis";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.23999999;
 				explosionShielding=3;
 				visual="injury_body";
@@ -1120,10 +1104,10 @@ class CfgVehicles
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor=6;
+				armor=15;
 				material=-1;
 				name="spine1";
-				passThrough=0.80000001;
+				passThrough=0.1;
 				radius=0.16;
 				explosionShielding=3;
 				visual="injury_body";
@@ -1131,10 +1115,10 @@ class CfgVehicles
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor=6;
+				armor=20;
 				material=-1;
 				name="spine2";
-				passThrough=0.33000001;
+				passThrough=01;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -1142,10 +1126,10 @@ class CfgVehicles
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor=8;
+				armor=25;
 				material=-1;
 				name="spine3";
-				passThrough=0.33000001;
+				passThrough=0.1;
 				radius=0.18000001;
 				explosionShielding=6;
 				visual="injury_body";
@@ -1156,7 +1140,7 @@ class CfgVehicles
 				armor=1000;
 				material=-1;
 				name="body";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0;
 				explosionShielding=6;
 				visual="injury_body";
@@ -1165,10 +1149,10 @@ class CfgVehicles
 			};
 			class HitArms: HitBody
 			{
-				armor=6;
+				armor=25;
 				material=-1;
 				name="arms";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -1177,10 +1161,10 @@ class CfgVehicles
 			};
 			class HitHands: HitArms
 			{
-				armor=6;
+				armor=20;
 				material=-1;
 				name="hands";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.1;
 				explosionShielding=1;
 				visual="injury_hands";
@@ -1189,10 +1173,10 @@ class CfgVehicles
 			};
 			class HitLegs: HitHands
 			{
-				armor=6;
+				armor=20;
 				material=-1;
 				name="legs";
-				passThrough=1;
+				passThrough=0.5;
 				radius=0.14;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -1216,7 +1200,7 @@ class CfgVehicles
 				armor=6;
 				material=-1;
 				name="hand_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.079999998;
 				explosionShielding=3;
 				visual="injury_hands";
@@ -1231,7 +1215,7 @@ class CfgVehicles
 				armor=6;
 				material=-1;
 				name="leg_l";
-				passThrough=1;
+				passThrough=0.1;
 				radius=0.1;
 				explosionShielding=3;
 				visual="injury_legs";
@@ -1242,8 +1226,8 @@ class CfgVehicles
 				name="leg_r";
 			};
 		};
-		armor=2;
-		armorStructural=4;
+		armor=12;
+		armorStructural=30;
 		explosionShielding=0.40000001;
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;

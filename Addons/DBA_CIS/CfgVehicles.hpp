@@ -496,7 +496,8 @@ class CfgVehicles {
         editorPreview = "ux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Base_F.jpg";
         genericNames = "JLTS_DroidsB1";
         model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
-
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
 
@@ -1441,18 +1442,8 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Droid_F.jpg";
-        hiddenSelections[] =
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "RD501_Units\textures\cis\b2\rocket\reskinb2_chest.paa",
-            "RD501_Units\textures\cis\b2\rocket\reskinb2_waist.paa",
-            "RD501_Units\textures\cis\b2\rocket\reskinb2_legs.paa"
-        };
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1512,28 +1503,88 @@ class CfgVehicles {
         respawnItems[] = {};
 
     };
-
-    class O_DBA_CIS_B2_Super_Droid_F : O_DBA_CIS_B2_Base_F
+ class O_DBA_CIS_B2_Super_Droid_Red_F : O_DBA_CIS_B2_Base_F
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "B2 Super Droid";
+        displayName = "B2 Super Droid (Red)";
        
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Super_Droid_F.jpg";
-        hiddenSelections[] =
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "RD501_Units\textures\cis\b2\super\super_b2_chest.paa",
-            "RD501_Units\textures\cis\b2\super\super_b2_waist.paa",
-            "RD501_Units\textures\cis\b2\super\super_b2_legs.paa"
-        };
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Legs_CO.paa"};
+
+        identityTypes[] = { "NoGlasses", "Head_NATO" };
+        facewear = "";
+
+        uniformClass = "DBA_B2_Super";
+        
+        weapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_B2_Weapon",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+		};
+		respawnMagazines[]=
+		{
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Rocket",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"101st_B2_Mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+
+        items[] = {};
+        respawnItems[] = {};
+		backpack = "O_DBA_CIS_B1_Backpack_Rocket";
+    };
+    class O_DBA_CIS_B2_Super_Droid_Blue_F : O_DBA_CIS_B2_Base_F
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "B2 Super Droid (Blue)";
+       
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Super_Droid_F.jpg";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Legs_CO.paa"};
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1665,10 +1716,11 @@ class CfgVehicles {
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         faction = "O_DBA_CIS_F";
         genericNames = "JLTS_DroidsB1";
-
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
-
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {""};
         linkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         respawnLinkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         
@@ -1685,23 +1737,37 @@ class CfgVehicles {
     };
 
     // TODO: IG100 armour values
-    class O_DBA_CIS_IG100_MagnaGuard_F : O_Soldier_F
+    class O_DBA_CIS_IG100_MagnaGuard_F : O_DBA_CIS_MagnaGuard_Base_F
     {
         scope = 2;
         scopeCurator = 2;
         displayName = "IG-100 MagnaGuard";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG100_MagnaGuard_F.jpg";
-        uniformClass = "SWOP_Magnadroid_F_Spec";
+        uniformClass = "JLTS_Magna";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
     };
 
     // TODO: IG101 armour values
-    class O_DBA_CIS_IG101_MagnaGuard_F : O_Soldier_F
+    class O_DBA_CIS_IG101_MagnaGuard_F : O_DBA_CIS_MagnaGuard_Base_F
     {
         scope = 2;
         scopeCurator = 2;
         displayName = "IG-101 MagnaGuard";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG101_MagnaGuard_F.jpg";
-        uniformClass = "RD501_opfor_uniform_Manga_Spec_Op";
+        uniformClass = "JLTS_Magna";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
+    };
+	
+	class O_DBA_CIS_IG88_MagnaGuard_F : O_DBA_CIS_MagnaGuard_Base_F
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "IG-88 MagnaGuard";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG101_MagnaGuard_F.jpg";
+        uniformClass = "JLTS_IG88";
+		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"};
     };
 
     class O_DBA_CIS_T_Series_Base_F : O_DBA_CIS_B1_Base_F

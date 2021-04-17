@@ -198,9 +198,14 @@ class CfgVehicles
 		editorPreview="3as\3as_static\images\3AS_StationaryTurret.jpg";
 		_generalMacro="B_HMG_01_F";
 		scope=2;
-		side=1;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=0;
+		displayName="EWEB Stationary Turret";
 		faction="O_DBA_CIS_F";
 		crew="O_DBA_CIS_B1_Droid_F";
+		editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
