@@ -1855,7 +1855,9 @@ class CfgAmmo
 			timeToLive = 6;
 			tracerColor[] = {0.7,0.7,0.5,0.04};
 			tracerColorR[] = {0.7,0.7,0.5,0.04};
-			tracerEndTime = 2;
+			tracerScale=1;
+			tracerStartTime=0;
+			tracerEndTime=10;
 			tracerScale = 1;
 			typicalSpeed = 30;
 		};
@@ -1886,9 +1888,11 @@ class CfgAmmo
 			timeToLive = 2;
 			tracerColor[] = {0.7,0.7,0.5,0.04};
 			tracerColorR[] = {0.7,0.7,0.5,0.04};
-			tracerEndTime = 2;
 			tracerScale = 0.7;
 			typicalSpeed = 60;
+			tracerScale=1;
+			tracerStartTime=0;
+			tracerEndTime=10;
 		};
 };
 
@@ -1905,6 +1909,7 @@ class CfgMagazines {
 		type = 16;
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
 		ammo = "101st_Wrist_Rocket_Ammo";
+		tracersEvery=1;
 	};
 	class 101st_B2_Mag : CA_Magazine {
 		count = 60;
@@ -1916,6 +1921,7 @@ class CfgMagazines {
 		type = 16;
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
 		ammo = "101st_B2_Ammo";
+		tracersEvery=1;
 	};
 };
 
