@@ -2957,6 +2957,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Krusader_Helmet_CO.paa"
 		};
 	};
+	class 101st_Izuu_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Izuu)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Izzu_Helmet_CO.paa"
+		};
+	};
 	class 101st_Ronin_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
