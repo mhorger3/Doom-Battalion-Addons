@@ -495,7 +495,7 @@ class CfgVehicles
 	class Box_212_Standard_Ammo;
 	class Box_212_PLX;
 	class Box_212_Medical;
-	class 101st_AmmoBox_F : Box_212_Standard_Ammo
+	class 101st_AmmoBox_F : Box_212_Medical
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -682,7 +682,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Handgun_F : Box_212_Standard_Ammo
+	class 101st_Handgun_F : Box_212_Medical
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -803,7 +803,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Launcher_F : Box_212_Standard_Ammo
+	class 101st_Launcher_F : Box_212_Medical
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -1040,7 +1040,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Explosive_F : Box_212_Standard_Ammo
+	class 101st_Explosive_F : Box_212_Medical
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;

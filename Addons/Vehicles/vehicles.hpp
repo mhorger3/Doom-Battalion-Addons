@@ -246,6 +246,10 @@
 				count=5;
 			};
 		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
 		class TransportWeapons
 		{
 			class _xx_101st_DC_15s_shield
@@ -391,6 +395,10 @@
 				count=10;
 			};
 		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
 		class TransportWeapons
 		{
 			class _xx_101st_DC_15s_shield
@@ -441,7 +449,25 @@
 		};
 		class TransportItems
 		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
 
+
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{

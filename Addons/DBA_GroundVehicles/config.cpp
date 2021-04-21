@@ -910,7 +910,10 @@ class CfgVehicles
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 
-		class EventHandlers;
+		class EventHandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
 		smokeLauncherGrenadeCount=8;
 		smokeLauncherVelocity=14;
 		smokeLauncherOnTurret=1;
@@ -957,6 +960,7 @@ class CfgVehicles
 				count=1;
 			};
 		};
+
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -1398,6 +1402,10 @@ class CfgVehicles
 				count=40;
 			};
 		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
 		class TransportWeapons
 		{
 			class _transport_rps1
@@ -1511,6 +1519,10 @@ class CfgVehicles
 				name="ACE_elasticBandage";
 				count=40;
 			};
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{
