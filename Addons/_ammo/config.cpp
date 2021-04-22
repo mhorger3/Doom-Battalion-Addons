@@ -76,6 +76,17 @@ class CfgMagazines
 		type = 256;
 		model="\101st_Aux_Mod\Addons\_ammo\ctype.p3d";
 	};
+	class ACE_HandFlare_Base;
+	class DBA_HandFlare_Purple : ACE_HandFlare_Base {
+		author = "101st";
+		scope = 2;
+		displayname = "Purple Flare";
+		descriptionShort = "Its a flare thats purple";
+		displayNameShort = "Purple Flare";
+		model = "\A3\weapons_f\ammo\flare_white";
+		picture = "\A3\Weapons_F\Data\UI\gear_flare_white_ca.paa";
+		ammo = "ACE_G_Handflare_Purple";
+	};
 	class 101st_thermaldet_x1_mag: HandGrenade
 	{
 		author="101st";
@@ -779,6 +790,7 @@ class CfgMagazines
 	class SmokeShell;
 	class 1Rnd_HE_Grenade_shell;
 	class smoke_meme_mag: SmokeShell
+
 	{
 		author = "Bohemia Interactive";
 		displayNameShort = "Yeet Smoke";
@@ -1014,6 +1026,7 @@ class CfgMagazines
 		descriptionShort = "3Rnd LR HE DC-15A Grenade";
 		initSpeed = 120;
 	};
+
 
 	//SWOP STUFF BELOW
 	class 101st_flash_GL_x3_mag : CA_Magazine
@@ -1717,10 +1730,10 @@ class CfgAmmo
 		timeToLive = 120;
 		flareMaxDistance = 300;
 	};
-	class DBA_40mm_green_ammo: DBA_40mm_white_ammo
+	class DBA_40mm_green_ammo : DBA_40mm_white_ammo
 	{
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
-		lightColor[] = {0,1,0,0};
+		lightColor[] = { 0,1,0,0 };
 	};
 	class DBA_40mm_red_ammo: DBA_40mm_white_ammo
 	{
@@ -1751,6 +1764,12 @@ class CfgAmmo
 	{
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
 		lightColor[] = {0.7,0,1,0};
+	};
+
+	class OPTRE_G_M8_Flare;
+	class ACE_G_Handflare_Purple : OPTRE_G_M8_Flare {
+		LightColor[] = { 1,0,1,0.5 };
+		model = "\A3\weapons_f\ammo\flare_yellow";
 	};
 	
 	class 101st_imploder_ammo: Grenade
@@ -1821,6 +1840,7 @@ class CfgAmmo
 		};
 		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\_ammo\imploder.rvmat"};
 	};
+
 	class 101st_throwable_c_type_ammo: Grenade
 	{
 		displayName = "101st Throwable C-Type Explosive";
@@ -2290,7 +2310,8 @@ class CfgWeapons
 		{
 			"101st_Imploder",
 			"101st_Detonator",
-			"101st_Ctype"
+			"101st_Ctype",
+			"DBA_PurpleSmoke"
 		};
 		class ThrowMuzzle;
 		class 101st_Ctype: ThrowMuzzle
@@ -2315,6 +2336,14 @@ class CfgWeapons
 			magazines[]=
 			{
 				"101st_thermaldet_x1_mag"
+			};
+		};
+		class DBA_PurpleSmoke : ThrowMuzzle
+		{
+			model = "\101st_Aux_Mod\Addons\_ammo\thermal.p3d";
+			magazines[] =
+			{
+				"DBA_HandFlare_Purple"
 			};
 		};
 	}
