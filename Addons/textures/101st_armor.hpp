@@ -148,7 +148,7 @@ class 101st_Custom_MedCP_Pauldron: JLTS_CloneVestReconNCO
 		uniformType="Default";
 		mass=80;
 		vestType = "Rebreather";
-		hiddenSelections[] = {"camo1"};
+		hiddenSelections[] = {"camo2"};
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 	};
 };
@@ -170,7 +170,7 @@ class 101st_Custom_RTOCP_Pauldron: JLTS_CloneVestReconNCO
 		uniformType="Default";
 		mass=80;
 		vestType = "Rebreather";
-		hiddenSelections[] = {"camo1"};
+		hiddenSelections[] = {"camo2"};
 		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconNCO.p3d";
 	};
 };
