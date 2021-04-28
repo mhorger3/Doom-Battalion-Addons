@@ -589,7 +589,7 @@ class CfgWeapons
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_MRCO_A_TI","DBA_MRCO_B_TI"};
+				compatibleItems[] = {"DBA_MRCO_A_TI_2x4", "DBA_MRCO_B_TI_2x4"};
 			};
 		};
 	};

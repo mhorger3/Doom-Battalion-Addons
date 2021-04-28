@@ -455,4 +455,91 @@ class cfgWeapons
 
 		weaponInfoType="RscOptics_sos";
 	};
+	// Duplicate from the previous scope for mod0 nerf, unknown if used elsewhere so nerf here
+	class DBA_MRCO_A_TI_2x4 : optic_MRCO
+	{
+		author = "Frisk";
+		scope = 2;
+		displayName = "2x-4x LSW Battlesight Aurek";
+
+		picture = "101st_Aux_Mod\Addons\Holosights\data\DBA_Pistol_Reticle_A_ca.paa";
+		model = "101st_Aux_Mod\Addons\Holosights\data\DBA_Pistol_Holo_A.p3d";
+
+		descriptionShort = "Standard Battle Sight";
+
+		weaponInfoType = "RscOptics_sos";
+		class ItemInfo : ItemInfo
+		{
+			mass = 8;
+			opticType = 1;
+			optics = 1;
+			class OpticsModes
+			{
+				class MRCOcq
+				{
+					modelOptics = "\A3\Weapons_F\empty";
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsPPEffects[] =
+					{
+						"Default"
+					};
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					visionMode[] = {};
+					distanceZoomMin = 300;
+					distanceZoomMax = 300;
+				};
+				class MRCOscope
+				{
+					modelOptics = "\A3\Weapons_f\acc\reticle_nightstalker_F";
+					opticsID = 2;
+					useModelOptics = 1;
+					opticsPPEffects[] =
+					{
+						"OpticsCHAbera1",
+						"OpticsBlur1"
+					};
+					// opticsZoomMin=0.025; //x10
+					// opticsZoomMax=0.0625; //x4
+					opticsZoomMin = "0.25/4";
+					opticsZoomMax = "0.25/2";
+					opticsZoomInit = "0.25/2";
+					discreteDistance[] = { 100,200,300,400,500,600,700,800,900,1000 };
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					memoryPointCamera = "eye";
+					visionMode[] =
+					{
+						"Normal",
+						"NVG"
+					};
+					thermalMode[] = { 5,6 };
+					opticsFlare = 1;
+					opticsDisablePeripherialVision = 1;
+					cameraDir = "";
+				};
+
+			};
+		};
+		inertia = 0.1;
+	};
+	class DBA_MRCO_B_TI_2x4 : DBA_MRCO_A_TI_2x4
+	{
+		author = "Frisk";
+		scope = 2;
+		displayName = "2x-4x LSW Battlesight Besh";
+
+		picture = "101st_Aux_Mod\Addons\Holosights\data\DBA_Pistol_Reticle_A_ca.paa";
+		model = "101st_Aux_Mod\Addons\Holosights\data\DBA_Pistol_Holo_B.p3d";
+
+		descriptionShort = "Standard Battle Sight";
+
+		weaponInfoType = "RscOptics_sos";
+	};
 };
