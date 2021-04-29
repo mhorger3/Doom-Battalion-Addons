@@ -1503,7 +1503,8 @@ class CfgVehicles {
         respawnItems[] = {};
 
     };
- class O_DBA_CIS_B2_Super_Droid_Red_F : O_DBA_CIS_B2_Base_F
+    class 101st_B2_Red;
+       class O_DBA_CIS_B2_Super_Droid_Red_F : 101st_B2_Red
     {
         scope = 2;
         scopeCurator = 2;
@@ -1574,7 +1575,8 @@ class CfgVehicles {
         respawnItems[] = {};
 		backpack = "O_DBA_CIS_B1_Backpack_Rocket";
     };
-    class O_DBA_CIS_B2_Super_Droid_Blue_F : O_DBA_CIS_B2_Base_F
+       class 101st_B2_Blue;
+    class O_DBA_CIS_B2_Super_Droid_Blue_F : 101st_B2_Blue
     {
         scope = 2;
         scopeCurator = 2;
@@ -1706,8 +1708,8 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_BX_Commando_Droid_Training_F.jpg";
         uniformClass = "212th_BX_DROID_TRAINING";
     };
-
-    class O_DBA_CIS_MagnaGuard_Base_F : O_Soldier_F
+     class 101st_Magma;
+    class O_DBA_CIS_MagnaGuard_Base_F : 101st_Magma
     {
         scope = 0;
         scopeCurator = 0;
