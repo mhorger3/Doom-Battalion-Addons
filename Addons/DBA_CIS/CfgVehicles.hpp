@@ -1432,8 +1432,8 @@ class CfgVehicles {
             "101st_Aux_Mod\Addons\DBA_CIS_Textures\data\Winter_B1_Body_CO.paa"
         };
     };
-
-    class O_DBA_CIS_B2_Droid_F : O_DBA_CIS_B2_Base_F
+    class 101st_B2_Red;
+    class O_DBA_CIS_B2_Droid_F : 101st_B2_Red
     {
         scope = 2;
         scopeCurator = 2;
