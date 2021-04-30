@@ -2073,7 +2073,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT";
-       
+        armor = 700;
+        armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -2087,7 +2088,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Tan)";
-       
+        armor = 700;
+        armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -2101,7 +2103,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Snow)";
-       
+        armor = 700;
+        armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -2115,7 +2118,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Tropic)";
-       
+        armor = 700;
+        armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
@@ -2129,7 +2133,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "AAT (Urban)";
-       
+        armor = 700;
+        armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
