@@ -1026,6 +1026,26 @@ class CfgMagazines
 		descriptionShort = "3Rnd LR HE DC-15A Grenade";
 		initSpeed = 120;
 	};
+	class DBA_AT_GL_x6_mag : DBA_AT_GL_x2_mag
+	{
+		displayName = "6 Rnd LR AP HH-4 Grenades";
+		displayNameShort = "6 Rnd LR AP HH-4";
+		ammo = "DBA_GL_AT_ammo";
+		initSpeed = 220;
+		count = 6;
+		nameSound = "";
+		descriptionShort = "Grenade go burr";
+		mass = 15;
+	};
+	class DBA_HE_GL_x8_mag : DBA_AT_GL_x2_mag
+	{
+		displayName = "8 Rnd LR HE HH-4 Grenades";
+		displayNameShort = "8 RndLR HE HH-4";
+		count = 8;
+		ammo = "DBA_GL_HE_ammo";
+		descriptionShort = "Grenade go burr";
+		initSpeed = 120;
+	};
 
 
 	//SWOP STUFF BELOW

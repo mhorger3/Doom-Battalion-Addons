@@ -91,6 +91,43 @@ class CfgWeapons
 			};
 		};
 	};
+	class 101st_HH4_Grenade_Launcher : JLTS_EPL2
+	{
+		author = "Vulgar";
+		scope = 2;
+		scopeArsenal = 2;
+		baseWeapon = "101st_HH4_Grenade_Launcher";
+		displayname = "101st HH4 Grenade Launcher";
+		magazines[] =
+		{
+			"DBA_AT_GL_x6_mag",
+			"DBA_HE_GL_x8_mag"
+		};
+		class Single : Single
+		{
+			reloadTime= 1;
+			rateoffire = .5;
+		};
+		class WeaponSlotInfo
+		{
+			mass = 30;
+			class CowsSlot
+			{
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+				iconPinpoint = "Bottom";
+				iconPosition[] = { 0.5,0.34999999 };
+				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+				compatibleItems[] =
+				{
+					"dba_hamr_a",
+					"dba_hamr_b"
+				};
+			};
+		};
+	}
 	class 3AS_DC15C_F;
 	class 101st_15C_Refit : 3AS_DC15C_F
 	{
