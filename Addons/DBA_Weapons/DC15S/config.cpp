@@ -267,6 +267,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\15S_CA.paa";
 		class 101st_GL: UGL_F
 		{
 			useModelOptics = "false";

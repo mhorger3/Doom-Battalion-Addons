@@ -58,6 +58,7 @@ class CfgWeapons
 		author = "Dutch";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Zakkeg\ZakkegMG.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Zakkeg_CA.paa";
 		muzzles[] = {"this"};
 		magazines[] = {"101st_MG_Mag_Green"};
 		reloadAction = "ReloadMagazine";

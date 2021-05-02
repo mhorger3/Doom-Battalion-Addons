@@ -68,9 +68,10 @@ class CfgWeapons
 		ace_overpressure_range = 0;
 		selectionFireAnim="zasleh";
 		flash="gunfire";
-		author="Frisk";
+		author="Trip";
 		scope=2;
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Boma\Boma_Shotgun.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Boma_CA.paa";
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
 		muzzles[] = {"this","101st_GL"};
 		class 101st_GL: UGL_F

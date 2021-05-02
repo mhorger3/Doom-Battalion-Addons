@@ -79,10 +79,10 @@ class CfgWeapons
 		flashSize = 0.5;
 		fireLightIntensity = 0.2;
 		fireLightDuration = 0.05;
-		author = "Dutch & Frisk";
+		author = "Dutch & Trip";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\KathHound\KathHound.p3d";
-		picture = "MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Kath_CA.paa";
 		muzzles[] = {"this","Stun"};
 		magazines[] = {"101st_Ion_Mag_Green"};
 		reloadAction = "ReloadMagazine";
