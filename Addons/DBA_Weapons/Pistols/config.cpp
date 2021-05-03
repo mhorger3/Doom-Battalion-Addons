@@ -283,7 +283,7 @@ class CfgWeapons
 			mass = 20;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
+				compatibleItems[] = {};
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -317,7 +317,7 @@ class CfgWeapons
 			mass = 110;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
+				compatibleItems[] = {};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -330,14 +330,14 @@ class CfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[] = {"JLTS_riot_shield_attachment","JLTS_riot_shield_212_attachment","JLTS_riot_shield_501_attachment","JLTS_riot_shield_101_attachment","JLTS_riot_shield_CG_attachment","JLTS_riot_shield_GD_attachment","JLTS_riot_shield_droid_attachment"};
-					access = 1;
+				access = 1;
 				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
 	};
 	class DBA_Cannok: DBA_Pistol_Base
 	{
-		author="Frisk";
+		author="Trip, Dutch";
 		scope=2;
 		baseweapon="DBA_Cannok";
 		JLTS_canHaveShield=1;
@@ -640,7 +640,7 @@ class CfgWeapons
 	};
 	class DBA_Westar35_Mod_0: DBA_Pistol_Base
 	{
-		author="Frisk";
+		author="Trip";
 		scope=2;
 		//JLTS_canHaveShield=1; //No Shield Model Yet
 		//JLTS_shieldedWeapon="DBA_Defender_shield";
@@ -673,6 +673,7 @@ class CfgWeapons
 		fireLightAmbient[] = {0.5,0.5,0};
 		fireLightIntensity = 0.2;
 		fireLightDuration = 0.05;
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Westar_CA.paa";
 		class Single: Single
 		{
 			reloadTime = 0.075;
@@ -711,6 +712,7 @@ class CfgWeapons
 		displayName = "[101st] Dual Westar-35 'Hammerhead'";
 		baseweapon="DBA_Dual_Westar35_Mod_0";
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\DualWestar35m0.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Westar_CA.paa";
 		weaponInfoType="RscWeaponZeroing";
 		reloadAction="3AS_GestureReloadDualDC17S";
 		handAnim[]=

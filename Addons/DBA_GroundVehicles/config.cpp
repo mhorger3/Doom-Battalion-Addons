@@ -969,19 +969,31 @@ class CfgVehicles
 				{
 					"Laserdesignator_pilotCamera",
 					"CMFlareLauncher",
-					"DBA_Aircraft_Lasers_Praetorian"
+					"DBA_Ground_HMG_Generic",
+					"dba_wynd_a2a"
 				};
 				magazines[]=
 				{
 					"Laserbatteries",
-					"DBA_generic_anti_aircraft_gun_green_x1000_mag"
+					"DBA_HMG_blue_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_orange_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_purple_x500_mag",
+					"DBA_HMG_black_x500_mag",
+					"DBA_HMG_yellow_x500_mag",
+					"dba_a2a_x4_mag",
+					"dba_a2a_x4_mag",
+					"dba_a2a_x4_mag",
+					"dba_a2a_x4_mag"
 				};
 			};
 			class CommanderOptics: CommanderOptics
 			{
 			};
 		};
-		/*class components: Components
+		class components: Components
 		{
 			class SensorsManagerComponent
 			{
@@ -1289,7 +1301,7 @@ class CfgVehicles
 					};
 				};
 			};
-		};*/
+		};
 	};
 //Static AA // Currently doesnt work?
 

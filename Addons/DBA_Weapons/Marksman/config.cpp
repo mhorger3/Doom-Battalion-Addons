@@ -79,10 +79,10 @@ class CfgWeapons
 		ace_overpressure_damage = 0;
 		ace_overpressure_priority = 1;
 		ace_overpressure_range = 0;
-		author="Frisk";
+		author="Trip";
 		scope=2;
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.p3d";
-		//picture = "\SW_CloneWarsWeapons\Valken38X\Valken38X_X_ca.paa"; //Needs replacement eventually
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Valken_CA.paa";
 		muzzles[] = {"this"};
 		magazines[] = {"101st_Valken_Mag"};
 		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
@@ -474,10 +474,10 @@ class CfgWeapons
 		ace_overpressure_damage = 0;
 		ace_overpressure_priority = 1;
 		ace_overpressure_range = 0;
-		author="Frisk";
+		author="Trip & Dutch";
 		scope=2;
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Marksman\verpine.p3d";
-		picture = "\A3\Weapons_F_Mark\LongRangeRifles\DMR_04\Data\UI\gear_DMR_04_X_CA.paa";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Verpine_CA.paa";
 		muzzles[] = {"this"};
 		magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
 		reloadAction = "ReloadMagazine";

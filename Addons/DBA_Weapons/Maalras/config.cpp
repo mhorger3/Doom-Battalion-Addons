@@ -84,9 +84,10 @@ class CfgWeapons
 		fireLightAmbient[] = {0,0.5,0};
 		fireLightIntensity = 0.2;
 		fireLightDuration = 0.05;
-		author = "Dutch";
+		author = "Trip";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Maalras\maalrasSMG.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Maalras_CA.paa";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\None_CO.paa"};
 		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\Rifle.rvmat"};
@@ -157,7 +158,7 @@ class CfgWeapons
 	class DBA_SMG_A: DBA_MaalrasSMG
 	{
 		JLTS_canHaveShield = 0;
-		author = "Frisk";
+		author = "Trip";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Maalras\Enforcer.p3d";
 		hiddenSelections[] = {"camo1"};

@@ -11,7 +11,7 @@ class cfgPatches
 {
 	class DBA_Aux_Mod_Maalras
 	{
-		author = "Frisk";
+		author = "Trip";
 		name = "101st Aux Mod Weapons";
 		requiredaddons[] = {"JLTS_weapons_DC15S","101st_Aux_Mod","DBA_patch_weapons"};
 		requiredversion = 0.1;
@@ -84,6 +84,7 @@ class CfgWeapons
 		scope = 2;
 		airLock = 1;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Rockets\SandoFinal.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Sando_CA.paa";
 		displayName = "[101st] Sando AT8";
 		descriptionShort = "Sando AT8";
 		magazines[] = {"101st_AA_Mag","101st_AT_Mag","101st_AP_Mag"};
@@ -230,6 +231,7 @@ class CfgWeapons
 		displayName = "[101st] Z6X-A Chaingun";
 		descriptionShort = "Z6X-A Chaingun";
 		magazines[] = {"101st_Chaingun_Mag"};
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Z6-X_CA.paa";
 		class OpticsModes
 		{
 			class StepScope
@@ -253,14 +255,6 @@ class CfgWeapons
 				modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 			};
 		};
-		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
-		optics = 1;
-		opticsDisablePeripherialVision = 1;
-		opticsFlare = 1;
-		opticsPPEffects[] = {};
-		opticsZoomInit = 0.1083;
-		opticsZoomMax = 0.1083;
-		opticsZoomMin = 0.1083;
 		flash = "gunfire";
 		flashSize = 0.5;
 		fireLightAmbient[] = {0,0,0.5};
