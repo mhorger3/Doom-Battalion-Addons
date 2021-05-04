@@ -47,6 +47,9 @@ class CfgVehicles {
 		};
 	};
 };
+class CBA_DisposableLaunchers {
+	101st_disposable_launcher[] = { "101st_disposable_launcher_Loaded", "101st_disposable_launcher_Used" };
+};
 class CfgWeapons
 {
 	class arifle_MX_Base_F;
@@ -105,7 +108,7 @@ class CfgWeapons
 		};
 		class Single : Single
 		{
-			reloadTime= 1;
+			reloadTime = 1;
 			rateoffire = .5;
 		};
 		class WeaponSlotInfo
@@ -127,7 +130,38 @@ class CfgWeapons
 				};
 			};
 		};
-	}
+	};
+	class 3AS_RPS6_Base;
+	class 101st_disposable_launcher : 3AS_RPS6_Base
+	{
+		author = "Vulgar";
+		scope = 1;
+		scopeArsenal = 1;
+		displayname = "[101st] RPS6 Disposible Launcher";
+		baseweapon = "101st_disposable_launcher_Loaded";
+		magazines[] = { "101st_RPS6_HEAA" };
+		magazineReloadTime = 0.1;
+		reloadMagazineSound[] = { "",1,1 };
+		class EventHandler {
+			fired = "_this call CBA_fnc_firedDisposable";
+		};
+	};
+	class 101st_disposable_launcher_Loaded : 101st_disposable_launcher
+	{
+		displayname = "[101st] RPS6 Disposible Launcher";
+		baseweapon = "101st_disposable_launcher_loaded";
+		magazines[] = { "CBA_FakeLauncherMagazine" };
+		scope = 2;
+		scopeArsenal = 2;
+	};
+	class 101st_disposable_launcher_Used : 101st_disposable_launcher
+	{
+		displayname = "[101st] Used RPS6 Disposible Launcher";
+		baseweapon = "101st_disposable_launcher_Used";
+		magazines[] = { "CBA_FakeLauncherMagazine" };
+		scope = 2;
+		scopeArsenal = 0;
+	};
 	class 3AS_DC15C_F;
 	class 101st_15C_Refit : 3AS_DC15C_F
 	{
