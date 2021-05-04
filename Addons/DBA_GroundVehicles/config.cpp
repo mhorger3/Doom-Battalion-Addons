@@ -293,6 +293,36 @@ class CfgVehicles
 			class HitGlass6;
 		};
 	};
+	class MRAP_02_base_F : Car_F
+	{
+		class Turrets : turrets
+		{
+			class MainTurret;
+			class CommanderTurret;
+		};
+	};
+	class MRAP_02_hmg_base_F : MRAP_02_base_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+			};
+			class CommanderTurret : CommanderTurret
+			{};
+		};
+	};
+	class O_T_MRAP_02_hmg_ghex_F : MRAP_02_hmg_base_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+			};
+			class CommanderTurret : CommanderTurret
+			{};
+		};
+	};
 	class MRAP_03_base_F : Car_F
 	{
 		class Turrets: turrets
@@ -475,7 +505,40 @@ class CfgVehicles
 			};
 		};
 	};
+	class AllVehicles;
+	class Ship : AllVehicles
+	{
+		class ViewPilot;
+	};
+	class Ship_F : Ship
+	{
+		class Turrets;
+	};
+	class Boat_F : Ship_F
+	{
+		class Turrets : Turrets
+		{
+			class mainturret;
+		};
+	};
+	class optre_catfish_f : Boat_F
+	{
 
+	};
+	class optre_catfish_unarmed_f : optre_catfish_f
+	{
+
+	};
+	class optre_catfish_mg_f : optre_catfish_f
+	{
+		class turrets : turrets
+		{
+			class mainturret : mainturret
+			{
+
+			};
+		};
+	};
 
 //Sabers
 	class DBA_TX130_Standard: 3as_saber_m1
@@ -2160,6 +2223,232 @@ class CfgVehicles
 		};
 	};
 	
+
+	class O_MRAP_02_F;
+	class DBA_Highgrav_trasport : O_MRAP_02_F
+	{
+		ace_cargo_space = 400;
+		scope = 2;
+		side = 1;
+		scopeCurator = 2;
+		forceInGarage = 1;
+		displayName = "101st High Grav Transport";
+		crew = "101st_CloneTrooper_212th";
+		armor = 400;
+		hiddenSelection[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[] = 
+		{ 
+			"\A3\soft_F\MRAP_02\data\MRAP_02_ext_01_CO.paa",
+			"\A3\soft_F\MRAP_02\data\MRAP_02_ext_02_CO.paa",
+			"\A3\Data_F\Vehicles\turret_opfor_co.paa" 
+		};
+		faction = "Republic_101st";
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon = "RD501_launcher_rps1";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+	};
+
+	class O_T_MRAP_02_gmg_ghex_F;
+	class DBA_Highgrav_trasport_HE : O_T_MRAP_02_gmg_ghex_F
+	{
+		ace_cargo_space = 400;
+		scope = 2;
+		side = 1;
+		scopeCurator = 2;
+		forceInGarage = 1;
+		displayName = "101st High GMG Grav Transport";
+		crew = "101st_CloneTrooper_212th";
+		armor = 400;
+		hiddenSelection[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[] = 
+		{ 
+			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_01_ghex_CO.paa",
+			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_02_ghex_CO.paa",
+			"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa" 
+		};
+		faction = "Republic_101st";
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon = "RD501_launcher_rps1";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+		};
+	};
+
+	class DBA_Highgrav_trasport_HMG : O_T_MRAP_02_hmg_ghex_F
+	{
+		ace_cargo_space = 400;
+		scope = 2;
+		side = 1;
+		scopeCurator = 2;
+		forceInGarage = 1;
+		displayName = "101st High HMG Grav Transport";
+		crew = "101st_CloneTrooper_212th";
+		armor = 400;
+		hiddenSelection[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_01_ghex_CO.paa",
+			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_02_ghex_CO.paa",
+			"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
+		};
+		faction = "Republic_101st";
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon = "RD501_launcher_rps1";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+		class Turrets : Turrets
+		{
+
+			class MainTurret : MainTurret
+			{
+				weapons[] =
+				{
+					"DBA_Ground_HMG_Generic"
+				};
+				magazines[] =
+				{
+					"DBA_HMG_blue_x500_mag",
+					"DBA_HMG_blue_x500_mag",
+					"DBA_HMG_blue_x500_mag",
+					"DBA_HMG_blue_x500_mag"
+				};
+				magazineReloadTime = 4;
+				
+			};
+		};
+	};
 	class DBA_Armata : O_T_MBT_04_command_F //Balanced, has autocannon on top, HMG Coax, MBT cannon top
 	{
 		ace_cargo_space = 400;
@@ -2278,6 +2567,75 @@ class CfgVehicles
 						};
 					};
 				};
+			};
+		};
+	};
+	class 101st_patrolcraft : optre_catfish_mg_f
+	{
+		ace_cargo_space = 400;
+		scope = 2;
+		side = 1;
+		scopeCurator = 2;
+		forceInGarage = 1;
+		armor = 300;
+		displayName = "101st Patrol Craft";
+		crew = "101st_CloneTrooper_212th";
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon = "101st_disposable_launcher";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+		class Turrets : Turrets
+		{
+
+			class MainTurret : MainTurret
+			{
+				weapons[] =
+				{
+					"DBA_Ground_HMG_Generic"
+				};
+				magazines[] =
+				{
+					"DBA_HMG_blue_x500_mag"
+				};
+				magazineReloadTime = 4;
 			};
 		};
 	};
