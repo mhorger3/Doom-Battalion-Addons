@@ -1751,7 +1751,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Kei_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Kei_Helmet_CO.paa"
 		};
 	};
 	class 101st_Limit_Helmet: JLTS_CloneHelmetP2
@@ -2249,7 +2249,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Stryker_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Stryker_Helmet_CO.paa"
 		};
 	};
 	class 101st_Oaksy_Helmet: JLTS_CloneHelmetP2
@@ -3127,7 +3127,20 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Draco_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Draco_Helmet_CO.paa"
+		};
+	};
+	class 101st_Sythe_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Sythe)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Scythe_Helmet_CO.paa"
 		};
 	};
 //Pilot Helmets
