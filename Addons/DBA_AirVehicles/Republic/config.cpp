@@ -178,6 +178,7 @@ class cfgVehicles
 	};
 	class 101st_laat_Base: 3as_laat_Base
 	{
+		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
 		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
@@ -1684,6 +1685,7 @@ class cfgVehicles
 	};
 	class 101st_laatUnarmed_Base: 3as_laatUnarmed_Base
 	{
+		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
 		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
@@ -3052,6 +3054,7 @@ class cfgVehicles
 	};
 	class 101st_laatFloodLight_Base: 3as_LAAT_Mk2Lights
 	{
+		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
 		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
@@ -16412,6 +16415,8 @@ class cfgVehicles
 		author = "Muttie The Modder";
 		displayName = "101st LAAT/I VTOL Refit";
 		faction="Republic_101st";	
+
+		//I personally think this is cursed af - Trip
 	};
 
 	class 3as_nuclass_f;

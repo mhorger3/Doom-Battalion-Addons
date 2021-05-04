@@ -26,7 +26,10 @@ class CfgPatches
 			"DBA_LSV",
 			"101st_Octo_Droid",
 			"101st_DSD3_Droid",
-			"101st_Crab_Droid"
+			"101st_Crab_Droid",
+			"DBA_Technical",
+			"DBA_Marid",
+			"DBA_Skorpion"
 		};
 	}
 };
@@ -2636,6 +2639,306 @@ class CfgVehicles
 					"DBA_HMG_blue_x500_mag"
 				};
 				magazineReloadTime = 4;
+			};
+		};
+	};
+	//CIS Vanilla Stuff
+
+	class LT_01_base_F;
+	class LT_01_cannon_base_F : LT_01_base_F
+	{
+		class components;
+		class turrets : turrets
+		{
+			class MainTurret;
+		};
+	};
+	class I_LT_01_cannon_F : LT_01_cannon_base_F
+	{
+		class components;
+		class turrets : turrets
+		{
+			class MainTurret;
+		};
+	};
+	class Offroad_01_military_base_F;
+	class Offroad_01_armed_base_F : Offroad_01_military_base_F
+	{
+		class Turrets
+		{
+			class M2_Turret
+			{
+				class ViewOptics;
+				class ViewGunner;
+			};
+		};
+	};
+
+	class DBA_Technical : Offroad_01_armed_base_F
+	{
+		displayName = "Technical";
+		scope = 2;
+		scopeCurator = 2;
+		forceInGarage = 1;
+		side = 0;
+		crew = "O_DBA_CIS_B1_Crew_Droid_F";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "RD501_Editor_Category_IFV";
+		vehicleClass = "RD501_Vehicle_Class_IFV";
+		class Turrets : Turrets
+		{
+			class Laser_Turret : M2_Turret
+			{
+				weapons[] =
+				{
+					"DBA_Ground_HMG_Generic",
+				};
+				magazines[] =
+				{
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag"
+				};
+				class ViewOptics : ViewOptics
+				{
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+				};
+				class ViewGunner : ViewGunner
+				{
+				};
+			};
+		};
+	};
+
+	class Wheeled_APC_F;
+	class APC_Wheeled_02_base_F : Wheeled_APC_F
+	{
+		class Turrets
+		{
+			class MainTurret
+			{
+				class ViewOptics;
+				class ViewGunner;
+			};
+		};
+	};
+	class APC_Wheeled_02_base_v2_F : APC_Wheeled_02_base_F
+	{
+		class Turrets :Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics;
+				class ViewGunner;
+			};
+		};
+	};
+	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_v2_F
+	{
+		class Turrets :Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics;
+				class ViewGunner;
+			};
+		};
+	};
+	class DBA_Marid : O_APC_Wheeled_02_rcws_v2_F
+	{
+		displayName = "Marid IFV";
+		textureList[] = {};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"CamoNet",
+			"CamoSlat"
+		};
+		forceInGarage = 1;
+		crew = "O_DBA_CIS_B1_Crew_Droid_F";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "RD501_Editor_Category_IFV";
+		vehicleClass = "RD501_Vehicle_Class_IFV";
+		class Turrets :Turrets
+		{
+			class MainTurret :MainTurret
+			{
+				gunnerForceOptics = 0;
+				gunnerAction = "Commander_APC_Wheeled_02_rcws_F_out";
+				gunnerInAction = "Commander_APC_Wheeled_02_rcws_F_in";
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] =
+				{
+					"DBA_Ground_HMG_Generic",
+					"GMG_40mm",
+					"SmokeLauncher"
+				};
+				magazines[] =
+				{
+					"96Rnd_40mm_G_belt",
+					"96Rnd_40mm_G_belt",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"SmokeLauncherMag"
+				};
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
+				soundServo[] =
+				{
+					"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",
+					0.56234133,
+					1,
+					30
+				};
+				soundServoVertical[] =
+				{
+					"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",
+					0.56234133,
+					1,
+					30
+				};
+				gunnerName = "$STR_POSITION_COMMANDER";
+				commanding = 1;
+				primaryGunner = 1;
+				primaryObserver = 0;
+				LODOpticsIn = 0;
+				viewGunnerInExternal = 1;
+				forceHideGunner = 0;
+				outGunnerMayFire = 0;
+				inGunnerMayFire = 1;
+				startEngine = 0;
+				usePip = 1;
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				discreteDistance[] = { 100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000 };
+				discreteDistanceInitIndex = 2;
+				gunnerOutOpticsModel = "";
+				gunnerOpticsEffect[] = {};
+				stabilizedInAxes = 3;
+				animationSourceStickX = "turret_control_x";
+				animationSourceStickY = "turret_control_y";
+				gunnerRightHandAnimName = "turret_control";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGunnerOutOptics = "commanderview";
+				selectionFireAnim = "zasleh2";
+				turretInfoType = "RscOptics_crows";
+				maxHorizontalRotSpeed = 1.8;
+				maxVerticalRotSpeed = 1.8;
+				minElev = -15;
+				maxElev = 30;
+				initElev = 0;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor = -250;
+						material = -1;
+						armorComponent = "hit_main_turret";
+						name = "hit_main_turret_point";
+						visual = "otocvez";
+						passThrough = 0;
+						minimalHit = 0.029999999;
+						explosionShielding = 0.40000001;
+						radius = 0.25;
+						isTurret = 1;
+					};
+					class HitGun
+					{
+						armor = -250;
+						material = -1;
+						armorComponent = "hit_main_gun";
+						name = "hit_main_gun_point";
+						visual = "otochlaven";
+						passThrough = 0;
+						minimalHit = 0.029999999;
+						explosionShielding = 0.2;
+						radius = 0.2;
+						isGun = 1;
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.31;
+					minFov = 0.034000002;
+					maxFov = 0.31;
+					visionMode[] =
+					{
+						"Normal",
+						"NVG",
+						"TI"
+					};
+				};
+				viewGunnerShadowAmb = 0.5;
+				viewGunnerShadowDiff = 0.050000001;
+			};
+			class CommanderOptics;
+		};
+	};
+
+	class DBA_Skorpion : I_LT_01_cannon_F
+	{
+		displayName = "Skorpion Recon Tank";
+		textureList[] = {};
+		forceInGarage = 1;
+		side = 0;
+		crew = "O_DBA_CIS_B1_Crew_Droid_F";
+		faction = "O_DBA_CIS_F";
+		editorSubcategory = "RD501_Editor_Category_IFV";
+		vehicleClass = "RD501_Vehicle_Class_IFV";
+		// hiddenSelectionsTextures[]=
+		// {
+		// 	"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\Pink_CO.gif",
+		// 	"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\Pink_CO.gif",
+		// 	"",
+		// 	"",
+		// };
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] =
+				{
+					"SmokeLauncher",
+					"DBA_Ground_HMG_Generic"
+				};
+				magazines[] =
+				{
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag"
+				};
 			};
 		};
 	};

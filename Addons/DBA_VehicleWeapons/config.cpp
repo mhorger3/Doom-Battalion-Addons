@@ -79,7 +79,7 @@ class CfgWeapons
 	{
 		class player;
 	};
-
+	
 //Aircraft Weapons
 	class DBA_Aircraft_Lasers_Generic: Cannon_30mm_Plane_CAS_02_F
 	{
@@ -453,7 +453,6 @@ class CfgWeapons
 	class DBA_Ground_HMG_Generic:HMG_127
 	{
 		displayName = "Heavy Laser Repeater";
-		magazineReloadTime = 0;
 		aiDispersionCoefY = 0.5;
 		aiDispersionCoefX = 0.5;
 		scope=2;
@@ -468,15 +467,14 @@ class CfgWeapons
 			"DBA_HMG_black_x500_mag",
 			"DBA_HMG_yellow_x500_mag"
 		};
-		magazineReloadTime=6;
+		magazineReloadTime=3;
 		class manual:manual
 		{
 			sounds[]=
 			{
 				"StandardSound"
 			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				begin1[]=
 				{
@@ -504,10 +502,74 @@ class CfgWeapons
 			maxRange=2;
 			maxRangeProbab=0.0099999998;
 		};
+		class close: manual
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=16;
+			aiRateOfFire=0.5;
+			aiRateOfFireDispersion=1.5;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.69999999;
+			maxRange=200;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=6;
+			burstRangeMax=16;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.69999999;
+			midRange=400;
+			midRangeProbab=0.75;
+			maxRange=800;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=4;
+			burstRangeMax=12;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=400;
+			minRange=400;
+			minRangeProbab=0.75;
+			midRange=800;
+			midRangeProbab=0.69999999;
+			maxRange=1500;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=3;
+			burstRangeMax=12;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.60000002;
+			midRange=1500;
+			midRangeProbab=0.25;
+			maxRange=2000;
+			maxRangeProbab=0.050000001;
+		};
 	};
 	class DBA_Ground_AC_Generic:HMG_127
 	{
-		displayName = "Light Laser Cannon [TEST]";
+		displayName = "Light Laser Cannon";
 		magazineReloadTime = 0;
 		aiDispersionCoefY = 0.5;
 		aiDispersionCoefX = 0.5;
@@ -530,8 +592,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				begin1[]=
 				{
@@ -558,6 +619,70 @@ class CfgWeapons
 			midRangeProbab=0.0099999998;
 			maxRange=2;
 			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=16;
+			aiRateOfFire=0.5;
+			aiRateOfFireDispersion=1.5;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.69999999;
+			maxRange=200;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=6;
+			burstRangeMax=16;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.69999999;
+			midRange=400;
+			midRangeProbab=0.75;
+			maxRange=800;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=4;
+			burstRangeMax=12;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=400;
+			minRange=400;
+			minRangeProbab=0.75;
+			midRange=800;
+			midRangeProbab=0.69999999;
+			maxRange=1500;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=3;
+			burstRangeMax=12;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.60000002;
+			midRange=1500;
+			midRangeProbab=0.25;
+			maxRange=2000;
+			maxRangeProbab=0.050000001;
 		};
 	};
 	class DBA_MBT_Cannon:cannon_120mm
