@@ -1934,7 +1934,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "CIS Marid";
-		editorSubcategory = "O_DBA_CIS_Tanks"
+        editorSubcategory = "O_DBA_CIS_Tanks";
 		vehicleClass = "O_DBA_CIS_Tanks";
 		side = 0;
 		faction = "O_DBA_CIS_F";
@@ -2595,7 +2595,72 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Hyena_Bomber_Droid_RD501_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
-
+    class OPTRE_M808B2;
+    class O_DBA_CIS_Devil : OPTRE_M808B2
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CIS Devil Tank";
+        editorSubcategory = "O_DBA_CIS_Tanks";
+        vehicleClass = "O_DBA_CIS_Tanks";
+        // needs new sound for gun
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+    };
+    class OPTRE_M808S;
+    class O_DBA_CIS_Obliterator : OPTRE_M808S
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CIS Obliterator Tank";
+        editorSubcategory = "O_DBA_CIS_Tanks";
+        vehicleClass = "O_DBA_CIS_Tanks";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class Turrets : turrets
+        {
+            class MainTurret : Mainturret
+            {
+                weapons[] =
+                {
+                    "DBA_MBT_Cannon"
+                };
+                magazines[] =
+                {
+                    "DBA_lancer_mbt_he_x12_mag",
+                    "DBA_lancer_mbt_ap_x12_mag"
+                };
+            };
+        };
+    };
+    class OPTRE_M850_UNSC;
+    class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CIS Conquest Tank";
+        editorSubcategory = "O_DBA_CIS_Tanks";
+        vehicleClass = "O_DBA_CIS_Tanks";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+            class Turrets : turrets
+        {
+            class MainTurret : Mainturret
+            {
+                weapons[] =
+                {
+                    "DBA_MBT_Cannon"
+                };
+                magazines[] =
+                {
+                    "DBA_lancer_mbt_td_x12_mag"
+                };
+            };
+        };
+    };
     class O_DBA_CIS_Flag_CIS_F : FlagCarrier
     {
         scope = 2;
