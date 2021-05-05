@@ -3009,4 +3009,71 @@ class CfgVehicles
 			};
 		};
 	};
+	class APC_Tracked_02_base_F:Tank_F 
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics{};
+				};
+			};
+		};
+	};
+	class O_APC_Tracked_02_base_F:APC_Tracked_02_base_F 
+	{
+		class Components;
+	};
+	class O_APC_Tracked_02_cannon_F:O_APC_Tracked_02_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret{};
+		};
+	};
+	class DBA_Viper : O_APC_Tracked_02_cannon_F
+	{
+		displayName="Viper Heavy APC";
+		textureList[]={};
+		forceInGarage=1;
+		side=0;
+		crew="O_DBA_CIS_B1_Crew_Droid_F";
+		faction="O_DBA_CIS_F";
+		editorSubcategory="RD501_Editor_Category_IFV";
+		vehicleClass="RD501_Vehicle_Class_IFV";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\vipermain_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viper2nd_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viperturret_co.paa",
+			"",
+			"",
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_Ground_HMG_Generic",
+					"DBA_Ground_AC_Generic",
+					"missiles_titan"
+				};
+				magazines[]=
+				{
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"DBA_HMG_pink_x500_mag",
+					"2Rnd_GAT_missiles_O",
+					"2Rnd_GAT_missiles_O"
+				};
+			};
+		};
+	};
+};
 };
