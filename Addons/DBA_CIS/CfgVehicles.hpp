@@ -6,6 +6,7 @@ class CfgVehicles {
     // Base class definitions
     class O_Soldier_F;
     class Car_F;
+    class Tank_F;
     class RD501_opfor_unit_IG_88;
     class RD501_drone_cis_Hover_Droid;
     class RD501_HMP_transport;
@@ -64,7 +65,141 @@ class CfgVehicles {
     class JLTS_B1_antenna_Geonosis;
     class JLTS_B1_antenna_training;
     class JLTS_B1_jetpack_Rocket;
-    class FlagCarrier;
+    class FlagCarrier;	
+    class Wheeled_APC_F : Car_F
+    {
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret : NewTurret
+            {
+                class ViewOptics;
+                class ViewGunner;
+            };
+        };
+        class CommanderOptics;
+    };
+    class APC_Wheeled_02_base_F : Wheeled_APC_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class APC_Wheeled_02_base_v2_F : APC_Wheeled_02_base_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_v2_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class MBT_01_base_F : Tank_F
+    {
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret : NewTurret
+            {
+                class ViewOptics;
+                class ViewGunner;
+            };
+        };
+        class CommanderOptics;
+    };
+    class B_MBT_01_base_F : MBT_01_base_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class B_MBT_01_cannon_F : B_MBT_01_base_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class OPTRE_M808S : B_MBT_01_cannon_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class OPTRE_M808B_base : B_MBT_01_cannon_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class OPTRE_M850_base : OPTRE_M808B_base
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class OPTRE_M850_UNSC : OPTRE_M850_base
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
 
     class O_DBA_CIS_B1_Backpack_Jungle : JLTS_B1_backpack
     {
@@ -658,19 +793,14 @@ class CfgVehicles {
         impactDamageMultiplier=0.5;
         impactEffectsBlood="ImpactMetal";
 
-        armor=5;
-        armorStructural=1;
-        explosionShielding=0.1;
-        minTotalDamageThreshold=0.001;
-        impactDamageMultiplier=0.1;
-        impactEffectsBlood="ImpactMetal";
+        
 
         class HitPoints
         {
 
             class HitFace
             {
-                armor=1;
+                armor=3;
                 material=-1;
                 name="face_hub";
                 passThrough=0.1;
@@ -681,14 +811,14 @@ class CfgVehicles {
 
             class HitNeck : HitFace
             {
-                armor=5;
+                armor=8;
                 name="neck";
                 radius=0.1;
             };
 
             class HitHead : HitNeck
             {
-                armor=1;
+                armor=3;
                 name="head";
                 radius=0.2;
                 depends="HitFace max HitNeck";
@@ -889,6 +1019,108 @@ class CfgVehicles {
         respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
 
         backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
+        armor = 6;
+        armorStructural = 2;
+        explosionShielding = 0.1;
+        minTotalDamageThreshold = 0.001;
+        impactDamageMultiplier = 0.5;
+        impactEffectsBlood = "ImpactMetal";
+
+        class HitPoints
+        {
+
+            class HitFace
+            {
+                armor = 3;
+                material = -1;
+                name = "face_hub";
+                passThrough = 0.1;
+                radius = 0.08;
+                explosionShielding = 1.5;
+                minimalHit = 0.01;
+            };
+
+            class HitNeck : HitFace
+            {
+                armor = 6;
+                name = "neck";
+                radius = 0.1;
+            };
+
+            class HitHead : HitNeck
+            {
+                armor = 3;
+                name = "head";
+                radius = 0.2;
+                depends = "HitFace max HitNeck";
+            };
+
+            class HitPelvis
+            {
+                armor = 6;
+                material = -1;
+                name = "pelvis";
+                passThrough = 0.1;
+                radius = 0.2;
+                explosionShielding = 2;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+
+            class HitAbdomen : HitPelvis
+            {
+                name = "spine1";
+                radius = 0.15;
+            };
+
+            class HitDiaphragm : HitAbdomen
+            {
+                name = "spine2";
+            };
+
+            class HitChest : HitDiaphragm
+            {
+                name = "spine3";
+            };
+
+            class HitBody : HitChest
+            {
+                armor = 1000;
+                name = "body";
+                radius = 0.16;
+                depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+            };
+
+            class HitArms
+            {
+                armor = 18;
+                material = -1;
+                name = "arms";
+                passThrough = 0.1;
+                radius = 0.1;
+                explosionShielding = 2;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+            };
+
+            class HitHands : HitArms
+            {
+                name = "hands";
+                depends = "HitArms";
+            };
+
+            class HitLegs
+            {
+                armor = 18;
+                material = -1;
+                name = "legs";
+                passThrough = 0.1;
+                radius = 0.12;
+                explosionShielding = 2;
+                visual = "injury_legs";
+                minimalHit = 0.01;
+            };
+        };
     };
 
     class O_DBA_CIS_OOM_Marine_Droid_F : O_DBA_CIS_B1_Base_F
@@ -1880,55 +2112,6 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
 	};
-	class Wheeled_APC_F : Car_F
-	{
-		class NewTurret;
-		class Turrets
-		{
-			class MainTurret : NewTurret
-			{
-				class ViewOptics;
-				class ViewGunner;
-			};
-		};
-		class CommanderOptics;
-	};
-	class APC_Wheeled_02_base_F : Wheeled_APC_F
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-			};
-			class CommanderOptics : CommanderOptics
-			{
-			};
-		};
-	};
-	class APC_Wheeled_02_base_v2_F : APC_Wheeled_02_base_F
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-			};
-			class CommanderOptics : CommanderOptics
-			{
-			};
-		};
-	};
-	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_v2_F
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-			};
-			class CommanderOptics : CommanderOptics
-			{
-			};
-		};
-	};
 	class CIS_Marid : O_APC_Wheeled_02_rcws_v2_F
 	{
 		scope = 2;
@@ -2608,7 +2791,6 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
-    class OPTRE_M808S;
     class O_DBA_CIS_Obliterator : OPTRE_M808S
     {
         scope = 2;
@@ -2635,7 +2817,6 @@ class CfgVehicles {
             };
         };
     };
-    class OPTRE_M850_UNSC;
     class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
     {
         scope = 2;
