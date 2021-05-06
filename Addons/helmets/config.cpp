@@ -2105,7 +2105,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Kuzy_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Kuzy_Helmet_CO.paa"
 		};
 	};
 	class 101st_Sixten_Helmet: JLTS_CloneHelmetP2
@@ -3141,6 +3141,32 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Scythe_Helmet_CO.paa"
+		};
+	};
+	class 101st_Deputy_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Sythe)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Deputy_Helmet_CO.paa"
+		};
+	};
+	class 101st_York_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (York)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\York_Helmet_CO.paa"
 		};
 	};
 //Pilot Helmets
