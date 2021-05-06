@@ -12,11 +12,11 @@ class CfgVehicles {
     class RD501_HMP_transport;
     class RD501_HMP_gunship;
     class 101st_Crab_Droid;
-	class 101st_DSD_Droid;
+    class 101st_DSD_Droid;
     class 101st_DSD3_Droid;
     class 101st_NR99_Droid_Tank;
     class 101st_Octo_Droid;
-	class 101st_Hyena_Bomber;
+    class 101st_Hyena_Bomber;
     class 3AS_GAT;
     class 3AS_GAT_Olive;
     class 3AS_GAT_tan;
@@ -631,8 +631,8 @@ class CfgVehicles {
         editorPreview = "ux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Base_F.jpg";
         genericNames = "JLTS_DroidsB1";
         model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
-		hiddenSelections[] = {"camo1", "camo2", "camo3"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
 
@@ -793,8 +793,11 @@ class CfgVehicles {
         impactDamageMultiplier=0.5;
         impactEffectsBlood="ImpactMetal";
 
+<<<<<<< HEAD
         
 
+=======
+>>>>>>> Rebalance_Test_Branch
         class HitPoints
         {
 
@@ -912,9 +915,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag"  };
@@ -946,9 +949,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_OOM";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","RD501_thermaldet_x1_mag","RD501_thermaldet_x1_mag","RD501_thermaldet_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag"  };
@@ -979,9 +982,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Crew";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag"  };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag"  };
@@ -1008,9 +1011,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1";
         
         weapons[] = { "JLTS_E5C_stock","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5C_stock","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag"  };
         respawnMagazines[] = { "JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag"  };
@@ -1143,9 +1146,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Marine";
         
         weapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1177,9 +1180,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Security";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1211,9 +1214,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Pilot";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1245,9 +1248,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Sniper";
         
         weapons[] = { "JLTS_E5S","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5S","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1275,9 +1278,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1";
         
         weapons[] = { "JLTS_E5","launch_B_Titan_F","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","launch_B_Titan_F","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1305,9 +1308,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1";
         
         weapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag" };
@@ -1339,9 +1342,9 @@ class CfgVehicles {
         uniformClass = "DBA_B1_Rocket";
         
         weapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","JLTS_E60R_AT","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag","101st_throwable_c_type_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag","101st_imploder_x1_mag","101st_throwable_c_type_x1_mag" };
@@ -1675,7 +1678,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Droid_F.jpg";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1683,54 +1686,54 @@ class CfgVehicles {
         uniformClass = "DBA_B2";
         
         weapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
-		};
-		respawnMagazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[]=
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        magazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green",
+            "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+        };
+        respawnMagazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green"
+        };
         items[] = {};
         respawnItems[] = {};
 
@@ -1746,7 +1749,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Super_Droid_F.jpg";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Legs_CO.paa"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Red_Legs_CO.paa"};
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1754,58 +1757,58 @@ class CfgVehicles {
         uniformClass = "DBA_B2_Super";
         
         weapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
-		};
-		respawnMagazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[]=
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        magazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green",
+            "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+        };
+        respawnMagazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green"
+        };
 
         items[] = {};
         respawnItems[] = {};
-		backpack = "O_DBA_CIS_B1_Backpack_Rocket";
+        backpack = "O_DBA_CIS_B1_Backpack_Rocket";
     };
        class 101st_B2_Blue;
     class O_DBA_CIS_B2_Super_Droid_Blue_F : 101st_B2_Blue
@@ -1818,7 +1821,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Super_Droid_F.jpg";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Legs_CO.paa"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Blue_Legs_CO.paa"};
 
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
@@ -1826,58 +1829,58 @@ class CfgVehicles {
         uniformClass = "DBA_B2_Super";
         
         weapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"DBA_B2_Weapon",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
-		};
-		respawnMagazines[]=
-		{
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Rocket",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"101st_B2_Mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green"
-		};
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[]=
+        {
+            "DBA_B2_Weapon",
+            "Throw",
+            "Put"
+        };
+        magazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green",
+            "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" 
+        };
+        respawnMagazines[]=
+        {
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Rocket",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "101st_B2_Mag",
+            "SmokeShell",
+            "SmokeShellGreen",
+            "Chemlight_green",
+            "Chemlight_green"
+        };
 
         items[] = {};
         respawnItems[] = {};
-		backpack = "O_DBA_CIS_B1_Backpack_Rocket";
+        backpack = "O_DBA_CIS_B1_Backpack_Rocket";
     };
 
     class O_DBA_CIS_BX_Commando_Droid_F : O_DBA_CIS_BX_Base_F
@@ -1898,9 +1901,9 @@ class CfgVehicles {
         uniformClass = "212th_BX_DROID";
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_imploder_x1_mag", "101st_imploder_x1_mag", "101st_imploder_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","SmokeShellYellow","101st_imploder_x1_mag", "101st_imploder_x1_mag", "101st_imploder_x1_mag","101st_imploder_x1_mag" };
@@ -1950,18 +1953,18 @@ class CfgVehicles {
         vehicleClass = "O_DBA_CIS_Spec_Ops";
         faction = "O_DBA_CIS_F";
         genericNames = "JLTS_DroidsB1";
-		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
+        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
         identityTypes[] = { "NoGlasses", "Head_NATO" };
         facewear = "";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna_CO.paa"};
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna_CO.paa"};
         linkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         respawnLinkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
         
         weapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
         respawnWeapons[] = { "JLTS_E5","Throw",
-			"Put" };
+            "Put" };
 
         magazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_imploder_x1_mag", "101st_imploder_x1_mag", "101st_imploder_x1_mag","101st_imploder_x1_mag" };
         respawnMagazines[] = { "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","101st_imploder_x1_mag", "101st_imploder_x1_mag", "101st_imploder_x1_mag","101st_imploder_x1_mag" };
@@ -1978,7 +1981,7 @@ class CfgVehicles {
         displayName = "IG-100 MagnaGuard";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG100_MagnaGuard_F.jpg";
         uniformClass = "JLTS_Magna";
-		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
+        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
     };
 
     // TODO: IG101 armour values
@@ -1989,19 +1992,19 @@ class CfgVehicles {
         displayName = "IG-101 MagnaGuard";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG101_MagnaGuard_F.jpg";
         uniformClass = "JLTS_Magna";
-		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
+        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\Magna.p3d";
     };
-	
-	class O_DBA_CIS_IG88_MagnaGuard_F : O_DBA_CIS_MagnaGuard_Base_F
+    
+    class O_DBA_CIS_IG88_MagnaGuard_F : O_DBA_CIS_MagnaGuard_Base_F
     {
         scope = 2;
         scopeCurator = 2;
         displayName = "IG-88 MagnaGuard";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_IG101_MagnaGuard_F.jpg";
         uniformClass = "JLTS_IG88";
-		model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88.p3d";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"};
+        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"};
     };
 
     class O_DBA_CIS_T_Series_Base_F : O_DBA_CIS_B1_Base_F
@@ -2099,10 +2102,10 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
-	
-	class O_DBA_CIS_Hyena_Bomber_F : 101st_Hyena_Bomber
-	{
-		scope = 2;
+    
+    class O_DBA_CIS_Hyena_Bomber_F : 101st_Hyena_Bomber
+    {
+        scope = 2;
         scopeCurator = 2;
         displayName = "Hyena-Class Bomber";
         editorSubcategory = "O_DBA_CIS_RD501_Planes";
@@ -2111,34 +2114,92 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+<<<<<<< HEAD
 	};
 	class CIS_Marid : O_APC_Wheeled_02_rcws_v2_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "CIS Marid";
+=======
+    };
+    class Wheeled_APC_F : Car_F
+    {
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret : NewTurret
+            {
+                class ViewOptics;
+                class ViewGunner;
+            };
+        };
+        class CommanderOptics;
+    };
+    class APC_Wheeled_02_base_F : Wheeled_APC_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class APC_Wheeled_02_base_v2_F : APC_Wheeled_02_base_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+    class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_v2_F
+    {
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+            };
+            class CommanderOptics : CommanderOptics
+            {
+            };
+        };
+    };
+   /* class CIS_Marid : O_APC_Wheeled_02_rcws_v2_F
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CIS Marid";
+>>>>>>> Rebalance_Test_Branch
         editorSubcategory = "O_DBA_CIS_Tanks";
-		vehicleClass = "O_DBA_CIS_Tanks";
-		side = 0;
-		faction = "O_DBA_CIS_F";
-		crew = "O_DBA_CIS_B1_Crew_Droid_F"
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				weapons[]= 
-				{
-					"3AS_GATRepeater",
-					"SmokeLauncher"
-				};
-				magazines[]=
-				{
-					"3AS_500Rnd_GAT_redPlasma",
-					"SmokeLauncherMag"
-				};
-			};
-		};
-	};
+        vehicleClass = "O_DBA_CIS_Tanks";
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        crew = "O_DBA_CIS_B1_Crew_Droid_F"
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                weapons[]= 
+                {
+                    "3AS_GATRepeater",
+                    "SmokeLauncher"
+                };
+                magazines[]=
+                {
+                    "3AS_500Rnd_GAT_redPlasma",
+                    "SmokeLauncherMag"
+                };
+            };
+        };
+    };*/
     class O_DBA_CIS_GAT_F : 3AS_GAT
     {
         scope = 2;
@@ -2255,7 +2316,7 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT";
+        displayName = "King AAT (Blue)";
         armor = 700;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
@@ -2270,8 +2331,8 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT (Tan)";
-        armor = 700;
+        displayName = "Recon AAT (Tan)";
+        armor = 500;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
@@ -2285,8 +2346,8 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT (Snow)";
-        armor = 700;
+        displayName = "Medium AAT (Snow)";
+        armor = 600;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
@@ -2300,8 +2361,8 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT (Tropic)";
-        armor = 700;
+        displayName = "Medium AAT (Tropic)";
+        armor = 600;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
@@ -2315,7 +2376,7 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT (Urban)";
+        displayName = "King AAT (Urban)";
         armor = 700;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
@@ -2655,7 +2716,7 @@ class CfgVehicles {
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
     };
-	 class O_DBA_CIS_DSD1_F : 101st_DSD_Droid
+     class O_DBA_CIS_DSD1_F : 101st_DSD_Droid
     {
         scope = 2;
         scopeCurator = 2;
@@ -2791,7 +2852,12 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
+<<<<<<< HEAD
     class O_DBA_CIS_Obliterator : OPTRE_M808S
+=======
+    class OPTRE_M808S;
+   /* class O_DBA_CIS_Obliterator : OPTRE_M808S
+>>>>>>> Rebalance_Test_Branch
     {
         scope = 2;
         scopeCurator = 2;
@@ -2801,7 +2867,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
-        class Turrets : turrets
+        class Turrets : turrets //undefined base class causing mod to not pack, commmenting out for now.
         {
             class MainTurret : Mainturret
             {
@@ -2816,8 +2882,14 @@ class CfgVehicles {
                 };
             };
         };
+<<<<<<< HEAD
     };
     class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
+=======
+    };*/
+    class OPTRE_M850_UNSC;
+    /*class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
+>>>>>>> Rebalance_Test_Branch
     {
         scope = 2;
         scopeCurator = 2;
@@ -2827,7 +2899,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
-            class Turrets : turrets
+            class Turrets : turrets //undefined base class causing mod to not pack, commmenting out for now.
         {
             class MainTurret : Mainturret
             {
@@ -2841,7 +2913,7 @@ class CfgVehicles {
                 };
             };
         };
-    };
+    };*/
     class O_DBA_CIS_Flag_CIS_F : FlagCarrier
     {
         scope = 2;
