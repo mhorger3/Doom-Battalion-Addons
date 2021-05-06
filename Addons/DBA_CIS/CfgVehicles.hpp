@@ -2065,7 +2065,7 @@ class CfgVehicles {
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AAT (King)";
+        displayName = "King AAT (Blue)";
         armor = 700;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
