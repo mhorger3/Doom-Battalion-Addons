@@ -2852,12 +2852,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
-<<<<<<< HEAD
-    class O_DBA_CIS_Obliterator : OPTRE_M808S
-=======
-    class OPTRE_M808S;
-   /* class O_DBA_CIS_Obliterator : OPTRE_M808S
->>>>>>> Rebalance_Test_Branch
+class O_DBA_CIS_Obliterator : OPTRE_M808S
     {
         scope = 2;
         scopeCurator = 2;
@@ -2867,7 +2862,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
-        class Turrets : turrets //undefined base class causing mod to not pack, commmenting out for now.
+        class Turrets : turrets
         {
             class MainTurret : Mainturret
             {
@@ -2882,14 +2877,8 @@ class CfgVehicles {
                 };
             };
         };
-<<<<<<< HEAD
     };
-    class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
-=======
-    };*/
-    class OPTRE_M850_UNSC;
-    /*class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
->>>>>>> Rebalance_Test_Branch
+class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
     {
         scope = 2;
         scopeCurator = 2;
@@ -2899,7 +2888,7 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
-            class Turrets : turrets //undefined base class causing mod to not pack, commmenting out for now.
+            class Turrets : turrets 
         {
             class MainTurret : Mainturret
             {
@@ -2913,7 +2902,7 @@ class CfgVehicles {
                 };
             };
         };
-    };*/
+    };
     class O_DBA_CIS_Flag_CIS_F : FlagCarrier
     {
         scope = 2;
