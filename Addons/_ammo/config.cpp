@@ -602,6 +602,8 @@ class CfgMagazines
 	class Titan_AA;
 	class CA_LauncherMagazine;
 	class Titan_AT;
+
+
 	class DBA_RPS_AT_x1_mag: Titan_AT
 	{
 		scope = 2;
@@ -613,7 +615,7 @@ class CfgMagazines
 		maxLeadSpeed = 60;
 		mass = 70;
 	};
-	class DBA_RPS_AA_x1_mag: Titan_AA
+	class DBA_RPS_AA_x1_mag: Titan_AA 
 	{
 		author = "Bohemia Interactive";
 		scope = 2;
@@ -1997,8 +1999,8 @@ class CfgAmmo
 	};
 	class DBA_GL_AT_ammo: G_40mm_HE
 	{
-		hit = 350;
-		indirectHit = 0;
+		hit = 150;
+		indirectHit = 1;
 		indirectHitRange = 0.1;
 		timeToLive = 30;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_orange.p3d";
@@ -2152,15 +2154,15 @@ class CfgAmmo
 	class 101st_RPS6_HEAA_R: R_PG32V_F
 	{
 		model="\A3\Weapons_F_beta\Launchers\titan\titan_missile_at_fly";
-		hit=1500;
+		hit=350; //vanilla rocket does 150
 		indirectHit=3;
 		allowAgainstInfantry=0;
 	};
 	class 101st_RPS6_HEDP_R: R_TBG32V_F
 	{
 		model="\A3\Weapons_F_beta\Launchers\titan\titan_missile_at_fly";
-		hit=150;
-		indirectHit=100;
+		hit=200;
+		indirectHit=150;
 		allowAgainstInfantry=1;
 	};
 	class 101st_AT_Ammo : M_Titan_AT
