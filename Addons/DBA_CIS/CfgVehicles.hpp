@@ -793,11 +793,6 @@ class CfgVehicles {
         impactDamageMultiplier=0.5;
         impactEffectsBlood="ImpactMetal";
 
-<<<<<<< HEAD
-        
-
-=======
->>>>>>> Rebalance_Test_Branch
         class HitPoints
         {
 
@@ -2114,15 +2109,7 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
-<<<<<<< HEAD
 	};
-	class CIS_Marid : O_APC_Wheeled_02_rcws_v2_F
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "CIS Marid";
-=======
-    };
     class Wheeled_APC_F : Car_F
     {
         class NewTurret;
