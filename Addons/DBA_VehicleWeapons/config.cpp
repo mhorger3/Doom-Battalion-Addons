@@ -1660,7 +1660,7 @@ class CfgAmmo
 		visibleFire=8;
 		audibleFire=120;
 		typicalSpeed=880;
-		tracerScale=0.5;
+		tracerScale=1.2;
 
 		airFriction=0;
 		dangerRadiusBulletClose=12;
