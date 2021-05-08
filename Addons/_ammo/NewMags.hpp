@@ -1,4 +1,5 @@
 	class CA_Magazine;
+
 	class DBA_Mag_Base:CA_Magazine
 	{
 		author="Trip";
@@ -81,7 +82,7 @@
 		count=10;
 		initspeed=910;
 	};
-	class DBA_127x99_SLAP_Mag_Base: DBA_Mag_Base
+	class DBA_127x99_Mag_Base: DBA_Mag_Base
 	{
 		scope=2;
 		displayname="12.7mw Overcharged Magazine(5rnd Blue)";
