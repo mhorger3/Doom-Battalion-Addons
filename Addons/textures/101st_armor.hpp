@@ -2002,7 +2002,11 @@ class 101st_212_Blood: Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Blood_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Blood_Legs_CO.paa"
 	};
-	hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\data\Blood_Chest.rvmat","\101st_Aux_Mod\Addons\textures\101st\armor\data\Blood_Legs.rvmat"};
+	hiddenSelectionsMaterials[] = 
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Blood_Chest.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Blood_Legs.rvmat"
+	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
