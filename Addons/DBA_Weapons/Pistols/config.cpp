@@ -822,6 +822,56 @@ class CfgWeapons
 			mass=60;
 		};
 	};
+	class DBA_DC17TEST : DBA_Pistol_Base
+	{
+		//JLTS Shield Things
+		JLTS_canHaveShield = 1;
+		JLTS_shieldedWeapon = "DBA_DC17_shield";
+
+		modes[] = { "Single", "Stun" };
+
+		displayName = "[101st] DC-17";
+		baseWeapon = "DBA_DC17";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		fireLightDiffuse[] = { 0,0,1 };
+		fireLightAmbient[] = { 0,0,.5 };
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
+		magazines[] = { "DBA_DC17_x20_mag" };
+		magazineWell[] = { 
+			"DBA_DC17_GL_Mags_magwell",
+			"DBA_Test_magwell" 
+		};
+		class Single : Single
+		{
+			dispersion = 0.0001;
+			reloadTime = 0.1;
+		};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 20;
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = { "JLTS_DC17SA_flashlight" };
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {};
+				iconPosition[] = { 0.24,0.35 };
+				iconScale = 0.2;
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+	};
 	class DBA_A180:DBA_Pistol_Base
 	{
 		//Make sure you add these somewhere or its probably not going to work

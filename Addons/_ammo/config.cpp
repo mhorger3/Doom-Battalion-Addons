@@ -27,6 +27,10 @@ class CfgMagazineWells
 	{
 		DBA_rocket_RPS_magwell[] = {"DBA_RPS_AT_x1_mag","DBA_RPS_AA_x1_mag"};
 	};
+	class DBA_Test_magwell
+	{
+		DBA_Test_magwell[] = {"DBA_TEST556", "DBA_TEST65", "DBA_TEST762", "DBA_TEST338", "DBA_TEST408", "DBA_TEST127x99", "DBA_TEST127x99_SLAP", "DBA_TEST9x21", "DBA_TEST45acp", "DBA_TEST127x33", "DBA_TEST12gaSlug", "DBA_TEST12gaPellets" };
+	};
 };
 class CfgMagazines
 {
@@ -37,7 +41,199 @@ class CfgMagazines
 
 //FUCK NEW MAGAZINES
 
-	class DBA_DC15s_x60_mag: CA_Magazine
+	class DBA_TEST556 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 556 Pistol Test Magazine";
+		ammo = "DBA_556_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST65 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 65 Pistol Test Magazine";
+		ammo = "DBA_65_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST762 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 762 Pistol Test Magazine";
+		ammo = "DBA_762_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST338 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 338 Pistol Test Magazine";
+		ammo = "DBA_338_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST408 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 408 Pistol Test Magazine";
+		ammo = "DBA_408_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST127x99 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 127x99 Pistol Test Magazine";
+		ammo = "DBA_127x99_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST127x99_SLAP : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 127x99 SLAP Pistol Test Magazine";
+		ammo = "DBA_127x99_SLAP_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST9x21 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 9x21 Pistol Test Magazine";
+		ammo = "DBA_9x21_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST45acp : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 45acp Pistol Test Magazine";
+		ammo = "DBA_45acp_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST127x33 : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 127x33 Pistol Test Magazine";
+		ammo = "DBA_127x33_base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST12gaSlug : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 12ga Slug SLAP Pistol Test Magazine";
+		ammo = "DBA_12gaSlug_Base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	class DBA_TEST12gaPellets : CA_Magazine
+	{
+		author = "DBA";
+		scope = 2;
+		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+		displayName = "60Rnd DC-17 12ga Pellets Pistol Test Magazine";
+		ammo = "DBA_12gaPellets_Base";
+		tracersEvery = 1;
+		type = 16;
+		count = 60;
+		descriptionShort = "60Rnd DC15 Blaster Magazine";
+		mass = 10;
+		initSpeed = 310;
+	};
+
+	/*class DBA_DC15s_x60_mag: CA_Magazine
 	{
 		author = "DBA";
 		scope = 2;
@@ -51,7 +247,8 @@ class CfgMagazines
 		descriptionShort = "60Rnd DC15 Blaster Magazine";
 		mass = 10;
 		initSpeed = 310;
-	};
+	}; 
+	*/
 
 //OLD MAGAZINES
 
@@ -1202,9 +1399,9 @@ class CfgAmmo
 	class PipeBombBase;
 	class A_RocketHH15Clone_HEAT_FireForget;
 	class M_Titan_AA;
-
+	
 	class BulletBase;
-
+	class ShotgunBase;
 
 //AMMO REDO VOLUME 2
 
@@ -1506,7 +1703,7 @@ class CfgAmmo
 				hitWood="442_plasma_impact";
 			};
 		};
-
+		
 	//Rifle Calibers
 
 		class DBA_556_base:DBA_ammo_base //556 NATO
