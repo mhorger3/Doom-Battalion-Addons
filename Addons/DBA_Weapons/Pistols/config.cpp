@@ -826,6 +826,7 @@ class CfgWeapons
 	{
 		//Make sure you add these somewhere or its probably not going to work
 		
+		displayName = "[101st] A180 Blaster Pistol";
 		JLTS_canHaveShield = 0;
 		baseWeapon = "DBA_A180";
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Pistols\A180.p3d";
