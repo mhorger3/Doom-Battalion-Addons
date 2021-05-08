@@ -82,7 +82,7 @@
 		count=10;
 		initspeed=910;
 	};
-	class DBA_127x99_Mag_Base: DBA_Mag_Base
+	class DBA_127x99_Mag_SLAP_Base: DBA_Mag_Base
 	{
 		scope=2;
 		displayname="12.7mw Overcharged Magazine(5rnd Blue)";
