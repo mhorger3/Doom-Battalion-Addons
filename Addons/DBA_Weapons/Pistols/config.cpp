@@ -830,8 +830,8 @@ class CfgWeapons
 
 		modes[] = { "Single", "Stun" };
 
-		displayName = "[101st] DC-17";
-		baseWeapon = "DBA_DC17";
+		displayName = "[101st] DC-17 Test";
+		baseWeapon = "DBA_DC17test";
 		scope = 2;
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
