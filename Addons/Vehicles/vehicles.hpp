@@ -16092,7 +16092,7 @@
 		cost=1500000;
 		damageResistance=0.02;
 		crewVulnerable=1;
-		armor=1700;
+		armor=700;
 		armorStructural=6;
 		class HitPoints: HitPoints
 		{
@@ -18366,10 +18366,10 @@
 		};
 	};
 	class 101st_Crab_Droid: StaticMGWeapon
-	{
+	 {
 		author="Dutch";
 		displayName="LM-432 Crab Droid (Prototype) ";
-		armor=600;
+		armor=200;
 		model = "101st_Aux_Mod\Addons\Vehicles\Crab\Crab.p3d";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Crab\data\Body_co.paa", "101st_Aux_Mod\Addons\Vehicles\Crab\data\Legs_co.paa"};
@@ -18499,7 +18499,7 @@
 	class 101st_DSD3_Droid: StaticMGWeapon
 	{
 		displayName="DSD3 Spider Droid (Prototype)";
-		armor=800;
+		armor=450;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -18626,7 +18626,7 @@
 	class 101st_DSD_Droid: StaticMGWeapon
 	{
 		displayName="CIS Dwarf Spider Droid";
-		armor=800;
+		armor=450;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -18753,7 +18753,7 @@
 	class 101st_Octo_Droid: StaticMGWeapon
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
-		armor=1200;
+		armor=700;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
