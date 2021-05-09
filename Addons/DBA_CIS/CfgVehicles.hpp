@@ -618,144 +618,6 @@ class CfgVehicles {
         };
     };
 
-    class O_DBA_CIS_B2_Base_F : O_Soldier_F
-    {
-        scope = 0;
-        scopeCurator = 0;
-        displayName = "";
-       
-        editorSubcategory = "O_DBA_CIS_Spec_Ops";
-        vehicleClass = "O_DBA_CIS_Spec_Ops";
-        side = 0;
-        faction = "O_DBA_CIS_F";
-        editorPreview = "ux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B2_Base_F.jpg";
-        genericNames = "JLTS_DroidsB1";
-        model="\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "camo3"};
-        hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Bust_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Torso_CO.paa", "\101st_Aux_Mod\Addons\DBA_CIS\Assets\B2_Legs_CO.paa"};
-        identityTypes[] = { "NoGlasses", "Head_NATO" };
-        facewear = "";
-
-        uniformClass = "";
-
-        linkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
-        respawnLinkedItems[] = { "ItemMap","ItemGPS","ItemCompass" };
-        
-        weapons[] = {};
-        respawnWeapons[] = {};
-
-        magazines[] = {};
-        respawnMagazines[] = {};
-
-        items[] = {};
-        respawnItems[] = {};
-
-        maxSpeed = 1.5;
-
-        armor=7; //Global Health
-        armorStructural=2; //Divisor for global damage
-        explosionShielding=0.2;
-        minTotalDamageThreshold=0.001;
-        impactDamageMultiplier=0.1;
-        impactEffectsBlood="ImpactMetal";
-
-        class HitPoints //These act as multipliers for the global health values
-        {
-            class HitFace
-            {
-                armor=1;
-                material=-1;
-                name="face_hub";
-                passThrough=0.1;
-                radius=0.06;
-                explosionShielding=0.75; 
-                minimalHit=0.1;
-            };
-
-            class HitNeck : HitFace
-            {
-                armor=5;
-                name="neck";
-                radius=0.1;
-            };
-
-            class HitHead : HitNeck
-            {
-                armor=1;
-                name="head";
-                radius=0.1;
-                depends="HitFace max HitNeck";
-            };
-
-            class HitPelvis
-            {
-                armor=5;
-                material=-1;
-                name="pelvis";
-                passThrough=0.1;
-                radius=0.2;
-                explosionShielding=1;
-                visual="injury_body";
-                minimalHit=0.1;
-            };
-
-            class HitAbdomen : HitPelvis
-            {
-                name="spine1";
-                radius=0.15;
-            };
-
-            class HitDiaphragm : HitAbdomen
-            {
-                name="spine2";
-                explosionShielding=6;
-            };
-
-            class HitChest : HitDiaphragm
-            {
-                name="spine3";
-            };
-
-            class HitBody : HitChest
-            {
-                armor=1000;
-                name="body";
-                radius=0.16;
-                depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-            };
-
-            class HitArms
-            {
-                armor=15;
-                material=-1;
-                name="arms";
-                passThrough=1;
-                radius=0.1;
-                explosionShielding=1;
-                visual="injury_hands";
-                minimalHit=0.1;
-            };
-
-            class HitHands : HitArms
-            {
-                name="hands";
-                depends="HitArms";
-            };
-
-            class HitLegs
-            {
-                armor=15;
-                material=-1;
-                name="legs";
-                passThrough=1;
-                radius=0.12;
-                explosionShielding=1;
-                visual="injury_legs";
-                minimalHit=0.1;
-            };
-        };
-    };
-
     class O_DBA_CIS_BX_Base_F : O_Soldier_F
     {
         scope = 0;
@@ -786,8 +648,8 @@ class CfgVehicles {
         items[] = {};
         respawnItems[] = {};
 
-        armor=25;
-        armorStructural=5;
+        armor=7;
+        armorStructural=1;
         explosionShielding=2;
         minTotalDamageThreshold=0.001;
         impactDamageMultiplier=0.5;
@@ -816,7 +678,7 @@ class CfgVehicles {
 
             class HitHead : HitNeck
             {
-                armor=3;
+                armor=4;
                 name="head";
                 radius=0.2;
                 depends="HitFace max HitNeck";
@@ -824,7 +686,7 @@ class CfgVehicles {
 
             class HitPelvis
             {
-                armor=5;
+                armor=8;
                 material=-1;
                 name="pelvis";
                 passThrough=0.1;
@@ -860,7 +722,7 @@ class CfgVehicles {
 
             class HitArms
             {
-                armor=15;
+                armor=18;
                 material=-1;
                 name="arms";
                 passThrough=0.1;
@@ -878,7 +740,7 @@ class CfgVehicles {
 
             class HitLegs
             {
-                armor=15;
+                armor=18;
                 material=-1;
                 name="legs";
                 passThrough=0.1;
