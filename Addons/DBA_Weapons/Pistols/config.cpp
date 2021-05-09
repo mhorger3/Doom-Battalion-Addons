@@ -1203,7 +1203,7 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,60,60}; //color[]={180,160,130}; Default
+            color[]={180,160,130}; //color[]={180,160,130}; Default
             ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
