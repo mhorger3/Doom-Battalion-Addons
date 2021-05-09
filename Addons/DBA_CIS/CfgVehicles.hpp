@@ -514,8 +514,8 @@ class CfgVehicles {
         items[] = {};
         respawnItems[] = {};
 
-        armor=5;
-        armorStructural=1;
+        armor=5; //armor=2; Vanilla Values
+        armorStructural=1;  //armorStructural=4;
         explosionShielding=0.1;
         minTotalDamageThreshold=0.001;
         impactDamageMultiplier=0.5;
@@ -526,25 +526,25 @@ class CfgVehicles {
 
             class HitFace
             {
-                armor=1;
+                armor=1; //1
                 material=-1;
                 name="face_hub";
                 passThrough=0.1;
                 radius=0.08;
-                explosionShielding=1.5;
+                explosionShielding=1.5; //Makes things strong against explosives
                 minimalHit=0.01;
             };
 
             class HitNeck : HitFace
             {
-                armor=5;
+                armor=5; //4
                 name="neck";
                 radius=0.1;
             };
 
             class HitHead : HitNeck
             {
-                armor=1;
+                armor=1; //1
                 name="head";
                 radius=0.2;
                 depends="HitFace max HitNeck";
@@ -552,7 +552,7 @@ class CfgVehicles {
 
             class HitPelvis
             {
-                armor=5;
+                armor=5; //6
                 material=-1;
                 name="pelvis";
                 passThrough=0.1;
@@ -580,7 +580,7 @@ class CfgVehicles {
 
             class HitBody : HitChest
             {
-                armor=1000;
+                armor=1000; //Vanilla 1000
                 name="body";
                 radius=0.16;
                 depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
@@ -588,7 +588,7 @@ class CfgVehicles {
 
             class HitArms
             {
-                armor=15;
+                armor=15; //6
                 material=-1;
                 name="arms";
                 passThrough=0.1;
@@ -606,7 +606,7 @@ class CfgVehicles {
 
             class HitLegs
             {
-                armor=15;
+                armor=15; //6
                 material=-1;
                 name="legs";
                 passThrough=0.1;
@@ -652,14 +652,14 @@ class CfgVehicles {
 
         maxSpeed = 1.5;
 
-        armor=7;
-        armorStructural=2;
+        armor=7; //Global Health
+        armorStructural=2; //Divisor for global damage
         explosionShielding=0.2;
         minTotalDamageThreshold=0.001;
         impactDamageMultiplier=0.1;
         impactEffectsBlood="ImpactMetal";
 
-        class HitPoints
+        class HitPoints //These act as multipliers for the global health values
         {
             class HitFace
             {
@@ -668,7 +668,7 @@ class CfgVehicles {
                 name="face_hub";
                 passThrough=0.1;
                 radius=0.06;
-                explosionShielding=0.75;
+                explosionShielding=0.75; 
                 minimalHit=0.1;
             };
 
