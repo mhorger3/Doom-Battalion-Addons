@@ -29,6 +29,7 @@ class CfgPatches
 			"101st_Crab_Droid",
 			"DBA_Technical",
 			"DBA_Marid",
+			"DBA_Viper",
 			"DBA_Skorpion"
 		};
 	}
@@ -2759,6 +2760,14 @@ class CfgVehicles
 			"CamoNet",
 			"CamoSlat"
 		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\marid_co.paa",
+			"",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\maridturret_co.paa",
+			"",
+			"",
+		};
 		forceInGarage = 1;
 		crew = "O_DBA_CIS_B1_Crew_Droid_F";
 		faction = "O_DBA_CIS_F";
@@ -2906,8 +2915,8 @@ class CfgVehicles
 		vehicleClass="RD501_Vehicle_Class_IFV";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\pink_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\pink_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\skorpionmain_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\skorpionturret_co.paa",
 			"",
 			"",
 		};
@@ -2979,9 +2988,9 @@ class CfgVehicles
 		vehicleClass="RD501_Vehicle_Class_IFV";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\pink_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\pink_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\pink_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\vipermain_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viper2nd_co.paa",
+			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viperturret_co.paa",
 			"",
 			"",
 		};
