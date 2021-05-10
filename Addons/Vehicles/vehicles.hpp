@@ -18370,6 +18370,7 @@
 		author="Dutch";
 		displayName="LM-432 Crab Droid (Prototype) ";
 		armor=200;
+		explosionshielding=100;
 		model = "101st_Aux_Mod\Addons\Vehicles\Crab\Crab.p3d";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Crab\data\Body_co.paa", "101st_Aux_Mod\Addons\Vehicles\Crab\data\Legs_co.paa"};
@@ -18500,6 +18501,7 @@
 	{
 		displayName="DSD3 Spider Droid (Prototype)";
 		armor=450;
+		explosionshielding=100;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -18627,6 +18629,7 @@
 	{
 		displayName="CIS Dwarf Spider Droid";
 		armor=450;
+		explosionshielding=100;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -18754,6 +18757,7 @@
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=700;
+		explosionshielding=100;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
