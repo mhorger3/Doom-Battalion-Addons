@@ -168,11 +168,12 @@ class CfgWeapons
 		displayname = "101st DC15C";
 		scope = 2;
 		scopeArsenal = 2;
-		magazines[]=
+		/*magazines[]=
 		{
 			"DBA_DC15a_Med_x30_mag",
 			"DBA_DC15a_Low_x60_mag"
-		};
+		};*/
+		magazines[] = { "DBA_65_Mag_Base" };
 		class WeaponSlotsInfo
 		{
 			mass=30;

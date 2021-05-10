@@ -84,7 +84,8 @@ class CfgWeapons
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Valken_CA.paa";
 		muzzles[] = {"this"};
-		magazines[] = {"101st_Valken_Mag"};
+		//magazines[] = {"101st_Valken_Mag"};
+		magazines[] = { "DBA_762_50RoundMag_Base" };
 		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 		opticsDisablePeripherialVision = 1;
 		opticsFlare = 1;
@@ -290,7 +291,12 @@ class CfgWeapons
 		scope=2;
 		model="\101st_Aux_Mod\Addons\DBA_Weapons\Marksman\gundark.p3d";
 		muzzles[] = {"this"};
-		magazines[] = {"101st_Gundark_Mag"};
+		//magazines[] = {"101st_Gundark_Mag"};
+		magazines[] = 
+		{ 
+			"DBA_127x99_Mag_Base",
+			"DBA_127x99Overcharge_Mag_Base"
+		};
 		reloadAction = "ReloadMagazine";
 		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 		opticsDisablePeripherialVision = 1;
@@ -479,7 +485,8 @@ class CfgWeapons
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Marksman\verpine.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Verpine_CA.paa";
 		muzzles[] = {"this"};
-		magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
+		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
+		magazines[] = { "DBA_762_15RoundClip_Base" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Verpine DMR";
 		descriptionShort = "Verpine DMR";
@@ -638,7 +645,8 @@ class CfgWeapons
 		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01",0.707946,1,25};
 		descriptionShort = "101st AT Rifle";
 		muzzles[] = {"this"};
-		magazines[] = {"101st_Zillo_Mag"};
+		//magazines[] = {"101st_Zillo_Mag"};
+		magazines[] = { "DBA_AntiTankRound_Base" };
 		displayName = "[101st] Zillo AT-6";
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_dry",0.501187,1,20};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\data\atRifle_CO.paa"};

@@ -60,7 +60,8 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Zakkeg\ZakkegMG.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Zakkeg_CA.paa";
 		muzzles[] = {"this"};
-		magazines[] = {"101st_MG_Mag_Green"};
+		//magazines[] = {"101st_MG_Mag_Green"};
+		magazines[] = { "DBA_762_75RoundMag_Base" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] MG5 Zakkeg";
 		descriptionShort = "Zakkeg MG5 Rifle";

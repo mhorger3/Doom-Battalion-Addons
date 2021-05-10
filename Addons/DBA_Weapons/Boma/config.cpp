@@ -87,10 +87,14 @@ class CfgWeapons
 			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4","OP_eye5"};
 			discreteDistanceInitIndex = 0;
 		};
-		magazines[]=
+		magazines[] =
+			/*	{
+					"101st_City_Killer_Buff",
+					"101st_City_Killer_Slug_Green"
+				}; */
 		{
-			"101st_City_Killer_Buff",
-			"101st_City_Killer_Slug_Green"
+			"DBA_12gaScatter_Mag_Base",
+			"DBA_12gaSlug_Mag_Base"
 		};
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Boma CK6 GL";

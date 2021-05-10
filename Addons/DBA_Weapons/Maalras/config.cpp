@@ -91,7 +91,8 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\None_CO.paa"};
 		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\Rifle.rvmat"};
-		magazines[] = {"101st_Maalras_Mag_Green","101st_Maalras_Ext_Mag_Green"};
+		//magazines[] = {"101st_Maalras_Mag_Green","101st_Maalras_Ext_Mag_Green"};
+		magazines[] = { "DBA_45acp_45RoundMag_Base" };
 		magazineWell[] = {""};
 		displayName = "[101st] Maalras SMG";
 		descriptionShort = "Maalras SMG";
@@ -164,7 +165,8 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\Enforcer_CO.paa"};
 		hiddenSelectionsMaterials[] = {""};
-		magazines[] = {"101st_PDW_Enforcer_Mag_Green"};
+		//magazines[] = {"101st_PDW_Enforcer_Mag_Green"};
+		magazines[] = { "DBA_9mm_100RoundMag_Base" };
 		magazineWell[] = {""};
 		displayName = "[101st] SM-01 Enforcer";
 		descriptionShort = "Enforcer SMG";

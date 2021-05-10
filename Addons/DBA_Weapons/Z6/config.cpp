@@ -103,7 +103,7 @@ class CfgWeapons
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,0.5};
-		magazines[] = {"DBA_z6_x400_mag","101st_Z6_Mag"};
+		magazines[] = {"DBA_556_200RoundMag_Base"};
 		class FullAuto1: Mode_FullAuto
 		{
 			dispersion = 0.00015;

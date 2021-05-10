@@ -91,7 +91,8 @@ class CfgWeapons
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_clearJamAction = "ReloadMagazine";
 		canShootInWater = 1;
-		magazines[] = {"DBA_DC15a_Med_x30_mag","DBA_DC15a_High_x15_mag","DBA_DC15a_Low_x60_mag"};
+		//magazines[] = {"DBA_DC15a_Med_x30_mag","DBA_DC15a_High_x15_mag","DBA_DC15a_Low_x60_mag"};
+		magazines[] = { "DBA_65_Mag_Base" };
 		muzzles[] = {"this","Stun"};
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15A.p3d";
 		hiddenSelections[] = {"camo1"};
@@ -213,7 +214,8 @@ class CfgWeapons
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_clearJamAction = "ReloadMagazine";
 		canShootInWater = 1;
-		magazines[] = {"DBA_DC15a_Med_x30_mag","DBA_DC15a_High_x15_mag","DBA_DC15a_Low_x60_mag"};
+		//magazines[] = {"DBA_DC15a_Med_x30_mag","DBA_DC15a_High_x15_mag","DBA_DC15a_Low_x60_mag"};
+		magazines[] = { "DBA_65_Mag_Base" };
 		muzzles[] = {"this","101st_GL"};
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\DC15\15GL.p3d";
 		hiddenSelections[] = {"camo1"};
@@ -359,7 +361,8 @@ class CfgWeapons
 		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 		hiddenSelections[] = {"body", "scope"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\DC15\data\DC15LEScoped_Gun_CO.paa", "101st_Aux_Mod\Addons\DBA_Weapons\DC15\data\DC15LEScoped_Scope_CO.paa"};
-		magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
+		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
+		magazines[] = { "DBA_338_Mag_Base" };
 		class Stun: 101st_stun_muzzle
 		{
 			reloadAction = "ReloadMagazine";
@@ -455,7 +458,8 @@ class CfgWeapons
 		ACE_clearJamAction = "ReloadMagazine";
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\dc15x.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_EPA\LongRangeRifles\DMR_01\data\Anim\dmr_01.rtm"};
-		magazines[] = {"101st_DC15x_Mag"};
+		//magazines[] = {"101st_DC15x_Mag"};
+		magazines[] = { "DBA_408_Mag_Base" };
 		recoil = "recoil_m320";
 
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -571,7 +575,15 @@ class CfgWeapons
 		modes[] = {"FullAuto","close","short","medium"};
 		muzzles[] = {"this","Stun"};
 		recoil = "recoil_mk20";
-		magazines[] = {"DBA_DC15a_box_mag_x240_mag","101st_DC15Mod0_Mag","101st_DC15Mod0_HiMag"};
+		magazines[] =
+			/*{
+				"DBA_DC15a_box_mag_x240_mag",
+				"101st_DC15Mod0_Mag",
+				"101st_DC15Mod0_HiMag"
+			};*/
+		{
+			"DBA_65_Box_Mag_Base",
+		};
 		class Stun: 101st_stun_muzzle
 		{
 			reloadAction = "ReloadMagazine";

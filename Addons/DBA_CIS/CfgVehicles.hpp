@@ -648,7 +648,7 @@ class CfgVehicles {
         items[] = {};
         respawnItems[] = {};
 
-        armor=7;
+        armor=5;
         armorStructural=1;
         explosionShielding=2;
         minTotalDamageThreshold=0.001;
@@ -2699,7 +2699,7 @@ class CfgVehicles {
         // needs new sound for gun
         side = 0;
         faction = "O_DBA_CIS_F";
-        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        crew = "O_DBA_CIS_B1_Crew_Droid_F";
     };
 class O_DBA_CIS_Obliterator : OPTRE_M808S
     {
@@ -2710,7 +2710,7 @@ class O_DBA_CIS_Obliterator : OPTRE_M808S
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
         faction = "O_DBA_CIS_F";
-        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        crew = "O_DBA_CIS_B1_Crew_Droid_F";
         class Turrets : turrets
         {
             class MainTurret : Mainturret
@@ -2736,7 +2736,7 @@ class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
         faction = "O_DBA_CIS_F";
-        crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        crew = "O_DBA_CIS_B1_Crew_Droid_F";
             class Turrets : turrets 
         {
             class MainTurret : Mainturret

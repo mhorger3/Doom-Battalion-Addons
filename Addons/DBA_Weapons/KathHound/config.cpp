@@ -84,7 +84,8 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\KathHound\KathHound.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Kath_CA.paa";
 		muzzles[] = {"this","Stun"};
-		magazines[] = {"101st_Ion_Mag_Green"};
+		//magazines[] = {"101st_Ion_Mag_Green"};
+		magazines[] = { "DBA_556_Mag_Base" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] IR-01 Kath Hound";
 		descriptionShort = "Hound Ion Rifle";
