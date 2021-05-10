@@ -387,36 +387,6 @@
 				distance=1;
 			};
 		};
-		class DBA_762_Overcharge_base :DBA_762_base //762 Nato
-		{
-			hit = 11.6; //How much damage when it hits
-			indirecthit = 0; //Splash Damage
-			indirecthitrange = 0; //Splash Damage Range in meters
-			caliber = 2.4; //Acts as penetration multiplier for the projectile.
-			typicalspeed = 800; //What speed does this need to be going to inflict full damage
-
-			audibleFire = 45; //Alerts AI from further away
-
-			dangerRadiusBulletClose = 8;
-			dangerRadiusHit = 12;
-			suppressionRadiusBulletClose = 6;
-			suppressionRadiusHit = 8;
-			aiAmmoUsageFlags = 64;
-			class CamShakeExplode
-			{
-				power = 2.8284299;
-				duration = 0.60000002;
-				frequency = 20;
-				distance = 8.48528;
-			};
-			class CamShakeHit
-			{
-				power = 5;
-				duration = 0.2;
-				frequency = 20;
-				distance = 1;
-			};
-		};
 		class DBA_338_base:DBA_ammo_base //.338 Win Mag
 		{
 			hit=16; //How much damage when it hits
@@ -774,47 +744,6 @@
 			effectfly="442_plasma_yellow";
 		};
 
-	// 7.62 Overcharge rounds, its literally the same bullet but goes through slightly more
-		class DBA_762_Overcharge_blue : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\blue_tracer.p3d";
-			effectfly = "442_plasma_blue";
-		};
-		class DBA_762_Overcharge_green : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\green_tracer.p3d";
-			effectfly = "442_plasma_green";
-		};
-		class DBA_762_Overcharge_orange : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\orange_tracer.p3d";
-			effectfly = "442_plasma_orange";
-		};
-		class DBA_762_Overcharge_red : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\red_tracer.p3d";
-			effectfly = "442_plasma_red";
-		};
-		class DBA_762_Overcharge_pink : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\pink_tracer.p3d";
-			effectfly = "442_plasma_pink";
-		};
-		class DBA_762_Overcharge_purple : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\purple_tracer.p3d";
-			effectfly = "442_plasma_purple";
-		};
-		class DBA_762_Overcharge_black : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\black_tracer.p3d";
-			effectfly = "442_plasma_black";
-		};
-		class DBA_762_Overcharge_yellow : DBA_762_Overcharge_base
-		{
-			model = "kobra\442_weapons\ammo\yellow_tracer.p3d";
-			effectfly = "442_plasma_yellow";
-		};
 	//.338 Color Variants
 
 		class DBA_338_blue: DBA_338_base

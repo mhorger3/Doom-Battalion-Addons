@@ -151,15 +151,3 @@
 		count=8;
 		initspeed=400;
 	};
-
-	class DBA_762_6_Round_Base : DBA_762_Mag_Base
-	{
-		scope = 2;
-		displayname = "7.62mw Over Charged Magazine(6rnd Blue)";
-		ammo = "DBA_762_Overcharge_blue";
-		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
-		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-		mass = 8;
-		count = 6;
-		initspeed = 500;
-	};
