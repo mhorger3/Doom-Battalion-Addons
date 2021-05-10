@@ -2098,8 +2098,8 @@ class CfgAmmo
 		simulation = "shotGrenade";
 		thrust = 210;
 		airFriction = -0.0005;
-		hit=3000;
-		indirectHit=2000;
+		hit=300;
+		indirectHit=200;
 		indirectHitRange=10;
 		typicalspeed = 15;
 		explosionTime=15;
