@@ -7,7 +7,7 @@ class cfgPatches
 		requiredaddons[] = {"JLTS_weapons_DC15A","101st_Aux_Mod","DBA_patch_weapons"};
 		requiredversion = 0.1;
 		units[] = {"DBA_VH_DC15A"};
-		weapons[] = {"DBA_DC15A","DBA_DC15LSW","DBA_DC15LE", "DBA_DC15x", "DBA_Forest_DC15x", "DBA_Desert_DC15x", "DBA_DC15GL"};
+		weapons[] = {"DBA_DC15A","DBA_DC15LSW","DBA_DC15LE", "DBA_W4_LRUS", "DBA_Forest_W4_LRUS", "DBA_Desert_W4_LRUS", "DBA_DC15GL"};
 	};
 };
 class UGL_F;
@@ -442,10 +442,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class DBA_DC15x: JLTS_DC15x
+	class W4_LRUS: JLTS_DC15x
 	{
 		author = "Frisk";
-		baseWeapon = "DBA_DC15x";
+		baseWeapon = "W4_LRUS";
 		displayName = "[101st] W4-LRUS";
 		scope = 2;
 		scopeArsenal = 2;
@@ -535,17 +535,17 @@ class CfgWeapons
 			};
 		};
 	};
-	class DBA_Forest_DC15x: DBA_DC15x
+	class DBA_Forest_W4_LRUS : W4_LRUS
 	{
-		baseWeapon = "DBA_Forest_DC15x";
+		baseWeapon = "DBA_Forest_W4_LRUS";
 		displayName = "[101st] W4-LRUS (Forest)";
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\DC15X_Camo.p3d";
 		hiddenSelections[] = {"camo","camo1","camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_CO.paa","101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_Scope_CO.paa","101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_Netting_Forest_CO.paa"};
 	};
-	class DBA_Desert_DC15x: DBA_Forest_DC15x
+	class DBA_Desert_W4_LRUS : DBA_Forest_W4_LRUS
 	{
-		baseWeapon = "DBA_Desert_DC15x";
+		baseWeapon = "DBA_Desert_W4_LRUS";
 		displayName = "[101st] W4-LRUS (Desert)";
 		hiddenSelections[] = {"camo","camo1","camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_CO.paa","101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_Scope_CO.paa","101st_Aux_Mod\Addons\DBA_Weapons\DC15\DC15x\data\DC15X_Netting_Desert_CO.paa"};
@@ -592,5 +592,79 @@ class CfgWeapons
 				compatibleItems[] = {"DBA_MRCO_A_TI_2x4", "DBA_MRCO_B_TI_2x4"};
 			};
 		};
+	};
+	class DBA_DC_15x : JLTS_DC15x
+	{
+		author = "Vulgar";
+		baseWeapon = "DBA_DC_15x";
+		displayName = "[101st] DC-15x";
+		scope = 2;
+		scopeArsenal = 2;
+		ACE_Overheating_JamChance = 0;
+		ACE_overheating_mrbs = 3e+09;
+		ACE_overheating_allowSwapBarrel = 1;
+		ACE_clearJamAction = "ReloadMagazine";
+		magazines[] = { "DBA_762_6_Round_Base" };
+		recoil = "recoil_m320";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 100;
+			class CowsSlot : CowsSlot
+			{
+				access = 1;
+				compatibleItems[] = { "JLTS_DC15X_scope","DBA_HAMR_A","DBA_HAMR_B" };
+				displayName = "Optics Slot";
+				iconPicture = "";
+				iconPinpoint = "Bottom";
+				iconPosition[] = { 0.5,0.35 };
+				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			class PointerSlot : PointerSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[] = {};
+			};
+		};
+		maxZeroing = 1200;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.042;
+		opticsZoomInit = 0.042;
+		discretefov[] = { 0.042,0.01 };
+		discreteInitIndex = 0;
+		distanceZoomMin = 100;
+		distanceZoomMax = 1200;
+		discreteDistance[] = { 100,200,300,400,500,600,700,800,900,1000,1100,1200 };
+		descriptionShort = "DC15-X Long Range Sniper";
+		dexterity = 0.5;
+		caseless[] = { "",1,1,1 };
+		soundBullet[] = { "caseless",1 };
+		selectionFireAnim = "zasleh";
+		flash = "gunfire";
+		flashSize = 0.5;
+		fireLightIntensity = 0.2;
+		fireLightDuration = 0.05;
+		modes[] = { "Single" };
+		class Single : Single
+		{
+			reloadTime = 0.5;
+			dispersion = 0.00029;
+			minRange = 1;
+			minRangeProbab = 0.3;
+			midRange = 150;
+			midRangeProbab = 0.58;
+			maxRange = 1000;
+			maxRangeProbab = 0.04;
+		};
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 6;
+		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 	};
 };

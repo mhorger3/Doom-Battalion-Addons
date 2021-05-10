@@ -18756,7 +18756,7 @@
 	class 101st_Octo_Droid: StaticMGWeapon
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
-		armor=700;
+		armor=900;
 		explosionshielding=100;
 		scope=2;
 		scopeCurator=2;

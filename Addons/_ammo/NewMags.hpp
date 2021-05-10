@@ -82,7 +82,7 @@
 		count=10;
 		initspeed=910;
 	};
-	class DBA_127x99_Mag_SLAP_Base: DBA_Mag_Base
+	class DBA_127x99_Mag_Base: DBA_Mag_Base
 	{
 		scope=2;
 		displayname="12.7mw Overcharged Magazine(5rnd Blue)";
@@ -150,4 +150,16 @@
 		mass=8;
 		count=8;
 		initspeed=400;
+	};
+
+	class DBA_762_6_Round_Base : DBA_762_Mag_Base
+	{
+		scope = 2;
+		displayname = "7.62mw Over Charged Magazine(6rnd Blue)";
+		ammo = "DBA_762_Overcharge_blue";
+		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+		mass = 8;
+		count = 6;
+		initspeed = 500;
 	};
