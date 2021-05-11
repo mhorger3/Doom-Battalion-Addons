@@ -67,6 +67,32 @@ class CfgWeapons
 	};
 	class DBA_MaalrasSMG: JLTS_DC15S
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		JLTS_canHaveShield = 0;
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -101,6 +127,7 @@ class CfgWeapons
 		soundBullet[] = {};
 		class Single: Single
 		{
+			dispersion=0.0020300001;
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
@@ -119,6 +146,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion=0.0020300001;
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
@@ -158,6 +186,32 @@ class CfgWeapons
 	};
 	class DBA_SMG_A: DBA_MaalrasSMG
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		JLTS_canHaveShield = 0;
 		author = "Trip";
 		scope = 2;
@@ -175,6 +229,7 @@ class CfgWeapons
 		soundBullet[] = {};
 		class Single: Single
 		{
+			dispersion=0.0020500001;
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
@@ -193,6 +248,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
+			dispersion=0.0020500001;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 250;
 			burst = 2;
@@ -223,6 +279,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion=0.0020500001;
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{

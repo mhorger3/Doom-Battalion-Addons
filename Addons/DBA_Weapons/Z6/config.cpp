@@ -86,6 +86,32 @@ class CfgWeapons
 	};
 	class DBA_Z6: JLTS_Z6
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		displayName = "[101st] Z6 Rotary Cannon";
 		scope = 2;
 		scopeArsenal = 2;
@@ -106,7 +132,7 @@ class CfgWeapons
 		magazines[] = {"DBA_556_200RoundMag_Base"};
 		class FullAuto1: Mode_FullAuto
 		{
-			dispersion = 0.00015;
+			dispersion=0.00141;
 			recoil = "recoil_single_smg_02";
 			recoilProne = "recoil_single_prone_smg_02";
 			reloadTime = 0.066;
@@ -126,7 +152,7 @@ class CfgWeapons
 		};
 		class overcharge_burst: Mode_FullAuto
 		{
-			dispersion = "0.00015*4";
+			dispersion=0.00241;
 			displayName = "Over Charge Auto";
 			recoil = "recoil_single_smg_02";
 			recoilProne = "recoil_single_prone_smg_02";

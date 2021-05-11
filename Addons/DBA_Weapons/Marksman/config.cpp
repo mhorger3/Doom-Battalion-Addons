@@ -69,6 +69,32 @@ class CfgWeapons
 	};
 	class DBA_Valken: JLTS_DC15x
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		baseWeapon = "DBA_Valken";
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -273,6 +299,32 @@ class CfgWeapons
 	
 	class DBA_Gundark: JLTS_DC15x
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
 		ACE_Overheating_JamChance = 0;
@@ -470,6 +522,32 @@ class CfgWeapons
 	
 	class DBA_Verpine : JLTS_DC15x
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		baseWeapon = "DBA_Verpine";
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -611,6 +689,32 @@ class CfgWeapons
 	};
 	class DBA_Zillo : Rifle_Long_Base_F
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
 		ACE_Overheating_JamChance = 0;

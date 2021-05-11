@@ -18811,11 +18811,20 @@
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
 				weapons[]=
 				{
-					"101st_CIS_Mech"
+					"DBA_Ground_AC_Generic",
 				};
 				magazines[]=
 				{
-					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag",
+					"DBA_AC_pink_x100_mag"
+
 				};
 				memoryPointGunnerOptics = "gunnerview";
 				//gunnerLeftHandAnimName = "Heavygun";

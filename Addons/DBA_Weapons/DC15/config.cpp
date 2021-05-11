@@ -121,7 +121,7 @@ class CfgWeapons
 			reloadTime = 0.13;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
-			dispersion = 0.00073;
+			dispersion=0.00087;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 250;
@@ -132,7 +132,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			reloadTime = 0.13;
-			dispersion = 0.0001;
+			dispersion=0.00087;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
 			sounds[] = {"StandardSound"};
@@ -169,7 +169,7 @@ class CfgWeapons
 			reloadTime = 0.13;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
-			dispersion = 0.00073;
+			dispersion=0.00087;
 			minRange = 0;
 			minRangeProbab = 0.9;
 			midRange = 15;
@@ -199,6 +199,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15GL: JLTS_DC15A
 	{
@@ -256,7 +282,7 @@ class CfgWeapons
 			reloadTime = 0.13;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
-			dispersion = 0.00073;
+			dispersion=0.00087;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 250;
@@ -267,7 +293,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			reloadTime = 0.13;
-			dispersion = 0.0001;
+			dispersion=0.00087;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
 			sounds[] = {"StandardSound"};
@@ -304,7 +330,7 @@ class CfgWeapons
 			reloadTime = 0.13;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
-			dispersion = 0.00073;
+			dispersion=0.00087;
 			minRange = 0;
 			minRangeProbab = 0.9;
 			midRange = 15;
@@ -334,6 +360,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15LE: JLTS_DC15x
 	{
@@ -419,7 +471,7 @@ class CfgWeapons
 		class Single: Single
 		{
 			reloadTime = "0.2 /2";
-			dispersion = "0.0001/10";
+			dispersion=0.00047;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
 			modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
@@ -444,6 +496,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15x: JLTS_DC15x
 	{
@@ -538,6 +616,32 @@ class CfgWeapons
 				cameraDir = "";
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_Forest_DC15x: DBA_DC15x
 	{
@@ -591,8 +695,8 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			reloadTime = "0.12*(2/3)";
-			dispersion = "0.0001*10";
+			reloadTime = 0.8;
+			dispersion=0.00087;
 			recoil = "recoil_auto_mk20";
 			recoilProne = "recoil_auto_prone_mk20";
 		};
@@ -604,5 +708,31 @@ class CfgWeapons
 				compatibleItems[] = {"DBA_MRCO_A_TI_2x4", "DBA_MRCO_B_TI_2x4"};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 };

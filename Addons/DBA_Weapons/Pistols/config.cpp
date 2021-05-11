@@ -210,6 +210,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 
 		//Ace overheat shit do not touch
 
@@ -546,6 +572,7 @@ class CfgWeapons
 		fireLightDuration = 0.05;
 		class Single: Single
 		{
+			dispersion=0.00241;
 			reloadTime = 0.065;
 			dispersion = "5*0.00087";
 			minRange = 2;
@@ -559,6 +586,7 @@ class CfgWeapons
 		};
 		class Burst : Burst
 		{
+			dispersion=0.00241;
 			reloadTime = 0.065;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 250;
@@ -576,6 +604,7 @@ class CfgWeapons
 		};
 		class FullAuto : FullAuto
 		{
+			dispersion=0.00241;
 			reloadTime = 0.065;
 			aiRateOfFire = 1e-006;
 			aiRateOfFireDispersion = 1;
@@ -677,7 +706,7 @@ class CfgWeapons
 		class Single: Single
 		{
 			reloadTime = 0.075;
-			dispersion = "5*0.00087";
+			dispersion=0.00201;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 200;
@@ -757,7 +786,7 @@ class CfgWeapons
 		class Single: Single
 		{
 			reloadTime = 0.065;
-			dispersion = "5*0.00087";
+			dispersion=0.00241;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 200;
@@ -790,7 +819,7 @@ class CfgWeapons
 			aiRateOfFire = 1e-006;
 			aiRateOfFireDispersion = 1;
 			displayName = "Full";
-			dispersion = 0.00131;
+			dispersion=0.00241;
 			maxRange = 30;
 			maxRangeProbab = 0.1;
 			midRange = 15;
