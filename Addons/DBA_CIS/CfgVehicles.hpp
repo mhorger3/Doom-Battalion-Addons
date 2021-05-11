@@ -660,7 +660,7 @@ class CfgVehicles {
 
             class HitFace
             {
-                armor=2;
+                armor=8;
                 material=-1;
                 name="face_hub";
                 passThrough=0.1;
@@ -671,14 +671,14 @@ class CfgVehicles {
 
             class HitNeck : HitFace
             {
-                armor=7;
+                armor=6;
                 name="neck";
                 radius=0.1;
             };
 
             class HitHead : HitNeck
             {
-                armor=3;
+                armor=8;
                 name="head";
                 radius=0.2;
                 depends="HitFace max HitNeck";
@@ -686,7 +686,7 @@ class CfgVehicles {
 
             class HitPelvis
             {
-                armor=7;
+                armor=6;
                 material=-1;
                 name="pelvis";
                 passThrough=0.1;

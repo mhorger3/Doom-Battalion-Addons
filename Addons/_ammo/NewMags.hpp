@@ -234,4 +234,5 @@
 		mass = 8;
 		count = 2;
 		initspeed = 400;
+		ammo = "DBA_ZilloATRound";
 	};

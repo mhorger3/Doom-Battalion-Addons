@@ -1,5 +1,5 @@
 //AMMO REDO VOLUME 2
-
+		class OPTRE_B_145X114_HVAP;
 		class DBA_ammo_base:BulletBase
 		{
 			hit=8; //How much damage when it hits
@@ -1044,3 +1044,7 @@
 			model="kobra\442_weapons\ammo\yellow_tracer.p3d";
 			effectfly="442_plasma_yellow";
 		};			
+		class DBA_ZilloATRound : OPTRE_B_145X114_HVAP
+		{
+			caliber = 6;
+		};
