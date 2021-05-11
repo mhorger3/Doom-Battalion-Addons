@@ -30,7 +30,8 @@ class CfgPatches
 			"DBA_Technical",
 			"DBA_Marid",
 			"DBA_Viper",
-			"DBA_Skorpion"
+			"DBA_Skorpion",
+			"101st_patrolcraft"
 		};
 	}
 };
@@ -527,11 +528,22 @@ class CfgVehicles
 	};
 	class optre_catfish_f : Boat_F
 	{
+		class Turrets : Turrets
+		{
+			class mainturret : mainturret
+			{
+			};
+		};
 
 	};
 	class optre_catfish_unarmed_f : optre_catfish_f
 	{
-
+		class Turrets : Turrets
+		{
+			class mainturret : mainturret
+			{
+			};
+		};
 	};
 	class optre_catfish_mg_f : optre_catfish_f
 	{

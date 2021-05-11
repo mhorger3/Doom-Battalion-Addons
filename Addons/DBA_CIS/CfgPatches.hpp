@@ -114,7 +114,10 @@ class CfgPatches {
 			"O_DBA_CIS_Hyena_Bomber_F",
 			"O_DBA_CIS_Crab_Droid_F",
 			"O_DBA_CIS_DSD3_F",
-			"O_DBA_CIS_Tri_Droid_F"
+			"O_DBA_CIS_Tri_Droid_F",
+            "O_DBA_CIS_Conquest_F",
+            "O_DBA_CIS_Obliterator_F",
+            "O_DBA_CIS_Devil_F"
 			
         };
         weapons[] = {

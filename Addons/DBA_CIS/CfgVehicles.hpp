@@ -1528,6 +1528,7 @@ class CfgVehicles {
     class O_DBA_CIS_B2_Droid_F : 101st_B2
     {
         scope = 2;
+        scope = 2;
         scopeCurator = 2;
         displayName = "B2 Droid";
        
@@ -2689,7 +2690,7 @@ class CfgVehicles {
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
     };
     class OPTRE_M808B2;
-    class O_DBA_CIS_Devil : OPTRE_M808B2
+    class O_DBA_CIS_Devil_F : OPTRE_M808B2
     {
         scope = 2;
         scopeCurator = 2;
@@ -2700,8 +2701,9 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        canFloat = true;
     };
-class O_DBA_CIS_Obliterator : OPTRE_M808S
+class O_DBA_CIS_Obliterator_F : OPTRE_M808S
     {
         scope = 2;
         scopeCurator = 2;
@@ -2711,6 +2713,7 @@ class O_DBA_CIS_Obliterator : OPTRE_M808S
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        canFloat = true;
         class Turrets : turrets
         {
             class MainTurret : Mainturret
@@ -2727,7 +2730,7 @@ class O_DBA_CIS_Obliterator : OPTRE_M808S
             };
         };
     };
-class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
+class O_DBA_CIS_Conquest_F : OPTRE_M850_UNSC
     {
         scope = 2;
         scopeCurator = 2;
@@ -2737,6 +2740,7 @@ class O_DBA_CIS_Conquest : OPTRE_M850_UNSC
         side = 0;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        canFloat = true;
             class Turrets : turrets 
         {
             class MainTurret : Mainturret

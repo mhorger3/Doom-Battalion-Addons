@@ -18757,7 +18757,7 @@
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=900;
-		explosionshielding=100;
+		explosionshielding=0.1;
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
