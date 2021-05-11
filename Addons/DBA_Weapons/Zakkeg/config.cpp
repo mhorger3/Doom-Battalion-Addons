@@ -46,6 +46,32 @@ class CfgWeapons
 	};
 	class DBA_ZakkegMG: Rifle_Long_Base_F
 	{
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
 		ACE_Overheating_JamChance = 0;
@@ -115,7 +141,7 @@ class CfgWeapons
 			recoilProne = "recoil_single_prone_mx";
 			reloadTime = 0.2;
 			burst = 1;
-			dispersion = 0.00073;
+			dispersion=0.00102;
 			minRange = 1;
 			minRangeProbab = 0.1;
 			midRange = 30;
@@ -130,7 +156,7 @@ class CfgWeapons
 			showToPlayer = 0;
 			aiRateOfFire = 0.5;
 			aiRateOfFireDistance = 50;
-			dispersion = 0.00073;
+			dispersion=0.00102;
 			minRange = 0;
 			minRangeProbab = 0.05;
 			midRange = 25;
@@ -164,7 +190,7 @@ class CfgWeapons
 		{
 			aiRateOfFireDistance = 900;
 			aiRateOfFireDispersion = 1;
-			dispersion = "5*0.00087";
+			dispersion=0.00102;
 			burst = "3 + round random 5";
 			maxRange = 600;
 			maxRangeProbab = 0.1;

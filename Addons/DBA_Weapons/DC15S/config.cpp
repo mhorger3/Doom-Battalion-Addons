@@ -100,7 +100,7 @@ class CfgWeapons
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.25;
-			dispersion = 0.00116;
+			dispersion = 0.00131;
 			minRange = 2;
 			minRangeProbab = 0.3;
 			midRange = 100;
@@ -111,7 +111,7 @@ class CfgWeapons
 		class FullAuto: FullAuto
 		{
 			reloadTime = 0.075;
-			dispersion = "0.0001*1";
+			dispersion = 0.00131;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -133,6 +133,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15S_Secondary_Base: Pistol_Base_F
 	{
@@ -175,7 +201,7 @@ class CfgWeapons
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.075;
-			dispersion = 0.00116;
+			dispersion=0.00231;
 			minRange = 2;
 			minRangeProbab = 0.3;
 			midRange = 100;
@@ -194,7 +220,7 @@ class CfgWeapons
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.075;
-			dispersion = 0;
+			dispersion = 0.0025;
 			minRange = 1;
 			minRangeProbab = 1;
 			midRange = 25;
@@ -225,6 +251,32 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15S_Secondary_Shield: DBA_DC15S_Secondary_Base
 	{
@@ -260,6 +312,32 @@ class CfgWeapons
 				linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 	class DBA_DC15sGL: DBA_DC15S_base
 	{
@@ -293,7 +371,7 @@ class CfgWeapons
 		class FullAuto: FullAuto
 		{
 			reloadTime = 0.075;
-			dispersion = "0.0001*1";
+			dispersion = 0.00131;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -314,6 +392,32 @@ class CfgWeapons
 				compatibleItems[] = {"acc_flashlight_smg_01"};
 			};
 		};
+		class FlashLight
+        {
+            color[]={180,160,130};
+            ambient[]={0.89999998,0.80000001,0.69999999};
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="flash dir";
+            direction="flash";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
 	};
 };
 class CfgVehicles

@@ -124,7 +124,7 @@ class CfgWeapons
 			recoilProne = "recoil_single_prone_ebr";
 			reloadTime = 0.1;
 			burst = 1;
-			dispersion = "((0.50) * 0.00029088)";
+			dispersion=0.00116;
 			minRange = 5;
 			minRangeProbab = 0.1;
 			midRange = 250;
@@ -139,7 +139,7 @@ class CfgWeapons
 			showToPlayer = 0;
 			aiRateOfFire = 0.25;
 			aiRateOfFireDistance = 200;
-			dispersion = "((0.50) * 0.00029088)";
+			dispersion=0.00116;
 			minRange = 10;
 			minRangeProbab = 0.05;
 			midRange = 100;
@@ -173,7 +173,7 @@ class CfgWeapons
 		{
 			aiRateOfFire = 1e-06;
 			aiRateOfFireDispersion = 1;
-			dispersion = "((0.50) * 0.00029088)";
+			dispersion=0.00116;
 			maxRange = 500;
 			maxRangeProbab = 0.1;
 			midRange = 250;
