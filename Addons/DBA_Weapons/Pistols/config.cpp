@@ -297,7 +297,7 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,.5};
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
-		magazines[] = {"DBA_DC17_x20_mag"};
+		magazines[] = {"DBA_45acp_Mag_Base"};
 		magazineWell[] = {"DBA_DC17_GL_Mags_magwell"};
 		class Single: Single
 		{
@@ -373,7 +373,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"101st_Revolver_Mag_Green"
+			"DBA_12gaScatter_3RoundMag_Base"
 		};
 		magazineWell[] = {};
 		displayName = "[101st] CR-8 Cannok";
@@ -543,7 +543,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"101st_PDW_Butcher_Mag_Green"
+			"DBA_9mm_35RoundMag_Base"
 		};
 		hiddenSelections[]=
 		{
@@ -678,7 +678,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_DC15_Hammerhead_x9_mag"
+			"DBA_127x33_7RoundMag_Base"
 		};
 		magazineWell[] = {};
 		displayName = "[101st] Westar-35 'Hammerhead'";

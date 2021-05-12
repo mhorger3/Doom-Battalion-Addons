@@ -106,6 +106,10 @@ class CfgWeapons
 			"DBA_AT_GL_x6_mag",
 			"DBA_HE_GL_x8_mag"
 		};
+		magazineWell[] = 
+		{
+			"DBA_HH4_GL_magwell"
+		};
 		class Single : Single
 		{
 			reloadTime = 1;

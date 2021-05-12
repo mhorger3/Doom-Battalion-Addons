@@ -1609,6 +1609,37 @@ class 101st_212_Longbow_Arid: Uniform_Base
 		mass=40;
 	};
 };
+class 101st_212_Longbow_Recruit : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Longbow Recruit (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Bottom_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Longbow_Recruit_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
 class 101st_212_Longbow_Tropic: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
@@ -2073,7 +2104,77 @@ class 101st_212_Spark : Uniform_Base
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "101st_Quill_212th";
+		uniformClass = "101st_Spark_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
+class 101st_212_Dolittle : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Dolittle (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Dolittle_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Dolittle_Armor_lower_CO.paa"
+	};
+	hiddenSelectionsMaterials[] = {
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Dolittle_Upper.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Dolittle_Lower.rvmat"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Dolittle_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
+class 101st_212_Falcon : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Falcon (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Falcon_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Falcon_Armor_lower_CO.paa"
+	};
+	hiddenSelectionsMaterials[] = {
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Upper.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Lower.rvmat"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Falcon_212th";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =

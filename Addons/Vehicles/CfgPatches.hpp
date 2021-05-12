@@ -136,7 +136,8 @@
 			"101st_White_Sub", 
 			"101st_Marked_Sub", 
 			"101st_Seatie_212th", 
-			"101st_Quill_212th", 
+			"101st_Quill_212th",
+			"101st_Spark_212th",
 			"101st_Scuba_212th",
 			"101st_Blood_212th",			
 			"101st_LAAT_Mk3", 
@@ -161,7 +162,10 @@
 			"101st_DC15X_Desert_Vic",
 			"101st_DC15X_Forest_Vic",
 			"101st_DC15X_Vic",
-			"101st_Carbine_GL"
+			"101st_Carbine_GL",
+			"st_Longbow_Recruit_212th",
+			"101st_Falcon_212th",
+			"101st_Dolittle_212th"
 		};
 		weapons[]={};
 	}

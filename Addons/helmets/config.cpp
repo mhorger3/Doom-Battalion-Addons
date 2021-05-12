@@ -470,6 +470,21 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
 	};
 
+	class 101st_ARF_Recruit : 101st_ARF_Base{
+		author = "Vulgar";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ARF Recruit Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\ARF_Helmet_Recruit_CO.paa", "101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
+	};
+
 	class 101st_Hark_ARF: 101st_ARF_Base {
 		author="Dutch";
 		scope=2;
@@ -1974,6 +1989,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Dolittle_Helmet_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Dolittle_Helmet.rvmat"};
 	};
 	class 101st_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
@@ -2570,6 +2586,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Falcon_Helm_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Falcon_Helmet.rvmat" };
 	};
 	class 101st_Viralz_Helmet: JLTS_CloneHelmetP2
 	{
@@ -3154,6 +3171,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\York_Helmet_CO.paa"
+		};
+	};
+	class 101st_Mixer_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Mixer)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Mixer_Helmet_CO.paa"
 		};
 	};
 //Pilot Helmets

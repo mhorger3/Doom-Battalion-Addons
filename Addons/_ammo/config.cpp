@@ -18,6 +18,11 @@ class CfgMagazineWells
 		DBA_GL_HE_magwell[] = {"DBA_HE_GL_x3_mag","DBA_UGL_EMP_x1_mag","DBA_UGL_HE_x3_mag",};
 		DBA_smoke_magwell[] = {"3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","ACE_HuntIR_M203"};
 	};
+	class DBA_HH4_GL_magwell
+	{
+		DBA_GL_flare_magwell[] = { "DBA_40mm_white_x3_mag","DBA_40mm_CIR_x3_mag","DBA_40mm_Green_x3_mag","DBA_40mm_Red_x3_mag","DBA_40mm_Yellow_x3_mag","DBA_40mm_Blue_x3_mag","DBA_40mm_Cyan_x3_mag","DBA_40mm_Purple_x3_mag" };
+		DBA_smoke_magwell[] = { "3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","ACE_HuntIR_M203" };
+	};
 	class DBA_DC17_GL_Mags_magwell
 	{
 		DBA_1rnd_GL_flare_magwell[] = {"DBA_40mm_white_x1_mag","DBA_40mm_CIR_x1_mag","DBA_40mm_Green_x1_mag","DBA_40mm_Red_x1_mag","DBA_40mm_Yellow_x1_mag","DBA_40mm_Blue_x1_mag","DBA_40mm_Cyan_x1_mag","DBA_40mm_Purple_x1_mag"};

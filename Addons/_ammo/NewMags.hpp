@@ -155,7 +155,18 @@
 		mass=5;
 		count=20;
 		initspeed=430;
-	}; 
+	};
+	class DBA_9mm_35RoundMag_Base : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "9.0pw Magazine(25rnd Blue)";
+		ammo = "DBA_9x21_blue";
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
+		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
+		mass = 5;
+		count = 25;
+		initspeed = 430;
+	};
 	class DBA_9mm_100RoundMag_Base : DBA_Mag_Base
 	{
 		scope = 2;
@@ -199,6 +210,17 @@
 		mass=12;
 		count=20;
 		initspeed=350;
+	}
+	class DBA_127x33_7RoundMag_Base : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "12.7pw Magazine(7rnd Blue)";
+		ammo = "DBA_127x33_blue";
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
+		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
+		mass = 12;
+		count = 7;
+		initspeed = 350;
 	};
 
 	class DBA_12gaScatter_Mag_Base: DBA_Mag_Base
@@ -211,6 +233,18 @@
 		mass=8;
 		count=8;
 		initspeed=400;
+	};
+
+	class DBA_12gaScatter_3RoundMag_Base : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "12sw Scatter Magazine(3rnd Blue)";
+		ammo = "DBA_12gaPellets_Base";
+		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
+		mass = 8;
+		count = 3;
+		initspeed = 400;
 	};
 
 	class DBA_12gaSlug_Mag_Base: DBA_Mag_Base
