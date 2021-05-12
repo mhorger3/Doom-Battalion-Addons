@@ -15,7 +15,11 @@ class CfgPatches
 			"101st_laat_VTOL_Refit",
 			"101st_Nuclass",
 			"DBA_arc_170_green",
-			"DBA_LAAT_Pylons"
+			"DBA_LAAT_Pylons",
+			"101st_laatUnarmed_BaseCGI",
+			"101st_laatFloodLight_BaseCGI",
+			"101st_laat_HammerCGI",
+			"101st_laatUnarmed_HammerCGI"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -3052,6 +3056,20 @@ class cfgVehicles
 			};
 		};
 	};
+	class 101st_laatUnarmed_BaseCGI : 101st_laatUnarmed_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK4 (CGI)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+		};
+	}
 	class 101st_laatFloodLight_Base: 3as_LAAT_Mk2Lights
 	{
 		TFAR_hasIntercom=1;
@@ -4420,6 +4438,20 @@ class cfgVehicles
 			};
 		};
 	};
+	class 101st_laatFloodLight_BaseCGI : 101st_laatFloodLight_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK6/2 (CGI)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+		};
+	}
 	class 101st_laat_Hammer: 101st_laat_Base
 	{
 		scope = 2;
@@ -4503,6 +4535,20 @@ class cfgVehicles
 		    };
 		};
 	};
+	class 101st_laat_HammerCGI : 101st_laat_Hammer
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK5 (CGI)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+		};
+	}
 	class 101st_laatUnarmed_Hammer: 101st_laatUnarmed_Base
 	{
 		scope = 2;
@@ -4586,6 +4632,20 @@ class cfgVehicles
 		    };
 		};
 	};
+	class 101st_laatUnarmed_HammerCGI : 101st_laatUnarmed_Hammer
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK5 (CGI)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+		};
+	}
 	class 101st_laatFloodLight_Hammer: 101st_laatFloodLight_Base
 	{
 		scope = 2;
