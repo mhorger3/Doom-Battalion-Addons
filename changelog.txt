@@ -61,3 +61,94 @@ Resupplies
 	Added 101st Custom Holosights courtesy of RD501 and a lot of hard work. There is a CQC variant, a 2x-4x with CQC sights on top, and a 2x-6x with CQC sights on top. Please give feedback on the sights to CX-P Frisk
 
 	Additionally, if you think you can do it better, also speak to CX-P Frisk, he's accepting submissions for holo sight designs.
+
+Changelog 5.12.21
+	Weapons -
+		General - Most weapons we had had severe overpen issues. In order to walk back significant power creep and fix the overpen issues, our weapons have been put closer to vanilla values. Some weapons such as the DC15A recieve a substatial buff from this, where as some weapons are getting toned down to a more 'reasonable' level.
+
+		All Weapons - All weapons that did not have a flashlight before now have integrated flashlights. Press 'L' to activate by default.
+
+		DC Series - Removal of high/medium/lows, the DC series ammo is above, and all DC series weapons can use the same basic magazine. This should allow resupply in field to be a more universal process.
+			DC15A - Increased Accuracy to fit better as a battle rifle style weapon - takes standard 30 round magazines
+			DC15S - Slightly decreased accuracy to better fit its idendity as a carbine, has a higher ROF in close quarters to compensate - takes 30 round standard magazines
+			LE - Has access to 15 round LE Mags, and 30 round Standard Magazines
+			Mod 0 - Accuracy slightly decreased to fit better as a LMG - Has access to 120 round box magazines, and 30 round Standard Magazines
+			DC15S Secondary - Decreased accuracy as you are one handing a carbine, helps the weapon better fit the riot shield/CQC focused ideal.
+
+		Boma - Magazines have been standardized to 8 round slugs and 8 round scatter, the scatter ammo no longer drops buildings as easily. Magazine weight has been adjusted.
+
+		Gundark - Low capacity but high power sniper rifle, has 2 types of magazines, one is an overcharged magazine which has better long range capabilities.
+
+		IR-01 Kath Hound - Has a higher ROF but weaker individual shots than the DC series, magazine capacity increased to 60 to offset this change.
+
+		Maalras SMG - Low penetration but high ROF. Accuracy decreased to better fit the intended role as an SMG.
+
+		SM-01 Enforcer - Low penetration but incredibly high ROF. Accuracy and damage adjusted to better fit the intended role as a PDW.
+
+		MG5 Zakkeg - Slightly adjusted accuracy slightly to keep this as being used as a marksman rifle. It retains its 75 round magazines, however the magazine weight has been adjusted.
+
+		Verpine DMR - Moderate Damage, high penetration rounds. The magazines only being 15 rounds have been adjusted in weight to be lighter.
+
+		W4-LRUS - High Damage, High Velocity rounds. Intended as an allrounder 'sniper' rifle.
+
+		XLE-47 Valken- Moderate Damage, high penetration rounds. The mag weight has been adjusted to fit its capcity.
+
+		Zillo AT-6 - Ammunition scaled back to fit with current AT rockets.
+
+
+		Pistols - These have generally been reworked to have good close range capabilities, but are no as effective at range.
+
+		A180 - Fixed various bugs, is still in development.
+
+		Cannok - Now has 5 Round Cylinder, can load Slugs or Scatter rounds
+
+		DC17 - 20 Round magazine, reasonably effective at close range. Should perform relatively similar to previous interations.
+
+		PDW Defender - Increased magazine size to 25. Weaker than the DC17 individually, but has full auto/burst to compensate.
+
+		Westar 35 - Hits indvidually harder than DC17, but only has 7 rnd mag to compensate.
+
+	CIS Assets
+		Infantry
+			B1 - They should be 1 shot headshots by everything, and soak up several rounds before going down to body shots.
+			B2 - Will take several magazines to take down from DC15A, no longer unkillable. Weakpoints are the pelvis and the face.
+			BX - Significantly tougher armor than b1s, but same health.
+			IG88 - Invulnerable to small arms. Needs to be taken down with either concentrated fire from ADV marksman weapons, Grenade/AT launchers, or vehicles. However they are no longer unkillable death machines.
+			Magnaguards - Tougher than B1's, but not by much.
+		Vehicles
+			Techinical - Truck with a powerful machinegun on back. Disabled by killing crew or with anything explosive.
+			Skorpion - Light tank with machinegun. Turret can be disabled by concentrated small arms to the turret, vehicle can be destroyed by GL AP grenades, or AT.
+			Marid - APC with machinegun and grenade launcher. Turret can be disabled by concentrated small arms to the turret, vehicle can be destroyed by GL AP grenades, or AT.
+			Viper - Heavy APC with autocannon. Vehicle can be destroyed with 2 AT rockets.
+
+			Recon AAT - Vehicle can be destroyed with 2 AT rockets. Rear hatch is extremely thin, halves the # of rockets to kill.
+			Medium AAT - Vehicle can be destroyed with 3 AT rockets. Rear hatch is extremely thin, halves the # of rockets to kill.
+			King AAT - Vehicle can be destroyed with 4 AT rockets. Rear hatch is extremely thin, halves the # of rockets to kill.
+
+			Conquest - Call hammer do deal with it, unknown # of AT rockets to destroy.
+			Devil - Superheavy Tank with Gatling Autocannon - 6+ Rockets to destroy.
+			Obliterator - Superheavy Tank with heavy main cannon - 6+ Rockets to Destroy.
+
+		Turrets/Statics - Generally, these will be tough enough to shrug off small arms, however they are highly vulnerable to grenades and other explosives. Using GL/AT or flanking these to get close enough to use a detonator will be key.
+			Octo Droid - greatly increased size, has an autocannon rather than a gatling machinegun.
+
+
+	Custom Armor
+		Added ARF Recruit Armor
+		Added Dolittle Armor
+		Added Falcon Armor
+
+	Custom Helmets
+		Added ARF Recruit Helmet
+		Updated Dolittle Helmet
+		Updated Falcon Helmet
+		Updated Kel Helmet
+		Added Mixer Helmet
+		Updated Morn Helmet
+		Updated Stryker Helmet
+
+
+
+
+
+
