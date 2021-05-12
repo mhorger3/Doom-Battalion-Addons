@@ -584,6 +584,11 @@
 			caliber=3;
 			deflecting=30;
 		};
+		class DBA_12gaSlug_green: DBA_12gaSlug_Base
+		{
+			model="kobra\442_weapons\ammo\green_tracer.p3d";
+			effectfly="442_plasma_green";
+		};
 		class DBA_12gaPellets_Base:DBA_shotgun_base //12GA
 		{
 			hit=2;

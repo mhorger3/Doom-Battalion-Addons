@@ -88,10 +88,6 @@ class CfgWeapons
 			discreteDistanceInitIndex = 0;
 		};
 		magazines[] =
-			/*	{
-					"101st_City_Killer_Buff",
-					"101st_City_Killer_Slug_Green"
-				}; */
 		{
 			"DBA_12gaScatter_Mag_Base",
 			"DBA_12gaSlug_Mag_Base"

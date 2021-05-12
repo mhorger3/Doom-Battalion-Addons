@@ -201,15 +201,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -362,15 +362,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -414,7 +414,7 @@ class CfgWeapons
 		hiddenSelections[] = {"body", "scope"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\DC15\data\DC15LEScoped_Gun_CO.paa", "101st_Aux_Mod\Addons\DBA_Weapons\DC15\data\DC15LEScoped_Scope_CO.paa"};
 		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
-		magazines[] = { "DBA_338_Mag_Base" };
+		magazines[] = { "DBA_338_Mag_Base", "DBA_65_Mag_Base"};
 		class Stun: 101st_stun_muzzle
 		{
 			reloadAction = "ReloadMagazine";
@@ -498,15 +498,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -618,15 +618,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -680,13 +680,8 @@ class CfgWeapons
 		muzzles[] = {"this","Stun"};
 		recoil = "recoil_mk20";
 		magazines[] =
-			/*{
-				"DBA_DC15a_box_mag_x240_mag",
-				"101st_DC15Mod0_Mag",
-				"101st_DC15Mod0_HiMag"
-			};*/
 		{
-			"DBA_65_Box_Mag_Base",
+			"DBA_65_Box_Mag_Base", "DBA_65_Mag_Base"
 		};
 		class Stun: 101st_stun_muzzle
 		{
@@ -710,15 +705,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;

@@ -135,15 +135,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -253,15 +253,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -314,15 +314,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -394,15 +394,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;

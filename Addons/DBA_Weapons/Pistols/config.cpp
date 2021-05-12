@@ -212,15 +212,15 @@ class CfgWeapons
 		};
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -236,7 +236,6 @@ class CfgWeapons
             };
             scale[]={0};
         };
-
 		//Ace overheat shit do not touch
 
 		ACE_overheating_allowSwapBarrel = 1;
@@ -373,7 +372,8 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_12gaScatter_3RoundMag_Base"
+			"DBA_12gaSlug_x5_Blue",
+			"DBA_12gaScatter_x5_Blue"
 		};
 		magazineWell[] = {};
 		displayName = "[101st] CR-8 Cannok";
@@ -543,7 +543,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_9mm_35RoundMag_Base"
+			"DBA_9mm_Mag_x25"
 		};
 		hiddenSelections[]=
 		{
@@ -678,7 +678,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_127x33_7RoundMag_Base"
+			"DBA_127x33_x7_Yellow"
 		};
 		magazineWell[] = {};
 		displayName = "[101st] Westar-35 'Hammerhead'";
@@ -1294,7 +1294,7 @@ class CfgMagazines
 		author="Trip";
 		scope=2;
 		displayName="101st PDW Dual Defender Magazine";
-		ammo="101st_PDW_Balls";
+		ammo="DBA_9x21_green";
 		tracersEvery = 1;
 		lastRoundsTracer = 28;
 		type = 256;
@@ -1312,7 +1312,7 @@ class CfgMagazines
 		scope=2;
 		displayName = "20Rnd A180 Magazine";
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
-		ammo="DBA_Purple_9_Ammo";
+		ammo="DBA_9x21_purple";
 		count=20;
 		mass=4;
 		initSpeed=400;
@@ -1326,13 +1326,19 @@ class CfgAmmo
 	class DBA_Dual_Hammerhead_ammo:JLTS_bullet_pistol_yellow
 	{	
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\tracer_yellow_dual.p3d";
-		hit = 50;
-		caliber = 5;
-	};
-	class 442_ammo_9_purple;
-	class DBA_Purple_9_Ammo:442_ammo_9_purple
-	{
-		airFriction=0;
+		hit=7.5; //How much damage when it hits
+		indirecthit=0; //Splash Damage
+		indirecthitrange=0; //Splash Damage Range in meters
+		caliber=1; //Acts as penetration multiplier for the projectile.
+		typicalSpeed=420; //What speed does this need to be going to inflict full damage
+
+		audibleFire=50;
+
+		aiAmmoUsageFlags=64;
+		dangerRadiusBulletClose=4;
+		dangerRadiusHit=8;
+		suppressionRadiusBulletClose=2;
+		suppressionRadiusHit=4;
 	};
 };
 /*class CfgVehicles

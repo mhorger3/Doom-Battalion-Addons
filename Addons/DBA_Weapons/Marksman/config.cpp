@@ -71,15 +71,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -111,7 +111,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Valken_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Valken_Mag"};
-		magazines[] = { "DBA_762_50RoundMag_Base" };
+		magazines[] = { "DBA_762_Mag_x50" };
 		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 		opticsDisablePeripherialVision = 1;
 		opticsFlare = 1;
@@ -301,15 +301,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -524,15 +524,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -687,19 +687,20 @@ class CfgWeapons
 			};
 		};
 	};
+	
 	class DBA_Zillo : Rifle_Long_Base_F
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;

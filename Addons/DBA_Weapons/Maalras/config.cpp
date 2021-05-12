@@ -69,15 +69,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -118,7 +118,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\None_CO.paa"};
 		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\Rifle.rvmat"};
 		//magazines[] = {"101st_Maalras_Mag_Green","101st_Maalras_Ext_Mag_Green"};
-		magazines[] = { "DBA_45acp_45RoundMag_Base" };
+		magazines[] = { "DBA_45acp_Mag_x45_Green" };
 		magazineWell[] = {""};
 		displayName = "[101st] Maalras SMG";
 		descriptionShort = "Maalras SMG";
@@ -188,15 +188,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -220,7 +220,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Maalras\data\Enforcer_CO.paa"};
 		hiddenSelectionsMaterials[] = {""};
 		//magazines[] = {"101st_PDW_Enforcer_Mag_Green"};
-		magazines[] = { "DBA_9mm_100RoundMag_Base" };
+		magazines[] = { "DBA_9mm_Mag_x100" };
 		magazineWell[] = {""};
 		displayName = "[101st] SM-01 Enforcer";
 		descriptionShort = "Enforcer SMG";

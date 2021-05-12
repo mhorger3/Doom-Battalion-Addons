@@ -48,15 +48,15 @@ class CfgWeapons
 	{
 		class FlashLight
         {
-            color[]={180,160,130};
-            ambient[]={0.89999998,0.80000001,0.69999999};
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
             intensity=100;
             size=1;
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="flash dir";
-            direction="flash";
+            position="konec hlavne";
+            direction="usti hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -87,7 +87,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Zakkeg_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_MG_Mag_Green"};
-		magazines[] = { "DBA_762_75RoundMag_Base" };
+		magazines[] = { "DBA_762_x75_Green" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] MG5 Zakkeg";
 		descriptionShort = "Zakkeg MG5 Rifle";
