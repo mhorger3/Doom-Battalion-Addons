@@ -137,6 +137,8 @@ Changelog 5.12.21
 		Added ARF Recruit Armor
 		Added Dolittle Armor
 		Added Falcon Armor
+		Added Misfit Armor
+		Added Spark Armor
 
 	Custom Helmets
 		Added ARF Recruit Helmet
@@ -146,6 +148,7 @@ Changelog 5.12.21
 		Added Mixer Helmet
 		Updated Morn Helmet
 		Updated Stryker Helmet
+		Updated Misfit Helmet
 
 
 
