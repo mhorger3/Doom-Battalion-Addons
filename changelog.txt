@@ -64,7 +64,7 @@ Resupplies
 
 Changelog 5.12.21
 	Weapons -
-		General - Most weapons we had had severe overpen issues. In order to walk back significant power creep and fix the overpen issues, our weapons have been put closer to vanilla values. Some weapons such as the DC15A recieve a substatial buff from this, where as some weapons are getting toned down to a more 'reasonable' level.
+		General - Most weapons we had had severe overpen issues. In order to walk back significant power creep and fix the overpen issues, our weapons have been put closer to vanilla values. Some weapons such as the DC15A recieve a substatial buff from this, where as some weapons are getting toned down to a level closer to vanilla counterparts.
 
 		All Weapons - All weapons that did not have a flashlight before now have integrated flashlights. Press 'L' to activate by default.
 
@@ -130,7 +130,7 @@ Changelog 5.12.21
 			Obliterator - Superheavy Tank with heavy main cannon - 6+ Rockets to Destroy.
 
 		Turrets/Statics - Generally, these will be tough enough to shrug off small arms, however they are highly vulnerable to grenades and other explosives. Using GL/AT or flanking these to get close enough to use a detonator will be key.
-			Octo Droid - greatly increased size, has an autocannon rather than a gatling machinegun.
+			Octo Droid - greatly increased size, fixed textures to look correct, has an autocannon rather than a gatling machinegun. Needs AT to kill.
 
 
 	Custom Armor
