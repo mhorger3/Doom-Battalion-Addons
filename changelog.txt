@@ -1,4 +1,4 @@
-CHANGELOG 12.14.20
+CHANGELOG 5/13/21 - The Rebalance Update
 
 Major Restructuring of Mod into separate parts, to accelerate further development, testing, and changes.
 
