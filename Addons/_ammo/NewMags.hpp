@@ -153,7 +153,7 @@
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		mass=20;
-		count=3;
+		count=5;
 		initspeed=1400;
 	};
 

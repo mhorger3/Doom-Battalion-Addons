@@ -93,7 +93,7 @@ class CfgWeapons
 		canShootInWater = 1;
 		magazines[] = { "DBA_65_Mag_Base" };
 		muzzles[] = {"this","Stun"};
-		model = "101st_Aux_Mod\Addons\DBA_Weapons\Rebel_Weapons\A280.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\RebelWeapons\A280.p3d";
 
 		fireLightDuration = 0.05;
 		fireLightIntensity = 0.2;
