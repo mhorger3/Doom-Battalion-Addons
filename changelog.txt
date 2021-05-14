@@ -150,8 +150,6 @@ Changelog 5.12.21
 		Updated Stryker Helmet
 		Updated Misfit Helmet
 
-
-
-
+1.0 Starts here?
 
 
