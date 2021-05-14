@@ -16,10 +16,10 @@ class CfgPatches
 			"101st_Nuclass",
 			"DBA_arc_170_green",
 			"DBA_LAAT_Pylons",
-			"101st_laatUnarmed_BaseCGI",
-			"101st_laatFloodLight_BaseCGI",
-			"101st_laat_HammerCGI",
-			"101st_laatUnarmed_HammerCGI"
+			"101st_laatUnarmed_BaseCG",
+			"101st_laatFloodLight_BaseCG",
+			"101st_laat_HammerCG",
+			"101st_laatUnarmed_HammerCG"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -3056,20 +3056,31 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatUnarmed_BaseCGI : 101st_laatUnarmed_Base
+	class 101st_laatUnarmed_BaseCG : 101st_laatUnarmed_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK4 (CGI)";
+		displayName = "LAAT MK4 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatFloodLight_Base: 3as_LAAT_Mk2Lights
 	{
 		TFAR_hasIntercom=1;
@@ -4438,20 +4449,31 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatFloodLight_BaseCGI : 101st_laatFloodLight_Base
+	class 101st_laatFloodLight_BaseCG : 101st_laatFloodLight_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK6/2 (CGI)";
+		displayName = "LAAT MK6/2 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laat_Hammer: 101st_laat_Base
 	{
 		scope = 2;
@@ -4535,20 +4557,31 @@ class cfgVehicles
 		    };
 		};
 	};
-	class 101st_laat_HammerCGI : 101st_laat_Hammer
+	class 101st_laat_HammerCG : 101st_laat_Hammer
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CGI)";
+		displayName = "LAAT MK5 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatUnarmed_Hammer: 101st_laatUnarmed_Base
 	{
 		scope = 2;
@@ -4632,20 +4665,31 @@ class cfgVehicles
 		    };
 		};
 	};
-	class 101st_laatUnarmed_HammerCGI : 101st_laatUnarmed_Hammer
+	class 101st_laatUnarmed_HammerCG : 101st_laatUnarmed_Hammer
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CGI)";
+		displayName = "LAAT MK5 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatFloodLight_Hammer: 101st_laatFloodLight_Base
 	{
 		scope = 2;
