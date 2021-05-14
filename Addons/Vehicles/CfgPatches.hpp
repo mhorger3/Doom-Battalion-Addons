@@ -31,6 +31,7 @@
 			"101st_Gustavo_212th",
 			"101st_Ronin_212th",
 			"101st_BabyYoda",
+			"101st_CargoBox",
 			"101st_ARF_Night_MedBackpack_LR",
 			"101st_Jabba",
 			"101st_Naboo_Long",

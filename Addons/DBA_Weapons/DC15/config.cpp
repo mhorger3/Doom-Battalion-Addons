@@ -681,7 +681,7 @@ class CfgWeapons
 		recoil = "recoil_mk20";
 		magazines[] =
 		{
-			"DBA_65_Box_Mag_Base", "DBA_65_Mag_Base"
+			"DBA_65_Mag_x120", "DBA_65_Mag_Base"
 		};
 		class Stun: 101st_stun_muzzle
 		{
@@ -690,7 +690,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			reloadTime = 0.8;
+			reloadTime = "0.12*(2/3)";
 			dispersion=0.00087;
 			recoil = "recoil_auto_mk20";
 			recoilProne = "recoil_auto_prone_mk20";

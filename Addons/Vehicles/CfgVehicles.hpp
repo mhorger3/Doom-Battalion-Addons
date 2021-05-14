@@ -1206,6 +1206,28 @@ class CfgVehicles
 		scope=2;		
 		scopeCurator = 2;
 	};
+	class 101st_CargoBox : House_F
+	{
+		placement = "vertical";
+		mapSize = 1;
+		destrType = "DestructNo";
+		displayName = "Cargo Box";
+		editorCategory = "Category101stAux";
+		editorSubcategory = "101st_Props";
+		model = "101st_Aux_Mod\Addons\Objects\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\greenyweeny_co.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		armor = 999999;
+		armorStructural = 999;
+		scope = 2;
+		scopeCurator = 2;
+	};
 	class 101st_GunganCarbo : House_F
 	{
 		displayName = "Carbonite Gungan (Static)";

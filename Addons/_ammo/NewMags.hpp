@@ -36,7 +36,7 @@
 		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
 		mass=8;
-		count=30;
+		count=60;
 		initspeed=909;
 	};
 	class  DBA_556_Mag_x200 : DBA_Mag_Base
@@ -262,7 +262,7 @@
 	class DBA_12gaSlug_Mag_Base: DBA_Mag_Base //Boma
 	{
 		scope=2;
-		displayname="12sw Scatter Magazine(8rnd Green)";
+		displayname="12sw Slug Magazine(8rnd Green)";
 		ammo="DBA_12gaSlug_green";
 		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";

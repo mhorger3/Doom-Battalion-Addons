@@ -564,7 +564,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Verpine_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
-		magazines[] = { "DBA_762_15RoundClip_Base" };
+		magazines[] = { "DBA_762_Mag_x15" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Verpine DMR";
 		descriptionShort = "Verpine DMR";
