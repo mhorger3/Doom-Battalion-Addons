@@ -1244,6 +1244,42 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	class 101st_Navo_Helm: 101st_Dagger_Helmet
+	{
+		author="Spark";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone AB helmet (Navo)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Navo_Helmet_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Zelph_Helm: 101st_Dagger_Helmet
+	{
+		author="Spark";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone AB helmet (Zelph)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Zelph_Helmet_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
 	class 101st_Biscuit_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1989,7 +2025,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Dolittle_Helmet_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Dolittle_Helmet.rvmat"};
+		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Dolittle_Helmet_CO.rvmat"};
 	};
 	class 101st_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
@@ -2265,7 +2301,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Oaksy_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Oaksy_Helmet_CO.paa"
 		};
 	};
 	class 101st_Grim_Helmet: JLTS_CloneHelmetP2

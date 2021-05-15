@@ -6119,6 +6119,108 @@
 		};
 		
 	}; 
+	class 101st_Oaksy_212th : 101st_JLTS_Clone_P2
+	{
+		dlc = "101st_Aux_Mod";
+		faction = "Republic_101st";
+		displayName = "101st Oaksy (JLTS)";
+		uniformClass = "101st_Oaksy_212th";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Oaksy_chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Oaksy_legs_CO.paa"
+		};
+		linkedItems[] =
+		{
+			"101st_Bacon_Helmet",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[] =
+		{
+			"101st_Bacon_Helmet",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory = "101st_Clones";
+		identityTypes[] =
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		weapons[] =
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[] =
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		scope = 2;
+		scopeCurator = 2;
+	};
 	class 101st_Spark_212th : 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";

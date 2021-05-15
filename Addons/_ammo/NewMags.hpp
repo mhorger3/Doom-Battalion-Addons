@@ -39,15 +39,15 @@
 		count=60;
 		initspeed=909;
 	};
-	class  DBA_556_Mag_x200 : DBA_Mag_Base
+	class  DBA_556_Mag_x300 : DBA_Mag_Base
 	{
 		scope = 2;
 		displayname = "5.56mw Magazine(200rnd Blue)";
 		ammo = "DBA_556_blue";
 		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
-		mass = 55;
-		count = 200;
+		mass = 30;
+		count = 300;
 		initspeed = 909;
 	};
 	class DBA_65_Mag_Base: DBA_Mag_Base
@@ -86,8 +86,8 @@
 		ammo = "DBA_762_green";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-		mass = 30;
-		count = 75;
+		mass = 35;
+		count = 70;
 		initspeed = 909;
 	};
 	class DBA_762_Mag_x50 : DBA_Mag_Base
@@ -115,7 +115,7 @@
 	class DBA_338_Mag_Base: DBA_Mag_Base
 	{
 		scope=2;
-		displayname="8.6mw Magazine(10rnd Blue)";
+		displayname="8.6mw Magazine(15rnd Blue)";
 		ammo="DBA_338_blue";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
