@@ -93,8 +93,8 @@
 	class DBA_762_Mag_x50 : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "7.62mw Magazine (50rnd Blue)";
-		ammo = "DBA_762_blue";
+		displayname = "Vulken (50rnd Blue)";
+		ammo = "DBA_Vulken";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		mass = 20;
@@ -120,7 +120,7 @@
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		mass=14;
-		count=10;
+		count=15;
 		initspeed=880;
 	};
 	class DBA_408_Mag_Base: DBA_Mag_Base

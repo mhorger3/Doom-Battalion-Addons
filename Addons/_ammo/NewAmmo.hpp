@@ -417,6 +417,36 @@
 				distance=1;
 			};
 		};
+		class DBA_Vulken :DBA_ammo_base //.338 Win Mag
+		{
+			hit = 19; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 3.5; //Acts as penetration multiplier for the projectile.
+			typicalSpeed = 890; //What speed does this need to be going to inflict full damage
+
+			audibleFire = 80; //Alerts AI from further away
+
+			dangerRadiusBulletClose = 10;
+			dangerRadiusHit = 14;
+			suppressionRadiusBulletClose = 8;
+			suppressionRadiusHit = 10;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 2.8284299;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 8.48528;
+			};
+			class CamShakeHit
+			{
+				power = 5;
+				duration = 0.2;
+				frequency = 20;
+				distance = 1;
+			};
+		};
 		class DBA_408_base:DBA_ammo_base //408 Cheytac
 		{
 			hit=24; //How much damage when it hits

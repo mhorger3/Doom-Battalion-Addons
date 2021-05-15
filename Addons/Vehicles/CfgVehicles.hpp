@@ -1206,23 +1206,34 @@ class CfgVehicles
 		scope=2;		
 		scopeCurator = 2;
 	};
-	class 101st_CargoBox : House_F
+	class 101st_AmmoBox_Base : House_F
 	{
 		placement = "vertical";
 		mapSize = 1;
 		destrType = "DestructNo";
-		displayName = "Cargo Box";
+		displayName = "Cargo Ammo Base";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\Objects\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\objects\greenyweeny_co.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
-			"camo1"
+			"camo1",
+			"camo2",
+			"camo3"
 		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+		};
+
 		armor = 999999;
 		armorStructural = 999;
 		scope = 2;

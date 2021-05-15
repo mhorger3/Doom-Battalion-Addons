@@ -272,7 +272,7 @@ class CfgWeapons
 		dexterity = 1.7;
 		initSpeed = 1050;
 		maxRecoilSway = 0.008;
-		swayDecaySpeed = 2;
+		swayDecaySpeed = 2.2;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=30;
@@ -564,7 +564,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Verpine_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
-		magazines[] = { "DBA_762_Mag_x15" };
+		magazines[] = { "DBA_338_Mag_Base" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Verpine DMR";
 		descriptionShort = "Verpine DMR";
@@ -654,9 +654,9 @@ class CfgWeapons
 			dispersion = 0.0001;
 			minRange = 2;
 			minRangeProbab = 0.5;
-			midRange = 750;
+			midRange = 350;
 			midRangeProbab = 0.7;
-			maxRange = 1500;
+			maxRange = 750;
 			maxRangeProbab = 0.3;
 			aiRateOfFire=1;
 			aiRateOfFireDistance=300;
@@ -668,7 +668,7 @@ class CfgWeapons
 		dexterity=1;
 		initSpeed=-1;
 		maxRecoilSway = 0.03;
-		swayDecaySpeed=0.75;
+		swayDecaySpeed=0.35;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=45;
