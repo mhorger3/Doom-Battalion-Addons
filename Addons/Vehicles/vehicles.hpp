@@ -18800,8 +18800,8 @@
 				animationSourceGun = "Maingun";
 				Gun = "Maingun";
 				optics = 0;
-				minElev = -5;
-				maxElev = 35;
+				minElev = -15;
+				maxElev = 90;
 				minTurn = -360;
 				maxTurn = +360;
 				selectionFireAnim = "zasleh";
