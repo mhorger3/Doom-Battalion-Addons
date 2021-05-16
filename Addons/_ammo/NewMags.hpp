@@ -42,7 +42,7 @@
 	class  DBA_556_Mag_x300 : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "5.56mw Magazine(200rnd Blue)";
+		displayname = "5.56mw Magazine(300rnd Blue)";
 		ammo = "DBA_556_blue";
 		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
