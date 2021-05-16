@@ -2796,18 +2796,18 @@ class CfgVehicles
 				gun = "mainGun";
 				weapons[] =
 				{
-					"DBA_Ground_HMG_Generic",
 					"GMG_40mm",
+					"DBA_Ground_LMG_Generic",
 					"SmokeLauncher"
 				};
 				magazines[] =
 				{
 					"96Rnd_40mm_G_belt",
 					"96Rnd_40mm_G_belt",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
+					"DBA_LMG_orange_x500_mag",
+					"DBA_LMG_orange_x500_mag",
+					"DBA_LMG_orange_x500_mag",
+					"DBA_LMG_orange_x500_mag",
 					"SmokeLauncherMag"
 				};
 				animationSourceBody = "mainTurret";
@@ -3012,18 +3012,19 @@ class CfgVehicles
 			{
 				weapons[]=
 				{
-					"DBA_Ground_HMG_Generic",
 					"DBA_Ground_AC_Generic",
 					"missiles_titan"
 				};
 				magazines[]=
 				{
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
+					"DBA_AC_black_x100_mag",
 					"2Rnd_GAT_missiles_O",
 					"2Rnd_GAT_missiles_O"
 				};

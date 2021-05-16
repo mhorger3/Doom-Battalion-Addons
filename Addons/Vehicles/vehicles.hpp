@@ -18763,8 +18763,6 @@
 		forceInGarage=1;
 		crew="B_UAV_AI";
 		model = "101st_Aux_Mod\Addons\Vehicles\Octo\Octo.p3d";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\Vehicles\Octo\data\crab_co.paa"};
 		scope=2;
 		forceInGarage=1;
 		scopeCurator=2;
