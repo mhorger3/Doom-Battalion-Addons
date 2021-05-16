@@ -68,6 +68,13 @@
 		displayname = "6.5mw Magazine(120rnd Blue)";
 		count = 120;
 	};
+	class DBA_65_Mag_x20 : DBA_65_Mag_Base
+	{
+		scope = 2;
+		mass = 40;
+		displayname = "6.5mw Magazine(20rnd Blue)";
+		count = 20;
+	};
 	class DBA_762_Mag_Base: DBA_Mag_Base
 	{
 		scope=2;
@@ -82,7 +89,7 @@
 	class DBA_762_x75_Green : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "7.62mw Magazine(75rnd Green)";
+		displayname = "7.62mw Magazine(70rnd Green)";
 		ammo = "DBA_762_green";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
@@ -291,5 +298,5 @@
 		mass = 8;
 		count = 2;
 		initspeed = 400;
-		ammo = "DBA_ZilloATRound";
+		ammo = "DBA_AntiTank_base";
 	};

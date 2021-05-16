@@ -1,5 +1,4 @@
 //AMMO REDO VOLUME 2
-		class OPTRE_B_145X114_HVAP;
 		class DBA_ammo_base:BulletBase
 		{
 			hit=8; //How much damage when it hits
@@ -549,6 +548,40 @@
 				distance=1;
 			};
 		};
+		class DBA_AntiTank_base :DBA_ammo_base //408 Cheytac
+		{
+			hit = 24; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 25; //Acts as penetration multiplier for the projectile.
+			typicalspeed = 800; //What speed does this need to be going to inflict full damage
+
+			visibleFire = 5;
+			audibleFire = 120;
+			visibleFireTime = 3; //Alerts AI from further away
+
+			tracerScale = 1.2;
+
+			dangerRadiusBulletClose = 8;
+			dangerRadiusHit = 12;
+			suppressionRadiusBulletClose = 6;
+			suppressionRadiusHit = 8;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 3.1622801;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 9.4868298;
+			};
+			class CamShakeHit
+			{
+				power = 10;
+				duration = 0.40000001;
+				frequency = 20;
+				distance = 1;
+			};
+		};
 
 	//Pistol Calibers
 
@@ -1078,8 +1111,4 @@
 		{
 			model="kobra\442_weapons\ammo\yellow_tracer.p3d";
 			effectfly="442_plasma_yellow";
-		};			
-		class DBA_ZilloATRound : OPTRE_B_145X114_HVAP
-		{
-			caliber = 6;
 		};
