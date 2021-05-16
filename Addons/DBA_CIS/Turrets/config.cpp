@@ -130,13 +130,14 @@ class CfgVehicles
 				};
 				weapons[]=
 				{
-					"101st_EWEB_Repeater"
+					"DBA_Ground_lmg_Generic"
 				};
 				magazines[]=
 				{
-					"200Rnd_65x39_Belt",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
 				};
 				gunnerAction="RepeaterGunner";
 				memoryPointGunnerOptics="gunnerview";
