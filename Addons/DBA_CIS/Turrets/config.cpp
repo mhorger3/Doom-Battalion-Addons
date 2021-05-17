@@ -130,7 +130,7 @@ class CfgVehicles
 				};
 				weapons[]=
 				{
-					"DBA_Ground_lmg_Generic"
+					"101st_EWEB_Repeater"
 				};
 				magazines[]=
 				{
@@ -202,10 +202,10 @@ class CfgVehicles
 			{
 				magazines[]=
 				{
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
 				};
 			};
 		};
@@ -365,7 +365,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"101st_HeavyRepeaterCell"
+			"DBA_lmg_red_x500_mag"
 		};
 	};
 };

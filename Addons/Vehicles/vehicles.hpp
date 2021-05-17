@@ -545,8 +545,8 @@
 			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
 			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
 		};
-		scope=2;
-		scopeCurator=2;
+		scope=0;
+		scopeCurator=0;
 		side=1;
 		faction="Republic_101st";
 		armor=700;
@@ -667,8 +667,8 @@
 			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
 			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
 		};
-		scope=2;
-		scopeCurator=2;
+		scope=0;
+		scopeCurator=0;
 		side=1;
 		faction="Republic_101st";
 		armor=700;
@@ -680,8 +680,8 @@
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\Fennek\fennek_Medic_CO.paa",
 			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"};
-		scope=2;
-		scopeCurator=2;
+		scope=0;
+		scopeCurator=0;
 		side=1;
 		faction="Republic_101st";
 		armor=700;
@@ -791,10 +791,10 @@
 	class 101st_Rooikat: B_AFV_Wheeled_01_cannon_F
 	{
 		author="Mutt";
-		scope=2;
+		scope=0;
 		side=1;
-		scopeCurator=2;
-		forceInGarage=1;
+		scopeCurator=0;
+		forceInGarage=0;
 		displayName="101st Rooikat";
 		faction="Republic_101st";
 		dlc = "101st_Aux_Mod";
@@ -912,9 +912,9 @@
 	class 101st_Leopard : I_MBT_03_cannon_F
 	{
 		ace_cargo_space = 400;
-		scope=2;
+		scope=0;
 		side=1;
-		scopeCurator=2;
+		scopeCurator=0;
 		forceInGarage=1;
 		displayName="101st Leopard MBT";
 		crew="101st_CloneTrooper_212th";
@@ -1084,9 +1084,9 @@
 	class 101st_Merkava : B_MBT_01_TUSK_F
 	{
 		ace_cargo_space = 400;
-		scope=2;
+		scope=0;
 		side=1;
-		scopeCurator=2;
+		scopeCurator=0;
 		forceInGarage=1;
 		displayName="101st Merkava MBT";
 		crew="101st_CloneTrooper_212th";
@@ -1246,9 +1246,9 @@
 	class 101st_Armata : O_T_MBT_04_command_F
 	{
 		ace_cargo_space = 400;
-		scope=2;
+		scope=0;
 		side=1;
-		scopeCurator=2;
+		scopeCurator=0;
 		forceInGarage=1;
 		displayName="101st Armata MBT";
 		crew="101st_CloneTrooper_212th";
@@ -15840,8 +15840,8 @@
 	{
 		ace_cargo_space = 400;
 		author="Dutch";
-		scope=1;
-		scopeCurator=1;
+		scope=0;
+		scopeCurator=0;
 		scopeArsenal=1;
 		displayName="101st TX-130 Hover Tank";
 		model="101st_Aux_Mod\Addons\Vehicles\TX130\tx130.p3d";
@@ -16952,8 +16952,8 @@
 		ace_cargo_space = 400;
 		author="Dutch";
 		side=1;
-		scope=2;
-		scopeCurator=2;
+		scope=0;
+		scopeCurator=0;
 		weapons[] = {"101st_TX130_mg","101st_TX130_cannon","missiles_titan"};
 		magazines[] = {"101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_mg_mag","101st_TX130_cannon_mag","101st_TX130_cannon_mag","101st_TX130_cannon_mag","101st_TX130_cannon_mag","4Rnd_Titan_long_missiles","4Rnd_Titan_long_missiles","4Rnd_Titan_long_missiles","4Rnd_Titan_long_missiles"};
 	};
@@ -17031,7 +17031,7 @@
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="101st Flytrap AA";
+		displayName="Longbow AA";
 		crew="SoldierWCrew";
 		hiddenSelections[]=
 		{
@@ -17105,7 +17105,7 @@
 		side=0;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="101st CIS Flytrap AA";
+		displayName="Flytrap AA";
 		crew="101st_AT_Droid";
 		hiddenSelections[]=
 		{
@@ -18369,7 +18369,7 @@
 	 {
 		author="Dutch";
 		displayName="LM-432 Crab Droid (Prototype) ";
-		armor=200;
+		armor=325;
 		explosionshielding=100;
 		model = "101st_Aux_Mod\Addons\Vehicles\Crab\Crab.p3d";
 		hiddenSelections[] = {"camo1", "camo2"};
@@ -18628,7 +18628,7 @@
 	class 101st_DSD_Droid: StaticMGWeapon
 	{
 		displayName="CIS Dwarf Spider Droid";
-		armor=450;
+		armor=200;
 		explosionshielding=100;
 		scope=2;
 		scopeCurator=2;
