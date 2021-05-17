@@ -100,11 +100,11 @@
 	class DBA_762_Mag_x50 : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "Vulken (50rnd Blue)";
+		displayname = "Valken Magazine (50rnd Blue)";
 		ammo = "DBA_Vulken";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-		mass = 20;
+		mass = 55;
 		count = 50;
 		initspeed = 909;
 	};
@@ -126,7 +126,7 @@
 		ammo="DBA_338_blue";
 		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-		mass=14;
+		mass=15;
 		count=15;
 		initspeed=880;
 	};
@@ -280,7 +280,7 @@
 	class DBA_12gaSlug_x5_Blue: DBA_Mag_Base //Cannok
 	{
 		scope=2;
-		displayname="12sw Scatter Magazine(5rnd Green)";
+		displayname="12sw Slug Magazine(5rnd Green)";
 		ammo="DBA_12gaSlug_green";
 		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
