@@ -152,4 +152,61 @@ Changelog 5.12.21
 
 1.0 Starts here?
 
+Ver 1.02 Changelog 5.20.21
+
+Weapons -
+	General
+		All weapons now have flashlights that face forward.
+		Blue tracers should no longer clip thru the back of the user
+		Tracers are generally smaller
+	DC15LE
+		Fixed a bug where magazine only held 10 rounds
+	Verpine -
+		Returns to using the same mag as the DC15LE
+		Reduced how long weapon sways after sprinting
+	Valken - 
+		Increased ammo damage and penetration
+		Increased Magazine weight to be inline with DC15LE Magazine weight per round
+	Z6
+		Magazine weight significantly decreased
+		Ammo count increased to 300
+	Zakkeg
+		Magazine Weight increased
+		Ammo Count reduced to 70
+	Z6X
+		Reverted scope changes, should have a scope back.
+	Cannok
+		Magazines are now properly labeled
+
+	Adding DC-15BR (Experimental)
+
+Vehicles
+	Hid a number of SWOP based vehicles as they were duplicates
+
+DBA CIS
+	EWeb
+		Textured
+		Decreased Armor
+		New weapon shoots slightly faster, but deals much less damage
+	Marid
+		New machinegun shoots slightly faster, but deals much less damage
+		Made changes to make it use its grenade launcher as its primary weapon
+	Viper
+		Made changes to make it use its Autocannon as its primary weapon
+	Octo
+		Fixed textures
+		Gave turret greater traverse/depression
+
+
+Resupplies -
+	Added new crates with new the proper ammunition
+
+Custom Helmets -
+	Added Navo
+	Added Oaksy
+	Updated Dolittle
+	Added Zelph
+
+Custom Armor - 
+	Added Oaksy
 
