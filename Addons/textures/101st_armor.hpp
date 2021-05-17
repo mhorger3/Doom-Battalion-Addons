@@ -2449,6 +2449,7 @@ class 101st_212_Demo: Uniform_Base
 	displayName="101st Demolitions (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	explosionShielding = 0.3;
 	hiddenSelections[]=
 	{
 		"camo1",
