@@ -37,7 +37,7 @@
 
 			tracerscale=0.5; //how big the model is that comes out of the barrel
 			effectflare="FlareShell";
-			tracerstarttime=0.050000001;
+			tracerstarttime=0.090000001;
 			tracerendtime=10;
 			
 			waterFriction=0;
@@ -308,6 +308,8 @@
 			caliber=0.86956501; //Acts as penetration multiplier for the projectile.
 			typicalspeed=920; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.3;
+
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
 			suppressionRadiusBulletClose=6;
@@ -336,6 +338,8 @@
 			caliber=1; //Acts as penetration multiplier for the projectile.
 			typicalspeed=820; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.3;
+
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
 			suppressionRadiusBulletClose=6;
@@ -363,6 +367,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=1.6; //Acts as penetration multiplier for the projectile.
 			typicalspeed=800; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.4;
 
 			audibleFire=45; //Alerts AI from further away
 
@@ -393,6 +399,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=890; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.4;
 
 			audibleFire=80; //Alerts AI from further away
 
