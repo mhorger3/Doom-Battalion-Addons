@@ -50,6 +50,32 @@ class CfgWeapons
 	class JLTS_stun_muzzle;
 	class DBA_BattleRifle : Rifle_Long_Base_F
 	{
+		class FlashLight
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
 		ACE_Overheating_JamChance = 0;
@@ -72,7 +98,7 @@ class CfgWeapons
 			"DBA_65_Mag_x20"
 		};
 		reloadAction = "ReloadMagazine";
-		displayName = "[101st] BattleRifle";
+		displayName = "[101st] DC-15BR Battle Rifle (Experimental)";
 		descriptionShort = "101st BattleRifle";
 		soundBullet[]={""};
 		modes[]=
@@ -125,7 +151,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				access = 1;
-				compatibleItems[] = {"optic_MRCO","101st_Aux_Pistol_A","101st_Aux_Pistol_B"};
+				compatibleItems[] = {"DBA_HAMR_A","DBA_HAMR_B"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{

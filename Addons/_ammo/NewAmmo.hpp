@@ -432,6 +432,8 @@
 			caliber = 3.5; //Acts as penetration multiplier for the projectile.
 			typicalSpeed = 890; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.5;
+
 			audibleFire = 80; //Alerts AI from further away
 
 			dangerRadiusBulletClose = 10;
@@ -466,7 +468,7 @@
 			audibleFire=120;
 			visibleFireTime=3; //Alerts AI from further away
 
-			tracerScale=1.2;
+			tracerScale=0.7;
 
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
@@ -500,7 +502,7 @@
 			audibleFire=120;
 			visibleFireTime=3; //Alerts AI from further away
 
-			tracerScale=1.2;
+			tracerScale=10;
 
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
@@ -601,6 +603,8 @@
 			caliber=1.2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=380; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.2;
+
 			audibleFire=30;
 
 			aiAmmoUsageFlags=64;
@@ -617,6 +621,8 @@
 			caliber=1.2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=280; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.2;
+
 			audibleFire=50;
 
 			aiAmmoUsageFlags=64;
@@ -632,6 +638,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=1; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=420; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.2;
 
 			audibleFire=50;
 

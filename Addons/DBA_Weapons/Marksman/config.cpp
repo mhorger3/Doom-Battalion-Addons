@@ -78,8 +78,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -308,8 +308,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -531,8 +531,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -699,8 +699,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
