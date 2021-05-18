@@ -61,6 +61,17 @@
 		count=30;
 		initspeed=909;
 	};
+	class DBA_65_Mag_x30_Red: DBA_Mag_Base
+	{
+		scope=2;
+		displayname="6.5mw Magazine(30rnd Red)";
+		ammo="DBA_65_red";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass=10;
+		count=30;
+		initspeed=909;
+	};
 	class DBA_65_Mag_x120 : DBA_65_Mag_Base
 	{
 		scope = 2;
