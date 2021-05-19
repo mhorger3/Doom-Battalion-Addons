@@ -31,7 +31,7 @@
 
 			brightness=1000; // How Bright/color
 			effectfly="442_plasma_blue";
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 			lightcolor[]={.5,.5,.5}; //Color of light in {R,G,B}
 			flaresize=5; //how big the flash is
 
@@ -703,7 +703,7 @@
 
 		class DBA_556_blue: DBA_556_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_556_green: DBA_556_base
@@ -746,7 +746,7 @@
 
 		class DBA_65_blue: DBA_65_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_65_green: DBA_65_base
@@ -789,7 +789,7 @@
 
 		class DBA_762_blue: DBA_762_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_762_green: DBA_762_base
@@ -832,7 +832,7 @@
 
 		class DBA_338_blue: DBA_338_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_338_green: DBA_338_base
@@ -875,7 +875,7 @@
 
 		class DBA_408_blue: DBA_408_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_408_green: DBA_408_base
@@ -918,7 +918,7 @@
 
 		class DBA_127x99_blue: DBA_127x99_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x99_green: DBA_127x99_base
@@ -961,7 +961,7 @@
 
 		class DBA_127x99_SLAP_blue: DBA_127x99_SLAP_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x99_SLAP_green: DBA_127x99_SLAP_base
@@ -1004,7 +1004,7 @@
 
 		class DBA_9x21_blue: DBA_9x21_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_9x21_green: DBA_9x21_base
@@ -1047,7 +1047,7 @@
 
 		class DBA_45acp_blue: DBA_45acp_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_45acp_green: DBA_45acp_base
@@ -1090,7 +1090,7 @@
 
 		class DBA_127x33_blue: DBA_127x33_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x33_green: DBA_127x33_base
