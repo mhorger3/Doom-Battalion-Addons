@@ -206,7 +206,21 @@ Custom Helmets -
 	Added Oaksy
 	Updated Dolittle
 	Added Zelph
+	Added Radar
+	Added Marshmellow
+	Added Zareth
+	Added Shatterstorm
+	Added Buzzer
+	Added Aleen
+	Added Ty
+	Added Fodder
+	Added Rick
+	Added Slapshot
+	Added Des
+	Fixed Stryker
+	Fixed Mixer 
+
 
 Custom Armor - 
 	Added Oaksy
-
+	Added Radar
