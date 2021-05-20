@@ -204,7 +204,6 @@ Resupplies -
 Custom Helmets -
 	Added Navo
 	Added Oaksy
-	Updated Dolittle
 	Added Zelph
 	Added Radar
 	Added Marshmellow
@@ -218,6 +217,8 @@ Custom Helmets -
 	Added Slapshot
 	Added Des
 	Added Sorensic
+	Updated Craft
+	Updated Dolittle
 	Fixed Stryker
 	Fixed Mixer 
 
