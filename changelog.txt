@@ -223,6 +223,7 @@ Custom Helmets -
 	Updated Dolittle
 	Fixed Stryker
 	Fixed Mixer 
+	Removing Hines Helmet
 
 Custom Armor - 
 	Added Oaksy
