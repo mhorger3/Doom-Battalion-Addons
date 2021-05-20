@@ -217,9 +217,9 @@ Custom Helmets -
 	Added Rick
 	Added Slapshot
 	Added Des
+	Added Sorensic
 	Fixed Stryker
 	Fixed Mixer 
-
 
 Custom Armor - 
 	Added Oaksy

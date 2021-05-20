@@ -1592,6 +1592,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Spark_Helm_CO.paa"
 		};
 	};
+	class 101st_Sorensic_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Spark";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Sorensic)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Sorensic_Helmet_CO.paa"
+		};
+	};
 	class 101st_Fodder_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Spark";
