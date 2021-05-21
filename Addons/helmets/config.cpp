@@ -3338,22 +3338,6 @@ class CfgWeapons
 	};
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
-	class 101st_Craft_Pilot_Helmet: 101st_Pilot_Helm
-	{
-		scope=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Pilot Helmet (Craft)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\p2pilot_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\helmets\Pilot\textures\Craft_co.paa"
-		};
-		subItems[]=
-		{
-			"Integrated_NVG_TI_0_F"
-		};
-	};
-	
 	class 101st_Mockingjay_Pilot_Helmet: 101st_Pilot_Helm
 	{
 		scope=2;
@@ -3429,18 +3413,18 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Cadet_CO.paa"
 		};
 	};
-	class DBA_Hines_Pilot_Helm: DBA_P2_Pilot_Helm
+	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
 	{
 		scope=2;
 		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Hines)";
+		displayName="101st Pilot Helmet (Craft)";
 		hiddenSelections[]=
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\helmets\NewPilot\Hines_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Craft_CO.paa"
 		};
 	};
 	class DBA_Dune_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3534,7 +3518,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
-		displayName = "101st Pilot helmet (Kuzy)";
+		displayName = "101st Pilot Helmet (Kuzy)";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[] =
 		{

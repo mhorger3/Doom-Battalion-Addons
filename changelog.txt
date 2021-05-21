@@ -159,6 +159,8 @@ Weapons -
 		All weapons now have flashlights that face forward.
 		Blue tracers should no longer clip thru the back of the user
 		Tracers are generally smaller
+	DC15A
+		Fixed 3rnd Burst so its useful
 	DC15LE
 		Fixed a bug where magazine only held 10 rounds
 	Verpine -
@@ -179,6 +181,7 @@ Weapons -
 		Magazines are now properly labeled
 
 	Adding DC-15BR (Experimental)
+	Adding DC-15A (Experimental)
 
 Vehicles
 	Hid a number of SWOP based vehicles as they were duplicates
@@ -196,7 +199,6 @@ DBA CIS
 	Octo
 		Fixed textures
 		Gave turret greater traverse/depression
-
 
 Resupplies -
 	Added new crates with new the proper ammunition
@@ -221,6 +223,7 @@ Custom Helmets -
 	Updated Dolittle
 	Fixed Stryker
 	Fixed Mixer 
+	Removing Hines Helmet
 
 Custom Armor - 
 	Added Oaksy
