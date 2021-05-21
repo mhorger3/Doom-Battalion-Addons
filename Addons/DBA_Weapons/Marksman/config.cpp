@@ -341,6 +341,7 @@ class CfgWeapons
 		fireLightDuration=0.050000001;
 		author="Dutch";
 		scope=2;
+		baseWeapon = "DBA_Gundark";
 		model="\101st_Aux_Mod\Addons\DBA_Weapons\Marksman\gundark.p3d";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Gundark_Mag"};
