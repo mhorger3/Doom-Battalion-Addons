@@ -1670,7 +1670,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Shatterstorm_Helmet_CO.paa"
 		};
 	}
-	class 101st_Rick_Helmet: JLTS_CloneHelmetP2
+	class 101st_Rick_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
 		scope=2;
@@ -1696,7 +1696,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Des_Helmet_CO.paa"
 		};
 	}
-	class 101st_Slapshot_Helmet: JLTS_CloneHelmetP2
+	class 101st_Slapshot_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
 		scope=2;
