@@ -1676,7 +1676,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Ricj)";
+		displayName="101st Clone helmet (Rick)";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
