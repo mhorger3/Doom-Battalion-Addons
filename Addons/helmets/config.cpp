@@ -1683,7 +1683,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Rick_Helmet_CO.paa"
 		};
 	}
-	class 101st_Des_Helmet: JLTS_CloneHelmetP2
+	class 101st_Des_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
 		scope=2;
