@@ -3,10 +3,6 @@ params ["_object", "_launchers"];
 
 _object setVariable ["DBA_linkedLaunchers", _launchers, true];
 
-{
-	_x call DBA_ODD_Cannon_fnc_initLauncher;
-} forEach _launchers;
-
 _object addAction [
 	"ODD Cannon Control",
 	{
