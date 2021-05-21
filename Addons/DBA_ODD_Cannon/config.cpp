@@ -26,6 +26,8 @@ class CfgFunctions
             class createControls {};
             class initLauncher {};
             class launch {};
+            class launchInfantry {};
+            class launchObject {};
 		};
 
         class gui

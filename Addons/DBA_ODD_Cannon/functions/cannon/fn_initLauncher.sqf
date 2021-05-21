@@ -28,6 +28,9 @@ _launcher addEventHandler [
 		{
 			params ["_launchUnit", "_projectile"];
 
+			// Give the projectile a second to leave the cannon
+			sleep 1;
+
 			_launchUnit allowDamage false;
 			moveOut _launchUnit;
 			_launchUnit switchMove "HaloFreeFall_non";
@@ -39,12 +42,7 @@ _launcher addEventHandler [
 				private _velocity = velocity _projectile;
 				_launchUnit setVelocity _velocity;
 
-				if ((getPosATL _launchUnit) # 2 > 1000) then
-				{
-					_launchUnit setVariable ["rising", true];
-				};
-
-				if ((getPosATL _launchUnit) # 2 < 1000 && _launchUnit getVariable "rising") exitWith {};
+				if ((getPosATL _launchUnit) # 2 < 1000 && (_velocity # 2) < 0) exitWith {};
 				sleep 0.01;
 			};
 

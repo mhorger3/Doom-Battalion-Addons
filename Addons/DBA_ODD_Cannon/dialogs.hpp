@@ -6,6 +6,7 @@
 #define GUI_GRID_HAbs	(1)
 
 class RscButton;
+class RscCombo;
 class RscMapControl;
 class RscPicture;
 class RscSlider;
@@ -25,6 +26,8 @@ class DBA_ODD_Cannon_Control_Dialog
         "launchDelay",
         "launchDelayText",
         "launchButton",
+		"launchTypeLabel",
+		"launchType",
 		"cancelButton"
     };
 
@@ -91,6 +94,70 @@ class DBA_ODD_Cannon_Control_Dialog
 		y = 20 * GUI_GRID_H + GUI_GRID_Y;
 		w = 4 * GUI_GRID_W;
 		h = 3 * GUI_GRID_H;
+	};
+	class launchTypeLabel: RscText
+	{
+		idc = 1006;
+
+		text = "Launch Type:";
+		x = 13 * GUI_GRID_W + GUI_GRID_X;
+		y = 20 * GUI_GRID_H + GUI_GRID_Y;
+		w = 6 * GUI_GRID_W;
+		h = 3 * GUI_GRID_H;
+	};
+	class launchType: RscCombo
+	{
+		idc = 2900;
+
+		x = 12 * GUI_GRID_W + GUI_GRID_X;
+		y = 23 * GUI_GRID_H + GUI_GRID_Y;
+		w = 10 * GUI_GRID_W;
+		h = 1 * GUI_GRID_H;
+
+		class Items
+		{
+			class Infantry
+			{
+				text = "Infantry";
+				default = 1;
+				value = 0;
+			};
+
+			class Resupply_AmmoBox
+			{
+				text = "Resupply [AmmoBox]";
+				value = 1;
+				data = "101st_AmmoBox_F";
+			};
+
+			class Resupply_Handgun
+			{
+				text = "Resupply [Handgun]";
+				value = 1;
+				data = "101st_Handgun_F";
+			};
+
+			class Resupply_Launcher
+			{
+				text = "Resupply [Launcher]";
+				value = 1;
+				data = "101st_Launcher_F";
+			};
+
+			class Resupply_Medical
+			{
+				text = "Resupply [Medical]";
+				value = 1;
+				data = "101st_Medical_F";
+			};
+
+			class Resupply_Explosive
+			{
+				text = "Resupply [Explosive]";
+				value = 1;
+				data = "101st_Explosive_F";
+			};
+		};
 	};
 	class launchButton: RscButton
 	{
