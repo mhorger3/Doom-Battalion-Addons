@@ -10,6 +10,7 @@ class SensorTemplateDataLink;
 class JLTS_Clone_P2_AB;
 class B_soldier_base_F;
 class RD501_opfor_unit_B1_spec_op;
+class ACE_medicalSupplyCrate_advanced;
 class DefaultVehicleSystemsDisplayManagerLeft
 {
     class components;
@@ -1154,7 +1155,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Medical_F : 101st_MedicalBox_Base
+	class 101st_Medical_F : ACE_medicalSupplyCrate_advanced
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -1189,6 +1190,25 @@ class CfgVehicles
 			verticalOffset = 0.28400001;
 			verticalOffsetWorld = 0;
 			init = "''";
+		};
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Medical_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Medical_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
 		Scope = 2;
@@ -1270,7 +1290,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Explosive_F : 101st_ExplosiveBox_Base
+	class 101st_Explosive_F : ACE_medicalSupplyCrate_advanced
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -1313,7 +1333,26 @@ class CfgVehicles
 		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000;
+		maximumLoad = 10000; 
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+		};
 		class TransportMagazines
 		{
 		};
