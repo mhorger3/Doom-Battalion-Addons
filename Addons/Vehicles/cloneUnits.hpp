@@ -4270,6 +4270,7 @@
 			"HandGrenade",
 			"HandGrenade"
 		};
+	}
 	class 101st_Longbow_212th: 101st_JLTS_Clone_P2
 	{
 		scope = 2;
