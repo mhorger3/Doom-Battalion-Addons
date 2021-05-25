@@ -255,6 +255,16 @@ class CfgWeapons
 				modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
 			};
 		};
+		
+		modelOptics="\A3\Weapons_F\acc\reticle_LRPS_F";
+		optics = 1;
+		opticsDisablePeripherialVision = 1;
+		opticsFlare = 1;
+		opticsPPEffects[] = {};
+		opticsZoomInit = 0.1083;
+		opticsZoomMax = 0.1083;
+		opticsZoomMin = 0.1083;
+
 		flash = "gunfire";
 		flashSize = 0.5;
 		fireLightAmbient[] = {0,0,0.5};

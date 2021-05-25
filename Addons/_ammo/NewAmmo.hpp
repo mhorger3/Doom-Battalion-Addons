@@ -1,5 +1,4 @@
 //AMMO REDO VOLUME 2
-		class OPTRE_B_145X114_HVAP;
 		class DBA_ammo_base:BulletBase
 		{
 			hit=8; //How much damage when it hits
@@ -32,13 +31,13 @@
 
 			brightness=1000; // How Bright/color
 			effectfly="442_plasma_blue";
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 			lightcolor[]={.5,.5,.5}; //Color of light in {R,G,B}
 			flaresize=5; //how big the flash is
 
 			tracerscale=0.5; //how big the model is that comes out of the barrel
 			effectflare="FlareShell";
-			tracerstarttime=0.050000001;
+			tracerstarttime=0.090000001;
 			tracerendtime=10;
 			
 			waterFriction=0;
@@ -309,6 +308,8 @@
 			caliber=0.86956501; //Acts as penetration multiplier for the projectile.
 			typicalspeed=920; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.3;
+
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
 			suppressionRadiusBulletClose=6;
@@ -337,6 +338,8 @@
 			caliber=1; //Acts as penetration multiplier for the projectile.
 			typicalspeed=820; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.3;
+
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
 			suppressionRadiusBulletClose=6;
@@ -364,6 +367,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=1.6; //Acts as penetration multiplier for the projectile.
 			typicalspeed=800; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.4;
 
 			audibleFire=45; //Alerts AI from further away
 
@@ -395,6 +400,8 @@
 			caliber=2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=890; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.4;
+
 			audibleFire=80; //Alerts AI from further away
 
 			dangerRadiusBulletClose=10;
@@ -417,6 +424,38 @@
 				distance=1;
 			};
 		};
+		class DBA_Vulken :DBA_ammo_base //.338 Win Mag
+		{
+			hit = 19; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 3.5; //Acts as penetration multiplier for the projectile.
+			typicalSpeed = 890; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.5;
+
+			audibleFire = 80; //Alerts AI from further away
+
+			dangerRadiusBulletClose = 10;
+			dangerRadiusHit = 14;
+			suppressionRadiusBulletClose = 8;
+			suppressionRadiusHit = 10;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 2.8284299;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 8.48528;
+			};
+			class CamShakeHit
+			{
+				power = 5;
+				duration = 0.2;
+				frequency = 20;
+				distance = 1;
+			};
+		};
 		class DBA_408_base:DBA_ammo_base //408 Cheytac
 		{
 			hit=24; //How much damage when it hits
@@ -429,7 +468,7 @@
 			audibleFire=120;
 			visibleFireTime=3; //Alerts AI from further away
 
-			tracerScale=1.2;
+			tracerScale=0.7;
 
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
@@ -463,7 +502,7 @@
 			audibleFire=120;
 			visibleFireTime=3; //Alerts AI from further away
 
-			tracerScale=1.2;
+			tracerScale=10;
 
 			dangerRadiusBulletClose=8;
 			dangerRadiusHit=12;
@@ -519,6 +558,40 @@
 				distance=1;
 			};
 		};
+		class DBA_AntiTank_base :DBA_ammo_base //408 Cheytac
+		{
+			hit = 24; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 25; //Acts as penetration multiplier for the projectile.
+			typicalspeed = 800; //What speed does this need to be going to inflict full damage
+
+			visibleFire = 5;
+			audibleFire = 120;
+			visibleFireTime = 3; //Alerts AI from further away
+
+			tracerScale = 1.2;
+
+			dangerRadiusBulletClose = 8;
+			dangerRadiusHit = 12;
+			suppressionRadiusBulletClose = 6;
+			suppressionRadiusHit = 8;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 3.1622801;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 9.4868298;
+			};
+			class CamShakeHit
+			{
+				power = 10;
+				duration = 0.40000001;
+				frequency = 20;
+				distance = 1;
+			};
+		};
 
 	//Pistol Calibers
 
@@ -529,6 +602,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=1.2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=380; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.2;
 
 			audibleFire=30;
 
@@ -546,6 +621,8 @@
 			caliber=1.2; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=280; //What speed does this need to be going to inflict full damage
 
+			tracerScale=0.2;
+
 			audibleFire=50;
 
 			aiAmmoUsageFlags=64;
@@ -561,6 +638,8 @@
 			indirecthitrange=0; //Splash Damage Range in meters
 			caliber=1; //Acts as penetration multiplier for the projectile.
 			typicalSpeed=420; //What speed does this need to be going to inflict full damage
+
+			tracerScale=0.2;
 
 			audibleFire=50;
 
@@ -624,7 +703,7 @@
 
 		class DBA_556_blue: DBA_556_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_556_green: DBA_556_base
@@ -667,7 +746,7 @@
 
 		class DBA_65_blue: DBA_65_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_65_green: DBA_65_base
@@ -710,7 +789,7 @@
 
 		class DBA_762_blue: DBA_762_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_762_green: DBA_762_base
@@ -753,7 +832,7 @@
 
 		class DBA_338_blue: DBA_338_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_338_green: DBA_338_base
@@ -796,7 +875,7 @@
 
 		class DBA_408_blue: DBA_408_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_408_green: DBA_408_base
@@ -839,7 +918,7 @@
 
 		class DBA_127x99_blue: DBA_127x99_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x99_green: DBA_127x99_base
@@ -882,7 +961,7 @@
 
 		class DBA_127x99_SLAP_blue: DBA_127x99_SLAP_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x99_SLAP_green: DBA_127x99_SLAP_base
@@ -925,7 +1004,7 @@
 
 		class DBA_9x21_blue: DBA_9x21_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_9x21_green: DBA_9x21_base
@@ -968,7 +1047,7 @@
 
 		class DBA_45acp_blue: DBA_45acp_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_45acp_green: DBA_45acp_base
@@ -1011,7 +1090,7 @@
 
 		class DBA_127x33_blue: DBA_127x33_base
 		{
-			model="kobra\442_weapons\ammo\blue_tracer.p3d";
+			model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 			effectfly="442_plasma_blue";
 		};
 		class DBA_127x33_green: DBA_127x33_base
@@ -1048,8 +1127,4 @@
 		{
 			model="kobra\442_weapons\ammo\yellow_tracer.p3d";
 			effectfly="442_plasma_yellow";
-		};			
-		class DBA_ZilloATRound : OPTRE_B_145X114_HVAP
-		{
-			caliber = 6;
 		};

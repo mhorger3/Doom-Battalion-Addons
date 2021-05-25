@@ -78,8 +78,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -251,7 +251,7 @@ class CfgWeapons
 				displayName = "Burst";
 				recoil = "recoil_burst_smg_01";
 				recoilProne = "recoil_burst_prone_smg_01";
-				reloadTime = 0.12;
+				reloadTime = 0.05;
 				maxRange = 2000;
 				maxRangeProbab = 0.05;
 				midRange = 1500;
@@ -272,7 +272,7 @@ class CfgWeapons
 		dexterity = 1.7;
 		initSpeed = 1050;
 		maxRecoilSway = 0.008;
-		swayDecaySpeed = 2;
+		swayDecaySpeed = 2.2;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=30;
@@ -308,8 +308,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -341,6 +341,8 @@ class CfgWeapons
 		fireLightDuration=0.050000001;
 		author="Dutch";
 		scope=2;
+		scopeArsenal=2;
+		baseWeapon = "DBA_Gundark";
 		model="\101st_Aux_Mod\Addons\DBA_Weapons\Marksman\gundark.p3d";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Gundark_Mag"};
@@ -355,6 +357,7 @@ class CfgWeapons
 		opticsFlare = 1;
 		displayName = "[101st] Gundark XLE-8";
 		descriptionShort = "Gundark XLE-8";
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
 		hiddenSelections[]=
 		{
 			"body", "scope"
@@ -531,8 +534,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -564,7 +567,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Verpine_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"DBA_DC15a_LE_x15_mag","DBA_DC15a_High_x15_mag"};
-		magazines[] = { "DBA_762_15RoundClip_Base" };
+		magazines[] = { "DBA_338_Mag_Base" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Verpine DMR";
 		descriptionShort = "Verpine DMR";
@@ -654,9 +657,9 @@ class CfgWeapons
 			dispersion = 0.0001;
 			minRange = 2;
 			minRangeProbab = 0.5;
-			midRange = 750;
+			midRange = 350;
 			midRangeProbab = 0.7;
-			maxRange = 1500;
+			maxRange = 750;
 			maxRangeProbab = 0.3;
 			aiRateOfFire=1;
 			aiRateOfFireDistance=300;
@@ -668,7 +671,7 @@ class CfgWeapons
 		dexterity=1;
 		initSpeed=-1;
 		maxRecoilSway = 0.03;
-		swayDecaySpeed=0.75;
+		swayDecaySpeed=0.35;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=45;
@@ -699,8 +702,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;

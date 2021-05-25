@@ -2697,6 +2697,8 @@ class CfgVehicles {
         displayName = "CIS Devil Tank";
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
+        armor = 1250;
+        explosionShielding = 0.1;
         // needs new sound for gun
         side = 0;
         faction = "O_DBA_CIS_F";
@@ -2711,6 +2713,8 @@ class O_DBA_CIS_Obliterator_F : OPTRE_M808S
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
+        armor = 1250;
+        explosionShielding = 0.1;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
         canFloat = true;
@@ -2738,6 +2742,9 @@ class O_DBA_CIS_Conquest_F : OPTRE_M850_UNSC
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
+        armor = 3750;
+        armorStructural = 45;
+        explosionShielding = 0.01;
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
         canFloat = true;
@@ -2751,7 +2758,16 @@ class O_DBA_CIS_Conquest_F : OPTRE_M850_UNSC
                 };
                 magazines[] =
                 {
-                    "DBA_lancer_mbt_td_x12_mag"
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+                    "DBA_lancer_mbt_td_x12_mag",
+
                 };
             };
         };

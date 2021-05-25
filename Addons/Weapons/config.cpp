@@ -85,7 +85,7 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class AntiMaterial: Rifle_Long_Base_F
+	/*class AntiMaterial: Rifle_Long_Base_F
 	{
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -482,7 +482,7 @@ class CfgWeapons
 				};
 			};
 		};
-	};
+	}; */
 
 	class 101st_Scuba_Rifle: Rifle_Long_Base_F
 	{

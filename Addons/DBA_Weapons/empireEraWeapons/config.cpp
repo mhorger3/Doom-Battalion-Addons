@@ -243,6 +243,7 @@ class CfgWeapons
 		muzzles[] = {"this","Stun"};
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\A280.p3d";
 
+
 		fireLightDuration = 0.05;
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,0,1};
@@ -355,8 +356,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;

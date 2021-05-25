@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\textures\101st\armor\data\Mutt_Legs_smdi.paa";
+	texture="101st_Aux_Mod\Addons\objects\greenyweeny_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

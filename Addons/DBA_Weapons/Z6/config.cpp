@@ -95,8 +95,8 @@ class CfgWeapons
             innerAngle=5;
             outerAngle=100;
             coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
+            position="usti hlavne";
+            direction="konec hlavne";
             useFlare=1;
             flareSize=1.5;
             flareMaxDistance=100;
@@ -129,7 +129,7 @@ class CfgWeapons
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,0.5};
-		magazines[] = {"DBA_556_Mag_x200"};
+		magazines[] = {"DBA_556_Mag_x300"};
 		class FullAuto1: Mode_FullAuto
 		{
 			dispersion=0.00141;

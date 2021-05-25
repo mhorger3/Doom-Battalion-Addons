@@ -71,7 +71,7 @@ class CfgVehicles
 		{
 			description="";
 		};
-		armor=400;
+		armor=100;
 		model="101st_Aux_Mod\Addons\DBA_CIS\Turrets\eweb.p3d";
 		editorSubcategory="EdSubcat_Turrets";
 		picture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
@@ -134,9 +134,10 @@ class CfgVehicles
 				};
 				magazines[]=
 				{
-					"200Rnd_65x39_Belt",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
 				};
 				gunnerAction="RepeaterGunner";
 				memoryPointGunnerOptics="gunnerview";
@@ -146,18 +147,7 @@ class CfgVehicles
 				gunnergetOutAction="";
 				GunnerName="Gunner";
 				gunnerForceOptics=0;
-				hiddenSelections[]=
-				{
-					"camo1"
-				};
-				hiddenSelectionsTextures[]=
-				{
-					"3as\3as_static\StationaryTurret\Data\Textures\turret2_co.paa"
-				};
-				hiddenSelectionsMaterials[]=
-				{
-					"3as\3as_static\StationaryTurret\Data\Textures\turret.rvmat"
-				};
+				
 				memoryPointsGetInGunner="pos_gunner";
 				memoryPointsGetInGunnerDir="pos_gunner_dir";
 				class ViewOptics: ViewOptics
@@ -212,10 +202,10 @@ class CfgVehicles
 			{
 				magazines[]=
 				{
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell",
-					"101st_HeavyRepeaterCell"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
 				};
 			};
 		};
@@ -375,7 +365,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"101st_HeavyRepeaterCell"
+			"DBA_lmg_red_x500_mag"
 		};
 	};
 };

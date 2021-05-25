@@ -203,7 +203,7 @@ class CfgWeapons
 	class DBA_Aircraft_Heavy_Lasers_Red: Gatling_30mm_Plane_CAS_01_F
 	{
 		displayName = "Heavy Aircraft Lasers";
-		magazineReloadTime = 10;
+		magazineReloadTime = 5;
 		ballisticsComputer = 1;
 		aiDispersionCoefY = 0.5;
 		aiDispersionCoefX = 0.5;
@@ -222,13 +222,9 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[]=
-				{
-					"kobra\442_weapons\sounds\rifle\blaster50.wss",
-					1,
-					1,
-					500
-				};
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav", 1.99526, 1, 1500};
+				soundBegin[] = {"begin1", 0.33};
+				soundsetshot[] = {"3AS_LAATBall_SoundSet"};
 				soundBegin[]=
 				{
 					"begin1",
@@ -450,6 +446,125 @@ class CfgWeapons
 	};
 
 //Ground Weapons
+
+	class DBA_Ground_lmg_Generic:HMG_127
+	{
+		displayName = "Light Laser Repeater";
+		aiDispersionCoefY = 0.5;
+		aiDispersionCoefX = 0.5;
+		scope=2;
+		magazines[]=
+		{
+			"DBA_lmg_blue_x500_mag",
+			"DBA_lmg_green_x500_mag",
+			"DBA_lmg_orange_x500_mag",
+			"DBA_lmg_red_x500_mag",
+			"DBA_lmg_pink_x500_mag",
+			"DBA_lmg_purple_x500_mag",
+			"DBA_lmg_black_x500_mag",
+			"DBA_lmg_yellow_x500_mag"
+		};
+		magazineReloadTime=3;
+		class manual:manual
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					1,
+					1,
+					500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			reloadTime=0.08;
+			soundContinuous=0;
+			soundBurst=0;
+			dispersion=0.00049999999;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=16;
+			aiRateOfFire=0.5;
+			aiRateOfFireDispersion=1.5;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.69999999;
+			maxRange=200;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=6;
+			burstRangeMax=16;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.69999999;
+			midRange=400;
+			midRangeProbab=0.75;
+			maxRange=800;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=4;
+			burstRangeMax=12;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=400;
+			minRange=400;
+			minRangeProbab=0.75;
+			midRange=800;
+			midRangeProbab=0.69999999;
+			maxRange=1500;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=3;
+			burstRangeMax=12;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.60000002;
+			midRange=1500;
+			midRangeProbab=0.25;
+			maxRange=2000;
+			maxRangeProbab=0.050000001;
+		};
+	};
+
 	class DBA_Ground_HMG_Generic:HMG_127
 	{
 		displayName = "Heavy Laser Repeater";
@@ -1133,6 +1248,126 @@ class CfgMagazines
 		muzzleImpulseFactor=0;
 		maxLeadSpeed=600;
 	};
+	class DBA_lmg_blue_x500_mag : 100Rnd_127x99_mag_Tracer_Red
+	{
+		scope=2;
+		displayname="Plasma Cell (Blue)";
+		ammo="DBA_762_blue";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_green_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Green)";
+		ammo="DBA_762_green";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_orange_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Orange)";
+		ammo="DBA_762_orange";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_red_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Red)";
+		ammo="DBA_762_red";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_pink_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Pink)";
+		ammo="DBA_762_red";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_purple_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Purple)";
+		ammo="DBA_762_purple";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_black_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Black)";
+		ammo="DBA_762_black";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_lmg_yellow_x500_mag : DBA_lmg_blue_x500_mag
+	{
+		scope=2;
+		displayname="Plasma Cell (Yellow)";
+		ammo="DBA_762_yellow";
+		mass=0;
+		displaynamemagazine="7.62mw Cannons";
+		shortnamemagazine="7.62mw";
+		count=500;
+		initspeed=910;
+		maxLeadSpeed=36.111099;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
 	class DBA_HMG_blue_x500_mag : 100Rnd_127x99_mag_Tracer_Red
 	{
 		scope=2;
@@ -1419,7 +1654,7 @@ class CfgAmmo
 	class 3AS_ATT_redPlasma_AT;
 	class B_127x99_Ball_Tracer_Red;
 
-	class DBA_ammo_base:B_127x99_Ball_Tracer_Red
+	class DBA_vic_ammo_base:B_127x99_Ball_Tracer_Red
 	{
 		hit=8;
 		indirecthit=0;
@@ -1654,7 +1889,7 @@ class CfgAmmo
 			hitWood="442_plasma_impact";
 		};
 	};
-	class DBA_HMG_base_ammo: DBA_ammo_base
+	class DBA_HMG_base_ammo: DBA_vic_ammo_base
 	{
 		hit=30;
 		visibleFire=8;
@@ -1682,7 +1917,7 @@ class CfgAmmo
 		model="";
 		explosive=0;
 	};
-	class DBA_AC_base_ammo: DBA_ammo_base
+	class DBA_AC_base_ammo: DBA_vic_ammo_base
 	{
 		model="";
 		flaresize=3;

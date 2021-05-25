@@ -16,10 +16,12 @@ class CfgPatches
 			"101st_Nuclass",
 			"DBA_arc_170_green",
 			"DBA_LAAT_Pylons",
-			"101st_laatUnarmed_BaseCGI",
-			"101st_laatFloodLight_BaseCGI",
-			"101st_laat_HammerCGI",
-			"101st_laatUnarmed_HammerCGI"
+			"101st_laatUnarmed_BaseCG",
+			"101st_laatFloodLight_BaseCG",
+			"101st_laat_HammerCG",
+			"101st_laatUnarmed_HammerCG",
+			"DBA_V19_base",
+			"DBA_Patrol_LAAT"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -3056,20 +3058,31 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatUnarmed_BaseCGI : 101st_laatUnarmed_Base
+	class 101st_laatUnarmed_BaseCG : 101st_laatUnarmed_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK4 (CGI)";
+		displayName = "LAAT MK4 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatFloodLight_Base: 3as_LAAT_Mk2Lights
 	{
 		TFAR_hasIntercom=1;
@@ -4438,20 +4451,31 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatFloodLight_BaseCGI : 101st_laatFloodLight_Base
+	class 101st_laatFloodLight_BaseCG : 101st_laatFloodLight_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK6/2 (CGI)";
+		displayName = "LAAT MK6/2 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laat_Hammer: 101st_laat_Base
 	{
 		scope = 2;
@@ -4535,20 +4559,31 @@ class cfgVehicles
 		    };
 		};
 	};
-	class 101st_laat_HammerCGI : 101st_laat_Hammer
+	class 101st_laat_HammerCG : 101st_laat_Hammer
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CGI)";
+		displayName = "LAAT MK5 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatUnarmed_Hammer: 101st_laatUnarmed_Base
 	{
 		scope = 2;
@@ -4632,20 +4667,31 @@ class cfgVehicles
 		    };
 		};
 	};
-	class 101st_laatUnarmed_HammerCGI : 101st_laatUnarmed_Hammer
+	class 101st_laatUnarmed_HammerCG : 101st_laatUnarmed_Hammer
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CGI)";
+		displayName = "LAAT MK5 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
-	}
+	};
 	class 101st_laatFloodLight_Hammer: 101st_laatFloodLight_Base
 	{
 		scope = 2;
@@ -16881,7 +16927,7 @@ class cfgVehicles
 		};			
 		hiddenselectionstextures[] =
 		{
-			"3AS\3as_Z95\Data\grey_co.paa",
+			"3AS\3as_Z95\Data\green_co.paa",
 			"3AS\3as_Z95\Data\cockpit_co.paa",
 			"3AS\3as_saber\data\glass\glass_ca"
 		};
@@ -16964,6 +17010,56 @@ class cfgVehicles
 				};
 			};
 		};
+	};
+
+	class 3as_V19_base;
+	class DBA_V19_base: 3as_V19_base
+	{	
+		armor=300;
+		scope=2;
+		scopeCurator=2;
+		displayName="101st V-19 Torrent";
+		faction="Republic_101st";
+		crew="101st_Pilot_212th";
+		alwaysTarget=0;
+		weapons[]=
+		{
+			"Laserdesignator_pilotCamera",
+			"DBA_Aircraft_Heavy_Lasers_Green",
+			"dba_wynd_a2a",
+			"dba_wynd_agm",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"Laserbatteries",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"DBA_generic_aircraft_cannon_Green_x200_mag",
+			"dba_a2a_x4_mag",
+			"dba_agm_x6_mag"
+		};			
 	};
 	
 	class CopilotTurret;
@@ -17338,6 +17434,149 @@ class cfgVehicles
 	};
 	
 	//Experimental LAAT
+
+	class 3AS_Patrol_LAAT_Republic;
+	class DBA_Patrol_LAAT:3AS_Patrol_LAAT_Republic
+	{
+		displayname="101st LAAT/le";
+		crew="101st_Pilot_212th";
+		faction="Republic_101st";
+		scope=2;
+		scopeCurator=2;
+		memoryPointGun[] = {"L_Muzzle","R_muzzle"};
+		gunBeg[] = {"L_Muzzle","R_Muzzle"};
+		gunEnd[] ={"L_Chamber","R_Chamber"};
+		weapons[]=
+		{
+			"Laserdesignator_pilotCamera",
+			"DBA_Aircraft_Lasers_Blue",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"Laserbatteries",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"192Rnd_CMFlare_Chaff_Magazine",
+			"DBA_generic_aircraft_gun_blue_x1000_mag"
+		};
+		class UserActions
+		{		
+			class beacons_start
+			{
+				displayName="$STR_A3_CfgVehicles_beacons_on";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca.paa' size='2.5' />";
+				position = "pilotview";
+				available = 0;
+				showWindow = 0;
+				radius = 9;
+				onlyForplayer=0;
+				condition="(ace_player == driver this) AND {this animationSourcePhase 'Beacons' < 0.5}";
+				statement="this animateSource ['Beacons',1];";
+			};
+			class beacons_stop: beacons_start
+			{
+				displayName="$STR_A3_CfgVehicles_beacons_off";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca.paa' size='2.5' />";
+				condition="(ace_player == driver this) AND {this animationSourcePhase 'Beacons' > 0.5}";
+				statement="this animateSource ['Beacons',0];";
+			};
+			class LeftDoor_Open
+			{
+				available = 0;
+				showWindow = 0;
+				displayName = "Left Door Open";
+				position = "pilotview";
+				radius = 9;
+				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_L' == 0)";
+				statement = "this animateSource ['Door_L',1];";
+				onlyforplayer = 0;
+			};
+			class LeftDoor_Close
+			{
+				available = 0;
+				showWindow = 0;
+				displayName = "Left Door Close";
+				position = "pilotview";
+				radius = 9;
+				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_L' == 1)";
+				statement = "this animateSource ['Door_L',0];";				
+				onlyforplayer = 0;
+			};
+			class RightDoor_Open
+			{
+				available = 0;
+				showWindow = 0;
+				displayName = "Right Door Open";
+				position = "pilotview";
+				radius = 9;
+				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_R' == 0)";
+				statement = "this animateSource ['Door_R',1];";
+				onlyforplayer = 0;
+			};
+			class RightDoor_Close//''
+			{
+				available = 0;
+				showWindow = 0;
+				displayName = "Right Door Close";
+				position = "pilotview";
+				radius = 9;
+				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_R' == 1)";
+				statement = "this animateSource ['Door_R',0];";				
+				onlyforplayer = 0;
+			};
+			class ThrusterEngage
+			{
+				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
+				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
+				textToolTip = "<t color='#4C9900'>[Impulsor On]</t>";
+				position = "pilotview";
+				radius = 20;
+				priority = 21;
+				onlyForPlayer = 1;
+				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
+			};
+
+			class ThrusterDisngage: ThrusterEngage
+			{
+				priority = 21;
+				displayName = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
+				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+			};
+
+			class ThrusterEngage_spam: ThrusterEngage
+			{
+				displayName = "";
+				displayNameDefault = "";
+				textToolTip = "";
+				position = "pilotview";
+				radius = 20;
+				priority = 0;
+				onlyForPlayer = 1;
+				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
+				shortcut="User19"
+			};
+
+			class ThrusterDisngage_spam: ThrusterEngage
+			{
+				priority = 0;
+				displayName = "";
+				displayNameDefault = "";
+				textToolTip = "";
+				condition = "((player == driver this) AND (alive this))";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				shortcut="User20"
+			};
+		};
+	};
+
+
 	class 442_laat_2_ab;
 	class Eventhandlers;
 	class DBA_LAAT_Pylons: 442_laat_2_ab

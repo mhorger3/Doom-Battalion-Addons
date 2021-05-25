@@ -7,7 +7,7 @@ class cfgPatches
 		requiredaddons[] = {"JLTS_weapons_DC15A","101st_Aux_Mod","DBA_patch_weapons"};
 		requiredversion = 0.1;
 		units[] = {"DBA_VH_DC15A"};
-		weapons[] = {"DBA_DC15A","DBA_DC15LSW","DBA_DC15LE", "DBA_DC15x", "DBA_Forest_DC15x", "DBA_Desert_DC15x", "DBA_DC15GL"};
+		weapons[] = {"DBA_3AS_DC15A","DBA_DC15A","DBA_DC15LSW","DBA_DC15LE", "DBA_DC15x", "DBA_Forest_DC15x", "DBA_Desert_DC15x", "DBA_DC15GL"};
 	};
 };
 class UGL_F;
@@ -131,8 +131,17 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			reloadTime = 0.13;
+			reloadTime=0.05;
 			dispersion=0.00087;
+			minRange=0;
+			minRangeProbab=0.9;
+			midRange=15;
+			midRangeProbab=0.7;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			///Sounds
+			soundContinuous=0;
+			soundBurst=0;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
 			sounds[] = {"StandardSound"};
@@ -200,31 +209,121 @@ class CfgWeapons
 			};
 		};
 		class FlashLight
-        {
-            color[]={180,160,130}; //color[]={180,160,130}; Default
-            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-            intensity=100;
-            size=1;
-            innerAngle=5;
-            outerAngle=100;
-            coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
-            useFlare=1;
-            flareSize=1.5;
-            flareMaxDistance=100;
-            dayLight=1;
-            class Attenuation
-            {
-                start=0;
-                constant=0.5;
-                linear=0.1;
-                quadratic=0.2;
-                hardLimitStart=27;
-                hardLimitEnd=34;
-            };
-            scale[]={0};
-        };
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
+	};
+	class DBA_3AS_DC15A:DBA_DC15A
+	{
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		displayName = "[101st] DC-15A Rifle (Experimental)";
+		baseWeapon = "DBA_3AS_DC15A";
+		scope = 2;
+		scopeArsenal = 2;
+		model="3AS\3AS_Weapons\DC15A\3AS_DC15A_f.p3d";
+		picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		reloadAction="3AS_GestureReloadDC15A";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3AS\3AS_Weapons\DC15A\Data\Anim\DC15A_handanim.rtm"
+			//"\A3\Weapons_F\Rifles\MX\data\Anim\MX_gl.rtm"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+				opticsDisablePeripherialVision = 0.67;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+			class Scope: Ironsights
+			{
+				opticsID=2;
+				useModelOptics=1;
+				opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+				opticsDisablePeripherialVision = 0.67;
+				opticsZoomMin = 0.125; //2x
+				opticsZoomMax = 0.125; //2x
+				opticsZoomInit = 0.125; //2x
+				memoryPointCamera="opticView";
+				visionMode[] = {"Normal","NVG"};
+				opticsFlare="true";
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+				cameraDir="";
+			};
+		};	
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[]=
+				{
+					"3AS_Muzzle_LE_DC15A"
+				};
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};			
+			class CowsSlot: CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"3AS_Optic_Red_DC15A",
+					"3AS_Optic_LEScope_DC15A"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"acc_flashlight",
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[]={};
+			};
+		};
 	};
 	class DBA_DC15GL: JLTS_DC15A
 	{
@@ -361,31 +460,31 @@ class CfgWeapons
 			};
 		};
 		class FlashLight
-        {
-            color[]={180,160,130}; //color[]={180,160,130}; Default
-            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-            intensity=100;
-            size=1;
-            innerAngle=5;
-            outerAngle=100;
-            coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
-            useFlare=1;
-            flareSize=1.5;
-            flareMaxDistance=100;
-            dayLight=1;
-            class Attenuation
-            {
-                start=0;
-                constant=0.5;
-                linear=0.1;
-                quadratic=0.2;
-                hardLimitStart=27;
-                hardLimitEnd=34;
-            };
-            scale[]={0};
-        };
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
 	};
 	class DBA_DC15LE: JLTS_DC15x
 	{
@@ -497,31 +596,31 @@ class CfgWeapons
 			};
 		};
 		class FlashLight
-        {
-            color[]={180,160,130}; //color[]={180,160,130}; Default
-            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-            intensity=100;
-            size=1;
-            innerAngle=5;
-            outerAngle=100;
-            coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
-            useFlare=1;
-            flareSize=1.5;
-            flareMaxDistance=100;
-            dayLight=1;
-            class Attenuation
-            {
-                start=0;
-                constant=0.5;
-                linear=0.1;
-                quadratic=0.2;
-                hardLimitStart=27;
-                hardLimitEnd=34;
-            };
-            scale[]={0};
-        };
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
 	};
 	class DBA_DC15x: JLTS_DC15x
 	{
@@ -617,31 +716,31 @@ class CfgWeapons
 			};
 		};
 		class FlashLight
-        {
-            color[]={180,160,130}; //color[]={180,160,130}; Default
-            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-            intensity=100;
-            size=1;
-            innerAngle=5;
-            outerAngle=100;
-            coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
-            useFlare=1;
-            flareSize=1.5;
-            flareMaxDistance=100;
-            dayLight=1;
-            class Attenuation
-            {
-                start=0;
-                constant=0.5;
-                linear=0.1;
-                quadratic=0.2;
-                hardLimitStart=27;
-                hardLimitEnd=34;
-            };
-            scale[]={0};
-        };
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
 	};
 	class DBA_Forest_DC15x: DBA_DC15x
 	{
@@ -681,7 +780,7 @@ class CfgWeapons
 		recoil = "recoil_mk20";
 		magazines[] =
 		{
-			"DBA_65_Box_Mag_Base", "DBA_65_Mag_Base"
+			"DBA_65_Mag_x120", "DBA_65_Mag_Base"
 		};
 		class Stun: 101st_stun_muzzle
 		{
@@ -690,7 +789,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
-			reloadTime = 0.8;
+			reloadTime = "0.12*(2/3)";
 			dispersion=0.00087;
 			recoil = "recoil_auto_mk20";
 			recoilProne = "recoil_auto_prone_mk20";
@@ -704,30 +803,30 @@ class CfgWeapons
 			};
 		};
 		class FlashLight
-        {
-            color[]={180,160,130}; //color[]={180,160,130}; Default
-            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-            intensity=100;
-            size=1;
-            innerAngle=5;
-            outerAngle=100;
-            coneFadeCoef=10;
-            position="konec hlavne";
-            direction="usti hlavne";
-            useFlare=1;
-            flareSize=1.5;
-            flareMaxDistance=100;
-            dayLight=1;
-            class Attenuation
-            {
-                start=0;
-                constant=0.5;
-                linear=0.1;
-                quadratic=0.2;
-                hardLimitStart=27;
-                hardLimitEnd=34;
-            };
-            scale[]={0};
-        };
+		{
+		    color[]={180,160,130}; //color[]={180,160,130}; Default
+		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+		    intensity=100;
+		    size=1;
+		    innerAngle=5;
+		    outerAngle=100;
+		    coneFadeCoef=10;
+		    position="usti hlavne";
+		    direction="konec hlavne";
+		    useFlare=1;
+		    flareSize=1.5;
+		    flareMaxDistance=100;
+		    dayLight=1;
+		    class Attenuation
+		    {
+		        start=0;
+		        constant=0.5;
+		        linear=0.1;
+		        quadratic=0.2;
+		        hardLimitStart=27;
+		        hardLimitEnd=34;
+		    };
+		    scale[]={0};
+		};
 	};
 };
