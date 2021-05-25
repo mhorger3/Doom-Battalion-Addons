@@ -251,7 +251,7 @@ class CfgWeapons
 				displayName = "Burst";
 				recoil = "recoil_burst_smg_01";
 				recoilProne = "recoil_burst_prone_smg_01";
-				reloadTime = 0.12;
+				reloadTime = 0.05;
 				maxRange = 2000;
 				maxRangeProbab = 0.05;
 				midRange = 1500;
@@ -341,6 +341,7 @@ class CfgWeapons
 		fireLightDuration=0.050000001;
 		author="Dutch";
 		scope=2;
+		scopeArsenal=2;
 		baseWeapon = "DBA_Gundark";
 		model="\101st_Aux_Mod\Addons\DBA_Weapons\Marksman\gundark.p3d";
 		muzzles[] = {"this"};
