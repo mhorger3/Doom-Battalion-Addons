@@ -203,7 +203,7 @@ class CfgWeapons
 	class DBA_Aircraft_Heavy_Lasers_Red: Gatling_30mm_Plane_CAS_01_F
 	{
 		displayName = "Heavy Aircraft Lasers";
-		magazineReloadTime = 10;
+		magazineReloadTime = 5;
 		ballisticsComputer = 1;
 		aiDispersionCoefY = 0.5;
 		aiDispersionCoefX = 0.5;
@@ -222,13 +222,9 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[]=
-				{
-					"kobra\442_weapons\sounds\rifle\blaster50.wss",
-					1,
-					1,
-					500
-				};
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav", 1.99526, 1, 1500};
+				soundBegin[] = {"begin1", 0.33};
+				soundsetshot[] = {"3AS_LAATBall_SoundSet"};
 				soundBegin[]=
 				{
 					"begin1",

@@ -357,6 +357,7 @@ class CfgWeapons
 		opticsFlare = 1;
 		displayName = "[101st] Gundark XLE-8";
 		descriptionShort = "Gundark XLE-8";
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
 		hiddenSelections[]=
 		{
 			"body", "scope"
