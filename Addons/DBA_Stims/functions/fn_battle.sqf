@@ -5,7 +5,7 @@ params ["_player"];
 
 if (DBA_Stims_Debug_Warning) then
 {
-	[_player, "WARNING: Injecting Battle Stimulant"] remoteExec ["globalChat", 0];
+	[_player, "WARNING: I'M ABUSING DRUGS! [Battle Stimulant]"] remoteExec ["globalChat", 0];
 };
 
 [
