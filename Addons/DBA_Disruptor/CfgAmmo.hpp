@@ -22,7 +22,7 @@ class CfgAmmo
 		suppressionRadiusHit = 8;
 		aiAmmoUsageFlags = 128; // AI use against vehicles
 
-		timeToLive = 2; // Disappear after 2 seconds
+		timeToLive = 1; // Disappear after 1 second
 
 		DBA_isDisruptorRound = 1;
 		DBA_disruptDuration = 10;
