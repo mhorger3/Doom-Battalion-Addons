@@ -130,9 +130,9 @@ class CfgVehicles
 
 class CfgWeapons
 {
-	class JLTS_intel_bountypuck;
+	class JLTS_intel_holoProjector;
 
-	class 101st_Portable_Holomap : JLTS_intel_bountypuck
+	class 101st_Portable_Holomap : JLTS_intel_holoProjector
 	{
 		displayName = "Portable Holomap";
 		displayNameShort = "Portable Holomap";
