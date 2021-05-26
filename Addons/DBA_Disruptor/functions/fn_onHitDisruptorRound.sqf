@@ -1,5 +1,9 @@
 params["_target", "_ammo"];
 
+private _lastStunTime = _target getVariable ["DBA_lastStunTime", -1000];
+if (CBA_missionTime < _lastStunTime + DBA_Disruptor_Cooldown) exitWith {};
+_target setVariable ["DBA_lastStunTime", CBA_missionTime];
+
 private _stunDuration = getNumber(configFile >> "CfgAmmo" >> _ammo >> "DBA_disruptDuration");
 
 {
