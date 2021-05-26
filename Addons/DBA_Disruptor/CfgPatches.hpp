@@ -1,0 +1,25 @@
+class CfgPatches
+{
+    class DBA_Aux_Mod_Disruptor
+    {
+        author = "Ragwolf";
+        name = "101st Aux Mod Disruptor";
+
+        requiredAddons[] =
+        {
+            "DBA_patch_weapons",
+            "101st_Aux_Mod_Weapons"
+        };
+        requiredVersion = 0.1;
+        ammo[] =
+        {
+            "DBA_Disruptor_Ammo"
+        };
+        magazines[] =
+        {
+            "DBA_Disruptor_Mag_x1"
+        };
+        units[] = {};
+        weapons[] = {};
+    };
+};
