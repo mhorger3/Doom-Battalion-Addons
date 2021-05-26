@@ -22,7 +22,8 @@ if (DBA_Stims_Debug_Warning) then
 		// Constantly set pain level to 0
 		private _handle = [
 			{
-				params ["_player"];
+				params ["_args", "_handle"];
+				_args params ["_player"];
 
 				[_player, -100] call ace_medical_fnc_adjustPainLevel;
 			},
