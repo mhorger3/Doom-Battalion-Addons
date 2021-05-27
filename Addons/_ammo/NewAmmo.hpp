@@ -563,7 +563,7 @@
 			hit = 24; //How much damage when it hits
 			indirecthit = 0; //Splash Damage
 			indirecthitrange = 0; //Splash Damage Range in meters
-			caliber = 25; //Acts as penetration multiplier for the projectile.
+			caliber = 100; //Acts as penetration multiplier for the projectile.
 			typicalspeed = 800; //What speed does this need to be going to inflict full damage
 
 			visibleFire = 5;

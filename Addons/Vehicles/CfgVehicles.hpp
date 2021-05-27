@@ -711,7 +711,7 @@ class CfgVehicles
 
 	//resupply
 
-	class 101st_AmmoBox_F : 101st_AmmoBox_Base
+	class 101st_AmmoBox_F : ACE_medicalSupplyCrate_advanced
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -755,6 +755,25 @@ class CfgVehicles
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Resupply";
 		maximumLoad = 10000;
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+		};
 		class TransportMagazines
 		{
 			class xx_101st_City_Killer_Slug
@@ -908,7 +927,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Handgun_F : 101st_AmmoBox_Base
+	class 101st_Handgun_F : ACE_medicalSupplyCrate_advanced
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -951,7 +970,26 @@ class CfgVehicles
 		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000;
+		maximumLoad = 10000; 
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+		};
 		class TransportMagazines
 		{
 			class xx_101st_Revolver_Mag
@@ -1034,7 +1072,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 101st_Launcher_F : 101st_ExplosiveBox_Base
+	class 101st_Launcher_F : ACE_medicalSupplyCrate_advanced
 	{
 		ACE_maxWeightCarry = 100000;
 		ACE_maxWeightDrag = 100000;
@@ -1078,6 +1116,25 @@ class CfgVehicles
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Resupply";
 		maximumLoad = 10000;
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+		};
 		class TransportMagazines
 		{
 			class xx_101st_Chaingun_Mag
