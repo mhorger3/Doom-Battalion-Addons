@@ -1128,3 +1128,174 @@
 			model="kobra\442_weapons\ammo\yellow_tracer.p3d";
 			effectfly="442_plasma_yellow";
 		};
+		class E11D_Base_Ammo : DBA_Vulken
+		{
+			bulletFly[] =
+			{
+				"bulletFly1",
+				0.082999997,
+				"bulletFly2",
+				0.082999997,
+				"bulletFly3",
+				0.082999997,
+				"bulletFly4",
+				0.082999997,
+				"bulletFly5",
+				0.082999997,
+				"bulletFly6",
+				0.082999997,
+				"bulletFly7",
+				0.082999997,
+				"bulletFly8",
+				0.082999997,
+				"bulletFly9",
+				0.082999997,
+				"bulletFly10",
+				0.082999997,
+				"bulletFly11",
+				0.082999997,
+				"bulletFly12",
+				0.082999997
+			};
+			bulletFly1[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly10[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly11[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly12[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly2[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly3[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.58,
+				1,
+				30
+			};
+			bulletFly4[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			bulletFly5[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			bulletFly6[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			bulletFly7[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			bulletFly8[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			bulletFly9[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				2.2387199,
+				1,
+				100
+			};
+			soundHit1[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			soundHit2[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			soundHit3[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			soundHit4[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			soundHit5[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			soundHit6[] =
+			{
+				"\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\sounds\E11DShot.ogg",
+				1.9952624,
+				1,
+				120
+			};
+			multiSoundHit[] =
+			{
+				"soundHit1",
+				0.2,
+				"soundHit2",
+				0.2,
+				"soundHit3",
+				0.2,
+				"soundHit4",
+				0.1,
+				"soundHit5",
+				0.15000001,
+				"soundHit6",
+				0.15000001
+			};
+		};

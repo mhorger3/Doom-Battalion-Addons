@@ -155,13 +155,9 @@ class CfgWeapons
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
-				access = 1;
-				compatibleItems[] = {"RD501_muzzle_flash"};
 			};
 			class PointerSlot: PointerSlot
 			{
-				access = 1;
-				compatibleItems[] = {"acc_flashlight_smg_01"};
 			};
 		};
 	};

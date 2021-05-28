@@ -329,3 +329,18 @@
 		initspeed = 400;
 		ammo = "DBA_AntiTank_base";
 	};
+
+	// Imperial stuff
+
+
+	class DBA_E11D_Magazine : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "E11D Magazine (25rnd Blue)";
+		ammo = "E11D_Base_Ammo";
+		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+		mass = 55;
+		count = 25;
+		initspeed = 909;
+	};
