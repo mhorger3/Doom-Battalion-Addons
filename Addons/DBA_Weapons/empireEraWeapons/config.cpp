@@ -92,6 +92,21 @@ class CfgWeapons
 		class FullAuto;
 		class WeaponSlotsInfo;
 	};
+	class ItemCore;
+	class optic_MRD: ItemCore
+	{
+		class ItemInfo;
+	};
+	class optic_MRCO: ItemCore
+	{
+		class ItemInfo;
+	};
+	class optic_Hamr: ItemCore
+	{
+		class ItemInfo;
+	};
+
+
 	class DBA_E11: JLTS_DC15S
 	{
 		JLTS_hasEMPProtection = 1;
@@ -134,7 +149,7 @@ class CfgWeapons
 				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.13;
+			reloadTime = 0.095;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
 			dispersion=0.00087;
@@ -147,7 +162,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			reloadTime = 0.13;
+			reloadTime = 0.3334;
 			dispersion=0.00087;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
@@ -182,7 +197,7 @@ class CfgWeapons
 				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.13;
+			reloadTime = 0.095;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
 			dispersion=0.00087;
@@ -200,7 +215,7 @@ class CfgWeapons
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_HAMR_A","DBA_HAMR_B"};
+				compatibleItems[] = {"DBA_E11_Scope"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -322,7 +337,7 @@ class CfgWeapons
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_HAMR_A","DBA_HAMR_B"};
+				compatibleItems[] = {"DBA_A280_Scope"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -530,13 +545,13 @@ class CfgWeapons
 		fireLightDiffuse[] = {1,1,0};
 		fireLightAmbient[] = {1,1,0};
 
-		modes[] = {"Burst"};
+		modes[] = {"Single","Burst"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"optic_MRCO"};
+				compatibleItems[] = {"DBA_A280_Scope", "DBA_E11_Scope"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -583,7 +598,7 @@ class CfgWeapons
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"optic_MRCO"};
+				compatibleItems[] = {"DBA_A280_Scope", "DBA_E11_Scope"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -598,5 +613,150 @@ class CfgWeapons
 				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};
 			};
 		};
+	};
+
+	//Scopes
+
+	class DBA_E11_Scope: optic_MRCO
+	{
+		author="Trip";
+		scope=2;
+		displayName="E11 4x Scope";
+
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\ScopeE11.p3d";
+		
+		descriptionShort="Standard Battle Sight";
+
+		weaponInfoType="RscOptics_sos";
+		class ItemInfo: ItemInfo
+		{
+			mass=8;
+			opticType=1;
+			optics=1;
+			class OpticsModes
+			{
+				class MRCOcq
+				{
+					modelOptics="\A3\Weapons_F\empty";
+					opticsID=1;
+					useModelOptics=0;
+					opticsPPEffects[]=
+					{
+						"Default"
+					};
+					opticsFlare=0;
+					opticsDisablePeripherialVision=0;
+					opticsZoomMin=0.25;
+					opticsZoomMax=1.25;
+					opticsZoomInit=0.75;
+					memoryPointCamera="eye";
+					visionMode[]={};
+					distanceZoomMin=300;
+					distanceZoomMax=300;
+				};
+				class MRCOscope
+				{
+					modelOptics="\A3\Weapons_f\acc\reticle_nightstalker_F";
+					opticsID=2;
+					useModelOptics=1;
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera1",
+						"OpticsBlur1"
+					};
+					// opticsZoomMin=0.025; //x10
+					// opticsZoomMax=0.0625; //x4
+					opticsZoomMin = "0.25/4";
+					opticsZoomMax = "0.25/2";
+					opticsZoomInit = "0.25/2";
+					discreteDistance[]={100,200,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex=1;
+					distanceZoomMin=100;
+					distanceZoomMax=1000;
+					memoryPointCamera="opticView";
+					visionMode[]=
+					{
+						"Normal",
+						"NVG"
+					};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+				
+			};
+		};
+		inertia=0.1;
+	};
+	class DBA_A280_Scope: optic_MRCO
+	{
+		author="Trip";
+		scope=2;
+		displayName="A280 4x Scope";
+
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\ScopeA280.p3d";
+		
+		descriptionShort="Standard Battle Sight";
+
+		weaponInfoType="RscOptics_sos";
+		class ItemInfo: ItemInfo
+		{
+			mass=8;
+			opticType=1;
+			optics=1;
+			class OpticsModes
+			{
+				class MRCOcq
+				{
+					modelOptics="\A3\Weapons_F\empty";
+					opticsID=1;
+					useModelOptics=0;
+					opticsPPEffects[]=
+					{
+						"Default"
+					};
+					opticsFlare=0;
+					opticsDisablePeripherialVision=0;
+					opticsZoomMin=0.25;
+					opticsZoomMax=1.25;
+					opticsZoomInit=0.75;
+					memoryPointCamera="eye";
+					visionMode[]={};
+					distanceZoomMin=300;
+					distanceZoomMax=300;
+				};
+				class MRCOscope
+				{
+					modelOptics="\A3\Weapons_f\acc\reticle_nightstalker_F";
+					opticsID=2;
+					useModelOptics=1;
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera1",
+						"OpticsBlur1"
+					};
+					// opticsZoomMin=0.025; //x10
+					// opticsZoomMax=0.0625; //x4
+					opticsZoomMin = "0.25/4";
+					opticsZoomMax = "0.25/2";
+					opticsZoomInit = "0.25/2";
+					discreteDistance[]={100,200,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex=1;
+					distanceZoomMin=100;
+					distanceZoomMax=1000;
+					memoryPointCamera="opticView";
+					visionMode[]=
+					{
+						"Normal",
+						"NVG"
+					};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+				
+			};
+		};
+		inertia=0.1;
 	};
 };
