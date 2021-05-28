@@ -8,8 +8,8 @@ private _hasStim = false;
 		_hasStim = true;
 	};
 } forEach [
-	"JLTS_drugs_stimulant_adrenal",
-	"JLTS_drugs_stimulant_battle"
+	"DBA_Stim_Adrenal",
+	"DBA_Stim_Battle"
 ];
 
 _hasStim
