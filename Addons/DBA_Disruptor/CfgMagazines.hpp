@@ -1,10 +1,12 @@
+#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
+
 class CfgMagazines
 {
 	class DBA_Mag_Base;
 
 	class DBA_Disruptor_Mag_x1: DBA_Mag_Base
 	{
-		scope = 2;
+		scope = SCOPE_DEVELOPER;
 		displayname = "101st Disruptor Round";
 		ammo = "DBA_Disruptor_Ammo";
 		model = "\MRC\JLTS\weapons\Core\stun_mag.p3d";
