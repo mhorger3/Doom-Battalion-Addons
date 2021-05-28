@@ -6,7 +6,7 @@
     true,
     true,
     {
-        execVM "DBA_HUD\addons\medical\scripts\toggle.sqf";
+        call DBA_HUD_Medical_fnc_toggle;
     }
 ] call CBA_fnc_addSetting;
 
