@@ -1,3 +1,7 @@
+#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
+
+DEVELOPER_GUARD;
+
 if !(hasInterface) exitWith {};
 
 if !(DBA_HUD_Enabled) exitWith {};
