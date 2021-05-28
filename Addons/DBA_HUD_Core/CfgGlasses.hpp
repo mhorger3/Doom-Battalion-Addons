@@ -1,3 +1,5 @@
+#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
+
 class CfgGlasses
 {
 	class G_Combat;
@@ -10,5 +12,7 @@ class CfgGlasses
 
 		ACE_Overlay = "";
 		ACE_OverlayCracked = "";
+
+		scope = SCOPE_DEVELOPER;
 	};
 };

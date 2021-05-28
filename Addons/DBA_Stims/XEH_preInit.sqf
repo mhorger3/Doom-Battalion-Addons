@@ -1,13 +1,4 @@
 [
-	"DBA_Stims_Debug_Warning",
-	"CHECKBOX",
-	"Stim Warning",
-	["101st Aux Mod", "Debug"],
-	true,
-	true
-] call CBA_fnc_addSetting;
-
-[
     "DBA_Stims_Inject_Duration",
     "SLIDER",
     "Injection Duration",

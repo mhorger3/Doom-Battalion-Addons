@@ -6,7 +6,10 @@ class CfgPatches
         name = "101st Aux Mod HUD [Core]";
 
 		requiredVersion = 1.60;
-		requiredAddons[] = {};
+		requiredAddons[] =
+		{
+			"DBA_Aux_Mod_Common"
+		};
 		ammo[] = {};
 		magazines[] = {};
 		units[] = {};
