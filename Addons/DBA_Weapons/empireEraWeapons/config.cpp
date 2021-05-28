@@ -68,6 +68,14 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
+	class JLTS_DC15S: arifle_MX_Base_F
+	{
+		class Stun;
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
 	class JLTS_DC15x: arifle_MX_Base_F
 	{
 		class Single;
@@ -84,10 +92,11 @@ class CfgWeapons
 		class FullAuto;
 		class WeaponSlotsInfo;
 	};
-	class DBA_E11: JLTS_DC15A
+	class DBA_E11: JLTS_DC15S
 	{
 		JLTS_hasEMPProtection = 1;
-		displayName = "[101st] E11 Rifle (Experimental)";
+		JLTS_canHaveShield = 0;
+		displayName = "[DBA] E11 Rifle (Experimental)";
 		baseWeapon = "DBA_E11";
 		scope = 2;
 		scopeArsenal = 2;
@@ -105,8 +114,8 @@ class CfgWeapons
 
 		fireLightDuration = 0.05;
 		fireLightIntensity = 0.2;
-		fireLightDiffuse[] = {0,0,1};
-		fireLightAmbient[] = {0,0,0.5};
+		fireLightDiffuse[] = {1,0,0};
+		fireLightAmbient[] = {0.5,0,0};
 
 		class Stun: JLTS_stun_muzzle{};
 		class Single: Single
@@ -236,7 +245,7 @@ class CfgWeapons
 	class DBA_A280: JLTS_DC15A
 	{
 		JLTS_hasEMPProtection = 1;
-		displayName = "[101st] A280 Rifle (Experimental)";
+		displayName = "[DBA] A280 Rifle (Experimental)";
 		baseWeapon = "DBA_A280";
 		scope = 2;
 		scopeArsenal = 2;
@@ -255,8 +264,8 @@ class CfgWeapons
 
 		fireLightDuration = 0.05;
 		fireLightIntensity = 0.2;
-		fireLightDiffuse[] = {0,0,1};
-		fireLightAmbient[] = {0,0,0.5};
+		fireLightDiffuse[] = {1,0,0};
+		fireLightAmbient[] = {0.5,0,0};
 
 		class Stun: JLTS_stun_muzzle{};
 		class Single: Single
@@ -275,7 +284,7 @@ class CfgWeapons
 				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.13;
+			reloadTime = 0.12;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
 			dispersion=0.00087;
@@ -288,7 +297,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			reloadTime = 0.13;
+			reloadTime = 0.4;
 			dispersion=0.00087;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
@@ -307,35 +316,7 @@ class CfgWeapons
 				soundBegin[] = {"begin1",1};
 			};
 		};
-		class FullAuto: FullAuto
-		{
-			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			reloadTime = 0.13;
-			recoil = "recoil_auto_mx";
-			recoilProne = "recoil_auto_prone_mx";
-			dispersion=0.00087;
-			minRange = 0;
-			minRangeProbab = 0.9;
-			midRange = 15;
-			midRangeProbab = 0.7;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 1e-06;
-		};
-		modes[] = {"Single","Burst","FullAuto"};
+		modes[] = {"Single","Burst"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 30;
@@ -386,7 +367,7 @@ class CfgWeapons
 	class DBA_Galaar_Base: JLTS_DC15A
 	{
 		JLTS_hasEMPProtection = 1;
-		displayName = "[101st] Galaar 15 Carbine (Experimental)";
+		displayName = "[DBA] Galaar 15 Carbine (Experimental)";
 		baseWeapon = "DBA_Galaar_Base";
 		scope = 2;
 		scopeArsenal = 2;
@@ -535,7 +516,7 @@ class CfgWeapons
 	};
 	class DBA_Galaar_Rifle:  DBA_Galaar_Base
 	{
-		displayName = "[101st] Galaar 15 Rifle (Experimental)";
+		displayName = "[DBA] Galaar 15 Rifle (Experimental)";
 		baseWeapon = "DBA_Galaar_Rifle";
 		scope = 2;
 		scopeArsenal = 2;
@@ -573,7 +554,7 @@ class CfgWeapons
 	};
 	class DBA_Galaar_LSW:  DBA_Galaar_Base
 	{
-		displayName = "101st Galaar 15 LSW (Experimental)";
+		displayName = "[DBA] Galaar 15 LSW (Experimental)";
 		baseWeapon = "DBA_Galaar_LSW";
 		scope = 2;
 		scopeArsenal = 2;
