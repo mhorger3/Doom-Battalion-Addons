@@ -71,9 +71,13 @@
 	class DBA_65_Mag_x20 : DBA_65_Mag_Base
 	{
 		scope = 2;
-		mass = 40;
-		displayname = "6.5mw Magazine(20rnd Blue)";
-		count = 20;
+		displayname = "7.62mw Magazine(30rnd Blue)";
+		ammo = "DBA_762_base";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass = 10;
+		count = 30;
+		initspeed = 909;
 	};
 	class DBA_762_Mag_Base: DBA_Mag_Base
 	{
