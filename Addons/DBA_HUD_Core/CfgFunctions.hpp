@@ -10,7 +10,7 @@ class CfgFunctions
 			{
 				postInit = 1;
 			};
-			class getIconForUnit {};
+			class getUnitHeight {};
             class getVisibleUnits {};
 			class initPlayer
 			{

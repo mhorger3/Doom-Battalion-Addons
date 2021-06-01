@@ -8,7 +8,7 @@ private _visibleUnits = [];
 {
     if (([_player, "PHYSX", _x] checkVisibility [eyePos _player, getPosASL _x]) > 0) then
     {
-        _visibleUnits pushBack (_x call DBA_HUD_fnc_getIconForUnit);
+        _visibleUnits pushBack _x;
     };
 } forEach _nearUnits;
 

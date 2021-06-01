@@ -41,24 +41,13 @@ if !(DBA_HUD_Enabled) exitWith {};
                     {!(localNamespace getVariable ["DBA_HUD_enabled", false])} ||
                     {DBA_HUD_First_Person_Only && {cameraView == "EXTERNAL"}}
                 ) exitWith {};
-                
-                private ["_position"];
+
+                private ["_unit", "_height", "_position"];
 
                 {
-                    _x params ["_unit", "_icon", "_color", "_height", "_scale"];
-
+                    _unit = _x;
+                    _height = _x call DBA_HUD_Core_fnc_getUnitHeight;
                     _position = _unit modelToWorldVisual [0, 0, _height];
-
-                    drawIcon3D [
-                        _icon,
-                        _color,
-                        _position,
-                        _scale,
-                        _scale,
-                        0,
-                        "",
-                        [0, 2] select DBA_HUD_Icon_Outline
-                    ];
 
                     {
                         _x params ["_key", "_function"];
