@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[] = {"AUR_AdvancedUrbanRappelling"};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F"};
+		requiredAddons[] = {"A3_Modules_F", "DBA_Aux_Mod_Common"};
 	};
 };
 
