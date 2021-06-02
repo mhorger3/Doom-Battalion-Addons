@@ -259,6 +259,34 @@
 
 		class DBA_shotgun_base: ShotgunBase
 		{
+			hit=2;
+			indirectHit=2;
+			indirectHitRange=0.40000001;
+			cartridge="FxCartridge_slug";
+			cost=5;
+			typicalSpeed=400;
+			airFriction=-0.0080000004;
+			caliber=1;
+			deflecting=30;
+			class CamShakeFire
+			{
+				power=3;
+				duration=0.5;
+				frequency=20;
+				distance=10;
+			};
+			class CamShakePlayerFire
+			{
+				power=1;
+				duration=0.1;
+				frequency=20;
+			};
+			class CamShakeHit
+			{
+				power=10;
+				duration=1;
+				frequency=20;
+			};
 			effectfly="442_plasma_blue";
 			simulation="shotSpread"; //This makes it spread
 			model="kobra\442_weapons\ammo\blue_tracer.p3d";
@@ -558,19 +586,19 @@
 				distance=1;
 			};
 		};
-		class DBA_AntiTank_base :DBA_ammo_base //408 Cheytac
+		class DBA_AntiTank_base :DBA_ammo_base //AT Rifle Ammo
 		{
-			hit = 24; //How much damage when it hits
+			hit = 70; //How much damage when it hits
 			indirecthit = 0; //Splash Damage
 			indirecthitrange = 0; //Splash Damage Range in meters
-			caliber = 100; //Acts as penetration multiplier for the projectile.
+			caliber = 20; //Acts as penetration multiplier for the projectile.
 			typicalspeed = 800; //What speed does this need to be going to inflict full damage
 
 			visibleFire = 5;
 			audibleFire = 120;
 			visibleFireTime = 3; //Alerts AI from further away
 
-			tracerScale = 1.2;
+			tracerScale = 3;
 
 			dangerRadiusBulletClose = 8;
 			dangerRadiusHit = 12;
@@ -659,7 +687,7 @@
 			indirectHitRange=0;
 			cost=5;
 			typicalSpeed=600;
-			airFriction=-0.0080000004;
+			airFriction=0;
 			caliber=3;
 			deflecting=30;
 		};
@@ -670,13 +698,13 @@
 		};
 		class DBA_12gaPellets_Base:DBA_shotgun_base //12GA
 		{
-			hit=2;
+			hit=4; //Vanilla is 2
 			indirectHit=2;
-			indirectHitRange=0.40000001;
+			indirectHitRange=0.4;
 			cost=5;
 			typicalSpeed=400;
-			airFriction=-0.0080000004;
-			caliber=1;
+			airFriction=0;
+			caliber=2; //Vanilla is 1
 			deflecting=30;
 			class CamShakeFire
 			{

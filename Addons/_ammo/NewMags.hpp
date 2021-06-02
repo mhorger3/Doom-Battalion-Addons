@@ -299,8 +299,8 @@
 		displayname = "Anti Tank Round";
 		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
-		mass = 8;
-		count = 2;
-		initspeed = 400;
+		mass = 45;
+		count = 7;
+		initspeed = 1400;
 		ammo = "DBA_AntiTank_base";
 	};

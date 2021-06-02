@@ -194,8 +194,10 @@ class CfgWeapons
 					soundBegin[] = {"begin1",1};
 					soundClosure[] = {"closure1",1};
 				};
-				recoil = "recoil_auto_mk200";
-				recoilProne = "recoil_auto_prone_mk200";
+				recoil = "recoil_gm6";
+				recoilProne = "assaultriflebase
+
+				";
 				reloadTime = 0.15;
 				ddispersion = 0.00087;
 				minRange = 5;
