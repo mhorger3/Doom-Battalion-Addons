@@ -274,7 +274,7 @@ class CfgWeapons
 		magazines[] = { "DBA_65_Mag_x30_Red" };
 		muzzles[] = {"this","Stun"};
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\A280.p3d";
-		handAnim[] = {};
+		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC15S\anims\DC15S_handanim.rtm"};
 
 
 		fireLightDuration = 0.05;
