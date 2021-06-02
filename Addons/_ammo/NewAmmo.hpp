@@ -333,7 +333,7 @@
 			hit=9; //How much damage when it hits
 			indirecthit=0; //Splash Damage
 			indirecthitrange=0; //Splash Damage Range in meters
-			caliber=0.86956501; //Acts as penetration multiplier for the projectile.
+			caliber=0.9; //Acts as penetration multiplier for the projectile.
 			typicalspeed=920; //What speed does this need to be going to inflict full damage
 
 			tracerScale=0.3;
@@ -591,7 +591,7 @@
 			hit = 70; //How much damage when it hits
 			indirecthit = 0; //Splash Damage
 			indirecthitrange = 0; //Splash Damage Range in meters
-			caliber = 20; //Acts as penetration multiplier for the projectile.
+			caliber = 30; //Acts as penetration multiplier for the projectile.
 			typicalspeed = 800; //What speed does this need to be going to inflict full damage
 
 			visibleFire = 5;
@@ -599,6 +599,47 @@
 			visibleFireTime = 3; //Alerts AI from further away
 
 			tracerScale = 3;
+			model="kobra\442_weapons\ammo\orange_tracer.p3d";
+			effectfly="442_plasma_orange";
+
+			dangerRadiusBulletClose = 8;
+			dangerRadiusHit = 12;
+			suppressionRadiusBulletClose = 6;
+			suppressionRadiusHit = 8;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 3.1622801;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 9.4868298;
+			};
+			class CamShakeHit
+			{
+				power = 10;
+				duration = 0.40000001;
+				frequency = 20;
+				distance = 1;
+			};
+		};
+		class DBA_EMP_base :DBA_ammo_base //AT Rifle EMP Ammo
+		{
+			hit = 1; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 100; //Acts as penetration multiplier for the projectile.
+			typicalspeed = 800; //What speed does this need to be going to inflict full damage
+
+			visibleFire = 5;
+			audibleFire = 120;
+			visibleFireTime = 3; //Alerts AI from further away
+
+			tracerScale = 3;
+			model="kobra\442_weapons\ammo\orange_tracer.p3d";
+			effectfly="442_plasma_orange";
+
+			DBA_isDisruptorRound = 1;
+			DBA_disruptDuration = 7;
 
 			dangerRadiusBulletClose = 8;
 			dangerRadiusHit = 12;
@@ -727,7 +768,7 @@
 			};
 		};
 
-	//556 Color Variants
+	//5.56 Color Variants
 
 		class DBA_556_blue: DBA_556_base
 		{

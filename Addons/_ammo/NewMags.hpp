@@ -293,14 +293,27 @@
 		initspeed=400;
 	};
 
-	class DBA_AntiTankRound_Base : OPTRE_4Rnd_145x114_HVAP_Mag
+	class DBA_20mm_x7_Base : OPTRE_4Rnd_145x114_HVAP_Mag
 	{
 		scope = 2;
-		displayname = "Anti Tank Round";
+		displayname = "20mw Magazine(7rnd Orange)";
 		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
-		mass = 45;
+		mass = 56;
 		count = 7;
 		initspeed = 1400;
 		ammo = "DBA_AntiTank_base";
 	};
+	class DBA_EMP_x1_Base : OPTRE_4Rnd_145x114_HVAP_Mag
+	{
+		scope = 2;
+		displayname = "Antivehicle EMP (1rnd Orange)";
+		picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
+		mass = 44;
+		count = 1;
+		initspeed = 1400;
+		ammo = "DBA_EMP_base";
+	};
+
+	

@@ -757,7 +757,7 @@ class CfgWeapons
 		descriptionShort = "101st AT Rifle";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Zillo_Mag"};
-		magazines[] = { "DBA_AntiTankRound_Base" };
+		magazines[] = { "DBA_20mm_x7_Base","DBA_EMP_x1_Base" };
 		displayName = "[101st] Zillo AT-6";
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_dry",0.501187,1,20};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\data\atRifle_CO.paa"};
