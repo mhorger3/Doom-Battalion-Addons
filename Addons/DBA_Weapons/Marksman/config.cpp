@@ -195,9 +195,7 @@ class CfgWeapons
 					soundClosure[] = {"closure1",1};
 				};
 				recoil = "recoil_gm6";
-				recoilProne = "assaultriflebase
-
-				";
+				recoilProne = "assaultRifleBase";
 				reloadTime = 0.15;
 				ddispersion = 0.00087;
 				minRange = 5;
@@ -737,6 +735,9 @@ class CfgWeapons
 		fireLightDuration=0.050000001;
 		fireLightDiffuse[] = {1,.65,0};
 		fireLightAmbient[] = {1,.65,0};
+
+		cost=5000;
+
 		author="Dutch, Frisk";
 		scope=2;
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Marksman\zillo.p3d";
