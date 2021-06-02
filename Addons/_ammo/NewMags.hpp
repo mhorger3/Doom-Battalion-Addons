@@ -97,13 +97,6 @@
 		displayname = "6.5mw Magazine(120rnd Blue)";
 		count = 120;
 	};
-	class DBA_65_Mag_x20 : DBA_65_Mag_Base
-	{
-		scope = 2;
-		mass = 40;
-		displayname = "6.5mw Magazine(20rnd Blue)";
-		count = 20;
-	};
 	class DBA_762_Mag_Base: DBA_Mag_Base
 	{
 		scope=2;
@@ -114,7 +107,14 @@
 		mass=12;
 		count=30;
 		initspeed=909;
-	}; 
+	};
+	class DBA_65_Mag_x20 : DBA_762_Mag_Base
+	{
+		scope = 2;
+		mass = 40;
+		displayname = "7.62mw Magazine(20rnd Blue)";
+		count = 20;
+	};
 	class DBA_762_x75_Green : DBA_Mag_Base
 	{
 		scope = 2;

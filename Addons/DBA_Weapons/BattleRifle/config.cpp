@@ -110,7 +110,7 @@ class CfgWeapons
 		fireLightIntensity=0.2;
 		fireLightDiffuse[] = {0,1,0};
 		fireLightAmbient[] = {0,1,0};
-		class Single: Mode_SemiAuto
+		class Single: Single
 		{
 			sounds[]=
 			{
@@ -130,7 +130,7 @@ class CfgWeapons
 			};
 			recoil = "recoil_MSBS65_ubs";
 			recoilProne = "assaultRifleBase";
-			reloadTime = 0.35;
+			reloadTime = 0.28;
 			dispersion = "5*0.00087";
 			minRange = 2;
 			minRangeProbab = 0.5;
@@ -155,9 +155,13 @@ class CfgWeapons
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
+				access = 1;
+				compatibleItems[] = {""};
 			};
 			class PointerSlot: PointerSlot
 			{
+				access = 1;
+				compatibleItems[] = {""};
 			};
 		};
 	};
@@ -170,9 +174,10 @@ class CfgVehicles
 		author = "Vulgar";
 		displayName = "$STR_DBA_BattleRifle";
 		scope = 2;
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\BattleRifle\BattleRifle.p3d";
 		class TransportWeapons
 		{
-			class DBA_Boma_T
+			class DBA_Battlerifle_T
 			{
 				count = 1;
 				weapon = "DBA_BattleRifle";

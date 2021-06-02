@@ -661,7 +661,7 @@
 			typicalSpeed=600;
 			airFriction=-0.0080000004;
 			caliber=3;
-			deflecting=30;
+			deflecting=15;
 		};
 		class DBA_12gaSlug_green: DBA_12gaSlug_Base
 		{
@@ -677,7 +677,7 @@
 			typicalSpeed=400;
 			airFriction=-0.0080000004;
 			caliber=1;
-			deflecting=30;
+			deflecting=15;
 			class CamShakeFire
 			{
 				power=3;

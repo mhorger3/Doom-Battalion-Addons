@@ -78,11 +78,13 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0.5, 0.35 };
 				iconScale = 0.2;
+				compatibleItems[] = { "" };
 			};
 			class PointerSlot : PointerSlot /// default accessories for this slot
 			{
 				iconPosition[] = { 0.20, 0.45 };
 				iconScale = 0.25;
+				compatibleItems[] = { "" };
 			};
 			class UnderBarrelSlot : UnderBarrelSlot /// using test bipod
 			{
@@ -102,7 +104,7 @@ class CfgWeapons
 		/////////////////////////////////////////////////////  I R O N S I G H T S  /////////////////////////////////////////////////////
 
 		descriptionShort = "E11D"; /// displayed on mouseOver in Inventory
-		handAnim[] = { "OFP2_ManSkeleton", "\A3\Weapons_F\Rifles\MX\data\Anim\MX_gl.rtm" }; /// MX hand animation actually fits this rifle well
+		handAnim[] = { "OFP2_ManSkeleton", "3AS\3AS_Weapons\DC15A\Data\Anim\DC15A_handanim.rtm" }; /// MX hand animation actually fits this rifle well
 		dexterity = 1.8;
 
 		//caseless ammo//
