@@ -174,9 +174,10 @@ class CfgVehicles
 		author = "Vulgar";
 		displayName = "$STR_DBA_BattleRifle";
 		scope = 2;
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\BattleRifle\BattleRifle.p3d";
 		class TransportWeapons
 		{
-			class DBA_Boma_T
+			class DBA_Battlerifle_T
 			{
 				count = 1;
 				weapon = "DBA_BattleRifle";

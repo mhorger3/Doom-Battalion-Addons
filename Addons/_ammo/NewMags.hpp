@@ -61,23 +61,45 @@
 		count=30;
 		initspeed=909;
 	};
-	class DBA_65_Mag_x120 : DBA_65_Mag_Base
+	class DBA_65_Mag_x30_Red: DBA_Mag_Base
+	{
+		scope=2;
+		displayname="6.5mw Magazine(30rnd Red)";
+		ammo="DBA_65_red";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass=10;
+		count=30;
+		initspeed=909;
+	};
+	class DBA_65_Mag_x30_yellow: DBA_Mag_Base
+	{
+		scope=2;
+		displayname="6.5mw Magazine(30rnd Yellow)";
+		ammo="DBA_65_yellow";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass=10;
+		count=30;
+		initspeed=909;
+	};
+	class DBA_65_Mag_x120_yellow: DBA_65_Mag_x30_yellow
 	{
 		scope = 2;
 		mass=40; 
-		displayname = "6.5mw Magazine(120rnd Blue)";
+		displayname = "6.5mw Magazine(120rnd Yellow)";
 		count = 120;
 	};
-	class DBA_65_Mag_x20 : DBA_65_Mag_Base
+	class DBA_65_Mag_x120 : DBA_65_Mag_Base
 	{
 		scope = 2;
-		displayname = "7.62mw Magazine(30rnd Blue)";
 		ammo = "DBA_762_base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 10;
-		count = 30;
 		initspeed = 909;
+		mass=40; 
+		displayname = "6.5mw Magazine(120rnd Blue)";
+		count = 120;
 	};
 	class DBA_762_Mag_Base: DBA_Mag_Base
 	{
@@ -89,7 +111,14 @@
 		mass=12;
 		count=30;
 		initspeed=909;
-	}; 
+	};
+	class DBA_65_Mag_x20 : DBA_762_Mag_Base
+	{
+		scope = 2;
+		mass = 40;
+		displayname = "7.62mw Magazine(20rnd Blue)";
+		count = 20;
+	};
 	class DBA_762_x75_Green : DBA_Mag_Base
 	{
 		scope = 2;
@@ -317,3 +346,17 @@
 	};
 
 	
+	// Imperial stuff
+
+
+	class DBA_E11D_Magazine : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "E11D Magazine (25rnd Blue)";
+		ammo = "E11D_Base_Ammo";
+		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+		mass = 55;
+		count = 25;
+		initspeed = 909;
+	};
