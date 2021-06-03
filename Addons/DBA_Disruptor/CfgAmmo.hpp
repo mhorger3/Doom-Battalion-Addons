@@ -25,7 +25,7 @@ class CfgAmmo
 		timeToLive = 1; // Disappear after 1 second
 
 		DBA_isDisruptorRound = 1;
-		DBA_disruptDuration = 10;
+		DBA_disruptDuration = 0.5;
 
 		class CamShakeExplode
 		{
