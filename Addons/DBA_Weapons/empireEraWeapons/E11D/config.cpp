@@ -235,7 +235,7 @@ class CfgWeapons
 	class E11D : E11DBase
 	{
 		scope = 2; /// should be visible and useable in game
-		displayName = "[101st] E11D"; /// some name
+		displayName = "[DBA] E11D"; /// some name
 		model = "\101st_Aux_Mod\Addons\DBA_Weapons\empireEraWeapons\E11D.p3d"; /// path to model
 		hiddenSelections[] =
 		{
