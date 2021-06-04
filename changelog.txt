@@ -228,3 +228,38 @@ Custom Helmets -
 Custom Armor - 
 	Added Oaksy
 	Added Radar
+
+Ver 1.03 Changelog 6.3.21
+
+For those of you awaiting your custom helmets/armor, please be patient real life has been priority #1 for us lately, this update is gameplay related tweeks and additions.
+
+Weapons - 
+	5.56 Penetration Increased (Z6 & Kath Hound)
+	Shotgun Pellet damage doubled on direct hit of pellet (Cannok & Boma)
+	15S Added 45 round magazine for additional capcity in cqc.
+
+	Valken
+		Fixed a bug with its recoil not causing it to be assigned properly.
+		Fixed the sounds so its not so goddamn loud.
+
+	Zillo AT Rifle -
+		Completely reworked, fires 20mm AP.
+		AP Mag capacity increased to 7 rounds. 
+		Increased mag weight to match new rounds.
+		Can also load EMP round, stuns a vehicle for 7 seconds (60 second cooldown)
+
+	Empire/Rebel weapons
+	Adding E11
+	Adding E11D
+	Adding A280
+
+	Mandalorian weapons
+	Adding Galaar 15 Carbine
+	Adding Galaar 15 Rifle
+	Adding Galaar 15 LSW
+
+Aircraft - 
+	Nu Class Shuttle
+		Increasing Impulse Speed
+	Patrol LAAT
+		Adding Impulse
