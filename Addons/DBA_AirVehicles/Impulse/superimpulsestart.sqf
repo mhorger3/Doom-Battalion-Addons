@@ -10,7 +10,7 @@ hint parseText (_titlehintimpulsor+_texthintimpulsor);
 
 while {((_vehic getvariable ["impulsorStatus",false]) AND (alive _vehic))} do
 {
-if (speed _vehic <= 850) then {
+if (speed _vehic <= 1250) then {
 _vel = velocity _vehic;
 _dir = direction _vehic;
 _speed = 10;
