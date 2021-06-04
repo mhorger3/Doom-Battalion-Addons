@@ -189,12 +189,12 @@ class CfgWeapons
 				class StandardSound
 				{
 					weaponSoundEffect = "DefaultRifle";
-					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.ogg",3,1,1800};
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.ogg",2,.5,900};
 					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
 					soundBegin[] = {"begin1",1};
 					soundClosure[] = {"closure1",1};
 				};
-				recoil = "recoil_gm6";
+				recoil = "recoil_zafir";
 				recoilProne = "assaultRifleBase";
 				reloadTime = 0.15;
 				ddispersion = 0.00087;
@@ -262,7 +262,7 @@ class CfgWeapons
 				class StandardSound
 				{
 					weaponSoundEffect = "DefaultRifle";
-					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.ogg",3,1,1800};
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\valken.ogg",2,.5,900};
 					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
 					soundBegin[] = {"begin1",1};
 					soundClosure[] = {"closure1",1};
@@ -757,7 +757,7 @@ class CfgWeapons
 		descriptionShort = "101st AT Rifle";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Zillo_Mag"};
-		magazines[] = { "DBA_20mm_x7_Base","DBA_EMP_x1_Base" };
+		magazines[] = { "DBA_20mm_x7_Base","DBA_EMP_x1_Base"};
 		displayName = "[101st] Zillo AT-6";
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_dry",0.501187,1,20};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\data\atRifle_CO.paa"};
