@@ -16814,7 +16814,7 @@ class cfgVehicles
 				statement = "this animateSource ['rampfront',0]";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+						class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -16824,7 +16824,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -16847,7 +16847,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
 				shortcut="User19"
 			};
 
@@ -17536,7 +17536,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -17559,7 +17559,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\superimpulsestart.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
