@@ -661,6 +661,14 @@ class 101st_Visor_DoomRange : JLTS_CloneNVGRange
 		"\101st_Aux_Mod\Addons\textures\Bino\Doom_Range_CO.paa"
 	};
 };
+class JLTS_CloneNVGCC;
+class 101st_Visor_CCVisor : JLTS_CloneNVGCC
+{
+	displayName = "[101st] Clone Commander Visor";
+	modelOptics = "";
+	useModelOptics = 0;
+	opticsDisablePeripherialVision = 0;
+};
 class 101st_Visor_GreyRange : JLTS_CloneNVGRange
 {
 	displayName="[101st] Grey Rangefinder";
