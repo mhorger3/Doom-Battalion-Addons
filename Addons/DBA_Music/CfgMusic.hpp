@@ -656,7 +656,7 @@ class VulgarChugjug
 {
 	name = "Leviathan - Chug Jug";
 	musicClass = "101st_Misc";
-	sound[]	= { "\101st_Aux_Mod\Addons\DBA_Music\Music\Vulgar_Chug_Jug.ogg", db + 10, 1};
+	sound[]	= { "\101st_Aux_Mod\Addons\DBA_Music\Music\Vulgar_Chug_Jug.ogg", db + 15, 1};
 	duration="191";
 };
 class SabVerdun
