@@ -2181,7 +2181,7 @@ class 101st_212_Quill : Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope = 2;
-	displayName = "101st Quill (JLTS)";
+	displayName = "101st Quilliam (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[] =
@@ -2665,7 +2665,7 @@ class 101st_212_Bacon: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Bacon (JLTS)";
+	displayName="101st Bacon (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
