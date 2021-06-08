@@ -4490,8 +4490,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		hiddenSelectionsTextures[] =
 		{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Bottom_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Bottom_CO.paa"
 		};
 		linkedItems[] =
 		{
@@ -5604,6 +5604,109 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		scope = 2;
 		scopeCurator = 2;
 	};
+	class 101st_Furn_212th: 101st_JLTS_Clone_P2
+	{
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Furn (JLTS)";
+		uniformClass="101st_Furn_212th";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Lower_CO.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Prodigy_Helm",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Prodigy_Helm",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="RD501_jumppack_neutral_101st";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		scope = 2;
+		scopeCurator = 2;
+	};
 	class 101st_Bacon_212th: 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";
@@ -6345,6 +6448,108 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 			"\101st_Aux_Mod\Addons\textures\101st\armor\data\Spark_Upper.rvmat",
 			"\101st_Aux_Mod\Addons\textures\101st\armor\data\Spark_Lower.rvmat"
 		}; 
+		linkedItems[] =
+		{
+			"101st_Bacon_Helmet",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[] =
+		{
+			"101st_Bacon_Helmet",
+			"101st_Custom_Airborne_Vest",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory = "101st_Clones";
+		identityTypes[] =
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		weapons[] =
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[] =
+		{
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		scope = 2;
+		scopeCurator = 2;
+	};
+	class 101st_AJ_212th : 101st_JLTS_Clone_P2
+	{
+		dlc = "101st_Aux_Mod";
+		faction = "Republic_101st";
+		displayName = "101st AJ (JLTS)";
+		uniformClass = "101st_AJ_212th";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\AJ_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\AJ_Lower_CO.paa"
+		};
 		linkedItems[] =
 		{
 			"101st_Bacon_Helmet",
