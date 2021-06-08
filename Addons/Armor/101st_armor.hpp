@@ -609,6 +609,50 @@ class 101st_Visor: JLTS_CloneNVG
 		"\101st_Aux_Mod\Addons\textures\Bino\CP_CO.paa"
 	};
 };
+class 101st_RTO_Visor: JLTS_CloneNVG
+{
+	modelOptics="";
+	useModelOptics=0;
+	opticsDisablePeripherialVision=0;
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+	thermalMode[]={4};
+	displayName="[101st] RTO CP Custom Visor";
+	hiddenSelections[]=
+	{
+		"Camo1"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\Bino\RTO_Visor_CO.paa"
+	};
+};
+class 101st_Medic_Visor: JLTS_CloneNVG
+{
+	modelOptics="";
+	useModelOptics=0;
+	opticsDisablePeripherialVision=0;
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+	thermalMode[]={4};
+	displayName="[101st] Medic CP Custom Visor";
+	hiddenSelections[]=
+	{
+		"Camo1"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\Bino\Medic_Visor_CO.paa"
+	};
+};
 class 101st_LCP_Visor: JLTS_CloneNVG
 {
 	modelOptics="";
@@ -2526,7 +2570,37 @@ class 101st_212_Furn: Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Lower_CO.paa"
 	};
-	hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\data\Prodigy_Chest.rvmat","\101st_Aux_Mod\Addons\textures\101st\armor\data\Prodigy_Legs.rvmat"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Prodigy_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Lambert: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Lambert (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Legs_CO.paa"
+	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
