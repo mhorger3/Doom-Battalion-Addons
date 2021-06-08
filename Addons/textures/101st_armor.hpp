@@ -496,7 +496,7 @@ class 101st_Custom_CSM_Pauldron: V_RebreatherB
 		hiddenSelections[] = {"camo1"};
 	};
 };
-class 101st_Custom_CSM_Pauldron: V_RebreatherB
+class 101st_Custom_CXO_Pauldron: V_RebreatherB
 {
 	author="Trip";
 	dlc = "101st_Aux_Mod";
@@ -506,7 +506,7 @@ class 101st_Custom_CSM_Pauldron: V_RebreatherB
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Platoon_CSM_Pauldron_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_2ndLT_Pauldron_CO.paa"
 	};
 	class ItemInfo: VestItem
 	{
