@@ -1046,7 +1046,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Mechanic_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Mechanic_Helmet_CO.paa"
 		};
 	};
 	class 101st_Shotty_Helmet: 101st_Dagger_Helmet
@@ -1136,42 +1136,6 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
-	class 101st_Flenaly_Helm: 101st_Dagger_Helmet
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Flenaly)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\101st\helmets\Flenaly_Helm_CO.paa"
-		};
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
-	class 101st_Winters_Helm: 101st_Dagger_Helmet
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Winters)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\101st\helmets\Winters_Helmet_CO.paa"
-		};
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
 	class 101st_Athley_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1185,7 +1149,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\helmets\Athley_Helmet_CO.paa"
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Athley_Helmet_AB_CO.paa"
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
@@ -1222,6 +1186,96 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\101st_Aux_Mod\Addons\textures\101st\helmets\Dog_Helmet_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Phillips_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Phillips)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Phillips_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Krusader_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Krusader)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Krusader_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Quicksilver_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Quicksilver)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Quicksilver_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Winters_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Winters)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Winters_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Mute_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Mute)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Mute_Helmet_AB_CO.paa"
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
@@ -1475,6 +1529,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Servo_Helmet_CO.paa"
 		};
 	};
+	class 101st_CLS_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Combat Life Saver)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\CLS_Trooper_Helmet_CO.paa"
+		};
+	};
 	class 101st_Pigs_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -1722,6 +1789,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Frosty_Helm_CO.paa"
 		};
 	};
+	class 101st_Slav_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Slav)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Slav_Helmet_CO.paa"
+		};
+	};
 	class 101st_Duskrider_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -1866,19 +1946,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Blood_Helm_CO.paa"
 		};
 	};
-	class 101st_Ironclad_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Ironclad)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Ironclad_Helm_CO.paa"
-		};
-	};
 	class 101st_Hastings_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -1967,7 +2034,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Nobel_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Noble_Helmet_CO.paa"
 		};
 	};
 	class 101st_Mortal_Helmet: JLTS_CloneHelmetP2
@@ -2020,6 +2087,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Twig_Helmet_CO.paa"
+		};
+	};
+	class 101st_Twisted_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Twisted)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Twisted_Helmet_CO.paa"
 		};
 	};
 	class 101st_Firestarter_Helmet: JLTS_CloneHelmetP2
@@ -2247,6 +2327,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Dova_Helm_CO.paa"
 		};
 	};
+	class 101st_Overlord_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Overlord)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Overlord_Helmet_CO.paa"
+		};
+	};
 	class 101st_Sixten_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2257,7 +2350,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Six_Ten_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Six_Ten_Helmet_CO.paa"
 		};
 	};
 	class 101st_Prof_Helmet: JLTS_CloneHelmetP2
@@ -2286,19 +2379,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Ragwolf_Helm_CO.paa"
 		};
 	};
-	class 101st_Phillips_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Phillips)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Philips_Helmet_CO.paa"
-		};
-	};
+	
 	class 101st_Phantom_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2554,6 +2635,7 @@ class CfgWeapons
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+
 	class 101st_Demo_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2786,7 +2868,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Grae_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Grae_Helmet_CO.paa"
 		};
 	};
 	class 101st_Hog_Helmet: JLTS_CloneHelmetP2
@@ -3070,6 +3152,20 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
 	};
+	class 101st_Kink_ARF: 101st_ARF_Base {
+		author = "Spark";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Kink ARF Helmet (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Kink_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
+	};
 	class 101st_Zareth_ARF: 101st_ARF_Base {
 		author = "Spark";
 		scope=2;
@@ -3098,19 +3194,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
 	};
-	class 101st_Krusader_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Krusader)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Krusader_Helmet_CO.paa"
-		};
-	};
+	
 	class 101st_Izuu_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -3162,7 +3246,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Republican_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Republican_Helmet_CO.paa"
 		};
 	};
 	class 101st_Seatie_Helmet: JLTS_CloneHelmetP2
@@ -3254,7 +3338,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Zera_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Zera_Helmet_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
@@ -3336,6 +3420,21 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Mixer_Helmet_CO.paa"
 		};
 	};
+	class 101st_Mixer_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Vale)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Vale_P2_Helmet_CO.paa"
+		};
+	};
+
+
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
 	class 101st_Mockingjay_Pilot_Helmet: 101st_Pilot_Helm
@@ -3441,32 +3540,18 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Dune_CO.paa"
 		};
 	};
-	class DBA_Ironclad_Pilot_Helm: DBA_P2_Pilot_Helm
+	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
 		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Ironclad)";
+		displayName="101st Pilot Helmet (Mockingjay)";
 		hiddenSelections[]=
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\helmets\NewPilot\Ironclad_CO.paa"
-		};
-	};
-	class DBA_Kink_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Kink)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\helmets\NewPilot\Kink_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Mockingjay_CO.paa"
 		};
 	};
 	class DBA_Nyom_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3509,6 +3594,20 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Trip_CO.paa"
+		};
+	};
+	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Kaldor)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Kaldor_CO.paa"
 		};
 	};
 	class 101st_Kuzy_Helmet : DBA_P2_Pilot_Helm

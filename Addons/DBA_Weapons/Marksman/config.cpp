@@ -784,7 +784,11 @@ class CfgWeapons
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					soundsetshot[] = {"M320_Shot_SoundSet","M320_Tail_SoundSet","M320_InteriorTail_SoundSet"};
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\pulserifle.ogg",2.5,1,2700};
+					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+					soundBegin[] = {"begin1",1};
+					soundClosure[] = {"closure1",1};
 				};
 				recoil = "recoil_single_mx";
 				recoilProne = "recoil_single_prone_mx";
@@ -810,7 +814,11 @@ class CfgWeapons
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					soundsetshot[] = {"M320_Shot_SoundSet","M320_Tail_SoundSet","M320_InteriorTail_SoundSet"};
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\pulserifle.ogg",2.5,1,2700};
+					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+					soundBegin[] = {"begin1",1};
+					soundClosure[] = {"closure1",1};
 				};
 				recoil = "recoil_single_mx";
 				recoilProne = "recoil_single_prone_mx";
@@ -836,7 +844,11 @@ class CfgWeapons
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					soundsetshot[] = {"M320_Shot_SoundSet","M320_Tail_SoundSet","M320_InteriorTail_SoundSet"};
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\pulserifle.ogg",2.5,1,2700};
+					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+					soundBegin[] = {"begin1",1};
+					soundClosure[] = {"closure1",1};
 				};
 				recoil = "recoil_single_mx";
 				recoilProne = "recoil_single_prone_mx";
@@ -862,7 +874,11 @@ class CfgWeapons
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					soundsetshot[] = {"M320_Shot_SoundSet","M320_Tail_SoundSet","M320_InteriorTail_SoundSet"};
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"101st_Aux_Mod\Addons\DBA_Weapons\Marksman\pulserifle.ogg",2.5,1,2700};
+					closure2[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+					soundBegin[] = {"begin1",1};
+					soundClosure[] = {"closure1",1};
 				};
 				recoil = "recoil_single_mx";
 				recoilProne = "recoil_single_prone_mx";
