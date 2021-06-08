@@ -223,6 +223,31 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
+
+	class DBA_Backpack_Hammer_LR_Parachute: TFAR_rt1523g_big	{
+		dlc = "101st_Aux_Mod";
+		displayname="101st JTLS Hammer Radio Pack";
+		maximumLoad=250;
+		hiddenSelections[] = {"camo1"};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTOStraps.p3d";
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
+		author="$STR_A3_Bohemia_Interactive";
+		mapSize=0.55000001;
+		_generalMacro="B_Parachute";
+		scope=2;
+		displayName="$STR_A3_Bag_ParachuteSteerable0";
+		picture="\A3\Characters_F\data\ui\icon_b_parachute_ca.paa";
+		model="\A3\Weapons_F\Ammoboxes\Bags\Backpack_Parachute";
+		backpackSimulation="ParachuteSteerable";
+		ParachuteClass="Steerable_Parachute_F";
+		maximumLoad=0;
+		mass=120;
+	};
+
 	
 	class 101st_Radio_Pack_Small : TFAR_rt1523g_big {
 		dlc = "101st_Aux_Mod";
