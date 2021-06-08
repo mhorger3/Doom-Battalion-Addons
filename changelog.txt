@@ -263,3 +263,40 @@ Aircraft -
 		Increasing Impulse Speed
 	Patrol LAAT
 		Adding Impulse
+
+Ver 1.04 Changelog 6.7.21
+
+Added a shitload of helmets and armor
+	Helmets
+	    Kink
+	    Kaldor
+	    Mockingjay
+	    Athley
+	    Combat Life Saver
+	    Dog
+	    Grae
+	    Krusader
+	    Leon
+	    Mechanic
+	    Mute
+	    Noble
+	    Overlord
+	    Phillips
+	    Quicksilver
+	    Republican
+	    Servo
+	    Six-Ten
+	    Slav
+	    Striker (Finally)
+	    Twisted
+	    Vale
+	    Winters
+	    Zera
+	Armor
+		AJ
+		ARF recruit
+		Furn
+
+Attempted a fix for music
+Attempted to add CX-O pauldron that doesn't clip with the helmet
+Changed Zillo firing sound
