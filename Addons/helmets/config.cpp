@@ -1659,6 +1659,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Spark_Helm_CO.paa"
 		};
 	};
+	class 101st_Sixten_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Spark";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Sixten)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Six-Ten_Helmet_CO.paa"
+		};
+	};
 	class 101st_Sorensic_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Spark";
@@ -2338,19 +2351,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Overlord_Helmet_CO.paa"
-		};
-	};
-	class 101st_Sixten_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Six-Ten)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Six_Ten_Helmet_CO.paa"
 		};
 	};
 	class 101st_Prof_Helmet: JLTS_CloneHelmetP2
@@ -3328,9 +3328,9 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Warlord_Helm_CO.paa"
 		};
 	};
-	class 101st_Zera_Helmet: 101st_Dagger_Helmet
+	class 101st_Zera_Helmet: JLTS_CloneHelmetP2
 	{
-		author="Dutch";
+		author="Trip";
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
@@ -3340,7 +3340,6 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Zera_Helmet_CO.paa"
 		};
-		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
 	class 101st_Alfredo_Helmet: JLTS_CloneHelmetP2
 	{
@@ -3594,6 +3593,20 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Trip_CO.paa"
+		};
+	};
+	class DBA_Vance_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Vance)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Vance_Pilot_Helmet_CO.paa"
 		};
 	};
 	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm

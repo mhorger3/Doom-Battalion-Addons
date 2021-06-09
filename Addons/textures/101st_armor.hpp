@@ -1708,8 +1708,8 @@ class 101st_212_Longbow_Recruit : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Armour_Bottom_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Recruit_Bottom_CO.paa"
 	};
 	class ItemInfo : UniformItem
 	{
@@ -2266,6 +2266,37 @@ class 101st_212_Spark : Uniform_Base
 		mass = 40;
 	};
 };
+class 101st_212_AJ : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st AJ (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\AJ_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\AJ_Lower_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_AJ_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
 class 101st_212_Dolittle : Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
@@ -2705,6 +2736,68 @@ class 101st_212_Bacon: Uniform_Base
 	{
 		uniformModel="-";
 		uniformClass="101st_Bacon_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Furn: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Furn (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Lower_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Furn_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Lambert: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Lambert (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Lambert_212th";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
