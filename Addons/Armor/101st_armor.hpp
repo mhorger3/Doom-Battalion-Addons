@@ -2604,7 +2604,7 @@ class 101st_212_Lambert: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Prodigy_212th";
+		uniformClass="101st_Lambert_212th";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=

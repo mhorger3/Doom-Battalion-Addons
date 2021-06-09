@@ -5721,8 +5721,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Chest_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Furn_Leggs_CO.paa"
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Lambert_Leggs_CO.paa"
 		};
 		linkedItems[]=
 		{
