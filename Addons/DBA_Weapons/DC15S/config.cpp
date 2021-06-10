@@ -99,7 +99,7 @@ class CfgWeapons
 				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.25;
+			reloadTime = 0.075;
 			dispersion = 0.00131;
 			minRange = 2;
 			minRangeProbab = 0.3;
