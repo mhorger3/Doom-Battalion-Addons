@@ -63,7 +63,7 @@ class CfgVehicles
 	};
 	class 101st_EWEB_base: StaticMGWeapon
 	{
-		author="3AS Mod Team";
+		author="DBA";
 		_generalMacro="HMG_01_base_F";
 		scope=0;
 		displayName="EWEB Stationary Turret";
@@ -71,7 +71,7 @@ class CfgVehicles
 		{
 			description="";
 		};
-		armor=100;
+		armor=75;
 		model="101st_Aux_Mod\Addons\DBA_CIS\Turrets\eweb.p3d";
 		editorSubcategory="EdSubcat_Turrets";
 		picture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
