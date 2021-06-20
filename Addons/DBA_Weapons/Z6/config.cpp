@@ -112,6 +112,11 @@ class CfgWeapons
             };
             scale[]={0};
         };
+        class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		displayName = "[101st] Z6 Rotary Cannon";
 		scope = 2;
 		scopeArsenal = 2;

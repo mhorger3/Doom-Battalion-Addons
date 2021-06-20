@@ -2707,14 +2707,14 @@ class CfgVehicles
 			{
 				weapons[] =
 				{
-					"DBA_Ground_HMG_Generic",
+					"DBA_Ground_lmg_Generic",
 				};
 				magazines[] =
 				{
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag"
 				};
 				class ViewOptics : ViewOptics
 				{
@@ -2952,16 +2952,16 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag",
 					"SmokeLauncherMag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag"
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag"
 				};
 			};
 		};
@@ -3020,14 +3020,14 @@ class CfgVehicles
 				};
 				magazines[]=
 				{
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
-					"DBA_AC_black_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
 					"2Rnd_GAT_missiles_O",
 					"2Rnd_GAT_missiles_O"
 				};
@@ -3088,12 +3088,12 @@ class CfgVehicles
 				};
 				magazines[]=
 				{
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_pink_x500_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
+					"DBA_HMG_red_x500_mag",
 					"2Rnd_GAT_missiles_O",
 					"2Rnd_GAT_missiles_O"
 				};

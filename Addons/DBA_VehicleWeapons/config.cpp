@@ -502,6 +502,7 @@ class CfgWeapons
 		class close: manual
 		{
 			aiBurstTerminable=1;
+			dispersion=0.01;
 			showToPlayer=0;
 			burst=8;
 			burstRangeMax=16;
@@ -624,6 +625,7 @@ class CfgWeapons
 			burst=8;
 			burstRangeMax=16;
 			aiRateOfFire=0.5;
+			dispersion = 0.0115;
 			aiRateOfFireDispersion=1.5;
 			aiRateOfFireDistance=50;
 			minRange=0;
@@ -740,6 +742,7 @@ class CfgWeapons
 			aiBurstTerminable=1;
 			showToPlayer=0;
 			burst=8;
+			dispersion=0.01;
 			burstRangeMax=16;
 			aiRateOfFire=0.5;
 			aiRateOfFireDispersion=1.5;
@@ -849,6 +852,105 @@ class CfgWeapons
 			maxRange=2;
 			maxRangeProbab=0.0099999998;
 		};
+	};
+	class 3AS_GATRepeater;
+	class 101st_CIS_Mech : 3AS_GATRepeater
+	{
+		displayName="CIS Long Range Cannon";
+		displayNameShort="CIS LR Cannon";
+		author="Dutch";
+		magazines[] = {"101st_CIS_LR_Mag"};
+
+		class manual: MGun
+		{
+			displayName = "Heavy Repeater";
+			sounds[] = {"StandardSound"};
+			reloadTime = 0.375;
+			sounds[] = {"StandardSound"};
+			class StandardSound {
+				begin1[] = {"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",0.75,1,2100};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			multiplier = 1;
+			dispersion = 0.0115;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+		};
+		class close: manual
+		{
+			soundBurst = 0;
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 12;
+			burstRangeMax = 42;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.7;
+			midRange = 100;
+			midRangeProbab = 0.75;
+			maxRange = 300;
+			maxRangeProbab = 0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 36;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 100;
+			minRangeProbab = 0.75;
+			midRange = 300;
+			midRangeProbab = 0.75;
+			maxRange = 600;
+			maxRangeProbab = 0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 30;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 300;
+			minRangeProbab = 0.75;
+			midRange = 600;
+			midRangeProbab = 0.65;
+			maxRange = 800;
+			maxRangeProbab = 0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 12;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 800;
+			minRange = 800;
+			minRangeProbab = 0.65;
+			midRange = 1000;
+			midRangeProbab = 0.3;
+			maxRange = 1500;
+			maxRangeProbab = 0.05;
+		};
+
+		
 	};
 };
 class CfgMagazines

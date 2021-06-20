@@ -18813,15 +18813,15 @@
 				};
 				magazines[]=
 				{
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag",
-					"DBA_AC_pink_x100_mag"
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag"
 
 				};
 				memoryPointGunnerOptics = "gunnerview";

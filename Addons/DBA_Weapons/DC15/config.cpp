@@ -101,7 +101,11 @@ class CfgWeapons
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,0.5};
-		class Stun: JLTS_stun_muzzle{};
+		class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		class Single: Single
 		{
 			sounds[] = {"StandardSound"};

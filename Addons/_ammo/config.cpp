@@ -997,7 +997,7 @@ class CfgMagazines
 
 	class 101st_CIS_LR_Mag : CA_Magazine 
 	{
-		ammo = "101st_Sniper_Ammo_Red";
+		ammo = "DBA_338_red";
 		count = 5000;
 		initSpeed = 600;
 		picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";

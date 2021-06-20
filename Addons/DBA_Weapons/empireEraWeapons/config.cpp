@@ -132,7 +132,11 @@ class CfgWeapons
 		fireLightDiffuse[] = {1,0,0};
 		fireLightAmbient[] = {0.5,0,0};
 
-		class Stun: JLTS_stun_muzzle{};
+		class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		class Single: Single
 		{
 			sounds[] = {"StandardSound"};
@@ -197,7 +201,7 @@ class CfgWeapons
 				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.095;
+			reloadTime = 0.085;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
 			dispersion=0.00087;
@@ -209,7 +213,7 @@ class CfgWeapons
 			maxRangeProbab = 0.1;
 			aiRateOfFire = 1e-06;
 		};
-		modes[] = {"Single","Burst","FullAuto"};
+		modes[] = {"FullAuto"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 30;
@@ -282,7 +286,11 @@ class CfgWeapons
 		fireLightDiffuse[] = {1,0,0};
 		fireLightAmbient[] = {0.5,0,0};
 
-		class Stun: JLTS_stun_muzzle{};
+		class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		class Single: Single
 		{
 			sounds[] = {"StandardSound"};
@@ -404,7 +412,11 @@ class CfgWeapons
 		fireLightDiffuse[] = {1,1,0};
 		fireLightAmbient[] = {1,1,0};
 
-		class Stun: JLTS_stun_muzzle{};
+		class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		class Single: Single
 		{
 			sounds[] = {"StandardSound"};

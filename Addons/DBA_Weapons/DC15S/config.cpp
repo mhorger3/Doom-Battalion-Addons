@@ -89,6 +89,11 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightDuration = 0.05;
 		modes[] = {"Single","FullAuto","close","short","medium"};
+		class Stun: 101st_stun_muzzle
+		{
+			reloadAction = "ReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		};
 		class Single: Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound"};

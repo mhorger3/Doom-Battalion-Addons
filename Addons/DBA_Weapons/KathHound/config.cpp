@@ -100,7 +100,7 @@ class CfgWeapons
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
 		fireLightDiffuse[] = {0,1,0};
 		fireLightAmbient[] = {0,1,0};
-		class Stun: JLTS_stun_muzzle
+		class Stun: 101st_stun_muzzle
 		{
 			reloadAction = "ReloadMagazine";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
