@@ -73,19 +73,38 @@ class CfgWeapons
 		model="101st_Aux_Mod\Addons\DBA_Weapons\Boma\Boma_Shotgun.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Boma_CA.paa";
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
-		muzzles[] = {"this","101st_GL"};
-		class 101st_GL: UGL_F
+		muzzles[] = {"this","DBA_3AS_GL_F"};
+		class DBA_3AS_GL_F: UGL_F
 		{
-			useModelOptics = "false";
-			useExternalOptic = "false";
+			displayName="[101st] DC15-GL";
+			descriptionShort="GL for the DC15A Platform";
+			useModelOptics=0;
+			useExternalOptic=0;
 			magazines[] = {};
 			magazineWell[] += {"DBA_GL_Mags_magwell"};
-			reloadAction = "GestureReloadMXUGL";
-			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
-			cameraDir = "OP_look";
-			discreteDistance[] = {100, 200, 300, 400};
-			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4"};
-			discreteDistanceInitIndex = 0;
+			cameraDir="OP_look";
+			discreteDistance[]={50,75,100,150,200,250,300,350,400};
+			discreteDistanceCameraPoint[]=
+			{
+				"OP_eye_50",
+				"OP_eye_75",
+				"OP_eye_100",
+				"OP_eye_150",
+				"OP_eye_200",
+				"OP_eye_250",
+				"OP_eye_300",
+				"OP_eye_350",
+				"OP_eye_400"
+			};
+			discreteDistanceInitIndex=1;
+			reloadAction="GestureReloadMXUGL";
+			reloadMagazineSound[]=
+			{
+				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
+				1,
+				1,
+				10
+			};
 		};
 		magazines[] =
 		{

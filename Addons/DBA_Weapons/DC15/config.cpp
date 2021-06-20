@@ -7,7 +7,23 @@ class cfgPatches
 		requiredaddons[] = {"JLTS_weapons_DC15A","101st_Aux_Mod","DBA_patch_weapons"};
 		requiredversion = 0.1;
 		units[] = {"DBA_VH_DC15A"};
-		weapons[] = {"DBA_3AS_DC15A","DBA_DC15A","DBA_DC15LSW","DBA_DC15LE", "DBA_DC15x", "DBA_Forest_DC15x", "DBA_Desert_DC15x", "DBA_DC15GL"};
+		weapons[] = 
+		{
+			"DBA_3AS_DC15A",
+			"DBA_DC15A",
+			"DBA_DC15LSW",
+			"DBA_DC15LE",
+			"DBA_DC15x",
+			"DBA_Forest_DC15x",
+			"DBA_Desert_DC15x",
+			"DBA_DC15GL",
+			"DBA_3AS_DC15AGL",
+			"DBA_DC15C",
+			"DBA_DC15CGL",
+			"",
+			"",
+			"",
+		};
 	};
 };
 class UGL_F;
@@ -494,6 +510,8 @@ class CfgWeapons
 
 	class DBA_3AS_DC15AGL: DBA_DC15A
 	{
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
 		scope=2;
 		baseWeapon = "DBA_3AS_DC15GL";
 		displayName="[101st] DC-15AGL Rifle (Experimental)";
@@ -1003,7 +1021,7 @@ class CfgWeapons
 	class 3AS_DC15C_F;
 	class DBA_DC15C : 3AS_DC15C_F
 	{
-		displayname = "[101st] DC15C Rifle";
+		displayname = "[101st] DC15C Rifle (Experimental)";
 		baseWeapon = "DBA_15C";
 		scope = 2;
 		scopeArsenal = 2;
@@ -1043,10 +1061,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class DBA_DC15CGL: DBA_15C
+	class DBA_DC15CGL: DBA_DC15C
 	{
 		scope=2; //change to 2 when ready
-		displayName="[101st] DC-15CGL Rifle";
+		displayName="[101st] DC-15CGL Rifle (Experimental)";
 		baseWeapon = "DBA_DC15CGL";
 		model="3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
 		picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";

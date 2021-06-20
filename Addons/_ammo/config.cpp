@@ -1238,7 +1238,7 @@ class CfgMagazines
 		displayNameShort = "2 Rnd LR AP DC-15A";
 		picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 120;
+		initSpeed = 80;
 		count = 2;
 		nameSound = "";
 		descriptionShort = "2Rnd LR AP DC-15A Grenade";
@@ -1251,14 +1251,14 @@ class CfgMagazines
 		count = 3;
 		ammo = "DBA_GL_HE_ammo";
 		descriptionShort = "3Rnd LR HE DC-15A Grenade";
-		initSpeed = 120;
+		initSpeed = 80;
 	};
 	class DBA_AT_GL_x6_mag : DBA_AT_GL_x2_mag
 	{
 		displayName = "6 Rnd LR AP HH-4 Grenades";
 		displayNameShort = "6 Rnd LR AP HH-4";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 120;
+		initSpeed = 80;
 		count = 6;
 		nameSound = "";
 		descriptionShort = "Grenade go burr";
@@ -1271,7 +1271,7 @@ class CfgMagazines
 		count = 8;
 		ammo = "DBA_GL_HE_ammo";
 		descriptionShort = "Grenade go burr";
-		initSpeed = 120;
+		initSpeed = 80;
 	};
 
 
