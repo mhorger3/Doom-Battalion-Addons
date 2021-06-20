@@ -363,13 +363,13 @@ class CfgWeapons
 			reloadAction = "GestureReloadMXUGL";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
 			cameraDir = "OP_look";
-			discreteDistance[] = {75,150,250,350,425};
-			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4","OP_eye5"};
+			discreteDistance[] = {100, 200, 300, 400};
+			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4"};
 			discreteDistanceInitIndex = 0;
 		};
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
 		muzzles[] = {"this","101st_GL"};
-		model = "\101st_Aux_Mod\Addons\DC15SGL\DC15SGL.p3d";
+		model = "\101st_Aux_ModAddons\DBA_Weapons\DC15S\DC15SGL.p3d";
 		ACE_clearJamAction = "ReloadMagazine";
 		modes[] = {"Single","FullAuto","close","short","medium"};
 		class Single;

@@ -83,8 +83,8 @@ class CfgWeapons
 			reloadAction = "GestureReloadMXUGL";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
 			cameraDir = "OP_look";
-			discreteDistance[] = {75,150,250,350,425};
-			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4","OP_eye5"};
+			discreteDistance[] = {100, 200, 300, 400};
+			discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4"};
 			discreteDistanceInitIndex = 0;
 		};
 		magazines[] =
