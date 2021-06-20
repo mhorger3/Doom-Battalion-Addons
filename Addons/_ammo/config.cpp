@@ -886,7 +886,7 @@ class CfgMagazines
 		displayName = "101st AA Quick-Fire Rocket";
 		displayNameShort = "AA Rockets";
 		initSpeed = 40;
-		mass = 175;
+		mass = 140;
 		maxLeadSpeed = 277.778;
 		type = "6 * 		256";
 		picture = "\A3\Weapons_F_beta\Launchers\titan\Data\UI\gear_titan_missile_atl_CA.paa";
@@ -900,7 +900,7 @@ class CfgMagazines
 		displayName = "101st AT Quick-Fire Rocket";
 		displayNameShort = "AT Rockets";
 		initSpeed = 60;
-		mass = 160;
+		mass = 135;
 		maxLeadSpeed = 277.778;
 		type = "2 * 256";
 		picture = "\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
@@ -919,7 +919,7 @@ class CfgMagazines
 		type = "2 * 256";
 		picture = "\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
 		model = "\A3\weapons_f\launchers\nlaw\nlaw_proxy";
-		count = 2;
+		count = 3;
 		scope = 2;
 	};
 
@@ -1238,7 +1238,7 @@ class CfgMagazines
 		displayNameShort = "2 Rnd LR AP DC-15A";
 		picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 220;
+		initSpeed = 120;
 		count = 2;
 		nameSound = "";
 		descriptionShort = "2Rnd LR AP DC-15A Grenade";
@@ -1258,7 +1258,7 @@ class CfgMagazines
 		displayName = "6 Rnd LR AP HH-4 Grenades";
 		displayNameShort = "6 Rnd LR AP HH-4";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 220;
+		initSpeed = 120;
 		count = 6;
 		nameSound = "";
 		descriptionShort = "Grenade go burr";
@@ -2233,7 +2233,7 @@ class CfgAmmo
 	};
 	class DBA_GL_AT_ammo: G_40mm_HE
 	{
-		hit = 150;
+		hit = 175;
 		indirectHit = 1;
 		indirectHitRange = 0.1;
 		timeToLive = 30;
@@ -2243,7 +2243,7 @@ class CfgAmmo
 		fuseDistance = 3;
 		explosive = 0.0001;
 		deflecting = 5;
-		caliber = 5;
+		caliber = 20;
 		ace_frag_enabled = 0;
 		ace_frag_force = 0;
 		ace_frag_classes[] = {""};

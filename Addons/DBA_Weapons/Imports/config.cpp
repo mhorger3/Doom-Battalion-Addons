@@ -166,36 +166,5 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 0;
 	};
-	class 3AS_DC15C_F;
-	class 101st_15C_Refit : 3AS_DC15C_F
-	{
-		displayname = "101st DC15C";
-		scope = 2;
-		scopeArsenal = 2;
-		/*magazines[]=
-		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Low_x60_mag"
-		};*/
-		magazines[] = { "DBA_65_Mag_Base" };
-		class WeaponSlotsInfo
-		{
-			mass=30;
-			class CowsSlot
-			{
-				displayName="Optics Slot";
-				iconPicture="\A3\Weapons_F\Data\UI\attachment_top.paa";
-				iconPinpoint="Bottom";
-				iconPosition[]={0.5,0.34999999};
-				iconScale=0.2;
-				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
-				scope=0;
-				compatibleItems[]=
-				{
-					"dba_hamr_a",
-					"dba_hamr_b"
-				};
-			};
-		};
-	};
+	
 };

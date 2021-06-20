@@ -329,6 +329,7 @@ class CfgWeapons
 			};
 		};
 	};
+
 	class DBA_DC15GL: JLTS_DC15A
 	{
 		JLTS_hasEMPProtection = 1;
@@ -490,6 +491,176 @@ class CfgWeapons
 		    scale[]={0};
 		};
 	};
+
+	class DBA_3AS_DC15AGL: DBA_DC15A
+	{
+		scope=2;
+		baseWeapon = "DBA_3AS_DC15GL";
+		displayName="[101st] DC-15AGL Rifle (Experimental)";
+		model="3AS\3AS_Weapons\DC15A\3AS_DC15A_GL.p3d";
+		picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+		muzzles[]=
+		{
+			"this",
+			"DBA_3AS_GL_F"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+				opticsDisablePeripherialVision = 0.67;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+			//class Scope: Ironsights
+			//{
+			//	opticsID=2;
+			//	useModelOptics=1;
+			//	opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+			//	opticsDisablePeripherialVision = 0.67;
+			//	opticsZoomMin = 0.122173;
+			//	opticsZoomMax = 0.122173;
+			//	opticsZoomInit = 0.122173;
+			//	memoryPointCamera="opticView";
+			//	visionMode[] = {"Normal","NVG"};
+			//	opticsFlare="true";
+			//	distanceZoomMin=100;
+			//	distanceZoomMax=100;
+			//	cameraDir="";
+			//};
+		};	
+
+		author="Trip";
+
+		reloadAction="3AS_GestureReloadDC15A"; //GestureReloadMX, 3AS_GestureReloadDC15A
+		magazineReloadSwitchPhase=0.40000001;
+		discreteDistanceInitIndex=0;
+		recoil="3AS_recoil_dc15a";
+		
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[]=
+				{
+					""
+				};
+				iconPosition[]={0,0.44999999};
+				iconScale=0.2;
+			};			
+			class CowsSlot: CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"3AS_Optic_Red_DC15A"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"acc_flashlight",
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[]={};
+			};
+		};
+		opticsZoomMin=0.25;
+		opticsZoomMax=1.25;
+		opticsZoomInit=0.75;
+		distanceZoomMin=400;
+		distanceZoomMax=400;
+		descriptionShort="DC-15A, The Clone Wars Mod";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3AS\3AS_Weapons\DC15A\Data\Anim\DC15A_handanim.rtm"
+			//"\A3\Weapons_F\Rifles\MX\data\Anim\MX_gl.rtm"
+		};
+		selectionFireAnim="zasleh";
+		flash="gunfire";
+		flashSize=3;
+		
+		class DBA_3AS_GL_F: UGL_F
+		{
+			displayName="[3AS] DC15-GL";
+			descriptionShort="GL for the DC15A Platform";
+			useModelOptics=0;
+			useExternalOptic=0;
+			magazines[] = {};
+			magazineWell[] += {"DBA_GL_Mags_magwell"};
+			cameraDir="OP_look";
+			discreteDistance[]={50,75,100,150,200,250,300,350,400};
+			discreteDistanceCameraPoint[]=
+			{
+				"OP_eye_50",
+				"OP_eye_75",
+				"OP_eye_100",
+				"OP_eye_150",
+				"OP_eye_200",
+				"OP_eye_250",
+				"OP_eye_300",
+				"OP_eye_350",
+				"OP_eye_400"
+			};
+			discreteDistanceInitIndex=1;
+			reloadAction="GestureReloadMXUGL";
+			reloadMagazineSound[]=
+			{
+				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
+				1,
+				1,
+				10
+			};
+		};
+		aiDispersionCoefY=6;
+		aiDispersionCoefX=4;
+		caseless[]=
+		{
+			"",
+			1,
+			1,
+			1
+		};
+		soundBullet[]=
+		{
+			"caseless",
+			1
+		};
+		drySound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Blaster_empty",
+			2,
+			1,
+			20
+		};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\DC15A\DC15aReload",
+			1,
+			1,
+			30
+		};
+	};
+
 	class DBA_DC15LE: JLTS_DC15x
 	{
 		weaponPoolAvailable = 1;
@@ -803,34 +974,165 @@ class CfgWeapons
 			mass = 30;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"DBA_MRCO_A_TI_2x4", "DBA_MRCO_B_TI_2x4"};
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"3AS_Optic_DC15L","DBA_MRCO_A_TI_2x4", "DBA_MRCO_B_TI_2x4"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"acc_flashlight",
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[]=
+				{
+					"3AS_Bipod_DC15L_f"
+				};
 			};
 		};
-		class FlashLight
+		
+	};
+	class 3AS_DC15C_F;
+	class DBA_DC15C : 3AS_DC15C_F
+	{
+		displayname = "[101st] DC15C Rifle";
+		baseWeapon = "DBA_15C";
+		scope = 2;
+		scopeArsenal = 2;
+		/*magazines[]=
 		{
-		    color[]={180,160,130}; //color[]={180,160,130}; Default
-		    ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
-		    intensity=100;
-		    size=1;
-		    innerAngle=5;
-		    outerAngle=100;
-		    coneFadeCoef=10;
-		    position="usti hlavne";
-		    direction="konec hlavne";
-		    useFlare=1;
-		    flareSize=1.5;
-		    flareMaxDistance=100;
-		    dayLight=1;
-		    class Attenuation
-		    {
-		        start=0;
-		        constant=0.5;
-		        linear=0.1;
-		        quadratic=0.2;
-		        hardLimitStart=27;
-		        hardLimitEnd=34;
-		    };
-		    scale[]={0};
+			"DBA_DC15a_Med_x30_mag",
+			"DBA_DC15a_Low_x60_mag"
+		};*/
+		magazines[] = { "DBA_65_Mag_Base" };
+		
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"3AS_optic_acog_DC15C",
+					"3AS_optic_reflex_DC15C",
+					"dba_hamr_a",
+					"dba_hamr_b"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]=
+				{
+					"acc_flashlight",
+					"acc_pointer_IR"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				linkProxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[]={};
+			};
+		};
+	};
+	class DBA_DC15CGL: DBA_15C
+	{
+		scope=2; //change to 2 when ready
+		displayName="[101st] DC-15CGL Rifle";
+		baseWeapon = "DBA_DC15CGL";
+		model="3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
+		picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";
+		weaponInfoType="RscWeaponZeroing";
+		modelOptics="3AS\3AS_Weapons\Data\A3_2d_optic.p3d";
+		class DBA_3AS_GL_F: UGL_F
+		{
+			displayName="[101st] DC15-GL";
+			descriptionShort="GL for the DC15A Platform";
+			useModelOptics=0;
+			useExternalOptic=0;
+			magazines[] = {};
+			magazineWell[] += {"DBA_GL_Mags_magwell"};
+			cameraDir="OP_look";
+			discreteDistance[]={50,75,100,150,200,250,300,350,400};
+			discreteDistanceCameraPoint[]=
+			{
+				"OP_eye_50",
+				"OP_eye_75",
+				"OP_eye_100",
+				"OP_eye_150",
+				"OP_eye_200",
+				"OP_eye_250",
+				"OP_eye_300",
+				"OP_eye_350",
+				"OP_eye_400"
+			};
+			discreteDistanceInitIndex=1;
+			reloadAction="GestureReloadMXUGL";
+			reloadMagazineSound[]=
+			{
+				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
+				1,
+				1,
+				10
+			};
+		};
+		muzzles[]=
+		{
+			"this",
+			"DBA_3AS_GL_F"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			//"\3AS\3AS_Weapons\DC15C\Data\Anim\DC15C_handanim.rtm"
+			"\A3\Weapons_F_Exp\Machineguns\LMG_03\Data\Anim\LIM.rtm"
+			//"\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+				opticsDisablePeripherialVision = 0.67;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+			class Scope: Ironsights
+			{
+				opticsID=2;
+				useModelOptics=1;
+				opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+				opticsDisablePeripherialVision = 0.67;
+				opticsZoomMin = 0.122173;
+				opticsZoomMax = 0.122173;
+				opticsZoomInit = 0.122173;
+				memoryPointCamera="opticView";
+				visionMode[] = {"Normal","NVG"};
+				opticsFlare="true";
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+				cameraDir="";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
 		};
 	};
 };
