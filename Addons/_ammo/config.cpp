@@ -1238,7 +1238,7 @@ class CfgMagazines
 		displayNameShort = "2 Rnd LR AP DC-15A";
 		picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 80;
+		initSpeed = 220;
 		count = 2;
 		nameSound = "";
 		descriptionShort = "2Rnd LR AP DC-15A Grenade";
@@ -1258,7 +1258,7 @@ class CfgMagazines
 		displayName = "6 Rnd LR AP HH-4 Grenades";
 		displayNameShort = "6 Rnd LR AP HH-4";
 		ammo = "DBA_GL_AT_ammo";
-		initSpeed = 80;
+		initSpeed = 220;
 		count = 6;
 		nameSound = "";
 		descriptionShort = "Grenade go burr";
