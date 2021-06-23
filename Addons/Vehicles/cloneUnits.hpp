@@ -522,16 +522,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -544,16 +544,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -622,16 +622,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -644,16 +644,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -666,6 +666,7 @@
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	};
+
 	class 101st_CXC_212th : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
@@ -722,16 +723,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -744,16 +745,720 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+
+	//Clean
+	class DBA_Clean_CXC : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-C (Clean)";
+		uniformClass="101st_PilotCXC_Uniform";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX-C_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+	class DBA_Clean_CX : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX (Clean)";
+		uniformClass="DBA_CX_Clean";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+	class DBA_Clean_CXX : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-T (Clean)";
+		uniformClass="DBA_CXX_Clean";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX-X_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX-X_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+	class DBA_Clean_CXP : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-P (Clean)";
+		uniformClass="DBA_CXP_Clean";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX-P_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX-X_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+	class DBA_Clean_CXS : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-S (Clean)";
+		uniformClass="DBA_CXS_Clean";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX-S_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX-X_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+	class DBA_Clean_CXS : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-O (Clean)";
+		uniformClass="DBA_CXO_Clean";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Upper\CX-O_co.paa",
+			"\101st_Aux_Mod\Addons\textures\CleanThings\Lower\CX-X_co.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	};
+
+
+	class 101st_CXC_212th : 101st_JLTS_Clone_P2
+	{
+		scope = 2;
+		scopeCurator = 2;
+		dlc = "101st_Aux_Mod";
+		faction="Republic_101st";
+		displayName="101st Pilot CX-C (JLTS)";
+		uniformClass="101st_PilotCXC_Uniform";
+		hiddenSelections[]=
+		{
+			"camo1", "camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\armor\CX-C_Armor_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\CX-C_Legs_CO.paa"
+		};
+		linkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"101st_Pilot_Helm",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		editorSubcategory="101st_Clones";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO"
+		};
+		backpack="101st_SCI_Backpack_RTO";
+		weapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_DC15A",
+			"DBA_DC17",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"DBA_DC17_x20_mag",
+			"SmokeShell",
+			"SmokeShellGreen",
+			"Chemlight_green",
+			"Chemlight_green",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -822,16 +1527,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -844,16 +1549,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -922,16 +1627,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -944,16 +1649,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1022,16 +1727,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1044,16 +1749,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1122,16 +1827,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1144,16 +1849,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1222,16 +1927,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1244,16 +1949,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1266,6 +1971,9 @@
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	};
+
+
+
 	class 101st_Dagger_212th : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
@@ -1324,16 +2032,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1346,16 +2054,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1426,16 +2134,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1448,16 +2156,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1528,16 +2236,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1550,16 +2258,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1630,16 +2338,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1652,16 +2360,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1732,16 +2440,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1754,16 +2462,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1831,16 +2539,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1853,16 +2561,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1930,16 +2638,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -1952,16 +2660,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2030,16 +2738,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2052,16 +2760,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2130,16 +2838,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2152,16 +2860,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2230,16 +2938,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2252,16 +2960,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2330,16 +3038,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2352,16 +3060,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2430,16 +3138,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2452,16 +3160,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2530,16 +3238,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2552,16 +3260,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2632,16 +3340,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2654,16 +3362,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2736,16 +3444,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2758,16 +3466,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2837,16 +3545,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2859,16 +3567,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2941,16 +3649,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -2963,16 +3671,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3056,16 +3764,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3078,16 +3786,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3194,16 +3902,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3216,16 +3924,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3298,16 +4006,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3320,16 +4028,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3402,16 +4110,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3424,16 +4132,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3505,16 +4213,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3527,16 +4235,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3608,16 +4316,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3630,16 +4338,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3712,16 +4420,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3734,16 +4442,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3816,16 +4524,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3838,16 +4546,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3917,16 +4625,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -3939,16 +4647,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4021,16 +4729,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4043,16 +4751,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4126,16 +4834,16 @@
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4148,16 +4856,16 @@
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4228,16 +4936,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	};
 	magazines[] =
 	{
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
 		"DBA_DC17_x20_mag",
 		"DBA_DC17_x20_mag",
 		"DBA_DC17_x20_mag",
@@ -4250,16 +4958,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	};
 	respawnMagazines[] =
 	{
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
-		"DBA_DC15a_Med_x30_mag",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
+		"DBA_65_Mag_Base",
 		"DBA_DC17_x20_mag",
 		"DBA_DC17_x20_mag",
 		"DBA_DC17_x20_mag",
@@ -4329,16 +5037,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4351,16 +5059,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4431,16 +5139,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4453,16 +5161,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4532,16 +5240,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4554,16 +5262,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4633,16 +5341,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4655,16 +5363,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4734,16 +5442,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4756,16 +5464,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4835,16 +5543,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4857,16 +5565,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4936,16 +5644,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -4958,16 +5666,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5037,16 +5745,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5059,16 +5767,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5138,16 +5846,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5160,16 +5868,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5244,16 +5952,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5266,16 +5974,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5350,16 +6058,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5372,16 +6080,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5455,16 +6163,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5477,16 +6185,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5559,16 +6267,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5581,16 +6289,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5662,16 +6370,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5684,16 +6392,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5765,16 +6473,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5787,16 +6495,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5869,16 +6577,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5891,16 +6599,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5972,16 +6680,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -5994,16 +6702,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6076,16 +6784,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6098,16 +6806,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6180,16 +6888,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6202,16 +6910,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6282,16 +6990,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6304,16 +7012,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6384,16 +7092,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6406,16 +7114,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[]=
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6485,16 +7193,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6507,16 +7215,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6591,16 +7299,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6613,16 +7321,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6693,16 +7401,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6715,16 +7423,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6795,16 +7503,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6817,16 +7525,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6901,16 +7609,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -6923,16 +7631,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -7007,16 +7715,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		magazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
@@ -7029,16 +7737,16 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 		respawnMagazines[] =
 		{
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
-			"DBA_DC15a_Med_x30_mag",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
+			"DBA_65_Mag_Base",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
 			"DBA_DC17_x20_mag",
