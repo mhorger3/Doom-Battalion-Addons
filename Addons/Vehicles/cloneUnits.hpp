@@ -1269,7 +1269,7 @@
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	};
-	class DBA_Clean_CXS : 101st_JLTS_Clone_P2
+	class DBA_Clean_CXO : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
