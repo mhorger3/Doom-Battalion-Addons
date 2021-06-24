@@ -859,6 +859,39 @@ class CfgVehicles {
         backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
     };
 
+    class O_DBA_CIS_B1_Flamer_Droid_F : O_DBA_CIS_B1_Droid_F
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "B1 Flamer Droid";
+
+        side = 0;
+        faction = "O_DBA_CIS_F";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_F.jpg";
+        hiddenSelectionsTextures[] =
+        {
+            "\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"
+        };
+
+        identityTypes[] = { "NoGlasses", "Head_NATO" };
+        facewear = "";
+
+        uniformClass = "DBA_B1";
+
+        weapons[] = { "3AS_Flamer_Base","Throw",
+            "Put" };
+        respawnWeapons[] = { "3AS_Flamer_Base","Throw",
+            "Put" };
+
+        magazines[] = { "3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" };
+        respawnMagazines[] = { "3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","3AS_FlamerFuel","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","Chemlight_yellow","101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag", "101st_thermaldet_x1_mag" };
+
+        items[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
+        respawnItems[] = { "ACE_CableTie","ACE_CableTie","ACE_CableTie" };
+
+        backpack = "O_DBA_CIS_B1_Backpack_Rifleman";
+    };
+
     class O_DBA_CIS_OOM_Command_Droid_F : O_DBA_CIS_B1_Base_F
     {
         scope = 2;
@@ -1300,6 +1333,19 @@ class CfgVehicles {
         };
     };
 
+    class O_DBA_CIS_B1_Flamer_Droid_Geonosis_F : O_DBA_CIS_B1_Flamer_Droid_F
+    {
+        editorSubcategory = "O_DBA_CIS_B1_Droids_Geonosis";
+        vehicleClass = "O_DBA_CIS_B1_Droids_Geonosis";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_Geonosis_F.jpg";
+        uniformClass = "DBA_B1_Geonosis";
+        backpack = "O_DBA_CIS_B1_Backpack_Rifleman_Geonosis";
+        hiddenSelectionsTextures[] =
+        {
+            "\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"
+        };
+    };
+
     class O_DBA_CIS_B1_AA_Droid_Geonosis_F : O_DBA_CIS_B1_AA_Droid_F
     {
         editorSubcategory = "O_DBA_CIS_B1_Droids_Geonosis";
@@ -1366,6 +1412,19 @@ class CfgVehicles {
     };
 
     class O_DBA_CIS_B1_Droid_Jungle_F : O_DBA_CIS_B1_Droid_F
+    {
+        editorSubcategory = "O_DBA_CIS_B1_Droids_Jungle";
+        vehicleClass = "O_DBA_CIS_B1_Droids_Jungle";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_Jungle_F.jpg";
+        uniformClass = "DBA_B1_Jungle";
+        backpack = "O_DBA_CIS_B1_Backpack_Rifleman_Jungle";
+        hiddenSelectionsTextures[] =
+        {
+            "101st_Aux_Mod\Addons\DBA_CIS_Textures\data\Jungle_B1_Body_CO.paa"
+        };
+    };
+
+    class O_DBA_CIS_B1_Flamer_Droid_Jungle_F : O_DBA_CIS_B1_Flamer_Droid_F
     {
         editorSubcategory = "O_DBA_CIS_B1_Droids_Jungle";
         vehicleClass = "O_DBA_CIS_B1_Droids_Jungle";
@@ -1456,6 +1515,19 @@ class CfgVehicles {
         };
     };
 
+    class O_DBA_CIS_B1_Flamer_Droid_Training_F : O_DBA_CIS_B1_Flamer_Droid_F
+    {
+        editorSubcategory = "O_DBA_CIS_B1_Droids_Training";
+        vehicleClass = "O_DBA_CIS_B1_Droids_Training";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_Training_F.jpg";
+        uniformClass = "DBA_B1_Training";
+        backpack = "O_DBA_CIS_B1_Backpack_Rifleman_Training";
+        hiddenSelectionsTextures[] =
+        {
+            "\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"
+        };
+    };
+
     class O_DBA_CIS_B1_AA_Droid_Training_F : O_DBA_CIS_B1_AA_Droid_F
     {
         editorSubcategory = "O_DBA_CIS_B1_Droids_Training";
@@ -1522,6 +1594,19 @@ class CfgVehicles {
     };
 
     class O_DBA_CIS_B1_Droid_Winter_F : O_DBA_CIS_B1_Droid_F
+    {
+        editorSubcategory = "O_DBA_CIS_B1_Droids_Winter";
+        vehicleClass = "O_DBA_CIS_B1_Droids_Winter";
+        editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_B1_Droid_Winter_F.jpg";
+        uniformClass = "DBA_B1_Winter";
+        backpack = "O_DBA_CIS_B1_Backpack_Rifleman_Winter";
+        hiddenSelectionsTextures[] =
+        {
+            "101st_Aux_Mod\Addons\DBA_CIS_Textures\data\Winter_B1_Body_CO.paa"
+        };
+    };
+
+    class O_DBA_CIS_B1_Flamer_Droid_Winter_F : O_DBA_CIS_B1_Flamer_Droid_F
     {
         editorSubcategory = "O_DBA_CIS_B1_Droids_Winter";
         vehicleClass = "O_DBA_CIS_B1_Droids_Winter";

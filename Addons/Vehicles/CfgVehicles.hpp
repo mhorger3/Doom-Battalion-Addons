@@ -537,9 +537,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
 		armor = 999999;
@@ -603,9 +603,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
 		armor = 999999;
@@ -770,9 +770,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 		class TransportMagazines
 		{
@@ -986,9 +986,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 		class TransportMagazines
 		{
@@ -1131,9 +1131,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 		class TransportMagazines
 		{
@@ -1263,9 +1263,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Medical_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Medical_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
 		Scope = 2;
@@ -1406,9 +1406,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 		class TransportMagazines
 		{

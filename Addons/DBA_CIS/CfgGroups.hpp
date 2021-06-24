@@ -177,6 +177,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Rocket_Droid_F";
                     };
+
+                    class Unit23 {
+                        position[] = { -60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit24 {
+                        position[] = { 60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Command_Squad {
@@ -317,6 +331,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
                     };
                 };
 
@@ -559,6 +580,20 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_F";
+                    };
+
+                    class Unit33 {
+                        position[] = { 85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit34 {
+                        position[] = { -85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
                     };
                 };
 
@@ -877,6 +912,13 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_F";
                     };
+
+                    class Unit11 {
+                        position[] = { 30, -30, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_AA_Squad {
@@ -1113,6 +1155,13 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B2_Droid_F";
                     };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
             };
 
@@ -1290,6 +1339,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_Geonosis_F";
                     };
+
+                    class Unit23 {
+                        position[] = { -60, -60, 0 };
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Geonosis_F";
+                    };
+
+                    class Unit24 {
+                        position[] = { 60, -60, 0 };
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Geonosis_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Command_Squad_Geonosis {
@@ -1430,6 +1493,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_Geonosis_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Geonosis_F";
                     };
                 };
 
@@ -1680,6 +1750,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Rocket_Droid_F";
                     };
+
+                    class Unit33 {
+                        position[] = { 85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit34 {
+                        position[] = { -90, -90, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Patrol_Squad_Geonosis {
@@ -1901,6 +1985,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Geonosis_F";
+                    };
+
+                    class Unit11 {
+                        position[] = { 30, -30, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Geonosis_F";
                     };
                 };
 
@@ -2138,6 +2229,13 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B2_Droid_F";
                     };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Geonosis_F";
+                    };
                 };
             };
 
@@ -2315,6 +2413,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Jungle_F";
                     };
+
+                    class Unit23 {
+                        position[] = { -60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Jungle_F";
+                    };
+
+                    class Unit24 {
+                        position[] = { 60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Jungle_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Command_Squad_Jungle {
@@ -2455,6 +2567,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_Jungle_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Jungle_F";
                     };
                 };
 
@@ -2705,6 +2824,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Rocket_Droid_F";
                     };
+
+                    class Unit34 {
+                        position[] = { 85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit35 {
+                        position[] = { -90, -90, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Patrol_Squad_Jungle {
@@ -2926,6 +3059,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Jungle_F";
+                    };
+
+                    class Unit11 {
+                        position[] = { 30, -30, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Jungle_F";
                     };
                 };
 
@@ -3163,6 +3303,13 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B2_Droid_F";
                     };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Jungle_F";
+                    };
                 };
             };
 
@@ -3340,6 +3487,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Training_F";
                     };
+
+                    class Unit23 {
+                        position[] = { -60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Training_F";
+                    };
+
+                    class Unit24 {
+                        position[] = { 60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Training_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Command_Squad_Training {
@@ -3480,6 +3641,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_Training_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Training_F";
                     };
                 };
 
@@ -3730,6 +3898,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Rocket_Droid_F";
                     };
+
+                    class Unit34 {
+                        position[] = { 85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit35 {
+                        position[] = { -90, -90, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Patrol_Squad_Training {
@@ -3951,6 +4133,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Training_F";
+                    };
+
+                    class Unit11 {
+                        position[] = { 30, -30, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Training_F";
                     };
                 };
 
@@ -4188,6 +4377,13 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B2_Droid_F";
                     };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Training_F";
+                    };
                 };
             };
 
@@ -4365,6 +4561,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Winter_F";
                     };
+
+                    class Unit23 {
+                        position[] = { -60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Winter_F";
+                    };
+
+                    class Unit24 {
+                        position[] = { 60, -60, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Winter_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Command_Squad_Winter {
@@ -4505,6 +4715,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Droid_Winter_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Winter_F";
                     };
                 };
 
@@ -4755,6 +4972,20 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Rocket_Droid_F";
                     };
+
+                    class Unit34 {
+                        position[] = { 85, -85, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
+
+                    class Unit35 {
+                        position[] = { -90, -90, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_F";
+                    };
                 };
 
                 class O_DBA_CIS_B1_Patrol_Squad_Winter {
@@ -4976,6 +5207,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B1_Sniper_Droid_Winter_F";
+                    };
+
+                    class Unit11 {
+                        position[] = { 30, -30, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Winter_F";
                     };
                 };
 
@@ -5212,6 +5450,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_DBA_CIS_B2_Droid_F";
+                    };
+
+                    class Unit9 {
+                        position[] = { 25, -25, 0 };
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DBA_CIS_B1_Flamer_Droid_Winter_F";
                     };
                 };
             };

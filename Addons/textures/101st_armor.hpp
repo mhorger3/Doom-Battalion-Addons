@@ -632,6 +632,65 @@ class 101st_Visor: JLTS_CloneNVG
 		"\101st_Aux_Mod\Addons\textures\Bino\CP_CO.paa"
 	};
 };
+class 101st_RTO_Visor : JLTS_CloneNVG
+{
+	modelOptics = "";
+	useModelOptics = 0;
+	opticsDisablePeripherialVision = 0;
+	visionMode[] =
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+	thermalMode[] = {4};
+	displayName = "[101st] RTO CP Custom Visor";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\Bino\RTO_Visor_CO.paa"
+	};
+};
+class 101st_Medic_Visor : JLTS_CloneNVG
+{
+	modelOptics = "";
+	useModelOptics = 0;
+	opticsDisablePeripherialVision = 0;
+	visionMode[] =
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+	thermalMode[] = {4};
+	displayName = "[101st] Medic CP Custom Visor";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\Bino\Medic_Visor_CO.paa"
+	};
+};
+class JLTS_CloneNVGCC;
+class 101st_Visor_CCVisor : JLTS_CloneNVGCC
+{
+	displayName = "[101st] Clone Commander Visor";
+	modelOptics = "";
+	useModelOptics = 0;
+	opticsDisablePeripherialVision = 0;
+	visionMode[] =
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+	thermalMode[] = { 0,1 };
+};
 class 101st_LCP_Visor: JLTS_CloneNVG
 {
 	modelOptics="";
@@ -2377,8 +2436,8 @@ class 101st_212_Falcon : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Falcon_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Falcon_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_lower_CO.paa"
 	};
 	hiddenSelectionsMaterials[] = {
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Upper.rvmat",

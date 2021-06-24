@@ -97,6 +97,13 @@ class CfgWeapons
 		{
 			"DBA_65_Mag_x20"
 		};
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		changeFiremodeSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\Mk20\firemode_Mk20",0.251189,1,5 };
+		hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\DBA_Weapons\BattleRifle\Textures\MBR_CO.paa"};
+		hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\DBA_Weapons\BattleRifle\Textures\MBR.rvmat" };
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] DC-15BR Battle Rifle (Experimental)";
 		descriptionShort = "101st BattleRifle";

@@ -1049,6 +1049,45 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Mechanic_Helmet_CO.paa"
 		};
 	};
+	class 101st_Vulcan_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Vulcan)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Vulcan_Helmet_CO.paa"
+		};
+	};
+	class 101st_Frohman_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Frohman)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Frohman_Helmet_CO.paa"
+		};
+	};
+	class 101st_Elk_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Elk)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Elk_Helmet_CO.paa"
+		};
+	};
 	class 101st_Shotty_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1059,7 +1098,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Shotty_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Shotty_Helm_AB_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
@@ -1515,6 +1554,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Morn_Helmet_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Morn_Helmet.rvmat" };
 	};
 	class 101st_Servo_Helmet: JLTS_CloneHelmetP2
 	{
@@ -1661,7 +1701,7 @@ class CfgWeapons
 	};
 	class 101st_Sixten_Helmet: JLTS_CloneHelmetP2
 	{
-		author="Spark";
+		author="Vulgar";
 		scope=2;
 		scopeArsenal=2;
 		dlc = "101st_Aux_Mod";
@@ -1669,7 +1709,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Six-Ten_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\SixTen_Helmet_CO.paa"
 		};
 	};
 	class 101st_Sorensic_Helmet: JLTS_CloneHelmetP2
@@ -2218,7 +2258,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Dolittle_Helmet_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Dolittle_Helmet_CO.rvmat"};
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Dolittle_Helmet_CO.rvmat"};
 	};
 	class 101st_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
@@ -2804,7 +2844,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Falcon_Helm_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "P:\github\Doom-Battalion-Addons\Addons\textures\101st\helmets\data\Falcon_Helmet.rvmat" };
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Falcon_Helmet.rvmat" };
 	};
 	class 101st_Viralz_Helmet: JLTS_CloneHelmetP2
 	{
@@ -3419,7 +3459,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Mixer_Helmet_CO.paa"
 		};
 	};
-	class 101st_Mixer_Helmet : JLTS_CloneHelmetP2
+	class 101st_Vale_Helmet : JLTS_CloneHelmetP2
 	{
 		author = "Vulgar";
 		dlc = "101st_Aux_Mod";
