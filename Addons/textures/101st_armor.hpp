@@ -30,7 +30,7 @@ class DBA_Holster_Green : V_RebreatherB
 	hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\textures\CleanThings\Holster\OfficerAccessories_co.paa"};
 	class ItemInfo: VestItem
 	{
-		containerClass="Supply100";
+		containerClass="Supply150";
 		uniformType="Default";
 		mass=80;
 		hiddenSelections[] = {"camo1"};
