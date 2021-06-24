@@ -345,7 +345,6 @@ class CfgWeapons
 			};
 		};
 	};
-
 	class DBA_DC15GL: JLTS_DC15A
 	{
 		JLTS_hasEMPProtection = 1;
@@ -412,7 +411,7 @@ class CfgWeapons
 		};
 		class Burst: Mode_Burst
 		{
-			reloadTime = 0.13;
+			reloadTime=0.05;
 			dispersion=0.00087;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
@@ -507,7 +506,6 @@ class CfgWeapons
 		    scale[]={0};
 		};
 	};
-
 	class DBA_3AS_DC15AGL: DBA_DC15A
 	{
 		hiddenSelections[] = {};
@@ -678,7 +676,6 @@ class CfgWeapons
 			30
 		};
 	};
-
 	class DBA_DC15LE: JLTS_DC15x
 	{
 		weaponPoolAvailable = 1;
@@ -1016,7 +1013,6 @@ class CfgWeapons
 				};
 			};
 		};
-		
 	};
 	class 3AS_DC15C_F;
 	class DBA_DC15C : 3AS_DC15C_F

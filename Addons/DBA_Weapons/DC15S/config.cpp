@@ -388,7 +388,7 @@ class CfgWeapons
 		};
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
 		muzzles[] = {"this","DBA_3AS_GL_F"};
-		model = "\101st_Aux_ModAddons\DBA_Weapons\DC15S\DC15SGL.p3d";
+		model = "\101st_Aux_Mod\Addons\DBA_Weapons\DC15S\DC15SGL.p3d";
 		ACE_clearJamAction = "ReloadMagazine";
 		modes[] = {"FullAuto","Single","close","short","medium"};
 		class Single;

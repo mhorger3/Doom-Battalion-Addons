@@ -231,7 +231,7 @@
 		maximumLoad=250;
 		hiddenSelections[] = {"camo1"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTOStraps.p3d";
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\CleanThings\Backpack\Backpack_co.paa"};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
