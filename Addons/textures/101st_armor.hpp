@@ -3016,6 +3016,7 @@ class 101st_212_Furn: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
+	scopeArsenal=2;
 	displayName="101st Furn (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
