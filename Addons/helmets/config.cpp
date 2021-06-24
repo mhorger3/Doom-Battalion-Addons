@@ -1102,14 +1102,14 @@ class CfgWeapons
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
-	class 101st_Remnant_Helmet: JLTS_CloneHelmetP2
+	class 101st_Astolfo_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
-		displayName="101st Clone helmet (Remnant)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		displayName="101st Clone helmet (Astolfo)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Remnant_Helm_CO.paa"

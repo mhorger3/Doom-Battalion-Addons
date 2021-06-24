@@ -388,6 +388,36 @@
 				distance=1;
 			};
 		};
+		class DBA_LegoGun_ammo :DBA_ammo_base //65 MX
+		{
+			hit = 15000; //How much damage when it hits
+			indirecthit = 15000; //Splash Damage
+			indirecthitrange = 3; //Splash Damage Range in meters
+			caliber = 100; //Acts as penetration multiplier for the projectile.
+			typicalspeed = 820; //What speed does this need to be going to inflict full damage
+
+			tracerScale = 0.3;
+
+			dangerRadiusBulletClose = 8;
+			dangerRadiusHit = 12;
+			suppressionRadiusBulletClose = 6;
+			suppressionRadiusHit = 8;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 2.4494901;
+				duration = 0.40000001;
+				frequency = 20;
+				distance = 7.3484702;
+			};
+			class CamShakeHit
+			{
+				power = 6;
+				duration = 0.40000001;
+				frequency = 20;
+				distance = 1;
+			};
+		};
 		class DBA_762_base:DBA_ammo_base //762 Nato
 		{
 			hit=11.6; //How much damage when it hits

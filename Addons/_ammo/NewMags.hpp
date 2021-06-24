@@ -371,3 +371,17 @@
 		count = 25;
 		initspeed = 909;
 	};
+	
+	// memes
+
+	class DBA_LegoGun_Magazine : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "Lego Gun Magazine (120rnd Blue)";
+		ammo = "DBA_LegoGun_ammo";
+		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+		mass = 10;
+		count = 120;
+		initspeed = 909;
+	};

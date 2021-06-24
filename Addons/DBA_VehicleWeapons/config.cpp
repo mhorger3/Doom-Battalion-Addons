@@ -79,7 +79,7 @@ class CfgWeapons
 	{
 		class player;
 	};
-	
+	class MGun;
 //Aircraft Weapons
 	class DBA_Aircraft_Lasers_Generic: Cannon_30mm_Plane_CAS_02_F
 	{
@@ -228,7 +228,7 @@ class CfgWeapons
 				soundBegin[]=
 				{
 					"begin1",
-					1
+					1,
 				};
 			}
 			soundContinuous = 0;
