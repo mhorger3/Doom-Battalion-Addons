@@ -2646,7 +2646,8 @@ class 101st_212_Falcon : Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_lower_CO.paa"
 	};
-	hiddenSelectionsMaterials[] = {
+	hiddenSelectionsMaterials[] = 
+	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Upper.rvmat",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Lower.rvmat"
 	};
