@@ -223,7 +223,6 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav", 1.99526, 1, 1500};
-				soundBegin[] = {"begin1", 0.33};
 				soundsetshot[] = {"3AS_LAATBall_SoundSet"};
 				soundBegin[]=
 				{
@@ -687,7 +686,6 @@ class CfgWeapons
 	class DBA_Ground_AC_Generic:HMG_127
 	{
 		displayName = "Light Laser Cannon";
-		magazineReloadTime = 0;
 		aiDispersionCoefY = 0.5;
 		aiDispersionCoefX = 0.5;
 		scope=2;
@@ -860,14 +858,16 @@ class CfgWeapons
 		displayNameShort="CIS LR Cannon";
 		author="Dutch";
 		magazines[] = {"101st_CIS_LR_Mag"};
+		modes[] = {"manual","short","medium","far"};
 
-		class manual: MGun
+		class manual
 		{
 			displayName = "Heavy Repeater";
 			sounds[] = {"StandardSound"};
 			reloadTime = 0.375;
 			sounds[] = {"StandardSound"};
-			class StandardSound {
+			class StandardSound 
+			{
 				begin1[] = {"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",0.75,1,2100};
 				soundBegin[] = {"begin1",1};
 			};

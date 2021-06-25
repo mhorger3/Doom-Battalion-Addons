@@ -2646,7 +2646,8 @@ class 101st_212_Falcon : Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Armor_lower_CO.paa"
 	};
-	hiddenSelectionsMaterials[] = {
+	hiddenSelectionsMaterials[] = 
+	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Upper.rvmat",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Falcon_Lower.rvmat"
 	};
@@ -3016,6 +3017,7 @@ class 101st_212_Furn: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
+	scopeArsenal=2;
 	displayName="101st Furn (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
