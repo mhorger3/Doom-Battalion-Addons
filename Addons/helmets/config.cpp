@@ -1098,7 +1098,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Shotty_Helm_AB_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Shotty_Helmet_AB_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
@@ -3476,26 +3476,11 @@ class CfgWeapons
 
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
-	class 101st_Mockingjay_Pilot_Helmet: 101st_Pilot_Helm
-	{
-		scope=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Pilot Helmet (Mockingjay)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\p2pilot_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\helmets\Pilot\textures\Mockingjay_co.paa"
-		};
-		subItems[]=
-		{
-			"Integrated_NVG_TI_0_F"
-		};
-	};
 	class DBA_P2_Pilot_Helm: 3as_P2_Pilot_helmet
 	{
 		scope=2;
 		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet";
+		displayName="101st Pilot Helmet (Hammer)";
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -3549,6 +3534,20 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Cadet_CO.paa"
+		};
+	};
+	class DBA_Clean_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Clean)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Clean_CO.paa"
 		};
 	};
 	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
