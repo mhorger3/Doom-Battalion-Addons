@@ -14,18 +14,6 @@ class ACE_Medical_Treatment
 
 	class Medication
 	{
-		class Morphine;
-		class DBA_Medical_Comaren: Morphine
-		{
-			timeTillMaxEffect = 0;
-		};
-
-		class Epinephrine;
-		class DBA_Medical_Cordrazine: Epinephrine
-		{
-			timeTillMaxEffect = 0;
-		};
-
 		/*  Morphine for reference:
 
 			hrIncreaseHigh[] = {-10,-35};
@@ -38,6 +26,29 @@ class ACE_Medical_Treatment
 			timeTillMaxEffect = 30;
 			viscosityChange = -10;
 		*/
+		class Morphine;
+		class DBA_Medical_Comaren: Morphine
+		{
+			timeTillMaxEffect = 0;
+		};
+
+		/*  Epinephrine for reference:
+
+			hrIncreaseHigh[] = {10,40};
+			hrIncreaseLow[] = {10,20};
+			hrIncreaseNormal[] = {10,50};
+			incompatibleMedication[] = {};
+			maxDose = 10;
+			painReduce = 0;
+			timeInSystem = 120;
+			timeTillMaxEffect = 10;
+		*/
+		class Epinephrine;
+		class DBA_Medical_Cordrazine: Epinephrine
+		{
+			timeTillMaxEffect = 0;
+		};
+
 		class DBA_Medical_Symoxin: Morphine
 		{
 			hrIncreaseLow[] = { 0 };
