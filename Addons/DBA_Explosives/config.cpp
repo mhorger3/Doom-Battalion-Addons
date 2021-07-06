@@ -199,9 +199,9 @@ class CfgAmmo
 	};
 	class DBA_ThermalDetBlock_Ammo : PipeBombBase
 	{
-		hit = 3300;
-		indirectHit = 3300;
-		indirectHitRange = 0.5;
+		hit = 4000;
+		indirectHit = 4000;
+		indirectHitRange = 0.2;
 		explosive = 1;
 		explosionType = "bomb";
 		model = "\101st_Aux_Mod\Addons\DBA_Explosives\ExplosiveP3D\ThermalDetBlock.p3d";

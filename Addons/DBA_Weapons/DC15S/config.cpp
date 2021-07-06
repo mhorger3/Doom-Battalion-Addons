@@ -354,6 +354,8 @@ class CfgWeapons
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
 		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\15S_CA.paa";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
 		class DBA_3AS_GL_F: UGL_F
 		{
 			displayName="[101st] DC15-GL";

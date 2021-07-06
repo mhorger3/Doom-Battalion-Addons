@@ -661,7 +661,7 @@ class 101st_RTO_Visor : JLTS_CloneNVG
 		"TI"
 	};
 	thermalMode[] = {4};
-	displayName = "[101st] RTO CP Custom Visor";
+	displayName = "[101st] RTO Custom Visor";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -683,7 +683,7 @@ class 101st_Medic_Visor : JLTS_CloneNVG
 		"TI"
 	};
 	thermalMode[] = {4};
-	displayName = "[101st] Medic CP Custom Visor";
+	displayName = "[101st] Medic Custom Visor";
 	hiddenSelections[] =
 	{
 		"Camo1"

@@ -300,3 +300,54 @@ Added a shitload of helmets and armor
 Attempted a fix for music
 Attempted to add CX-O pauldron that doesn't clip with the helmet
 Changed Zillo firing sound
+
+Ver 1.05 Changelog 6.24.21
+
+101st Unit Gear
+	Helmets
+		Bright
+		Vulcan
+		Frohman
+		Vance
+		Elk
+		Shotty
+		Morn
+		Six-Ten
+		Dolittle
+		Falcon
+		Vale
+	Armor
+		Lambert
+		Falcon (fixed)
+		Clean Versions of Pilot Armor
+			Drip
+	NVGs
+		Added Specific visors for RTOs and Medics
+	Vests
+		Added a Green Holster
+
+Weapons
+	Added DC15AGL, DC15C, DC15CGL, and DP-23 (Experimental). 
+		All Experimental weapons are cleared for use by Platoon staff and above, or relevant cert trainers, please report how the weapon functions to either #balance-feedback or #bug-reporting.
+	Reduced Sando Rocket Magazine weight, added a 3rd rocket to AP rounds in sando magazines.
+	More work into the DC15BR
+		This has issues with overheating and weapon sounds/firemodes not working properly.
+
+Grenadier
+	AP Grenades have increased penetrations.
+	Grenade sights now match the far more commonly used HE grenades
+		Means you should try to direct fire AP only, extended ranges are going to be challenging
+
+DBA CIS Assets
+	Increased Dispersion of shots from AI on Marid/Technical/Viper/Scorpion
+	DBA weapons should all shoot red now instead of pink/etc
+	Eweb Box reduced armor
+
+	B1 Armor has been reduced across the board, we've been shooting vanilla weapons at something 5x stronger than a vanilla infantryman. 
+		Arm/leg shots should be more effective, and should address some of the issues with the lower caliber weapons.
+
+Bugfixes
+	Fixed Impulse on Nu-Class
+	Ammo Crates should work now
+	Fixed Burstfire on DC15AGL
+	Fixed firerate issues in single fire on some DC15S versions
