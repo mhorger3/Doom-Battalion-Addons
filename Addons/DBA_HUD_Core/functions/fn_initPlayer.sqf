@@ -1,6 +1,4 @@
-#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
-
-DEVELOPER_GUARD;
+if !(call DBA_Common_fnc_isDeveloper) exitWith {};
 
 if !(hasInterface) exitWith {};
 
@@ -46,7 +44,7 @@ if !(DBA_HUD_Enabled) exitWith {};
 
                 {
                     _unit = _x;
-                    _height = _x call DBA_HUD_Core_fnc_getUnitHeight;
+                    _height = _x call DBA_HUD_fnc_getUnitHeight;
                     _position = _unit modelToWorldVisual [0, 0, _height];
 
                     {

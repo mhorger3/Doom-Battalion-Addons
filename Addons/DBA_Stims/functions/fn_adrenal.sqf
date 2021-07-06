@@ -1,10 +1,9 @@
-#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
 /*
  * Adrenal increases player's movement speed for the duration.
  */
 params ["_player"];
 
-DEVELOPER_GUARD;
+if !(call DBA_Common_fnc_isDeveloper) exitWith {};
 
 [
 	DBA_Stims_Inject_Duration,

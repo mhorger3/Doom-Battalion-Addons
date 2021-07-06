@@ -2,7 +2,7 @@
     "DBA_HUD_IFF_Enabled",
     "CHECKBOX",
     "Enabled",
-    "101st Aux Mod HUD - IFF - IFF",
+    "101st Aux Mod HUD - IFF",
     true,
     true,
     {

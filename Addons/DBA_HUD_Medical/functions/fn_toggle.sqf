@@ -1,6 +1,4 @@
-#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
-
-DEVELOPER_GUARD;
+if !(call DBA_Common_fnc_isDeveloper) exitWith {};
 
 if (DBA_HUD_Medical_Enabled) then
 {

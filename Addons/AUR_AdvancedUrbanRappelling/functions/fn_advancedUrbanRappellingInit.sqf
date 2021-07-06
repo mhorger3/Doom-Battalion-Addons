@@ -10,10 +10,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#include "101st_Aux_Mod\addons\DBA_Common\script_macros_common.hpp"
-
-DEVELOPER_GUARD;
-
 if (!isServer) exitWith {};
 
 AUR_Advanced_Urban_Rappelling_Install = {
@@ -352,6 +348,7 @@ AUR_Climb_Up_Action = {
 
 AUR_Climb_Up_Action_Check = {
 	params ["_player"];
+	if !(call DBA_Common_fnc_isDeveloper) exitWith { false };
 	if(_player getVariable ["AUR_Is_Rappelling",false]) exitWith {false};
 	_rappelPoint = [_player] call AUR_Get_Anchor_Point_Player_Looking_At;
 	if(count _rappelPoint == 0) exitWith {false;};
