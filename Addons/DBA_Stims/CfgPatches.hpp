@@ -13,6 +13,10 @@ class CfgPatches
         };
         requiredVersion = 0.1;
         units[] = {};
-        weapons[] = {};
+        weapons[] =
+        {
+            "DBA_Stim_Adrenal",
+            "DBA_Stim_Battle"
+        };
     };
 };

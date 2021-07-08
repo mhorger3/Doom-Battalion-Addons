@@ -26,6 +26,7 @@ class CfgFunctions
 			class easeIn {};
 			class easeInOut {};
 			class easeOut {};
+            class isDeveloper {};
 			class move {};
             class moveObject {};
             class moveObjectLocal {};
