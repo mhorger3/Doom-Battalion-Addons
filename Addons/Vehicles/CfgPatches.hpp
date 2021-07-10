@@ -165,7 +165,8 @@
 			"101st_Carbine_GL",
 			"st_Longbow_Recruit_212th",
 			"101st_Falcon_212th",
-			"101st_Dolittle_212th"
+			"101st_Dolittle_212th",
+			"101st_Seefor_212th"
 		};
 		weapons[]={};
 	}

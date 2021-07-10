@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="101st_Aux_Mod\Addons\textures\101st\armor\data\Jerec_Chest_ti.paa";
+	texture="101st_Aux_Mod\Addons\textures\101st\armor\data\JerecUpper_TI.paa";
 };
 ambient[]={0.5,0.5,0.5,1};
 diffuse[]={0.69999999,0.69999999,0.69999999,1};

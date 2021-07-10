@@ -122,6 +122,36 @@ class 101st_Custom_Sgt_Pauldron: JLTS_CloneVestReconOfficer
 		vestType = "Rebreather";
 	};
 };
+class 101st_Custom_traitor_Pauldron : JLTS_CloneVestReconOfficer
+{
+	author = "Dutch";
+	dlc = "101st_Aux_Mod";
+	scope = 1;
+	scopeArsenal = 2;
+	displayName = "101st Traitor Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\textures\CISClones\Taitor_Officer_CO.paa",
+			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Pauldron_CO.paa" };
+	hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT","101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
+	class ItemInfo : VestItem
+	{
+		containerClass = "Supply100";
+		uniformType = "Default";
+		mass = 80;
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		vestType = "Rebreather";
+	};
+};
 class 101st_Custom_SSgt_Pauldron: JLTS_CloneVestReconOfficer
 {
 	author="Dutch";
@@ -2165,6 +2195,10 @@ class 101st_212_Blind: Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Blind_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Blind_Legs_CO.paa"
 	};
+	hiddenSelectionsMaterials[] = {
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Blind_Upper.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Blind_Lower.rvmat"
+	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
@@ -2522,6 +2556,41 @@ class 101st_212_Spark : Uniform_Base
 	{
 		uniformModel = "-";
 		uniformClass = "101st_Spark_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
+class 101st_212_Seefor : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Seefor (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Seefor_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Seefor_Lower_CO.paa"
+	};
+	hiddenSelectionsMaterials[] = {
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Seefor_Upper.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Seefor_Lower.rvmat"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Seefor_212th";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =
@@ -3074,5 +3143,38 @@ class 101st_212_Lambert: Uniform_Base
 			"camo1"
 		};
 		mass=40;
+	};
+};
+class 101st_212_Traitor : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Traitor (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Upper_CO.paa",
+		"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Lower_CO.paa"
+	}; 
+	hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorUpper.RVMAT","101st_Aux_Mod\Addons\textures\CISClones\TaitorLower.RVMAT" };
+
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Traitor_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
 	};
 };

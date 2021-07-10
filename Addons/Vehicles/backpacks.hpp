@@ -23,6 +23,18 @@
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
 	};
+	class 101st_Traitor_Backpack : JLTS_Clone_backpack{
+		dlc = "101st_Aux_Mod";
+			displayname = "101st JTLS Traitor Canister (Expanded)";
+			maximumLoad = 500;
+			hiddenSelections[] =
+			{
+				"camo1"
+			};
+			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Backpack_CO.paa"};
+			hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorBackpack.RVMAT" };
+	};
 	class 101st_Scuba_Backpack: JLTS_Clone_backpack	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st Scuba Canister (Expanded)";

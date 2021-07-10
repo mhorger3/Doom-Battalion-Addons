@@ -3069,7 +3069,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Quiet_Helm_CO.paa"
 		};
 	}; 
-	class 101st_Jerec_AltHelmet: JLTS_CloneHelmetP2_illum
+	class 101st_Jerec_AltHelmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -3079,10 +3079,9 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Jerec_AlternativeHelm_CO.paa", "101st_Aux_Mod\Addons\textures\101st\helmets\Jerec_AlternativeHelm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Jerec_AlternativeHelm_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelections[] = {"camo2","camo1"};
+		hiddenSelectionsMaterials[] = ("101st_Aux_Mod\Addons\textures\101st\armor\data\Jerec_Helm.rvmat")
 	};
 	class 101st_Kai_Helmet: JLTS_CloneHelmetP2
 	{
@@ -3473,7 +3472,23 @@ class CfgWeapons
 		};
 	};
 
+	// Clone Traitors
 
+
+	class 101st_Traitor_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Traitor)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Helmet_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorHelmet.RVMAT" };
+	};
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
 	class DBA_P2_Pilot_Helm: 3as_P2_Pilot_helmet
