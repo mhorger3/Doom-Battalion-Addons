@@ -528,7 +528,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -551,7 +551,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
@@ -2036,7 +2036,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -2059,7 +2059,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
@@ -3429,7 +3429,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -3452,7 +3452,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
@@ -16504,6 +16504,8 @@ class cfgVehicles
 	class 101st_Nuclass: 3as_nuclass_f
 	{
 		faction="Republic_101st";
+		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
+		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
 		displayName="101st Nu Class Shuttle";
 		author="Trip";
 		weapons[]=
@@ -16797,7 +16799,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -16820,7 +16822,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
@@ -17509,7 +17511,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -17532,7 +17534,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 
@@ -17787,7 +17789,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -17810,7 +17812,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTE.sqf""";
 				shortcut="User19"
 			};
 

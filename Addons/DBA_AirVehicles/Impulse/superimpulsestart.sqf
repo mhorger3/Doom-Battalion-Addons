@@ -1,3 +1,5 @@
+
+
 _vehic = _this;
 _vehic setvariable ["impulsorStatus",true,true];
 
@@ -6,18 +8,17 @@ _texthintimpulsor   = "<br /><t color='#00ff00' size='1.4' shadow='1' shadowColo
 hint parseText (_titlehintimpulsor+_texthintimpulsor);
 [_vehic, "LAATstart_repulsor"] remoteExec ["say3D", 0, false];
 
-while {((_vehic getvariable ["impulsorStatus",false]) AND (isEngineOn _vehic) AND (alive _vehic))} do
+while {((_vehic getvariable ["impulsorStatus",false]) AND (alive _vehic))} do
 {
-	if (speed _vehic <= 600) then 
-	{
-		_vel = velocity _vehic;
-		_dir = direction _vehic;
-		_speed = 10;
-		_vehic setVelocity [
-		(_vel select 0) + (sin _dir * _speed), 
-		(_vel select 1) + (cos _dir * _speed), 
-		(_vel select 2)
-		];
-	};
+if (speed _vehic <= 1250) then {
+_vel = velocity _vehic;
+_dir = direction _vehic;
+_speed = 10;
+_vehic setVelocity [
+(_vel select 0) + (sin _dir * _speed), 
+(_vel select 1) + (cos _dir * _speed), 
+(_vel select 2)
+];
+};
 sleep 0.5;
 };
