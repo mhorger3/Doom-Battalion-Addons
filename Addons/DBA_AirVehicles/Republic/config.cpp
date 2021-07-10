@@ -19,7 +19,6 @@ class CfgPatches
 			"101st_laatUnarmed_BaseCG",
 			"101st_laatFloodLight_BaseCG",
 			"101st_laat_HammerCG",
-			"101st_laatUnarmed_HammerCG",
 			"DBA_V19_base",
 			"DBA_Patrol_LAAT"
 		};
@@ -3063,7 +3062,7 @@ class cfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "LAAT MK4 (CG)";
+		displayName = "LAAT MK6 (CG)";
 		side = 1;
 		editorPreview = "";
 		hiddenselectionstextures[] =
@@ -4667,31 +4666,7 @@ class cfgVehicles
 		    };
 		};
 	};
-	class 101st_laatUnarmed_HammerCG : 101st_laatUnarmed_Hammer
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CG)";
-		side = 1;
-		editorPreview = "";
-		hiddenselectionstextures[] =
-		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
-        };
-		class ACE_SelfActions
-		{
-			class ACE_Passengers
-			{
-				condition = "alive _target";
-				displayName = "Passengers";
-				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
-				statement = "";
-			};
-			LAAT_LIGHTS
-		};
-	};
+
 	class 101st_laatFloodLight_Hammer: 101st_laatFloodLight_Base
 	{
 		scope = 2;
