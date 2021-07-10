@@ -3081,7 +3081,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Jerec_AlternativeHelm_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = ("101st_Aux_Mod\Addons\textures\101st\armor\data\Jerec_Helm.rvmat")
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\armor\data\Jerec_Helm.rvmat" };
 	};
 	class 101st_Kai_Helmet: JLTS_CloneHelmetP2
 	{
@@ -3485,9 +3485,9 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Upper_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorHelmet.RVMAT" };
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Morn_Helmet.rvmat" };
 	};
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
