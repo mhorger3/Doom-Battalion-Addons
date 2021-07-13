@@ -568,8 +568,6 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_tank";
-		vehicleClass="RD501_Vehicle_Class_tank";
 		hiddenSelections[] = {"Camo1", "Camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa", "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_weapons_co.paa"};
 		class TransportItems
@@ -655,8 +653,6 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_tank";
-		vehicleClass="RD501_Vehicle_Class_tank";
 		hiddenSelections[] = {"Camo1", "Camo2"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -739,8 +735,6 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_tank";
-		vehicleClass="RD501_Vehicle_Class_tank";
 		hiddenSelections[] = {"Camo1", "Camo2"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -823,8 +817,6 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="Republic_101st";
-		editorSubcategory="RD501_Editor_Category_tank";
-		vehicleClass="RD501_Vehicle_Class_tank";
 		hiddenSelectionsTextures[] = 
 		{
 			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa",
@@ -944,6 +936,7 @@ class CfgVehicles
 		{
 			"SmokeLauncherMag"
 		};
+		
 		ace_refuel_fuelCargo=999999999999;
 		ace_rearm_defaultSupply=999999999999;
 		ace_cargo_space=400;
@@ -960,6 +953,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		faction="Republic_101st";
+
 		editorSubcategory = "EdSubcat_APCs";
 		
 		transportSoldier=8;
