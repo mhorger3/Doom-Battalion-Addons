@@ -6,7 +6,16 @@ class CfgPatches
 		name="101st Aux Mod";
 		requiredaddons[] = {};
 		requiredversion = 0.1;
-		units[] ={};
+		units[] =
+		{
+			"DBA_AmmoBox_Base",
+			"DBA_AmmoBox_F",
+			"DBA_AmmoBox_Handgun_F",
+			"DBA_AmmoBox_Launcher_F",
+			"DBA_AmmoBox_Medical_F",
+			"DBA_AmmoBox_Explosive_F",
+			"DBA_AmmoBox_Repair_F",
+		};
 		weapons[]={};
 	};
 
@@ -118,51 +127,15 @@ class cfgVehicles
 	//resupply
 
 	class ACE_Box_Misc;
-
-	class 101st_AmmoBox_F : ACE_Box_Misc
+	class DBA_AmmoBox_Base : ACE_Box_Misc
 	{
-		ACE_maxWeightCarry = 100000;
-		ACE_maxWeightDrag = 100000;
-		author = "Vulgar";
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] =
-			{
+		scope = 2;
+		scopeCurator = 2;
 
-				{
-					"ammo_hide",
-					0
-				},
+		displayName = "101st Resupply Box (Empty)";
 
-				{
-					"ammoord_hide",
-					1
-				},
-
-				{
-					"grenades_hide",
-					1
-				},
-
-				{
-					"support_hide",
-					1
-				}
-			};
-			hide[] = {};
-			verticalOffset = 0.28400001;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
-		Scope = 2;
-		scopecurator = 2;
-		displayName = "Doom Company Ammo Supplies Crate";
-		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
-		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000;
+		editorSubcategory = "101st_Props";
 		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
@@ -182,42 +155,66 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
-		class TransportMagazines
+
+		transportMaxWeapons = 10000;
+        transportMaxMagazines = 10000;
+        transportMaxItems = 10000;
+        maximumload = 10000;
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+        class TransportItems {};
+        class TransportBackpacks {};
+	};
+	class DBA_AmmoBox_F : DBA_AmmoBox_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+
+		displayName = "101st Resupply Box (Primary)";
+
+		editorCategory = "Category101stAux";
+		editorSubcategory = "101st_Props";
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+		};
+
+        class TransportWeapons {};
+        class TransportMagazines
 		{
 			class xx_101st_City_Killer_Slug
 			{
 				magazine = "DBA_12gaScatter_Mag_Base";
-				count = 4;
+				count = 5;
 			};
 			class xx_101st_City_Killer_Buff
 			{
 				magazine = "DBA_12gaSlug_Mag_Base";
-				count = 9;
+				count = 5;
 			};
 			class xx_DBA_AT_GL_x2_mag
 			{
 				magazine = "DBA_AT_GL_x2_mag";
-				count = 3;
+				count = 5;
 			};
 			class xx_DBA_HE_GL_3x_mag
 			{
 				magazine = "DBA_HE_GL_x3_mag";
-				count = 3;
-			};
-			class xx_101st_flash_GL_x3_mag
-			{
-				magazine = "101st_flash_GL_x3_mag";
-				count = 3;
+				count = 5;
 			};
 			class xx_3Rnd_Smoke_Grenade_shell
 			{
 				magazine = "3Rnd_Smoke_Grenade_shell";
-				count = 3;
+				count = 5;
 			};
 			class xx_ACE_HuntIR_M203
 			{
 				magazine = "ACE_HuntIR_M203";
-				count = 1;
+				count = 5;
 			};
 			class xx_101st_Stun_Long
 			{
@@ -232,153 +229,76 @@ class cfgVehicles
 			class xx_DBA_DC15a_Low_x60_mag
 			{
 				magazine = "DBA_65_Mag_Base";
-				count = 35;
+				count = 20;
 			};
 			class xx_DBA_DC15a_Med_x30_mag
 			{
 				magazine = "DBA_338_Mag_Base";
-				count = 15;
+				count = 10;
 			};
 			class xx_DBA_DC15a_High_x15_mag
 			{
 				magazine = "DBA_408_Mag_Base";
-				count = 7;
+				count = 5;
 			};
 			class xx_DBA_DC15a_LE_x15_mag
 			{
 				magazine = "DBA_65_Mag_x120";
-				count = 15;
+				count = 5;
 			};
 			class xx_DBA_DC15a_box_mag_x240_mag
 			{
 				magazine = "DBA_556_Mag_x60_Green";
-				count = 8;
-			};
-			class xx_DBA_DC15s_x60_mag
-			{
-				magazine = "DBA_45acp_Mag_x45_Green";
-				count = 13;
+				count = 5;
 			};
 			class xx_101st_Ion_Mag
 			{
 				magazine = "DBA_9mm_Mag_x100";
-				count = 30;
+				count = 5;
 			};
 			class xx_101st_MG_Mag
 			{
 				magazine = "DBA_762_Mag_x50";
-				count = 8;
+				count = 10;
 			};
 			class xx_101st_PDW_Enforcer_Mag
 			{
 				magazine = "DBA_127x99Overcharge_Mag_Base";
-				count = 3;
-			};
-			class xx_101st_Maalras_Ext_Mag
-			{
-				magazine = "DBA_338_Mag_Base";
-				count = 10;
+				count = 5;
 			};
 			class xx_DBA_z6_x400_mag
 			{
 				magazine = "DBA_AntiTankRound_Base";
-				count = 3;
+				count = 5;
 			};
 			class xx_DBA_556_Mag_x300
 			{
 				magazine = "DBA_556_Mag_x300";
-				count = 10;
+				count = 5;
 			};
 			class xx_DBA_762_x75_Green
 			{
 				magazine = "DBA_762_x75_Green";
-				count = 3;
+				count = 5;
 			};
 			class xx_DBA_65_Mag_x20
 			{
 				magazine = "DBA_65_Mag_x20";
-				count = 10;
-			};
-
-		};
-		class TransportWeapons
-		{
-		};
-		class TransportItems
-		{
-		};
-		class AnimationSources
-		{
-			class Ammo_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 0;
-			};
-			class AmmoOrd_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Grenades_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Support_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
+				count = 5;
 			};
 		};
+        class TransportItems {};
+        class TransportBackpacks {};
 	};
-	class 101st_Handgun_F : ACE_Box_Misc
+	class DBA_AmmoBox_Handgun_F : DBA_AmmoBox_Base
 	{
-		ACE_maxWeightCarry = 100000;
-		ACE_maxWeightDrag = 100000;
-		author = "Vulgar";
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] =
-			{
+		scope = 2;
+		scopeCurator = 2;
 
-				{
-					"ammo_hide",
-					0
-				},
+		displayName = "101st Ammo Box (Secondary)";
 
-				{
-					"ammoord_hide",
-					1
-				},
-
-				{
-					"grenades_hide",
-					1
-				},
-
-				{
-					"support_hide",
-					1
-				}
-			};
-			hide[] = {};
-			verticalOffset = 0.28400001;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
-		Scope = 2;
-		scopecurator = 2;
-		displayName = "Doom Company Handgun Crate";
-		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
-		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000; 
+		editorSubcategory = "101st_Props";
 		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
@@ -386,18 +306,7 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsMaterials[] =
-		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-		};
+
 		class TransportMagazines
 		{
 			class xx_101st_Revolver_Mag
@@ -425,6 +334,11 @@ class cfgVehicles
 				magazine = "DBA_127x33_x7_Yellow";
 				count = 10;
 			};
+			class xx_DBA_DC15a_Low_x60_mag
+			{
+				magazine = "DBA_65_Mag_Base";
+				count = 20;
+			}
 		};
 		class TransportWeapons
 		{
@@ -449,81 +363,18 @@ class cfgVehicles
 				count = 2;
 			};
 		};
-		class TransportItems
-		{
-		};
-		class AnimationSources
-		{
-			class Ammo_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 0;
-			};
-			class AmmoOrd_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Grenades_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Support_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-		};
+        class TransportItems {};
+        class TransportBackpacks {};
 	};
-	class 101st_Launcher_F : ACE_Box_Misc
+	class DBA_AmmoBox_Launcher_F : DBA_AmmoBox_Base
 	{
-		ACE_maxWeightCarry = 100000;
-		ACE_maxWeightDrag = 100000;
-		author = "Dutch";
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] =
-			{
+		scope = 2;
+		scopeCurator = 2;
 
-				{
-					"ammo_hide",
-					0
-				},
+		displayName = "101st Resupply Box (Launcher)";
 
-				{
-					"ammoord_hide",
-					1
-				},
-
-				{
-					"grenades_hide",
-					1
-				},
-
-				{
-					"support_hide",
-					1
-				}
-			};
-			hide[] = {};
-			verticalOffset = 0.28400001;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
-		Scope = 2;
-		scopecurator = 2;
-		displayName = "Doom Company Launcher Crate";
-		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
-		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000;
+		editorSubcategory = "101st_Props";
 		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
@@ -531,19 +382,8 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsMaterials[] =
-		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-		};
-		class TransportMagazines
+
+       class TransportMagazines
 		{
 			class xx_101st_Chaingun_Mag
 			{
@@ -563,99 +403,32 @@ class cfgVehicles
 			class xx_101st_AT_Mag
 			{
 				magazine = "101st_AT_Mag";
-				count = 2;
+				count = 5;
 			};
 			class xx_101st_RPS6_HEAA
 			{
 				magazine = "101st_RPS6_HEAA";
-				count = 7;
+				count = 10;
 			};
 			class xx_101st_AA_Mag
 			{
 				magazine = "101st_RPS6_HEDP";
-				count = 3;
-			};
-			class xx_DBA_RPS_AT_x1_mag
-			{
-				magazine = "DBA_RPS_AT_x1_mag";
-				count = 3;
-			};
-			class xx_DBA_RPS_AA_x1_mag
-			{
-				magazine = "DBA_RPS_AA_x1_mag";
-				count = 3;
+				count = 2;
 			};
 		};
-		class TransportWeapons
-		{
-		};
-		class TransportItems
-		{
-		};
-		class AnimationSources
-		{
-			class Ammo_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 0;
-			};
-			class AmmoOrd_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Grenades_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Support_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-		};
+		class TransportWeapons {};
+        class TransportItems {};
+        class TransportBackpacks {};
 	};
-	class 101st_Medical_F : ACE_Box_Misc
+	class DBA_AmmoBox_Medical_F : DBA_AmmoBox_Base
 	{
-		ACE_maxWeightCarry = 100000;
-		ACE_maxWeightDrag = 100000;
-		author = "Dutch";
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] =
-			{
+		scope = 2;
+		scopeCurator = 2;
 
-				{
-					"ammo_hide",
-					0
-				},
+		displayName = "101st Resupply Box (Medical)";
 
-				{
-					"ammoord_hide",
-					1
-				},
-
-				{
-					"grenades_hide",
-					1
-				},
-
-				{
-					"support_hide",
-					1
-				}
-			};
-			hide[] = {};
-			verticalOffset = 0.28400001;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
+		editorCategory = "Category101stAux";
+		editorSubcategory = "101st_Props";
 		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
@@ -663,57 +436,44 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsMaterials[] =
-		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Medical_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
-		Scope = 2;
-		scopecurator = 2;
-		displayName = "Doom Company Medical Crate";
-		icon = "iconCrateAmmo";
-		editorCategory = "Category101stAux";
-		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000;
-		class TransportMagazines
-		{
-		};
-		class TransportWeapons
-		{
-		};
+
+		class TransportMagazines {};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ACE_packingBandage
 			{
-				name = "ACE_packingBandage";
+				name = "DBA_Medical_Actibandage";
 				count = 100;
 			};
 			class _xx_ACE_elasticBandage
 			{
-				name = "ACE_elasticBandage";
+				name = "DBA_Medical_Spray_Bandage";
 				count = 100;
 			};
 			class _xx_ACE_quickclot
 			{
-				name = "ACE_quickclot";
+				name = "DBA_Medical_Dermaseal_Patch";
 				count = 50;
 			};
-			class _xx_ACE_morphine
+			class _xx_DBA_morphine
 			{
-				name = "ACE_morphine";
+				name = "DBA_Medical_Comaren";
+				count = 10;
+			};
+			class _xx_DBA_epinephrine
+			{
+				name = "DBA_Medical_Cordrazine";
 				count = 30;
 			};
-			class _xx_ACE_epinephrine
+			class _xx_DBA_Adenosine
 			{
-				name = "ACE_epinephrine";
+				name = "ACE_adenosine";
+				count = 30;
+			};
+			class _xx_DBA_Symoxin
+			{
+				name = "DBA_Medical_Symoxin";
 				count = 30;
 			};
 			class _xx_ACE_plasmaIV_500
@@ -724,81 +484,20 @@ class cfgVehicles
 			class _xx_ACE_surgicalKit
 			{
 				name = "ACE_surgicalKit";
-				count = 3;
+				count = 2;
 			};
 		};
-		class AnimationSources
-		{
-			class Ammo_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 0;
-			};
-			class AmmoOrd_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Grenades_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Support_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-		};
+		class TransportBackpacks {};
 	};
-	class 101st_Explosive_F : ACE_Box_Misc
+	class DBA_AmmoBox_Explosive_F : DBA_AmmoBox_Base
 	{
-		ACE_maxWeightCarry = 100000;
-		ACE_maxWeightDrag = 100000;
-		author = "Dutch";
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] =
-			{
+		scope = 2;
+		scopeCurator = 2;
 
-				{
-					"ammo_hide",
-					0
-				},
+		displayName = "101st Resupply Box (Explosive)";
 
-				{
-					"ammoord_hide",
-					1
-				},
-
-				{
-					"grenades_hide",
-					1
-				},
-
-				{
-					"support_hide",
-					1
-				}
-			};
-			hide[] = {};
-			verticalOffset = 0.28400001;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_Ammo_F.jpg";
-		Scope = 2;
-		scopecurator = 2;
-		displayName = "Doom Company Explosives Crate";
-		icon = "iconCrateAmmo";
 		editorCategory = "Category101stAux";
-		editorSubcategory = "101st_Resupply";
-		maximumLoad = 10000; 
+		editorSubcategory = "101st_Props";
 		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
@@ -806,24 +505,9 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsMaterials[] =
-		{
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
-		};
-		class TransportMagazines
-		{
-		};
-		class TransportWeapons
-		{
-		};
+
+		class TransportMagazines {};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_SmokeShell
@@ -887,32 +571,61 @@ class cfgVehicles
 				count = 2;
 			};
 		};
-		class AnimationSources
+		class TransportBackpacks {};
+	};
+	class DBA_AmmoBox_Repair_F : ACE_Box_Misc
+	{
+		scope = 2;
+		scopeCurator = 2;
+
+		displayName = "101st Resupply Box (Repair)";
+
+		editorCategory = "Category101stAux";
+		editorSubcategory = "101st_Props";
+		model = "101st_Aux_Mod\Addons\objects\ObjectP3D\CargoBox.p3d";
+		hiddenSelectionsTextures[] =
 		{
-			class Ammo_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 0;
-			};
-			class AmmoOrd_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Grenades_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
-			class Support_source
-			{
-				source = "user";
-				animPeriod = 1;
-				initPhase = 1;
-			};
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\objects\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\objects\ObjectRVMAT\CargoBox\Handle.rvmat",
+		};
+
+		ace_refuel_fuelCargo=150;
+		ace_rearm_defaultSupply=0;
+		ace_repair_canRepair=1;
+		ace_refuel_hooks[]=
+		{
+			{0.38,-3.1700001,-0.69999999},
+			{-0.41,-3.1700001,-0.69999999}
+		};
+
+		transportMaxWeapons = 10000;
+        transportMaxMagazines = 10000;
+        transportMaxItems = 10000;
+        maximumload = 10000;
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+        class TransportItems 
+        {
+        	class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+        };
+        class TransportBackpacks {};
 	};
 };

@@ -186,8 +186,6 @@ class cfgVehicles
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
-		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
-		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
 		displayName="101st LAAT MKV (Republic)";
 		author="Trip";
 		hiddenSelectionsTextures[] = {"3AS\3as_Laat\LAATI\Textures\laat_wings_doors_basecolor.paa","3AS\3as_Laat\LAATI\Textures\laat_base_basecolor.paa"};
@@ -640,8 +638,22 @@ class cfgVehicles
 			};
 			class LeftDoorgun: LeftDoorgun
 			{
-				weapons[] = {"RD501_turret_laat_ball_beam_l","Laserdesignator_pilotCamera"};
-				magazines[] = {"Laserbatteries","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag"};
+				weapons[] = 
+				{
+					"DBA_Ground_HMG_Generic","Laserdesignator_pilotCamera"
+				};
+				magazines[] = 
+				{
+					"Laserbatteries",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+				};
 				class OpticsIn
 				{
 					class Wide
@@ -709,8 +721,22 @@ class cfgVehicles
 			};
 			class RightDoorGun: RightDoorGun
 			{
-				weapons[] = {"RD501_turret_laat_ball_beam_r","Laserdesignator_pilotCamera"};
-				magazines[] = {"Laserbatteries","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag","RD501_laat_ball_beam_x300_mag"};
+				weapons[] = 
+				{
+					"DBA_Ground_HMG_Generic","Laserdesignator_pilotCamera"
+				};
+				magazines[] = 
+				{
+					"Laserbatteries",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+				};
 				class OpticsIn
 				{
 					class Wide
@@ -1693,8 +1719,6 @@ class cfgVehicles
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
-		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
-		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
 		displayName="101st LAAT MKVI (Republic)";
 		author="Trip";
 		scope=0;
@@ -3087,8 +3111,6 @@ class cfgVehicles
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
 		faction="Republic_101st";
-		editorSubcategory = "RD501_Editor_Category_Air_Republic_heli";
-		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
 		displayName="LAAT MKVI Lights (Republic)";
 		author="Trip";
 		scope=0;
