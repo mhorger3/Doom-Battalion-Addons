@@ -1090,11 +1090,11 @@ class CfgVehicles
 			"\101st_Aux_Mod\Addons\DBA_AirVehicles\Hyena\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\Hyena\Wings_CO.paa" 
 		};
 
-		weapons[] = {"RD501_wynd_agm","RD501_bomb_cluster","RD501_bomb_SDB","RD501_bomb_LGB","Laserdesignator_pilotCamera","CMFlareLauncher"};
+		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\DBA_AirVehicles\Hyena\Body.rvmat","\101st_Aux_Mod\Addons\DBA_AirVehicles\Hyena\Wings.rvmat"};
 		
 		editorPreview="";
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","RD501_generic_aircraft_cannon_red_x1000_mag","RD501_agm_x6_mag","RD501_cluster_bomb_x4_mag","RD501_cluster_bomb_x4_mag","RD501_cluster_bomb_x4_mag","RD501_sdb_bomb_x4_mag","RD501_sdb_bomb_x4_mag","RD501_sdb_bomb_x4_mag","RD501_lgb_bomb_x4_mag","RD501_lgb_bomb_x4_mag","RD501_lgb_bomb_x4_mag"};
+		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
 		class Components: Components
 		{
 			class SensorsManagerComponent
