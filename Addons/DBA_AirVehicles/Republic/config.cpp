@@ -490,7 +490,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\LAAT\3.0\autocrate.sqf';[_this select 0] execVM 'RD501_Main\functions\vehicle_lift\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -1104,7 +1104,6 @@ class cfgVehicles
 				};
 			};
 		};
-
 	//Sounds
 		soundEngineOnInt[]=
 		{
@@ -2024,7 +2023,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\LAAT\3.0\autocrate.sqf';[_this select 0] execVM 'RD501_Main\functions\vehicle_lift\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -3081,31 +3080,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatUnarmed_BaseCG : 101st_laatUnarmed_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "LAAT MK6 (CG)";
-		side = 1;
-		editorPreview = "";
-		hiddenselectionstextures[] =
-		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
-        };
-		class ACE_SelfActions
-		{
-			class ACE_Passengers
-			{
-				condition = "alive _target";
-				displayName = "Passengers";
-				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
-				statement = "";
-			};
-			LAAT_LIGHTS
-		};
-	};
+	
 	class 101st_laatFloodLight_Base: 3as_LAAT_Mk2Lights
 	{
 		TFAR_hasIntercom=1;
@@ -3345,8 +3320,8 @@ class cfgVehicles
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 			};
-			minTurn=-180;
-			maxTurn=180;
+			minTurn=-360;
+			maxTurn=360;
 			initTurn=0;
 			minElev=-10;
 			maxElev=90;
@@ -3415,7 +3390,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\LAAT\3.0\autocrate.sqf';[_this select 0] execVM 'RD501_Main\functions\vehicle_lift\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -4472,31 +4447,9 @@ class cfgVehicles
 			};
 		};
 	};
-	class 101st_laatFloodLight_BaseCG : 101st_laatFloodLight_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "LAAT MK6/2 (CG)";
-		side = 1;
-		editorPreview = "";
-		hiddenselectionstextures[] =
-		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
-        };
-		class ACE_SelfActions
-		{
-			class ACE_Passengers
-			{
-				condition = "alive _target";
-				displayName = "Passengers";
-				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
-				statement = "";
-			};
-			LAAT_LIGHTS
-		};
-	};
+
+	
+
 	class 101st_laat_Hammer: 101st_laat_Base
 	{
 		scope = 2;
@@ -4520,91 +4473,11 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nexus_CO.paa']";
-		        };
-		        class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "baseLaatSwitcher.hpp"
 		};
 	};
-	class 101st_laat_HammerCG : 101st_laat_Hammer
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "LAAT MK5 (CG)";
-		side = 1;
-		editorPreview = "";
-		hiddenselectionstextures[] =
-		{
-			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
-        };
-		class ACE_SelfActions
-		{
-			class ACE_Passengers
-			{
-				condition = "alive _target";
-				displayName = "Passengers";
-				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
-				statement = "";
-			};
-			LAAT_LIGHTS
-		};
-	};
+
+	
 	class 101st_laatUnarmed_Hammer: 101st_laatUnarmed_Base
 	{
 		scope = 2;
@@ -4628,64 +4501,7 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nexus_CO.paa']";
-		        };
-		        class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "baseLaatSwitcher.hpp"
 		};
 	};
 
@@ -4712,64 +4528,7 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Nexus_CO.paa']";
-		        };
-		        class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\LAAT_Base_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "baseLaatSwitcher.hpp"
 		};
 	};
 	class 101st_laat_Command: 101st_laat_Base
@@ -4795,78 +4554,7 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-
-		        class 101st_NoseArt_Kraken: 101st_NoseArt_None
-		        {
-		            displayName="Kraken";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Peanut_CO.paa']";
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Patriot: 101st_NoseArt_None
-		        {
-		            displayName="Patriot";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Hines_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nexus_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "commandLaatSwitcher.hpp"
 		};
 	};
 	class 101st_laatUnarmed_Command: 101st_laatUnarmed_Base
@@ -4892,76 +4580,7 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-		        class 101st_NoseArt_Kraken: 101st_NoseArt_None
-		        {
-		            displayName="Kraken";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Peanut_CO.paa']";
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Patriot: 101st_NoseArt_None
-		        {
-		            displayName="Patriot";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Hines_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nexus_CO.paa']";
-		        };
-		       	class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "commandLaatSwitcher.hpp"
 		};
 	};
 	class 101st_laatFloodLight_Command: 101st_laatFloodLight_Base
@@ -4987,76 +4606,7 @@ class cfgVehicles
 				statement = "";
 			};
 			LAAT_LIGHTS
-			class 101st_Style_Changer
-		    {
-		        displayName="Change Style"; //Written by RD501
-		        exceptions[]=
-		        {
-		            "isNotInside",
-		            "isNotSwimming",
-		            "isNotSitting"
-		        };
-		        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-		        showDisabled=0;
-		        priority=2;
-
-		        class 101st_NoseArt_None
-		        {
-		            displayName="None";
-		            exceptions[]=
-		            {
-		                "isNotInside",
-		                "isNotSwimming",
-		                "isNotSitting"
-		            };
-		            condition="!(isNull objectParent player)";
-		            statement="_target setObjectTextureGlobal [1,'101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Base_CO.paa']";
-		            showDisabled=0;
-		            runOnHover=0;
-		            priority=2.5;
-		        };
-				
-		        class 101st_NoseArt_Kraken: 101st_NoseArt_None
-		        {
-		            displayName="Kraken";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Peanut_CO.paa']";
-		        };
-				
-		        class 101st_NoseArt_Sunlight: 101st_NoseArt_None
-		        {
-		            displayName="Sunlight";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nyom_CO.paa']";
-		        };
-
-		     	class 101st_NoseArt_Lightning: 101st_NoseArt_None
-		        {
-		            displayName="Lightning";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Frisk_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Ice: 101st_NoseArt_None
-		        {
-		            displayName="Fox";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Prof_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Patriot: 101st_NoseArt_None
-		        {
-		            displayName="Patriot";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Hines_CO.paa']";
-		        };
-
-		        class 101st_NoseArt_Nexu: 101st_NoseArt_None
-		        {
-		            displayName="Nexu";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Nexus_CO.paa']";
-		        };
-		        class 101st_NoseArt_Gearhead: 101st_NoseArt_None
-		        {
-		            displayName="Gearhead";
-		            statement="_target setObjectTextureGlobal [1, '101st_Aux_Mod\Addons\Vehicles\LAAT\Command_Arcturus_CO.paa']";
-		        };
-		    };
+			#include "commandLaatSwitcher.hpp"
 		};
 	};
 
@@ -16528,6 +16078,10 @@ class cfgVehicles
 		faction="Republic_101st";
 		displayName="101st Nu Class Shuttle";
 		author="Trip";
+
+		scope=2;
+		scopeCurator=2;
+
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -17578,6 +17132,9 @@ class cfgVehicles
 	{
 		ace_cargo_space=400;
 		crew="101st_Pilot_212th";
+
+
+
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -17704,10 +17261,10 @@ class cfgVehicles
 				radius=0.5;
 			};
 		};
-		class EventHandlers: Eventhandlers
-		{
-			init="(_this) spawn kobra_Vehicle_fnc_ImpulsorMonitor;";
-		};
+		class EventHandlers: EventHandlers
+        {
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_4.sqf';";
+        };
 		class ViewPilot
 		{
 			initAngleX = 0;
@@ -18199,6 +17756,82 @@ class cfgVehicles
 				};
 			};
 			class TransportCounterMeasuresComponent;
+		};
+	};
+
+	class 101st_laatFloodLight_BaseCG : 101st_laatFloodLight_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK6/2 (CG)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
+		};
+	};
+	class 101st_laat_HammerCG : 101st_laat_Hammer
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK5 (CG)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
+		};
+	};
+	class 101st_laatUnarmed_BaseCG : 101st_laatUnarmed_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "LAAT MK6 (CG)";
+		side = 1;
+		editorPreview = "";
+		hiddenselectionstextures[] =
+		{
+			"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+        };
+		class ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "_this call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			LAAT_LIGHTS
 		};
 	};
 };
