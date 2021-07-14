@@ -348,7 +348,6 @@ AUR_Climb_Up_Action = {
 
 AUR_Climb_Up_Action_Check = {
 	params ["_player"];
-	if !(call DBA_Common_fnc_isDeveloper) exitWith { false };
 	if(_player getVariable ["AUR_Is_Rappelling",false]) exitWith {false};
 	_rappelPoint = [_player] call AUR_Get_Anchor_Point_Player_Looking_At;
 	if(count _rappelPoint == 0) exitWith {false;};

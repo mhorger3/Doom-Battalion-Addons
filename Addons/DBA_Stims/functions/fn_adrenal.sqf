@@ -3,15 +3,13 @@
  */
 params ["_player"];
 
-if !(call DBA_Common_fnc_isDeveloper) exitWith {};
-
 [
 	DBA_Stims_Inject_Duration,
 	_player,
 	{
 		params ["_player"];
 
-		_player removeItem "JLTS_drugs_stimulant_adrenal";
+		_player removeItem "DBA_Stim_Adrenal";
 
 		_player setVariable ["DBA_defaultAnimSpeedCoef", (getAnimSpeedCoef _player)];
 		_player setAnimSpeedCoef DBA_Stims_Adrenal_Speed;

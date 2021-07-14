@@ -3,15 +3,13 @@
  */
 params ["_player"];
 
-if !(call DBA_Common_fnc_isDeveloper) exitWith {};
-
 [
 	DBA_Stims_Inject_Duration,
 	_player,
 	{
 		params ["_player"];
 
-		_player removeItem "JLTS_drugs_stimulant_battle";
+		_player removeItem "DBA_Stim_Battle";
 
 		private _pain = _player getVariable "ace_medical_pain";
 		[_player, "", 1] call ace_common_fnc_doAnimation;

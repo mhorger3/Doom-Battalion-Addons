@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
 
 class Extended_PreInit_EventHandlers
 {
