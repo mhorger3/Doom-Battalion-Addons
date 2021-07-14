@@ -321,6 +321,9 @@ class CfgWeapons
 	class missiles_Jian;
 	class Missile_AGM_01_Plane_CAS_02_F;
 	class Missile_AA_03_Plane_CAS_02_F;
+	class BombCluster_02_F;
+	class weapon_SDBLauncher;
+	class GBU12BombLauncher;
 	class dba_wynd_a2a: missiles_ASRAAM
 	{
 		displayName="Bolt (AA)";
@@ -359,7 +362,34 @@ class CfgWeapons
 			"dba_lgm_x4_mag"
 		};
 	};
-
+	class DBA_ClusterBomb : BombCluster_02_F
+	{
+		displayName = "Lightning Cluster Bomb";
+		displayNameShort = "Lightning Cluster Bomb";
+		magazines[] =
+		{
+			"DBA_cluster_bomb_x4_mag",
+			"DBA_cluster_bomb_x2_mag"
+		};
+	};
+	class DBA_SDBLauncher : weapon_SDBLauncher
+	{
+		displayName = "Lightning SDB Bomb";
+		displayNameShort = "Lightning SDB Bomb";
+		magazines[] =
+		{
+			"DBA_sdb_bomb_x4_mag"
+		};
+	};
+	class DBA_LGBLauncher : GBU12BombLauncher
+	{
+		displayName = "Lightning LGB Bomb";
+		displayNameShort = "Lightning LGB Bomb";
+		magazines[] =
+		{
+			"DBA_lgb_bomb_x4_mag"
+		};
+	};
 //Pylons
 	class DBA_Aircraft_Lasers_Green_Pylon:DBA_Aircraft_Lasers_Green
 	{
