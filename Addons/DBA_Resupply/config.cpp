@@ -476,10 +476,20 @@ class cfgVehicles
 				name = "DBA_Medical_Symoxin";
 				count = 30;
 			};
+			class _xx_ACE_plasmaIV_250
+			{
+				name = "ACE_plasmaIV_250";
+				count = 10;
+			};
 			class _xx_ACE_plasmaIV_500
 			{
 				name = "ACE_plasmaIV_500";
 				count = 30;
+			};
+			class _xx_ACE_plasmaIV_1000
+			{
+				name = "ACE_plasmaIV_1000";
+				count = 10;
 			};
 			class _xx_ACE_surgicalKit
 			{
