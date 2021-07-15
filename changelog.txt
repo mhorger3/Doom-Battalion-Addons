@@ -351,3 +351,60 @@ Bugfixes
 	Ammo Crates should work now
 	Fixed Burstfire on DC15AGL
 	Fixed firerate issues in single fire on some DC15S versions
+
+Ver 1.06 Changelog 7.14.21
+
+101st Unit Gear
+	Helmets
+		Asylum
+		Euget
+		Hark
+		Marshmallow
+		Nova
+		AJ
+		Crimson
+		Crooked
+		Dova
+		Falcon
+		Firestarter
+		Navo
+		Post
+		Rez
+		Dolittle
+	Armor
+		Asylum
+		Kel
+		Seefor
+
+Weapons
+	Removed DC15A, DC15AGL, DC15C, DC15CGL, and DP-23 (Experimental).
+
+Resupply
+	Reworked Resupply Crates to exist
+	Added Portable Repair Crate
+	Fixed crates so you can carry most of them around
+
+Medical
+	Adding Star Wars versions of medical supplies, with instant effect
+		Morphine = Comaren
+		Epinephrene = Cordrazine
+		Adenosine = Adenosine (Unchanged)
+		Painkiller = Symoxin
+
+Aviation
+	Removed the ability to use Impulse after engine is disabled or powered off
+	Fixed Mag Clamps to acommodate larger assets (ATTE, LAAT, etc)
+	Ball Turrets now use DBA HMGs instead of RD501 weapons
+	Autocrate fixed, spawns crates within LAATs
+
+DBA Opfor Assets
+	Added Traitor Faction
+
+Misc
+	Repacked Ragwolf's projects so hopefully they work
+
+Bugfixes
+	Texture fix for EWeb
+	Attempted to fix Kath Hound bipod
+	Fixed issue with CG LAAT names
+	Removed RD501 Editor Category issues with LAATs
