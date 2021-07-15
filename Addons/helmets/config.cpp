@@ -3487,7 +3487,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Upper_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Morn_Helmet.rvmat" };
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TraitorHelmet.rvmat" };
 	};
 //Pilot Helmets
 	class 3as_P2_Pilot_helmet;
