@@ -2149,7 +2149,7 @@ class 101st_212_Radar: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Radar (JLTS)";
+	displayName="101st Asylum (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -2159,8 +2159,8 @@ class 101st_212_Radar: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Radar_Armor_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Radar_Armor_Bottom_CO_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Bottom_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
