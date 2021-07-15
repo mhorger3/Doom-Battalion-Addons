@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\objects\greenyweeny_smdi.paa";
+	texture="101st_Aux_Mod\Addons\textures\101st\helmets\data\Dolittle_Helmet_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
