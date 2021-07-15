@@ -231,7 +231,7 @@ class cfgVehicles
 				magazine = "DBA_65_Mag_Base";
 				count = 20;
 			};
-			class xx_DBA_DC15a_Med_x30_mag
+			class xx_DBA_DC15a_338_x15_mag
 			{
 				magazine = "DBA_338_Mag_Base";
 				count = 10;
