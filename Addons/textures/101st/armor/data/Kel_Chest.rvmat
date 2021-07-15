@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="101st_Aux_Mod\Addons\textures\101st\armor\data\Mutt_Chest_as.paa";
+	texture="101st_Aux_Mod\Addons\textures\101st\armor\data\Kel_Chest_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{

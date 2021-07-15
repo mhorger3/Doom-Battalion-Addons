@@ -4888,7 +4888,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	scopeCurator = 2;
 	dlc = "101st_Aux_Mod";
 	faction = "Republic_101st";
-	displayName = "101st Radar (JLTS)";
+	displayName = "101st Asylum (JLTS)";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	uniformClass = "101st_Longbow_212th";
 	hiddenSelections[] =
@@ -4898,8 +4898,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Radar_Armor_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Radar_Armor_Bottom_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Bottom_CO_CO.paa"
 	};
 	linkedItems[] =
 	{
