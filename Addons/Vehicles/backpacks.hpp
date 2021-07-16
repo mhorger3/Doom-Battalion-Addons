@@ -32,7 +32,7 @@
 				"camo1"
 			};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\CISClones\Traitor_Backpack_CO.paa"};
 			hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorBackpack.RVMAT" };
 	};
 	class 101st_Scuba_Backpack: JLTS_Clone_backpack	{

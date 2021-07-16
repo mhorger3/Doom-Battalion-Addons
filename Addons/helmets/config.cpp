@@ -3517,7 +3517,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Upper_CO.paa"
+			"101st_Aux_Mod\Addons\textures\CISClones\Traitor_Helmet_CO.paa"
 		};
 		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TraitorHelmet.rvmat" };
 	};

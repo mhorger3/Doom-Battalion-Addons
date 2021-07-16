@@ -135,9 +135,9 @@ class 101st_Custom_traitor_Pauldron : JLTS_CloneVestReconOfficer
 		"camo1",
 		"camo2"
 	};
-	hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\textures\CISClones\Taitor_Officer_CO.paa",
-			"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Pauldron_CO.paa" };
-	hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT","101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
+	hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Officer_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa" };
+	hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT","\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
 	class ItemInfo : VestItem
 	{
 		containerClass = "Supply100";
@@ -3159,15 +3159,50 @@ class 101st_212_Traitor : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Upper_CO.paa",
-		"101st_Aux_Mod\Addons\textures\CISClones\Taitor_Lower_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Upper_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Lower_CO.paa"
 	}; 
-	hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorUpper.RVMAT","101st_Aux_Mod\Addons\textures\CISClones\TaitorLower.RVMAT" };
+	hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TraitorUpper.rvmat","\101st_Aux_Mod\Addons\textures\CISClones\TraitorLower.rvmat" };
 
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
 		uniformClass = "101st_Traitor_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
+
+// Platoon ID Armour
+
+
+class 101st_212_Broadsword1HQ : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Broadsword 1 HQ (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Broadsword1HQ_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\NCO_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Broadsword1HQ_212th";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =
