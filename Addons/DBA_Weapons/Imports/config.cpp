@@ -47,43 +47,6 @@ class CfgVehicles {
 		};
 	};
 };
-class 101st_RAMER_Refit : JLTS_EPL2
-{
-	scope = 2;
-	scopeArsenal = 2;
-	baseWeapon = "101st_RAMER_Refit";
-	displayname = "101st T21 (FM)";
-	ACE_Overheating_mrbs = 300000;
-	magazines[] =
-	{
-		"RD501_50mw_x10_mag",
-		"ACE_1Rnd_82mm_Mo_Smoke",
-		"ACE_1Rnd_82mm_Mo_Illum"
-	};
-	class Single : Single
-	{
-		reloadTime = 0.23999999;
-	};
-	class WeaponSlotsInfo
-	{
-		mass = 30;
-		class CowsSlot
-		{
-			displayName = "Optics Slot";
-			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-			iconPinpoint = "Bottom";
-			iconPosition[] = {0.5,0.34999999};
-			iconScale = 0.2;
-			linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-			scope = 0;
-			compatibleItems[] =
-			{
-				"dba_hamr_a",
-				"dba_hamr_b"
-			};
-		};
-	};
-};
 class CBA_DisposableLaunchers {
 	101st_disposable_launcher[] = { "101st_disposable_launcher_Loaded", "101st_disposable_launcher_Used" };
 };
