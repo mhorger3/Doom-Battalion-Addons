@@ -1211,7 +1211,7 @@ class 101st_212_RTO: Uniform_Base
 		mass=40;
 	};
 };
-class 101st_212_Dagger: Uniform_Base
+class 101st_212th_Dagger: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
@@ -1432,7 +1432,7 @@ class 101st_212_Ronin: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Ronin (JLTS)";
+	displayName="101st Ronin (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -2178,7 +2178,7 @@ class 101st_212_Radar: Uniform_Base
 };
 
 
-class 101st_212_Blind: Uniform_Base
+class 101st_212th_Blind: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
@@ -2279,7 +2279,7 @@ class 101st_212_Courage: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Courage (JLTS)";
+	displayName="101st Courage (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -2327,37 +2327,6 @@ class 101st_212_Jerec: Uniform_Base
 	{
 		uniformModel="-";
 		uniformClass="101st_Jerec_212th";
-		containerClass="supply150";
-		uniformType="Neopren";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1"
-		};
-		mass=40;
-	};
-};
-class 101st_212_Hines: Uniform_Base
-{
-	dlc = "101st_Aux_Mod";
-	scope=2;
-	displayName="101st Hines (JLTS)";
-	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-	hiddenSelections[]=
-	{
-		"camo1",
-		"camo2"
-	};
-	hiddenSelectionsTextures[]=
-	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Hines_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Hines_Legs_CO.paa"
-	};
-	class ItemInfo: UniformItem
-	{
-		uniformModel="-";
-		uniformClass="101st_Hines_212th";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -3022,7 +2991,7 @@ class 101st_212_Prodigy: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Prodigy (JLTS)";
+	displayName="101st Prodigy (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
