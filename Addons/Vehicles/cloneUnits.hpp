@@ -473,7 +473,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot (JLTS)";
-		uniformClass="101st_Pilot_Uniform";
+		uniformClass="101st_212_Pilot";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -573,7 +573,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Stealth Pilot (JLTS)";
-		uniformClass="101st_StealthPilot_Uniform";
+		uniformClass="101st_212_StealthPilot";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -674,7 +674,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-C (JLTS)";
-		uniformClass="101st_PilotCXC_Uniform";
+		uniformClass="101st_212_CXC";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -776,7 +776,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-C (Clean)";
-		uniformClass="101st_PilotCXC_Uniform";
+		uniformClass="DBA_CXC_Clean";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1378,7 +1378,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-C (JLTS)";
-		uniformClass="101st_PilotCXC_Uniform";
+		uniformClass="101st_212_CXC";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1478,7 +1478,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX (JLTS)";
-		uniformClass="101st_PilotCX_Uniform";
+		uniformClass="101st_212_CX";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1578,7 +1578,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-T (JLTS)";
-		uniformClass="101st_CXT_212th";
+		uniformClass="101st_212_CXT";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1678,7 +1678,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-P (JLTS)";
-		uniformClass="101st_PilotCX_Uniform";
+		uniformClass="101st_212_CXP";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1778,7 +1778,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-S (JLTS)";
-		uniformClass="101st_PilotCX_Uniform";
+		uniformClass="101st_212_CXS";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1878,7 +1878,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pilot CX-O (JLTS)";
-		uniformClass="101st_PilotCXO_Uniform";
+		uniformClass="101st_212_CXO";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -1981,7 +1981,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dagger (JLTS)";
-		uniformClass="101st_Dagger_Uniform";
+		uniformClass="101st_212th_Dagger";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2083,7 +2083,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dagger CP (JLTS)";
-		uniformClass="101st_Dagger_Corporal_Uniform";
+		uniformClass="101st_212_Dagger_Corporal";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2185,7 +2185,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dagger CS (JLTS)";
-		uniformClass="101st_Dagger_Sergeant_Uniform";
+		uniformClass="101st_212_Dagger_Sergeant";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2287,7 +2287,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dagger Medic (JLTS)";
-		uniformClass="101st_Dagger_Medic_Uniform";
+		uniformClass="101st_212_Dagger_Medic";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2389,7 +2389,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dagger RTO (JLTS)";
-		uniformClass="101st_Dagger_RTO_Uniform";
+		uniformClass="101st_212_Dagger_RTO";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2491,7 +2491,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Recruit (JLTS)";
-		uniformClass="101st_Recruit_Uniform";
+		uniformClass="101st_212_Recruit";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2590,7 +2590,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Scuba (JLTS)";
-		uniformClass="101st_Scuba_Uniform";
+		uniformClass="101st_Scuba";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2689,7 +2689,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Cadet (JLTS)";
-		uniformClass="101st_Cadet_Uniform";
+		uniformClass="101st_212_Cadet";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2789,7 +2789,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Clone (JLTS)";
-		uniformClass="101st_Trooper_Uniform";
+		uniformClass="101st_212_Trooper";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2889,7 +2889,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st RTO (JLTS)";
-		uniformClass="101st_RTO_Uniform";
+		uniformClass="101st_212_RTO";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -2989,7 +2989,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st RTO Cadet (JLTS)";
-		uniformClass="101st_RTO_Cadet_Uniform";
+		uniformClass="101st_212_RTO_Cadet";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3089,7 +3089,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Medic Cadet (JLTS)";
-		uniformClass="101st_MedicCadet_Uniform";
+		uniformClass="101st_212_Medic_Cadet";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3189,7 +3189,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st CLS Trooper (JLTS)";
-		uniformClass="101st_CLS_Uniform";
+		uniformClass="101st_212_CLS";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3289,7 +3289,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Lance Corporal (JLTS)";
-		uniformClass="101st_Lcp_Uniform";
+		uniformClass="101st_212_Lcp";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3391,7 +3391,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Corporal (JLTS)";
-		uniformClass="101st_Cp_Uniform";
+		uniformClass="101st_212_CP";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3496,7 +3496,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Medic (JLTS)";
-		uniformClass="101st_Medic_Armor";
+		uniformClass="101st_212_Medic";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3596,7 +3596,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st NCO (JLTS)";
-		uniformClass="101st_NCO_Uniform";
+		uniformClass="101st_212_NCO";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3693,17 +3693,6 @@
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	};
-	class 101st_212_New_Pilot: 101st_JLTS_Clone_P2
-	{
-		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
-		displayName="101st New Pilot (SCI)";
-		uniformClass="101st_212_New_Pilot";
-		hiddenSelections[]={"camo"};
-		hiddenSelectionsTextures[]={"101st_Aux_Mod\Addons\textures\101st\Pilot_Armor_CO.paa"};
-		linkedItems[]={"101st_Pilot_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[]={"101st_Pilot_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-	};
 	class 101st_Sergeant_212th: 101st_JLTS_Clone_P2
 	{
 		scope = 2;
@@ -3711,7 +3700,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Sergeant (JLTS)";
-		uniformClass="101st_Sergeant_212th";
+		uniformClass="101st_212_Sergeant";
 		hiddenSelections[]=
 		{
 			"camo1", "camo2"
@@ -3807,40 +3796,6 @@
 			"HandGrenade"
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	};
-	class 101st_Muddy_Officer_212th: 101st_JLTS_Clone_P2
-	{
-		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
-		displayName="101st Muddy Officer";
-		model="\101st_Aux_Mod\Addons\Armorp3d\clone_armor_kama.p3d";
-		uniformClass="101st_Muddy_Officer_212th";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\101st\New_Mud_Armor_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\Black.paa"
-		};
-		linkedItems[]=
-		{
-			"101st_Trooper_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"101st_Trooper_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
 	};
 	class 101st_Blind_212th: 101st_JLTS_Clone_P2
 	{
@@ -3957,7 +3912,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Blackwater (JLTS)";
-		uniformClass="101st_Blackwater_212th";
+		uniformClass="101st_212_Blackwater";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4061,7 +4016,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Blackwater TEST (JLTS)";
-		uniformClass="101st_Blackwater_Test_212th";
+		uniformClass="101st_212_Blackwater_TEST";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4164,8 +4119,8 @@
 		scopeCurator = 2;
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
-		displayName="101st Courage (JLTS)";
-		uniformClass="101st_Courage_212th";
+		displayName="101st Courage (Legacy)";
+		uniformClass="101st_212_Courage";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4268,7 +4223,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Jerec (JLTS)";
-		uniformClass="101st_Jerec_212th";
+		uniformClass="101st_212_Jerec";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4371,7 +4326,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Seatie (JLTS)";
-		uniformClass="101st_Seatie_212th";
+		uniformClass="101st_212_Seatie";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4475,7 +4430,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Blood (JLTS)";
-		uniformClass="101st_Blood_212th";
+		uniformClass="101st_212_Blood";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4579,7 +4534,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Kai (JLTS)";
-		uniformClass="101st_Kai_212th";
+		uniformClass="101st_212_Kai";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4680,7 +4635,7 @@
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Kel (JLTS)";
-		uniformClass="101st_Kel_212th";
+		uniformClass="101st_212_Kel";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4784,8 +4739,8 @@
 		scopeCurator = 2;
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
-		displayName="101st Quill (JLTS)";
-		uniformClass="101st_Quill_212th";
+		displayName="101st Quilliam (Legacy)";
+		uniformClass="101st_212_Quill";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -4890,7 +4845,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	faction = "Republic_101st";
 	displayName = "101st Asylum (JLTS)";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	uniformClass = "101st_Longbow_212th";
+	uniformClass = "101st_212_Radar";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -4991,7 +4946,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		faction="Republic_101st";
 		displayName="101st Longbow (JLTS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass="101st_Longbow_212th";
+		uniformClass="101st_212_Longbow";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -5085,107 +5040,6 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		};
 	};	
 	
-	class 101st_Longbow_212th: 101st_JLTS_Clone_P2
-	{
-		scope = 2;
-		scopeCurator = 2;
-		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
-		displayName="101st Longbow (JLTS)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass="101st_Longbow_212th";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Longbow_Basic_Chest_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Longbow_Basic_Legs_CO.paa"
-		};
-		linkedItems[]=
-		{
-			"101st_Trooper_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"101st_Trooper_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		editorSubcategory="101st_Clones";
-		identityTypes[]=
-		{
-			"LanguageENG_F",
-			"Head_NATO"
-		};
-		backpack="101st_SCI_Backpack";
-		weapons[]=
-		{
-			"DBA_DC15A",
-			"DBA_DC17",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"DBA_DC15A",
-			"DBA_DC17",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
-		};
-		respawnMagazines[]=
-		{
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
-		};
-	};
 	class 101st_Longbow_Recruit_212th : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
@@ -5194,7 +5048,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		faction = "Republic_101st";
 		displayName = "101st Longbow Recruit (JLTS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass = "101st_Longbow_Recruit_212th";
+		uniformClass = "101st_212_Longbow_Recruit";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -5294,7 +5148,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Longbow Arid (JLTS)";
-		uniformClass="101st_Longbow_Arid_212th";
+		uniformClass="101st_212_Longbow_Arid";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5395,7 +5249,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Longbow Tropic (JLTS)";
-		uniformClass="101st_Longbow_Tropic_212th";
+		uniformClass="101st_212_Longbow_Tropic";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5496,7 +5350,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Longbow Night (JLTS)";
-		uniformClass="101st_Longbow_Night_212th";
+		uniformClass="101st_212_Longbow_Night";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5597,7 +5451,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Longbow Urban (JLTS)";
-		uniformClass="101st_Longbow_Urban_212th";
+		uniformClass="101st_212_Longbow_Urban";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5698,7 +5552,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Longbow Winter (JLTS)";
-		uniformClass="101st_Longbow_Winter_212th";
+		uniformClass="101st_212_Longbow_Winter";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5799,7 +5653,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Demolitions (JLTS)";
-		uniformClass="101st_Demo_212th";
+		uniformClass="101st_212_Demo";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -5901,7 +5755,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Dutch (JLTS)";
-		uniformClass="101st_Dutch_212th";
+		uniformClass="101st_212_Dutch";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6007,7 +5861,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Hambino (JLTS)";
-		uniformClass="101st_Hambino_212th";
+		uniformClass="101st_212_Hambino";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6113,7 +5967,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Mutt (JLTS)";
-		uniformClass="101st_Mutt_212th";
+		uniformClass="101st_212_Mutt";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6216,8 +6070,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
-		displayName="101st Prodigy (JLTS)";
-		uniformClass="101st_Prodigy_212th";
+		displayName="101st Prodigy (Legacy)";
+		uniformClass="101st_212_Prodigy";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6321,7 +6175,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Furn (JLTS)";
-		uniformClass="101st_Furn_212th";
+		uniformClass="101st_212_Furn";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6424,7 +6278,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Lambert (JLTS)";
-		uniformClass="101st_Lambert_212th";
+		uniformClass="101st_212_Lambert";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6526,8 +6380,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
-		displayName="101st Bacon (JLTS)";
-		uniformClass="101st_Bacon_212th";
+		displayName="101st Bacon (Legacy)";
+		uniformClass="101st_212_Bacon";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6626,115 +6480,12 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		scope = 2;
 		scopeCurator = 2;
 	};
-	class 101st_Hines_212th: 101st_JLTS_Clone_P2
-	{
-		dlc = "101st_Aux_Mod";
-		faction="Republic_101st";
-		displayName="101st Hines (JLTS)";
-		uniformClass="101st_Hines_212th";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Hines_Chest_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\Hines_Legs_CO.paa"
-		};
-		linkedItems[]=
-		{
-			"101st_Hines_Pilot_Helmet",
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"101st_Hines_Pilot_Helmet",
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		editorSubcategory="101st_Clones";
-		identityTypes[]=
-		{
-			"LanguageENG_F",
-			"Head_NATO"
-		};
-		backpack="RD501_jumppack_neutral_101st";
-		weapons[]=
-		{
-			"DBA_DC15A",
-			"DBA_DC17",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"DBA_DC15A",
-			"DBA_DC17",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
-		};
-		respawnMagazines[]=
-		{
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_65_Mag_Base",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"DBA_DC17_x20_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
-		};
-		scope = 2;
-		scopeCurator = 2;
-	};
 	class 101st_JerecAlt_212th: 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Jerec ALT (JLTS)";
-		uniformClass="101st_Mutt_212th";
+		uniformClass="101st_212_JerecAlt";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -6833,7 +6584,6 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		scope = 2;
 		scopeCurator = 2;
 	};
-	
 	class 101st_Vin_212th: 101st_JLTS_Clone_P2
 	{
 		scope = 2;
@@ -6842,7 +6592,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		faction="Republic_101st";
 		displayName="101st Vin (JLTS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass="101st_Vin_212th";
+		uniformClass="101st_212_Vin";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -6944,7 +6694,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		faction="Republic_101st";
 		displayName="101st Gustavo (JLTS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass="101st_Vin_212th";
+		uniformClass="101st_212_Gustavo";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -7044,9 +6794,9 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		scopeCurator = 2;
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
-		displayName="101st Ronin (JLTS)";
+		displayName="101st Ronin (Legacy)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		uniformClass="101st_Ronin_212th";
+		uniformClass="101st_212_Ronin";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -7145,7 +6895,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Oaksy (JLTS)";
-		uniformClass = "101st_Oaksy_212th";
+		uniformClass = "101st_212_Oaksy";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7247,7 +6997,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Spark (JLTS)";
-		uniformClass = "101st_Spark_212th";
+		uniformClass = "101st_212_Spark";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7353,7 +7103,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Seefor (JLTS)";
-		uniformClass = "101st_Seefor_212th";
+		uniformClass = "101st_212_Seefor";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7459,7 +7209,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st AJ (JLTS)";
-		uniformClass = "101st_AJ_212th";
+		uniformClass = "101st_212_AJ";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7561,7 +7311,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Misfit (JLTS)";
-		uniformClass = "101st_Misfit_212th";
+		uniformClass = "101st_212_Misfit";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7663,7 +7413,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Dolittle (JLTS)";
-		uniformClass = "101st_Dolittle_212th";
+		uniformClass = "101st_212_Dolittle";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7769,7 +7519,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Falcon (JLTS)";
-		uniformClass = "101st_Falcon_212th";
+		uniformClass = "101st_212_Falcon";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -7870,33 +7620,6 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		scope = 2;
 		scopeCurator = 2;
 	};
-	class 101st_KommandoV1_unit: RD501_opfor_unit_B1_spec_op
-	{
-		dlc = "101st_Aux_Mod";
-		author = "Mutt";
-		vehicleClass = "Dooms_Enemies";
-		editorSubcategory = "Dooms_Enemies";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Kommandosi V1 Droid";
-		side = 2;
-		faction = "Dooms_Enemies";
-
-		identityTypes[] = {"HeadFett","Unit X48","NoGlasses"};
-
-		uniformClass = "";
-
-		linkedItems[] = {""};
-		respawnlinkedItems[] = {""};
-
-		weapons[] = {"","ElectroBinoculars","B_F"};
-		respawnWeapons[] = {""};
-
-		magazines[] = {""};
-		respawnMagazines[] = {""};
-
-		backpack = "RD501_InvisBag";
-	};
 
 	// Traitor Clones
 
@@ -7905,7 +7628,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "Traitor Clone Template (JLTS)";
-		uniformClass = "101st_Traitor_212th";
+		uniformClass = "101st_212_Traitor";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
@@ -8011,7 +7734,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
 		displayName = "101st Broadsword 1 HQ (JLTS)";
-		uniformClass = "101st_Broadsword1HQ_212th";
+		uniformClass = "101st_212_Broadsword1HQ";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{
