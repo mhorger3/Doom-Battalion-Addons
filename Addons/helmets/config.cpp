@@ -1213,7 +1213,7 @@ class CfgWeapons
 	};
 	class 101st_Dog_Helm: 101st_Dagger_Helmet
 	{
-		author="Dutch";
+		author="Spark";
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
@@ -1224,7 +1224,25 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\helmets\Dog_Helmet_CO.paa"
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Dog_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Glitch_Helm: 101st_Dagger_Helmet
+	{
+		author="Spark";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Dog)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Glitch_Helmet_AB_CO.paa"
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
@@ -1534,9 +1552,9 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Stultus_Helmet_CO.paa"
 		};
 	};
-	class 101st_Sticks_Helmet: JLTS_CloneHelmetP2
+	class 101st_Taco_Helmet: JLTS_CloneHelmetP2
 	{
-		author="Dutch";
+		author="Spark";
 		scope=2;
 		scopeArsenal=2;
 		dlc = "101st_Aux_Mod";
@@ -1544,7 +1562,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Sticks_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Taco_Helmet_CO.paa"
 		};
 	};
 	class 101st_Flames_Helmet: JLTS_CloneHelmetP2
@@ -1637,19 +1655,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Post_Helmet_CO.paa"
-		};
-	};
-	class 101st_Barnett_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Barnett)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Barnett_Helm_CO.paa"
 		};
 	};
 	class 101st_Bark_Helmet: JLTS_CloneHelmetP2
@@ -3653,20 +3658,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Nyom_CO.paa"
 		};
 	};
-	class DBA_Shaw_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Shaw)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\helmets\NewPilot\Shaw_CO.paa"
-		};
-	};
 	class DBA_Trip_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -3725,6 +3716,60 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Kuzy_Helmet_CO.paa"
+		};
+	};
+	class 101st_Finch_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Spark";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Finch)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Finch_Helmet_CO.paa"
+		};
+	};
+	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Spark";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Finch)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Snake_Helmet_CO.paa"
+		};
+	};
+	class 101st_Squirtle_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Spark";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Finch)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Squirtle_Helmet_CO.paa"
 		};
 	};
 };
