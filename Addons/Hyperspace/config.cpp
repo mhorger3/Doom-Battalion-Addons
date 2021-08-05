@@ -29,7 +29,6 @@ class CfgFunctions
 			class getShipDirOffset {};
 			class jumpShipIn {};
 			class jumpShipOut {};
-            class moduleBombardment {};
 			class moduleJumpShipIn {};
 			class moduleJumpShipOut {};
 			class zen {};
