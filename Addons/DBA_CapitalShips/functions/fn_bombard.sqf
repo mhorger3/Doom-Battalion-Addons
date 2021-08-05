@@ -22,7 +22,7 @@ for "_i" from 1 to _numberOfShots do
 	_velocity = [
 		(random _spread) - (_spread / 2),
 		(random _spread) - (_spread / 2),
-		-(DBA_Hyperspace_Bombardment_Velocity)
+		-(DBA_CapitalShips_Bombardment_Velocity)
 	];
 
 	_projectile = createVehicle [_ammo, _curPos, [], 0, "CAN_COLLIDE"];

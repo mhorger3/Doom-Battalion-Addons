@@ -1,13 +1,4 @@
 [
-	"DBA_Hyperspace_Bombardment_Velocity",
-	"SLIDER",
-	"Bombardment Velocity",
-	["101st Aux Mod", "Bombardment"],
-	[0, 500, 50, 0],
-	true
-] call CBA_fnc_addSetting;
-
-[
 	"DBA_Hyperspace_Offset_Default",
 	"SLIDER",
 	"Default Direction Offset",

@@ -34,30 +34,3 @@ private _category = "101st Aux Mod - Hyperspace";
 
 	_object remoteExecCall ["DB101_Hyperspace_fnc_moduleJumpShipOut", 2, false];
 }] call zen_custom_modules_fnc_register;
-
-[_category, "Capital Ship Bombardment",
-{
-	params ["_position", "_object"];
-
-	[
-		"Bombardment",
-		[
- 			["COMBO", "Ship", [
-				 ["442_acclamator_2", "442_arquitens", "442_quasar", "Venator_MK2", "442_munificent", "442_providence_zeus", "442_providence_d_zeus", "442_recusant_zeus", "442_recusant_zeus_d", "442_subjugator", "442_lucrehulk", "101st_BabyYoda"],
-				 [["Acclamator"], ["Arquitens"], ["Quasar"], ["Venator"], ["Munificent"], ["Providence"], ["Providence Dreadnought"], ["Recusant"], ["Recusant Dreadnought"], ["Subjugator"], ["Lucrehulk"], ["Baby Yoda"]], 0]
-			],
-			["SLIDER", "Altitude", [0, 2000, 500, 0]],
-			["TOOLBOX", "Direction", [0, 1, 8, ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]]],
-			["SLIDER", "Number of Shots", [1, 500, 100, 0]]
-		],
-		{
-			params ["_result", "_position"];
-			_result params ["_ship", "_altitude", "_direction", "_numberOfShots"];
-			_direction = [0, 45, 90, 135, 180, 225, 270, 315] select _direction;
-
-			[_ship, _position, _altitude, _direction, _numberOfShots] remoteExecCall ["DB101_Hyperspace_fnc_moduleBombardment", 2, false];
-		},
-		{},
-		_position
-	] call zen_dialog_fnc_create;
-}] call zen_custom_modules_fnc_register;
