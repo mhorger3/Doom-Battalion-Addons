@@ -2,9 +2,14 @@ params ["_object", "_target", "_duration", ["_easeIn", true], ["_easeOut", true]
 
 private _dirOffset = (typeOf _object) call DB101_Hyperspace_fnc_getShipDirOffset;
 
-private _startDir = (getDir _object) + _dirOffset;
+private _startDir = getDir _object;
 private _endDir = (_object getDir _target) + _dirOffset + 180;
 private _turnAmount = _endDir - _startDir;
+
+if (MEU_Common_Debug) then
+{
+	diag_log format ["DBA_Common_fnc_turnTowards: [%1, %2, %3]", _startDir, _endDir, _turnAmount];
+};
 
 // If we're turning more than 180 degrees, it's faster to go the other way
 if (_turnAmount > 180) then

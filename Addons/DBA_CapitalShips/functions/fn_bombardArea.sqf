@@ -17,7 +17,7 @@ _bombardEndPosition set [2, _altitude];
 
 deleteVehicle _logic;
 
-[_ship, _bombardStartPosition, _moveDuration, _turnDuration, false, false, true, true] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
+[_ship, _bombardStartPosition, _moveDuration, _turnDuration, true, true, true, true] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
 
 sleep (_turnDuration + _moveDuration);
 // Wait until position is updated in case of lag
