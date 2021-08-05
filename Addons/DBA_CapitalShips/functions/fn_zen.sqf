@@ -17,7 +17,7 @@ private _category = "101st Aux Mod - Capital Ships";
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
-    if (_ship getVariable ["DBA_CS_busy", false]) then
+    if (_ship getVariable ["DBA_CS_busy", false]) exitWith
     {
         [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
     };
@@ -57,7 +57,7 @@ private _category = "101st Aux Mod - Capital Ships";
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
-    if (_ship getVariable ["DBA_CS_busy", false]) then
+    if (_ship getVariable ["DBA_CS_busy", false]) exitWith
     {
         [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
     };
@@ -98,7 +98,7 @@ private _category = "101st Aux Mod - Capital Ships";
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
-    if (_ship getVariable ["DBA_CS_busy", false]) then
+    if (_ship getVariable ["DBA_CS_busy", false]) exitWith
     {
         [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
     };
