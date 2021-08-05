@@ -1,4 +1,4 @@
-params ["_object", "_position", "_moveDuration", "_turnDuration", ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false]];
+params ["_object", "_position", "_moveDuration", ["_turnDuration", 0], ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false]];
 
 if (DBA_Common_Debug) then
 {

@@ -2,7 +2,7 @@ params ["_object", "_target", "_duration", ["_easeIn", true], ["_easeOut", true]
 
 private _dirOffset = (typeOf _object) call DB101_Hyperspace_fnc_getShipDirOffset;
 
-private _startDir = getDir _object;
+private _startDir = (getDir _object) + _dirOffset;
 private _endDir = (_object getDir _target) + _dirOffset + 180;
 private _turnAmount = _endDir - _startDir;
 
@@ -12,14 +12,14 @@ if (_turnAmount > 180) then
 	_turnAmount = _turnAmount - 360;
 };
 
-private _timeFrom = time;
+private _timeFrom = CBA_missionTime;
 private _timeTo = _timeFrom + _duration;
 
 private _handle = [{
 	params ["_args"];
 	_args params ["_object", "_dirOffset", "_startDir", "_endDir", "_timeFrom", "_timeTo", "_turnAmount", "_duration", "_easeIn", "_easeOut"];
 
-	private _t = time - _timeFrom;
+	private _t = CBA_missionTime - _timeFrom;
 	
 	if (_easeIn and _easeOut) exitWith
 	{
@@ -39,7 +39,7 @@ private _handle = [{
 		_object setDir _easedDir;
 	};
 
-	private _curDir = linearConversion [_timeFrom, _timeTo, time, _startDir, _endDir, true];
+	private _curDir = linearConversion [_timeFrom, _timeTo, CBA_missionTime, _startDir, _endDir, true];
 	_object setDir _curDir;
 }, 0, [_object, _dirOffset, _startDir, _endDir, _timeFrom, _timeTo, _turnAmount, _duration, _easeIn, _easeOut]] call CBA_fnc_addPerFrameHandler;
 

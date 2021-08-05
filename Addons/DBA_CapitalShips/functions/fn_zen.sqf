@@ -78,4 +78,42 @@ private _category = "101st Aux Mod - Capital Ships";
     ] call zen_dialog_fnc_create;
 }] call zen_custom_modules_fnc_register;
 
+[_category, "Bombard Area",
+{
+    params ["_position", "_object"];
+
+    private _ship = missionNamespace getVariable "DBA_selectedShip";
+	if (isNil "_ship") exitWith
+	{
+		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
+	};
+
+    private _currentAltitude = (getPosASL _ship) select 2;
+
+    [
+        "Bombard Area",
+        [
+            ["EDIT", "Turn duration", ["5"]],
+            ["EDIT", "Move duration", ["10"]],
+            ["EDIT", "Altitude", [str _currentAltitude]],
+			["SLIDER", ["Spread", "Random velocity added to shots"], [0, 100, 30, 0]],
+			["SLIDER", "Number of Shots", [1, 500, 100, 0]]
+        ],
+        {
+            params ["_result", "_args"];
+
+            _result params ["_turnDuration", "_moveDuration", "_altitude", "_spread", "_numberOfShots"];
+	        _turnDuration = [parseNumber(_turnDuration), 0, 600] call BIS_fnc_clamp;
+	        _moveDuration = [parseNumber(_moveDuration), 0, 600] call BIS_fnc_clamp;
+	        _altitude = [parseNumber(_altitude), 0, 5000] call BIS_fnc_clamp;
+
+            _args params ["_ship", "_position"];
+
+            [_ship, _position, _turnDuration, _moveDuration, _altitude, _spread, _numberOfShots] spawn DBA_CapitalShips_fnc_bombardArea;
+        },
+        {},
+        [_ship, _position]
+    ] call zen_dialog_fnc_create;
+}] call zen_custom_modules_fnc_register;
+
 // TODO: Ambient fleet (want to fix multiple fleet issue before adding)

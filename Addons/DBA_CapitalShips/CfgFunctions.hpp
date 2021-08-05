@@ -8,6 +8,8 @@ class CfgFunctions
 
             class achilles {};
             class ambientFleet {};
+            class bombard {};
+            class bombardArea {};
             class crashShip {};
             class crashShipLocal {};
             class createShipControls {};

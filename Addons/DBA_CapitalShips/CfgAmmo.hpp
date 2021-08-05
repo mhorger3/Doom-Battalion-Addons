@@ -15,7 +15,7 @@ class CfgAmmo
 	{
 		name = "DBA Capital Ship Ammo (Blue)";
 		effectfly = "442_plasma_blue";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
 		tracerColor[]=
 		{
 			"Blue"
@@ -26,7 +26,7 @@ class CfgAmmo
 	{
 		name = "DBA Capital Ship Ammo (Red)";
 		effectfly = "442_plasma_red";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		model = "kobra\442_weapons\ammo\red_tracer.p3d";
 		tracerColor[]=
 		{
 			"Red"
