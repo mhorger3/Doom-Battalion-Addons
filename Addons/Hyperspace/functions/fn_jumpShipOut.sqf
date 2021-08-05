@@ -1,5 +1,7 @@
 params ["_object", ["_jumpTime", 0.5], ["_sound", "hyperspace_enter"]];
 
+_object setVariable ["DBA_CS_busy", true, true];
+
 private _ship = _object call DBA_Common_fnc_cloneObjectToLocal;
 deleteVehicle _object;
 

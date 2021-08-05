@@ -1,5 +1,7 @@
 params ["_ship", "_position", "_duration", "_radius", "_rate", "_colorCorrection"];
 
+_ship setVariable ["DBA_CS_busy", true, true];
+
 // In case the nuke destroys the ship, we want it to stay where it crashes
 _ship allowDamage false;
 

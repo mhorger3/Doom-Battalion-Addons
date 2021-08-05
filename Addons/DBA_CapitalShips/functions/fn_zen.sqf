@@ -17,6 +17,11 @@ private _category = "101st Aux Mod - Capital Ships";
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
+    if (_ship getVariable ["DBA_CS_busy", false]) then
+    {
+        [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
+    };
+
     [
         "Crash Ship",
         [
@@ -52,6 +57,11 @@ private _category = "101st Aux Mod - Capital Ships";
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
+    if (_ship getVariable ["DBA_CS_busy", false]) then
+    {
+        [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
+    };
+
 	private _currentAltitude = (getPosASL _ship) select 2;
 
     [
@@ -71,7 +81,7 @@ private _category = "101st Aux Mod - Capital Ships";
 
             _args params ["_ship", "_position"];
 
-            [_ship, _position, _turnDuration, _moveDuration, _altitude] call DBA_CapitalShips_fnc_moveTo;
+            [_ship, _position, _turnDuration, _moveDuration, _altitude] spawn DBA_CapitalShips_fnc_moveTo;
         },
         {},
         [_ship, _position]
@@ -87,6 +97,11 @@ private _category = "101st Aux Mod - Capital Ships";
 	{
 		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
+
+    if (_ship getVariable ["DBA_CS_busy", false]) then
+    {
+        [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
+    };
 
     private _currentAltitude = (getPosASL _ship) select 2;
 

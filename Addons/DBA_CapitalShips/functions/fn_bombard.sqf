@@ -34,3 +34,7 @@ for "_i" from 1 to _numberOfShots do
 };
 
 deleteVehicle _alertSoundSource;
+
+sleep _duration;
+
+_ship setVariable ["DBA_CS_busy", false, true];
