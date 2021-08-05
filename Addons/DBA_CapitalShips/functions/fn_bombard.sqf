@@ -21,7 +21,7 @@ private ["_curPos", "_velocity", "_projectile"];
 for "_i" from 1 to _numberOfShots do
 {
 	_curPos = vectorLinearConversion [_timeFrom, _timeTo, CBA_missionTime, _startPos, _endPos, true];
-	_curPos set [2, (_curPos # 2) - _zOffset];
+	_curPos set [2, (_curPos # 2) + _zOffset];
 	_velocity = [
 		(random _spread) - (_spread / 2),
 		(random _spread) - (_spread / 2),
