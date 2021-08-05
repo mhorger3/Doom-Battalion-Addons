@@ -1,17 +1,9 @@
-params ["_ship", "_position", "_direction", ["_driftDistance", 100], ["_driftTime", 10], ["_sound", "hyperspace_exit"]];
+params ["_ship", "_position", "_direction", ["_driftDistance", 100], ["_driftTime", 10], ["_easeOut", true], ["_sound", "hyperspace_exit"]];
 
 // Don't execute on server
 if (!hasInterface) exitWith {};
 
-private _logic = createGroup [sideLogic, true] createUnit ["Logic", _position, [], 0, "CAN_COLLIDE"];
-
-private _startPos = _logic getRelPos [20000, _direction];
-private _jumpPos = _logic getRelPos [_driftDistance, _direction];
-
-_startPos set [2, (_position select 2)];
-_jumpPos set [2, (_position select 2)];
-
-deleteVehicle _logic;
+([_position, _direction, _driftDistance] call DB101_Hyperspace_fnc_getJumpPositions) params ["_startPos", "_jumpPos"];
 
 // TODO: Remove duplication with createShip
 private _dirOffset = _ship call DB101_Hyperspace_fnc_getShipDirOffset;
@@ -22,7 +14,7 @@ _object setDir (_direction + _dirOffset);
 	_object,
 	[
 		[_jumpPos, 0.5],
-		[_position, _driftTime, true]
+		[_position, _driftTime, _easeOut]
 	]
 ] call DBA_Common_fnc_move;
 
