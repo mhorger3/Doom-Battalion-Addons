@@ -3,14 +3,15 @@ params ["_ship", "_position", "_destination", "_startPos", "_endPos", "_driftDis
 private _alertSoundSource = createVehicle ["HeliHEmpty", _position, [], 0, "CAN_COLLIDE"];
 _alertSoundSource say3D ["imperial_alert", 1000, 1, false, 0];
 
-private _timeFrom = CBA_missionTime + (_driftTime / 3);
-private _timeTo = CBA_missionTime + ((_driftTime / 3) * 2);
 private _duration = _driftTime / 3;
+// Bombard during the middle third of the movement
+private _timeFrom = CBA_missionTime + _duration;
+private _timeTo = CBA_missionTime + (_duration * 2);
 
 [_ship, _endPos, _driftTime] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
 
 // Sleep for 100m
-sleep _duration;
+waitUntil { CBA_missionTime >= _timeFrom };
 
 private _zOffset = _ship call DBA_CapitalShips_fnc_getBombardmentOffset;
 
