@@ -32,5 +32,10 @@ private _category = "101st Aux Mod - Hyperspace";
 {
 	params ["_position", "_object"];
 
+	if (_object getVariable ["DBA_CS_busy", false]) exitWith
+    {
+        [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
+    };
+
 	_object remoteExecCall ["DB101_Hyperspace_fnc_moduleJumpShipOut", 2, false];
 }] call zen_custom_modules_fnc_register;

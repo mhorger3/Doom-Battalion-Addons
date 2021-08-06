@@ -112,7 +112,7 @@ private _category = "101st Aux Mod - Capital Ships";
             ["EDIT", "Move duration", ["10"]],
             ["EDIT", "Altitude", [str _currentAltitude]],
 			["SLIDER", ["Spread", "Random velocity added to shots"], [0, 100, 30, 0]],
-			["SLIDER", "Number of Shots", [1, 500, 100, 0]]
+			["SLIDER", "Number of shots", [1, 100, 20, 0]]
         ],
         {
             params ["_result", "_args"];

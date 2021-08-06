@@ -1,4 +1,4 @@
-params ["_object", "_position", "_moveDuration", ["_turnDuration", 0], ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false]];
+params ["_object", "_position", "_moveDuration", ["_turnDuration", 0], ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false], ["_variableName", ""]];
 
 if (DBA_Common_Debug) then
 {
@@ -7,7 +7,7 @@ if (DBA_Common_Debug) then
 
 hideObjectGlobal _object;
 
-[_object, _position, _moveDuration, _turnDuration, _easeIn, _easeOut, _turnTowards, _turnFirst] remoteExecCall ["DBA_Common_fnc_moveObjectLocal", 0, false];
+[_object, _position, _moveDuration, _turnDuration, _easeIn, _easeOut, _turnTowards, _turnFirst, _variableName] remoteExecCall ["DBA_Common_fnc_moveObjectLocal", 0, false];
 
 private _delay = if (_turnFirst) then { _moveDuration + _turnDuration } else { _moveDuration };
 

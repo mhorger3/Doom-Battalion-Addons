@@ -1,4 +1,4 @@
-params ["_object", "_position", "_moveDuration", "_turnDuration", ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false]];
+params ["_object", "_position", "_moveDuration", "_turnDuration", ["_easeIn", false], ["_easeOut", false], ["_turnTowards", false], ["_turnFirst", false], ["_variableName", ""]];
 
 if (DBA_Common_Debug) then
 {
@@ -6,9 +6,14 @@ if (DBA_Common_Debug) then
 };
 
 // Don't run on dedicate server (only for clients)
-if !(hasInterface) exitWith {};
+// if !(hasInterface) exitWith {};
 
 private _localObject = _object call DBA_Common_fnc_cloneObjectToLocal;
+
+if !(_variableName isEqualTo "") then
+{
+	localNamespace setVariable [_variableName, _localObject];
+};
 
 if (DBA_Common_Debug) then
 {

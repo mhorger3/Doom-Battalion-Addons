@@ -8,21 +8,21 @@ private _duration = _driftTime / 3;
 private _timeFrom = CBA_missionTime + _duration;
 private _timeTo = CBA_missionTime + (_duration * 2);
 
-[_ship, _endPos, _driftTime] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
+private _shipVariableName = call DB101_Hyperspace_fnc_generateID;
+
+[_ship, _endPos, _driftTime, 0, false, false, false, false, _shipVariableName] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
 
 // Sleep for 100m
 waitUntil { CBA_missionTime >= _timeFrom };
 
-private _zOffset = _ship call DBA_CapitalShips_fnc_getBombardmentOffset;
-
-private _ammo = "DBA_CapitalShip_Ammo_Red";
-
 private ["_curPos", "_velocity", "_projectile"];
+
+private _localShip = localNamespace getVariable _shipVariableName;
+private _ammo = _localShip call DBA_CapitalShips_fnc_getBombardmentAmmo;
 
 for "_i" from 1 to _numberOfShots do
 {
-	_curPos = vectorLinearConversion [_timeFrom, _timeTo, CBA_missionTime, _startPos, _endPos, true];
-	_curPos set [2, (_curPos # 2) + _zOffset];
+	_curPos = _localShip call DBA_CapitalShips_fnc_getBombardmentSpawnPosition;
 	_velocity = [
 		(random _spread) - (_spread / 2),
 		(random _spread) - (_spread / 2),
