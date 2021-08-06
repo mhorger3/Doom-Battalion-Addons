@@ -13,7 +13,8 @@ class CfgFunctions
             class crashShip {};
             class crashShipLocal {};
             class createShipControls {};
-            class getBombardmentOffset {};
+            class getBombardmentAmmo {};
+            class getBombardmentSpawnPosition {};
             class moveShip {};
             class moveShipLocal {};
             class moveTo {};

@@ -22,6 +22,14 @@ class CfgVehicles
 		model = "101st_Aux_Mod\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltBlue.p3d";
 	};
 
+	class DBA_CapitalShips_Ammo_Green: DBA_CapitalShip_Ammo_Base
+	{
+		displayName = "Capital Ship Ammo (Green)";
+		scope = 2;
+		scopeCurator = 2;
+		model = "101st_Aux_Mod\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltGreen.p3d";
+	};
+
 	class DBA_CapitalShips_Ammo_Red: DBA_CapitalShip_Ammo_Base
 	{
 		displayName = "Capital Ship Ammo (Red)";

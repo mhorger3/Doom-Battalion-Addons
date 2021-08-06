@@ -14,9 +14,16 @@ class CfgPatches
         {
             "DBA_CapitalShip_Ammo_Base",
             "DBA_CapitalShip_Ammo_Blue",
+            "DBA_CapitalShip_Ammo_Green",
             "DBA_CapitalShip_Ammo_Red"
         };
-        units[] = {};
+        units[] =
+        {
+            "DBA_CapitalShip_Ammo_Base",
+            "DBA_CapitalShip_Ammo_Blue",
+            "DBA_CapitalShip_Ammo_Green",
+            "DBA_CapitalShip_Ammo_Red"
+        };
         weapons[] = {};
     };
 };
