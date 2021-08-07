@@ -104,7 +104,7 @@ private _category = "101st Aux Mod - Capital Ships";
         [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
     };
 
-    (_object call BIS_fnc_getPitchBank) params ["_currentPitch", "_currentBank"];
+    (_object call DBA_Common_fnc_getPitchBank) params ["_currentPitch", "_currentBank"];
 
     [
         "Pitch/Bank Ship",

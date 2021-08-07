@@ -27,6 +27,7 @@ class CfgFunctions
 			class easeIn {};
 			class easeInOut {};
 			class easeOut {};
+            class getPitchBank {};
             class isDeveloper {};
 			class move {};
             class moveObject {};
@@ -34,6 +35,7 @@ class CfgFunctions
 			class moveTowards {};
             class pitchBank {};
             class pitchBankLocal {};
+            class setPitchBank {};
             class turnTowards {};
             class zen
             {

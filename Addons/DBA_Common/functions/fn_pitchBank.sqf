@@ -12,7 +12,7 @@ hideObjectGlobal _object;
 [
 	{
 		params ["_object", "_pitch", "_bank"];
-		[_object, _pitch, _bank] call BIS_fnc_setPitchBank;
+		[_object, _pitch, _bank] call DBA_Common_fnc_setPitchBank;
 		_object hideObjectGlobal false;
 	},
 	[_object, _pitch, _bank],
