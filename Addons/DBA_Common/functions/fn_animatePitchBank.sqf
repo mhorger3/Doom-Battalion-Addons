@@ -1,9 +1,9 @@
 params ["_object", "_pitch", "_bank", "_duration", ["_easeIn", false], ["_easeOut", false]];
 
-(_object call BIS_fnc_getPitchBank) params ["_startPitch", "_startBank"];
 private _startTime = CBA_missionTime;
 private _endTime = CBA_missionTIme + _duration;
 
+(_object call BIS_fnc_getPitchBank) params ["_startPitch", "_startBank"];
 private _diffPitch = _pitch - _startPitch;
 private _diffBank = _bank - _startBank;
 
