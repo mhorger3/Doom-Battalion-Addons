@@ -19,10 +19,23 @@ class CfgPatches
         };
         units[] =
         {
+            // Ammo
             "DBA_CapitalShip_Ammo_Base",
             "DBA_CapitalShip_Ammo_Blue",
             "DBA_CapitalShip_Ammo_Green",
-            "DBA_CapitalShip_Ammo_Red"
+            "DBA_CapitalShip_Ammo_Red",
+            // Ships
+            "DBA_CapitalShips_Acclamator",
+            "DBA_CapitalShips_Arquitens",
+            "DBA_CapitalShips_Lucrehulk",
+            "DBA_CapitalShips_Munificent",
+            "DBA_CapitalShips_Providence",
+            "DBA_CapitalShips_Providence_Dreadnought",
+            "DBA_CapitalShips_Quasar",
+            "DBA_CapitalShips_Recusant",
+            "DBA_CapitalShips_Recusant_Dreadnought",
+            "DBA_CapitalShips_Subjugator",
+            "DBA_CapitalShips_Venator"
         };
         weapons[] = {};
     };

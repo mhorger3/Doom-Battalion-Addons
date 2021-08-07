@@ -8,7 +8,7 @@ private _category = "101st Aux Mod - Hyperspace";
 		"Jump Ship In",
 		[
  			["COMBO", "Ship", [
-				 ["442_acclamator_2", "442_arquitens", "442_quasar", "DBA_CapitalShips_Venator", "DBA_Munificent", "442_providence_zeus", "442_providence_d_zeus", "442_recusant_zeus", "442_recusant_zeus_d", "442_subjugator", "442_lucrehulk", "101st_BabyYoda"],
+				 ["DBA_CapitalShips_Acclamator", "DBA_CapitalShips_Arquitens", "DBA_CapitalShips_Quasar", "DBA_CapitalShips_Venator", "DBA_CapitalShips_Munificent", "DBA_CapitalShips_Providence", "DBA_CapitalShips_Providence_Dreadnought", "DBA_CapitalShips_Recusant", "DBA_CapitalShips_Recusant_Dreadnought", "DBA_CapitalShips_Subjugator", "DBA_CapitalShips_Lucrehulk", "101st_BabyYoda"],
 				 [["Acclamator"], ["Arquitens"], ["Quasar"], ["Venator"], ["Munificent"], ["Providence"], ["Providence Dreadnought"], ["Recusant"], ["Recusant Dreadnought"], ["Subjugator"], ["Lucrehulk"], ["Baby Yoda"]], 0]
 			],
 			["SLIDER", "Altitude", [0, 2000, 500, 0]],

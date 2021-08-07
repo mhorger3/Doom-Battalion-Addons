@@ -1,7 +1,7 @@
 class CfgEditorCategories
 {
-	class DBA_Props
+	class DBA_CapitalShips
 	{
-		displayName = "DBA Props";
+		displayName = "DBA Capital Ships";
 	};
 };

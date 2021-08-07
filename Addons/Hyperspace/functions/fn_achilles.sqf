@@ -19,7 +19,7 @@ private _category = "101st Aux Mod - Hyperspace";
 
 	_dialogResult params ["_shipIndex", "_altitude", "_direction", "_driftDistance", "_driftTime"];
 
-	private _ship = ["442_acclamator_2", "442_arquitens", "442_quasar", "Venator_MK2", "DBA_Munificent", "442_providence_zeus", "442_providence_d_zeus", "442_recusant_zeus", "442_recusant_zeus_d", "442_subjugator", "442_lucrehulk", "101st_BabyYoda"] select _shipIndex;
+	private _ship = ["DBA_CapitalShips_Acclamator", "DBA_CapitalShips_Arquitens", "DBA_CapitalShips_Quasar", "Venator_MK2", "DBA_CapitalShips_Munificent", "DBA_CapitalShips_Providence", "DBA_CapitalShips_Providence_Dreadnought", "DBA_CapitalShips_Recusant", "DBA_CapitalShips_Recusant_Dreadnought", "DBA_CapitalShips_Subjugator", "DBA_CapitalShips_Lucrehulk", "101st_BabyYoda"] select _shipIndex;
 	_altitude = [parseNumber(_altitude), 0, 2000] call BIS_fnc_clamp;
 	_direction = [0, 45, 90, 135, 180, 225, 270, 315] select _direction;
 	_driftDistance = [parseNumber(_driftDistance), 0, 5000] call BIS_fnc_clamp;

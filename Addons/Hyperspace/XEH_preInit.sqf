@@ -33,39 +33,3 @@
 	[0, 359, 270, 0],
 	true
 ] call CBA_fnc_addSetting;
-
-[
-	"DBA_Hyperspace_Offset_CR90",
-	"SLIDER",
-	"CR90 Direction Offset",
-	["101st Aux Mod", "Ship Direction Offsets"],
-	[0, 359, 180, 0],
-	true
-] call CBA_fnc_addSetting;
-
-[
-	"DBA_Hyperspace_Offset_Hammerhead",
-	"SLIDER",
-	"Hammerhead Direction Offset",
-	["101st Aux Mod", "Ship Direction Offsets"],
-	[0, 359, 180, 0],
-	true
-] call CBA_fnc_addSetting;
-
-[
-	"DBA_Hyperspace_Offset_Nebulon",
-	"SLIDER",
-	"Nebulon Direction Offset",
-	["101st Aux Mod", "Ship Direction Offsets"],
-	[0, 359, 180, 0],
-	true
-] call CBA_fnc_addSetting;
-
-[
-	"DBA_Hyperspace_Offset_C9979",
-	"SLIDER",
-	"C-9979 Landing Craft Direction Offset",
-	["101st Aux Mod", "Ship Direction Offsets"],
-	[0, 359, 180, 0],
-	true
-] call CBA_fnc_addSetting;
