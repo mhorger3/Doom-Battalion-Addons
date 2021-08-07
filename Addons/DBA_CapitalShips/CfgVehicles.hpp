@@ -67,7 +67,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -78,7 +78,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -89,7 +89,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -100,7 +100,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -122,7 +122,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -133,7 +133,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
@@ -144,7 +144,7 @@ class CfgVehicles
 		editorCategory = "DBA_CapitalShips";
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
-		sound = "imperial_alert";
+		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
 	};
 
