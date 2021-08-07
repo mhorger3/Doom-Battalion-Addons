@@ -1,12 +1,12 @@
 params ["_ship"];
 
-private _ammo = switch (typeOf _ship) do
-{
-	case "442_acclamator_2": { "DBA_CapitalShip_Ammo_Blue" };
-	case "442_arquitens": { "DBA_CapitalShip_Ammo_Blue" };
-	case "442_quasar": { "DBA_CapitalShip_Ammo_Blue" };
-	case "Venator_MK2": { "DBA_CapitalShip_Ammo_Blue" };
-	default { "DBA_CapitalShip_Ammo_Red" };
-};
+private _ammo = getText (configFile >> "CfgVehicles" >> (typeOf _ship) >> "DBA_ammo");
 
-_ammo
+if (_ammo isEqualTo "") then
+{
+	"DBA_CapitalShip_Ammo_Red"
+}
+else
+{
+	_ammo
+}

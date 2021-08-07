@@ -3,6 +3,7 @@
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 

@@ -3,7 +3,7 @@ params ["_type"];
 private _dirOffset = switch (_type) do
 {
 	case "442_acclamator_2": { DBA_Hyperspace_Offset_Acclamator };
-	case "442_munificent": { DBA_Hyperspace_Offset_Munificent };
+	case "DBA_Munificent": { DBA_Hyperspace_Offset_Munificent };
 	case "442_quasar": { DBA_Hyperspace_Offset_Quasar };
 	case "CR90R": { DBA_Hyperspace_Offset_CR90 };
 	case "land_hammerheadcorvette": { DBA_Hyperspace_Offset_Hammerhead };

@@ -91,7 +91,7 @@ private _category = "101st Aux Mod - Capital Ships";
 
 	_dialogResult params ["_shipIndex", "_direction", "_count", "_duration", "_altitude"];
 
-	private _ship = ["442_acclamator_2", "442_arquitens", "442_quasar", "Venator_MK2", "442_munificent", "442_providence_zeus", "442_providence_d_zeus", "442_recusant_zeus", "442_recusant_zeus_d", "442_subjugator", "442_lucrehulk", "101st_BabyYoda"] select _shipIndex;
+	private _ship = ["442_acclamator_2", "442_arquitens", "442_quasar", "Venator_MK2", "DBA_Munificent", "442_providence_zeus", "442_providence_d_zeus", "442_recusant_zeus", "442_recusant_zeus_d", "442_subjugator", "442_lucrehulk", "101st_BabyYoda"] select _shipIndex;
 	_direction = [0, 90, 180, 270] select _direction;
 	_count = [parseNumber(_count), 1, 300] call BIS_fnc_clamp;
 	_duration = [parseNumber(_duration), 1, 6000] call BIS_fnc_clamp;

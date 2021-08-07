@@ -10,7 +10,7 @@ private _spawnPoints = _object getVariable ["DB101_spawnPoints", []];
 // If there's not a specific configuration, then 4 spawn points are generated from the middle
 // of the object.
 private _spawnOffsets = switch (typeOf _object) do {
-	case "442_munificent": {
+	case "DBA_Munificent": {
 		[[[-25, 35, 10], 0], [[-45, 35, 10], 0], [[-65, 35, 10], 0], [[-85, 35, 10], 0]]
 	};
 	case "442_providence": {

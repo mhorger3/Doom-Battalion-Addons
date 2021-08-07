@@ -59,22 +59,6 @@ class CfgSounds
 			"\101st_Aux_Mod\Addons\Hyperspace\sounds\hyperspace_exit.ogg", 1, 1
 		};
 	};
-
-    class imperial_alert
-    {
-        name = "imperial_alert";
-        sound[] = {
-            "\101st_Aux_Mod\Addons\Hyperspace\sounds\imperial_alert.ogg", db + 10, 1
-        };
-    };
-
-    class bombardment_shot
-    {
-        name = "bombardment_shot";
-        sound[] = {
-            "101st_Aux_Mod\Addons\DBA_Weapons\KathHound\AR.ogg", db + 10, 1
-        };
-    };
 };
 
 class Extended_PreInit_EventHandlers

@@ -37,4 +37,22 @@ class CfgVehicles
 		scopeCurator = 2;
 		model = "101st_Aux_Mod\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltRed.p3d";
 	};
+
+	class Venator_MK2;
+	class DBA_CapitalShips_Venator: Venator_MK2
+	{
+		displayName = "DBA Venator";
+		simulation = "fountain";
+		sound = "capital_ship_engines";
+		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+	};
+
+	class 442_munificent;
+	class DBA_Munificent: 442_munificent
+	{
+		displayName = "DBA Munificent";
+		simulation = "fountain";
+		sound = "imperial_alert";
+		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+	};
 };
