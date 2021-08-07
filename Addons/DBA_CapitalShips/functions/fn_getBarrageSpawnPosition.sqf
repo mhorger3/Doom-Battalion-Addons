@@ -2,7 +2,7 @@ params ["_ship"];
 
 private _altitude = (getPos _ship) # 2;
 
-private _offset = getText (configFile >> "CfgVehicles" >> (typeOf _ship) >> "DBA_barragePosition");
+private _offset = getArray (configFile >> "CfgVehicles" >> (typeOf _ship) >> "DBA_barragePosition");
 
 if (_offset isEqualTo []) then
 {
