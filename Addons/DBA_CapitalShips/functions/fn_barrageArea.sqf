@@ -19,8 +19,7 @@ deleteVehicle _logic;
 
 [_ship, _barrageStartPosition, _moveDuration, _turnDuration, true, true, true, true] remoteExecCall ["DBA_Common_fnc_moveObject", 2, false];
 
-sleep (_turnDuration + _moveDuration);
-// Wait until position is updated in case of lag
-waitUntil { ((getPosASL _ship) isEqualTo _barrageStartPosition) };
+// Wait an extra second for desync
+sleep (_turnDuration + _moveDuration + 1);
 
 [_ship, _position, _destination, _barrageStartPosition, _barrageEndPosition, _driftDistance, _driftTime, _spread, _numberOfShots] remoteExec ["DBA_CapitalShips_fnc_barrage", 2, false];
