@@ -47,6 +47,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_barragePosition[] = {0, 0, 50};
 	};
 
 	class 442_arquitens;
@@ -58,6 +59,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_barragePosition[] = {0, 0, 0};
 	};
 
 	class 442_lucrehulk;
@@ -69,6 +71,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 0};
 	};
 
 	class 442_munificent;
@@ -80,6 +83,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, -40};
 	};
 
 	class 442_providence_zeus;
@@ -91,6 +95,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 65};
 	};
 
 	class 442_providence_d_zeus;
@@ -102,6 +107,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 230};
 	};
 
 	class 442_quasar;
@@ -113,6 +119,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_barragePosition[] = {0, 0, 0};
 	};
 
 	class 442_recusant_zeus;
@@ -124,6 +131,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 65};
 	};
 
 	class 442_recusant_zeus_d;
@@ -135,6 +143,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 65};
 	};
 
 	class 442_subjugator;
@@ -146,6 +155,7 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_barragePosition[] = {0, 0, 300};
 	};
 
 	class Venator_MK2;
@@ -157,5 +167,6 @@ class CfgVehicles
 		simulation = "fountain";
 		sound = "capital_ship_engines";
 		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_barragePosition[] = {0, 0, 28};
 	};
 };
