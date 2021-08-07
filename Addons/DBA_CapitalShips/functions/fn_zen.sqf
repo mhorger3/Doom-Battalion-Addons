@@ -88,7 +88,7 @@ private _category = "101st Aux Mod - Capital Ships";
     ] call zen_dialog_fnc_create;
 }] call zen_custom_modules_fnc_register;
 
-[_category, "Bombard Area",
+[_category, "Barrage Area",
 {
     params ["_position", "_object"];
 
@@ -106,7 +106,7 @@ private _category = "101st Aux Mod - Capital Ships";
     private _currentAltitude = (getPosASL _ship) select 2;
 
     [
-        "Bombard Area",
+        "Barrage Area",
         [
             ["EDIT", "Turn duration", ["5"]],
             ["EDIT", "Move duration", ["10"]],
@@ -124,7 +124,7 @@ private _category = "101st Aux Mod - Capital Ships";
 
             _args params ["_ship", "_position"];
 
-            [_ship, _position, _turnDuration, _moveDuration, _altitude, _spread, _numberOfShots] spawn DBA_CapitalShips_fnc_bombardArea;
+            [_ship, _position, _turnDuration, _moveDuration, _altitude, _spread, _numberOfShots] spawn DBA_CapitalShips_fnc_barrageArea;
         },
         {},
         [_ship, _position]

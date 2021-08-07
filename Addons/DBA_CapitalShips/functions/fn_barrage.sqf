@@ -4,7 +4,7 @@ private _alertSoundSource = createVehicle ["HeliHEmpty", _position, [], 0, "CAN_
 _alertSoundSource say3D ["imperial_alert", 1000, 1, false, 0];
 
 private _duration = _driftTime / 3;
-// Bombard during the middle third of the movement
+// Barrage during the middle third of the movement
 private _timeFrom = CBA_missionTime + _duration;
 private _timeTo = CBA_missionTime + (_duration * 2);
 
@@ -18,21 +18,21 @@ waitUntil { CBA_missionTime >= _timeFrom };
 private ["_curPos", "_velocity", "_projectile"];
 
 private _localShip = localNamespace getVariable _shipVariableName;
-private _ammo = _localShip call DBA_CapitalShips_fnc_getBombardmentAmmo;
+private _ammo = _localShip call DBA_CapitalShips_fnc_getBarrageAmmo;
 
 for "_i" from 1 to _numberOfShots do
 {
-	_curPos = _localShip call DBA_CapitalShips_fnc_getBombardmentSpawnPosition;
+	_curPos = _localShip call DBA_CapitalShips_fnc_getBarrageSpawnPosition;
 	_velocity = [
 		(random _spread) - (_spread / 2),
 		(random _spread) - (_spread / 2),
-		-(DBA_CapitalShips_Bombardment_Velocity)
+		-(DBA_CapitalShips_Barrage_Velocity)
 	];
 
 	_projectile = createVehicle [_ammo, _curPos, [], 0, "CAN_COLLIDE"];
 	_projectile setPos _curPos;
 	_projectile setVelocity _velocity;
-	_projectile say3D ["bombardment_shot", 1000, 1, false, 0];
+	_projectile say3D ["barrage_shot", 1000, 1, false, 0];
 
 	sleep (_duration / _numberOfShots);
 };

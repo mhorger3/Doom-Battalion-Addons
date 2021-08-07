@@ -18,9 +18,9 @@ class CfgSounds
         };
     };
 
-    class bombardment_shot
+    class barrage_shot
     {
-        name = "bombardment_shot";
+        name = "barrage_shot";
         sound[] = {
             "101st_Aux_Mod\Addons\DBA_Weapons\KathHound\AR.ogg", db + 10, 1
         };

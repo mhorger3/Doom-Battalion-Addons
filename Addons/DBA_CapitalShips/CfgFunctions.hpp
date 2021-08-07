@@ -8,13 +8,13 @@ class CfgFunctions
 
             class achilles {};
             class ambientFleet {};
-            class bombard {};
-            class bombardArea {};
+            class barrage {};
+            class barrageArea {};
             class crashShip {};
             class crashShipLocal {};
             class createShipControls {};
-            class getBombardmentAmmo {};
-            class getBombardmentSpawnPosition {};
+            class getBarrageAmmo {};
+            class getBarrageSpawnPosition {};
             class moveShip {};
             class moveShipLocal {};
             class moveTo {};

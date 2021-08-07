@@ -8,10 +8,10 @@
 ] call CBA_fnc_addSetting;
 
 [
-	"DBA_CapitalShips_Bombardment_Velocity",
+	"DBA_CapitalShips_Barrage_Velocity",
 	"SLIDER",
-	"Bombardment Velocity",
-	["101st Aux Mod", "Bombardment"],
+	"Barrage Velocity",
+	["101st Aux Mod", "Barrage"],
 	[0, 500, 100, 0],
 	true
 ] call CBA_fnc_addSetting;
