@@ -41,13 +41,9 @@ private _handle = [{
 		_easedDir = [_t, _startDir, _diffTurn, _duration] call DBA_Common_fnc_easeInOut;
 		_object setDir _easedDir;
 
-		// Only apply pitch/bank if needed
-		if ((_diffPitch != 0) || { _diffBank != 0 }) then
-		{
-			_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeInOut;
-			_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeInOut;
-			[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
-		};
+		_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeInOut;
+		_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeInOut;
+		[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
 	};
 	
 	if (_easeIn) exitWith
@@ -55,12 +51,9 @@ private _handle = [{
 		_easedDir = [_t, _startDir, _diffTurn, _duration] call DBA_Common_fnc_easeIn;
 		_object setDir _easedDir;
 
-		if ((_diffPitch != 0) || { _diffBank != 0 }) then
-		{
-			_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeIn;
-			_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeIn;
-			[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
-		};
+		_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeIn;
+		_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeIn;
+		[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
 	};
 	
 	if (_easeOut) exitWith
@@ -68,23 +61,17 @@ private _handle = [{
 		_easedDir = [_t, _startDir, _diffTurn, _duration] call DBA_Common_fnc_easeOut;
 		_object setDir _easedDir;
 
-		if ((_diffPitch != 0) || { _diffBank != 0 }) then
-		{
-			_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeOut;
-			_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeOut;
-			[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
-		};
+		_easedPitch = [_t, _startPitch, _diffPitch, _duration] call DBA_Common_fnc_easeOut;
+		_easedBank = [_t, _startBank, _diffBank, _duration] call DBA_Common_fnc_easeOut;
+		[_object, _easedPitch, _easedBank] call BIS_fnc_setPitchBank;
 	};
 
 	_curDir = linearConversion [_timeFrom, _timeTo, CBA_missionTime, _startDir, _endDir, true];
 	_object setDir _curDir;
 
-	if ((_diffPitch != 0) || { _diffBank != 0 }) then
-	{
-		_curPitch = linearConversion [_startTime, _endTime, CBA_missionTime, _startPitch, _pitch, true];
-		_curBank = linearConversion [_startTime, _endTime, CBA_missionTime, _startBank, _bank, true];
-		[_object, _curPitch, _curBank] call BIS_fnc_setPitchBank;
-	};
+	_curPitch = linearConversion [_startTime, _endTime, CBA_missionTime, _startPitch, _pitch, true];
+	_curBank = linearConversion [_startTime, _endTime, CBA_missionTime, _startBank, _bank, true];
+	[_object, _curPitch, _curBank] call BIS_fnc_setPitchBank;
 }, 0, [_object, _dirOffset, _startDir, _endDir, _timeFrom, _timeTo, _diffTurn, _duration, _easeIn, _easeOut, _startPitch, _pitch, _diffPitch, _startBank, _bank, _diffBank]] call CBA_fnc_addPerFrameHandler;
 
 [

@@ -88,6 +88,53 @@ private _category = "101st Aux Mod - Capital Ships";
     ] call zen_dialog_fnc_create;
 }] call zen_custom_modules_fnc_register;
 
+[_category, "Pitch/Bank Ship",
+{
+    params ["_position", "_object"];
+
+    private _ship = if (isNil "_object") then
+    {
+        _ship = missionNamespace getVariable "DBA_selectedShip"
+    }
+    else
+    {
+        _object
+    };
+
+	if (isNil "_ship") exitWith
+	{
+		[objNull, "must select a ship"] call BIS_fnc_showCuratorFeedbackMessage;
+	};
+
+    if (_ship getVariable ["DBA_CS_busy", false]) exitWith
+    {
+        [objNull, "ship is busy"] call BIS_fnc_showCuratorFeedbackMessage;
+    };
+
+    (_object call BIS_fnc_getPitchBank) params ["_currentPitch", "_currentBank"];
+
+    [
+        "Pitch/Bank Ship",
+        [
+            ["SLIDER", "Pitch", [-180, 180, _currentPitch, 0]],
+            ["SLIDER", "Bank", [-180, 180, _currentBank, 0]],
+            ["EDIT", "Duration", ["5"]]
+        ],
+        {
+            params ["_result", "_args"];
+
+            _result params ["_pitch", "_bank", "_duration"];
+	        _duration = [parseNumber(_duration), 0, 600] call BIS_fnc_clamp;
+
+            _args params ["_ship"];
+
+            [_ship, _pitch, _bank, _duration] spawn DBA_Common_fnc_pitchBank;
+        },
+        {},
+        [_ship]
+    ] call zen_dialog_fnc_create;
+}] call zen_custom_modules_fnc_register;
+
 [_category, "Barrage Area",
 {
     params ["_position", "_object"];
