@@ -5,6 +5,8 @@ if (DBA_Common_Debug) then
 	diag_log format ["DEBUG_fn_moveObject: [%1, %2, %3]", _object, _position, _moveDuration];
 };
 
+(_object call BIS_fnc_getPitchBank) params ["_startPitch", "_startBank"];
+
 hideObjectGlobal _object;
 
 [_object, _position, _moveDuration, _turnDuration, _easeIn, _easeOut, _turnTowards, _turnFirst, _variableName] remoteExecCall ["DBA_Common_fnc_moveObjectLocal", 0, false];
@@ -13,15 +15,16 @@ private _delay = if (_turnFirst) then { _moveDuration + _turnDuration } else { _
 
 [
 	{
-		params ["_object", "_position", "_turnTowards"];
+		params ["_object", "_position", "_turnTowards", "_startPitch", "_startBank"];
 		if (_turnTowards) then
 		{
 			private _dirOffset = (typeOf _object) call DB101_Hyperspace_fnc_getShipDirOffset;
 			_object setDir (_object getDir _position) + _dirOffset + 180;
+			[_object, _startPitch, _startBank] call BIS_fnc_setPitchBank;
 		};
 		_object setPosASL _position;
 		_object hideObjectGlobal false;
 	},
-	[_object, _position, _turnTowards],
+	[_object, _position, _turnTowards, _startPitch, _startBank],
 	_delay
 ] call CBA_fnc_waitAndExecute;

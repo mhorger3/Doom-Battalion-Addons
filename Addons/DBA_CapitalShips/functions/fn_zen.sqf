@@ -92,14 +92,7 @@ private _category = "101st Aux Mod - Capital Ships";
 {
     params ["_position", "_object"];
 
-    private _ship = if (isNil "_object") then
-    {
-        _ship = missionNamespace getVariable "DBA_selectedShip"
-    }
-    else
-    {
-        _object
-    };
+    private _ship = missionNamespace getVariable "DBA_selectedShip";
 
 	if (isNil "_ship") exitWith
 	{

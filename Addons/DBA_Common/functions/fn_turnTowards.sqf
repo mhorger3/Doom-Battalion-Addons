@@ -76,10 +76,11 @@ private _handle = [{
 
 [
 	{
-		params ["_handle", "_object", "_endDir"];
+		params ["_handle", "_object", "_endDir", "_pitch", "_bank"];
 		_handle call CBA_fnc_removePerFrameHandler;
 		_object setDir _endDir;
+		[_object, _pitch, _bank] call BIS_fnc_setPitchBank;
 	},
-	[_handle, _object, _endDir],
+	[_handle, _object, _endDir, _pitch, _bank],
 	_duration
 ] call CBA_fnc_waitAndExecute;
