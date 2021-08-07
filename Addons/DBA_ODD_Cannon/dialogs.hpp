@@ -123,39 +123,46 @@ class DBA_ODD_Cannon_Control_Dialog
 				value = 0;
 			};
 
-			class Resupply_AmmoBox
+			class Resupply_Primary
 			{
-				text = "Resupply [AmmoBox]";
+				text = "Resupply [Primary]";
 				value = 1;
-				data = "101st_AmmoBox_F";
+				data = "DBA_AmmoBox_F";
 			};
 
-			class Resupply_Handgun
+			class Resupply_Secondary
 			{
-				text = "Resupply [Handgun]";
+				text = "Resupply [Secondary]";
 				value = 1;
-				data = "101st_Handgun_F";
+				data = "DBA_AmmoBox_Handgun_F";
 			};
 
 			class Resupply_Launcher
 			{
 				text = "Resupply [Launcher]";
 				value = 1;
-				data = "101st_Launcher_F";
+				data = "DBA_AmmoBox_Launcher_F";
 			};
 
 			class Resupply_Medical
 			{
 				text = "Resupply [Medical]";
 				value = 1;
-				data = "101st_Medical_F";
+				data = "DBA_AmmoBox_Medical_F";
 			};
 
 			class Resupply_Explosive
 			{
 				text = "Resupply [Explosive]";
 				value = 1;
-				data = "101st_Explosive_F";
+				data = "DBA_AmmoBox_Explosive_F";
+			};
+
+			class Resupply_Repair
+			{
+				text = "Resupply [Repair]";
+				value = 1;
+				data = "DBA_AmmoBox_Repair_F";
 			};
 		};
 	};
