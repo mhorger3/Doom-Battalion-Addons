@@ -22,6 +22,7 @@ class CfgFunctions
 		{
 			file = "101st_Aux_Mod\Addons\DBA_Common\functions";
 
+            class animatePitchBank {};
             class cloneObjectToLocal {};
 			class easeIn {};
 			class easeInOut {};
@@ -31,6 +32,8 @@ class CfgFunctions
             class moveObject {};
             class moveObjectLocal {};
 			class moveTowards {};
+            class pitchBank {};
+            class pitchBankLocal {};
             class turnTowards {};
             class zen
             {
