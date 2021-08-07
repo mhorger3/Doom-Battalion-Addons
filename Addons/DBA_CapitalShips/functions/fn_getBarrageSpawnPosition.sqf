@@ -1,5 +1,7 @@
 params ["_ship"];
 
+private _altitude = (getPos _ship) # 2;
+
 private _offset = switch (typeOf _ship) do
 {
 	case "DBA_CapitalShips_Acclamator": { [0, 0, 50] };
@@ -16,4 +18,9 @@ private _offset = switch (typeOf _ship) do
 	default { [0, 0, 0] };
 };
 
-_ship modelToWorld _offset
+// Use modelToWorld to get accurate positions on the x/y axes
+private _position = _ship modelToWorld _offset;
+// Change Z offset to use the altitude of the ship instead of offset from the center
+_position set [2, (_altitude + (_offset # 2))];
+
+_position
