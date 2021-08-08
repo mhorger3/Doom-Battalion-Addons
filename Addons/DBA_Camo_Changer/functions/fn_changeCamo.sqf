@@ -1,37 +1,36 @@
-params ["_unit", "_camo"];
+params ["_unit", "_camo", ["_templates", "101st"]];
 
-private [
-	"_helmetClass",
-	"_uniformClass",
-	"_uniformName",
-	"_backpackName"
-];
+private ["_chestTexture", "_legsTexture", "_helmetClass"];
 
-if (_camo == "Base") then
+if (_camo isEqualTo "Base") then
 {
-	_uniformClass = "101st_212_Longbow";
-	_uniformName = "Longbow_Basic";
-	_backpackName = "GAR_Backpack_CO";
-	_helmetClass = _unit getVariable ["DBA_baseHelmet", "101st_ARF_Base"];
+	private _baseUniformTextures = _unit getVariable "DBA_baseUniformTextures";
+	_chestTexture = _baseUniformTextures # 0;
+	_legsTexture = _baseUniformTextures # 1;
+	_helmetClass = _unit getVariable "DBA_baseHelmet";
 }
 else
 {
-	_uniformClass = format ["101st_212_Longbow_%1", _camo];
-	_uniformName = format ["ARF_%1", _camo];
-	_backpackName = format ["ARF_%1_Backpack_CO", _camo];
-	_helmetClass = format ["101st_ARF_%1", _camo];
+	_chestTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "chestTexture");
+	_legsTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "legsTexture");
+	_helmetClass = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "helmetClass");
 };
 
-private _chestPath = format ["\101st_Aux_Mod\Addons\textures\101st\armor\%1_Chest_CO.paa", _uniformName];
-private _legsPath = format ["\101st_Aux_Mod\Addons\textures\101st\armor\%1_Legs_CO.paa", _uniformName];
-private _backpackPath = format ["101st_Aux_Mod\Addons\textures\101st\backpacks\%1.paa", _backpackName];
+private _backpackTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "backpackTexture");
 
-_unit setObjectTextureGlobal [0, _chestPath];
-_unit setObjectTextureGlobal [1, _legsPath];
-
-if !(isNull (backpackContainer _player)) then
+private _baseUniformTextures = _unit getVariable "DBA_baseUniformTextures";
+if (isNil "_baseUniformTextures") then
 {
-	(backpackContainer _player) setObjectTextureGlobal [0, _backpackPath];
+	private _textures = getArray (configFile >> "CfgWeapons" >> (uniform _unit) >> "hiddenSelectionsTextures");
+	_unit setVariable ["DBA_baseUniformTextures", _textures];
+};
+
+_unit setObjectTextureGlobal [0, _chestTexture];
+_unit setObjectTextureGlobal [1, _legsTexture];
+
+if !(isNull (backpackContainer _unit)) then
+{
+	(backpackContainer _unit) setObjectTextureGlobal [0, _backpackTexture];
 };
 
 // Store the starting helmet, so if the unit starts with a custom helmet switching to "Base" will re-equip it.
@@ -44,4 +43,4 @@ if (isNil "_baseHelmet") then
 removeHeadgear _unit;
 _unit addHeadgear _helmetClass;
 
-_unit setVariable ["DBA_camo", _uniformClass, false];
+_unit setVariable ["DBA_camoType", _camo];

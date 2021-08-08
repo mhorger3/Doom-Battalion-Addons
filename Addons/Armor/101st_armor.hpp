@@ -1629,6 +1629,9 @@ class 101st_212_Longbow: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "base";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Arid: Uniform_Base
 {
@@ -1660,6 +1663,9 @@ class 101st_212_Longbow_Arid: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "arid";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Recruit : Uniform_Base
 {
@@ -1691,6 +1697,9 @@ class 101st_212_Longbow_Recruit : Uniform_Base
 		};
 		mass = 40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "base";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Tropic: Uniform_Base
 {
@@ -1722,6 +1731,9 @@ class 101st_212_Longbow_Tropic: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "tropic";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Night: Uniform_Base
 {
@@ -1753,6 +1765,9 @@ class 101st_212_Longbow_Night: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "night";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Urban: Uniform_Base
 {
@@ -1784,6 +1799,9 @@ class 101st_212_Longbow_Urban: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "urban";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Longbow_Winter: Uniform_Base
 {
@@ -1815,6 +1833,9 @@ class 101st_212_Longbow_Winter: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "winter";
+	DBA_hasCamoChanger = 1;
 };
 
 
@@ -2131,6 +2152,9 @@ class 101st_212_Quill: Uniform_Base
 		};
 		mass=40;
 	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "base";
+	DBA_hasCamoChanger = 1;
 };
 class 101st_212_Spark : Uniform_Base
 {
