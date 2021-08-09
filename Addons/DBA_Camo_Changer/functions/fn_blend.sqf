@@ -1,42 +1,65 @@
-params ["_player"];
+/**
+ * Author: Ragwolf
+ * Changes a unit's textures to match the surrounding terrain.
+ * Effect will cancel if a unit dies, is not prone, or is deactivated through ACE interaction.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * player call DBA_Camo_Changer_fnc_blend
+ *
+ * Public: Yes
+ */
+params ["_unit"];
 
-_player setVariable ["DBA_blend", true, false];
-_player setUnitTrait ["camouflageCoef", DBA_Camo_Changer_Camo_Coef];
-
-private _originalTextures = getObjectTextures _player;
-
-private _tex = surfaceTexture position _player;
-_player setObjectTextureGlobal [0, _tex];
-_player setObjectTextureGlobal [1, _tex];
-
-if !(isNull backpackContainer _player) then
+if (stance _unit != "PRONE") exitWith
 {
-	_originalTextures pushBack ((getObjectTextures backpackContainer _player) # 0);
-	(backpackContainer _player) setObjectTextureGlobal [0, _tex];
+	"You must be prone to blend" call DBA_Camo_Changer_fnc_hint;
 };
+
+_unit setVariable ["DBA_blend", true, false];
+_unit setUnitTrait ["camouflageCoef", DBA_Camo_Changer_Camo_Coef];
+
+private _originalTextures = getObjectTextures _unit;
+
+private _tex = surfaceTexture position _unit;
+_unit setObjectTextureGlobal [0, _tex];
+_unit setObjectTextureGlobal [1, _tex];
+
+if !(isNull backpackContainer _unit) then
+{
+	_originalTextures pushBack ((getObjectTextures backpackContainer _unit) # 0);
+	(backpackContainer _unit) setObjectTextureGlobal [0, _tex];
+};
+
+"Blend activated" call DBA_Camo_Changer_fnc_hint;
 
 [
 	{
 		params ["_args", "_handle"];
-		_args params ["_player", "_originalTextures"];
+		_args params ["_unit", "_originalTextures"];
 
-		if (!(alive _player) || (stance _player != "PRONE") || !(_player getVariable "DBA_blend")) then
+		if (!(alive _unit) || (stance _unit != "PRONE") || !(_unit getVariable "DBA_blend")) then
 		{
-			// If it was disabled by speed, need to set this false
-			_player setVariable ["DBA_blend", false, false];
-			_player setUnitTrait ["camouflageCoef", 1];
+			"Blend deactivated" call DBA_Camo_Changer_fnc_hint;
+			_unit setVariable ["DBA_blend", false, false];
+			_unit setUnitTrait ["camouflageCoef", 1];
 
-			_player setObjectTextureGlobal [0, _originalTextures # 0];
-			_player setObjectTextureGlobal [1, _originalTextures # 1];
+			_unit setObjectTextureGlobal [0, _originalTextures # 0];
+			_unit setObjectTextureGlobal [1, _originalTextures # 1];
 
-			if !(isNull backpackContainer _player) then
+			if !(isNull backpackContainer _unit) then
 			{
-				(backpackContainer _player) setObjectTextureGlobal [0, _originalTextures # 2];
+				(backpackContainer _unit) setObjectTextureGlobal [0, _originalTextures # 2];
 			};
 
 			_handle call CBA_fnc_removePerFrameHandler;
 		};
 	},
 	1,
-	[_player, _originalTextures]
+	[_unit, _originalTextures]
 ] call CBA_fnc_addPerFrameHandler;

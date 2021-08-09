@@ -1,7 +1,20 @@
-params ["_player", "_template"];
+/**
+ * Author: Ragwolf
+ * Checks whether a unit is wearing a uniform equipped with a camo changer.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * Camo changer equipped <BOOL>
+ *
+ * Example:
+ * player call DBA_Camo_Changer_fnc_hasCamoChanger
+ *
+ * Public: Yes
+ */
+params ["_unit"];
 
-private _config = configFile >> "CfgWeapons" >> (uniform _player);
-private _hasCamoChanger = getNumber (_config >> "DBA_hasCamoChanger") isEqualTo 1;
-private _uniformMatchesTemplate = getText (_config >> "DBA_camoTemplate") isEqualTo _template;
+private _config = configFile >> "CfgWeapons" >> (uniform _unit);
 
-_hasCamoChanger && _uniformMatchesTemplate
+getNumber (_config >> "DBA_hasCamoChanger") isEqualTo 1

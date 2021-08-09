@@ -10,6 +10,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    "DBA_Camo_Changer_Hints",
+    "CHECKBOX",
+    ["Show hints", "Show hints when camo changes"],
+    ["101st Aux Mod", "Camouflage"],
+    true,
+    false
+] call CBA_fnc_addSetting;
+
+[
     "101st Aux Mod",
     "arf_multitool_blend",
     "ARF Multi-tool Blend",

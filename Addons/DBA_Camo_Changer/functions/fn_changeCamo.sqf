@@ -1,22 +1,19 @@
-params ["_unit", "_camo", ["_templates", "101st"]];
+params ["_unit", "_camo"];
 
-private ["_chestTexture", "_legsTexture", "_helmetClass"];
+private ["_uniformTextures", "_backpackTextures", "_helmetClass"];
 
 if (_camo isEqualTo "Base") then
 {
-	private _baseUniformTextures = _unit getVariable "DBA_baseUniformTextures";
-	_chestTexture = _baseUniformTextures # 0;
-	_legsTexture = _baseUniformTextures # 1;
+	_uniformTextures = _unit getVariable ["DBA_baseUniformTextures", []];
+	_backpackTextures = _unit getVariable ["DBA_baseBackpackTextures", []];
 	_helmetClass = _unit getVariable "DBA_baseHelmet";
 }
 else
 {
-	_chestTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "chestTexture");
-	_legsTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "legsTexture");
+	_uniformTextures = getArray (configFile >> "DBA_Camo" >> _templates >> _camo >> "uniformTextures");
+	_backpackTextures = getArray (configFile >> "DBA_Camo" >> _templates >> _camo >> "backpackTextures");
 	_helmetClass = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "helmetClass");
 };
-
-private _backpackTexture = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "backpackTexture");
 
 private _baseUniformTextures = _unit getVariable "DBA_baseUniformTextures";
 if (isNil "_baseUniformTextures") then
@@ -25,12 +22,22 @@ if (isNil "_baseUniformTextures") then
 	_unit setVariable ["DBA_baseUniformTextures", _textures];
 };
 
-_unit setObjectTextureGlobal [0, _chestTexture];
-_unit setObjectTextureGlobal [1, _legsTexture];
+{
+	_unit setObjectTextureGlobal [_forEachIndex, _x];
+} forEach _uniformTextures;
 
 if !(isNull (backpackContainer _unit)) then
 {
-	(backpackContainer _unit) setObjectTextureGlobal [0, _backpackTexture];
+	private _baseBackpackTextures = _unit getVariable "DBA_baseBackpackTextures";
+	if (isNil "_baseBackpackTextures") then
+	{
+		private _textures = getArray (configFile >> "CfgVehicles" >> (backpack _unit) >> "hiddenSelectionsTextures");
+		_unit setVariable ["DBA_baseBackpackTextures", _textures];
+	};
+
+	{
+		(backpackContainer _unit) setObjectTextureGlobal [_forEachIndex, _x];
+	} forEach _backpackTextures;
 };
 
 // Store the starting helmet, so if the unit starts with a custom helmet switching to "Base" will re-equip it.
@@ -44,3 +51,5 @@ removeHeadgear _unit;
 _unit addHeadgear _helmetClass;
 
 _unit setVariable ["DBA_camoType", _camo];
+
+(format ["Camo changed to %1", _camo]) call DBA_Camo_Changer_fnc_hint;
