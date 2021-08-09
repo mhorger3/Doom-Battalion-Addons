@@ -123,6 +123,17 @@
 		count=30;
 		initspeed=909;
 	};
+	class DBA_Mag_ORBITAL : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "Orbital Laser Power Cell";
+		ammo = "DBA_AMMO_ORBITAL";
+		picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+		mass = 12;
+		count = 1;
+		initspeed = 909;
+	};
 	class DBA_65_Mag_x20 : DBA_762_Mag_Base
 	{
 		scope = 2;

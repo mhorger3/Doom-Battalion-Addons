@@ -417,6 +417,39 @@
 				frequency = 20;
 				distance = 1;
 			};
+		}; 
+		class DBA_AMMO_ORBITAL :DBA_ammo_base //762 Nato
+		{
+			hit = 1; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 1.6; //Acts as penetration multiplier for the projectile.
+			typicalspeed = 800; //What speed does this need to be going to inflict full damage
+
+			tracerScale = 0.4;
+
+			audibleFire = 45; //Alerts AI from further away
+
+			dangerRadiusBulletClose = 8;
+			dangerRadiusHit = 12;
+			suppressionRadiusBulletClose = 6;
+			suppressionRadiusHit = 8;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 2.8284299;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 8.48528;
+			};
+			class CamShakeHit
+			{
+				power = 5;
+				duration = 0.2;
+				frequency = 20;
+				distance = 1;
+			};
+			DBA_IsDesignator = 1;
 		};
 		class DBA_762_base:DBA_ammo_base //762 Nato
 		{

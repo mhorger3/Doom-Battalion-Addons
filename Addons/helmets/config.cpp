@@ -872,7 +872,7 @@ class CfgWeapons
 				class Head
 				{
 					hitpointName="HitHead";
-					armor=50;
+					armor=8;
 					passThrough=0.5;
 				};
 			};
@@ -906,10 +906,19 @@ class CfgWeapons
 			{
 				"Camo1"
 			};
+			class hitpointsprotectioninfo
+			{
+				class head
+				{
+					hitPointName = "HitHead";
+					armor = 8;
+					passThrough = 0.5;
+				};
+			};
 		};
 		
 	};
-	class 101st_Dagger_Helmet: JLTS_CloneHelmetP2
+	class 101st_Dagger_Helmet: 101st_BaseDagger_Helmet
 	{
 		author="Dutch";
 		scope=2;
@@ -927,17 +936,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Airborne_Helm_CO.paa"
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
-		class ItemInfo: HeadgearItem
-		{
-			mass=10;
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-		};
 		
 	};
 	class 101st_Dagger_AltHelm: JLTS_CloneHelmetAB_illum

@@ -2221,6 +2221,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Olive_F : 3AS_GAT_Olive
@@ -2235,6 +2239,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Olive_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Tan_F : 3AS_GAT_tan
@@ -2249,6 +2257,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Tan_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Urban_F : 3AS_GAT_urban
@@ -2263,6 +2275,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Urban_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Light_F : 3AS_GAT_Light
@@ -2277,6 +2293,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Light_Olive_F : 3AS_GAT_Light_Olive
@@ -2291,6 +2311,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_Olive_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Light_Tan_F : 3AS_GAT_Light_tan
@@ -2305,6 +2329,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_Tan_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_GAT_Light_Urban_F : 3AS_GAT_Light_urban
@@ -2319,6 +2347,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_Urban_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_AAT_F : 3AS_AAT
@@ -2334,6 +2366,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_AAT_Tan_F : 3AS_AAT_tan
@@ -2349,6 +2385,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Tan_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_AAT_Snow_F : 3AS_AAT_snow
@@ -2364,6 +2404,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Snow_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_AAT_Tropic_F : 3AS_AAT_Tropic
@@ -2379,6 +2423,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Tropic_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_AAT_Urban_F : 3AS_AAT_urban
@@ -2394,6 +2442,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Urban_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Snail_Tank_F : 101st_NR99_Droid_Tank
@@ -2408,6 +2460,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Snail_Tank_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_CISSpeeder_F : SW_SPCIS
@@ -2421,6 +2477,10 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_CISSpeeder_F.jpg";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Plasma_Artillery_F : RD501_heavy_ordinance_tank_CIS
@@ -2435,6 +2495,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Plasma_Artillery_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Rocket_Artillery_F : RD501_rocket_ordinance_tank_CIS
@@ -2449,6 +2513,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Rocket_Artillery_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_BEARD_AA_F : RD501_Praetorian_Variant_normal
@@ -2463,6 +2531,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_BEARD_AA_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_MTT_F : 3as_MTT
@@ -2477,6 +2549,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_MTT_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Squad_Assault_Craft_F : 3as_SAC_Trade
@@ -2491,6 +2567,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Squad_Assault_Craft_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Ammo_F : 442_argon_ammo_cis
@@ -2505,6 +2585,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Ammo_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Device_F : 442_argon_device_cis
@@ -2519,6 +2603,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Device_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Fuel_F : 442_argon_fuel_cis
@@ -2533,6 +2621,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Fuel_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Medical_F : 442_argon_medical_cis
@@ -2547,6 +2639,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Medical_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Repair_F : 442_argon_repair_cis
@@ -2561,6 +2657,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Repair_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Transport_F : 442_argon_transport_cis
@@ -2575,6 +2675,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Transport_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Argon_Transport_Covered_F : 442_argon_covered_cis
@@ -2589,6 +2693,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Argon_Transport_Covered_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Plasma_Mortar_F : 3as_CIS_Mortar
@@ -2603,6 +2711,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Plasma_Mortar_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Droideka_F : O_OKalani_CIS_Droideka_01
@@ -2616,6 +2728,10 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Droideka_F.jpg";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Dwarf_Spider_Droid_1_F : O_OKalani_DSD1_Dwarf_Spider_Droid_01
@@ -2629,6 +2745,10 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Dwarf_Spider_Droid_1_F.jpg";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Dwarf_Spider_Droid_2_F : O_OKalani_DSD1_Dwarf_Spider_Droid_02
@@ -2642,6 +2762,10 @@ class CfgVehicles {
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Dwarf_Spider_Droid_2_F.jpg";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_EWeb_F : O_OKalani_Eweb_02
@@ -2656,6 +2780,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_EWeb_F.jpg";
         crew = "O_DBA_CIS_B1_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_OG10_Homing_Spider_F : O_OKalani_OG_10_Homing_Spider_01
@@ -2670,6 +2798,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OG10_Homing_Spider_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Particle_Cannon_F : 3as_ParticleCannon
@@ -2684,6 +2816,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Particle_Cannon_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Proton_Cannon_F : 3AS_FieldCannon
@@ -2698,6 +2834,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Proton_Cannon_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Crab_Droid_F : 101st_Crab_Droid
@@ -2711,6 +2851,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Crab_Droid_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_DSD3_F : 101st_DSD3_Droid
@@ -2724,6 +2868,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
      class O_DBA_CIS_DSD1_F : 101st_DSD_Droid
     {
@@ -2736,6 +2884,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Tri_Droid_F : 101st_Octo_Droid
@@ -2749,6 +2901,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Tri_Droid_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Speedboat_F : RD501_speedboat_cis
@@ -2763,6 +2919,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Speedboat_F.jpg";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Vulture_Droid_3as_F : 3as_Vulture_dynamicLoadout
@@ -2777,6 +2937,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_3as_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Vulture_Droid_Kalani_F : O_OKalani_Vulture_Droid_01
@@ -2791,6 +2955,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_Kalani_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Hyena_Bomber_Droid_Kalani_F : O_OKalani_Hyena_Bomber_Droid_01
@@ -2805,6 +2973,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Hyena_Bomber_Droid_Kalani_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Vulture_Droid_RD501_F : RD501_vulture_MKII
@@ -2819,6 +2991,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_RD501_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Tri_Fighter_Droid_RD501_F : RD501_trifighter_MKII
@@ -2833,6 +3009,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Tri_Fighter_Droid_RD501_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 
     class O_DBA_CIS_Hyena_Bomber_Droid_RD501_F : RD501_hyena_Mk2
@@ -2847,6 +3027,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Hyena_Bomber_Droid_RD501_F.jpg";
         crew = "O_DBA_CIS_OOM_Pilot_Droid_F";
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
     class OPTRE_M808B2;
     class O_DBA_CIS_Devil_F : OPTRE_M808B2
@@ -2863,6 +3047,10 @@ class CfgVehicles {
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
         canFloat = true;
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
     };
 class O_DBA_CIS_Obliterator_F : OPTRE_M808S
     {
@@ -2877,6 +3065,10 @@ class O_DBA_CIS_Obliterator_F : OPTRE_M808S
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
         canFloat = true;
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
         class Turrets : turrets
         {
             class MainTurret : Mainturret
@@ -2907,6 +3099,10 @@ class O_DBA_CIS_Conquest_F : OPTRE_M850_UNSC
         faction = "O_DBA_CIS_F";
         crew = "O_DBA_CIS_B1_Crew_Droid_F";
         canFloat = true;
+        class EventHandlers : DefaultEventhandlers
+        {
+            init = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_dismount.sqf';";
+        };
             class Turrets : turrets 
         {
             class MainTurret : Mainturret

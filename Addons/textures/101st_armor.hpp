@@ -148,7 +148,7 @@ class 101st_Custom_traitor_Pauldron : JLTS_CloneVestReconOfficer
 			"camo1",
 			"camo2"
 		};
-		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		vestType = "Rebreather";
 	};
 };
@@ -495,7 +495,7 @@ class 101st_Jerec_Pauldron: V_RebreatherB
 		uniformType="Default";
 		mass=80;
 		vestType = "Rebreather";
-		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
 		hiddenSelections[] = {"camo1"};
 	};
 };
@@ -2991,7 +2991,7 @@ class 101st_212_Prodigy: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Prodigy (Legacy)";
+	displayName="101st Pro-Diggy (Legacy)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -3137,41 +3137,6 @@ class 101st_212_Traitor : Uniform_Base
 	{
 		uniformModel = "-";
 		uniformClass = "101st_Traitor_212th";
-		containerClass = "supply150";
-		uniformType = "Neopren";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo1"
-		};
-		mass = 40;
-	};
-};
-
-// Platoon ID Armour
-
-
-class 101st_212_Broadsword1HQ : Uniform_Base
-{
-	dlc = "101st_Aux_Mod";
-	scope = 2;
-	displayName = "101st Broadsword 1 HQ (JLTS)";
-	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-	hiddenSelections[] =
-	{
-		"camo1",
-		"camo2"
-	};
-	hiddenSelectionsTextures[] =
-	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Broadsword1HQ_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\NCO_Legs_CO.paa"
-	};
-	class ItemInfo : UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "101st_Broadsword1HQ_212th";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =

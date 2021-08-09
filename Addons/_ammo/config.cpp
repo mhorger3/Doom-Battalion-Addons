@@ -7,8 +7,17 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
+		ammo[] =
+		{
+			"DBA_AMMO_ORBITAL"
+		};
+		magazines[] =
+		{
+			"DBA_Mag_ORBITAL"
+		};
 	};
 };
+
 class CfgMagazineWells
 {
 	class DBA_GL_Mags_magwell

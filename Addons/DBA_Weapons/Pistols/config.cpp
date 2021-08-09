@@ -11,6 +11,8 @@ class cfgPatches
 	};
 };
 class UGL_F;
+
+class DefaultEventHandlers;
 class Mode_SemiAuto;
 class Mode_Burst: Mode_SemiAuto
 {
@@ -296,8 +298,12 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,.5};
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
-		magazines[] = {"DBA_45acp_Mag_Base"};
+		magazines[] = {"DBA_45acp_Mag_Base","DBA_Mag_ORBITAL"};
 		magazineWell[] = {"DBA_DC17_GL_Mags_magwell"};
+		class EventHandlers : DefaultEventhandlers
+		{
+			Fired = "(_this select 0) call DBA_OrbitalDesignator_fnc_Fired";
+		};
 		class Single: Single
 		{
 			dispersion = 0.0001;

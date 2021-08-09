@@ -38,7 +38,12 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
-	class Rifle_Base_F;
+	class Rifle;
+	class Rifle_Base_F : Rifle
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
 	class Rifle_Long_Base_F: Rifle_Base_F
 	{
 		class WeaponSlotsInfo;
@@ -119,23 +124,22 @@ class CfgWeapons
 		fireLightIntensity=0.2;
 		fireLightDiffuse[] = {0,1,0};
 		fireLightAmbient[] = {0,1,0};
-		class Single: Single
+		class Single: Mode_SemiAuto
 		{
+
+			soundContinuous = 0;
+			soundBurst = 0;
 			sounds[]=
 			{
 				"StandardSound"
 			};
-			class BaseSoundModeType
+			class StandardSound
 			{
-				weaponSoundEffect = "";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {};
-			};
-			class StandardSound : BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 };
+				weaponSoundEffect = "DefaultRifle";
+				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 }; 
+				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
+				soundBegin[] = { "begin1",1 };
+				soundClosure[] = { "closure1",1 };
 			};
 			recoil = "recoil_MSBS65_ubs";
 			recoilProne = "assaultRifleBase";
