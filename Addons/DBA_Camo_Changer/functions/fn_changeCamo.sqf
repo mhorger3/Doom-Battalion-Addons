@@ -1,6 +1,25 @@
+/**
+ * Author: Ragwolf
+ * Changes a unit's camo to the specified camo from the uniform's template.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ * 1: Camo <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player, "Tropic"] call DBA_Camo_Changer_fnc_changeCamo
+ *
+ * Public: No
+ */
+
 params ["_unit", "_camo"];
 
 private ["_uniformTextures", "_backpackTextures", "_helmetClass"];
+
+private _camoTemplate = getText (configFile >> "CfgWeapons" >> (uniform _unit) >> "DBA_camoTemplate");
 
 if (_camo isEqualTo "Base") then
 {
@@ -10,9 +29,9 @@ if (_camo isEqualTo "Base") then
 }
 else
 {
-	_uniformTextures = getArray (configFile >> "DBA_Camo" >> _templates >> _camo >> "uniformTextures");
-	_backpackTextures = getArray (configFile >> "DBA_Camo" >> _templates >> _camo >> "backpackTextures");
-	_helmetClass = getText (configFile >> "DBA_Camo" >> _templates >> _camo >> "helmetClass");
+	_uniformTextures = getArray (configFile >> "DBA_Camo" >> _camoTemplate >> _camo >> "uniformTextures");
+	_backpackTextures = getArray (configFile >> "DBA_Camo" >> _camoTemplate >> _camo >> "backpackTextures");
+	_helmetClass = getText (configFile >> "DBA_Camo" >> _camoTemplate >> _camo >> "helmetClass");
 };
 
 private _baseUniformTextures = _unit getVariable "DBA_baseUniformTextures";

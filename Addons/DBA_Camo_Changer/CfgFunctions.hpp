@@ -7,12 +7,15 @@ class CfgFunctions
 			file = "101st_Aux_Mod\Addons\DBA_Camo_Changer\functions";
 
             class addInteractions {};
+            class activateBlend {};
             class blend {};
             class changeCamo {};
+            class deactivateBlend {};
             class getCamoTemplate {};
             class hasCamoChanger {};
+            class hint {};
             class isCamoEquipped {};
-            class zeus
+            class registerZeusModules
             {
                 postInit = 1;
             };

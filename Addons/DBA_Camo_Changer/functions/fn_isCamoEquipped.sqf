@@ -12,7 +12,7 @@
  * Example:
  * [player, "Tropic"] call DBA_Camo_Changer_fnc_isCamoEquipped
  *
- * Public: Yes
+ * Public: No
  */
 params ["_unit", "_camo"];
 

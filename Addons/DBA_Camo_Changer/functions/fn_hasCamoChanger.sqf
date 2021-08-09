@@ -11,7 +11,7 @@
  * Example:
  * player call DBA_Camo_Changer_fnc_hasCamoChanger
  *
- * Public: Yes
+ * Public: No
  */
 params ["_unit"];
 

@@ -20,9 +20,15 @@ class DBA_Camo
         class Arid
         {
             displayName = "Arid";
-            chestTexture = "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Chest_CO.paa";
-            legsTexture = "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Legs_CO.paa";
-            backpackTexture = "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_Backpack_CO.paa";
+            uniformTextures[] =
+            {
+                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Legs_CO.paa"
+            };
+            backpackTextures[] =
+            {
+                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_Backpack_CO.paa"
+            };
             helmetClass = "101st_ARF_Arid";
         };
 

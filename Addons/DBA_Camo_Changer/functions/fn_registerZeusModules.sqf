@@ -1,3 +1,19 @@
+/**
+ * Author: Ragwolf
+ * Registers camouflage related Zeus modules.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call DBA_Camo_Changer_fnc_zeus
+ *
+ * Public: No
+ */
+
 private _category = "101st Aux Mod - Camouflage";
 
 [_category, "Camouflage Infantry",
