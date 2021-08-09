@@ -5,7 +5,7 @@ if (DBA_Common_Debug) then
 	diag_log format ["DEBUG_fn_moveObject: [%1, %2, %3]", _object, _position, _moveDuration];
 };
 
-(_object call BIS_fnc_getPitchBank) params ["_startPitch", "_startBank"];
+(_object call DBA_Common_fnc_getPitchBank) params ["_startPitch", "_startBank"];
 
 hideObjectGlobal _object;
 
@@ -20,7 +20,7 @@ private _delay = if (_turnFirst) then { _moveDuration + _turnDuration } else { _
 		{
 			private _dirOffset = (typeOf _object) call DB101_Hyperspace_fnc_getShipDirOffset;
 			_object setDir (_object getDir _position) + _dirOffset + 180;
-			[_object, _startPitch, _startBank] call BIS_fnc_setPitchBank;
+			[_object, _startPitch, _startBank] call DBA_Common_fnc_setPitchBank;
 		};
 		_object setPosASL _position;
 		_object hideObjectGlobal false;
