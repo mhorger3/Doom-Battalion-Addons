@@ -2,7 +2,7 @@ class CfgVehicles
 {
 	class Strategic;
 
-	class DBA_CapitalShip_Ammo_Base: Strategic
+	class DBA_CapitalShips_Ammo_Base_Prop: Strategic
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -14,7 +14,7 @@ class CfgVehicles
 		mass = 100;
 	};
 
-	class DBA_CapitalShips_Ammo_Blue: DBA_CapitalShip_Ammo_Base
+	class DBA_CapitalShips_Ammo_Blue_Prop: DBA_CapitalShips_Ammo_Base_Prop
 	{
 		displayName = "Capital Ship Ammo (Blue)";
 		scope = 2;
@@ -22,7 +22,7 @@ class CfgVehicles
 		model = "101st_Aux_Mod\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltBlue.p3d";
 	};
 
-	class DBA_CapitalShips_Ammo_Green: DBA_CapitalShip_Ammo_Base
+	class DBA_CapitalShips_Ammo_Green_Prop: DBA_CapitalShips_Ammo_Base_Prop
 	{
 		displayName = "Capital Ship Ammo (Green)";
 		scope = 2;
@@ -30,7 +30,7 @@ class CfgVehicles
 		model = "101st_Aux_Mod\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltGreen.p3d";
 	};
 
-	class DBA_CapitalShips_Ammo_Red: DBA_CapitalShip_Ammo_Base
+	class DBA_CapitalShips_Ammo_Red_Prop: DBA_CapitalShips_Ammo_Base_Prop
 	{
 		displayName = "Capital Ship Ammo (Red)";
 		scope = 2;
@@ -46,7 +46,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Blue";
 		DBA_barragePosition[] = {0, 0, 50};
 	};
 
@@ -58,7 +58,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Blue";
 		DBA_barragePosition[] = {0, 0, 0};
 	};
 
@@ -70,7 +70,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 0};
 	};
 
@@ -82,8 +82,15 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, -40};
+		DBA_aircraftSpawnerPositions[] =
+		{
+			[[-25, 35, 10], 0],
+			[[-45, 35, 10], 0],
+			[[-65, 35, 10], 0],
+			[[-85, 35, 10], 0]
+		};
 	};
 
 	class 442_providence_zeus;
@@ -94,8 +101,15 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 65};
+		DBA_aircraftSpawnerPositions[] =
+		{
+			[[0, 50, 110], 90],
+			[[0, 90, 110], 90],
+			[[0, 130, 110], 90],
+			[[0, 170, 110], 90]
+		};
 	};
 
 	class 442_providence_d_zeus;
@@ -106,8 +120,15 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 230};
+		DBA_aircraftSpawnerPositions[] =
+		{
+			[[0, 130, 220], 90],
+			[[0, 170, 220], 90],
+			[[0, 210, 220], 90],
+			[[0, 250, 220], 90]
+		};
 	};
 
 	class 442_quasar;
@@ -118,7 +139,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Blue";
 		DBA_barragePosition[] = {0, 0, 0};
 	};
 
@@ -130,7 +151,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 65};
 	};
 
@@ -142,7 +163,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 65};
 	};
 
@@ -154,7 +175,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Red";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Red";
 		DBA_barragePosition[] = {0, 0, 300};
 	};
 
@@ -166,7 +187,7 @@ class CfgVehicles
 		editorSubcategory = "DBA_CapitalShips_Ships";
 		simulation = "fountain";
 		sound = "capital_ship_engines";
-		DBA_ammo = "DBA_CapitalShip_Ammo_Blue";
+		DBA_ammo = "DBA_CapitalShips_Ammo_Blue";
 		DBA_barragePosition[] = {0, 0, 28};
 	};
 };

@@ -12,18 +12,18 @@ class CfgPatches
         requiredVersion = 0.1;
         ammo[] =
         {
-            "DBA_CapitalShip_Ammo_Base",
-            "DBA_CapitalShip_Ammo_Blue",
-            "DBA_CapitalShip_Ammo_Green",
-            "DBA_CapitalShip_Ammo_Red"
+            "DBA_CapitalShips_Ammo_Base",
+            "DBA_CapitalShips_Ammo_Blue",
+            "DBA_CapitalShips_Ammo_Green",
+            "DBA_CapitalShips_Ammo_Red"
         };
         units[] =
         {
-            // Ammo
-            "DBA_CapitalShip_Ammo_Base",
-            "DBA_CapitalShip_Ammo_Blue",
-            "DBA_CapitalShip_Ammo_Green",
-            "DBA_CapitalShip_Ammo_Red",
+            // Ammo Props
+            "DBA_CapitalShips_Ammo_Base_Prop",
+            "DBA_CapitalShips_Ammo_Blue_Prop",
+            "DBA_CapitalShips_Ammo_Green_Prop",
+            "DBA_CapitalShips_Ammo_Red_Prop",
             // Ships
             "DBA_CapitalShips_Acclamator",
             "DBA_CapitalShips_Arquitens",
