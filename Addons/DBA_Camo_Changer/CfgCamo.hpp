@@ -2,6 +2,8 @@ class DBA_Camo
 {
     class 101st
     {
+        requiredItem = "DBA_ARF_Multi_Tool";
+
         class Base
         {
             displayName = "Base";
