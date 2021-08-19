@@ -1263,6 +1263,7 @@
 			model="kobra\442_weapons\ammo\yellow_tracer.p3d";
 			effectfly="442_plasma_yellow";
 		};
+		// Imperial Stuff
 		class E11D_Base_Ammo : DBA_Vulken
 		{
 			bulletFly[] =
@@ -1432,5 +1433,46 @@
 				0.15000001,
 				"soundHit6",
 				0.15000001
+			};
+		};
+		// Rebel Stuff
+
+		class P7_Base_Ammo :DBA_ammo_base //.338 Win Mag
+		{
+			hit = 23; //How much damage when it hits
+			indirecthit = 0; //Splash Damage
+			indirecthitrange = 0; //Splash Damage Range in meters
+			caliber = 4; //Acts as penetration multiplier for the projectile.
+			typicalSpeed = 890; //What speed does this need to be going to inflict full damage
+
+			tracerScale = 0.5;
+
+			audibleFire = 100; //Alerts AI from further away
+
+			brightness = 1; // How Bright/color
+			effectfly = "442_plasma_blue";
+			model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+			lightcolor[] = { .5,.5,.5 }; //Color of light in {R,G,B}
+			flaresize = 1; //how big the flash is
+			tracerscale = 0;
+
+			dangerRadiusBulletClose = 10;
+			dangerRadiusHit = 14;
+			suppressionRadiusBulletClose = 8;
+			suppressionRadiusHit = 10;
+			aiAmmoUsageFlags = 64;
+			class CamShakeExplode
+			{
+				power = 2.8284299;
+				duration = 0.60000002;
+				frequency = 20;
+				distance = 8.48528;
+			};
+			class CamShakeHit
+			{
+				power = 5;
+				duration = 0.2;
+				frequency = 20;
+				distance = 1;
 			};
 		};
