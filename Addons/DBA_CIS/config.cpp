@@ -9656,7 +9656,21 @@ class CfgVehicles
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
+		armor=500;
+		armorStructural=3;
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_F.jpg";
+		enginePower=190;
+		maxOmega=335;
+		peakTorque=580;
+		thrustDelay=0.5;
+		clutchStrength=200;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=550000;
+		idleRpm=600;
+		redRpm=3200;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.55;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -9675,9 +9689,9 @@ class CfgVehicles
 				};
 				magazines[] =
 				{
-					"DBA_90mm_UR62M_HEAT_x14_mag",
-					"DBA_90mm_UR62M_HEAT_x14_mag",
-					"DBA_90mm_UR62M_HEAT_x14_mag"
+					"DBA_90mm_UR62M_HEAT_x24_mag",
+					"DBA_90mm_UR62M_HEAT_x24_mag",
+					"DBA_90mm_UR62M_HEAT_x24_mag"
 				};
             };
         };
@@ -9692,7 +9706,21 @@ class CfgVehicles
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
+		armor=500;
+		armorStructural=3;
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Olive_F.jpg";
+		enginePower=190;
+		maxOmega=335;
+		peakTorque=580;
+		thrustDelay=0.5;
+		clutchStrength=200;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=550000;
+		idleRpm=600;
+		redRpm=3200;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.55;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -9711,9 +9739,9 @@ class CfgVehicles
 				};
 				magazines[] =
 				{
-					"DBA_90mm_UR62M_HEAT_x14_mag",
-					"DBA_90mm_UR62M_HEAT_x14_mag",
-					"DBA_90mm_UR62M_HEAT_x14_mag"
+					"DBA_90mm_UR62M_HEAT_x24_mag",
+					"DBA_90mm_UR62M_HEAT_x24_mag",
+					"DBA_90mm_UR62M_HEAT_x24_mag"
 				};
             };
         };
@@ -9726,8 +9754,23 @@ class CfgVehicles
 		displayName="GAT (ADAS)";
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
+		armor=700;
+		armorStructural=7;
 		side=0;
 		faction="O_DBA_CIS_F";
+		enginePower=190;
+		maxOmega=335;
+		maxSpeed=30;
+		peakTorque=580;
+		thrustDelay=0.5;
+		clutchStrength=200;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=350000;
+		idleRpm=600;
+		redRpm=3200;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.55;
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_F.jpg";
 		class Turrets: turrets
         {
@@ -9744,7 +9787,8 @@ class CfgVehicles
 				{
 					"DBA_165mm_C33_BESH_x30_mag"
 				};
-			
+				minElev=-8;
+				maxElev=45;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -9758,7 +9802,22 @@ class CfgVehicles
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
+		armor=400;
+		armorStructural=4;
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_F.jpg";
+		enginePower=190;
+		maxOmega=335;
+		maxSpeed=50;
+		peakTorque=580;
+		thrustDelay=0.5;
+		clutchStrength=200;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=550000;
+		idleRpm=600;
+		redRpm=3200;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.55;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -9774,7 +9833,8 @@ class CfgVehicles
 				{
 					"DBA_762_REC_x2600_mag"
 				};
-			
+				minElev=-9;
+				maxElev=40;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -9788,7 +9848,21 @@ class CfgVehicles
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
+		armor=400;
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_GAT_Light_Olive_F.jpg";
+		enginePower=190;
+		maxOmega=335;
+		maxSpeed=50;
+		peakTorque=580;
+		thrustDelay=0.5;
+		clutchStrength=200;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=550000;
+		idleRpm=600;
+		redRpm=3200;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.55;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -9805,7 +9879,8 @@ class CfgVehicles
 				{
 					"DBA_762_REC_x2600_mag"
 				};
-			
+				minElev=-9;
+				maxElev=40;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -9815,13 +9890,37 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="King AAT (Blue)";
-		armor=700;
-		armorStructural=7;
+		armor=1000;
+		armorStructural=20;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_F.jpg";
+		enginePower=485;
+		maxOmega=314.159265;
+		maxSpeed=38;
+		peakTorque=1850;
+		torqueCurve[] = 
+		{
+			{0, 0},
+			{0.163077, 0.277015},
+			{0.231154, 0.614065}, 
+			{0.306154, 0.932247}, 
+			{0.358846, 0.975}, 
+			{0.615000, 1}, 
+			{0.973846, 0.895026}, 
+			{1.281920, 0.827273}
+		};
+		thrustDelay=0.5;
+		clutchStrength=115;
+		brakeIdleSpeed=5;
+		latency=0.1;
+		tankTurnForce=475000;
+		idleRpm=600;
+		redRpm=3000;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.15;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -9852,7 +9951,8 @@ class CfgVehicles
 					"DBA_130mm_R13_AP_x15_mag",
 					"DBA_130mm_UR11_HE_x20_mag"
 				};
-			
+				maxHorizontalRotSpeed=0.4444444444;
+				maxVerticalRotSpeed=0.6667;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -9863,14 +9963,26 @@ class CfgVehicles
         scopeCurator = 2;
         displayName = "Recon AAT (Tan)";
         armor = 500;
-		acceleration = 10;
         armorStructural = 7;
         editorSubcategory = "O_DBA_CIS_Tanks";
         vehicleClass = "O_DBA_CIS_Tanks";
         side = 0;
         faction = "O_DBA_CIS_F";
         editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Tan_F.jpg";
-			class Turrets: turrets
+		enginePower=1500;
+		maxOmega=592;
+		maxSpeed=80;
+		peakTorque=4870.024;
+		thrustDelay=0.5;
+		clutchStrength=175;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=650000;
+		idleRpm=2200;
+		redRpm=5652;
+		engineLosses=5;
+		epeImpulseDamageCoef=0.15;
+		class Turrets: turrets
         {
             class MainTurret: Mainturret
             {		
@@ -9915,7 +10027,8 @@ class CfgVehicles
 					"DBA_57mm_ap_x6_mag",
 					"DBA_57mm_ap_x6_mag"
 				};
-			
+				maxHorizontalRotSpeed=0.8;
+				maxVerticalRotSpeed=0.6667;
             };
         };
 		
@@ -9926,13 +10039,37 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="Medium AAT (Snow)";
-		armor=600;
-		armorStructural=7;
+		armor=750;
+		armorStructural=12;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Snow_F.jpg";
+		enginePower=522;
+		maxOmega=314;
+		maxSpeed=55;
+		peakTorque=2550;
+		torqueCurve[] = 
+		{
+			{0, 0},
+			{0.163077, 0.277015},
+			{0.231154, 0.614065}, 
+			{0.306154, 0.932247}, 
+			{0.358846, 0.975}, 
+			{0.615000, 1}, 
+			{0.973846, 0.895026}, 
+			{1.281920, 0.827273}
+		};
+		thrustDelay=0.5;
+		clutchStrength=150;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=600000;
+		idleRpm=600;
+		redRpm=3000;
+		engineLosses=5;
+		epeImpulseDamageCoef=0.15;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -9965,7 +10102,8 @@ class CfgVehicles
 					"DBA_115mm_KB4_HEAT_x10_mag",
 					"DBA_115mm_UB11_HEF_x20_mag"
 				};
-			
+				maxHorizontalRotSpeed=0.8;
+				maxVerticalRotSpeed=0.6667;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -9975,13 +10113,37 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="Medium AAT (Tropic)";
-		armor=600;
-		armorStructural=7;
+		armor=750;
+		armorStructural=12;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Tropic_F.jpg";
+		enginePower=522;
+		maxOmega=314;
+		maxSpeed=55;
+		peakTorque=2550;
+		torqueCurve[] = 
+		{
+			{0, 0},
+			{0.163077, 0.277015},
+			{0.231154, 0.614065}, 
+			{0.306154, 0.932247}, 
+			{0.358846, 0.975}, 
+			{0.615000, 1}, 
+			{0.973846, 0.895026}, 
+			{1.281920, 0.827273}
+		};
+		thrustDelay=0.5;
+		clutchStrength=150;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=600000;
+		idleRpm=600;
+		redRpm=3000;
+		engineLosses=5;
+		epeImpulseDamageCoef=0.15;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10014,7 +10176,8 @@ class CfgVehicles
 					"DBA_115mm_KB4_HEAT_x10_mag",
 					"DBA_115mm_UB11_HEF_x20_mag"
 				};
-			
+				maxHorizontalRotSpeed=0.8;
+				maxVerticalRotSpeed=0.6667;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10024,13 +10187,37 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="King AAT (Urban)";
-		armor=700;
-		armorStructural=7;
+		armor=1000;
+		armorStructural=20;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_Urban_F.jpg";
+		enginePower=485;
+		maxOmega=314.159265;
+		maxSpeed=38;
+		peakTorque=1850;
+		torqueCurve[] = 
+		{
+			{0, 0},
+			{0.163077, 0.277015},
+			{0.231154, 0.614065}, 
+			{0.306154, 0.932247}, 
+			{0.358846, 0.975}, 
+			{0.615000, 1}, 
+			{0.973846, 0.895026}, 
+			{1.281920, 0.827273}
+		};
+		thrustDelay=0.5;
+		clutchStrength=115;
+		brakeIdleSpeed=5;
+		latency=0.1;
+		tankTurnForce=475000;
+		idleRpm=600;
+		redRpm=3000;
+		engineLosses=20;
+		epeImpulseDamageCoef=0.15;
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10062,7 +10249,8 @@ class CfgVehicles
 					"DBA_130mm_R13_AP_x15_mag",
 					"DBA_130mm_UR11_HE_x20_mag"
 				};
-			
+				maxHorizontalRotSpeed=0.4444444444;
+				maxVerticalRotSpeed=0.6667;
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10118,7 +10306,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeCurator=2;
-		displayName="BEARD AA";
+		displayName="Tempestus CIWS";
 		editorSubcategory="O_DBA_CIS_AAs";
 		vehicleClass="O_DBA_CIS_AAs";
 		side=0;
