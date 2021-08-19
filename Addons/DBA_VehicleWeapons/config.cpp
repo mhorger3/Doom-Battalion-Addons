@@ -42,7 +42,7 @@ class CfgPatches
 			"DBA_130mm_UR11_HE_x20_mag",
 			"DBA_140mm_R1P_AP_x17_mag",
 			"DBA_140mm_KB1P_HEAT_x23_mag",
-			"DBA_90mm_UR62M_HEAT_x14_mag",
+			"DBA_90mm_UR62M_HEAT_x24_mag",
 			"DBA_165mm_C33_BESH_x30_mag",
 			"DBA_23mm_UM23_HEPF_x5000_mag",
 			"DBA_792_M5A_x400_mag",
@@ -1552,7 +1552,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"DBA_90mm_UR62M_HEAT_x14_mag"
+			"DBA_90mm_UR62M_HEAT_x24_mag"
 		};
 		magazineReloadTime=15;
 		autoReload=1;
@@ -1761,51 +1761,51 @@ class CfgWeapons
 			showToPlayer=0;
 			soundBurst=0;
 			soundContinuous=0;
-			aiRateOfFire=2;
+			aiRateOfFire=1;
 			aiRateOfFireDistance=500;
-			aiRateOfFireDispersion=1;
+			aiRateOfFireDispersion=0.1;
 			minRange=0;
-			minRangeProbab=0.050000001;
+			minRangeProbab=0.350000001;
 			midRange=100;
 			midRangeProbab=0.57999998;
 			maxRange=300;
-			maxRangeProbab=0.30000001;
+			maxRangeProbab=0.90000001;
 		};
 		class short: close
 		{
 			minRange=150;
-			minRangeProbab=0.2;
+			minRangeProbab=0.65;
 			midRange=500;
-			midRangeProbab=0.69999999;
+			midRangeProbab=0.89999999;
 			maxRange=1500;
-			maxRangeProbab=0.40000001;
+			maxRangeProbab=0.70000001;
 			aiRateOfFire=3;
 			aiRateOfFireDistance=500;
-			aiRateOfFireDispersion=2;
+			aiRateOfFireDispersion=0.1;
 		};
 		class medium: close
 		{
 			minRange=250;
-			minRangeProbab=0.2;
+			minRangeProbab=0.65;
 			midRange=750;
-			midRangeProbab=0.69999999;
+			midRangeProbab=0.85999999;
 			maxRange=1000;
-			maxRangeProbab=0.40000001;
-			aiRateOfFire=5;
+			maxRangeProbab=0.8000001;
+			aiRateOfFire=1;
 			aiRateOfFireDistance=700;
-			aiRateOfFireDispersion=3;
+			aiRateOfFireDispersion=0.1;
 		};
 		class far: close
 		{
 			minRange=500;
-			minRangeProbab=0.2;
+			minRangeProbab=0.9;
 			midRange=1200;
-			midRangeProbab=0.69999999;
+			midRangeProbab=0.85999999;
 			maxRange=2100;
-			maxRangeProbab=0.30000001;
-			aiRateOfFire=7;
+			maxRangeProbab=0.750000001;
+			aiRateOfFire=1;
 			aiRateOfFireDistance=1000;
-			aiRateOfFireDispersion=3;
+			aiRateOfFireDispersion=0.1;
 		};
 	};
 	class DBA_130mw_HH30_Cannon : cannon_120mm{
@@ -1928,6 +1928,13 @@ class CfgWeapons
 			"DBA_57mm_ap_x6_mag"
 		};
 		magazineReloadTime=2.5;
+		modes[]=
+		{
+			"player",
+			"short",
+			"medium",
+			"far"
+		};
 		class player: Mode_FullAuto
 		{
 			sounds[]=
@@ -1951,7 +1958,6 @@ class CfgWeapons
 			};
 			reloadTime=0.5714286;
 			aiBurstTerminable = 1;
-			burstRangeMax = 6;
 			soundContinuous=0;
 			autoReload=1;
 			autoFire=1;
@@ -1964,6 +1970,71 @@ class CfgWeapons
 			midRangeProbab=0.725;
 			maxRange=800;
 			maxRangeProbab=0.45;
+		};
+		class close: player
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=6;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=2;
+			burstRangeMax=6;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=4;
+			burstRangeMax=6;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=6;
+			burstRangeMax=6;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
 		};
 	};
 	class DBA_MBT_Cannon: cannon_120mm
@@ -3060,14 +3131,14 @@ class CfgMagazines
 		namesound="mgun";
 		muzzleimpulsefactor[]={0.050000001,0.050000001};
 	};
-	class DBA_90mm_UR62M_HEAT_x14_mag : DBA_140mm_KB1P_HEAT_x23_mag{
+	class DBA_90mm_UR62M_HEAT_x24_mag : DBA_140mm_KB1P_HEAT_x23_mag{
 		displayname="90mw UR-26M High Explosve Anti Tank Multi-Purpose";
 		ammo="DBA_90mm_UR62M_HEAT";
 		displaynamemagazine="90mw UR-26M HEAT-MP";
 		shortnamemagazine="UR-26M HEAT-MP";
 		displayNameMFDFormat="HEAT-MP";
 		displayNameShort="HEAT-MP";
-		count=14;
+		count=24;
 		initspeed=750;
 		tracersevery=1;
 	};
@@ -4032,7 +4103,7 @@ class CfgAmmo
 		explosive = 0.9;
 		airLock = 1;
 		canLock = 2;
-		aiAmmoUsageFlags = "256";
+		aiAmmoUsageFlags = "64 + 256";
 		cost = 15;
 		model="kobra\442_weapons\ammo\red_tracer.p3d";
 		tracerScale = 1;
@@ -4385,9 +4456,9 @@ class CfgAmmo
 	};
 	class DBA_165mm_C33_BESH : 3AS_GAT_redPlasma_AT{
 		displayName="165mw C-33 BESH";
-		hit = 800;
-		indirectHit = 405;
-		indirectHitRange = 18;
+		hit = 400;
+		indirectHit = 800;
+		indirectHitRange = 25;
 		warheadName = "BESH";
 		visibleFire=42;
 		audibleFire=42;
@@ -4395,9 +4466,10 @@ class CfgAmmo
 		explosionSoundEffect="DefaultExplosion";
 		explosive=1;
 		cost=75;
-		CraterEffects="ATMissileCrater";
-		explosionEffects="IEDMineSmallExplosion";
+		CraterEffects ="IEDMineBigGarbageCrater";
+		explosionEffects="IEDMineBigExplosion";
 		tracerStartTime=0;
+		coefGravity = 2.0;
 		tracerEndTime=60;
 		tracerScale=1.1;
 		airFriction=0;
