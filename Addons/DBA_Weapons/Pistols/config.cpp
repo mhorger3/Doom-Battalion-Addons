@@ -673,7 +673,97 @@ class CfgWeapons
 			};
 		};
 	};
-
+	class DBA_Westar35_Mod_0: DBA_Pistol_Base
+	{
+		author="Trip";
+		scope=2;
+		//JLTS_canHaveShield=1; //No Shield Model Yet
+		//JLTS_shieldedWeapon="DBA_Defender_shield";
+		baseweapon="DBA_Westar35_Mod_0";
+		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\Westar35m0.p3d";
+		muzzles[] = {"this", "Stun"};
+		magazines[]=
+		{
+			"DBA_127x33_x7_Yellow"
+		};
+		magazineWell[] = {};
+		displayName = "[101st] Westar-35 'Hammerhead'";
+		descriptionShort = "Westar-35";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mk20\firemode_Mk20",0.251189,1,5};
+		hiddenSelectionsTextures[] = 
+		{
+			"101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\DefaultMaterial_CO.paa"
+		};
+		soundBullet[]={};
+		modes[]=
+		{
+			"Single"
+		};
+		simulation = "Weapon";
+		fireLightDiffuse[] = {1,1,0};
+		fireLightAmbient[] = {0.5,0.5,0};
+		fireLightIntensity = 0.2;
+		fireLightDuration = 0.05;
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Westar_CA.paa";
+		class Single: Single
+		{
+			reloadTime = 0.075;
+			dispersion=0.00201;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+			aiRateOfFire=2;
+			aiRateOfFireDistance=500;
+		};
+		
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=30;
+			holsterScale = 0.75;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+	};
+	class DBA_Dual_Westar35_Mod_0: DBA_Westar35_Mod_0
+	{
+		scope=2;
+		displayName = "[101st] Dual Westar-35 'Hammerhead'";
+		baseweapon="DBA_Dual_Westar35_Mod_0";
+		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\DualWestar35m0.p3d";
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Westar_CA.paa";
+		weaponInfoType="RscWeaponZeroing";
+		reloadAction="3AS_GestureReloadDualDC17S";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"3AS\3AS_Weapons\DC17S\data\anim\attempt1.rtm"
+		};
+		magazines[]=
+		{
+			"Dual_Hammerhead_x9_Magazine"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
+		};
+	};
 	
 	class DBA_Dual_Defender: DBA_Dual_Westar35_Mod_0
 	{
@@ -936,6 +1026,21 @@ class CfgWeapons
 class CfgMagazines
 {
 	class CA_Magazine;
+	class Dual_Hammerhead_x9_Magazine: CA_Magazine
+	{
+		author="Trip";
+		scope=2;
+		displayName = "9Rnd Dual Hammerhead Magazine";
+		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
+		ammo="DBA_Dual_Hammerhead_ammo";
+		count=9;
+		mass=4;
+		initSpeed=310;
+		tracersEvery=1;
+		modelSpecial="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\Dual\WestarDualMag.p3d";
+		modelSpecialIsProxy = 1;
+		descriptionShort="For the fastest guns in the west";
+	};
 	
 	class Dual_Defender_x22_Magazine: CA_Magazine
 	{

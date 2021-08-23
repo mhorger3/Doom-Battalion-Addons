@@ -344,7 +344,107 @@ class CfgWeapons
             scale[]={0};
         };
 	};
-
+	class DBA_DC15sGL: DBA_DC15S_base
+	{
+		JLTS_canHaveShield = 0;
+		displayName = "[101st] DC-15sGL Carbine";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
+		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
+		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\15S_CA.paa";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		class DBA_3AS_GL_F: UGL_F
+		{
+			displayName="[101st] DC15-GL";
+			descriptionShort="GL for the DC15A Platform";
+			useModelOptics=0;
+			useExternalOptic=0;
+			magazines[] = {};
+			magazineWell[] += {"DBA_GL_Mags_magwell"};
+			cameraDir="OP_look";
+			discreteDistance[]={50,75,100,150,200,250,300,350,400};
+			discreteDistanceCameraPoint[]=
+			{
+				"OP_eye_50",
+				"OP_eye_75",
+				"OP_eye_100",
+				"OP_eye_150",
+				"OP_eye_200",
+				"OP_eye_250",
+				"OP_eye_300",
+				"OP_eye_350",
+				"OP_eye_400"
+			};
+			discreteDistanceInitIndex=1;
+			reloadAction="GestureReloadMXUGL";
+			reloadMagazineSound[]=
+			{
+				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
+				1,
+				1,
+				10
+			};
+		};
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
+		muzzles[] = {"this","DBA_3AS_GL_F"};
+		model = "\101st_Aux_Mod\Addons\DBA_Weapons\DC15S\DC15SGL.p3d";
+		ACE_clearJamAction = "ReloadMagazine";
+		modes[] = {"FullAuto","Single","close","short","medium"};
+		class Single;
+		class FullAuto: FullAuto
+		{
+			reloadTime = 0.075;
+			dispersion = 0.00131;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 30;
+			class CowsSlot: CowsSlot
+			{
+				access = 1;
+				compatibleItems[] = {"optic_MRCO","DBA_MRCO_A", "DBA_MRCO_B"};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				access = 1;
+				compatibleItems[] = {"RD501_muzzle_flash"};
+			};
+			class PointerSlot: PointerSlot
+			{
+				access = 1;
+				compatibleItems[] = {"acc_flashlight_smg_01"};
+			};
+		};
+		class FlashLight
+        {
+            color[]={180,160,130}; //color[]={180,160,130}; Default
+            ambient[]={0.9,0.3,0.3}; //ambient[]={0.89999998,0.80000001,0.69999999}; Default
+            intensity=100;
+            size=1;
+            innerAngle=5;
+            outerAngle=100;
+            coneFadeCoef=10;
+            position="usti hlavne";
+            direction="konec hlavne";
+            useFlare=1;
+            flareSize=1.5;
+            flareMaxDistance=100;
+            dayLight=1;
+            class Attenuation
+            {
+                start=0;
+                constant=0.5;
+                linear=0.1;
+                quadratic=0.2;
+                hardLimitStart=27;
+                hardLimitEnd=34;
+            };
+            scale[]={0};
+        };
+	};
 };
 class CfgVehicles
 {
