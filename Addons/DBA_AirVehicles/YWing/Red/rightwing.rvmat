@@ -51,7 +51,7 @@ class Stage4 {
 };
 
 class Stage5 {
-    texture = "101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Right_wing_smdi.paa";
+    texture = "101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Generic_smdi.paa";
     uvSource = "tex";
     class uvTransform {
         aside[] = {1,0,0};
