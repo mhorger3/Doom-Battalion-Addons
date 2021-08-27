@@ -41,6 +41,7 @@ class CfgPatches
 			"101st_laat_GARC",
 			"101st_laatUnarmed_GARC",
 			"101st_DSD_Droid",
+			"101st_Miner_Droid",
 			"101st_laatFloodLight_GARC",
 			"101st_Octo_Droid",
 			"101st_DSD3_Droid",
