@@ -107,14 +107,14 @@ class CfgVehicles
 				{
 					opticsDisplayName="WFOV";
 					initAngleX=0;
-					minAngleX=-30;
-					maxAngleX=30;
+					minAngleX=0;
+					maxAngleX=0;
 					initAngleY=0;
-					minAngleY=-100;
-					maxAngleY=100;
-					initFov=0.46599999;
-					minFov=0.46599999;
-					maxFov=0.46599999;
+					minAngleY=0;
+					maxAngleY=0;
+					initFov="(75 / 120)";
+					minFov="(75 / 120)";
+					maxFov="(75 / 120)";
 					directionStabilized=1;
 					visionMode[]=
 					{
@@ -122,7 +122,7 @@ class CfgVehicles
 						"NVG",
 						"Ti"
 					};
-					thermalMode[]={0,1};
+					thermalMode[]={0,1,7};
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 					opticsPPEffects[]=
 					{
@@ -132,30 +132,83 @@ class CfgVehicles
 				};
 				class Medium: Wide
 				{
-					initFov=0.093000002;
-					minFov=0.093000002;
-					maxFov=0.093000002;
-					opticsDisplayName="M";
-					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
+					opticsDisplayName="MFOV";
+					initFov="0.425/4";
+					minFov="0.425/4";
+					maxFov="0.425/4";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class Narrow: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov=0.0099999998;
-					minFov=0.0099999998;
-					maxFov=0.0099999998;
-					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
+					initFov="0.425/8";
+					minFov="0.425/8";
+					maxFov="0.425/8";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				showMiniMapInOptics=1;
-				showUAVViewInOptics=0;
-				showSlingLoadManagerInOptics=0;
+				class NarrowX16: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/16";
+					minFov="0.425/16";
+					maxFov="0.425/16";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX24: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/24";
+					minFov="0.425/24";
+					maxFov="0.425/24";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX36: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/36";
+					minFov="0.425/36";
+					maxFov="0.425/36";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX48: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/48";
+					minFov="0.425/48";
+					maxFov="0.425/48";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX60: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/60";
+					minFov="0.425/60";
+					maxFov="0.425/60";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX80: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/80";
+					minFov="0.425/80";
+					maxFov="0.425/80";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class NarrowX100: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="0.425/100";
+					minFov="0.425/100";
+					maxFov="0.425/100";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
 			};
-			minTurn=-160;
-			maxTurn=160;
+			minTurn=-180;
+			maxTurn=180;
 			initTurn=0;
-			minElev=-20;
+			minElev=-10;
 			maxElev=90;
-			initElev=5;
+			initElev=0;
 			maxXRotSpeed=1;
 			maxYRotSpeed=1;
 			maxMouseXRotSpeed=0.5;
@@ -163,6 +216,25 @@ class CfgVehicles
 			pilotOpticsShowCursor=1;
 			controllable=1;
 		};
+		class ViewPilot
+		{
+			initAngleX = 0;
+			minAngleX = -55;
+			maxAngleX = 85;
+			initAngleY = 0;
+			minAngleY = -150;
+			maxAngleY = 150;
+			minFov = 0.25;
+			maxFov = 1.25;
+			initFov = 0.75;
+			minMoveX = -100;
+			maxMoveX = 100;
+			minMoveY = 0;
+			maxMoveY = 0;
+			minMoveZ = 0;
+			maxMoveZ = 0;
+		};
+
 		class MFD: MFD
 		{
 		};
