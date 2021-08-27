@@ -16488,7 +16488,11 @@ class cfgVehicles
 	{
 		class Components: Components
 		{
-			class TransportPylonsComponent;
+			class TransportPylonsComponent
+			{
+				class Pylons;
+				class Presets;
+			};
 		};
 	};
 	class 101st_Z95_base: RD501_z95_blue
@@ -17881,7 +17885,7 @@ class cfgVehicles
 			LAAT_LIGHTS
 		};
 	};
-	class 101st_YWing_base: Plane_Fighter_03_dynamicLoadout_base_F
+	class 101st_YWing_base: RD501_z95_blue
 	{
 		irTarget=1;
 		irTargetSize=0.34999999;
@@ -18495,51 +18499,6 @@ class cfgVehicles
 		acceleration=600;
 		landingAoa="6 * 3.1415 / 180";
 		landingSpeed=215;
-		stallSpeed=50;
-		stallWarningTreshold=0.1;
-		armorStructured=1;
-		envelope[]={0,0.5,2.5,4.8000002,6,7,7.5,7.5,7.5,7,6.4000001,5.5999999,2.0999999,1.7,1.4,1.35,1.3,1.15,0};
-		draconicForceXCoef = 15;
-		draconicForceYCoef = 1;
-		draconicForceZCoef = 1;
-		draconicTorqueXCoef[] = {14,12,11.2,10.6,9.9,9.6,9.7,10.5,11,11.5,12};
-		draconicTorqueYCoef[] = {0.5,1,2,2.3,3,2.6,2.4,2.2,2,1.9,1.8};
-		angleOfIndicence=0.090000004;
-		airFriction0[]={60,50,12};
-		airFriction1[]={70,50,12};
-		airFriction2[]={60,50,12};
-		altNoForce=13000;
-		altFullForce=10000;
-		elevatorCoef[]={0,0.80000001,0.89999998,1,1.1,1.2,1.2,1.3,1.3,1.3,1.4,1.4,1.4};
-		elevatorSensitivity=1.3;
-		elevatorControlsSensitivityCoef=5;
-		aileronCoef[]={0,0.5,1,1.2,1.3,1.2,1.1};
-		aileronSensitivity=1.1;
-		aileronControlsSensitivityCoef=5;
-		rudderCoef[]={0.5,1.8,2.5999999,2.75,2.8,2.8499999,2.9000001,2.95,2.98,3.01,2.7,1.1,0.89999998,0.69999999,0.5,0.30000001};
-		rudderinfluence=0.89999998;
-		rudderControlsSensitivityCoef=2;
-		thrustCoef[]={2.5,3.5,3.5999999,3.8,4,4.5,5,4.5,3.5,3,2.7,2.5,2.0999999,2,1,1};
-		irScanRangeMin=10;
-		irScanRangeMax=10000;
-		irScanToEyeFactor=8;
-		fuelCapacity=8000;
-		wheelSteeringSensitivity=1.5;
-		maxOmega=2000;
-		airBrake=40;
-		airBrakeFrictionCoef=5;
-		flaps=1;
-		flapsFrictionCoef=0.31999999;
-		gearsUpFrictionCoef=0.60000002;
-		airFrictionCoefs0[]={0,0,0};
-		airFrictionCoefs1[]={0.1,0.5,0.0066};
-		airFrictionCoefs2[]={0.001,0.0049999999,6.8000001e-005};
-		laserScanner=1;
-		memoryPointLRocket="P Raketa";
-		memoryPointRRocket="L Raketa";
-		cost=10000000;
-		type="VAir";
-		threat[]={0.2,0.69999999,0.89999998};
 		class camShakeGForce
 		{
 			power=1;
