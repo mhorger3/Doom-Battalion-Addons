@@ -32,7 +32,7 @@ class CfgFunctions
 		class AdvancedUrbanRappelling
 		{
 			file = "101st_Aux_Mod\Addons\AUR_AdvancedUrbanRappelling\functions";
-			class advancedUrbanRappellingInit{postInit=1};
+			class advancedUrbanRappellingInit{postInit=1;};
 		};
 	};
 };
