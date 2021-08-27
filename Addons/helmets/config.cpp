@@ -1808,6 +1808,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Spark_Helm_CO.paa"
 		};
+			hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Spark_Helmet.rvmat" };
 	};
 	class 101st_Baca_Helmet: JLTS_CloneHelmetP2
 	{
