@@ -1078,7 +1078,6 @@ class CfgVehicles
 		{
 			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
 		};
-		weapons[]=
 		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
 		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
