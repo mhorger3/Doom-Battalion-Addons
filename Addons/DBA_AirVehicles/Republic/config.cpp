@@ -18399,6 +18399,8 @@ class cfgVehicles
 		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
 		crew="B_Pilot_F";
+		editorSubcategory = "RD501_Editor_Category_Air_Republic_vtol";
+		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";
 		driverLeftHandAnimName="throttle_pilot";
@@ -18436,6 +18438,7 @@ class cfgVehicles
 		{
 			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\cockpit.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\leftwing.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\rightwing.rvmat"};
 		insideSoundCoef=0.2;
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";

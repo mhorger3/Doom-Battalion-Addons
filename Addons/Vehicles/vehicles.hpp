@@ -18811,11 +18811,14 @@
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
 				weapons[]=
 				{
-					"101st_CIS_Mech"
+					"101st_EWEB_Repeater"
 				};
 				magazines[]=
 				{
-					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
+					"DBA_lmg_red_x500_mag",
 				};
 				memoryPointGunnerOptics = "gunnerview";
 				//gunnerLeftHandAnimName = "Heavygun";
