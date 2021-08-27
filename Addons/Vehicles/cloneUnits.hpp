@@ -4855,8 +4855,8 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Bottom_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Arf_Armor_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Arf_Armor_Bottom_CO.paa"
 	};
 	linkedItems[] =
 	{
