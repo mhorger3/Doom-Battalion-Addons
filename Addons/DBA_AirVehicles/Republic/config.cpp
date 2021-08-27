@@ -32,6 +32,7 @@ class CfgPatches
 		};
 	};
 };
+class MFD;
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
@@ -16426,11 +16427,54 @@ class cfgVehicles
 			LAAT_LIGHTS
 		};
 	};
-	
-	class Plane_Fighter_03_base_F;
+	class Air;
+	class Plane: Air
+	{
+		class HitPoints;
+	};
+	class Plane_Base_F: Plane
+	{
+		class AnimationSources;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+		};
+		class Components;
+		class Eventhandlers;
+		class ViewPilot;
+	};
+	class Ejection_Seat_Base_F;
+	class Plane_Canopy_Base_F;
+	class Plane_Fighter_03_base_F: Plane_Base_F
+	{
+		class HitPoints: HitPoints
+		{
+			class HitHull: HitHull
+			{
+			};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				};
+			};
+		};
+		class Eventhandlers;
+		class ViewPilot;
+	};
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
 	{
-		class Components;
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				class Pylons;
+				class Presets;
+			};
+		};
 	};
 	class 3as_Z95_base: Plane_Fighter_03_dynamicLoadout_base_F
 	{
