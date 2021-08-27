@@ -7,8 +7,7 @@ class CfgPatches
 
         requiredAddons[] =
         {
-            "DBA_patch_weapons",
-            "101st_Aux_Mod_Weapons"
+            "DBA_patch_weapons"
         };
         requiredVersion = 0.1;
         ammo[] =
