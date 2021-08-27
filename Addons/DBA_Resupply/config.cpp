@@ -186,106 +186,197 @@ class cfgVehicles
         class TransportWeapons {};
         class TransportMagazines
 		{
-			class xx_101st_City_Killer_Slug
+			class DBA_12gaScatter_Mag_Base
 			{
 				magazine = "DBA_12gaScatter_Mag_Base";
-				count = 5;
+				count = 8;
 			};
-			class xx_101st_City_Killer_Buff
+			class DBA_12gaSlug_Mag_Base
 			{
 				magazine = "DBA_12gaSlug_Mag_Base";
-				count = 5;
+				count = 8;
 			};
-			class xx_DBA_AT_GL_x2_mag
-			{
-				magazine = "DBA_AT_GL_x2_mag";
-				count = 5;
-			};
-			class xx_DBA_HE_GL_3x_mag
-			{
-				magazine = "DBA_HE_GL_x3_mag";
-				count = 5;
-			};
-			class xx_3Rnd_Smoke_Grenade_shell
-			{
-				magazine = "3Rnd_Smoke_Grenade_shell";
-				count = 5;
-			};
-			class xx_ACE_HuntIR_M203
-			{
-				magazine = "ACE_HuntIR_M203";
-				count = 5;
-			};
-			class xx_101st_Stun_Long
-			{
-				magazine = "101st_Stun_Long";
-				count = 5;
-			};
-			class xx_101st_Stun_Short
-			{
-				magazine = "101st_Stun_Short";
-				count = 5;
-			};
-			class xx_DBA_DC15a_Low_x60_mag
-			{
-				magazine = "DBA_65_Mag_Base";
-				count = 20;
-			};
-			class xx_DBA_DC15a_338_x15_mag
+			class DBA_338_Mag_Base
 			{
 				magazine = "DBA_338_Mag_Base";
-				count = 10;
+				count = 15;
 			};
-			class xx_DBA_DC15a_High_x15_mag
+			class DBA_65_Mag_Base
 			{
-				magazine = "DBA_408_Mag_Base";
-				count = 5;
+				magazine = "DBA_65_Mag_Base";
+				count = 15;
 			};
-			class xx_DBA_DC15a_LE_x15_mag
+			class DBA_65_Mag_x120
 			{
 				magazine = "DBA_65_Mag_x120";
 				count = 5;
 			};
-			class xx_DBA_DC15a_box_mag_x240_mag
+			class DBA_65_Mag_x45_Blue
 			{
-				magazine = "DBA_556_Mag_x60_Green";
+				magazine = "DBA_65_Mag_x45_Blue";
 				count = 5;
 			};
-			class xx_101st_Ion_Mag
+			class DBA_127x99_Mag_Base
 			{
-				magazine = "DBA_9mm_Mag_x100";
+				magazine = "DBA_127x99_Mag_Base";
 				count = 5;
 			};
-			class xx_101st_MG_Mag
-			{
-				magazine = "DBA_762_Mag_x50";
-				count = 10;
-			};
-			class xx_101st_PDW_Enforcer_Mag
+			class DBA_127x99Overcharge_Mag_Base
 			{
 				magazine = "DBA_127x99Overcharge_Mag_Base";
 				count = 5;
 			};
-			class xx_DBA_z6_x400_mag
+			class DBA_556_Mag_x60_Green
 			{
-				magazine = "DBA_AntiTankRound_Base";
+				magazine = "DBA_556_Mag_x60_Green";
 				count = 5;
 			};
-			class xx_DBA_556_Mag_x300
+			class DBA_45acp_Mag_x45_Green
 			{
-				magazine = "DBA_556_Mag_x300";
+				magazine = "DBA_45acp_Mag_x45_Green";
 				count = 5;
 			};
-			class xx_DBA_762_x75_Green
+			class DBA_762_x75_Green
 			{
 				magazine = "DBA_762_x75_Green";
 				count = 5;
 			};
-			class xx_DBA_65_Mag_x20
+			class DBA_9mm_Mag_x100
 			{
-				magazine = "DBA_65_Mag_x20";
+				magazine = "DBA_9mm_Mag_x100";
 				count = 5;
 			};
+			class DBA_408_Mag_Base
+			{
+				magazine = "DBA_408_Mag_Base";
+				count = 5;
+			};
+			class DBA_762_Mag_x50
+			{
+				magazine = "DBA_762_Mag_x50";
+				count = 5;
+			};
+			class DBA_556_Mag_x300
+			{
+				magazine = "DBA_556_Mag_x300";
+				count = 5;
+			};
+			class DBA_20mm_x7_Base
+			{
+				magazine = "DBA_20mm_x7_Base";
+				count = 5;
+			};
+			class DBA_EMP_x1_Base
+			{
+				magazine = "DBA_EMP_x1_Base";
+				count = 5;
+			};
+			class DBA_AT_GL_x6_mag
+			{
+				magazine = "DBA_AT_GL_x6_mag";
+				count = 5;
+			};
+			class DBA_HE_GL_x8_mag
+			{
+				magazine = "DBA_HE_GL_x8_mag";
+				count = 5;
+			};
+			class DBA_AT_GL_x2_mag
+			{
+				magazine = "DBA_AT_GL_x2_mag";
+				count = 5;
+			};
+			class DBA_HE_GL_x3_mag
+			{
+				magazine = "DBA_HE_GL_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Blue_x3_mag
+			{
+				magazine = "DBA_40mm_Blue_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Blue_x3_mag
+			{
+				magazine = "DBA_40mm_Blue_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Cyan_x3_mag
+			{
+				magazine = "DBA_40mm_Cyan_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Green_x3_mag
+			{
+				magazine = "DBA_40mm_Green_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_CIR_x3_mag
+			{
+				magazine = "DBA_40mm_CIR_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Purple_x3_mag
+			{
+				magazine = "DBA_40mm_Purple_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Red_x3_mag
+			{
+				magazine = "DBA_40mm_Red_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_white_x3_mag
+			{
+				magazine = "DBA_40mm_white_x3_mag";
+				count = 5;
+			};
+			class DBA_40mm_Yellow_x3_mag
+			{
+				magazine = "DBA_40mm_Yellow_x3_mag";
+				count = 5;
+			};
+			class ACE_HuntIR_M203
+			{
+				magazine = "ACE_HuntIR_M203";
+				count = 9;
+			};
+			class 3Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeYellow_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokeWhite_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeWhite_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeRed_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "3Rnd_SmokePurple_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeOrange_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeGreen_Grenade_shell";
+				count = 5;
+			};
+			class 3Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeBlue_Grenade_shell";
+				count = 5;
+			};
+			
 		};
         class TransportItems {};
         class TransportBackpacks {};
@@ -309,35 +400,115 @@ class cfgVehicles
 
 		class TransportMagazines
 		{
-			class xx_101st_Revolver_Mag
-			{
-				magazine = "DBA_45acp_Mag_Base";
-				count = 10;
-			};
-			class xx_DBA_DC17_x20_mag
-			{
-				magazine = "DBA_12gaSlug_x5_Blue";
-				count = 10;
-			};
-			class xx_101st_PDW_Butcher_Mag
+			class DBA_12gaScatter_x5_Blue
 			{
 				magazine = "DBA_12gaScatter_x5_Blue";
 				count = 10;
 			};
-			class xx_DBA_DC15_Hammerhead_x9_mag
+			class DBA_12gaSlug_x5_Blue
+			{
+				magazine = "DBA_12gaSlug_x5_Blue";
+				count = 10;
+			};
+			class DBA_45acp_Mag_Base
+			{
+				magazine = "DBA_45acp_Mag_Base";
+				count = 10;
+			};
+			class DBA_40mm_Blue_x1_mag
+			{
+				magazine = "DBA_40mm_Blue_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_Cyan_x1_mag
+			{
+				magazine = "DBA_40mm_Cyan_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_Green_x1_mag
+			{
+				magazine = "DBA_40mm_Green_x1_mag";
+				count = 10;
+			}
+			class DBA_40mm_CIR_x1_mag
+			{
+				magazine = "DBA_40mm_CIR_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_Purple_x1_mag
+			{
+				magazine = "DBA_40mm_Purple_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_Red_x1_mag
+			{
+				magazine = "DBA_40mm_Red_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_white_x1_mag
+			{
+				magazine = "DBA_40mm_white_x1_mag";
+				count = 10;
+			};
+			class DBA_40mm_Yellow_x1_mag
+			{
+				magazine = "DBA_40mm_Yellow_x1_mag";
+				count = 10;
+			};
+			class 1Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeYellow_Grenade_shell";
+				count = 10;
+			}
+			class 1Rnd_SmokeWhite_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeWhite_Grenade_shell";
+				count = 10;
+			}
+			class 1Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 10;
+			};
+			class 1Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "1Rnd_SmokePurple_Grenade_shell";
+				count = 10;
+			};
+			class 1Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+				count = 10;
+			};
+			class 1Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 10;
+			};
+			class 1Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 10;
+			};
+			class Dual_Defender_x22_Magazine
+			{
+				magazine = "Dual_Defender_x22_Magazine";
+				count = 10;
+			}
+			class Dual_Hammerhead_x9_Magazine
+			{
+				magazine = "Dual_Hammerhead_x9_Magazine";
+				count = 10;
+			};
+			class DBA_9mm_Mag_x25
 			{
 				magazine = "DBA_9mm_Mag_x25";
 				count = 10;
 			};
-			class xx_DBA_DC15_9mm
+			class DBA_127x33_x7_Yellow
 			{
 				magazine = "DBA_127x33_x7_Yellow";
 				count = 10;
-			};
-			class xx_DBA_DC15a_Low_x60_mag
-			{
-				magazine = "DBA_65_Mag_Base";
-				count = 20;
 			}
 		};
 		class TransportWeapons
@@ -405,15 +576,15 @@ class cfgVehicles
 				magazine = "101st_AT_Mag";
 				count = 5;
 			};
-			class xx_101st_RPS6_HEAA
+			class 101st_RPS6_HEAA
 			{
 				magazine = "101st_RPS6_HEAA";
 				count = 10;
 			};
-			class xx_101st_AA_Mag
+			class 101st_RPS6_HEDP
 			{
 				magazine = "101st_RPS6_HEDP";
-				count = 2;
+				count = 10;
 			};
 		};
 		class TransportWeapons {};
@@ -545,6 +716,36 @@ class cfgVehicles
 				name = "SmokeShellPurple";
 				count = 3;
 			};
+			class SmokeShellRed
+			{
+				name = "SmokeShellRed";
+				count = 5;
+			};
+			class SmokeShellYellow
+			{
+				name = "SmokeShellYellow";
+				count = 3;
+			};
+			class 101st_thermaldet_x1_mag
+			{
+				name = "101st_thermaldet_x1_mag";
+				count = 5;
+			};
+			class 101st_imploder_x1_mag
+			{
+				name = "101st_imploder_x1_mag";
+				count = 3;
+			};
+			class 101st_throwable_c_type_x1_mag
+			{
+				name = "101st_throwable_c_type_x1_mag";
+				count = 5;
+			};
+			class DBA_HandFlare_Purple
+			{
+				name = "DBA_HandFlare_Purple";
+				count = 3;
+			};
 			class _xx_APERSMine_Range_Mag
 			{
 				name = "APERSMine_Range_Mag";
@@ -578,6 +779,41 @@ class cfgVehicles
 			class _xx_TermMineB_Mag
 			{
 				name = "TermMineB_Mag";
+				count = 2;
+			};
+			class OPTRE_M8_Flare_Blue
+			{
+				name = "OPTRE_M8_Flare_Blue";
+				count = 5;
+			};
+			class OPTRE_M8_Flare_Green
+			{
+				name = "OPTRE_M8_Flare_Green";
+				count = 3;
+			};
+			class OPTRE_M8_Flare
+			{
+				name = "OPTRE_M8_Flare";
+				count = 5;
+			};
+			class DBA_ThermalBlock_Mag
+			{
+				name = "DBA_ThermalBlock_Mag";
+				count = 3;
+			};
+			class DBA_ImploderBlock_Mag
+			{
+				name = "DBA_ImploderBlock_Mag";
+				count = 5;
+			};
+			class OPTRE_M8_Flare_White
+			{
+				name = "OPTRE_M8_Flare_White";
+				count = 3;
+			};
+			class OPTRE_M8_Flare_Yellow
+			{
+				name = "OPTRE_M8_Flare_Yellow";
 				count = 2;
 			};
 		};

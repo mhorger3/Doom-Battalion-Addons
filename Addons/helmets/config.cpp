@@ -2279,7 +2279,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Dolittle_Helmet_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Dolittle_Helmet_CO.rvmat"};
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\101st\helmets\data\Dolittle_Helmet.rvmat"};
 	};
 	class 101st_Trooper_Helmet: JLTS_CloneHelmetP2
 	{
