@@ -19,11 +19,24 @@ class CfgPatches
 			"DBA_115mw_B5TC_Cannon",
 			"DBA_130mw_HH30_Cannon",
 			"DBA_140mw_HH30M4_Cannon",
+			"DBA_105mw_PN105M_Cannon",
+			"DBA_120mw_PG251_Cannon",
+			"DBA_152mw_M83S_Cannon",
+			"DBA_20mw_GAIBO1_AC",
+			"DBA_792mw_DC42_MG",
 			"DBA_50mw_K5B2",
 			"DBA_UKAS_MG",
+			"DBA_VehicleLauncher",
 			"DBA_90mw_HFAH1_Cannon",
 			"DBA_165mw_B9M_ORD_Mortar",
 			"DBA_23mw_G765",
+			"DBA_40mw_P4M_Cannon",
+			"DBA_762_C95A1_CG",
+			"DBA_762_C110_CG",
+			"DBA_762_C3M_CG",
+			"DBA_762_CP46_CG",
+			"DBA_127_C3HB_HMG",
+			"DBA_127_C3HB_RCWS",
 			"DBA_G13_Coaxial"
 		};
 		magazines[]=
@@ -35,6 +48,20 @@ class CfgPatches
 			"DBA_57mm_hef_x6_mag",
 			"DBA_50mm_sap_x150_mag",
 			"DBA_50mm_hepf_x400_mag",
+			"DBA_105mm_P900_x4_mag",
+			"DBA_105mm_P456_x4_mag",
+			"DBA_105mm_P395_x4_mag",
+			"DBA_105mm_S416_x8_mag",
+			"DBA_120mm_PM53_x16_mag",
+			"DBA_120mm_P225_x16_mag",
+			"DBA_120mm_PM11_x18_mag",
+			"DBA_120mm_Kanabo_x5_mag",
+			"DBA_152mm_Tanto1_x25_mag",
+			"DBA_152mm_Tanto3_x35_mag",
+			"DBA_152mm_Tanto5_x2_mag",
+			"DBA_20mm_PM359_x150_mag",
+			"DBA_20mm_P594_x250_mag",
+			"DBA_792_PKW_x5000_mag",
 			"DBA_115mm_B3M_AP_x8_mag",
 			"DBA_115mm_KB4_HEAT_x10_mag",
 			"DBA_115mm_UB11_HEF_x20_mag",
@@ -45,8 +72,15 @@ class CfgPatches
 			"DBA_90mm_UR62M_HEAT_x24_mag",
 			"DBA_165mm_C33_BESH_x30_mag",
 			"DBA_23mm_UM23_HEPF_x5000_mag",
+			"DBA_40mm_PM225_AP_x80_mag",
+			"DBA_40mm_PL31A_HESH_x320_mag",
+			"DBA_60mm_PLX772_x5_mag",
 			"DBA_792_M5A_x400_mag",
 			"DBA_762_REC_x2600_mag",
+			"DBA_762_D61_x2000_mag",
+			"DBA_762_D61_x400_mag",
+			"DBA_762_DN71_x250_mag",
+			"DBA_127_X962_x1500_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
 			"DBA_HMG_orange_x500_mag",
@@ -88,6 +122,25 @@ class CfgPatches
 			"ammo_50mm_SAP_penetrator",
 			"DBA_50mm_SAP",
 			"DBA_50mm_HEPF",
+			"DBA_40mm_PM225_AP",
+			"DBA_40mm_PL31A_HESH",
+			"DBA_105mm_P900_KEP",
+			"DBA_105mm_P456_HEAT",
+			"DBA_105mm_P395_HEP",
+			"DBA_105mm_S416_SMK",
+			"DBA_120mm_PM53_KEP",
+			"DBA_120mm_P225_HEAT",
+			"DBA_120mm_PM11_HE",
+			"DBA_120mm_Kanabo_Penetrator",
+			"DBA_120mm_Kanabo_ATGM",
+			"DBA_152mm_Tanto1_KEP",
+			"DBA_152mm_Tanto3_HE",
+			"DBA_152mm_Tanto5_Lance",
+			"DBA_152mm_Tanto5_Penetrator",
+			"DBA_20mm_PM359_KEP",
+			"DBA_20mm_P594_HEI",
+			"DBA_105mm_Smoke_Submunition",
+			"DBA_792_PKW",
 			"DBA_115mm_B3M_AP",
 			"DBA_115mm_KB4_HEAT",
 			"DBA_115mm_UB11_HEF",
@@ -100,6 +153,10 @@ class CfgPatches
 			"DBA_23mm_UM23_HEPF",
 			"DBA_792_M5A",
 			"DBA_762_54_REC",
+			"DBA_762_51_D61",
+			"DBA_762_54_DN71",
+			"DBA_127_X962_SLAP",
+			"DBA_60mm_PLX772",
 			"ammo_115mm_AP_Penetrator",
 			"ammo_115mm_HEAT_Penetrator",
 			"DBA_lancer_mbt_ap_ammo",
@@ -130,9 +187,30 @@ class CfgWeapons
 	{
 		class player;
 	};
+	class autocannon_Base_F: CannonCore{
+		class player;
+	};
+	class autocannon_40mm_CTWS: autocannon_Base_F {
+		class HESH : autocannon_Base_F{
+			class player: player{
+				
+			};
+		};
+		class AP : autocannon_Base_F{
+			class player: player{
+				
+			};
+		};
+	};
 	class MGun;
+	class SmokeLauncher;
 	class LMG_RCWS: MGun
 	{
+		class manual: MGun
+		{
+		};
+	};
+	class LMG_coax : LMG_RCWS{
 		class manual: MGun
 		{
 		};
@@ -509,6 +587,7 @@ class CfgWeapons
 	};
 	class missiles_ASRAAM;
 	class Rocket_04_AP_Plane_CAS_01_F;
+	class HMG_127_MBT;
 	class missiles_DAGR;
 	class missiles_Jian;
 	class Missile_AGM_01_Plane_CAS_02_F;
@@ -517,6 +596,9 @@ class CfgWeapons
 	class weapon_SDBLauncher;
 	class GBU12BombLauncher;
 	class MissileLauncher;
+	class autocannon_30mm_RCWS{
+		class player;
+	};
 	class RocketPods;
 	class dba_wynd_a2a: missiles_ASRAAM
 	{
@@ -1087,7 +1169,26 @@ class CfgWeapons
 	{
 		
 	};
-	class DBA_50mw_K5B2 : 3AS_GATRepeater
+	class DBA_VehicleLauncher : SmokeLauncher{
+		scope = 2;
+		displayName = "Integrated Mortar";
+		sounds[]= {"StandardSound"};
+
+		class StandardSound {
+			soundSetShot[]= {"UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet"};
+		};
+		magazines[]= {"DBA_60mm_PLX772_x5_mag"};
+		reloadTime = 5;
+		magazineReloadTime = 20;
+		canLock = 0;
+		autoFire = 0;
+		simulation = "cmlauncher";
+		showToPlayer = 1;
+		minRange = 0;
+		maxRange = 10000;
+		textureType = "semi";
+	};
+	class DBA_50mw_K5B2 : LMG_RCWS
 	{
 		displayName="K-5B2 50mw Anti-Air Artillery";
 		displayNameShort="K-5B2";
@@ -1363,10 +1464,25 @@ class CfgWeapons
 			maxRangeProbab=0.9;
 		};
 	};
-	class DBA_UKAS_MG : 3AS_GATRepeater{
+	class DBA_UKAS_MG : LMG_RCWS{
 		displayName="UKAS 7.62mw Repeater";
 		displayNameShort="UKAS";
 		author="ISU";
+		class GunParticles
+		{
+			class effect1
+			{
+				positionName="z_gunl_chamber";
+				directionName="z_gunl_muzzle";
+				effectName="MachineGunCloud";
+			};
+			class effect2
+			{
+				positionName="z_gunr_chamber";
+				directionName="z_gunr_muzzle";
+				effectName="MachineGunCloud";
+			};
+		};
 		magazines[]=
 		{
 			"DBA_762_REC_x2600_mag"
@@ -1483,6 +1599,795 @@ class CfgWeapons
 			midRangeProbab=0.30000001;
 			maxRange=1500;
 			maxRangeProbab=0.050000001;
+		};
+	};
+	class DBA_40mw_P4M_Cannon : autocannon_40mm_CTWS{
+		displayName = "P-4M 40mw Autocannon";
+		muzzles[]= {"HE", "AP"};
+
+		class HE: autocannon_Base_F {
+			displayName = "P-4M 40mw Autocannon";
+			magazines[]= 
+				{
+					"DBA_40mm_PL31A_HESH_x320_mag",
+				};
+			magazineReloadTime = 6;
+			class player: player 
+			{
+				dispersion = 0.000500;
+				reloadTime=0.15;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close: player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+		};
+
+		class AP: autocannon_Base_F {
+			displayName = "P-4M 40mw Autocannon";
+			magazines[]= 
+				{
+					"DBA_40mm_PM225_AP_x80_mag",
+				};
+			magazineReloadTime = 10;
+			class player: player 
+			{
+				dispersion = 0.000099;
+				reloadTime=0.15;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close: player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+		};
+	};
+	class DBA_762_C95A1_CG : LMG_coax
+	{
+		displayName = "C-95A1 Chaingun";
+		magazineReloadTime = 10;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_762_D61_x2000_mag",
+			"DBA_762_D61_x400_mag",
+		};
+		class manual: MGun {
+			displayName = "C-95A1 Chaingun";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.1090909091;
+			dispersion = 0.000750;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class close: manual {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.500000;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.800000;
+			midRange = 20;
+			midRangeProbab = 0.700000;
+			maxRange = 50;
+			maxRangeProbab = 0.200000;
+		};
+
+		class short: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.700000;
+			midRange = 150;
+			midRangeProbab = 0.700000;
+			maxRange = 300;
+			maxRangeProbab = 0.200000;
+		};
+
+		class medium: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.700000;
+			midRange = 600;
+			midRangeProbab = 0.650000;
+			maxRange = 800;
+			maxRangeProbab = 0.100000;
+		};
+
+		class far: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.650000;
+			midRange = 800;
+			midRangeProbab = 0.400000;
+			maxRange = 1200;
+			maxRangeProbab = 0.100000;
+		};
+	};
+	class DBA_127_C3HB_HMG : LMG_coax{
+		displayName = "C3-HB Heavy Repeater";
+		magazineReloadTime = 12;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_127_X962_x1500_mag"
+		};
+		class manual: MGun {
+			displayName = "C3-HB Heavy Repeater";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.04615384615;
+			dispersion = 0.000750;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class close: manual {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.500000;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.800000;
+			midRange = 20;
+			midRangeProbab = 0.700000;
+			maxRange = 50;
+			maxRangeProbab = 0.200000;
+		};
+
+		class short: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.700000;
+			midRange = 150;
+			midRangeProbab = 0.700000;
+			maxRange = 300;
+			maxRangeProbab = 0.200000;
+		};
+
+		class medium: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.700000;
+			midRange = 600;
+			midRangeProbab = 0.650000;
+			maxRange = 800;
+			maxRangeProbab = 0.100000;
+		};
+
+		class far: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.650000;
+			midRange = 800;
+			midRangeProbab = 0.400000;
+			maxRange = 1200;
+			maxRangeProbab = 0.100000;
+		};
+	};
+	class DBA_792mw_DC42_MG : HMG_127_MBT
+	{
+		displayName = "DC-42 Light Repeater";
+		magazineReloadTime = 15;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_792_PKW_x5000_mag"
+		};
+		class manual: MGun {
+			displayName = "DC-42 Light Repeater";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.04;
+			dispersion = 0.007550;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class close: manual {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.500000;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.800000;
+			midRange = 20;
+			midRangeProbab = 0.700000;
+			maxRange = 50;
+			maxRangeProbab = 0.200000;
+		};
+
+		class short: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.700000;
+			midRange = 150;
+			midRangeProbab = 0.700000;
+			maxRange = 300;
+			maxRangeProbab = 0.200000;
+		};
+
+		class medium: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.700000;
+			midRange = 600;
+			midRangeProbab = 0.650000;
+			maxRange = 800;
+			maxRangeProbab = 0.100000;
+		};
+
+		class far: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.650000;
+			midRange = 800;
+			midRangeProbab = 0.400000;
+			maxRange = 1200;
+			maxRangeProbab = 0.100000;
+		};
+	};
+	class DBA_127_C3HB_RCWS : DBA_792mw_DC42_MG{
+		displayName = "C3-HB Heavy Repeater";
+		magazineReloadTime = 12;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_127_X962_x1500_mag"
+		};
+		class manual: MGun {
+			displayName = "C3-HB Heavy Repeater";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.04615384615;
+			dispersion = 0.000750;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class close: manual {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.500000;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.800000;
+			midRange = 20;
+			midRangeProbab = 0.700000;
+			maxRange = 50;
+			maxRangeProbab = 0.200000;
+		};
+
+		class short: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.700000;
+			midRange = 150;
+			midRangeProbab = 0.700000;
+			maxRange = 300;
+			maxRangeProbab = 0.200000;
+		};
+
+		class medium: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.700000;
+			midRange = 600;
+			midRangeProbab = 0.650000;
+			maxRange = 800;
+			maxRangeProbab = 0.100000;
+		};
+
+		class far: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.650000;
+			midRange = 800;
+			midRangeProbab = 0.400000;
+			maxRange = 1200;
+			maxRangeProbab = 0.100000;
+		};
+	};
+	class DBA_762_C110_CG : DBA_792mw_DC42_MG
+	{
+		displayName = "C110 Coax";
+		magazineReloadTime = 7.25;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.1;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_762_D61_x2000_mag",
+			"DBA_762_D61_x400_mag",
+		};
+		class manual: MGun {
+			displayName = "C110 Coax";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.08275862069;
+			dispersion = 0.002750;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+	};
+	class DBA_762_C3M_CG : DBA_762_C110_CG{
+		displayName = "C3M Coax";
+		magazineReloadTime = 5.25;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.1;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_762_D61_x2000_mag",
+			"DBA_762_D61_x400_mag",
+		};
+		class manual: MGun {
+			displayName = "C3M Coax";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.05454545455;
+			dispersion = 0.006850;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+	};
+	class DBA_762_CP46_CG : DBA_762_C3M_CG{
+		displayName = "CP-46 Coax";
+		magazineReloadTime = 5.25;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.1;
+		maxZeroing = 2500;
+		magazines[]= 
+		{
+			"DBA_762_DN71_x250_mag"
+		};
+		class manual: MGun {
+			displayName = "CP-46 Coax";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					0.8,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.075;
+			dispersion = 0.002550;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
 		};
 	};
 	class DBA_115mw_B5TC_Cannon : cannon_120mm{
@@ -1898,6 +2803,369 @@ class CfgWeapons
 			maxRangeProbab=0.5;
 		};
 	};
+	class DBA_105mw_PN105M_Cannon : cannon_120mm
+	{
+		displayName="105mw PN-105M Mass Driver";
+		scope=2;
+		magazines[]=
+		{
+			"DBA_105mm_P900_x4_mag",
+			"DBA_105mm_P456_x4_mag",
+			"DBA_105mm_P395_x4_mag",
+			"DBA_105mm_S416_x8_mag",
+		};
+		magazineReloadTime=5.5;
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_g_vehicle\aat\sounds\aat_main_gun.wss",
+					5.1622777,
+					1,
+					1500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=2.75;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+	};
+	class DBA_120mw_PG251_Cannon : cannon_120mm{
+		displayName="120mw PG251 Mass Driver";
+		scope=2;
+		magazines[]=
+		{
+			"DBA_120mm_PM53_x16_mag",
+			"DBA_120mm_P225_x16_mag",
+			"DBA_120mm_PM11_x18_mag",
+			"DBA_120mm_Kanabo_x5_mag",
+		};
+		magazineReloadTime=6.75;
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_g_vehicle\aat\sounds\aat_main_gun.wss",
+					5.1622777,
+					1,
+					1500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=6.75;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+	};
+	class DBA_152mw_M83S_Cannon : cannon_120mm{
+		displayName="152mw M83S Svir Mass Driver";
+		scope=2;
+		magazines[]=
+		{
+			"DBA_152mm_Tanto1_x25_mag",
+			"DBA_152mm_Tanto3_x35_mag",
+			"DBA_152mm_Tanto5_x2_mag",
+		};
+		magazineReloadTime=11.5;
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\sounds\bigboigun.ogg",
+					5.555,
+					1,
+					1250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=11.5;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+	};
+	class DBA_20mw_GAIBO1_AC : autocannon_30mm_RCWS{
+		muzzles[]= {"HE", "AP"};
+		class HE: autocannon_30mm_RCWS {
+			displayName = "GAI-BO1 Autocannon";
+			shotFromTurret=0;
+			magazines[]= 
+				{
+					"DBA_20mm_P594_x250_mag",
+				};
+			magazineReloadTime = 12;
+			class player: player 
+			{
+				reloadTime = 0.06;
+				dispersion = 0.000170;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close: player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+			class GunParticles
+		{
+        class Effect
+        {
+            effectName = "AutoCannonFired";
+            positionName = "Usti hlavne2";
+            directionName = "Konec hlavne2";
+        };
+		};
+		};
+
+		class AP: autocannon_30mm_RCWS {
+			displayName = "GAI-BO1 Autocannon";
+			shotFromTurret=0;
+			magazines[]= 
+				{
+					"DBA_20mm_PM359_x150_mag",
+				};
+			magazineReloadTime = 15;
+			class player: player 
+			{
+				reloadTime = 0.06;
+				
+				dispersion = 0.000170;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close: player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far: close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+			class GunParticles
+			{
+			class Effect
+			{
+            effectName = "AutoCannonFired";
+            positionName = "Usti hlavne2";
+            directionName = "Konec hlavne2";
+			};
+			};
+		}; 
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+	};
 	class DBA_G13_Coaxial : 3AS_AAT_Repeater {
 		displayName="G-13 Repeaters";
 		magazineReloadTime=3.75;
@@ -2209,10 +3477,12 @@ class CfgWeapons
 };
 class CfgMagazines
 {
+	class VehicleMagazine;
 	class 500Rnd_Cannon_ARCback;
 	class 500Rnd_Cannon_30mm_Plane_CAS_02_F;
 	class 100Rnd_127x99_mag_Tracer_Red;
 	class 30Rnd_120mm_HE_shells;
+	class 24Rnd_PG_missiles;
 	class DBA_generic_aircraft_gun_x1000_mag: 500Rnd_Cannon_30mm_Plane_CAS_02_F
 	{
 		displayNameShort="Plasma Cores (Red)";
@@ -3099,6 +4369,161 @@ class CfgMagazines
 		initspeed=720;
 		tracersevery=1;
 	};
+	class DBA_105mm_P900_x4_mag : DBA_140mm_R1P_AP_x17_mag
+	{
+		displayname="105mw P900 Kinetic Energy Penetrator";
+		ammo="DBA_105mm_P900_KEP";
+		displaynamemagazine="105mw P900 KEP";
+		shortnamemagazine="P900 KEP";
+		displayNameMFDFormat="KEP";
+		displayNameShort="P900 KEP";
+		count=4;
+		initspeed=1505;
+		tracersevery=1;
+	};
+	class DBA_105mm_P456_x4_mag : DBA_105mm_P900_x4_mag
+	{
+		displayname="105mw P456 High Explosive Anti-Tank";
+		ammo="DBA_105mm_P456_HEAT";
+		displaynamemagazine="105mw P456 HEAT";
+		shortnamemagazine="P456 HEAT";
+		displayNameMFDFormat="HEAT";
+		displayNameShort="P456 HEAT";
+		count=4;
+		initspeed=1173;
+		tracersevery=1;
+	};
+	class DBA_105mm_P395_x4_mag : DBA_105mm_P900_x4_mag
+	{
+		displayname="105mw P395 High Explosive Plastic";
+		ammo="DBA_105mm_P395_HEP";
+		displaynamemagazine="105mw P395 HEP";
+		shortnamemagazine="P395 HEP";
+		displayNameMFDFormat="HEP";
+		displayNameShort="P395 HEP";
+		count=4;
+		initspeed=732;
+		tracersevery=1;
+	};
+	class DBA_105mm_S416_x8_mag : DBA_105mm_P900_x4_mag
+	{
+		displayname="105mw S416 Smoke Shell";
+		ammo="DBA_105mm_S416_SMK";
+		displaynamemagazine="105mw S416 SMK";
+		shortnamemagazine="S416 SMK";
+		displayNameMFDFormat="SMK";
+		displayNameShort="S416 SMK";
+		count=8;
+		initspeed=703;
+		tracersevery=1;
+	};
+	class DBA_120mm_PM53_x16_mag : DBA_105mm_P900_x4_mag{
+		displayname="120mw PM53 Kinetic Energy Penetrator";
+		ammo="DBA_120mm_PM53_KEP";
+		displaynamemagazine="120mw PM53 KEP";
+		shortnamemagazine="PM53 KEP";
+		displayNameMFDFormat="KEP";
+		displayNameShort="PM53 KEP";
+		count=16;
+		initspeed=1750;
+		tracersevery=1;
+	};
+	class DBA_120mm_P225_x16_mag : DBA_120mm_PM53_x16_mag{
+		displayname="120mw P225 High Explosive Anti-Tank";
+		ammo="DBA_120mm_P225_HEAT";
+		displaynamemagazine="120mw P225 HEAT";
+		shortnamemagazine="P225 HEAT";
+		displayNameMFDFormat="HEAT";
+		displayNameShort="P225 HEAT";
+		count=16;
+		initspeed=1410;
+		tracersevery=1;
+	};
+	class DBA_120mm_PM11_x18_mag : DBA_120mm_PM53_x16_mag{
+		displayname="120mw PM11 High Explosive";
+		ammo="DBA_120mm_PM11_HE";
+		displaynamemagazine="120mw PM11 HE";
+		shortnamemagazine="PM11 HE";
+		displayNameMFDFormat="HE";
+		displayNameShort="PM11 HE";
+		count=18;
+		initspeed=1505;
+		tracersevery=1;
+	};
+	class DBA_120mm_Kanabo_x5_mag : DBA_120mm_PM53_x16_mag{
+		displayname="120mw Kanabo ATGM";
+		ammo="DBA_120mm_Kanabo_ATGM";
+		displaynamemagazine="120mw Kanabo ATGM";
+		shortnamemagazine="Kanabo ATGM";
+		displayNameMFDFormat="ATGM";
+		displayNameShort="Kanabo ATGM";
+		count=5;
+		initspeed=50;
+		tracersevery=1;
+	};
+	class DBA_152mm_Tanto1_x25_mag : DBA_105mm_P900_x4_mag{
+		displayname="152mw Tanto-1 Heavy Kinetic Energy Penetrator";
+		ammo="DBA_152mm_Tanto1_KEP";
+		displaynamemagazine="152mw Tanto-1 HKEP";
+		shortnamemagazine="Tanto-1 HKEP";
+		displayNameMFDFormat="HKEP";
+		displayNameShort="Tanto-1 HKEP";
+		count=25;
+		initspeed=2105;
+		tracersevery=1;
+	};
+	class DBA_152mm_Tanto3_x35_mag : DBA_152mm_Tanto1_x25_mag{
+		displayname="152mw Tanto-3 High Explosive";
+		ammo="DBA_152mm_Tanto3_HE";
+		displaynamemagazine="152mw Tanto-3 HE";
+		shortnamemagazine="Tanto-3 HE";
+		displayNameMFDFormat="HE";
+		displayNameShort="Tanto-3 HE";
+		count=35;
+		initspeed=805;
+		tracersevery=1;
+	};
+	class DBA_152mm_Tanto5_x2_mag : DBA_152mm_Tanto1_x25_mag{
+		displayname="152mw Tanto-5 Lance";
+		ammo="DBA_152mm_Tanto5_Lance";
+		displaynamemagazine="152mw Tanto-5 Lance";
+		shortnamemagazine="Tanto-5 Lance";
+		displayNameMFDFormat="Lance";
+		displayNameShort="Tanto-5 Lance";
+		count=2;
+		initspeed=80;
+		tracersevery=1;
+	};
+	class DBA_60mm_PLX772_x5_mag : VehicleMagazine{
+		author = "ISU";
+		scope = 2;
+		ammo = "DBA_60mm_PLX772";
+		count = 5;
+		nameSound = "smokeshell";
+		initSpeed = 50;
+	};
+	class DBA_20mm_PM359_x150_mag : DBA_152mm_Tanto1_x25_mag{
+		displayname="20mw PM359 Kinetic Energy Penetrator";
+		ammo="DBA_20mm_PM359_KEP";
+		displaynamemagazine="20mw PM359 KEP";
+		shortnamemagazine="PM359 KEP";
+		displayNameMFDFormat="KEP";
+		displayNameShort="PM359 KEP";
+		count=150;
+		initspeed=1100;
+		tracersevery=1;
+	};
+	class DBA_20mm_P594_x250_mag : DBA_20mm_PM359_x150_mag{
+		displayname="20mw P594 High Explosive Incendiary";
+		ammo="DBA_20mm_P594_HEI";
+		displaynamemagazine="20mw P594 HEI";
+		shortnamemagazine="P594 HEI";
+		displayNameMFDFormat="HEI";
+		displayNameShort="P594 HEI";
+		count=250;
+		initspeed=1100;
+		tracersevery=1;
+	};
 	class DBA_792_M5A_x400_mag : DBA_lmg_blue_x500_mag {
 		scope=2;
 		displayname="7.92mw M-5a";
@@ -3153,6 +4578,99 @@ class CfgMagazines
 		initspeed=259;
 		tracersevery=1;
 	};
+	class DBA_40mm_PL31A_HESH_x320_mag : DBA_50mm_HEPF_x400_mag
+	{
+		displayname="40mw PL-31A HEP";
+		ammo="DBA_40mm_PL31A_HESH";
+		displaynamemagazine="40mw PL-31A HEP";
+		shortnamemagazine="PL-31A HEP";
+		displayNameMFDFormat="HEP";
+		displayNameShort="PL-31A HEP";
+		count=320;
+		initspeed=1200;
+		tracersevery=1;
+	};
+	class DBA_40mm_PM225_AP_x80_mag : DBA_40mm_PL31A_HESH_x320_mag
+	{
+		displayname="40mw PM-225 KEP";
+		ammo="DBA_40mm_PM225_AP";
+		displaynamemagazine="40mw PM-225 KEP";
+		shortnamemagazine="PM-225 KEP";
+		displayNameMFDFormat="KEP";
+		displayNameShort="PM-225 KEP";
+		count=80;
+		initspeed=1500;
+		tracersevery=1;
+	};
+	class DBA_762_D61_x2000_mag : DBA_792_M5A_x400_mag
+	{
+		scope=2;
+		displayname="7.62mw D61";
+		ammo="DBA_762_51_D61";
+		mass=0;
+		displaynamemagazine="7.62mw D61";
+		shortnamemagazine="7.62mw";
+		displayNameMFDFormat="7.62mw";
+		displayNameShort="7.62mw D61";
+		count=2000;
+		initspeed=910;
+		maxLeadSpeed=100;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_762_D61_x400_mag : DBA_762_D61_x2000_mag{
+		count=400;
+	};
+	class DBA_762_DN71_x250_mag : DBA_762_D61_x2000_mag{
+		scope=2;
+		displayname="7.62mw DN71";
+		ammo="DBA_762_54_DN71";
+		mass=0;
+		displaynamemagazine="7.62mw DN71";
+		shortnamemagazine="7.62mw";
+		displayNameMFDFormat="7.62mw";
+		displayNameShort="7.62mw DN71";
+		count=250;
+		initspeed=883;
+		maxLeadSpeed=100;
+		tracersevery=1;
+		namesound="mgun";
+	};
+	class DBA_792_PKW_x5000_mag : DBA_792_M5A_x400_mag
+	{
+		scope=2;
+		displayname="7.92mw PKW";
+		ammo="DBA_792_PKW";
+		mass=0;
+		displaynamemagazine="7.92mw PKW";
+		shortnamemagazine="7.92mw PKW";
+		displayNameMFDFormat="7.92mw";
+		displayNameShort="7.92mw PKW";
+		count=5000;
+		initspeed=905;
+		maxLeadSpeed=100;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
+	class DBA_127_X962_x1500_mag : DBA_792_M5A_x400_mag
+	{
+		scope=2;
+		displayname="12.7mw X-962 SLAP";
+		ammo="DBA_127_X962_SLAP";
+		mass=0;
+		displaynamemagazine="12.7mw X-962 SLAP";
+		shortnamemagazine="SLAP";
+		displayNameMFDFormat="SLAP";
+		displayNameShort="12.7mw X-962 SLAP";
+		count=1500;
+		initspeed=1300;
+		maxLeadSpeed=100;
+		tracersevery=1;
+		namesound="mgun";
+		muzzleimpulsefactor[]={0.050000001,0.050000001};
+	};
 };
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
@@ -3181,8 +4699,13 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 };
 class CfgAmmo
 {
+	class SubmunitionBase;
+	class SmokeShellArty;
+	class SmokeLauncherAmmo;
+	class ammo_Penetrator_Base;
 	class ammo_Penetrator_120mm;
 	class Sh_120mm_APFSDS;
+	class G_40mm_HE;
 	class B_35mm_AA_Tracer_Red;
 	class M_Air_AA;
 	class Rocket_04_AP_F;
@@ -3190,8 +4713,13 @@ class CfgAmmo
 	class M_PG_AT;
 	class M_Jian_AT;
 	class ammo_Missile_rim116;
+	class B_40mm_GPR;
+	class SmokeShell;
 	class 3AS_ATT_redPlasma_AT;
 	class B_127x99_Ball_Tracer_Red;
+	class ammo_Missile_CannonLaunchedBase;
+	class M_120mm_cannon_ATGM;
+	class M_125mm_cannon_ATGM;
 	class DBA_vic_ammo_base: B_127x99_Ball_Tracer_Red
 	{
 		hit=8;
@@ -4094,6 +5622,654 @@ class CfgAmmo
 		airfriction=-0;
 		waterFriction=0;
 	};
+	class DBA_40mm_PL31A_HESH : B_40mm_GPR{
+		hit = 225;
+		indirectHit = 35;
+		indirectHitRange = 8;
+		explosive= 0.6
+		warheadName = "HEP";
+		caliber = 4.600000;
+		deflecting = 10;
+		cost = 40;
+		airFriction = -0.000600;
+		timeToLive = 40;
+		initSpeed=1200;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		cost = 75;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.05;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;	
+		allowAgainstInfantry=1;
+		coefGravity=0;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 40;
+			distance = 75;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_40mm_PM225_AP : DBA_40mm_PL31A_HESH
+	{
+		hit = 170;
+		indirectHit = 5;
+		indirectHitRange = 0.25;
+		explosive= 0.0
+		warheadName = "KEP";
+		caliber = 12.44444444;
+		deflecting = 1;
+		cost = 40;
+		airFriction = -0.000600;
+		timeToLive = 40;
+		initSpeed=1500;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "128 + 256 + 512";
+		cost = 75;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.05;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;	
+		allowAgainstInfantry=0;
+		coefGravity=0;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_60mm_PLX772 : G_40mm_HE{
+		hit = 200;
+		indirectHit = 45;
+		indirectHitRange = 8;
+		explosive=1;
+		simulation = "shotBullet";
+	};
+	class DBA_105mm_Smoke_Submunition : SmokeShell
+	{
+		simulation = "shotSmoke";
+		timeToLive=120;
+	};
+	class DBA_105mm_P900_KEP : Sh_120mm_APFSDS
+	{
+		displayName="105mw P900 Kinetic Energy Penetrator";
+		hit=600;
+		warheadName="KEP";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=1505;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=23.4772979;
+		typicalSpeed=1000;
+		deflecting = 5;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_105mm_P456_HEAT : DBA_105mm_P900_KEP{
+		displayName="105mw P456 High Explosive Anti-Tank";
+		hit=444;
+		warheadName="HEAT";
+		indirectHit=70;
+		indirectHitRange=4.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=1173;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=22.73373117;
+		typicalSpeed=1000;
+		deflecting = 5;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_105mm_P395_HEP : DBA_105mm_P900_KEP{
+		displayName="105mw P395 High Explosive Plastic";
+		hit=295;
+		warheadName="HEP";
+		indirectHit=125;
+		indirectHitRange=7.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=732;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=18.21493625;
+		typicalSpeed=500;
+		deflecting = 0;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_105mm_S416_SMK : DBA_105mm_P900_KEP{
+		displayName="105mw S416 Smoke Shell";
+		hit=0;
+		warheadName="SMK";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=703;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.9;
+		cost=500;
+		CraterEffects = "";
+		explosioneffects = "";
+		effectsSmoke = "SmokeShellWhite";
+		tracerStartTime=0.05;
+		tracerScale=0.8;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=18.21493625;
+		typicalSpeed=500;
+		deflecting = 0;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="DBA_105mm_Smoke_Submunition";
+		triggerDistance = -1;
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		submunitionConeAngle[]= {90, 170};
+		submunitionConeAngleHorizontal = 720;
+		submunitionAutoleveling = 1;
+		submunitionInitSpeed = 10;
+		submunitionParentSpeedCoef = 0;
+		submunitionInitialOffset[]= {0, 0, -5};
+		submunitionConeType[]= {"randomupcone", 12};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_120mm_PM53_KEP : Sh_120mm_APFSDS
+	{
+		displayName="120mw PM53 Kinetic Energy Penetrator";
+		hit=800;
+		warheadName="KEP";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=1750;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.1;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=23.4772979;
+		typicalSpeed=1000;
+		deflecting = 5;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_120mm_P225_HEAT : DBA_120mm_PM53_KEP 
+	{
+		displayName="120mw P225 High Explosive Anti-Tank";
+		hit=600;
+		warheadName="HEAT";
+		indirectHit=50;
+		indirectHitRange=5.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=1410;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.1;
+		tracerScale=1.05;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=30.73286052;
+		typicalSpeed=1000;
+		deflecting = 5;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_120mm_PM11_HE : DBA_120mm_PM53_KEP 
+	{
+		displayName="120mw PM11 High Explosive";
+		hit=200;
+		warheadName="KEP";
+		indirectHit=100;
+		indirectHitRange=9;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=980;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.1;
+		tracerScale=1.05;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=3.401360544;
+		typicalSpeed=500;
+		deflecting = 0;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_120mm_Kanabo_Penetrator : ammo_Penetrator_Base
+	{
+		hit=900;
+		warheadName = "TandemHEAT";
+		caliber=53.33333333;
+	};
+	class DBA_120mm_Kanabo_ATGM : M_120mm_cannon_ATGM
+	{
+		model = "\A3\Weapons_F\Ammo\Rocket_01_fly_F";
+		hit = 100;
+		indirectHit = 20;
+		indirectHitRange = 4.500000;
+		explosive = 0.400000;
+		warheadName = "ATGM";
+		simulationStep = 0.002000;
+		timeToLive = 75;
+		initTime = 0.05;
+		thrustTime = 5;
+		thrust = 60;
+		maxSpeed = 320;
+		maneuvrability = 7;
+		fuseDistance = 25;
+		trackLead = 0.850000;
+		trackOversteer = 2.5;
+		airFriction = 0.050000;
+		sideAirFriction = 0.600000;
+		cost = 500;
+		aiAmmoUsageFlags = "128 + 512";
+		dangerRadiusHit = 1000;
+		suppressionRadiusHit = 120;
+		craterEffects = "ATRocketCrater";
+		explosionEffects = "ATRocketExplosion";
+		explosionSoundEffect = "DefaultExplosion";
+		effectsMissileInit = "RocketBackEffectsRPG";
+		effectsMissile = "missile2";
+		muzzleEffect = "";
+		whistleDist = 4;
+		lockType = 1;
+		manualControl = 1;
+		maxControlRange = 5000;
+		manualControlOffset = 100;
+		missileManualControlCone = 90;
+		weaponLockSystem = 16;
+		cmImmunity = 1;
+		cameraViewAvailable = 1;
+		submunitionAmmo = "DBA_120mm_Kanabo_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+	};
+	class DBA_152mm_Tanto1_KEP : Sh_120mm_APFSDS
+	{
+		displayName="152mw Tanto-1 Heavy Kinetic Energy Penetrator";
+		hit=1500;
+		warheadName="HKEP";
+		indirectHit=200;
+		indirectHitRange=0.33;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=2105;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=28.50356295;
+		typicalSpeed=1000;
+		deflecting = 1;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_152mm_Tanto3_HE : DBA_152mm_Tanto1_KEP
+	{
+		displayName="152mw Tanto-3 High Explosive";
+		hit=400;
+		warheadName="HE";
+		indirectHit=1000;
+		indirectHitRange=12.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=805;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		coefGravity=0.8;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=12.42236025;
+		typicalSpeed=500;
+		deflecting = 5;
+		model = "kobra\442_weapons\ammo\blue_tracer.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_152mm_Tanto5_Penetrator : ammo_Penetrator_Base{
+		hit=13500;
+		warheadName = "TandemHEAT";
+		caliber=53.33333333;
+	};
+	class DBA_152mm_Tanto5_Lance : M_125mm_cannon_ATGM{
+		displayName="152mw Tanto-5 Lance";
+		model = "\A3\Weapons_F_Tank\Launchers\Vorona\Vorona_missile_heat_fly";
+		hit = 100;
+		indirectHit = 20;
+		indirectHitRange = 4.500000;
+		explosive = 0.400000;
+		warheadName = "Lance";
+		simulationStep = 0.002000;
+		timeToLive = 120;
+		initTime = 0.05;
+		thrustTime = 30;
+		thrust = 15;
+		maxSpeed = 150;
+		maneuvrability = 7;
+		fuseDistance = 25;
+		trackLead = 0.850000;
+		trackOversteer = 2.5;
+		airFriction = 0.050000;
+		sideAirFriction = 0.600000;
+		cost = 500;
+		aiAmmoUsageFlags = "128 + 512";
+		dangerRadiusHit = 1000;
+		suppressionRadiusHit = 120;
+		craterEffects = "ATRocketCrater";
+		explosionEffects = "ATRocketExplosion";
+		explosionSoundEffect = "DefaultExplosion";
+		effectsMissileInit = "RocketBackEffectsRPG";
+		effectsMissile = "missile2";
+		muzzleEffect = "";
+		whistleDist = 4;
+		lockType = 1;
+		manualControl = 1;
+		maxControlRange = 5000;
+		manualControlOffset = 100;
+		missileManualControlCone = 90;
+		weaponLockSystem = 16;
+		cmImmunity = 1;
+		cameraViewAvailable = 1;
+		submunitionAmmo = "DBA_152mm_Tanto5_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+	};
+	class DBA_20mm_PM359_KEP : B_40mm_GPR{
+		hit = 80;
+		indirectHit = 5;
+		indirectHitRange = 0.15;
+		explosive= 0.0
+		warheadName = "KEP";
+		caliber = 18.18181818;
+		deflecting = 1;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 40;
+		initSpeed=1100;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "128 + 256 + 512";
+		cost = 75;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.05;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;	
+		allowAgainstInfantry=0;
+		coefGravity=0.1;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_20mm_P594_HEI : DBA_20mm_PM359_KEP{
+		hit = 10;
+		indirectHit = 60;
+		indirectHitRange = 6.45;
+		explosive= 1
+		warheadName = "HEI";
+		caliber = 5;
+		deflecting = 1;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 40;
+		initSpeed=1100;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "128 + 256 + 512";
+		cost = 75;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.0;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;	
+		allowAgainstInfantry=0;
+		coefGravity=0.1;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
 	class DBA_23mm_UM23_HEPF : DBA_50mm_HEPF{
 		hit = 150;
 		indirectHit = 125;
@@ -4456,7 +6632,7 @@ class CfgAmmo
 	};
 	class DBA_165mm_C33_BESH : 3AS_GAT_redPlasma_AT{
 		displayName="165mw C-33 BESH";
-		hit = 400;
+		hit = 1000;
 		indirectHit = 800;
 		indirectHitRange = 25;
 		warheadName = "BESH";
@@ -4464,7 +6640,7 @@ class CfgAmmo
 		audibleFire=42;
 		initSpeed=259;
 		explosionSoundEffect="DefaultExplosion";
-		explosive=1;
+		explosive=0.33;
 		cost=75;
 		CraterEffects ="IEDMineBigGarbageCrater";
 		explosionEffects="IEDMineBigExplosion";
@@ -4551,6 +6727,134 @@ class CfgAmmo
 		muzzleEffect = "";
 		caliber = 0.8130081301;
 		typicalSpeed = 750;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=0;
+		airfriction=-0;
+		waterFriction=0;
+	};
+	class DBA_762_51_D61 : DBA_762_54_REC
+	{
+		hit = 38;
+		indirectHit = 2;
+		indirectHitRange = 0.2;
+		displayname = "7.62mw D61";
+		warheadName = "7.62mw D61";
+		explosive = 0;
+		airLock = 1;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 5;
+		initSpeed=910;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.10;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 3.2967;
+		typicalSpeed = 500;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=0;
+		airfriction=-0;
+		waterFriction=0;
+	};
+	class DBA_792_PKW : DBA_762_54_REC
+	{
+		hit = 42;
+		indirectHit = 3;
+		indirectHitRange = 0.1;
+		displayname = "7.92mw PKW";
+		warheadName = "7.92mw PKW";
+		explosive = 0;
+		airLock = 1;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 5;
+		initSpeed=905;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 0.9;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 2.578268877;
+		typicalSpeed = 500;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=0.25;
+		airfriction=-0;
+		waterFriction=0;
+	};
+	class B_762x54_Ball;
+	class DBA_762_54_DN71 : B_762x54_Ball{
+		hit = 40;
+		indirectHit = 3;
+		indirectHitRange = 0.1;
+		displayname = "7.62mw DN71";
+		warheadName = "7.62mw DN71";
+		explosive = 0;
+		airLock = 1;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 5;
+		initSpeed=883;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 0.9;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 2.642506606;
+		typicalSpeed = 500;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=0.25;
+		airfriction=0;
+		waterFriction=0;
+	};
+	class DBA_127_X962_SLAP : DBA_762_51_D61
+	{
+		hit = 60;
+		indirectHit = 10;
+		indirectHitRange = 0.8;
+		displayname = "12.7mw X962";
+		warheadName = "12.7mw X962";
+		explosive = 0;
+		airLock = 1;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 5;
+		initSpeed=1300;
+		model="kobra\442_weapons\ammo\blue_tracer.p3d";
+		tracerScale = 1.2;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 5.897435897;
+		typicalSpeed = 500;
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 910;
