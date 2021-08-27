@@ -18612,6 +18612,22 @@ class cfgVehicles
 				initPhase=0;
 			};
 		};
+		class UserActions
+		{
+			class Test_Plane_01_Eject
+			{
+				priority=0.050000001;
+				shortcut="Eject";
+				displayName="$STR_A3_action_eject";
+				condition="player in this && {speed this > 1}";
+				statement="[this] spawn bis_fnc_planeEjection";
+				position="pilotcontrol";
+				radius=10;
+				onlyforplayer=1;
+				showWindow=0;
+				hideOnUse=1;
+			};
+		};
 		class WingVortices
 		{
 		};
