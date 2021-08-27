@@ -6375,6 +6375,7 @@ class CfgVehicles
 	class 101st_NR99_Droid_Tank;
 	class 101st_Octo_Droid;
 	class 101st_Hyena_Bomber;
+	class 101st_Miner_Droid;
 	class SW_SPCIS;
 	class RD501_heavy_ordinance_tank_CIS;
 	class RD501_rocket_ordinance_tank_CIS;
