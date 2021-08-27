@@ -534,7 +534,7 @@ class CfgVehicles
 		scope=2;
 		scopecurator=2;
 		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
-		displayName="YWing";
+		displayName = "Y-Wing BTL-B StarFighter";
 		crew="B_Pilot_F";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";
@@ -576,7 +576,7 @@ class CfgVehicles
 		insideSoundCoef=0.2;
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
-		armor=200;
+		armor=95;
 		class HitPoints: HitPoints
 		{
 			class HitHull: HitHull
@@ -633,11 +633,11 @@ class CfgVehicles
 		stallWarningTreshold=0.1;
 		armorStructured=1;
 		envelope[]={0,0.5,2.5,4.8000002,6,7,7.5,7.5,7.5,7,6.4000001,5.5999999,2.0999999,1.7,1.4,1.35,1.3,1.15,0};
-		draconicForceXCoef=6.5;
-		draconicForceYCoef=8.5;
-		draconicForceZCoef=9;
-		draconicTorqueXCoef=2.0999999;
-		draconicTorqueYCoef=3;
+		draconicForceXCoef = 15;
+		draconicForceYCoef = 1;
+		draconicForceZCoef = 1;
+		draconicTorqueXCoef[] = {14,12,11.2,10.6,9.9,9.6,9.7,10.5,11,11.5,12};
+		draconicTorqueYCoef[] = {0.5,1,2,2.3,3,2.6,2.4,2.2,2,1.9,1.8};
 		angleOfIndicence=0.090000004;
 		airFriction0[]={60,50,12};
 		airFriction1[]={70,50,12};
@@ -1058,7 +1058,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopecurator=2;
-		Displayname="Fang-Class Starfighter";
+		displayName = "Y-Wing BTL-B StarFighter";
 		side=1;
 		forceingarage=1;
 		editorSubcategory = "O_DBA_CIS_3as_Planes";
@@ -1072,426 +1072,71 @@ class CfgVehicles
 		};
 		hiddenselections[]=
 		{
-			"camo1"
+			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\Fang\Blue_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
 		};
 		weapons[]=
-		{
-			"CMFlareLauncher"
-		};
+		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
-		magazines[]=
-		{
-			"120Rnd_CMFlare_Chaff_Magazine"
-		};
+		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
 	};
-	class 101st_Mando_Ship_Red: 101st_Mando_base
+	class 101st_YWing_Green: 101st_YWing_base
 	{
 		scope=2;
 		scopecurator=2;
-		Displayname="Elite Fang-Class Starfighter";
-		side=0;
+		displayName = "Y-Wing BTL-B StarFighter (Green)";
+		side=1;
+		forceingarage=1;
 		editorSubcategory = "O_DBA_CIS_3as_Planes";
         vehicleClass = "O_DBA_CIS_3as_Planes";
-        faction = "O_DBA_CIS_F";
-		crew="JLTS_Droid_B1_Crew";
+        faction="Republic_101st";
+		crew="DBA_Clean_CXO";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
-		Armor=400;
 		availableForSupportTypes[]=
 		{
 			"CAS_Bombing"
 		};
-				hiddenselections[]=
+	hiddenselections[]=
 		{
-			"camo1"
+			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\Fang\Red_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Right_wing_CO.paa"
 		};
-		gunBeg[]=
-		{
-			"Usti hlavne1",
-			"Usti hlavne2"
-		};
-		Gunend[]=
-		{
-			"Konec hlavne1",
-			"Konec hlavne2"
-		};
-		weapons[]=
-		{
-			"CMFlareLauncher"
-		};
+		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
-		magazines[]=
+		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
+	};
+	class 101st_YWing_Red: 101st_YWing_base
+	{
+		scope=2;
+		scopecurator=2;
+		displayName = "Y-Wing BTL-B StarFighter (Red)";
+		side=1;
+		forceingarage=1;
+		editorSubcategory = "O_DBA_CIS_3as_Planes";
+        vehicleClass = "O_DBA_CIS_3as_Planes";
+        faction="Republic_101st";
+		crew="DBA_Clean_CXO";
+		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
+		availableForSupportTypes[]=
 		{
-			"120Rnd_CMFlare_Chaff_Magazine"
+			"CAS_Bombing"
 		};
-		class Components: Components
+			hiddenselections[]=
 		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
-							minRange=1000;
-							maxRange=10000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=1000;
-							maxRange=10000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						maxTrackableSpeed=400;
-						componentType="IRSensorComponent";
-						typeRecognitionDistance=2000;
-						maxFogSeeThrough=0.995;
-						color[]={1,0,0,1};
-						allowsMarking=1;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						animDirection="";
-						aimDown=0;
-						minTrackableSpeed=-1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-					};
-					class VisualSensorComponent: SensorTemplateVisual
-					{
-						class AirTarget
-						{
-							minRange=30000;
-							maxRange=30000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=30000;
-							maxRange=30000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						maxTrackableSpeed=100;
-						aimDown=1;
-						animDirection="";
-						componentType="VisualSensorComponent";
-						nightRangeCoef=0;
-						maxFogSeeThrough=0.94;
-						color[]={1,1,0.5,0.80000001};
-						typeRecognitionDistance=2000;
-						allowsMarking=1;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						minTrackableSpeed=-1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-					{
-						componentType="PassiveRadarSensorComponent";
-						class AirTarget
-						{
-							minRange=45000;
-							maxRange=45000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=20000;
-							maxRange=20000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						typeRecognitionDistance=12000;
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						animDirection="";
-						aimDown=0;
-						color[]={0.5,1,0.5,0.5};
-						minTrackableSpeed=-1e+010;
-						maxTrackableSpeed=1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-						allowsMarking=0;
-					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange=30000;
-							maxRange=30000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=8000;
-							maxRange=8000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						typeRecognitionDistance=8000;
-						angleRangeHorizontal=180;
-						angleRangeVertical=180;
-						groundNoiseDistanceCoef=0.2;
-						componentType="ActiveRadarSensorComponent";
-						maxGroundNoiseDistance=200;
-						minSpeedThreshold=30;
-						maxSpeedThreshold=40;
-						color[]={0,1,1,1};
-						allowsMarking=1;
-						animDirection="";
-						aimDown=0;
-						minTrackableSpeed=-1e+010;
-						maxTrackableSpeed=1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-					};
-					class LaserSensorComponent: SensorTemplateLaser
-					{
-						componentType="LaserSensorComponent";
-						class AirTarget
-						{
-							minRange=15000;
-							maxRange=15000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=15000;
-							maxRange=15000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						angleRangeHorizontal=180;
-						angleRangeVertical=180;
-						typeRecognitionDistance=0;
-						color[]={1,1,1,0};
-						allowsMarking=1;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						animDirection="";
-						aimDown=0;
-						minTrackableSpeed=-1e+010;
-						maxTrackableSpeed=1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-					};
-					class NVSensorComponent: SensorTemplateNV
-					{
-						componentType="NVSensorComponent";
-						color[]={1,1,1,0};
-						typeRecognitionDistance=0;
-						class AirTarget
-						{
-							minRange=8000;
-							maxRange=8000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=8000;
-							maxRange=8000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						angleRangeHorizontal=90;
-						angleRangeVertical=90;
-						allowsMarking=1;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						animDirection="";
-						aimDown=0;
-						minTrackableSpeed=-1e+010;
-						maxTrackableSpeed=1e+010;
-						minTrackableATL=-1e+010;
-						maxTrackableATL=1e+010;
-					};
-				};
-			};
-			class TransportPylonsComponent: TransportPylonsComponent
-			{
-				uiPicture="a3\air_f_gamma\plane_fighter_03\data\ui\plane_a143_3den_ca.paa";
-				class Pylons: Pylons
-				{
-					class pylons1
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						attachment="DBA_pylon_aa_x3_mag";
-						priority=10;
-						maxweight=300;
-						UIposition[]={0.60000002,0.44999999};
-					};
-					class pylons2: pylons1
-					{
-						UIposition[]={0.050000001,0.44999999};
-						mirroredMissilePos=1;
-					};
-					class pylons3: pylons1
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						attachment="DBA_pylon_generic_aircraft_cannon_yellow_x500_mag";
-						priority=9;
-						maxweight=2500;
-						UIposition[]={0.55000001,0.34999999};
-					};
-					class pylons4: pylons3
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						attachment="DBA_pylon_generic_aircraft_cannon_yellow_x500_mag";
-						priority=13;
-						maxweight=5000;
-						UIposition[]={0.1,0.34999999};
-						mirroredMissilePos=3;
-					};
-					class pylons5: pylons1
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						attachment="DBA_pylon_aa_x3_mag";
-						priority=7;
-						maxweight=5000;
-						UIposition[]={0.5,0.25};
-					};
-					class pylons6: pylons5
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						attachment="DBA_pylon_aa_x3_mag";
-						priority=12;
-						maxweight=5000;
-						UIposition[]={0.15000001,0.25};
-						mirroredMissilePos=5;
-					};
-					class Pylons7
-					{
-						hardpoints[]=
-						{
-							"DBA_Opfor_rail"
-						};
-						priority=5;
-						attachment="DBA_pylon_generic_aircraft_gun_yellow_x1000_mag";
-						maxweight=4000;
-						UIposition[]={0.1,0.25};
-					};
-				};
-				class Presets
-				{
-					class Empty
-					{
-						displayName="$STR_empty";
-						attachment[]={};
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
-			{
-				defaultDisplay="EmptyDisplay";
-				class Components
-				{
-					class EmptyDisplay
-					{
-						componentType="EmptyDisplayComponent";
-					};
-					class MinimapDisplay
-					{
-						componentType="MinimapDisplayComponent";
-						resource="RscCustomInfoMiniMap";
-					};
-					class VehicleDriverDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Driver";
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={8000,2000,4000,16000,30000};
-						resource="RscCustomInfoSensors";
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
-			{
-				defaultDisplay="SensorDisplay";
-				class Components
-				{
-					class EmptyDisplay
-					{
-						componentType="EmptyDisplayComponent";
-					};
-					class MinimapDisplay
-					{
-						componentType="MinimapDisplayComponent";
-						resource="RscCustomInfoMiniMap";
-					};
-					class VehicleDriverDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Driver";
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={8000,2000,4000,16000,30000};
-						resource="RscCustomInfoSensors";
-					};
-				};
-			};
+			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
 		};
+		hiddenselectionstextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Right_wing_CO.paa"
+		};
+		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
+		editorPreview="";
+		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
 	};
 };
