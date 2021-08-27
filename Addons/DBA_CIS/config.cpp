@@ -120,6 +120,7 @@ class CfgPatches
 			"O_DBA_CIS_Tri_Fighter_Droid_RD501_F",
 			"O_DBA_CIS_Hyena_Bomber_Droid_RD501_F",
 			"O_DBA_CIS_DSD1_F",
+			"O_DBA_CIS_Miner_F",
 			"O_DBA_CIS_Hyena_Bomber_F",
 			"O_DBA_CIS_Crab_Droid_F",
 			"O_DBA_CIS_DSD3_F",
@@ -10566,6 +10567,18 @@ class CfgVehicles
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
 	};
+	class O_DBA_CIS_Miner_F: 101st_Miner_Droid
+	{
+		scope=2;
+		scopeCurator=2;
+		displayName="Dwarf Miner Droid";
+		editorSubcategory="O_DBA_CIS_Turrets";
+		vehicleClass="O_DBA_CIS_Turrets";
+		side=0;
+		faction="O_DBA_CIS_F";
+		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_DSD3_F.jpg";
+		crew="O_DBA_CIS_B1_Crew_Droid_F";
+	}
 	class O_DBA_CIS_Tri_Droid_F: 101st_Octo_Droid
 	{
 		scope=2;

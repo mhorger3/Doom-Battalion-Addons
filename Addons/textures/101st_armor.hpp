@@ -2180,8 +2180,8 @@ class 101st_212_Radar: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Top_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Armor_Bottom_CO.paa"
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Arf_Armor_Top_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Asylum_Arf_Armor_Bottom_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
