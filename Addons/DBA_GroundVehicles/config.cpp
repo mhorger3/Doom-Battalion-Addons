@@ -14,6 +14,7 @@ class CfgPatches
 			"DBA_BEARD",
 			"DBA_Tyrant",
 			"DBA_Overlord",
+			"DBA_Warrior_Testbed",
 			"DBA_Winter_Warrior",
 			"DBA_Doom_Warrior",
 			"DBA_Fennek",
@@ -21,9 +22,13 @@ class CfgPatches
 			"DBA_Fennek_Medic",
 			"DBA_Rooikat",
 			"DBA_Leopard",
+			"DBA_Leopard_Testbed",
 			"DBA_Merkava",	
+			"DBA_Merkava_Testbed",
 			"DBA_Armata",
+			"DBA_Armata_Testbed",
 			"DBA_LSV",
+			"DBA_ATTE_Base",
 			"101st_Octo_Droid",
 			"101st_DSD3_Droid",
 			"101st_Crab_Droid",
@@ -116,6 +121,28 @@ class CfgVehicles
 					class CommanderOptics;
 				};
 			};
+		};
+		class Components;
+		class AnimationSources;
+		class ViewPilot;
+		class CargoTurret;
+		class ViewOptics;
+		class RCWSOptics;
+		class ViewGunner;
+		class ViewCargo;
+		class HeadLimits;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitEngine;
+			class HitLTrack;
+			class HitRTrack;
+			class HitFuel;
+		};
+		class Sounds: Sounds
+		{
+			class Engine;
+			class Movement;
 		};
 	};
 	class turrets;
@@ -558,7 +585,390 @@ class CfgVehicles
 			};
 		};
 	};
-
+//AT-TE
+class 3as_ATTE_Base: Tank_F{
+	class Turrets{
+		class MainTurretTop: NewTurret
+			{
+				startEngine=0;
+				body="MainTurret";
+				memoryPointsGetInGunner="pos_gunner";
+				memoryPointsGetInGunnerDir="pos_gunner_dir";
+				gun="MainGun";
+				proxyIndex=1;
+				viewGunnerInExternal=1;
+				commanding=5;
+				proxytype="CPGunner";
+				gunnername="Gunner";
+				showgunneroptics=1;
+				animationSourceBody="Mainturret";
+				animationSourceGun="Maingun";
+				gunBeg="Konec hlavne";
+				gunEnd="Usti hlavne";
+				memoryPointGun="usti hlavne";
+				memoryPointGunnerOptics="gunnerview";
+				weapons[]=
+				{
+					"3AS_ATTE_AT_Turret",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"SmokeLauncherMag"
+				};
+				gunnerAction="mbt1_slot2_out";
+				gunnerInAction="ATAP_Commander";
+				gunnerGetInAction="GetInHigh";
+				gunnerGetOutAction="GetOutHigh";
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+				discreteDistanceInitIndex=2;
+				selectionFireAnim="zasleh2";
+				minElev=-10;
+				initElev=0;
+				maxElev=45;
+				maxTurn=360;
+				minTurn=-360;
+				minOutElev=-10;
+				maxOutElev=15;
+				initOutElev=0;
+				minOutTurn=-15;
+				maxOutTurn=175;
+				initOutTurn=0;
+				forceHideGunner=1;
+				outGunnerMayFire=0;
+				inGunnerMayFire=1;
+				gunnerForceOptics=0;
+				LODTurnedIn=1000;
+				LODOpticsIn=1;
+				class OpticsIn
+				{
+					class Wide
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.155;
+						minFov=0.155;
+						maxFov=0.155;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={0,1};
+						gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						gunnerOpticsEffect[]={};
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						initFov=0.046999998;
+						minFov=0.046999998;
+						maxFov=0.046999998;
+					};
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=0.2;
+						material=-1;
+						name="otocvez";
+						visual="commander_turret_hit";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.2;
+						radius=0.30000001;
+					};
+					class HitGun
+					{
+						armor=0.1;
+						material=-1;
+						name="gun1_hit";
+						visual="commander_gun_hit";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.40000001;
+						radius=0.5;
+					};
+				};
+			};
+			class MainTurretFront: NewTurret
+			{
+				startEngine=0;
+				memoryPointsGetInGunner="pos_gunner";
+				memoryPointsGetInGunnerDir="pos_gunner_dir";
+				selectionFireAnim="";
+				body="mainturret2";
+				gun="maingun2";
+				proxyIndex=2;
+				viewGunnerInExternal=1;
+				commanding=1;
+				proxytype="CPGunner";
+				gunnername="Commander";
+				animationSourceBody="mainturret2";
+				animationSourceGun="maingun2";
+				forceHideGunner=1;
+				showgunneroptics=1;
+				gunnerInAction="UTAT_Driver";
+				gunnerGetInAction="GetInHigh";
+				gunnerGetOutAction="GetOutHigh";
+				elevationMode=0;
+				gunEnd="";
+				gunBeg="";
+				memoryPointGun[]=
+				{
+					"FTL_muzzle",
+					"FTR_Muzzle",
+					"FBR_Muzzle",
+					"FBL_Muzzle"
+				};
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",
+					0.56234097,
+					1,
+					30
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",
+					0.56234097,
+					1,
+					30
+				};
+				weapons[]=
+				{
+					"3AS_ATAP_PD_Turret"
+				};
+				magazines[]=
+				{
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag"
+				};
+				minElev=-10;
+				maxElev=10;
+				maxTurn=15;
+				minTurn=-15;
+				initElev=0;
+				initTurn=0;
+				memoryPointGunnerOptics="commanderview";
+				gunnerForceOptics=0;
+				isPersonTurret=0;
+				LODTurnedIn=1000;
+				class OpticsIn
+				{
+					class Wide
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.155;
+						minFov=0.155;
+						maxFov=0.155;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={0,1};
+						gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						gunnerOpticsEffect[]={};
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						initFov=0.046999998;
+						minFov=0.046999998;
+						maxFov=0.046999998;
+					};
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=0.60000002;
+						material=-1;
+						name="turret2_hit";
+						visual="main_turret_hit";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.2;
+						radius=0.25;
+					};
+					class HitGun
+					{
+						armor=0.40000001;
+						material=-1;
+						name="gun2_hit";
+						visual="main_gun_hit";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.40000001;
+						radius=0.25;
+					};
+				};
+			};
+			class MainTurretBack: MainTurretFront
+			{
+				body="mainturret3";
+				gun="maingun3";
+				animationSourceBody="mainturret3";
+				animationSourceGun="maingun3";
+				proxyIndex=1;
+				commanding=-1;
+				proxytype="CPCargo";
+				gunnername="Rear Gunner";
+				memoryPointGun[]=
+				{
+					"BTL_muzzle",
+					"BTR_Muzzle"
+				};
+				maxTurn=195;
+				minTurn=165;
+				initElev=0;
+				initTurn=180;
+				LODTurnedIn=1200;
+				LODOpticsIn=1000;
+				memoryPointGunnerOptics="commanderview2";
+			};
+	};
+};
+class DBA_ATTE_Base : 3as_ATTE_Base{
+	enginePower=50000;
+	maxOmega=500;
+	maxSpeed=55;
+	peakTorque=10000;
+	thrustDelay=0.5;
+	clutchStrength=250;
+	fuelCapacity=1885;
+	brakeIdleSpeed=1.78;
+	latency=0.1;
+	tankTurnForce=68000;
+	dampingRateZeroThrottleClutchEngaged=5;
+	dampingRateZeroThrottleClutchDisengaged=10;
+	idleRpm=1500;
+	redRpm=5000;
+	displayname="AT-TE Test Bed";
+	faction="Republic_101st";
+	side=1;
+	transportSoldier=24;
+	armor=10000;
+	class Turrets{
+		class MainTurretTop: NewTurret
+			{
+				weapons[]=
+				{
+					"3AS_ATTE_AT_Turret",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"3AS_10rnd_ATTE_AT_Mag",
+					"SmokeLauncherMag"
+				};
+				minElev=-10;
+				initElev=0;
+				maxElev=65;
+				maxTurn=360;
+				minTurn=-360;
+				minOutElev=-10;
+				maxOutElev=15;
+				initOutElev=0;
+				minOutTurn=-15;
+				maxOutTurn=175;
+				initOutTurn=0;
+				forceHideGunner=1;
+				outGunnerMayFire=0;
+				inGunnerMayFire=1;
+				gunnerForceOptics=0;
+				LODTurnedIn=1000;
+				LODOpticsIn=1;
+			};
+			class MainTurretFront: NewTurret
+			{
+				gunEnd="";
+				gunBeg="";
+				memoryPointGun[]=
+				{
+					"FTL_muzzle",
+					"FTR_Muzzle",
+					"FBR_Muzzle",
+					"FBL_Muzzle"
+				};
+				weapons[]=
+				{
+					"3AS_ATAP_PD_Turret"
+				};
+				magazines[]=
+				{
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag",
+					"3AS_500Rnd_ATAP_PD_Mag"
+				};
+				minElev=-10;
+				maxElev=10;
+				maxTurn=15;
+				minTurn=-15;
+				initElev=0;
+				initTurn=0;
+				memoryPointGunnerOptics="commanderview";
+				gunnerForceOptics=0;
+				isPersonTurret=0;
+				LODTurnedIn=1000;
+			};
+			class MainTurretBack: MainTurretFront
+			{
+				body="mainturret3";
+				gun="maingun3";
+				animationSourceBody="mainturret3";
+				animationSourceGun="maingun3";
+				proxyIndex=1;
+				commanding=-1;
+				proxytype="CPCargo";
+				gunnername="Rear Gunner";
+				memoryPointGun[]=
+				{
+					"BTL_muzzle",
+					"BTR_Muzzle"
+				};
+				maxTurn=195;
+				minTurn=165;
+				initElev=0;
+				initTurn=180;
+				LODTurnedIn=1200;
+				LODOpticsIn=1000;
+				memoryPointGunnerOptics="commanderview2";
+			};
+	};
+};
 //Sabers
 	class DBA_TX130_Standard: 3as_saber_m1
 	{
@@ -1397,6 +1807,121 @@ class CfgVehicles
 	};
 
 //Warrior
+	class DBA_Warrior_Testbed : I_APC_tracked_03_cannon_F
+	{
+		ace_cargo_space = 400;
+		displayName = "Warrior Test Bed";
+		scope=2;
+		scopeCurator=2;
+		side=1;
+		armor=700;
+		faction="Republic_101st";
+		hiddenSelections[] = {"Camo1","Camo2","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_01_101_co.paa","101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_02_101_co.paa","A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa","A3\armor_f\data\cage_aaf_co.paa"};
+		icon = "\A3\Armor_F_EPB\APC_Tracked_03\Data\UI\map_APC_Tracked_03_CA.paa";
+		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_40mw_P4M_Cannon",
+					"DBA_762_C95A1_CG",
+					"DBA_127_C3HB_HMG",
+				};
+				magazines[]=
+				{
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PL31A_HESH_x320_mag",
+					"DBA_40mm_PL31A_HESH_x320_mag",
+					"DBA_762_D61_x2000_mag",
+					"DBA_127_X962_x1500_mag",
+				};
+				class HitPoints: HitPoints
+				{
+					class HitTurret: HitTurret
+					{
+						armor=13;
+					};
+					class HitGun: HitGun
+					{
+						armor=13;
+					};
+				};
+				class turrets: turrets
+				{
+					class commanderoptics: commanderoptics
+					{
+						weapons[]=
+						{
+							"CMFlareLauncher",
+							"SmokeLauncher",
+							"Laserdesignator_vehicle"
+						};
+						magazines[]=
+						{
+							"300Rnd_CMFlare_Chaff_Magazine",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries"
+						};
+					};
+				};
+			};
+		};
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=40;
+			};
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon="RD501_launcher_rps1";
+				count=2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
+			};
+		};
+	};
 	class DBA_Winter_Warrior : I_APC_tracked_03_cannon_F
 	{
 		displayName = "RFV-103 Winter Warrior";
@@ -1985,6 +2510,135 @@ class CfgVehicles
 	};*/
 	
 //Tanks
+	class DBA_Leopard_Testbed : I_MBT_03_cannon_F
+	{
+		ace_cargo_space = 400;
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Leopard Test Bed";
+		crew="101st_CloneTrooper_212th";
+		armor=750;
+		armorStructural=10;
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5",
+			"CamoNet"
+		};
+		textureList[]={};
+		hiddenSelectionsTextures[] = 
+		{
+			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext01_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext02_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\101st_mbt_03_rcws_co.paa",
+			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
+		};		
+		faction="Republic_101st";
+		normalSpeedForwardCoef = 0.95;
+		slowSpeedForwardCoef = 0.25;
+		enginePower=1677.825;
+		maxOmega=273;
+		minOmega=84;
+		maxSpeed=78;
+		peakTorque=8150;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=850000;
+		idleRpm=800;
+		redRpm=2600;
+		engineLosses=5;
+		torqueCurve[]= 
+		{
+			{0.424242,0.8},
+			{0.545455,0.95},
+			{0.606061,0.99},
+			{0.636364,1},
+			{0.666667,0.97},
+			{0.727273,0.95},
+			{0.878788,0.9},
+			{1,0.875}
+		};
+		epeImpulseDamageCoef=0.01;
+		class complexGearbox
+		{
+        GearboxRatios[] = {"R1",-1.15,"N",0,"D1",4.4,"D2",3,"D3",1.65,"D4",0.8};
+        transmissionRatios[] = {"High",13};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+		};
+		class Turrets: turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_105mw_PN105M_Cannon",
+					"DBA_762_C3M_CG",
+				};
+				magazines[]=
+				{
+					"DBA_105mm_P900_x4_mag",
+					"DBA_105mm_P900_x4_mag",
+					"DBA_105mm_P900_x4_mag",
+					"DBA_105mm_P900_x4_mag",
+					"DBA_105mm_P900_x4_mag",
+					"DBA_105mm_P456_x4_mag",
+					"DBA_105mm_P456_x4_mag",
+					"DBA_105mm_P456_x4_mag",
+					"DBA_105mm_P395_x4_mag",
+					"DBA_105mm_P395_x4_mag",
+					"DBA_105mm_P395_x4_mag",
+					"DBA_105mm_P395_x4_mag",
+					"DBA_105mm_S416_x8_mag",
+					"DBA_105mm_S416_x8_mag",
+					"DBA_762_D61_x400_mag",
+					"DBA_762_D61_x400_mag",
+				};
+				minElev = -16;
+				maxElev = 45;
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						memoryPointGun = "usti hlavne2";
+						selectionFireAnim = "zasleh2";
+						weapons[]=
+						{
+							"DBA_792mw_DC42_MG",
+							"CMFlareLauncher",
+							"SmokeLauncher",
+							"Laserdesignator_vehicle"
+						};
+						magazines[]=
+						{
+							"DBA_792_PKW_x5000_mag",
+							"DBA_792_PKW_x5000_mag",
+							"300Rnd_CMFlare_Chaff_Magazine",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries"
+						};
+					};
+				};
+			};
+		};
+	};
 	class DBA_Leopard : I_MBT_03_cannon_F //Sacrifices top Autocannon for HMG with more ammo better for extended missions w/o resupply
 	{
 		ace_cargo_space = 400;
@@ -2114,6 +2768,341 @@ class CfgVehicles
 		};
 	};
 
+	class DBA_Merkava_Testbed : B_MBT_01_TUSK_F{
+		ace_cargo_space = 400;
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Merkava Testbed MODTEAM ONLY <- Read";
+		crew="101st_CloneTrooper_212th";
+		armor=900;
+		armorStructural=10;
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5",
+			"CamoSlat"
+		};
+		textureList[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+		};	
+		faction="Republic_101st";
+		normalSpeedForwardCoef = 0.95;
+		slowSpeedForwardCoef = 0.25;
+		engineMOI=9;
+		enginePower=1118.55;
+		maxOmega=251.3274;
+		minOmega=73.303;
+		maxSpeed=67.5;
+		peakTorque=5950.56926;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=1200000;
+		idleRpm=700;
+		redRpm=2400;
+		engineLosses=5;
+		accelAidForceCoef = 4.0;
+		accelAidForceSpd = 30.0;
+		torqueCurve[] = {
+			{0.363636,0.8},
+			{0.454545,0.83},
+			{0.545455,0.95},
+			{0.606061,0.98},
+			{0.666667,1},
+			{0.727273,0.94},
+			{0.848485,0.9},
+			{1,0.87}
+		};
+		epeImpulseDamageCoef=0.01;
+		class complexGearbox
+		{
+        GearboxRatios[] = {"R1",-0.15,"N",0,"D1",4.9,"D2",3.1,"D3",1.9,"D4",1.05};
+        transmissionRatios[] = {"High",12};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+		};
+		smokeLauncherGrenadeCount = 20;
+		smokeLauncherVelocity = 20;
+		smokeLauncherOnTurret = 1;
+		smokeLauncherAngle = 360;
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon="RD501_launcher_rps1";
+				count=2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+		};
+		class Turrets: turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_120mw_PG251_Cannon",
+					"DBA_762_C110_CG"
+				};
+				magazines[]=
+				{
+					"DBA_120mm_PM53_x16_mag",
+					"DBA_120mm_P225_x16_mag",
+					"DBA_120mm_PM11_x18_mag",
+					"DBA_120mm_Kanabo_x5_mag",
+					"DBA_762_D61_x400_mag",
+					"DBA_762_D61_x400_mag",
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						gunBeg = "commander_gun_muzzle_pos";
+						gunEnd = "commander_gun_muzzle_end";
+						memoryPointGun = "commander_gun_muzzle";
+						selectionFireAnim = "commander_muzzleflash";
+						minElev = -20;
+						maxElev = 40;
+						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+						discreteDistanceInitIndex = 2;
+						turretInfoType = "RscOptics_MBT_01_commander_RCWS";
+						weapons[]=
+						{
+							"DBA_127_C3HB_RCWS",
+							"CMFlareLauncher",
+							"SmokeLauncher",
+							"Laserdesignator_vehicle",
+						};
+						magazines[]=
+						{
+							"DBA_127_X962_x1500_mag",
+							"DBA_127_X962_x1500_mag",
+							"300Rnd_CMFlare_Chaff_Magazine",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries",
+						};
+					};
+				};
+			};
+		};
+	};
+	class DBA_Armata_Testbed : O_T_MBT_04_command_F{
+		ace_cargo_space = 400;
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Armata Testbed";
+		crew="101st_CloneTrooper_212th";
+		armor=1250;
+		armorStructural=12;
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"CamoNet"
+		};
+		textureList[]={};
+		hiddenSelectionsTextures[] = 
+		{
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_1_101st_Gray_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
+			"A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
+		};		
+		faction="Republic_101st";
+		normalSpeedForwardCoef = 0.95;
+		slowSpeedForwardCoef = 0.25;
+		engineMOI=7;
+		enginePower=1342.26;
+		maxOmega=251.3274;
+		minOmega=73.303;
+		maxSpeed=45;
+		peakTorque=5840.75536;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=1500000;
+		idleRpm=700;
+		redRpm=2400;
+		engineLosses=5;
+		accelAidForceCoef = 2.5;
+		accelAidForceSpd = 15.0;
+		torqueCurve[] = {
+			{0.416667,0.863636},
+			{0.5,0.890909},
+			{0.583333,0.938182},
+			{0.666667,0.981818},
+			{0.75,1},
+			{0.833333,0.963636},
+			{0.916667,0.863636},
+			{1,0.854545}};
+		epeImpulseDamageCoef=0.01;
+		class complexGearbox
+    {
+        GearboxRatios[] = {"R1",-1.05,"N",0,"D1",7.8,"D2",5.6,"D3",4,"D4",2.9,"D5",2.1,"D6",1.5,"D7",1.1};
+        transmissionRatios[] = {"High",5.5};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+    };
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon="RD501_launcher_rps1";
+				count=2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+		};
+		class Turrets: turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_152mw_M83S_Cannon",
+					"DBA_VehicleLauncher",
+					"DBA_762_CP46_CG"
+				};
+				magazines[]=
+				{
+					"DBA_152mm_Tanto1_x25_mag",
+					"DBA_152mm_Tanto3_x35_mag",
+					"DBA_152mm_Tanto5_x2_mag",
+					"DBA_60mm_PLX772_x5_mag",
+					"DBA_60mm_PLX772_x5_mag",
+					"DBA_762_DN71_x250_mag",
+					"DBA_762_DN71_x250_mag",
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						gunBeg = "Usti hlavne2";
+						gunEnd = "Konec hlavne2";
+						memoryPointGun = "usti hlavne2";
+						selectionFireAnim = "zasleh2";
+						minElev = -18;
+						maxElev = 70;
+						weapons[]=
+						{
+							"DBA_20mw_GAIBO1_AC",
+							"CMFlareLauncher",
+							"SmokeLauncher",
+							"Laserdesignator_vehicle"
+						};
+						magazines[]=
+						{
+							"DBA_20mm_PM359_x150_mag",
+							"DBA_20mm_PM359_x150_mag",
+							"DBA_20mm_P594_x250_mag",
+							"DBA_20mm_P594_x250_mag",
+							"DBA_20mm_P594_x250_mag",
+							"300Rnd_CMFlare_Chaff_Magazine",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries"
+						};
+					};
+				};
+			};
+		};
+	};
 	class DBA_Merkava : B_MBT_01_TUSK_F //Sacrifices ammo for troop transport + slightly uparmored
 	{
 		ace_cargo_space = 400;
@@ -2722,8 +3711,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class Wheeled_APC_F;
 	class APC_Wheeled_02_base_F : Wheeled_APC_F
 	{
 		class Turrets
