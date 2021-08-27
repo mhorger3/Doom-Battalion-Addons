@@ -651,9 +651,9 @@
 		};
 		class DBA_AntiTank_base :DBA_ammo_base //AT Rifle Ammo
 		{
-			hit = 70; //How much damage when it hits
-			indirecthit = 0; //Splash Damage
-			indirecthitrange = 0; //Splash Damage Range in meters
+			hit = 1000; //How much damage when it hits
+			indirecthit = 20; //Splash Damage
+			indirecthitrange = 2; //Splash Damage Range in meters
 			caliber = 30; //Acts as penetration multiplier for the projectile.
 			typicalspeed = 800; //What speed does this need to be going to inflict full damage
 
