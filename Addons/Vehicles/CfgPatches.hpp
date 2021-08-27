@@ -38,6 +38,7 @@
 			"101st_Octo_Droid",
 			"101st_DSD3_Droid",
 			"101st_DSD_Droid",
+			"101st_Miner_Droid",
 			"101st_Crab_Droid",
 			"101st_Wookie_Turret",
 			"101st_TrandoCarbo",
