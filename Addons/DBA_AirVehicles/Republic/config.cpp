@@ -17896,6 +17896,9 @@ class cfgVehicles
 		scope=1;
 		scopecurator=1;
 		side=1;
+		getInAction="GetInHigh";
+		getOutAction = "GetOutHigh";
+		driverCanEject = 1;
 		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
 		crew="101st_Pilot_212th";
