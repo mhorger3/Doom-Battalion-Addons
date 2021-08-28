@@ -15,7 +15,7 @@ class DBA_Claymore2HQ : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\2HQ_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\HQ_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -46,7 +46,7 @@ class DBA_Claymore2HQM : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\2HQM_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\HQM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -77,7 +77,7 @@ class DBA_Claymore2HQRTO : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\2HQR_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\PlatoonArmours\Claymore2\textures\HQR_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem

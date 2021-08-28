@@ -92,6 +92,8 @@ class ClaymoreHQ_DBA : 101st_JLTS_Clone_P2
 	displayName = "101st Claymore HQ (JLTS)";
 	uniformClass = "DBA_ClaymoreHQ";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -136,6 +138,8 @@ class ClaymoreHQM_DBA : 101st_JLTS_Clone_P2
 	displayName = "101st Claymore HQ Medic (JLTS)";
 	uniformClass = "DBA_ClaymoreHQM";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -180,6 +184,8 @@ class ClaymoreHQRTO_DBA : 101st_JLTS_Clone_P2
 	displayName = "101st Claymore HQ RTO (JLTS)";
 	uniformClass = "DBA_ClaymoreHQRTO";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
 		"camo1",
