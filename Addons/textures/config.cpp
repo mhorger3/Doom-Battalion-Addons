@@ -28,3 +28,7 @@ class CfgWeapons
 {
 #include "101st_armor.hpp"
 };
+class CfgFaces
+{
+#include "DBA_Faces.hpp"
+};
