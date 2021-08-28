@@ -17895,6 +17895,7 @@ class cfgVehicles
 		simulation="airplaneX";
 		scope=1;
 		scopecurator=1;
+		side=1;
 		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
 		crew="101st_Pilot_212th";
@@ -17963,6 +17964,9 @@ class cfgVehicles
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
 		armor=95;
+		 faction="Republic_101st";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Air";
 	};
 	class 101st_YWing: 101st_YWing_base
 	{
@@ -18001,7 +18005,9 @@ class cfgVehicles
 		displayName = "Y-Wing BTL-B StarFighter (Green)";
 		side=1;
 		forceingarage=1;
-        faction="Republic_101st";
+         faction="Republic_101st";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
@@ -18028,7 +18034,9 @@ class cfgVehicles
 		displayName = "Y-Wing BTL-B StarFighter (Red)";
 		side=1;
 		forceingarage=1;
-        faction="Republic_101st";
+         faction="Republic_101st";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
