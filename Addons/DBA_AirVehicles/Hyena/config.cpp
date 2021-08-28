@@ -89,8 +89,32 @@ class CfgVehicles
 			};
 		};
 	};
-	class MFD;
-	class 101st_Hyena_base: Plane_Fighter_03_dynamicLoadout_base_F
+	class 3as_Z95_base: Plane_Fighter_03_dynamicLoadout_base_F
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				
+				class Pylons;
+				class Presets;
+			};
+		};
+		class pilotCamera;
+	};
+	class RD501_z95_blue: 3as_Z95_base
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				
+				class Pylons;
+				class Presets;
+			};
+		};
+	};
+	class 101st_Hyena_base: RD501_z95_blue
 	{
 		irTarget=1;
 		irTargetSize=0.34999999;
