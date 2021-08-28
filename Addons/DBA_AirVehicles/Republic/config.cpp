@@ -17973,6 +17973,8 @@ class cfgVehicles
 		side=1;
 		forceingarage=1;
         faction="Republic_101st";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
