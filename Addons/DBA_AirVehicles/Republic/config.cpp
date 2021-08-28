@@ -17897,9 +17897,7 @@ class cfgVehicles
 		scopecurator=1;
 		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
-		crew="B_Pilot_F";
-		editorSubcategory = "RD501_Editor_Category_Air_Republic_vtol";
-		vehicleClass = "RD501_Air_Vehicle_Class_Republic";
+		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";
 		class UserActions
