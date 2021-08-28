@@ -68,6 +68,18 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
+	class 101st_SCI_Backpack_RTO: TFAR_rt1523g_big {
+		dlc = "101st_Aux_Mod";
+		displayname="101st JTLS RTO";
+		maximumLoad=500;
+		hiddenSelections[] = {"camo1"};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
+				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
+	};
 	class 101st_SCI_Backpack_RTO_V2: TFAR_rt1523g_big {
 		dlc = "101st_Aux_Mod";
 		displayname="101st JTLS RTO";
