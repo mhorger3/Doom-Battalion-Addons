@@ -716,7 +716,7 @@ class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
 					"DBA_127mm_PVX90_ATGM_x2_mag",
 					};
 				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
-				minElev=-15;
+				minElev=-17;
 				maxElev=70;
 				class Turrets: Turrets
 				{
@@ -742,16 +742,15 @@ class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
 	thrustDelay = 0.1;
     brakeIdleSpeed = 5;
     maxSpeed = 95;
-	terrainCoef = 0.75;
     wheelCircumference = 3.805;
     waterLeakiness = 0.0;
-	waterLinearDampingCoefX = 30.0;
-	waterLinearDampingCoefY = 1.875;
-	waterResistanceCoef = 0.005;
-	rudderForceCoef = 8.75;
-	waterAngularDampingCoef = 12.0;
+	waterLinearDampingCoefX = 10.0;
+	waterLinearDampingCoefY = 2.0;
+	waterResistanceCoef = 0.0005;
+	rudderForceCoef = 1.25;
+	waterAngularDampingCoef = 1.0;
 	canFloat = 1;
-    normalSpeedForwardCoef = 1.00;
+    normalSpeedForwardCoef = 0.95;
     accelAidForceYOffset = -1.5;
     antiRollbarForceCoef = 35;
     antiRollbarForceLimit = 30;
@@ -766,15 +765,15 @@ class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
     centreBias = 1.3;
     clutchStrength = 400;
     enginePower = 1230.405;
-    peakTorque = 4894.15884;
+    peakTorque = 6894.15884;
     idleRpm = 700;
     redRpm = 2400;
     maxOmega=251.3274;
 	minOmega=73.303;
 	accelAidForceCoef = 4.0;
-	accelAidForceSpd = 30.0;
+	accelAidForceSpd = 35.0;
     dampingRateFullThrottle = 0.08;
-    dampingRateZeroThrottleClutchEngaged = 2;
+    dampingRateZeroThrottleClutchEngaged = 1;
     dampingRateZeroThrottleClutchDisengaged = 0.05;
     memoryPointLMissile = "Rocket_1";
     memoryPointRMissile = "Rocket_2";
