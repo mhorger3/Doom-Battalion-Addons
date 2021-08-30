@@ -27,6 +27,8 @@ class CfgPatches
 			"DBA_Merkava_Testbed",
 			"DBA_Armata",
 			"DBA_Armata_Testbed",
+			"DBA_AV7_Testbed",
+			"DBA_Bantha_Testbed",
 			"DBA_LSV",
 			"DBA_ATTE_Base",
 			"101st_Octo_Droid",
@@ -296,7 +298,29 @@ class CfgVehicles
 			};
 		};
 	};
-
+	class MBT_01_arty_base_F: MBT_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+			};
+		};
+	};
+	class 3as_01_arty_base_F : MBT_01_arty_base_F{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+			};
+		};
+	};	
 	class Car: LandVehicle
 	{
 		class NewTurret;
@@ -585,6 +609,200 @@ class CfgVehicles
 			};
 		};
 	};
+	class 212th_APC_Wheeled_01_base_F: Wheeled_APC_F{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class 212th_B_APC_Wheeled_01_base_F : 212th_APC_Wheeled_01_base_F{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class 212th_B_APC_Wheeled_01_cannon_F : 212th_B_APC_Wheeled_01_base_F{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+//Bantha Testbed
+class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
+	scope=2;
+	scopeCurator=2;
+	side=1;
+	editorSubcategory = "EdSubcat_APCs";
+	faction="Republic_101st";
+	armor=700;
+	armorStructural=8;
+	displayName="Bantha Testbed";
+	icon = "\A3\Armor_F_EPB\APC_Tracked_03\Data\UI\map_APC_Tracked_03_CA.paa";
+	hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+	model = "212th\Vehicles\212th_APC\212th_apc.p3d";
+	hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\bantha\bantha-ext_arma_material_101st_co.paa",
+			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Tire_Arma_Material_CO.paa",
+			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Turret_Arma_Material_CO.paa",
+			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Int_Arma_Material_CO.paa"
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+
+
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack = "RD501_JLTS_Clone_Flip_backpack";
+				count = 1;
+			};
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+		};
+		class TransportWeapons
+		{
+
+		};	
+	class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				weapons[] = {
+					"DBA_25mw_P252G_AC",
+					"DBA_93mw_TPV13_Rockets",
+					"DBA_127mw_PVX90_ATGM",
+					};
+				magazines[] = {
+					"DBA_25mm_PM258_KEP_x160_mag",
+					"DBA_25mm_PL266_HE_x360_mag",
+					"DBA_93mm_TPV13_TBR_x24_mag",
+					"DBA_127mm_PVX90_ATGM_x2_mag",
+					};
+				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+				minElev=-15;
+				maxElev=70;
+				class Turrets: Turrets
+				{
+					class CommanderOptics : CommanderOptics{
+						weapons[] = {
+						"SmokeLauncher",
+						"DBA_127_C3HB_RCWS",
+						"Laserdesignator_vehicle",
+						};
+						magazines[] = {
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"DBA_127_X962_x1500_mag",
+						"Laserbatteries"
+						};
+					};
+				};
+			};
+		};
+	thrustDelay = 0.1;
+    brakeIdleSpeed = 5;
+    maxSpeed = 95;
+	terrainCoef = 0.75;
+    wheelCircumference = 3.805;
+    waterLeakiness = 0.0;
+	waterLinearDampingCoefX = 30.0;
+	waterLinearDampingCoefY = 1.875;
+	waterResistanceCoef = 0.005;
+	rudderForceCoef = 8.75;
+	waterAngularDampingCoef = 12.0;
+	canFloat = 1;
+    normalSpeedForwardCoef = 1.00;
+    accelAidForceYOffset = -1.5;
+    antiRollbarForceCoef = 35;
+    antiRollbarForceLimit = 30;
+    antiRollbarSpeedMin = 15;
+    antiRollbarSpeedMax = 200;
+    simulation = "carx";
+    dampersBumpCoef = 4.5;
+    differentialType = "all_limited";
+    frontRearSplit = 0.5;
+    frontBias = 1.3;
+    rearBias = 1.3;
+    centreBias = 1.3;
+    clutchStrength = 400;
+    enginePower = 1230.405;
+    peakTorque = 4894.15884;
+    idleRpm = 700;
+    redRpm = 2400;
+    maxOmega=251.3274;
+	minOmega=73.303;
+	accelAidForceCoef = 4.0;
+	accelAidForceSpd = 30.0;
+    dampingRateFullThrottle = 0.08;
+    dampingRateZeroThrottleClutchEngaged = 2;
+    dampingRateZeroThrottleClutchDisengaged = 0.05;
+    memoryPointLMissile = "Rocket_1";
+    memoryPointRMissile = "Rocket_2";
+    torqueCurve[] = {
+		{"(0/2300)","(0/2260)"},
+		{"(1000/2300)","(1625/2260)"},
+		{"(1400/2300)","(2100/2260)"},
+		{"(1500/2300)","(2200/2260)"},
+		{"(1550/2300)","(2260/2260)"},
+		{"(1600/2300)","(2200/2260)"},
+		{"(2300/2300)","(1700/2260)"},
+		{"(4700/2300)","(0/2260)"}
+		};
+    changeGearMinEffectivity[] = {0.5,0.15,0.97,0.97,0.97,0.97,0.97,0.985};
+    class complexGearbox
+    {
+        GearboxRatios[] = {"R1",-0.54,"N",0,"D1",3.43,"D2",2.01,"D3",1.42,"D4",1,"D5",0.83,"D6",0.59};
+        TransmissionRatios[] = {"High",8};
+        AmphibiousRatios[] = {"R1",-10,"N",0,"D1",30};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+    };
+    switchTime = 0.1;
+    latency = 0.4;
+};
 //AT-TE
 class 3as_ATTE_Base: Tank_F{
 	class Turrets{
@@ -1815,6 +2033,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		scopeCurator=2;
 		side=1;
 		armor=700;
+		transportSoldier=13;
 		faction="Republic_101st";
 		hiddenSelections[] = {"Camo1","Camo2","CamoNet","CamoSlat"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_01_101_co.paa","101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_02_101_co.paa","A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa","A3\armor_f\data\cage_aaf_co.paa"};
@@ -2509,6 +2728,55 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		};
 	};*/
 	
+//AV7
+	class DBA_AV7_Testbed : 3as_01_arty_base_F{
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-7 Test Bed";
+		crew="101st_CloneTrooper_212th";
+		faction="Republic_101st";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+				gunBeg="MainCannon_Barrel";
+				gunEnd="MainCannon_Chamber";
+				gunnerAction="AV7_Driver";
+				gunnerInAction="AV7_Driver";
+				gunnerGetInAction="GetInHigh";
+				gunnerGetOutAction="GetOutHigh";
+				animationSourceStickX="turret_control_x";
+				animationSourceStickY="turret_control_y";
+				gunnerLeftHandAnimName="turret_control_y";
+				gunnerRightHandAnimName="turret_control_y";
+				memorypointsgetingunner="pos_driver";
+				memorypointsgetingunnerdir="pos_driver_dir";
+				weapons[]=
+				{
+					"DBA_210mw_VK39_Cannon"
+				};
+				magazines[]=
+				{
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K18_x3_mag",
+					"DBA_210mm_S19_x8_mag",
+					"DBA_210mm_CK17_x4_mag",
+					"DBA_210mm_UMK20_x4_mag",
+				};
+			};
+		};
+	};
+	
 //Tanks
 	class DBA_Leopard_Testbed : I_MBT_03_cannon_F
 	{
@@ -2519,7 +2787,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		forceInGarage=1;
 		displayName="Leopard Test Bed";
 		crew="101st_CloneTrooper_212th";
-		armor=750;
+		armor=950;
 		armorStructural=10;
 		hiddenSelections[]=
 		{
@@ -2606,6 +2874,8 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 					"DBA_105mm_S416_x8_mag",
 					"DBA_762_D61_x400_mag",
 					"DBA_762_D61_x400_mag",
+					"DBA_762_D61_x400_mag",
+					"DBA_762_D61_x400_mag",
 				};
 				minElev = -16;
 				maxElev = 45;
@@ -2620,7 +2890,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 							"DBA_792mw_DC42_MG",
 							"CMFlareLauncher",
 							"SmokeLauncher",
-							"Laserdesignator_vehicle"
+							"Laserdesignator_vehicle",
 						};
 						magazines[]=
 						{
@@ -2776,7 +3046,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		forceInGarage=1;
 		displayName="Merkava Testbed MODTEAM ONLY <- Read";
 		crew="101st_CloneTrooper_212th";
-		armor=900;
+		armor=1100;
 		armorStructural=10;
 		hiddenSelections[]=
 		{
@@ -2947,8 +3217,8 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		forceInGarage=1;
 		displayName="Armata Testbed";
 		crew="101st_CloneTrooper_212th";
-		armor=1250;
-		armorStructural=12;
+		armor=1450;
+		armorStructural=15;
 		hiddenSelections[]=
 		{
 			"Camo1",
