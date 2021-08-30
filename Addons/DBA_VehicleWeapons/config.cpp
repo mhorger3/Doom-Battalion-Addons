@@ -3166,6 +3166,229 @@ class CfgWeapons
 		FCSZeroingDelay = 0.5;
 		maxZeroing = 2500;
 	};
+
+	class DBA_20mw_LAATBALL_AC : autocannon_30mm_RCWS {
+		muzzles[] = { "HE", "AP" };
+		class HE : autocannon_30mm_RCWS {
+			displayName = "GAI-BO1 Autocannon";
+			shotFromTurret = 0;
+			magazines[] =
+			{
+				"DBA_20mm_P594_x250_mag_LAAT",
+			};
+			magazineReloadTime = 12;
+			class player : player
+			{
+				reloadTime = 0.06;
+				dispersion = 0.000170;
+				sounds[] =
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[] =
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[] =
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close : player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short : close{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium : close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far : close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+			class GunParticles
+			{
+				class Effect
+				{
+					effectName = "AutoCannonFired";
+					positionName = "Usti hlavne2";
+					directionName = "Konec hlavne2";
+				};
+			};
+		};
+
+		class AP : autocannon_30mm_RCWS {
+			displayName = "GAI-BO1 Autocannon";
+			shotFromTurret = 0;
+			magazines[] =
+			{
+				"DBA_20mm_PM359_x150_mag_LAAT",
+			};
+			magazineReloadTime = 15;
+			class player : player
+			{
+				reloadTime = 0.06;
+
+				dispersion = 0.000170;
+				sounds[] =
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[] =
+					{
+						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						1,
+						1,
+						500
+					};
+					soundBegin[] =
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+
+			class close : player {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.100000;
+				midRange = 400;
+				midRangeProbab = 0.700000;
+				maxRange = 800;
+				maxRangeProbab = 0.800000;
+			};
+
+			class short : close{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.750000;
+				midRange = 800;
+				midRangeProbab = 0.800000;
+				maxRange = 1200;
+				maxRangeProbab = 0.800000;
+			};
+
+			class medium : close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.800000;
+				midRange = 1500;
+				midRangeProbab = 0.800000;
+				maxRange = 2000;
+				maxRangeProbab = 0.700000;
+			};
+
+			class far : close {
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.740000;
+				midRange = 2400;
+				midRangeProbab = 0.650000;
+				maxRange = 3000;
+				maxRangeProbab = 0.050000;
+			};
+			class GunParticles
+			{
+				class Effect
+				{
+					effectName = "AutoCannonFired";
+					positionName = "Usti hlavne2";
+					directionName = "Konec hlavne2";
+				};
+			};
+		};
+		showAimCursorInternal = 0;
+		ballisticsComputer = "1";
+		FCSMaxLeadSpeed = 60;
+		FCSZeroingDelay = 0.5;
+		maxZeroing = 2500;
+	};
 	class DBA_G13_Coaxial : 3AS_AAT_Repeater {
 		displayName="G-13 Repeaters";
 		magazineReloadTime=3.75;
@@ -4513,6 +4736,17 @@ class CfgMagazines
 		initspeed=1100;
 		tracersevery=1;
 	};
+	class DBA_20mm_PM359_x150_mag_LAAT : DBA_152mm_Tanto1_x25_mag {
+		displayname = "20mw LAAT Kinetic Energy Penetrator";
+		ammo = "DBA_20mm_PM359_KEP_LAAT";
+		displaynamemagazine = "20mw PM359 KEP";
+		shortnamemagazine = "PM359 KEP";
+		displayNameMFDFormat = "KEP";
+		displayNameShort = "PM359 KEP";
+		count = 150;
+		initspeed = 1100;
+		tracersevery = 1;
+	};
 	class DBA_20mm_P594_x250_mag : DBA_20mm_PM359_x150_mag{
 		displayname="20mw P594 High Explosive Incendiary";
 		ammo="DBA_20mm_P594_HEI";
@@ -4523,6 +4757,17 @@ class CfgMagazines
 		count=250;
 		initspeed=1100;
 		tracersevery=1;
+	};
+	class DBA_20mm_P594_x250_mag_LAAT : DBA_20mm_PM359_x150_mag {
+		displayname = "20mw LAATBALL High Explosive Incendiary";
+		ammo = "DBA_20mm_P594_HEI_GREEN";
+		displaynamemagazine = "20mw P594 HEI";
+		shortnamemagazine = "P594 HEI";
+		displayNameMFDFormat = "HEI";
+		displayNameShort = "P594 HEI";
+		count = 250;
+		initspeed = 1100;
+		tracersevery = 1;
 	};
 	class DBA_792_M5A_x400_mag : DBA_lmg_blue_x500_mag {
 		scope=2;
@@ -6213,6 +6458,63 @@ class CfgAmmo
 			distance = 0.5;
 		};
 	};
+	class DBA_20mm_PM359_KEP_LAAT : B_40mm_GPR {
+		hit = 80;
+		indirectHit = 5;
+		indirectHitRange = 0.15;
+		explosive = 0.0
+			warheadName = "KEP";
+		caliber = 18.18181818;
+		deflecting = 1;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 40;
+		initSpeed = 1100;
+		soundHit1[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600 };
+		soundHit2[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600 };
+		soundHit3[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600 };
+		soundHit4[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600 };
+		multiSoundHit[] = { "soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000 };
+		aiAmmoUsageFlags = "128 + 256 + 512";
+		cost = 75;
+		model = "kobra\442_weapons\ammo\green_tracer.p3d";
+		tracerScale = 1.05;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness = 100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;
+		allowAgainstInfantry = 0;
+		coefGravity = 0.1;
+		waterFriction = 0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
 	class DBA_20mm_P594_HEI : DBA_20mm_PM359_KEP{
 		hit = 10;
 		indirectHit = 60;
@@ -6242,6 +6544,63 @@ class CfgAmmo
 		allowAgainstInfantry=0;
 		coefGravity=0.1;
 		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeHit {
+			power = 60;
+			duration = 2;
+			frequency = 20;
+			distance = 5;
+		};
+
+		class CamShakeFire {
+			power = 8;
+			duration = 1.35;
+			frequency = 15;
+			distance = 60;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_20mm_P594_HEI_GREEN : DBA_20mm_PM359_KEP {
+		hit = 10;
+		indirectHit = 60;
+		indirectHitRange = 6.45;
+		explosive = 1
+			warheadName = "HEI";
+		caliber = 5;
+		deflecting = 1;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 40;
+		initSpeed = 1100;
+		soundHit1[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600 };
+		soundHit2[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600 };
+		soundHit3[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600 };
+		soundHit4[] = { "A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600 };
+		multiSoundHit[] = { "soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000 };
+		aiAmmoUsageFlags = "128 + 256 + 512";
+		cost = 75;
+		model = "kobra\442_weapons\ammo\green_tracer.p3d";
+		tracerScale = 1.0;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness = 100000;
+		muzzleEffect = "";
+		typicalSpeed = 910;
+		allowAgainstInfantry = 0;
+		coefGravity = 0.1;
+		waterFriction = 0;
 		class CamShakeExplode {
 			power = 10;
 			duration = 1.75;

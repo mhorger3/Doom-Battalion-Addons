@@ -644,19 +644,16 @@ class cfgVehicles
 			{
 				weapons[] = 
 				{
-					"DBA_Ground_HMG_Generic","Laserdesignator_pilotCamera"
+					"DBA_20mw_LAATBALL_AC","Laserdesignator_pilotCamera"
 				};
 				magazines[] = 
 				{
 					"Laserbatteries",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
+					"DBA_20mm_PM359_x150_mag_LAAT",
+					"DBA_20mm_PM359_x150_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
 				};
 				class OpticsIn
 				{
@@ -727,19 +724,16 @@ class cfgVehicles
 			{
 				weapons[] = 
 				{
-					"DBA_Ground_HMG_Generic","Laserdesignator_pilotCamera"
+					"DBA_20mw_LAATBALL_AC","Laserdesignator_pilotCamera"
 				};
 				magazines[] = 
 				{
 					"Laserbatteries",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
+					"DBA_20mm_PM359_x150_mag_LAAT",
+					"DBA_20mm_PM359_x150_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_P594_x250_mag_LAAT",
 				};
 				class OpticsIn
 				{
