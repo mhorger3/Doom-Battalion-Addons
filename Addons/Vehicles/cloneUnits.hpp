@@ -4121,6 +4121,7 @@
 		scopeCurator = 2;
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
+		editorSubcategory = "DBA_Legacy";
 		displayName="101st Courage (Legacy)";
 		uniformClass="101st_212_Courage";
 		hiddenSelections[]=
@@ -4741,6 +4742,7 @@
 		scopeCurator = 2;
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
+		editorSubcategory = "DBA_Legacy";
 		displayName="101st Quilliam (Legacy)";
 		uniformClass="101st_212_Quill";
 		hiddenSelections[]=
@@ -6073,6 +6075,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Pro-Diggy (Legacy)";
+		editorSubcategory = "DBA_Legacy";
 		uniformClass="101st_212_Prodigy";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
@@ -6486,6 +6489,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Bacon (Legacy)";
+		editorSubcategory = "DBA_Legacy";
 		uniformClass="101st_212_Bacon";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
@@ -6900,6 +6904,7 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 		dlc = "101st_Aux_Mod";
 		faction="Republic_101st";
 		displayName="101st Ronin (Legacy)";
+		editorSubcategory = "DBA_Legacy";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		uniformClass="101st_212_Ronin";
 		hiddenSelections[]=
@@ -7207,8 +7212,9 @@ class 101st_Radar_212th : 101st_JLTS_Clone_P2
 	{
 		dlc = "101st_Aux_Mod";
 		faction = "Republic_101st";
-		displayName = "101st Seefor (JLTS)";
+		displayName = "101st Seefor (Legacy)";
 		uniformClass = "101st_212_Seefor";
+		editorSubcategory = "DBA_Legacy";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] =
 		{

@@ -26,6 +26,10 @@ class DBA_Claymore_HQ
 {
 	displayName = "Claymore HQ";
 };
+class DBA_Legacy
+{
+	displayName = "Legacy";
+};
 class 101st_Resupply
 {
 	displayName="Resupply";
