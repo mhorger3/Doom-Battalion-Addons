@@ -8,6 +8,6 @@ _bPos = getPosATL _projectile;
 
 };
 
-private _laser = createVehicle ["DBA_LaserTarget", _bPos];
+private _laser = createVehicle ["DBA_LaserTarget", _bPos, [], 0, "CAN_COLLIDE"];
 sleep 5;
 deleteVehicle _laser;
