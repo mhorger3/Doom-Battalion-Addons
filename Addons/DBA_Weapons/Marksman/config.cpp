@@ -902,7 +902,7 @@ class CfgWeapons
 			};
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {"optic_LRPS", "optic_KHS_blk", "optic_DMS", "optic_AMS", "RD501_scope_dc_15a_x4_x8"};		
+				compatibleItems[] = {"optic_LRPS", "optic_KHS_blk", "optic_DMS", "optic_AMS", "RD501_scope_dc_15a_x4_x8","DBA_ZILLO_SCOPE"};		
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				
 			};

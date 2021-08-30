@@ -74,8 +74,6 @@ class CfgPatches
 			"O_DBA_CIS_T_Series_Officer_Green_F",
 			"O_DBA_CIS_T_Series_Officer_Red_F",
 			"O_DBA_CIS_Hover_Droid_MKII_F",
-			"O_DBA_CIS_HMP_Transport_F",
-			"O_DBA_CIS_HMP_Gunship_F",
 			"CIS_Marid",
 			"O_DBA_CIS_GAT_F",
 			"O_DBA_CIS_GAT_Olive_F",
@@ -6367,8 +6365,6 @@ class CfgVehicles
 	class Car_F;
 	class RD501_opfor_unit_IG_88;
 	class RD501_drone_cis_Hover_Droid;
-	class RD501_HMP_transport;
-	class RD501_HMP_gunship;
 	class 101st_Crab_Droid;
 	class 101st_DSD_Droid;
 	class 101st_DSD3_Droid;
@@ -9612,30 +9608,6 @@ class CfgVehicles
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Hover_Droid_MKII_F.jpg";
-	};
-	class O_DBA_CIS_HMP_Transport_F: RD501_HMP_transport
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="HMP-Class Droid Transport";
-		editorSubcategory="O_DBA_CIS_Helicopters";
-		vehicleClass="O_DBA_CIS_Helicopters";
-		side=0;
-		faction="O_DBA_CIS_F";
-		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Transport_F.jpg";
-		crew="O_DBA_CIS_OOM_Pilot_Droid_F";
-	};
-	class O_DBA_CIS_HMP_Gunship_F: RD501_HMP_gunship
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="HMP Gunship";
-		editorSubcategory="O_DBA_CIS_Helicopters";
-		vehicleClass="O_DBA_CIS_Helicopters";
-		side=0;
-		faction="O_DBA_CIS_F";
-		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_HMP_Gunship_F.jpg";
-		crew="O_DBA_CIS_OOM_Pilot_Droid_F";
 	};
 	class O_DBA_CIS_Hyena_Bomber_F: 101st_Hyena_Bomber
 	{
