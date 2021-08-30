@@ -4473,6 +4473,34 @@ class cfgVehicles
 			LAAT_LIGHTS
 			#include "baseLaatSwitcher.hpp"
 		};
+		class TextureSources
+		{
+			class 101st_base_LAAT
+			{
+				displayName = "101st";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_wings_doors_CO.paa",
+					"101st_Aux_Mod\Addons\Vehicles\LAAT\101st_laat_base_CO.paa"
+				};
+			};
+			class 101st_CG_LAAT
+			{
+				displayName = "CG";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+					"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa"
+				};
+			};
+		};
+		textureList[] = 
+		{
+			"101st_base_LAAT",1,
+			"101st_CG_LAAT",1
+		};
 	};
 
 	
