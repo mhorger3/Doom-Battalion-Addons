@@ -1579,7 +1579,7 @@ class CfgWeapons
 			burst = 1;
 			soundBurst=0;
 			multiplier=1;
-			dispersion=0.0075;
+			dispersion=0.0055;
 			aiRateOfFire=1;
 			showToPlayer = 1;
 			aiRateOfFireDistance=10;
