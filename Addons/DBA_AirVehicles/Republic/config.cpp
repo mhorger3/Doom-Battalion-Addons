@@ -466,6 +466,17 @@ class cfgVehicles
 		};
 		class TransportItems
 		{
+
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_SurgicalKit
+			{
+				name = "Surgical Kit";
+				count = 2;
+			};
 			class _xx_ACE_quikclot
 			{
 				name="ACE_quikclot";
@@ -1993,6 +2004,16 @@ class cfgVehicles
 		};
 		class TransportItems
 		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_SurgicalKit
+			{
+				name = "Surgical Kit";
+				count = 2;
+			};
 			class _xx_ACE_quikclot
 			{
 				name="ACE_quikclot";
@@ -3360,6 +3381,16 @@ class cfgVehicles
 		};
 		class TransportItems
 		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_SurgicalKit
+			{
+				name = "Surgical Kit";
+				count = 2;
+			};
 			class _xx_ACE_quikclot
 			{
 				name="ACE_quikclot";
@@ -17370,6 +17401,16 @@ class cfgVehicles
 		};
 		class transportItems
 		{
+			class _transport_ToolKit
+			{
+				name = "ToolKit";
+				count = 2;
+			};
+			class _transport_SurgicalKit
+			{
+				name = "Surgical Kit";
+				count = 2;
+			};
 		};
 		class transportBackpacks
 		{
