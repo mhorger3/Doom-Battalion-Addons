@@ -34,13 +34,13 @@
 		dlc = "101st_Aux_Mod";
 			displayname="101st JTLS Canister (Invisible)";
 			maximumLoad=500;
-			model = "101st_aux_mod\addons\Vehicles\nothing.p3d";
+			model = "\A3\weapons_f\empty";
 	};
 	class 101st_Radio_Pack_Invs : TFAR_rt1523g_big {
 		dlc = "101st_Aux_Mod";
 		displayname="101st Radio Pack Attachment (Invisible)";
 		maximumLoad=500;
-		model = "101st_aux_mod\addons\Vehicles\nothing.p3d";
+		model = "\A3\weapons_f\empty";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_LR_attachment_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
