@@ -499,6 +499,72 @@ class 101st_Jerec_Pauldron: V_RebreatherB
 		hiddenSelections[] = {"camo1"};
 	};
 };
+class 101st_Hambino_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Hambino Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Hambino_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
+class 101st_Kel_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Kel Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Kel_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
+class 101st_Seatie_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Seatie Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Seatie_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
 class 101st_Custom_CompanyCSM_Pauldron: V_RebreatherB
 {
 	author="Dutch";
