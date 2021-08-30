@@ -663,11 +663,11 @@ class cfgVehicles
 				magazines[] = 
 				{
 					"Laserbatteries",
-					"DBA_20mm_PM359_x150_mag_LAAT",
-					"DBA_20mm_PM359_x150_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_PM359_x150_mag",
+					"DBA_20mm_PM359_x150_mag",
+					"DBA_20mm_P594_x250_mag",
+					"DBA_20mm_P594_x250_mag",
+					"DBA_20mm_P594_x250_mag",
 				};
 				class OpticsIn
 				{
@@ -743,11 +743,11 @@ class cfgVehicles
 				magazines[] = 
 				{
 					"Laserbatteries",
-					"DBA_20mm_PM359_x150_mag_LAAT",
-					"DBA_20mm_PM359_x150_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
-					"DBA_20mm_P594_x250_mag_LAAT",
+					"DBA_20mm_PM359_x150_mag",
+					"DBA_20mm_PM359_x150_mag",
+					"DBA_20mm_P594_x250_mag",
+					"DBA_20mm_P594_x250_mag",
+					"DBA_20mm_P594_x250_mag",
 				};
 				class OpticsIn
 				{
