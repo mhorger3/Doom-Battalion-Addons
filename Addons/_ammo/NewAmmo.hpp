@@ -433,6 +433,7 @@
 
 			audibleFire = 45; //Alerts AI from further away
 
+			timetolive = 45;
 			dangerRadiusBulletClose = 8;
 			dangerRadiusHit = 12;
 			suppressionRadiusBulletClose = 6;

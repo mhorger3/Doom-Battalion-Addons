@@ -7,11 +7,10 @@ class cfgPatches
 		requiredaddons[] = {"JLTS_weapons_DC15S","101st_Aux_Mod","DBA_patch_weapons"};
 		requiredversion = 0.1;
 		units[] = {};
-		weapons[] = {"DBA_Test_Pistol","DBA_A180","DBA_DC17","DBA_Cannok","DBA_Defender","DBA_Westar35_Mod_0","DBA_Dual_Westar35_Mod_0", "DBA_Dual_Defender"};
+		weapons[] = {"DBA_Test_Pistol","DBA_A180","DBA_DC17","DBA_Cannok","DBA_Defender","DBA_Westar35_Mod_0","DBA_Dual_Westar35_Mod_0", "DBA_Dual_Defender","DBA_ORBITAL_LASER"};
 	};
 };
 class UGL_F;
-
 class DefaultEventHandlers;
 class Mode_SemiAuto;
 class Mode_Burst: Mode_SemiAuto
@@ -298,7 +297,7 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,.5};
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
-		magazines[] = {"DBA_45acp_Mag_Base","DBA_Mag_ORBITAL"};
+		magazines[] = {"DBA_45acp_Mag_Base"};
 		magazineWell[] = {"DBA_DC17_GL_Mags_magwell"};
 		class Single: Single
 		{
@@ -649,6 +648,7 @@ class CfgWeapons
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Weapons\Pistols\Defender.p3d";
 		muzzles[] = { "this" };
+		baseweapon = "DBA_ORBITAL_LASER";
 		magazines[] =
 		{
 			"DBA_Mag_ORBITAL"
@@ -664,7 +664,7 @@ class CfgWeapons
 		magazineWell[] = {};
 		reloadAction = "ReloadMagazine";
 		displayName = "[101st] Laser Designator";
-		descriptionShort = "PDW Defender";
+		descriptionShort = "Laser Designator";
 		changeFiremodeSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\Mk20\firemode_Mk20",0.251189,1,5 };
 		soundBullet[] = {};
 		class EventHandlers : DefaultEventhandlers
