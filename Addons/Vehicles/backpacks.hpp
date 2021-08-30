@@ -1,6 +1,7 @@
 //backpacks
 	
 	class JLTS_Clone_backpack;
+	class JLTS_Clone_belt_bag;
 	class JLTS_Clone_backpack_eod;
 	class JLTS_Clone_backpack_medic;
 	class JLTS_Clone_backpack_RTO;
@@ -17,12 +18,35 @@
 			hiddenSelections[] = {"camo2"};
 	};
 	class 101st_SCI_Backpack: JLTS_Clone_backpack	{
-		dlc = "101st_Aux_Mod";
+			dlc = "101st_Aux_Mod";
 			displayname="101st JTLS Canister (Expanded)";
 			maximumLoad=500;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
 	};
+	class 101st_belt_bag: JLTS_Clone_belt_bag
+	{
+		dlc = "101st_Aux_Mod";
+		displayname="101st Belt Bag";
+		maximumLoad=250;
+	};
+	class 101st_Invs_Backpack: JLTS_Clone_backpack	{
+		dlc = "101st_Aux_Mod";
+			displayname="101st JTLS Canister (Invisible)";
+			maximumLoad=500;
+			model = "101st_aux_mod\addons\Vehicles\nothing.p3d";
+	};
+	class 101st_Radio_Pack_Invs : TFAR_rt1523g_big {
+		dlc = "101st_Aux_Mod";
+		displayname="101st Radio Pack Attachment (Invisible)";
+		maximumLoad=500;
+		model = "101st_aux_mod\addons\Vehicles\nothing.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_LR_attachment_ui_ca.paa";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
+	};
+	
 	class 101st_Traitor_Backpack : JLTS_Clone_backpack{
 		dlc = "101st_Aux_Mod";
 			displayname = "101st JTLS Traitor Canister (Expanded)";
