@@ -300,10 +300,6 @@ class CfgWeapons
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
 		magazines[] = {"DBA_45acp_Mag_Base","DBA_Mag_ORBITAL"};
 		magazineWell[] = {"DBA_DC17_GL_Mags_magwell"};
-		class EventHandlers : DefaultEventhandlers
-		{
-			Fired = "(_this select 0) call DBA_OrbitalDesignator_fnc_Fired";
-		};
 		class Single: Single
 		{
 			dispersion = 0.0001;
@@ -642,6 +638,82 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+	};
+	class DBA_ORBITAL_LASER : DBA_Pistol_Base
+	{
+		author = "Vulgar";
+		scope = 2;
+		model = "101st_Aux_Mod\Addons\DBA_Weapons\Pistols\Defender.p3d";
+		muzzles[] = { "this" };
+		magazines[] =
+		{
+			"DBA_Mag_ORBITAL"
+		};
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\ParticleAccelPistol_CO.paa"
+		};
+		magazineWell[] = {};
+		reloadAction = "ReloadMagazine";
+		displayName = "[101st] Laser Designator";
+		descriptionShort = "PDW Defender";
+		changeFiremodeSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\Mk20\firemode_Mk20",0.251189,1,5 };
+		soundBullet[] = {};
+		class EventHandlers : DefaultEventhandlers
+		{
+			Fired = "[_this select 6] execVM '101st_Aux_Mod\Addons\DBA_OrbitalDesignator\functions\fn_Fired.sqf';";
+		};
+		modes[] =
+		{
+			"Single",
+		};
+		simulation = "Weapon";
+		fireLightDiffuse[] = { 0,1,0 };
+		fireLightAmbient[] = { 0,0.5,0 };
+		fireLightIntensity = 0.2;
+		fireLightDuration = 0.05;
+		class Single : Single
+		{
+			dispersion = 0.00241;
+			reloadTime = 10;
+			dispersion = "5*0.00087";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 500;
+		};
+		
+
+		inertia = 0.3;
+		dexterity = 1.7;
+		initSpeed = -1.00148;
+		maxRecoilSway = 0.008;
+		swayDecaySpeed = 1.25;
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 30;
+			holsterScale = 0.9;
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot : PointerSlot
 			{
 				compatibleItems[] = {};
 			};

@@ -426,7 +426,10 @@
 			caliber = 1.6; //Acts as penetration multiplier for the projectile.
 			typicalspeed = 800; //What speed does this need to be going to inflict full damage
 
-			tracerScale = 0.4;
+			tracerScale = 0.01;
+
+			brightness = 0; // How Bright/color
+			flaresize = 0; //how big the flash is
 
 			audibleFire = 45; //Alerts AI from further away
 
