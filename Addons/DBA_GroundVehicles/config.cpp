@@ -2758,7 +2758,8 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 				memorypointsgetingunnerdir="pos_driver_dir";
 				weapons[]=
 				{
-					"DBA_210mw_VK39_Cannon"
+					"DBA_210mw_VK39_Cannon",
+					"DBA_210mw_VK39_Cannon_Nuke"
 				};
 				magazines[]=
 				{
@@ -2772,6 +2773,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 					"DBA_210mm_S19_x8_mag",
 					"DBA_210mm_CK17_x4_mag",
 					"DBA_210mm_UMK20_x4_mag",
+					"DBA_210mm_ATN3S_TACN_x1_mag",
 				};
 			};
 		};
