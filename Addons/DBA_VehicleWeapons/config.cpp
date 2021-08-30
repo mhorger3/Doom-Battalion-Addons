@@ -1331,7 +1331,7 @@ class CfgWeapons
 		magazines[] = {
 			"DBA_210mm_ATN3S_TACN_x1_mag",
 		};
-		modes[] = { "Single1" };
+		modes[] = { "Single1", "Single2", "Single3", "Single4", "Single5" };
 
 		class EventHandlers : DefaultEventhandlers
 		{
@@ -1378,6 +1378,25 @@ class CfgWeapons
 			midRangeProbab = 0.010000;
 			maxRange = 2;
 			maxRangeProbab = 0.010000;
+		};
+		class Single2: Single1 {
+			displayName = "Two Charges";
+			artilleryCharge = 0.250000;
+		};
+
+		class Single3: Single1 {
+			displayName = "Three Charges";
+			artilleryCharge = 0.400000;
+		};
+
+		class Single4: Single1 {
+			displayName = "Four Charges";
+			artilleryCharge = 0.67500000;
+		};
+
+		class Single5: Single1 {
+			displayName = "Five Charges";
+			artilleryCharge = 0.8525;
 		};
 	};
 	class DBA_50mw_K5B2 : LMG_RCWS
@@ -3717,7 +3736,7 @@ class CfgWeapons
 			shotFromTurret = 0;
 			magazines[] =
 			{
-				"DBA_20mm_P594_x250_mag_LAAT",
+				"DBA_20mm_P594_x250_mag",
 			};
 			magazineReloadTime = 12;
 			class player : player
@@ -3824,7 +3843,7 @@ class CfgWeapons
 			shotFromTurret = 0;
 			magazines[] =
 			{
-				"DBA_20mm_PM359_x150_mag_LAAT",
+				"DBA_20mm_PM359_x150_mag",
 			};
 			magazineReloadTime = 15;
 			class player : player
@@ -6708,7 +6727,7 @@ class CfgAmmo
 		canLock = 2;
 		aiAmmoUsageFlags = "256";
 		cost = 75;
-		model="kobra\442_weapons\ammo\red_tracer.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		tracerScale = 1.25;
 		tracerStartTime = 0;
 		tracerEndTime = 20;
@@ -7649,7 +7668,7 @@ class CfgAmmo
 		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
-		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
 		tracerScale = 1.05;
 		tracerStartTime = 0.1;
 		tracerEndTime = 20;
@@ -7706,7 +7725,7 @@ class CfgAmmo
 		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
-		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
 		tracerScale = 1.0;
 		tracerStartTime = 0.1;
 		tracerEndTime = 20;
@@ -7755,7 +7774,7 @@ class CfgAmmo
 		canLock = 2;
 		aiAmmoUsageFlags = "64 + 256";
 		cost = 15;
-		model="kobra\442_weapons\ammo\red_tracer.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		tracerScale = 1;
 		tracerStartTime = 0;
 		tracerEndTime = 30;
@@ -7875,7 +7894,7 @@ class CfgAmmo
 		caliber=26.91511387;
 		typicalSpeed=1610;
 		deflecting = 5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1610;
@@ -7941,7 +7960,7 @@ class CfgAmmo
 		caliber=20;
 		typicalSpeed=905;
 		deflecting = -5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1000;
@@ -7973,7 +7992,7 @@ class CfgAmmo
 		caliber=33.33333333;
 		typicalSpeed=1800;
 		deflecting = 5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1610;
@@ -8005,7 +8024,7 @@ class CfgAmmo
 		caliber=4.761904762;
 		typicalSpeed=980;
 		deflecting = -5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1000;
@@ -8037,7 +8056,7 @@ class CfgAmmo
 		caliber=33.33333333;
 		typicalSpeed=1500;
 		deflecting = 5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1500;
@@ -8069,7 +8088,7 @@ class CfgAmmo
 		caliber=44.44444444;
 		typicalSpeed=720;
 		deflecting = 2.5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 720;
@@ -8099,7 +8118,7 @@ class CfgAmmo
 		caliber=28.44444444;
 		typicalSpeed=700;
 		deflecting = -5;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		aiAmmoUsageFlags="64 + 128 + 512";
 		allowAgainstInfantry=1;
 		timeToLive=10;
@@ -8127,7 +8146,7 @@ class CfgAmmo
 		caliber=54.05405405;
 		typicalSpeed=100;
 		deflecting = -10;
-		model = "kobra\442_weapons\ammo\red_tracer.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 259;
@@ -8162,7 +8181,7 @@ class CfgAmmo
 		canLock = 2;
 		aiAmmoUsageFlags = "64 + 128";
 		cost = 5;
-		model="kobra\442_weapons\ammo\red_tracer.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		tracerScale = 1.25;
 		tracerStartTime = 0;
 		tracerEndTime = 20;
@@ -8193,7 +8212,7 @@ class CfgAmmo
 		aiAmmoUsageFlags = "64 + 128";
 		cost = 5;
 		initSpeed=820;
-		model="kobra\442_weapons\ammo\red_tracer.p3d";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		tracerScale = 1.25;
 		tracerStartTime = 0;
 		tracerEndTime = 20;
