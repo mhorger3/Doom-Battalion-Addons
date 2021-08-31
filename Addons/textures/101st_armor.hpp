@@ -128,16 +128,42 @@ class 101st_Custom_traitor_Pauldron : JLTS_CloneVestReconOfficer
 	dlc = "101st_Aux_Mod";
 	scope = 1;
 	scopeArsenal = 2;
-	displayName = "101st Traitor Pauldron (JLTS)";
+	displayName = "101st Traitor Officer (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelections[] =
+	{
+		"camo1"
+	};
+	hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa" };
+	hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
+	class ItemInfo : VestItem
+	{
+		containerClass = "Supply100";
+		uniformType = "Default";
+		mass = 80;
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+		vestType = "Rebreather";
+	};
+};
+class 101st_Custom_traitor_NCO : JLTS_CloneVestReconOfficer
+{
+	author = "Dutch";
+	dlc = "101st_Aux_Mod";
+	scope = 1;
+	scopeArsenal = 2;
+	displayName = "101st Traitor NCO (JLTS)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 	hiddenSelections[] =
 	{
 		"camo1",
 		"camo2"
 	};
-	hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Officer_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa" };
-	hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT","\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
+	hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa","\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Officer_CO.paa", };
+	hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT","\101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT" };
 	class ItemInfo : VestItem
 	{
 		containerClass = "Supply100";
@@ -148,7 +174,7 @@ class 101st_Custom_traitor_Pauldron : JLTS_CloneVestReconOfficer
 			"camo1",
 			"camo2"
 		};
-		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		vestType = "Rebreather";
 	};
 };
