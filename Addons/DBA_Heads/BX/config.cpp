@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Ryanzombiesfaces
+	class BX
 	{
 		units[]={};
 		weapons[]={};
