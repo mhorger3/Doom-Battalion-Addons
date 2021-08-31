@@ -1019,7 +1019,7 @@ class CfgVehicles
 		scope=2;
 		displayName="101st B2";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
-		genericNames="101st_CIS_B2";
+		genericNames = "JLTS_DroidsB1";
 		faction="O_DBA_CIS_F";
 		editorSubcategory="O_DBA_CIS_B1_Droids";
 		vehicleClass = "O_DBA_CIS_B1_Droids";
@@ -1280,7 +1280,7 @@ class CfgVehicles
 		scope=2;
 		displayName="101st B2 Blue";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
-		genericNames="101st_CIS_B2";
+		genericNames = "JLTS_DroidsB1";
 		faction="O_DBA_CIS_F";
 		editorSubcategory="O_DBA_CIS_B1_Droids";
 		vehicleClass = "O_DBA_CIS_B1_Droids";
@@ -1541,7 +1541,7 @@ class CfgVehicles
 		scope=2;
 		displayName="101st B2 Red";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
-		genericNames="101st_CIS_B2";
+		genericNames = "JLTS_DroidsB1";
 		faction="O_DBA_CIS_F";
 		editorSubcategory="O_DBA_CIS_B1_Droids";
 		vehicleClass = "O_DBA_CIS_B1_Droids";
