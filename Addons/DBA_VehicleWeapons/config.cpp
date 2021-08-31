@@ -1246,9 +1246,14 @@ class CfgWeapons
 			"DBA_210mm_S19_x8_mag",
 			"DBA_210mm_CK17_x4_mag",
 			"DBA_210mm_UMK20_x4_mag",
+			"DBA_210mm_ATN3S_TACN_x1_mag",
 			};
 		modes[]= {"Single1", "Single2", "Single3", "Single4", "Single5"};
 
+		class EventHandlers : DefaultEventhandlers
+		{
+			Fired = "[_this select 6, _this select 4] execVM '101st_Aux_Mod\Addons\DBA_OrbitalDesignator\functions\fn_Fired_nuke.sqf';";
+		};
 		class GunParticles {
 
 			class Effect1 {
@@ -1292,93 +1297,6 @@ class CfgWeapons
 			maxRangeProbab = 0.010000;
 		};
 
-		class Single2: Single1 {
-			displayName = "Two Charges";
-			artilleryCharge = 0.250000;
-		};
-
-		class Single3: Single1 {
-			displayName = "Three Charges";
-			artilleryCharge = 0.400000;
-		};
-
-		class Single4: Single1 {
-			displayName = "Four Charges";
-			artilleryCharge = 0.67500000;
-		};
-
-		class Single5: Single1 {
-			displayName = "Five Charges";
-			artilleryCharge = 0.8525;
-		};
-	};
-	class DBA_210mw_VK39_Cannon_Nuke : mortar_155mm_AMOS {
-		scope = 1;
-		displayName = "210mw VK-39 Howitzer Nuclear Payload";
-		nameSound = "cannon";
-		cursor = "mortar";
-		cursorAim = "EmptyCursor";
-		sounds[] = { "StandardSound" };
-
-		class StandardSound {
-			begin1[] = { "A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 3.511886, 0.825, 1500 };
-			soundBegin[] = { "begin1", 1 };
-		};
-		reloadSound[] = { "A3\Sounds_F\vehicles\armor\noises\reload_tank_cannon_2", 31.622778, 1, 15 };
-		magazineReloadTime = 10;
-		autoReload = 1;
-		canLock = 0;
-		magazines[] = {
-			"DBA_210mm_ATN3S_TACN_x1_mag",
-		};
-		modes[] = { "Single1", "Single2", "Single3", "Single4", "Single5" };
-
-		class EventHandlers : DefaultEventhandlers
-		{
-			Fired = "[_this select 6] execVM '101st_Aux_Mod\Addons\DBA_OrbitalDesignator\functions\fn_Fired_nuke.sqf';";
-		};
-		class GunParticles {
-
-			class Effect1 {
-				effectName = "ArtilleryFired1";
-				positionName = "Usti hlavne3";
-				directionName = "Konec hlavne3";
-			};
-
-			class Effect2 {
-				effectName = "ArtilleryFiredL";
-				positionName = "Usti hlavne";
-				directionName = "Usti hlavne b";
-			};
-
-			class Effect3 {
-				effectName = "ArtilleryFiredR";
-				positionName = "Usti hlavne";
-				directionName = "Usti hlavne b";
-			};
-		};
-
-		class Single1 : Mode_SemiAuto {
-			displayName = "Single Charge";
-			sounds[] = { "StandardSound" };
-
-			class StandardSound {
-				begin1[] = { "A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 5.511886, 0.725, 1500 };
-				soundBegin[] = { "begin1", 1 };
-			};
-			reloadSound[] = { "A3\sounds_f\dummysound", 1.000000, 1, 20 };
-			reloadTime = 1.75;
-			artilleryDispersion = 3.850000;
-			artilleryCharge = 0.100000;
-			aiRateOfFire = 1;
-			aiRateOfFireDistance = 10;
-			minRange = 0;
-			minRangeProbab = 0.010000;
-			midRange = 1;
-			midRangeProbab = 0.010000;
-			maxRange = 2;
-			maxRangeProbab = 0.010000;
-		};
 		class Single2: Single1 {
 			displayName = "Two Charges";
 			artilleryCharge = 0.250000;
@@ -7622,7 +7540,7 @@ class CfgAmmo
 		artilleryLock = 1;
 		hit = 100;
 		indirectHit = 200;
-		indirectHitRange = 550;
+		indirectHitRange = 0;
 		initSpeed=855;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		tracerScale = 1.0;
@@ -7638,6 +7556,7 @@ class CfgAmmo
 		triggerDistance = 15;
 		aimAboveTarget[]= {10};
 		aimAboveDefault = 0;
+		DBA_isNuke = 1;
 	};
 	class DBA_210mm_TACN_Submunition : Sh_155mm_AMOS{
 		hit = 3000;

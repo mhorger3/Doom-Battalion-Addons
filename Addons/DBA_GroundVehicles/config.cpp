@@ -2758,7 +2758,6 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 				weapons[]=
 				{
 					"DBA_210mw_VK39_Cannon",
-					"DBA_210mw_VK39_Cannon_Nuke"
 				};
 				magazines[]=
 				{

@@ -165,6 +165,7 @@ class CfgFactionClasses
 		priority=0;
 	};
 };
+class DefaultEventhandlers;
 class CfgEditorCategories
 {
 	class DBA_CIS
@@ -9404,8 +9405,219 @@ class CfgVehicles
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_BX_Commando_Droid_Training_F.jpg";
 		uniformClass="212th_BX_DROID_TRAINING";
 	};
-	class 101st_Magma;
-	class O_DBA_CIS_MagnaGuard_Base_F: 101st_Magma
+	class DBA_CIS_IG_Base : O_Soldier_F
+	{
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "";
+		editorSubcategory = "O_DBA_CIS_Spec_Ops";
+		vehicleClass = "O_DBA_CIS_Spec_Ops";
+		side = 0;
+		faction = "O_DBA_CIS_F";
+		editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_BX_Base_F.jpg";
+		genericNames = "JLTS_DroidsB1";
+		identityTypes[] =
+		{
+			"NoGlasses",
+			"Head_NATO"
+		};
+		facewear = "";
+		uniformClass = "";
+		linkedItems[] =
+		{
+			"ItemMap",
+			"ItemGPS",
+			"ItemCompass"
+		};
+		respawnLinkedItems[] =
+		{
+			"ItemMap",
+			"ItemGPS",
+			"ItemCompass"
+		};
+		weapons[] = {};
+		respawnWeapons[] = {};
+		magazines[] = {};
+		respawnMagazines[] = {};
+		items[] = {};
+		respawnItems[] = {};
+		armor = 5;
+		armorStructural = 1;
+		explosionShielding = 2;
+		minTotalDamageThreshold = 0.001;
+		impactDamageMultiplier = 0.5;
+		impactEffectsBlood = "ImpactMetal";
+		class HitPoints
+		{
+			class HitFace
+			{
+				armor = 10;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.80000001;
+				radius = 0.079999998;
+				explosionShielding = 0.1;
+				minimalHit = 0.0099999998;
+			};
+			class HitNeck : HitFace
+			{
+				armor = 10;
+				material = -1;
+				name = "neck";
+				passThrough = 0.80000001;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0.0099999998;
+			};
+			class HitHead : HitNeck
+			{
+				armor = 10;
+				material = -1;
+				name = "head";
+				passThrough = 0.80000001;
+				radius = 0.2;
+				explosionShielding = 0.5;
+				minimalHit = 0.0099999998;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis : HitHead
+			{
+				armor = 15;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.80000001;
+				radius = 0.23999999;
+				explosionShielding = .5;
+				visual = "injury_body";
+				minimalHit = 0.0099999998;
+				depends = "";
+			};
+			class HitAbdomen : HitPelvis
+			{
+				armor = 15;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.80000001;
+				radius = 0.16;
+				explosionShielding = .5;
+				visual = "injury_body";
+				minimalHit = 0.0099999998;
+			};
+			class HitDiaphragm : HitAbdomen
+			{
+				armor = 15;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.33000001;
+				radius = 0.18000001;
+				explosionShielding = .5;
+				visual = "injury_body";
+				minimalHit = 0.0099999998;
+			};
+			class HitChest : HitDiaphragm
+			{
+				armor = 20;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.33000001;
+				radius = 0.18000001;
+				explosionShielding = 2;
+				visual = "injury_body";
+				minimalHit = 0.0099999998;
+			};
+			class HitBody : HitChest
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				explosionShielding = 2;
+				visual = "injury_body";
+				minimalHit = 0.0099999998;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms : HitBody
+			{
+				armor = 15;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = .5;
+				visual = "injury_hands";
+				minimalHit = 0.0099999998;
+				depends = "0";
+			};
+			class HitHands : HitArms
+			{
+				armor = 15;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.0099999998;
+				depends = "HitArms";
+			};
+			class HitLegs : HitHands
+			{
+				armor = 15;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.14;
+				explosionShielding = .5;
+				visual = "injury_legs";
+				minimalHit = 0.0099999998;
+				depends = "0";
+			};
+			class Incapacitated : HitLegs
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				explosionShielding = .5;
+				visual = "";
+				minimalHit = 0;
+				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor = 15;
+				material = -1;
+				name = "hand_l";
+				passThrough = 1;
+				radius = 0.079999998;
+				explosionShielding = .5;
+				visual = "injury_hands";
+				minimalHit = 0.0099999998;
+			};
+			class HitRightArm : HitLeftArm
+			{
+				name = "hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor = 15;
+				material = -1;
+				name = "leg_l";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = .5;
+				visual = "injury_legs";
+				minimalHit = 0.0099999998;
+			};
+			class HitRightLeg : HitLeftLeg
+			{
+				name = "leg_r";
+			};
+		};
+	};
+	class O_DBA_CIS_MagnaGuard_Base_F: DBA_CIS_IG_Base
 	{
 		scope=0;
 		scopeCurator=0;
@@ -9514,6 +9726,10 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"\101st_Aux_Mod\Addons\DBA_CIS\Assets\IG88_CO.paa"
+		};
+		class EventHandlers : DefaultEventhandlers
+		{
+			Killed = "[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_Func\fn_SelfDestruct.sqf';";
 		};
 	};
 	class O_DBA_CIS_T_Series_Base_F: O_DBA_CIS_B1_Base_F
@@ -11046,9 +11262,4 @@ class CfgMarkers
 		shadow="false";
 		scope=1;
 	};
-};
-class cfgMods
-{
-	author="Trip";
-	timepacked="1626304247";
 };

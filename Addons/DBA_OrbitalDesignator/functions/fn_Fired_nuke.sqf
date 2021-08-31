@@ -1,6 +1,8 @@
-Params ["_projectile"];
+Params ["_projectile", "_ammo"];
 
 private _bPos = [-50001, 500001, 500001];
+
+if (getNumber(configFile >> "CfgAmmo" >> _ammo >> "DBA_isNuke") != 1) exitWith {};
 
 While {alive _projectile} do {
 
