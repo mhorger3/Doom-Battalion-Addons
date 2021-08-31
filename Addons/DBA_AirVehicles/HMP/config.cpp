@@ -3,11 +3,9 @@ class cfgPatches
 	class DBA_AirVehicles
 	{
 		author = "Vulgar";
-		requiredAddons[] =
-		{
-			""
-		};
 		requiredVersion = 0.1;
+		requiredAddons[] =
+		{};
 		units[] =
 		{
 			"DBA_HMP_F",
