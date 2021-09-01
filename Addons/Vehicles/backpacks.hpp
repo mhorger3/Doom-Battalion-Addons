@@ -392,7 +392,7 @@
 	};
 	class 101_Jumppack_Hammer: RD501_JLTS_Clone_jumppack_mc
 	{
-		scope = 2; //
+		scope = 2;
 		displayname = "101st Hammer Jumppack";
 		dlc = "101st_Aux_Mod";
 		RD501_jumppack_is_jumppack = 1;
@@ -411,7 +411,7 @@
             };
 		maximumload = 500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_Jumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_Hammer_Jumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
