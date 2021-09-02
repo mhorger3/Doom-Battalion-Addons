@@ -3895,7 +3895,24 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Kuzy_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Kuzy_Helmet_CO.paa"
+		};
+	};
+	class 101st_Gorman_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Gorman)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Gorman_Helmet_CO.paa"
 		};
 	};
 	class 101st_Finch_Helmet : DBA_P2_Pilot_Helm
