@@ -3942,7 +3942,7 @@ class CfgAmmo
 		ace_advanced_throwing_torqueMagnitude="(50 + random 100) * selectRandom [1, -1]";
 		hit=75;
 		indirectHit=45;
-		indirectHitRange=2;
+		indirectHitRange=8;
 		simulation="shotGrenade";
 		soundFly[]=
 		{

@@ -7,8 +7,6 @@ class CfgPatches
 		requiredVersion=1.6;
 		requiredAddons[]=
 		{
-			"JLTS_weapons_Core",
-			"RD501_patch_units"
 		};
 		units[]=
 		{
