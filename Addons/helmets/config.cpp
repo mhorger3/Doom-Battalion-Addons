@@ -3864,7 +3864,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\helmets\NewPilot\Vance_Pilot_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Vance_Helmet_CO.paa"
 		};
 	};
 	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3896,6 +3896,57 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Kuzy_Helmet_CO.paa"
+		};
+	};
+	class 101st_Atlas_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Atlas)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Atlas_Helmet_CO.paa"
+		};
+	};
+	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Snake)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Snake_Helmet_CO.paa"
+		};
+	};
+	class 101st_Flanker_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Flanker)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Flanker_Helmet_CO.paa"
 		};
 	};
 	class 101st_Gorman_Helmet : DBA_P2_Pilot_Helm
@@ -3930,23 +3981,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Finch_Helmet_CO.paa"
-		};
-	};
-	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
-	{
-		author = "Spark";
-		dlc = "101st_Aux_Mod";
-		scope = 2;
-		scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Snake)";
-		hiddenSelections[] =
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Snake_Helmet_CO.paa"
 		};
 	};
 	class 101st_Squirtle_Helmet : DBA_P2_Pilot_Helm
