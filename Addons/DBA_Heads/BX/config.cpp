@@ -32,7 +32,7 @@ class CfgFaces
 			head="DBA_BXHead";
 			identityTypes[]={};
 			displayname="BX Commando Droid Head";
-			texture="101st_Aux_Mod\Addons\DBA_Heads\BX\BX_HEAD_CO.paa";
+			texture="101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Head_CO.paa";
 			material="101st_Aux_Mod\Addons\DBA_Heads\BX\BXHEAD.rvmat";
 			materialWounded1="\ryanzombies\faces\face1.rvmat";
 			materialWounded2="\ryanzombies\faces\face1.rvmat";
@@ -45,17 +45,17 @@ class CfgFaces
 		class DBA_BXHead_Captain : DBA_BXHead
 		{
 			displayname = "BX Captain Head";
-			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_HEAD_CO.paa";
+			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa";
 		};
 		class DBA_BXHead_Citadel : DBA_BXHead
 		{
 			displayname = "BX Citadel Head";
-			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_HEAD_CO.paa";
+			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa";
 		};
 		class DBA_BXHead_Fire : DBA_BXHead
 		{
 			displayname = "BX Fire Head";
-			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_HEAD_CO.paa";
+			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa";
 		};
 	};
 };
