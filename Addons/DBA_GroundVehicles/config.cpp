@@ -807,6 +807,43 @@ class 3as_ATTE_Base: Tank_F{
 	class Turrets{
 		class MainTurretTop: NewTurret
 			{
+				
+			};
+			class MainTurretFront: NewTurret
+			{
+				
+			};
+			class MainTurretBack: MainTurretFront
+			{
+	
+			};
+	};
+};
+class DBA_ATTE_Base : 3as_ATTE_Base{
+	enginePower=50000;
+	maxOmega=200;
+	minOmega=50;
+	maxSpeed=30;
+	peakTorque=4000;
+	thrustDelay=0.5;
+	clutchStrength=250;
+	fuelCapacity=1885;
+	brakeIdleSpeed=1.78;
+	latency=0.1;
+	tankTurnForce=650000;
+	dampingRateZeroThrottleClutchEngaged=5;
+	dampingRateZeroThrottleClutchDisengaged=10;
+	idleRpm=700;
+	redRpm=2400;
+	displayname="AT-TE Test Bed";
+	faction="Republic_101st";
+	side=1;
+	transportSoldier=24;
+	armor=10000;
+	armorStructural=15;
+	class Turrets{
+		class MainTurretTop: NewTurret
+			{
 				startEngine=0;
 				body="MainTurret";
 				memoryPointsGetInGunner="pos_gunner";
@@ -826,30 +863,27 @@ class 3as_ATTE_Base: Tank_F{
 				memoryPointGunnerOptics="gunnerview";
 				weapons[]=
 				{
-					"3AS_ATTE_AT_Turret",
+					"DBA_184mw_LP4M5_Cannon",
 					"SmokeLauncher"
 				};
 				magazines[]=
 				{
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
+					"DBA_184mm_K1_AP_x20_mag",
+					"DBA_184mm_B1_BESH_x35_mag",
+					"DBA_184mm_PL1_HE_x20_mag",
 					"SmokeLauncherMag"
 				};
 				gunnerAction="mbt1_slot2_out";
 				gunnerInAction="ATAP_Commander";
 				gunnerGetInAction="GetInHigh";
 				gunnerGetOutAction="GetOutHigh";
-				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
-				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+				gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800,3900,4000,4100,4200,4300,4400,4500,4600,4700,4800,4900,5000};
 				discreteDistanceInitIndex=2;
 				selectionFireAnim="zasleh2";
-				minElev=-10;
+				minElev=-13;
 				initElev=0;
-				maxElev=45;
+				maxElev=50;
 				maxTurn=360;
 				minTurn=-360;
 				minOutElev=-10;
@@ -864,6 +898,10 @@ class 3as_ATTE_Base: Tank_F{
 				gunnerForceOptics=0;
 				LODTurnedIn=1000;
 				LODOpticsIn=1;
+				ace_fcs_Enabled = 0;
+                ace_fcs_MinDistance = 200;
+                ace_fcs_MaxDistance = 5500;
+                ace_fcs_DistanceInterval = 5;
 				class OpticsIn
 				{
 					class Wide
@@ -884,12 +922,12 @@ class 3as_ATTE_Base: Tank_F{
 							"Ti"
 						};
 						thermalMode[]={0,1};
-						gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_02_w_F.p3d";
 						gunnerOpticsEffect[]={};
 					};
 					class Narrow: Wide
 					{
-						gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_02_n_F.p3d";
 						initFov=0.046999998;
 						minFov=0.046999998;
 						maxFov=0.046999998;
@@ -967,16 +1005,12 @@ class 3as_ATTE_Base: Tank_F{
 				};
 				weapons[]=
 				{
-					"3AS_ATAP_PD_Turret"
+					"DBA_60mw_PG60H_Cannon",
 				};
 				magazines[]=
 				{
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag"
+					"DBA_60mm_P300_HEAT_x120_mag",
+					"DBA_60mm_P300_HEAT_x120_mag",
 				};
 				minElev=-10;
 				maxElev=10;
@@ -988,6 +1022,10 @@ class 3as_ATTE_Base: Tank_F{
 				gunnerForceOptics=0;
 				isPersonTurret=0;
 				LODTurnedIn=1000;
+				ace_fcs_Enabled = 0;
+                ace_fcs_MinDistance = 200;
+                ace_fcs_MaxDistance = 5500;
+                ace_fcs_DistanceInterval = 5;
 				class OpticsIn
 				{
 					class Wide
@@ -1008,12 +1046,12 @@ class 3as_ATTE_Base: Tank_F{
 							"Ti"
 						};
 						thermalMode[]={0,1};
-						gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_02_w_F.p3d";
 						gunnerOpticsEffect[]={};
 					};
 					class Narrow: Wide
 					{
-						gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_APC_02_n_F.p3d";
 						initFov=0.046999998;
 						minFov=0.046999998;
 						maxFov=0.046999998;
@@ -1044,122 +1082,6 @@ class 3as_ATTE_Base: Tank_F{
 						radius=0.25;
 					};
 				};
-			};
-			class MainTurretBack: MainTurretFront
-			{
-				body="mainturret3";
-				gun="maingun3";
-				animationSourceBody="mainturret3";
-				animationSourceGun="maingun3";
-				proxyIndex=1;
-				commanding=-1;
-				proxytype="CPCargo";
-				gunnername="Rear Gunner";
-				memoryPointGun[]=
-				{
-					"BTL_muzzle",
-					"BTR_Muzzle"
-				};
-				maxTurn=195;
-				minTurn=165;
-				initElev=0;
-				initTurn=180;
-				LODTurnedIn=1200;
-				LODOpticsIn=1000;
-				memoryPointGunnerOptics="commanderview2";
-			};
-	};
-};
-class DBA_ATTE_Base : 3as_ATTE_Base{
-	enginePower=50000;
-	maxOmega=500;
-	maxSpeed=55;
-	peakTorque=10000;
-	thrustDelay=0.5;
-	clutchStrength=250;
-	fuelCapacity=1885;
-	brakeIdleSpeed=1.78;
-	latency=0.1;
-	tankTurnForce=68000;
-	dampingRateZeroThrottleClutchEngaged=5;
-	dampingRateZeroThrottleClutchDisengaged=10;
-	idleRpm=1500;
-	redRpm=5000;
-	displayname="AT-TE Test Bed";
-	faction="Republic_101st";
-	side=1;
-	transportSoldier=24;
-	armor=10000;
-	class Turrets{
-		class MainTurretTop: NewTurret
-			{
-				weapons[]=
-				{
-					"3AS_ATTE_AT_Turret",
-					"SmokeLauncher"
-				};
-				magazines[]=
-				{
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"3AS_10rnd_ATTE_AT_Mag",
-					"SmokeLauncherMag"
-				};
-				minElev=-10;
-				initElev=0;
-				maxElev=65;
-				maxTurn=360;
-				minTurn=-360;
-				minOutElev=-10;
-				maxOutElev=15;
-				initOutElev=0;
-				minOutTurn=-15;
-				maxOutTurn=175;
-				initOutTurn=0;
-				forceHideGunner=1;
-				outGunnerMayFire=0;
-				inGunnerMayFire=1;
-				gunnerForceOptics=0;
-				LODTurnedIn=1000;
-				LODOpticsIn=1;
-			};
-			class MainTurretFront: NewTurret
-			{
-				gunEnd="";
-				gunBeg="";
-				memoryPointGun[]=
-				{
-					"FTL_muzzle",
-					"FTR_Muzzle",
-					"FBR_Muzzle",
-					"FBL_Muzzle"
-				};
-				weapons[]=
-				{
-					"3AS_ATAP_PD_Turret"
-				};
-				magazines[]=
-				{
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag",
-					"3AS_500Rnd_ATAP_PD_Mag"
-				};
-				minElev=-10;
-				maxElev=10;
-				maxTurn=15;
-				minTurn=-15;
-				initElev=0;
-				initTurn=0;
-				memoryPointGunnerOptics="commanderview";
-				gunnerForceOptics=0;
-				isPersonTurret=0;
-				LODTurnedIn=1000;
 			};
 			class MainTurretBack: MainTurretFront
 			{
