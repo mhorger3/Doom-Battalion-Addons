@@ -23,6 +23,9 @@ class CfgPatches
 			"DBA_120mw_PG251_Cannon",
 			"DBA_152mw_M83S_Cannon",
 			"DBA_210mw_VK39_Cannon",
+			"DBA_305mw_VKM8_Cannon",
+			"DBA_60mw_PG60H_Cannon",
+			"DBA_184mw_LP4M5_Cannon",
 			"DBA_20mw_GAIBO1_AC",
 			"DBA_20mw_LAATBALL_AC",
 			"DBA_25mw_P252G_AC",
@@ -90,6 +93,11 @@ class CfgPatches
 			"DBA_210mm_CK17_x4_mag",
 			"DBA_210mm_UMK20_x4_mag",
 			"DBA_210mm_ATN3S_TACN_x1_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_184mm_K1_AP_x20_mag",
+			"DBA_184mm_B1_BESH_x35_mag",
+			"DBA_184mm_PL1_HE_x20_mag",
+			"DBA_60mm_P300_HEAT_x120_mag",
 			"DBA_Laserbeam_mag",
 			"DBA_792_M5A_x400_mag",
 			"DBA_762_REC_x2600_mag",
@@ -188,6 +196,13 @@ class CfgPatches
 			"DBA_210mm_UMK20_Mines",
 			"DBA_210mm_ATN3S_TACN",
 			"DBA_210mm_TACN_Submunition",
+			"DBA_305mm_M19K_HE",
+			"DBA_184mm_BESH_Submunition",
+			"DBA_60mm_HEAT_Submuntion",
+			"DBA_184mm_K1_AP",
+			"DBA_184mm_B1_BESH",
+			"DBA_184mm_PL1_HE",
+			"DBA_60mm_P300_HEAT",
 			"ammo_115mm_AP_Penetrator",
 			"ammo_115mm_HEAT_Penetrator",
 			"DBA_lancer_mbt_ap_ammo",
@@ -1233,7 +1248,7 @@ class CfgWeapons
 		sounds[]= {"StandardSound"};
 
 		class StandardSound {
-			begin1[]= {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 3.511886, 0.825, 1500};
+			begin1[]= {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 3.511886, 0.525, 1500};
 			soundBegin[]= {"begin1", 1};
 		};
 		reloadSound[]= {"A3\Sounds_F\vehicles\armor\noises\reload_tank_cannon_2", 31.622778, 1, 15};
@@ -1245,15 +1260,14 @@ class CfgWeapons
 			"DBA_210mm_K18_x3_mag",
 			"DBA_210mm_S19_x8_mag",
 			"DBA_210mm_CK17_x4_mag",
-			"DBA_210mm_UMK20_x4_mag",
 			"DBA_210mm_ATN3S_TACN_x1_mag",
 			};
 		modes[]= {"Single1", "Single2", "Single3", "Single4", "Single5"};
-
 		class EventHandlers : DefaultEventhandlers
 		{
 			Fired = "[_this select 6, _this select 4] execVM '101st_Aux_Mod\Addons\DBA_OrbitalDesignator\functions\fn_Fired_nuke.sqf';";
 		};
+		
 		class GunParticles {
 
 			class Effect1 {
@@ -1317,8 +1331,106 @@ class CfgWeapons
 			artilleryCharge = 0.8525;
 		};
 	};
-	class DBA_50mw_K5B2 : LMG_RCWS
-	{
+	class DBA_305mw_VKM8_Cannon : cannon_120mm{
+		displayName="305mw VKM-8 Turbolaser";
+		scope=2;
+		magazines[]=
+		{
+			"DBA_305mm_M19K_HE_x2_mag",
+		};
+		modes[]=
+		{
+			"player",
+			"close",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=22;
+		class player: player
+		{
+			displayName="305mw VKM-8 Turbolaser";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\sounds\bigboigun.ogg",
+					50.1622777,
+					0.8,
+					2500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=0.75;
+			autoReload=1;
+			burst=2;
+			autoFire=0;
+			dispersion=0.00011;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+		class close: player{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=2;
+			burstRangeMax=2;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=500;
+			minRange=0;
+			minRangeProbab=0.88;
+			midRange=250;
+			midRangeProbab=0.90;
+			maxRange=500;
+			maxRangeProbab=1;
+		};
+		class medium:close{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=2;
+			burstRangeMax=2;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=1300;
+			minRange=900;
+			minRangeProbab=0.9;
+			midRange=1000;
+			midRangeProbab=0.9;
+			maxRange=1250;
+			maxRangeProbab=0.9;
+		};
+		class far:medium{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=2;
+			burstRangeMax=2;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=2500;
+			minRange=1500;
+			minRangeProbab=0.98;
+			midRange=2000;
+			midRangeProbab=0.98;
+			maxRange=2500;
+			maxRangeProbab=0.9;
+		};
+	};
+	class DBA_50mw_K5B2 : LMG_RCWS{
 		displayName="K-5B2 50mw Anti-Air Artillery";
 		displayNameShort="K-5B2";
 		author="ISU";
@@ -1501,9 +1613,9 @@ class CfgWeapons
 				begin1[]=
 				{
 					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
-					1,
-					1,
-					2100
+					1.25,
+					0.65,
+					2500
 				};
 				soundBegin[]=
 				{
@@ -1639,7 +1751,7 @@ class CfgWeapons
 				{
 					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
 					0.5,
-					1,
+					0.85,
 					2100
 				};
 				soundBegin[]=
@@ -1755,7 +1867,7 @@ class CfgWeapons
 					{
 						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
 						1,
-						1,
+						0.65,
 						500
 					};
 					soundBegin[]=
@@ -1852,7 +1964,7 @@ class CfgWeapons
 					{
 						"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
 						1,
-						1,
+						0.65,
 						500
 					};
 					soundBegin[]=
@@ -2305,8 +2417,8 @@ class CfgWeapons
 				begin1[]=
 				{
 					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
-					0.8,
-					1,
+					0.5,
+					1.35,
 					2100
 				};
 				soundBegin[]=
@@ -2893,9 +3005,9 @@ class CfgWeapons
 				begin1[]=
 				{
 					"kobra\442_g_vehicle\aat\sounds\aat_main_gun.wss",
-					3.1622777,
-					1,
-					1500
+					9.1622777,
+					0.9,
+					2500
 				};
 				soundBegin[]=
 				{
@@ -2999,14 +3111,14 @@ class CfgWeapons
 		{
 			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
 			2.5118899,
-			1,
+			0.85,
 			10
 		};
 		reloadMagazineSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
 			2.5118899,
-			1,
+			0.85,
 			10
 		};
 		magazines[]=
@@ -3046,15 +3158,15 @@ class CfgWeapons
 				begin1[]=
 				{
 					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
-					1,
-					0.89999998,
+					10,
+					0.70,
 					6000
 				};
 				begin2[]=
 				{
 					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
-					1,
-					0.89999998,
+					10,
+					0.658,
 					6000
 				};
 				soundBegin[]=
@@ -3214,8 +3326,8 @@ class CfgWeapons
 				begin1[]=
 				{
 					"kobra\442_g_vehicle\aat\sounds\aat_main_gun.wss",
-					3.1622777,
-					1,
+					8.1622777,
+					0.875,
 					1500
 				};
 				soundBegin[]=
@@ -3259,8 +3371,8 @@ class CfgWeapons
 				begin1[]=
 				{
 					"kobra\442_g_vehicle\aat\sounds\aat_main_gun.wss",
-					5.1622777,
-					1,
+					010.1622777,
+					0.8,
 					1500
 				};
 				soundBegin[]=
@@ -3399,10 +3511,10 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
-					5.555,
+					"\sounds\bigboigun.ogg",
+					15.555,
 					1,
-					1250
+					3000
 				};
 				soundBegin[]=
 				{
@@ -3412,6 +3524,112 @@ class CfgWeapons
 			};
 			soundContinuous=0;
 			reloadTime=11.5;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+	};
+	class DBA_60mw_PG60H_Cannon : MGun{
+		class GunParticles
+		{
+		};
+		displayName="60mw PG60H Cannon";
+		scope=1;
+		shotFromTurret=0;
+		canLock = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 30.5556;
+		FCSZeroingDelay = 1;
+		maxZeroing=3000;
+		magazines[]=
+		{
+		"DBA_60mm_P300_HEAT_x120_mag",
+		};
+		magazineReloadTime=0.75;
+		modes[]=
+		{
+			"manual",
+		};
+		class manual: MGun
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+						10,
+						0.45,
+						2000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			reloadTime=0.75;
+			aiBurstTerminable = 1;
+			soundContinuous=0;
+			autoReload=1;
+			autoFire=1;
+			dispersion=0.00075;
+			aiRateOfFire=0.5714286;
+			aiRateOfFireDistance=500;
+			minRange=5;
+			minRangeProbab=0.85;
+			midRange=500;
+			midRangeProbab=0.725;
+			maxRange=800;
+			maxRangeProbab=0.45;
+		};
+	};
+	class DBA_184mw_LP4M5_Cannon: cannon_120mm{
+		displayName="LP4-M5 184mw Mass Driver";
+		scope=2;
+		shotFromTurret=0;
+		magazines[]=
+		{
+			"DBA_184mm_K1_AP_x20_mag",
+			"DBA_184mm_B1_BESH_x35_mag",
+			"DBA_184mm_PL1_HE_x20_mag",
+		};
+		ballisticsComputer="2 + 16";
+		magazineReloadTime=4;
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\sounds\bigboigun.ogg",
+					15.555,
+					0.875,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=4;
 			autoReload=1;
 			autoFire=0;
 			dispersion=0.0000001;
@@ -5484,6 +5702,61 @@ class CfgMagazines
 		initspeed=855;
 		tracersevery=1;
 	};
+	class DBA_305mm_M19K_HE_x2_mag : VehicleMagazine{
+		displayname="305mw M-19K High Explosive";
+		ammo="DBA_305mm_M19K_HE";
+		displaynamemagazine="305mw M-19K HE";
+		shortnamemagazine="M-19K HE";
+		displayNameMFDFormat="HE";
+		displayNameShort="HE";
+		count=2;
+		initspeed=808;
+		tracersevery=1;
+	};
+	class DBA_184mm_K1_AP_x20_mag : VehicleMagazine{
+		displayname="184mw K-1 Armor Piercing";
+		ammo="DBA_184mm_K1_AP";
+		displaynamemagazine="184mw K-1 AP";
+		shortnamemagazine="K-1 AP";
+		displayNameMFDFormat="AP";
+		displayNameShort="AP";
+		count=20;
+		initspeed=830;
+		tracersevery=1;
+	};
+	class DBA_184mm_B1_BESH_x35_mag : VehicleMagazine{
+		displayname="184mw B-1 BESH";
+		ammo="DBA_184mm_B1_BESH";
+		displaynamemagazine="184mw B-1 BESH";
+		shortnamemagazine="B-1 BESH";
+		displayNameMFDFormat="BESH";
+		displayNameShort="BESH";
+		count=35;
+		initspeed=716;
+		tracersevery=1;
+	};
+	class DBA_184mm_PL1_HE_x20_mag : VehicleMagazine{
+		displayname="184mw PL-1 High Explosive High Drag";
+		ammo="DBA_184mm_PL1_HE";
+		displaynamemagazine="184mw PL-1 HE-HD";
+		shortnamemagazine="PL-1 HE-HD";
+		displayNameMFDFormat="HE-HD";
+		displayNameShort="HE-HD";
+		count=20;
+		initspeed=730;
+		tracersevery=1;
+	};
+	class DBA_60mm_P300_HEAT_x120_mag : VehicleMagazine{
+		displayname="P300 60mw High Explosive Anti-Tank";
+		ammo="DBA_60mm_P300_HEAT";
+		displaynamemagazine="60mw P300 HEAT";
+		shortnamemagazine="P300 HEAT";
+		displayNameMFDFormat="HEAT";
+		displayNameShort="HEAT";
+		count=120;
+		initspeed=880;
+		tracersevery=1;
+	};
 	class DBA_Laserbeam_mag : VehicleMagazine{
 		displayname="Orbital Laser Designator";
 		ammo="DBA_Laserbeam";
@@ -6421,7 +6694,7 @@ class CfgAmmo
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
 		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-		tracerScale = 1.05;
+		tracerScale = 1.8;
 		tracerStartTime = 0.1;
 		tracerEndTime = 20;
 		brightness=100000;
@@ -6445,7 +6718,7 @@ class CfgAmmo
 		};
 
 		class CamShakeFire {
-			power = 0.1;
+			power = 10;
 			duration = 0.35;
 			frequency = 15;
 			distance = 60;
@@ -6459,8 +6732,8 @@ class CfgAmmo
 		};
 	};
 	class DBA_25mm_PL266_HE : DBA_25mm_PM258_KEP{
-		hit = 100;
-		indirectHit = 47;
+		hit = 50;
+		indirectHit = 45;
 		indirectHitRange = 7.5;
 		explosive= 0.8
 		warheadName = "HEP";
@@ -6478,7 +6751,7 @@ class CfgAmmo
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
 		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-		tracerScale = 1.05;
+		tracerScale = 1.8;
 		tracerStartTime = 0.1;
 		tracerEndTime = 20;
 		brightness=100000;
@@ -6502,7 +6775,7 @@ class CfgAmmo
 		};
 
 		class CamShakeFire {
-			power = 0.1;
+			power = 10;
 			duration = 0.35;
 			frequency = 15;
 			distance = 60;
@@ -6517,7 +6790,7 @@ class CfgAmmo
 	};
 	class DBA_TPV13_TBR_Submunition : SubmunitionBase{
 		hit = 100;
-		indirectHit = 150;
+		indirectHit = 50;
 		indirectHitRange = 12.5;
 		explosive= 1.0
 		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
@@ -6533,9 +6806,9 @@ class CfgAmmo
 		submunitionInitialOffset[]={0,0,-0.2};
 		triggerOnImpact=1;
 		deleteParentWhenTriggered=0;
-		hit=200;
-		indirectHit=70;
-		indirectHitRange=8;
+		hit=50;
+		indirectHit=125;
+		indirectHitRange=13;
 		explosive=0.80000001;
 		cost=30;
 		aiAmmoUsageFlags="128 + 512";
@@ -6556,17 +6829,17 @@ class CfgAmmo
 		whistleDist=4;
 		class CamShakeExplode
 		{
-			power=11;
-			duration=1.4;
+			power=50;
+			duration=3.5;
 			frequency=20;
-			distance=91.329597;
+			distance=100;
 		};
 		class CamShakeHit
 		{
 			power=110;
-			duration=0.60000002;
+			duration=1.8;
 			frequency=20;
-			distance=1;
+			distance=20;
 		};
 		class CamShakeFire
 		{
@@ -6583,9 +6856,7 @@ class CfgAmmo
 			distance=1;
 		};
 	};
-	
-	class ammo_57mm_penetrator: ammo_Penetrator_Base
-	{
+	class ammo_57mm_penetrator: ammo_Penetrator_Base{
 		hit=315;
 		caliber=25;
 	};
@@ -6725,12 +6996,12 @@ class CfgAmmo
 	};
 	class DBA_40mm_PM225_AP : DBA_40mm_PL31A_HESH
 	{
-		hit = 150;
+		hit = 180;
 		indirectHit = 5;
 		indirectHitRange = 0.25;
 		explosive= 0.0
 		warheadName = "KEP";
-		caliber = 17.77777778;
+		caliber = 20;
 		deflecting = 1;
 		cost = 40;
 		airFriction = -0.000600;
@@ -6744,7 +7015,7 @@ class CfgAmmo
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
 		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-		tracerScale = 1.05;
+		tracerScale = 1.5;
 		tracerStartTime = 0.1;
 		tracerEndTime = 20;
 		brightness=100000;
@@ -7274,6 +7545,218 @@ class CfgAmmo
 		deflecting = 0;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
 	};
+	class DBA_305mm_M19K_HE : Sh_120mm_APFSDS{
+		displayName="305mw M-19K HE";
+		hit = 2000;
+		indirectHit = 4100;
+		indirectHitRange = 65;
+		warheadName = "HE";
+		dangerRadiusHit = 750;
+		suppressionRadiusHit = 125;
+		typicalSpeed = 250;
+		caliber = 30;
+		deflecting = 0;
+		explosive = 0.800000;
+		cost = 300;
+		model = "kobra\442_weapons\ammo\green_tracer.p3d";
+		tracerStartTime=0.15;
+		tracerEndTime=10000000;
+		tracerScale=2.25;
+		CraterEffects = "ArtyShellCrater";
+		ExplosionEffects = "MortarExplosion";
+		whistleDist = 100;
+		artilleryLock = 1;
+		thrust = 0;
+		timeToLive = 210;
+		airFriction = 0;
+		gravityFactor=2.0;
+		sideairFriction = 0.000000;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.7, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.72, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.65, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.75, 1900};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1610;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=240;
+		class CamShakeExplode {
+			power = 50;
+			duration = 5.500000;
+			frequency = 20;
+			distance = 500;
+		};
+
+		class CamShakeHit {
+			power = 200;
+			duration = 8;
+			frequency = 20;
+			distance = 200;
+		};
+
+		class CamShakeFire {
+			power = 12;
+			duration = 4.500000;
+			frequency = 20;
+			distance = 175;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.010000;
+			duration = 0.100000;
+			frequency = 20;
+			distance = 1;
+		};
+	};
+	class DBA_184mm_BESH_Submunition : ammo_Penetrator_Base{
+		hit=625;
+		warheadName = "TandemHEAT";
+		caliber=23.33333333;
+	};
+	class DBA_60mm_HEAT_Submuntion : ammo_Penetrator_Base{
+		hit=215;
+		warheadName = "TandemHEAT";
+		caliber=30.66666667;
+	};
+	class DBA_184mm_K1_AP : Sh_120mm_APFSDS{
+		displayName="184mw K-1 Heavy Kinetic Energy Penetrator";
+		hit=1000;
+		warheadName="HKEP";
+		indirectHit=150;
+		indirectHitRange=0.33;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=830;
+		coefGravity=0;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.5;
+		tracerEndTime=120;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=28.50356295;
+		typicalSpeed=1000;
+		deflecting = 1;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_184mm_B1_BESH : DBA_184mm_K1_AP{
+		displayName="184mw B-1 Heavy Kinetic Energy Penetrator";
+		hit=500;
+		warheadName="HKEP";
+		indirectHit=800;
+		indirectHitRange=16;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=713;
+		coefGravity=0;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.8;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.5;
+		tracerEndTime=120;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=28.50356295;
+		typicalSpeed=1000;
+		deflecting = 1;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		submunitionAmmo = "DBA_184mm_BESH_Submunition";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_184mm_PL1_HE : DBA_184mm_K1_AP{
+		displayName="184mw PL-1 High Explosive High Drag";
+		hit=400;
+		warheadName="HE-HD";
+		indirectHit=1250;
+		indirectHitRange=16;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=730;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.5;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=1.85;
+		muzzleEffect="";
+		caliber=10.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class BulletBase;
+	class DBA_60mm_P300_HEAT : BulletBase{
+		displayName="60mw P300 High Explosive Anti-Tank";
+		hit=200;
+		warheadName="HEAT";
+		indirectHit=100;
+		indirectHitRange=7.25;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=880;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.8;
+		coefGravity=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.5;
+		tracerEndTime=120;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=10.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		submunitionAmmo = "DBA_60mm_HEAT_Submuntion";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
 	class DBA_210mm_K17_HE : Sh_155mm_AMOS{
 		displayName="210mw K-17 HE";
 		hit = 600;
@@ -7540,7 +8023,7 @@ class CfgAmmo
 		artilleryLock = 1;
 		hit = 100;
 		indirectHit = 200;
-		indirectHitRange = 0;
+		indirectHitRange = 550;
 		initSpeed=855;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		tracerScale = 1.0;
