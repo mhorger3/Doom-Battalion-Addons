@@ -3511,7 +3511,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\sounds\bigboigun.ogg",
+					"\101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
 					15.555,
 					1,
 					3000
@@ -3617,7 +3617,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\sounds\bigboigun.ogg",
+					"\101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
 					15.555,
 					0.875,
 					3000
