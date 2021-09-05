@@ -46,16 +46,43 @@ class CfgFaces
 		{
 			displayname = "BX Captain Head";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa";
+			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa";
+			hiddenSelections[] =
+			{
+				"Camo",
+			};
+			hiddenSelectionsTextures[] =
+			{
+				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa",
+			};
 		};
 		class DBA_BXHead_Citadel : DBA_BXHead
 		{
 			displayname = "BX Citadel Head";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa";
+			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa";
+			hiddenSelections[] =
+			{
+				"Camo",
+			};
+			hiddenSelectionsTextures[] =
+			{
+				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa",
+			};
 		};
 		class DBA_BXHead_Fire : DBA_BXHead
 		{
 			displayname = "BX Fire Head";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa";
+			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa";
+			hiddenSelections[] =
+			{
+				"Camo",
+			};
+			hiddenSelectionsTextures[] =
+			{
+				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa",
+			};
 		};
 	};
 };
