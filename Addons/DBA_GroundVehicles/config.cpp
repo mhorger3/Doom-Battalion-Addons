@@ -62,2378 +62,97 @@ class DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
-class VehicleSystemsTemplateLeftDriver : DefaultVehicleSystemsDisplayManagerLeft
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
 {
 	class components;
 };
-class VehicleSystemsTemplateRightDriver : DefaultVehicleSystemsDisplayManagerRight
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
-class VehicleSystemsTemplateLeftCommander : DefaultVehicleSystemsDisplayManagerLeft
-{
-	class components;
-};
-class VehicleSystemsTemplateRightCommander : DefaultVehicleSystemsDisplayManagerRight
-{
-	class components;
-};
-class VehicleSystemsTemplateLeftGunner : DefaultVehicleSystemsDisplayManagerLeft
-{
-	class components;
-};
-class VehicleSystemsTemplateRightGunner : DefaultVehicleSystemsDisplayManagerRight
-{
-	class components;
-};
-class DefaultEventHandlers;
-class WeaponFireGun;
-class WeaponCloudsGun;
-class WeaponFireMGun;
-class WeaponCloudsMGun;
-class RCWSOptics;
-class Optics_Armored;
-class Optics_Gunner_MBT_01 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-class Optics_Commander_01 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-class Optics_Gunner_MBT_03 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-class Optics_Gunner_AAA_01 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-class Optics_Commander_02 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-class Optics_Gunner_APC_02 : Optics_Armored
-{
-	class Wide;
-	class Medium;
-	class Narrow;
-};
+class DefaultEventhandlers;
 class CfgVehicles
 {
-	class LandVehicle;
-	class Tank : LandVehicle
+//normal inheritiance trees
+
+	//Warden
+	class APC_Tracked_01_base_F;
+	class B_APC_Tracked_01_base_F: APC_Tracked_01_base_F
+	{
+		class Turrets;
+	};
+	class B_APC_Tracked_01_rcws_F: B_APC_Tracked_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class CommanderOptics;
+		};
+		class Components;
+	};
+
+	//AA
+	class B_SAM_System_02_F;
+	class B_SAM_System_01_F;
+
+
+
+		class All;
+	class Strategic;
+	class Land;
+	class LandVehicle: Land
+	{
+		class ViewPilot;
+		class ViewGunner;
+		class NewTurret;
+	};
+	class Tank: LandVehicle
 	{
 		class NewTurret;
 		class Sounds;
 		class HitPoints;
-		class CommanderOptics;
 	};
-	class Tank_F : Tank
+	class Tank_F: Tank
 	{
 		class Turrets
 		{
-			class MainTurret : NewTurret
+			class MainTurret: NewTurret
 			{
-				class ViewGunner;
 				class Turrets
 				{
 					class CommanderOptics;
 				};
 			};
 		};
+		class Components;
 		class AnimationSources;
 		class ViewPilot;
+		class CargoTurret;
 		class ViewOptics;
+		class RCWSOptics;
+		class ViewGunner;
 		class ViewCargo;
 		class HeadLimits;
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
 			class HitHull;
-			class HitFuel;
 			class HitEngine;
 			class HitLTrack;
 			class HitRTrack;
+			class HitFuel;
 		};
-		class Sounds : Sounds
+		class Sounds: Sounds
 		{
 			class Engine;
 			class Movement;
 		};
-		class EventHandlers;
 	};
-
-	class MBT_01_base_F : Tank_F
-	{
-		class HitPoints : HitPoints
-		{
-			class HitHull;
-			class HitFuel;
-			class HitEngine;
-			class HitLTrack;
-			class HitRTrack;
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-	};
-	class B_MBT_01_base_F : MBT_01_base_F
-	{
-		class turrets : turrets
-		{
-			class MainTurret : Mainturret
-			{
-				class Turrets;
-
-			};
-		};
-	};
-	class B_MBT_01_cannon_F : B_MBT_01_base_F
-	{
-		class AnimationSources;
-		class HitPoints : HitPoints
-		{
-			class HitHull;
-			class HitFuel;
-			class HitEngine;
-			class HitLTrack;
-			class HitRTrack;
-		};
-	};
-
-	class B_MBT_01_TUSK_F : B_MBT_01_cannon_F
-	{
-		class SimpleObject
-		{
-		};
-		class MFD
-		{
-			class MFD_Driver_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Speed
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Speed
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_text
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_second
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Ready_To_Fire
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Machinegun
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Main_Armament_Ammo_Type
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Coax_Ammo
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-					class Main_Armament_Ammo_Type_3
-					{
-					};
-					class Gunner_Text_3
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Generic1
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-				};
-			};
-			class MFD_Commander_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Machinegun
-					{
-					};
-					class Commander_machinegun
-					{
-					};
-					class Commander_machinegun_ammo
-					{
-					};
-					class Commander_armament
-					{
-					};
-					class Commander_armament_magazines
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Commander_Generic1
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-				};
-			};
-			class MFD_Commander_Generic2
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-				};
-			};
-			class MFD_Commander_Ready_To_Fire
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Commander_Smoke_Indicator
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Commander_Main_Armament_Ammo_Type
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Commander_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-					class Main_Armament_Ammo_Type_3
-					{
-					};
-					class Gunner_Text_3
-					{
-					};
-				};
-			};
-			class MFD_Commander_Coax_Ammo
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_Coax_Magazines
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_OnScreen
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Azimuth_number
-					{
-					};
-					class Elevation_Text
-					{
-					};
-					class Elevation_Number
-					{
-					};
-					class Lased_Range
-					{
-					};
-					class VisionMode_Text
-					{
-					};
-					class VisionMode_String
-					{
-					};
-				};
-			};
-		};
-		class Library
-		{
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{
-					class CommanderOptics : CommanderOptics
-					{
-						class HitPoints
-						{
-							class HitComTurret
-							{
-							};
-							class HitComGun
-							{
-							};
-						};
-					};
-				};
-				class HitPoints
-				{
-					class HitTurret
-					{
-					};
-					class HitGun
-					{
-					};
-				};
-			};
-		};
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_hide_cannon
-			{
-			};
-			class muzzle_rot_cannon
-			{
-			};
-			class muzzle_rot_cmdr
-			{
-			};
-			class recoil_source
-			{
-			};
-			class commander_gun_recoil
-			{
-			};
-			class HitERA_Front_src
-			{
-			};
-			class HitERA_Left_1_src
-			{
-			};
-			class HitERA_Left_2_src
-			{
-			};
-			class HitERA_Left_3_src
-			{
-			};
-			class HitERA_Left_4_src
-			{
-			};
-			class HitERA_Right_1_src
-			{
-			};
-			class HitERA_Right_2_src
-			{
-			};
-			class HitERA_Right_3_src
-			{
-			};
-			class HitERA_Right_4_src
-			{
-			};
-			class HitERA_Top_Front_src
-			{
-			};
-			class HitERA_Top_Left_src
-			{
-			};
-			class HitERA_Top_Right_src
-			{
-			};
-			class showCamonetCannon
-			{
-			};
-			class showCamonetPlates1
-			{
-			};
-			class showCamonetPlates2
-			{
-			};
-			class showCamonetTurret
-			{
-			};
-			class showCamonetHull
-			{
-			};
-			class showBags
-			{
-			};
-		};
-		class HitPoints : HitPoints
-		{
-			class HitHull : HitHull
-			{
-			};
-			class HitEngine : HitEngine
-			{
-			};
-			class HitFuel : HitFuel
-			{
-			};
-			class HitLTrack : HitLTrack
-			{
-			};
-			class HitRTrack : HitRTrack
-			{
-			};
-			class HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Left_1 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Left_2 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Left_3 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Left_4 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Right_1 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Right_2 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Right_3 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Right_4 : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Top_Front : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Top_Left : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-			class HitERA_Top_Right : HitERA_Front
-			{
-				class DestructionEffects
-				{
-					class Explo
-					{
-					};
-					class Smoke : Explo
-					{
-					};
-					class Sound : Explo
-					{
-					};
-				};
-			};
-		};
-		class TextureSources
-		{
-			class Sand
-			{
-			};
-			class Olive
-			{
-			};
-		};
-	};
-	class APC_Tracked_01_base_F : Tank_F
-	{
-		
-		class complexGearbox;
-		
-		class Wheels
-		{
-			class L2
-			{
-			};
-			class L3 : L2
-			{
-				
-			};
-			class L4 : L2
-			{
-				
-			};
-			class L5 : L2
-			{
-			};
-			class L6 : L2
-			{
-			};
-			class L7 : L2
-			{
-			};
-			class L9 : L2
-			{
-			};
-			class L1 : L2
-			{
-			};
-			class R2 : L2
-			{
-			};
-			class R3 : R2
-			{
-			};
-			class R4 : R2
-			{
-			};
-			class R5 : R2
-			{
-			};
-			class R6 : R2
-			{
-			};
-			class R7 : R2
-			{
-			};
-			class R9 : R2
-			{
-			};
-			class R1 : R2
-			{
-			};
-		};
-		class MFD
-		{
-			class MFD_Driver_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-						
-					};
-				};
-			};
-			class MFD_Driver_Fire
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Fire
-					{
-						
-					};
-				};
-			};
-			class MFD_Driver_Heading_text
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_second
-			{
-				
-				class material
-				{
-					
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					
-					class Driver_Heading
-					{
-						
-					};
-				};
-			};
-			class MFD_Gunner_Ready_To_Fire
-			{
-				
-				class material
-				{
-					
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					
-					class Top_text
-					{
-						
-					};
-					class Bottom_text
-					{
-						
-					};
-				};
-			};
-			class MFD_Gunner_Display
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					
-					class Main_armament
-					{
-						
-					};
-					class Main_armament_ammo_type
-					{
-						
-					};
-					class Lased_distance_elevation
-					{
-						
-					};
-					class Azimut
-					{
-						
-					};
-					class Damage
-					{
-						
-					};
-					class Heading
-					{
-						
-					};
-					class Lased_Range
-					{
-						
-					};
-				};
-			};
-			class MFD_Gunner_Main_Armament_Ammo_Type
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-		};
-		class Library
-		{
-		};
-		class ViewOptics : ViewOptics
-		{
-			
-		};
-		class ViewPilot : ViewPilot
-		{
-		};
-	
-		class HitPoints : HitPoints
-		{
-			class HitHull : HitHull
-			{
-				
-			};
-			class HitEngine : HitEngine
-			{
-				
-			};
-			class HitFuel : HitFuel
-			{
-				
-			};
-			class HitLTrack : HitLTrack
-			{
-			};
-			class HitRTrack : HitRTrack
-			{
-				
-			};
-		};
-		class Exhausts
-		{
-			class Exhaust1
-			{
-			};
-		};
-		
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets
-				{
-				};
-				class ViewGunner : ViewGunner
-				{
-					
-				};
-				class ViewOptics : RCWSOptics
-				{
-					
-				};
-				class HitPoints
-				{
-					class HitTurret
-					{
-						
-					};
-					class HitGun
-					{
-					};
-				};
-			};
-			class CommanderOptics : CommanderOptics
-			{
-				
-				class ViewGunner : ViewCargo
-				{
-				};
-				class ViewOptics : ViewOptics
-				{
-				};
-				class HitPoints
-				{
-					class HitComTurret
-					{
-						
-					};
-					class HitComGun
-					{
-						
-					};
-				};
-				class Components
-				{
-					class VehicleSystemsDisplayManagerComponentLeft : VehicleSystemsTemplateLeftCommander
-					{
-					};
-					class VehicleSystemsDisplayManagerComponentRight : VehicleSystemsTemplateRightCommander
-					{
-					};
-				};
-			};
-		};
-		class compartmentsLights
-		{
-			class Comp1
-			{
-				class Light1
-				{
-					class Attenuation
-					{
-					};
-				};
-				class Light2 : Light1
-				{
-				};
-				class Light3 : Light1
-				{
-				};
-				class Light4 : Light1
-				{
-				};
-				class Light5 : Light1
-				{
-				};
-				class Light6 : Light1
-				{
-				};
-			};
-		};
-		class Reflectors
-		{
-			class Left
-			{
-				class Attenuation
-				{
-					
-				};
-			};
-			class Right : Left
-			{
-			};
-			class Right2 : Right
-			{
-			};
-			class Left2 : Left
-			{
-			};
-		};
-		class RenderTargets
-		{
-			class commander_display
-			{
-				class CameraView1
-				{
-				};
-			};
-			class driver_display
-			{
-				class CameraView1
-				{
-				};
-			};
-		};
-		class Damage
-		{
-		};
-		class TransportMagazines
-		{
-			
-		};
-		class TransportItems
-		{
-			
-		};
-		class TransportWeapons
-		{
-			
-		};
-		class AnimationSources : AnimationSources
-		{
-			
-		};
-		class EventHandlers;
-	};
-	class B_APC_Tracked_01_base_F : APC_Tracked_01_base_F
-	{
-		
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-			};
-			class CommanderOptics : CommanderOptics
-			{
-			};
-		};
-		class Components;
-	};
-	class B_APC_Tracked_01_rcws_F : B_APC_Tracked_01_base_F
-	{
-		class SpeechVariants
-		{
-			class Default
-			{
-				
-			};
-		};
-		class SimpleObject
-		{
-			
-		};
-		class MFD
-		{
-			class MFD_Driver_Heading
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Fire
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Fire
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_text
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_second
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Ready_To_Fire
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Main_Armament_Ammo_Type
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-				};
-			};
-			class MFD_Commander_Ready_To_Fire
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Commander_Main_Display
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Range_Value
-					{
-					};
-				};
-			};
-			class MFD_Commander_Second_Display
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-						
-					};
-					class Lased_distance_elevation
-					{
-						
-					};
-					class Azimut
-					{
-						
-					};
-					class Heading
-					{
-						
-					};
-					class Lased_Range
-					{
-						
-					};
-				};
-			};
-			class MFD_Commander_Smoke_Indicator
-			{
-				
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-						
-					};
-				};
-			};
-			class MFD_Commander_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-						
-					};
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_AmmoIndicator_Main_Armament_second
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-				};
-			};
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-			};
-			class CommanderOptics : CommanderOptics
-			{
-			};
-		};
-		class TextureSources
-		{
-			class Sand
-			{
-			};
-			class Olive
-			{
-			};
-		};
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_rot
-			{
-			};
-			class muzzle_hide
-			{
-			};
-			class revolving_hmg
-			{
-			};
-			class revolving_gmg
-			{
-			};
-			class showCamonetPlates1
-			{
-			};
-			class showCamonetPlates2
-			{
-			};
-			class showCamonetHull
-			{
-			};
-			class showBags
-			{
-			};
-		};
-	};
+	class turrets;
 	class APC_Tracked_03_base_F : Tank_F
 	{
-		class complexGearbox
+		class Turrets: turrets
 		{
-		};
-		class Wheels
-		{
-			class L2
-			{
-			};
-			class L3 : L2
-			{
-			};
-			class L4 : L2
-			{
-			};
-			class L5 : L2
-			{
-			};
-			class L6 : L2
-			{
-			};
-			class L7 : L2
-			{
-			};
-			class L9 : L2
-			{
-			};
-			class L1 : L2
-			{
-			};
-			class R2 : L2
-			{
-			};
-			class R3 : R2
-			{
-			};
-			class R4 : R2
-			{
-			};
-			class R5 : R2
-			{
-			};
-			class R6 : R2
-			{
-			};
-			class R7 : R2
-			{
-			};
-			class R9 : R2
-			{
-			};
-			class R1 : R2
-			{
-			};
-		};
-		class MFD
-		{
-			class MFD_Driver_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_text
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_second
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Commander_Display_Damage
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Damage_Hull
-					{
-					};
-					class Damage_Engine
-					{
-					};
-					class Damage_Fuel
-					{
-					};
-					class Damage_Wheels
-					{
-					};
-					class Damage_Gun
-					{
-					};
-					class Damage_Turret
-					{
-					};
-				};
-			};
-			class MFD_Commander_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-					class FuelScale
-					{
-					};
-				};
-				class Draw
-				{
-					class Main_Gun
-					{
-					};
-					class Main_Gun_Ammo_count
-					{
-					};
-					class Main_Gun_Ammo_Type_text
-					{
-					};
-					class Main_Gun_Ammo_Type
-					{
-					};
-					class Coax
-					{
-					};
-					class Coax_Ammo_count
-					{
-					};
-					class Azimuth
-					{
-					};
-					class Azimuth_number
-					{
-					};
-					class Smoke
-					{
-					};
-					class Fuel_background_white
-					{
-						class Background
-						{
-						};
-					};
-					class Fuel_background_green
-					{
-						class Background
-						{
-						};
-					};
-					class Fuel_background_yellow
-					{
-						class Background
-						{
-						};
-					};
-					class Fuel_background_red
-					{
-						class Background
-						{
-						};
-					};
-					class Fuel
-					{
-					};
-					class Fuel_number
-					{
-					};
-					class Fuel_percent_sign
-					{
-					};
-				};
-			};
-			class MFD_Commander_OnScreen
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Azimuth_number
-					{
-					};
-					class Elevation_Text
-					{
-					};
-					class Elevation_Number
-					{
-					};
-					class Lased_Range
-					{
-					};
-					class VisionMode_Text
-					{
-					};
-					class VisionMode_String
-					{
-					};
-				};
-			};
-			class MFD_Commander_Display_MainTurret
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Smoke_ammo
-					{
-					};
-				};
-			};
-			class MFD_Commander_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Ready_To_Fire
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Machinegun
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Main_Armament_Ammo_Type
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Coax_Ammo
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Range
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Range
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoType
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Heading
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Heading
-					{
-					};
-				};
-			};
-		};
-		class ViewOptics : ViewOptics
-		{
-		};
-		class ViewPilot : ViewPilot
-		{
-		};
-		class HitPoints : HitPoints
-		{
-			class HitHull : HitHull
-			{
-			};
-			class HitEngine : HitEngine
-			{
-			};
-			class HitFuel : HitFuel
-			{
-			};
-			class HitLTrack : HitLTrack
-			{
-			};
-			class HitRTrack : HitRTrack
-			{
-			};
-			class HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_Left_2 : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_Left_3 : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_Right_1 : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_Right_2 : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_Right_3 : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_top_back : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_top_left : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_top_right : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_back : HitSLAT_Left_1
-			{
-			};
-			class HitSLAT_front : HitSLAT_Left_1
-			{
-			};
-		};
-		class Exhausts
-		{
-			class Exhaust1
-			{
-			};
-		};
-		class compartmentsLights
-		{
-			class Comp1
-			{
-				class Light1
-				{
-					class Attenuation
-					{
-					};
-				};
-				class Light2 : Light1
-				{
-				};
-				class Light3 : Light1
-				{
-				};
-				class Light4 : Light1
-				{
-				};
-				class Light5 : Light1
-				{
-				};
-				class Light6 : Light1
-				{
-				};
-			};
-		};
-		class Reflectors
-		{
-			class Left
-			{
-				class Attenuation
-				{
-				};
-			};
-			class Right : Left
-			{
-			};
-			class Right2 : Right
-			{
-			};
-			class Left2 : Left
-			{
-			};
-		};
-		class RenderTargets
-		{
-			class Mirror_L
-			{
-				class Camera
-				{
-				};
-			};
-			class Mirror_R
-			{
-				class Camera
-				{
-				};
-			};
-			class commander_display
-			{
-				class CameraView1
-				{
-				};
-			};
-			class driver_display
-			{
-				class CameraView1
-				{
-				};
-			};
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{
-					class CommanderOptics : CommanderOptics
-					{
-						class ViewGunner : ViewGunner
-						{
-						};
-						class ViewOptics : ViewOptics
-						{
-						};
-						class OpticsIn : Optics_Commander_02
-						{
-							class Wide : Wide
-							{
-							};
-							class Medium : Medium
-							{
-							};
-							class Narrow : Narrow
-							{
-							};
-						};
-						class HitPoints
-						{
-							class HitComTurret
-							{
-							};
-							class HitComGun
-							{
-							};
-						};
-					};
-				};
-				class ViewGunner : ViewGunner
-				{
-				};
-				class OpticsIn : Optics_Gunner_APC_02
-				{
-					class Wide : Wide
-					{
-					};
-					class Medium : Medium
-					{
-					};
-					class Narrow : Narrow
-					{
-					};
-				};
-				class HitPoints
-				{
-					class HitTurret
-					{
-					};
-					class HitGun
-					{
-					};
-				};
-			};
-		};
-		class Damage
-		{
-		};
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_rot
-			{
-			};
-			class muzzle_hide
-			{
-			};
-			class HideTurret
-			{
-			};
-			class autocannon_30mm_revolving
-			{
-			};
-			class Smoke_source
-			{
-			};
-			class HitEngine_src
-			{
-			};
-			class HitFuel_src
-			{
-			};
-			class HitHull_src
-			{
-			};
-			class HitMainGun_src
-			{
-			};
-			class HitTurret_src
-			{
-			};
-			class HitComTurret_src
-			{
-			};
-			class HitSLAT_Left_1_src
-			{
-			};
-			class HitSLAT_Left_2_src
-			{
-			};
-			class HitSLAT_Left_3_src
-			{
-			};
-			class HitSLAT_Right_1_src
-			{
-			};
-			class HitSLAT_Right_2_src
-			{
-			};
-			class HitSLAT_Right_3_src
-			{
-			};
-			class HitSLAT_back_src
-			{
-			};
-			class HitSLAT_front_src
-			{
-			};
-			class HitSLAT_top_back_src
-			{
-			};
-			class HitSLAT_top_right_src
-			{
-			};
-			class HitSLAT_top_left_src
-			{
-			};
-			class showBags
-			{
-			};
-			class showBags2
-			{
-			};
-			class showCamonetHull
-			{
-			};
-			class showCamonetTurret
-			{
-			};
-			class showTools
-			{
-			};
-			class showSLATHull
-			{
-			};
-			class showSLATTurret
-			{
-			};
-		};
-		class TextureSources
-		{
-			class Indep_01
-			{
-			};
-			class Indep_02
-			{
-			};
-			class Indep_03
-			{
-			};
-		};
-		class Library
-		{
-		};
-		class TransportMagazines
-		{
-		};
-		class TransportItems
-		{
-		};
-		class TransportWeapons
-		{
+			class MainTurret;
 		};
 	};
 	class I_APC_tracked_03_base_F : APC_Tracked_03_base_F
@@ -2473,854 +192,13 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class MBT_03_base_F : Tank_F
-	{
-		class complexGearbox
-		{
-		};
-		class Wheels
-		{
-			class L2
-			{
-			};
-			class L3 : L2
-			{
-			};
-			class L4 : L2
-			{
-			};
-			class L5 : L4
-			{
-			};
-			class L6 : L4
-			{
-			};
-			class L7 : L2
-			{
-			};
-			class L8 : L2
-			{
-			};
-			class L9 : L2
-			{
-			};
-			class L1 : L2
-			{
-			};
-			class R2 : L2
-			{
-			};
-			class R3 : R2
-			{
-			};
-			class R4 : R2
-			{
-			};
-			class R5 : R2
-			{
-			};
-			class R6 : R2
-			{
-			};
-			class R7 : R2
-			{
-			};
-			class R8 : R2
-			{
-			};
-			class R9 : R2
-			{
-			};
-			class R1 : R2
-			{
-			};
-		};
-		class MFD
-		{
-			class MFD_Driver_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_text
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Driver_Heading_second
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Ready_To_Fire
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Machinegun
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Main_Armament_Ammo_Type
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Coax_Ammo
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Gunner_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-					class Main_Armament_Ammo_Type_3
-					{
-					};
-					class Gunner_Text_3
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Generic1
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-					class Generic_Text3
-					{
-					};
-					class Generic_Text4
-					{
-					};
-				};
-			};
-			class MFD_Gunner_Generic2
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-					class Generic_Text3
-					{
-					};
-					class Generic_Text4
-					{
-					};
-				};
-			};
-			class MFD_Commander_Display
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_armament
-					{
-					};
-					class Machinegun
-					{
-					};
-					class Commander_machinegun
-					{
-					};
-					class Commander_armament
-					{
-					};
-					class Commander_armament_magazines
-					{
-					};
-					class Main_armament_ammo_type
-					{
-					};
-					class Lased_distance_elevation
-					{
-					};
-					class Azimut
-					{
-					};
-					class Damage
-					{
-					};
-					class Heading
-					{
-					};
-					class Lased_Range
-					{
-					};
-				};
-			};
-			class MFD_Commander_Ready_To_Fire
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Commander_Smoke_Indicator
-			{
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Top_text
-					{
-					};
-					class Bottom_text
-					{
-					};
-				};
-			};
-			class MFD_Commander_Main_Armament_Ammo_Type
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_AmmoType
-					{
-					};
-				};
-			};
-			class MFD_Commander_AmmoIndicator_Main_Armament
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Main_Armament_Ammo_Type_1
-					{
-					};
-					class Gunner_Text_1
-					{
-					};
-					class Main_Armament_Ammo_Type_2
-					{
-					};
-					class Gunner_Text_2
-					{
-					};
-					class Main_Armament_Ammo_Type_3
-					{
-					};
-					class Gunner_Text_3
-					{
-					};
-				};
-			};
-			class MFD_Commander_Coax_Ammo
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_Coax_Magazines
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_Comm_Ammo_and_Mags
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Gunner_Text_1
-					{
-					};
-				};
-			};
-			class MFD_Commander_OnScreen
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Azimuth_number
-					{
-					};
-					class Elevation_Text
-					{
-					};
-					class Elevation_Number
-					{
-					};
-					class Lased_Range
-					{
-					};
-					class VisionMode_Text
-					{
-					};
-					class VisionMode_String
-					{
-					};
-				};
-			};
-			class MFD_Commander_Heading
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Driver_Heading
-					{
-					};
-				};
-			};
-			class MFD_Commander_Generic1
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-					class Generic_Text2
-					{
-					};
-					class Generic_Text3
-					{
-					};
-					class Generic_Text4
-					{
-					};
-				};
-			};
-			class MFD_Commander_Generic2
-			{
-				class material
-				{
-				};
-				class Bones
-				{
-				};
-				class Draw
-				{
-					class Generic_Text1
-					{
-					};
-				};
-			};
-		};
-		class ViewOptics : ViewOptics
-		{
-		};
-		class ViewPilot : ViewPilot
-		{
-		};
-		class HitPoints : HitPoints
-		{
-			class HitHull : HitHull
-			{
-			};
-			class HitEngine : HitEngine
-			{
-			};
-			class HitFuel : HitFuel
-			{
-			};
-			class HitLTrack : HitLTrack
-			{
-			};
-			class HitRTrack : HitRTrack
-			{
-			};
-			class HitSLAT_Left
-			{
-			};
-			class HitSLAT_Right : HitSLAT_Left
-			{
-			};
-			class HitSLAT_back : HitSLAT_Left
-			{
-			};
-			class HitSLAT_top_left : HitSLAT_Left
-			{
-			};
-			class HitSLAT_top_right : HitSLAT_Left
-			{
-			};
-			class HitSLAT_top_back : HitSLAT_Left
-			{
-			};
-		};
-		class EventHandlers : EventHandlers
-		{
-		};
-		class RenderTargets
-		{
-			class driver_display
-			{
-				class CameraView1
-				{
-				};
-			};
-			class commander_display
-			{
-				class CameraView1
-				{
-				};
-			};
-		};
-		class Exhausts
-		{
-			class Exhaust1
-			{
-			};
-			class Exhaust2
-			{
-			};
-		};
-		class Reflectors
-		{
-			class Left
-			{
-				class Attenuation
-				{
-				};
-			};
-			class Right : Left
-			{
-			};
-			class Right2 : Right
-			{
-			};
-			class Left2 : Left
-			{
-			};
-		};
-		class compartmentsLights
-		{
-			class Comp1
-			{
-				class Light1
-				{
-					class Attenuation
-					{
-					};
-				};
-				class Light2 : Light1
-				{
-				};
-				class Light3 : Light1
-				{
-				};
-				class Light4 : Light1
-				{
-				};
-				class Light5 : Light1
-				{
-				};
-				class Light6 : Light1
-				{
-				};
-			};
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{
-					class CommanderOptics : CommanderOptics
-					{
-						class dynamicViewLimits
-						{
-						};
-						class ViewGunner : ViewGunner
-						{
-						};
-						class ViewOptics : ViewOptics
-						{
-						};
-						class OpticsIn : Optics_Commander_02
-						{
-							class Wide : Wide
-							{
-							};
-							class Medium : Medium
-							{
-							};
-							class Narrow : Narrow
-							{
-							};
-						};
-						class HitPoints
-						{
-							class HitComTurret
-							{
-							};
-							class HitComGun
-							{
-							};
-						};
-					};
-				};
-				class dynamicViewLimits
-				{
-					CommanderOptics[] = { -65,90 };
-				};
-				class OpticsIn : Optics_Gunner_MBT_03
-				{
-					class Wide : Wide
-					{
-					};
-					class Medium : Medium
-					{
-					};
-					class Narrow : Narrow
-					{
-					};
-				};
-				class ViewGunner : ViewGunner
-				{
-				};
-				class TurnOut
-				{
-					limitsArrayTop[] =
-					{
-					};
-					limitsArrayBottom[] =
-					{
-					};
-				};
-				class TurnIn : TurnOut
-				{
-					limitsArrayTop[] =
-					{
-					};
-					limitsArrayBottom[] =
-					{
-					};
-				};
-				class HitPoints
-				{
-					class HitTurret
-					{
-					};
-					class HitGun
-					{
-					};
-				};
-			};
-		};
-		class Damage
-		{
-		};
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_rot_cannon
-			{
-			};
-			class muzzle_rot_coax
-			{
-			};
-			class muzzle_rot_hmg
-			{
-			};
-			class muzzle_hide_coax
-			{
-			};
-			class recoil_source
-			{
-			};
-			class LockMuzzle
-			{
-			};
-			class HitEngine_src
-			{
-			};
-			class HitFuel_src
-			{
-			};
-			class HitHull_src
-			{
-			};
-			class HitMainGun_src
-			{
-			};
-			class HitTurret_src
-			{
-			};
-			class HitComTurret_src
-			{
-			};
-			class Smoke_source
-			{
-			};
-			class HitSLAT_Left_src
-			{
-			};
-			class HitSLAT_Right_src
-			{
-			};
-			class HitSLAT_back_src
-			{
-			};
-			class HitSLAT_front_src
-			{
-			};
-			class HitSLAT_top_left_src
-			{
-			};
-			class HitSLAT_top_right_src
-			{
-			};
-			class HitSLAT_top_back_src
-			{
-			};
-			class HideTurret
-			{
-			};
-			class HideHull
-			{
-			};
-			class showCamonetHull
-			{
-			};
-			class showCamonetCannon
-			{
-			};
-			class showCamonetCannon1
-			{
-			};
-			class showCamonetTurret
-			{
-			};
-		};
-		class TextureSources
-		{
-			class Indep_01
-			{
-			};
-			class Indep_02
-			{
-			};
-			class Indep_03
-			{
-			};
-		};
-		class Library
-		{
-		};
-		class TransportMagazines
-		{
-			class _xx_SmokeShell
-			{
-			};
-			class _xx_SmokeShellGreen
-			{
-			};
-			class _xx_30Rnd_556x45_Stanag
-			{
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_arifle_Mk20C_F
-			{
-			};
-		};
-		class TransportItems
-		{
-			class _xx_FirstAidKit
-			{
-			};
-		};
-	};
+	class MBT_03_base_F: Tank_F
+    {
+        class turrets: turrets
+        {
+            class MainTurret;
+        };
+    };
     class I_MBT_03_base_F: MBT_03_base_F
     {
         class turrets: turrets
@@ -3343,19 +221,47 @@ class CfgVehicles
                 };
             };
         };
-    }; 
-
-
-
-
-	class MBT_01_arty_base_F : MBT_01_base_F
+    };
+    class MBT_01_base_F: Tank_F
 	{
-		class Turrets : Turrets
+		class turrets : turrets
 		{
-			class MainTurret : MainTurret
+			class MainTurret;
+			
+		};
+	};
+	class B_MBT_01_base_F: MBT_01_base_F
+	{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				class Turrets;
+				
+			};
+		};
+	};
+	class B_MBT_01_cannon_F: B_MBT_01_base_F
+	{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				class Turrets;
+				
+			};
+		};
+	};
+	class B_MBT_01_TUSK_F: B_MBT_01_cannon_F
+	{
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
 			{
 				class Turrets : Turrets
 				{
+					class CommanderOptics;
+					
 				};
 			};
 		};
@@ -3392,6 +298,29 @@ class CfgVehicles
 			};
 		};
 	};
+	class MBT_01_arty_base_F: MBT_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+			};
+		};
+	};
+	class 3as_01_arty_base_F : MBT_01_arty_base_F{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+			};
+		};
+	};	
 	class Car: LandVehicle
 	{
 		class NewTurret;
@@ -3514,8 +443,6 @@ class CfgVehicles
 		};
 	};
 //stupidass 3as inheritance
-	class B_SAM_System_02_F;
-	class B_SAM_System_01_F;
 	class 3as_saber_01_Base: Tank_F
 	{
 		class Turrets: Turrets
@@ -5723,6 +2650,54 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 	};*/
 	
 //AV7
+	class DBA_AV7_Testbed : 3as_01_arty_base_F{
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-7 Test Bed";
+		crew="101st_CloneTrooper_212th";
+		faction="Republic_101st";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+				};
+				gunBeg="MainCannon_Barrel";
+				gunEnd="MainCannon_Chamber";
+				gunnerAction="AV7_Driver";
+				gunnerInAction="AV7_Driver";
+				gunnerGetInAction="GetInHigh";
+				gunnerGetOutAction="GetOutHigh";
+				animationSourceStickX="turret_control_x";
+				animationSourceStickY="turret_control_y";
+				gunnerLeftHandAnimName="turret_control_y";
+				gunnerRightHandAnimName="turret_control_y";
+				memorypointsgetingunner="pos_driver";
+				memorypointsgetingunnerdir="pos_driver_dir";
+				weapons[]=
+				{
+					"DBA_210mw_VK39_Cannon",
+				};
+				magazines[]=
+				{
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K18_x3_mag",
+					"DBA_210mm_S19_x8_mag",
+					"DBA_210mm_CK17_x4_mag",
+					"DBA_210mm_UMK20_x4_mag",
+					"DBA_210mm_ATN3S_TACN_x1_mag",
+				};
+			};
+		};
+	};
 	
 //Tanks
 	class DBA_Leopard_Testbed : I_MBT_03_cannon_F
@@ -5856,58 +2831,6 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 			};
 		};
 	};
-
-	class 3as_01_arty_base_F : MBT_01_arty_base_F
-	{
-		class Library
-		{
-		};
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{};
-				class OpticsIn : Optics_Gunner_MBT_01
-				{
-					class Wide : Wide
-					{
-					};
-				};
-				class HitPoints
-				{
-					class HitTurret
-					{
-					};
-					class HitGun
-					{
-					};
-				};
-			};
-		};
-		class AnimationSources : AnimationSources
-		{
-			class recoil_source
-			{
-			};
-			class Legs
-			{
-			};
-			class showLegs
-			{
-			};
-		};
-		class UserActions
-		{
-			class Deploy
-			{
-			};
-
-			class unDeploy :Deploy
-			{
-			};
-		};
-	};
 	class DBA_Leopard : I_MBT_03_cannon_F //Sacrifices top Autocannon for HMG with more ammo better for extended missions w/o resupply
 	{
 		ace_cargo_space = 400;
@@ -6037,17 +2960,17 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		};
 	};
 
-	class DBA_Merkava : B_MBT_01_TUSK_F //Sacrifices ammo for troop transport + slightly uparmored
-	{
+	class DBA_Merkava_Testbed : B_MBT_01_TUSK_F{
 		ace_cargo_space = 400;
-		scope = 2;
-		side = 1;
-		scopeCurator = 2;
-		forceInGarage = 1;
-		displayName = "RFV-105 Merkava";
-		crew = "101st_CloneTrooper_212th";
-		armor = 750;
-		hiddenSelections[] =
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Merkava Testbed MODTEAM ONLY <- Read";
+		crew="101st_CloneTrooper_212th";
+		armor=1100;
+		armorStructural=10;
+		hiddenSelections[]=
 		{
 			"Camo1",
 			"Camo2",
@@ -6056,152 +2979,31 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 			"Camo5",
 			"CamoSlat"
 		};
-		textureList[] = {};
-		hiddenSelectionsTextures[] =
+		textureList[]={};
+		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
 			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
 			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-		};
-		faction = "Republic_101st";
-		class TransportItems
-		{
-			class _transport_ToolKit
-			{
-				name = "ToolKit";
-				count = 2;
-			};
-			class _transport_ACE_epinephrine
-			{
-				name = "ACE_epinephrine";
-				count = 10;
-			};
-			class _transport_ACE_tourniquet
-			{
-				name = "ACE_tourniquet";
-				count = 6;
-			};
-			class _transport_ACE_elasticBandage
-			{
-				name = "ACE_elasticBandage";
-				count = 40;
-			};
-		};
-		class TransportWeapons
-		{
-			class _transport_rps1
-			{
-				weapon = "RD501_launcher_rps1";
-				count = 2;
-			};
-		};
-		class TransportMagazines
-		{
-		};
-		class TransportBackpacks
-		{
-			class _transport_gravpack
-			{
-				backpack = "RD501_JLTS_Clone_Flip_backpack";
-				count = 1;
-			};
-		};
-		class EventHandlers : DefaultEventhandlers
-		{
-		};
-		class Turrets : turrets
-		{
-			class MainTurret : MainTurret
-			{
-				weapons[] =
-				{
-					"DBA_MBT_Cannon",
-					"DBA_Ground_HMG_Generic"
-				};
-				magazines[] =
-				{
-					"DBA_lancer_mbt_he_x12_mag",
-					"DBA_lancer_mbt_he_x12_mag",
-					"DBA_lancer_mbt_he_x12_mag",
-					"DBA_lancer_mbt_ap_x12_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-				};
-				class Turrets : Turrets
-				{
-					class CommanderOptics : CommanderOptics
-					{
-						weapons[] =
-						{
-							"DBA_Ground_AC_Generic",
-							"CMFlareLauncher",
-							"SmokeLauncher",
-							"Laserdesignator_vehicle",
-						};
-						magazines[] =
-						{
-							"DBA_AC_green_x100_mag",
-							"DBA_AC_green_x100_mag",
-							"300Rnd_CMFlare_Chaff_Magazine",
-							"SmokeLauncherMag",
-							"SmokeLauncherMag",
-							"SmokeLauncherMag",
-							"SmokeLauncherMag",
-							"SmokeLauncherMag",
-							"Laserbatteries",
-						};
-					};
-				};
-			};
-		};
-	};
-	class DBA_Merkava_Testbed : B_MBT_01_TUSK_F {
-		ace_cargo_space = 400;
-		scope = 2;
-		side = 1;
-		scopeCurator = 2;
-		forceInGarage = 1;
-		displayName = "Merkava Testbed MODTEAM ONLY <- Read";
-		crew = "101st_CloneTrooper_212th";
-		armor = 1100;
-		armorStructural = 10;
-		hiddenSelections[] =
-		{
-			"Camo1",
-			"Camo2",
-			"Camo3",
-			"Camo4",
-			"Camo5",
-			"CamoSlat"
-		};
-		textureList[] = {};
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
-			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-		};
-		faction = "Republic_101st";
+		};	
+		faction="Republic_101st";
 		normalSpeedForwardCoef = 0.95;
 		slowSpeedForwardCoef = 0.25;
-		engineMOI = 9;
-		enginePower = 1118.55;
-		maxOmega = 251.3274;
-		minOmega = 73.303;
-		maxSpeed = 67.5;
-		peakTorque = 5950.56926;
-		thrustDelay = 0.2;
-		clutchStrength = 250;
-		brakeIdleSpeed = 7;
-		latency = 0.1;
-		tankTurnForce = 1200000;
-		idleRpm = 700;
-		redRpm = 2400;
-		engineLosses = 5;
+		engineMOI=9;
+		enginePower=1118.55;
+		maxOmega=251.3274;
+		minOmega=73.303;
+		maxSpeed=67.5;
+		peakTorque=5950.56926;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=1200000;
+		idleRpm=700;
+		redRpm=2400;
+		engineLosses=5;
 		accelAidForceCoef = 4.0;
 		accelAidForceSpd = 30.0;
 		torqueCurve[] = {
@@ -6214,16 +3016,16 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 			{0.848485,0.9},
 			{1,0.87}
 		};
-		epeImpulseDamageCoef = 0.01;
+		epeImpulseDamageCoef=0.01;
 		class complexGearbox
 		{
-			GearboxRatios[] = { "R1",-0.15,"N",0,"D1",4.9,"D2",3.1,"D3",1.9,"D4",1.05 };
-			transmissionRatios[] = { "High",12 };
-			gearBoxMode = "auto";
-			moveOffGear = 1;
-			driveString = "D";
-			neutralString = "N";
-			reverseString = "R";
+        GearboxRatios[] = {"R1",-0.15,"N",0,"D1",4.9,"D2",3.1,"D3",1.9,"D4",1.05};
+        transmissionRatios[] = {"High",12};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
 		};
 		smokeLauncherGrenadeCount = 20;
 		smokeLauncherVelocity = 20;
@@ -6233,31 +3035,31 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		{
 			class _transport_ToolKit
 			{
-				name = "ToolKit";
-				count = 2;
+				name="ToolKit";
+				count=2;
 			};
 			class _transport_ACE_epinephrine
 			{
-				name = "ACE_epinephrine";
-				count = 10;
+				name="ACE_epinephrine";
+				count=10;
 			};
 			class _transport_ACE_tourniquet
 			{
-				name = "ACE_tourniquet";
-				count = 6;
+				name="ACE_tourniquet";
+				count=6;
 			};
 			class _transport_ACE_elasticBandage
 			{
-				name = "ACE_elasticBandage";
-				count = 40;
+				name="ACE_elasticBandage";
+				count=40;
 			};
 		};
 		class TransportWeapons
 		{
 			class _transport_rps1
 			{
-				weapon = "RD501_launcher_rps1";
-				count = 2;
+				weapon="RD501_launcher_rps1";
+				count=2;
 			};
 		};
 		class TransportMagazines
@@ -6267,23 +3069,23 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 		{
 			class _transport_gravpack
 			{
-				backpack = "RD501_JLTS_Clone_Flip_backpack";
-				count = 1;
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
 			};
 		};
-		class EventHandlers : DefaultEventhandlers
+		class EventHandlers: DefaultEventhandlers
 		{
 		};
-		class Turrets : turrets
+		class Turrets: turrets
 		{
-			class MainTurret : MainTurret
+			class MainTurret: MainTurret
 			{
-				weapons[] =
+				weapons[]=
 				{
 					"DBA_120mw_PG251_Cannon",
 					"DBA_762_C110_CG"
 				};
-				magazines[] =
+				magazines[]=
 				{
 					"DBA_120mm_PM53_x16_mag",
 					"DBA_120mm_P225_x16_mag",
@@ -6292,9 +3094,9 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 					"DBA_762_D61_x400_mag",
 					"DBA_762_D61_x400_mag",
 				};
-				class Turrets : Turrets
+				class Turrets: Turrets
 				{
-					class CommanderOptics : CommanderOptics
+					class CommanderOptics: CommanderOptics
 					{
 						gunBeg = "commander_gun_muzzle_pos";
 						gunEnd = "commander_gun_muzzle_end";
@@ -6302,17 +3104,17 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 						selectionFireAnim = "commander_muzzleflash";
 						minElev = -20;
 						maxElev = 40;
-						discreteDistance[] = { 100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500 };
+						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 						discreteDistanceInitIndex = 2;
 						turretInfoType = "RscOptics_MBT_01_commander_RCWS";
-						weapons[] =
+						weapons[]=
 						{
 							"DBA_127_C3HB_RCWS",
 							"CMFlareLauncher",
 							"SmokeLauncher",
 							"Laserdesignator_vehicle",
 						};
-						magazines[] =
+						magazines[]=
 						{
 							"DBA_127_X962_x1500_mag",
 							"DBA_127_X962_x1500_mag",
@@ -6325,54 +3127,6 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 							"Laserbatteries",
 						};
 					};
-				};
-			};
-		};
-	};
-	class DBA_AV7_Testbed : 3as_01_arty_base_F{
-		scope = 2;
-		side = 1;
-		scopeCurator = 2;
-		forceInGarage = 1;
-		displayName = "AV-7 Test Bed";
-		crew = "101st_CloneTrooper_212th";
-		faction = "Republic_101st";
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class Turrets : Turrets
-				{
-				};
-				gunBeg = "MainCannon_Barrel";
-				gunEnd = "MainCannon_Chamber";
-				gunnerAction = "AV7_Driver";
-				gunnerInAction = "AV7_Driver";
-				gunnerGetInAction = "GetInHigh";
-				gunnerGetOutAction = "GetOutHigh";
-				animationSourceStickX = "turret_control_x";
-				animationSourceStickY = "turret_control_y";
-				gunnerLeftHandAnimName = "turret_control_y";
-				gunnerRightHandAnimName = "turret_control_y";
-				memorypointsgetingunner = "pos_driver";
-				memorypointsgetingunnerdir = "pos_driver_dir";
-				weapons[] =
-				{
-					"DBA_210mw_VK39_Cannon",
-				};
-				magazines[] =
-				{
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K17_x6_mag",
-					"DBA_210mm_K18_x3_mag",
-					"DBA_210mm_S19_x8_mag",
-					"DBA_210mm_CK17_x4_mag",
-					"DBA_210mm_UMK20_x4_mag",
-					"DBA_210mm_ATN3S_TACN_x1_mag",
 				};
 			};
 		};
@@ -6535,6 +3289,127 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 							"SmokeLauncherMag",
 							"SmokeLauncherMag",
 							"Laserbatteries"
+						};
+					};
+				};
+			};
+		};
+	};
+	class DBA_Merkava : B_MBT_01_TUSK_F //Sacrifices ammo for troop transport + slightly uparmored
+	{
+		ace_cargo_space = 400;
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="RFV-105 Merkava";
+		crew="101st_CloneTrooper_212th";
+		armor=750;
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5",
+			"CamoSlat"
+		};
+		textureList[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
+			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+		};	
+		faction="Republic_101st";
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_rps1
+			{
+				weapon="RD501_launcher_rps1";
+				count=2;
+			};
+		};
+		class TransportMagazines
+		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+		};
+		class Turrets: turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_MBT_Cannon",
+					"DBA_Ground_HMG_Generic"
+				};
+				magazines[]=
+				{
+					"DBA_lancer_mbt_he_x12_mag",
+					"DBA_lancer_mbt_he_x12_mag",
+					"DBA_lancer_mbt_he_x12_mag",
+					"DBA_lancer_mbt_ap_x12_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+					"DBA_HMG_green_x500_mag",
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+							"DBA_Ground_AC_Generic",
+							"CMFlareLauncher",
+							"SmokeLauncher",
+							"Laserdesignator_vehicle",
+						};
+						magazines[]=
+						{
+							"DBA_AC_green_x100_mag",
+							"DBA_AC_green_x100_mag",
+							"300Rnd_CMFlare_Chaff_Magazine",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries",
 						};
 					};
 				};
@@ -6960,11 +3835,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 	};
 	//CIS Vanilla Stuff
 
-	class LT_01_base_F : Tank_F
-	{
-		class components;
-		class turrets;
-	};
+	class LT_01_base_F;
 	class LT_01_cannon_base_F : LT_01_base_F
 	{
 		class components;
