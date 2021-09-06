@@ -64,7 +64,7 @@ class 101st_Suspender_Green : V_RebreatherB
 	scope=1;
 	scopeArsenal=2;
 	displayName="101st Green Suspenders (JLTS)";
-	hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\Armor\Suspenders\Clone_vest_suspender_green_co.paa"};
+	hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\clone_vest_suspender_green_co.paa"};
 	class ItemInfo: VestItem
 	{
 		containerClass="Supply100";
@@ -536,28 +536,6 @@ class 101st_Hambino_Pauldron: V_RebreatherB
 	hiddenSelectionsTextures[]=
 	{
 		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Hambino_Pauldron_CO.paa"
-	};
-	class ItemInfo: VestItem
-	{
-		containerClass="Supply100";
-		uniformType="Default";
-		mass=80;
-		vestType = "Rebreather";
-		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
-		hiddenSelections[] = {"camo1"};
-	};
-};
-class 101st_Spark_Pauldron: V_RebreatherB
-{
-	author="Dutch";
-	dlc = "101st_Aux_Mod";
-	scope=1;
-	scopeArsenal=2;
-	displayName="101st Spark Pauldron (JLTS)";
-	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
-	hiddenSelectionsTextures[]=
-	{
-		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Spark_Pauldron_CO.paa"
 	};
 	class ItemInfo: VestItem
 	{
