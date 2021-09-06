@@ -2583,7 +2583,7 @@
 		};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	};
-	class 101st_Scuba_212th: 101st_JLTS_Clone_P2
+	/*class 101st_Scuba_212th: 101st_JLTS_Clone_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -2681,7 +2681,7 @@
 			"HandGrenade"
 		};
 		model = "101st_Aux_Mod\Addons\Armor\Scuba\scubaArmor.p3d";
-	};
+	};*/
 	class 101st_CloneCadet_212th: 101st_JLTS_Clone_P2
 	{
 		scope = 2;
