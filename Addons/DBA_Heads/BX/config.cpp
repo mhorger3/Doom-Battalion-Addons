@@ -20,6 +20,22 @@ class CfgHeads
 	{
 		model="101st_Aux_Mod\Addons\DBA_Heads\BX\BXHead.p3d";
 	};
+	class DBA_BXCaptainHead : DefaultHead_A3
+	{
+		model = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadCaptain.p3d";
+	};
+	class DBA_BXCitadelHead : DefaultHead_A3
+	{
+		model = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadCitadel.p3d";
+	};
+	class DBA_BXFireHead : DefaultHead_A3
+	{
+		model = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadFire.p3d";
+	};
+	class DBA_BXSecurityHead : DefaultHead_A3
+	{
+		model = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadSecurity.p3d";
+	};
 };
 class CfgFaces
 {
@@ -34,8 +50,8 @@ class CfgFaces
 			displayname="BX Commando Droid Head";
 			texture="101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Head_CO.paa";
 			material="101st_Aux_Mod\Addons\DBA_Heads\BX\BXHEAD.rvmat";
-			materialWounded1="\ryanzombies\faces\face1.rvmat";
-			materialWounded2="\ryanzombies\faces\face1.rvmat";
+			materialWounded1="";
+			materialWounded2="";
 			textureHL = "\A3\Characters_F\Heads\Data\hl_White_bald_1_co.paa";
 			textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
@@ -45,44 +61,30 @@ class CfgFaces
 		class DBA_BXHead_Captain : DBA_BXHead
 		{
 			displayname = "BX Captain Head";
+			head = "DBA_BXCaptainHead";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa";
-			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa";
-			hiddenSelections[] =
-			{
-				"Camo",
-			};
-			hiddenSelectionsTextures[] =
-			{
-				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Captain_Head_CO.paa",
-			};
+			material = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadCaptain.rvmat";
 		};
 		class DBA_BXHead_Citadel : DBA_BXHead
 		{
 			displayname = "BX Citadel Head";
+			head = "DBA_BXCitadelHead";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa";
-			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa";
-			hiddenSelections[] =
-			{
-				"Camo",
-			};
-			hiddenSelectionsTextures[] =
-			{
-				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Citadel_Head_CO.paa",
-			};
+			material = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadCitadel.rvmat";
 		};
 		class DBA_BXHead_Fire : DBA_BXHead
 		{
 			displayname = "BX Fire Head";
+			head = "DBA_BXFireHead";
 			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa";
-			textureHL = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa";
-			hiddenSelections[] =
-			{
-				"Camo",
-			};
-			hiddenSelectionsTextures[] =
-			{
-				"101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Fire_Head_CO.paa",
-			};
+			material = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadFire.rvmat";
+		};
+		class DBA_BXHead_Security : DBA_BXHead
+		{
+			displayname = "BX Security Head";
+			head = "DBA_BXSecurityHead";
+			texture = "101st_Aux_Mod\Addons\DBA_Heads\BX\BX_Security_Head_CO.paa";
+			material = "101st_Aux_Mod\Addons\DBA_Heads\BX\BXHeadSecurity.rvmat";
 		};
 	};
 };
