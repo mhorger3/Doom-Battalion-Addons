@@ -16,7 +16,8 @@
 			"OPTRE_Weapons_SMG",
 			"OPTRE_Weapons_Rockets", 
 			"A3_Armor_F_EPB_MBT_03",
-			"DBA_Aux_Mod_VehicleFunctions"
+			"DBA_Aux_Mod_VehicleFunctions",
+			"A3_Armor_F_Beta"
 		};
 		requiredversion = 0.1;
 		units[] = 
