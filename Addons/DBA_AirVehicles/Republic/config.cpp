@@ -18323,10 +18323,10 @@ class cfgVehicles
 					};
 				};
 			};
-			class TransportPylonsComponent: TransportPylonsComponent
+			class TransportPylonsComponent
 			{
 				uiPicture="a3\air_f_gamma\plane_fighter_03\data\ui\plane_a143_3den_ca.paa";
-				class Pylons: Pylons
+				class Pylons
 				{
 					class pylons1
 					{
