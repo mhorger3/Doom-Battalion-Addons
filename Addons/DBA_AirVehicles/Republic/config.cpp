@@ -18091,8 +18091,8 @@ class cfgVehicles
 			LAAT_LIGHTS
 		};
 	};
-	class 101st_Hyena_base;
-	class 101st_YWing_base: VTOL_Base
+	class 3as_V19_base;
+	class 101st_YWing_base: 3as_V19_base
 	{
 		irTarget=1;
 		irTargetSize=0.34999999;
