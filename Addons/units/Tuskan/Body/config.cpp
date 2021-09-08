@@ -761,12 +761,12 @@ class O_soldier_base_F;
 		};
 		magazines[]=
 		{
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"101st_thermaldet_x1_mag",
@@ -775,12 +775,12 @@ class O_soldier_base_F;
 		};
 		respawnMagazines[]=
 		{
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
-			"327th_Firepuncher_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
+			"327th_FirepuncherCIS_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"101st_thermaldet_x1_mag",

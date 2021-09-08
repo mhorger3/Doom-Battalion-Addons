@@ -6379,7 +6379,7 @@ class CfgGroups
 	};
 
 	// Independent
-	class GUER
+	class Indep
 	{
 		class O_DBA_IND_F
 		{
@@ -6768,6 +6768,7 @@ class CfgGroups
 		};
 	};
 };
+
 class CfgVehicles
 {
 	class O_Soldier_F;
