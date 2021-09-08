@@ -18092,7 +18092,7 @@ class cfgVehicles
 		};
 	};
 	class 101st_Hyena_base;
-	class 101st_YWing_base: 101st_Z95_base
+	class 101st_YWing_base: VTOL_Base
 	{
 		irTarget=1;
 		irTargetSize=0.34999999;
