@@ -162,6 +162,14 @@ class CfgFactionClasses
 		icon="101st_Aux_Mod\Addons\DBA_CIS\pictures\flag_cis.paa";
 		priority=0;
 	};
+	class O_DBA_IND_F
+	{
+		displayName="DBA Independent";
+		side=2;
+		flag="101st_Aux_Mod\Addons\DBA_CIS\pictures\flag_cis.paa";
+		icon="101st_Aux_Mod\Addons\DBA_CIS\pictures\flag_cis.paa";
+		priority=0;
+	}
 };
 class DefaultEventhandlers;
 class CfgEditorCategories
@@ -169,6 +177,10 @@ class CfgEditorCategories
 	class DBA_CIS
 	{
 		displayName="DBA CIS";
+	};
+	class DBA_IND
+	{
+		displayName="DBA IND";
 	};
 };
 class CfgEditorSubcategories
@@ -249,6 +261,10 @@ class CfgEditorSubcategories
 	{
 		displayName="Drones";
 	};
+	class O_DBA_Tuskans
+	{
+		displayName="Tuskan";
+	};
 };
 class CfgVehicleClasses
 {
@@ -327,6 +343,10 @@ class CfgVehicleClasses
 	class O_DBA_CIS_Drones
 	{
 		displayName="Drones";
+	};
+	class O_DBA_Tuskans
+	{
+		displayName="Tuskan";
 	};
 };
 class CfgGroups
@@ -1479,14 +1499,14 @@ class CfgGroups
 						position[]={-20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit8
 					{
 						position[]={20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit9
 					{
@@ -2545,14 +2565,14 @@ class CfgGroups
 						position[]={-20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit8
 					{
 						position[]={20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit9
 					{
@@ -3618,14 +3638,14 @@ class CfgGroups
 						position[]={-20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit8
 					{
 						position[]={20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit9
 					{
@@ -4691,14 +4711,14 @@ class CfgGroups
 						position[]={-20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit8
 					{
 						position[]={20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit9
 					{
@@ -5764,14 +5784,14 @@ class CfgGroups
 						position[]={-20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit8
 					{
 						position[]={20,-20,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit9
 					{
@@ -5800,35 +5820,35 @@ class CfgGroups
 						position[]={0,0,0};
 						rank="SERGEANT";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Super_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit1
 					{
 						position[]={-5,-5,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit2
 					{
 						position[]={5,-5,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit3
 					{
 						position[]={-10,-10,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 					class Unit4
 					{
 						position[]={10,-10,0};
 						rank="PRIVATE";
 						side=0;
-						vehicle="O_DBA_CIS_B2_Droid_F";
+						vehicle="101st_B2";
 					};
 				};
 				class O_DBA_CIS_BX_Commando_Squad
@@ -6356,6 +6376,394 @@ class CfgGroups
 				name="Air";
 			};
 		};
+	};
+
+	// Independent
+	class GUER
+	{
+		class O_DBA_IND_F
+		{
+			name="DBA IND";
+			class Infantry
+			{
+				name="Infantry";
+				class O_DBA_IND_Tuskan_Patrol
+				{
+					author="Ragwolf";
+					scope=2;
+					scopeCurator=2;
+					name="Tuskan Patrol";
+					side=2;
+					faction="O_DBA_IND_F";
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup=0.30000001;
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit1
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit2
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+				}
+				class O_DBA_IND_Tuskan_Team
+				{
+					author="Ragwolf";
+					scope=2;
+					scopeCurator=2;
+					name="Tuskan Fire Team";
+					side=2;
+					faction="O_DBA_IND_F";
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup=0.30000001;
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit1
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit2
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit3
+					{
+						position[]={-10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit4
+					{
+						position[]={10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+				}
+				class O_DBA_IND_Tuskan_Squad
+				{
+					author="Ragwolf";
+					scope=2;
+					scopeCurator=2;
+					name="Tuskan Weapons Squad";
+					side=2;
+					faction="O_DBA_IND_F";
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup=0.30000001;
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit1
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit2
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit3
+					{
+						position[]={-10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Shotgun";
+					};
+					class Unit4
+					{
+						position[]={10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Slug";
+					};
+					class Unit5
+					{
+						position[]={-15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit6
+					{
+						position[]={15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Zillo";
+					};
+					class Unit7
+					{
+						position[]={-20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Firepuncher";
+					};
+					class Unit8
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Marksman";
+					};
+				};
+				class O_DBA_IND_Tuskan_Squad
+				{
+					author="Ragwolf";
+					scope=2;
+					scopeCurator=2;
+					name="Tuskan Fire Squad";
+					side=2;
+					faction="O_DBA_IND_F";
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup=0.30000001;
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit1
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit2
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit3
+					{
+						position[]={-10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit4
+					{
+						position[]={10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit5
+					{
+						position[]={-15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit6
+					{
+						position[]={15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit7
+					{
+						position[]={-20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Firepuncher";
+					};
+					class Unit8
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Marksman";
+					};
+				};
+				class O_DBA_IND_Tuskan_Town
+				{
+					author="Ragwolf";
+					scope=2;
+					scopeCurator=2;
+					name="Tuskan Town Filler";
+					side=2;
+					faction="O_DBA_IND_F";
+					icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup=0.30000001;
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=2;
+						vehicle="101st_Marksman";
+					};
+					class Unit1
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit2
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit3
+					{
+						position[]={-10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit4
+					{
+						position[]={10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit5
+					{
+						position[]={-15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit6
+					{
+						position[]={15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan";
+					};
+					class Unit7
+					{
+						position[]={-20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit8
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit9
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit10
+					{
+						position[]={0,0,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Rifle";
+					};
+					class Unit11
+					{
+						position[]={-5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit12
+					{
+						position[]={5,-5,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit13
+					{
+						position[]={-10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit14
+					{
+						position[]={10,-10,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit15
+					{
+						position[]={-15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit16
+					{
+						position[]={15,-15,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Heavy";
+					};
+					class Unit17
+					{
+						position[]={-20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Shotgun";
+					};
+					class Unit18
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Shotgun";
+					};
+					class Unit19
+					{
+						position[]={20,-20,0};
+						rank="SERGEANT";
+						side=2;
+						vehicle="101st_Tuskan_Slug";
+					};
+				};
 	};
 };
 class CfgVehicles

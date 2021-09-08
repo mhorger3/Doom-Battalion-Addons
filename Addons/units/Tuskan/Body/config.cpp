@@ -22,7 +22,7 @@ class CfgPatches
 		requiredversion = 0.1;
 		units[] = 
 		{
-			"101st_Tuskan"
+			"101st_Tuskan", "101st_Tuskan_Heavy", "101st_Tuskan_Firepuncher", "101st_Tuskan_Shotgun", "101st_Tuskan_Rifle", "101st_Tuskan_Marksman", "101st_Tuskan_Slug", "101st_Tuskan_Zillo"  
 		};
 		weapons[]=
 		{
@@ -103,47 +103,32 @@ class O_soldier_base_F;
 	{
 		author="MrClock + Dutch";
 		scope=2;
+		side=2;
 		displayName="101st Tuskan";
 		editorPreview="\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
-		genericNames="101st_CIS_Tuskan";
-		faction="O_DBA_CIS_F";
-		editorSubcategory="O_DBA_CIS_B1_Droids";
-		vehicleClass = "O_DBA_CIS_B1_Droids";
+		genericNames="101st_Tuskan";
+		faction="O_DBA_IND_F";
+		editorSubcategory="O_DBA_Tuskans";
+		vehicleClass = "O_DBA_Tuskans";
 		identityTypes[]=
 		{
 			"LanguageENG_F",
 			"Head_NATO"
 		};
-		uniformClass="JLTS_Grevious";
+		uniformClass="JLTS_Tuskan";
 		backpack="";
 		model="\101st_Aux_Mod\Addons\units\Tuskan\Body\Tuskan.p3d";
 		hiddenSelections[] = {"head", "body"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\units\Tuskan\tuskanraider_head_co.paa", "101st_Aux_Mod\Addons\units\Tuskan\Body\tuskanraider_body_co.paa"};
-		linkedItems[]=
-		{
-			"ItemMap",
-			"JLTS_droid_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"ItemMap",
-			"JLTS_droid_comlink",
-			"ItemCompass",
-			"ItemWatch"
-		};
 		weapons[]=
 		{
 			"JLTS_E5",
-			"JLTS_RG4D",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"JLTS_E5",
-			"JLTS_RG4D",
 			"Throw",
 			"Put"
 		};
@@ -159,15 +144,16 @@ class O_soldier_base_F;
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"JLTS_E5_mag",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -181,18 +167,30 @@ class O_soldier_base_F;
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"JLTS_RG4D_mag",
-			"SmokeShell",
-			"SmokeShellGreen",
-			"Chemlight_green",
-			"Chemlight_green",
-			"HandGrenade",
-			"HandGrenade"
+			"JLTS_E5_mag",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
 		};
-		items[]={};
-		respawnItems[]={};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+
 		class HitPoints: HitPoints
 		{
 			class HitFace
@@ -368,6 +366,440 @@ class O_soldier_base_F;
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
 	}
+
+	class 101st_Tuskan_Heavy: 101st_Tuskan
+	{
+		displayName="101st Tuskan Heavy";
+		weapons[]=
+		{
+			"DBA_ZakkegMG",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_ZakkegMG",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"DBA_762_x75_Green",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	
+	class 101st_Tuskan_Shotgun : 101st_Tuskan
+	{
+		displayName="101st Tuskan Heavy";
+		weapons[]=
+		{
+			"JLTS_DP23",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"JLTS_DP23",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"JLTS_DP23_MAG",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	class 101st_Tuskan_Rifle : 101st_Tuskan
+	{
+		displayName="101st Tuskan Musket";
+		weapons[]=
+		{
+			"91st_musket",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"91st_musket",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"91st_musket_load",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	class 101st_Tuskan_Marksman : 101st_Tuskan
+	{
+		displayName="101st Tuskan Sniper";
+		weapons[]=
+		{
+			"DBA_Desert_DC15x",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_Desert_DC15x",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"DBA_408_Mag_Base",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	class 101st_Tuskan_Slug : 101st_Tuskan
+	{
+		displayName="101st Tuskan Slug";
+		weapons[]=
+		{
+			"DBA_P7Slugthrower",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_P7Slugthrower",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"DBA_P7_Magazine",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	class 101st_Tuskan_Zillo : 101st_Tuskan
+	{
+		displayName="101st Tuskan Zillo";
+		weapons[]=
+		{
+			"DBA_Zillo",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"DBA_Zillo",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"DBA_20mm_x7_base",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
+	class 101st_Tuskan_Firepuncher : 101st_Tuskan
+	{
+		displayName="101st Tuskan Firepuncher";
+		weapons[]=
+		{
+			"327th_firepuncher_rifle",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"327th_firepuncher_rifle",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		respawnMagazines[]=
+		{
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"327th_Firepuncher_mag",
+			"Chemlight_yellow",
+			"Chemlight_yellow",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag",
+			"101st_thermaldet_x1_mag"
+		};
+		items[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+		respawnItems[]=
+		{
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie"
+		};
+	};
 };
 
 
