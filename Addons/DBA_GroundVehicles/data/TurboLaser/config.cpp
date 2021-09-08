@@ -75,7 +75,6 @@ class CfgVehicles
 		getInRadius = 0;
 		uavCameraGunnerPos = "gunner_view";
 		uavCameraGunnerDir = "gunner_view_dir";
-		memoryPointGun[] = { "Usti Hlavne", "Usti Hlavne2" };
 		threat[] = { 0.30000001,0.30000001,1 };
 		cost = 150000;
 		accuracy = 0.12;
@@ -118,8 +117,8 @@ class CfgVehicles
 					{
 						class AirTarget
 						{
-							minRange = 500;
-							maxRange = 4000;
+							minRange = 100;
+							maxRange = 16000;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = 1;
 						};
@@ -131,7 +130,7 @@ class CfgVehicles
 							viewDistanceLimitCoef = 1;
 						};
 						typeRecognitionDistance = 3500;
-						maxTrackableSpeed = 600;
+						maxTrackableSpeed = 800;
 						angleRangeHorizontal = 60;
 						angleRangeVertical = 40;
 						animDirection = "mainGun";
@@ -188,30 +187,29 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				minelev = -35;
-				maxelev = 25;
-				minturn = -360;
-				maxturn = 360;
-				initElev = 0;
-				initTurn = 0;
-				maxHorizontalRotSpeed = 2.7;
-				maxVerticalRotSpeed = 2.7;
-				soundServo[] =
-				{
-					"A3\Sounds_F\vehicles\armor\noises\servo_best",
-					1.4125376,
-					1,
-					40
-				};
-				hasGunner = 1;
-				gunnerName = "Turbo Laser Gunner";
-				primary = 1;
-				primaryGunner = 1;
-				startEngine = 0;
-				enableManualFire = 1;
-				turretinfotype = "RscOptics_APC_Tracked_01_gunner";
-				optics = 1;
-				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_AAA_01_w_F";
+				turretInfoType = "RscOptics_crows";
+				animationSourceBody = "Mainturret";
+				Body = "Mainturret";
+				animationSourceGun = "Maingun";
+				Gun = "Maingun";
+				optics = 0;
+				minElev = -5;
+				maxElev = 35;
+				minTurn = -360;
+				maxTurn = +360;
+				selectionFireAnim = "zasleh";
+				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
+				memoryPointGunnerOptics = "gunnerview";
+				//gunnerLeftHandAnimName = "Heavygun";
+				//gunnerRightHandAnimName = "Heavygun";
+				gunnergetInAction = "";
+				gunnergetOutAction = "";
+				displayName = "";
+				gunnerInAction = "Disabled";
+				gunnerAction = "Disabled";
+				gunnerForceOptics = 1;
+				memoryPointGun[] = {"usti hlavne"};
 				class OpticsIn
 				{
 					class Wide
@@ -252,30 +250,6 @@ class CfgVehicles
 						maxFov = 0.028999999;
 					};
 				};
-				forceHideGunner = 1;
-				gunnerforceoptics = 1;
-				gunnerOutForceOptics = 1;
-				viewgunnerinExternal = 0;
-				outGunnerMayFire = 1;
-				inGunnerMayFire = 1;
-				castGunnerShadow = 0;
-				showAllTargets = 2;
-				body = "mainturret";
-				gun = "maingun";
-				gunAxis = "maingun_axis";
-				turretAxis = "mainturret_axis";
-				animationSourceBody = "mainturret";
-				animationSourceGun = "maingun";
-				gunbeg =  "konec Hlavne";
-				gunend = "Usti Hlavne";
-				uavCameraGunnerPos = "gunner_view";
-				uavCameraGunnerDir = "gunner_view_dir";
-				memoryPointGunnerOptics = "gunner_view";
-				particlespos = "pos_fx";
-				particlesdir = "pos_fx_dir";
-				selectionFireAnim = "Cannon";
-				gunnerlefthandanimname = "";
-				gunnerrighthandanimname = "";
 				weapons[] =
 				{
 					"weapon_Cannon_Phalanx"
@@ -358,8 +332,8 @@ class CfgVehicles
 		author = "Vulgar";
 		scope = 2;
 		scopeCurator = 2;
-		side = 1;
-		faction = "BLU_F";
+		side=0;
+		faction="O_DBA_CIS_F";
 		crew = "B_UAV_AI";
 		typicalCargo[] =
 		{
