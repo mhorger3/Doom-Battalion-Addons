@@ -6539,7 +6539,7 @@ class CfgGroups
 						vehicle="101st_Tuskan_Marksman";
 					};
 				};
-				class O_DBA_IND_Tuskan_Squad
+				class O_DBA_IND_Tuskan_FireSquad
 				{
 					author="Ragwolf";
 					scope=2;
@@ -6764,6 +6764,8 @@ class CfgGroups
 						vehicle="101st_Tuskan_Slug";
 					};
 				};
+			};
+		};
 	};
 };
 class CfgVehicles
