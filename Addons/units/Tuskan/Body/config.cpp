@@ -434,7 +434,7 @@ class O_soldier_base_F;
 	
 	class 101st_Tuskan_Shotgun : 101st_Tuskan
 	{
-		displayName="101st Tuskan Heavy";
+		displayName="101st Tuskan Shotgun";
 		weapons[]=
 		{
 			"JLTS_DP23",
