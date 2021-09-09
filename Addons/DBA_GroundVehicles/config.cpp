@@ -102,9 +102,6 @@ class CfgVehicles
 	class B_SAM_System_02_F;
 	class B_SAM_System_01_F;
 
-
-
-		class All;
 	class Strategic;
 	class Land;
 	class LandVehicle: Land
@@ -154,10 +151,9 @@ class CfgVehicles
 			class Movement;
 		};
 	};
-	class turrets;
 	class APC_Tracked_03_base_F : Tank_F
 	{
-		class Turrets: turrets
+		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
@@ -616,42 +612,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 212th_APC_Wheeled_01_base_F: Wheeled_APC_F{
-		class turrets : turrets
-		{
-			class MainTurret : Mainturret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-	};
-	class 212th_B_APC_Wheeled_01_base_F : 212th_APC_Wheeled_01_base_F{
-		class turrets : turrets
-		{
-			class MainTurret : Mainturret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-	};
-	class 212th_B_APC_Wheeled_01_cannon_F : 212th_B_APC_Wheeled_01_base_F{
-		class turrets : turrets
-		{
-			class MainTurret : Mainturret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-	};
+	class 212th_B_APC_Wheeled_01_cannon_F;
 //Bantha Testbed
 class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
 	scope=2;
@@ -707,45 +668,6 @@ class DBA_Bantha_Testbed : 212th_B_APC_Wheeled_01_cannon_F{
 		{
 
 		};	
-	class turrets : turrets
-		{
-			class MainTurret : Mainturret
-			{
-				weapons[] = {
-					"DBA_25mw_P252G_AC",
-					"DBA_93mw_TPV13_Rockets",
-					"DBA_127mw_PVX90_ATGM",
-					};
-				magazines[] = {
-					"DBA_25mm_PM258_KEP_x160_mag",
-					"DBA_25mm_PL266_HE_x360_mag",
-					"DBA_93mm_TPV13_TBR_x24_mag",
-					"DBA_127mm_PVX90_ATGM_x2_mag",
-					};
-				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
-				minElev=-17;
-				maxElev=70;
-				class Turrets: Turrets
-				{
-					class CommanderOptics : CommanderOptics{
-						weapons[] = {
-						"SmokeLauncher",
-						"DBA_127_C3HB_RCWS",
-						"Laserdesignator_vehicle",
-						};
-						magazines[] = {
-						"SmokeLauncherMag",
-						"SmokeLauncherMag",
-						"SmokeLauncherMag",
-						"SmokeLauncherMag",
-						"SmokeLauncherMag",
-						"DBA_127_X962_x1500_mag",
-						"Laserbatteries"
-						};
-					};
-				};
-			};
-		};
 	thrustDelay = 0.1;
     brakeIdleSpeed = 5;
     maxSpeed = 95;
@@ -3846,7 +3768,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 	class LT_01_cannon_base_F : LT_01_base_F
 	{
 		class components;
-		class turrets : turrets
+		class Turrets
 		{
 			class MainTurret;
 		};
@@ -3854,7 +3776,7 @@ class DBA_ATTE_Base : 3as_ATTE_Base{
 	class I_LT_01_cannon_F : LT_01_cannon_base_F
 	{
 		class components;
-		class turrets : turrets
+		class Turrets : Turrets
 		{
 			class MainTurret;
 		};
