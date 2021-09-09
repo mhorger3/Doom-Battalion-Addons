@@ -7142,7 +7142,7 @@ class CfgVehicles
 				};
 			};
 		}
-	};;
+	};
 	class 3AS_AAT_urban: 3AS_AAT
 	{
 		class Turrets: Turrets
@@ -7161,55 +7161,6 @@ class CfgVehicles
 				};
 			};
 		}
-	};;
-	class Wheeled_APC_F: Car_F
-	{
-		class NewTurret;
-		class Turrets
-		{
-			class MainTurret: NewTurret
-			{
-				class ViewOptics;
-				class ViewGunner;
-			};
-		};
-		class CommanderOptics;
-	};
-	class APC_Wheeled_02_base_F: Wheeled_APC_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-			};
-			class CommanderOptics: CommanderOptics
-			{
-			};
-		};
-	};
-	class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-			};
-			class CommanderOptics: CommanderOptics
-			{
-			};
-		};
-	};
-	class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-			};
-			class CommanderOptics: CommanderOptics
-			{
-			};
-		};
 	};
 	class MBT_01_base_F: Tank_F
 	{

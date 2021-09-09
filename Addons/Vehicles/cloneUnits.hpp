@@ -27,6 +27,7 @@
 	{
 		threat[]={1,0.1,0.1};
 	};
+	
 	class 101st_AT_Droid : SoldierEB
 	{
 		scope = 2;

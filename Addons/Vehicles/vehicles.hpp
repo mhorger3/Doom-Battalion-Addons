@@ -407,35 +407,7 @@
 			};
 		};
 	};
-	class Wheeled_APC_F: Car_F
-	{
-		class turrets : turrets
-		{
-			class MainTurret;
-			
-		};
-	};
-	class AFV_Wheeled_01_base_F: Wheeled_APC_F
-	{
-		class turrets : turrets
-		{
-			class MainTurret;
-			
-		};
-	};
-	class B_AFV_Wheeled_01_cannon_F : AFV_Wheeled_01_base_F 
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-	};
+
 	class MBT_03_base_F: Tank_F
     {
         class turrets: turrets

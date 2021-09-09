@@ -28,63 +28,7 @@ class SoldierEB : CAManBase
 };
 class ACE_Flag_Black;
 class B_Soldier_f;
-class JLTS_Clone_P2_DC15A : B_Soldier_f
-{
-	class HitPoints;
-};
-class 101st_JLTS_Clone_P2 : JLTS_Clone_P2_DC15A{
-		class HitPoints : HitPoints
-		{
-			class HitFace
-			{
-			};
-			class HitNeck : HitFace
-			{
-			};
-			class HitHead : HitNeck
-			{
-			};
-			class HitPelvis : HitHead
-			{
-			};
-			class HitAbdomen : HitPelvis
-			{
-			};
-			class HitDiaphragm : HitAbdomen
-			{
-			};
-			class HitChest : HitDiaphragm
-			{
-			};
-			class HitBody : HitChest
-			{
-			};
-			class HitArms : HitBody
-			{
-			};
-			class HitHands : HitArms
-			{
-			};
-			class HitLegs : HitHands
-			{
-			};
-			class Incapacitated : HitLegs
-			{
-			};
-			class HitLeftArm
-			{
-			};
-			class HitRightArm : HitLeftArm
-			{
-			};
-			class HitLeftLeg
-			{
-			};
-			class HitRightLeg : HitLeftLeg
-			{
-			};
-		};
-};
+class 101st_JLTS_Clone_P2;
 class Claymore1HQ_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
