@@ -1252,7 +1252,7 @@ class CfgWeapons
 			soundBegin[]= {"begin1", 1};
 		};
 		reloadSound[]= {"A3\Sounds_F\vehicles\armor\noises\reload_tank_cannon_2", 31.622778, 1, 15};
-		magazineReloadTime = 10;
+		magazineReloadTime = 3;
 		autoReload = 1;
 		canLock = 0;
 		magazines[]= {
@@ -1345,7 +1345,7 @@ class CfgWeapons
 			"medium",
 			"far"
 		};
-		magazineReloadTime=22;
+		magazineReloadTime=2.5;
 		class player: player
 		{
 			displayName="305mw VKM-8 Turbolaser";
@@ -1409,9 +1409,9 @@ class CfgWeapons
 			aiRateOfFireDistance=1300;
 			minRange=900;
 			minRangeProbab=0.9;
-			midRange=1000;
+			midRange=1600;
 			midRangeProbab=0.9;
-			maxRange=1250;
+			maxRange=2550;
 			maxRangeProbab=0.9;
 		};
 		class far:medium{
@@ -1422,11 +1422,11 @@ class CfgWeapons
 			aiRateOfFire=0.1;
 			aiRateOfFireDispersion=0;
 			aiRateOfFireDistance=2500;
-			minRange=1500;
+			minRange=3000;
 			minRangeProbab=0.98;
-			midRange=2000;
+			midRange=4500;
 			midRangeProbab=0.98;
-			maxRange=2500;
+			maxRange=7000;
 			maxRangeProbab=0.9;
 		};
 	};
