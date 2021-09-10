@@ -1252,7 +1252,7 @@ class CfgWeapons
 			soundBegin[]= {"begin1", 1};
 		};
 		reloadSound[]= {"A3\Sounds_F\vehicles\armor\noises\reload_tank_cannon_2", 31.622778, 1, 15};
-		magazineReloadTime = 3;
+		magazineReloadTime = 10;
 		autoReload = 1;
 		canLock = 0;
 		magazines[]= {
@@ -1345,7 +1345,7 @@ class CfgWeapons
 			"medium",
 			"far"
 		};
-		magazineReloadTime=2.5;
+		magazineReloadTime=5.5;
 		class player: player
 		{
 			displayName="305mw VKM-8 Turbolaser";
@@ -7569,7 +7569,7 @@ class CfgAmmo
 		thrust = 0;
 		timeToLive = 210;
 		airFriction = 0;
-		gravityFactor=2.0;
+		coefGravity=0.0;
 		sideairFriction = 0.000000;
 		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.7, 1900};
 		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.72, 1900};
