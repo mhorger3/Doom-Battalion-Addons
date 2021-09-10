@@ -394,7 +394,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side=1;
-		faction="O_DBA_CIS_F";
+		faction="Republic_101st";
 		crew = "B_UAV_AI";
 		typicalCargo[] =
 		{
