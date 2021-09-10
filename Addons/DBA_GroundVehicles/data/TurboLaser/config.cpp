@@ -3,9 +3,14 @@ class CfgPatches
 	class DBA_TurboLaser
 	{
 		requiredVersion = 0.1;
+		requiredAddons[] =
+		{
+			"A3_Static_F_Jets"
+		};
 		units[] =
 		{
-			"DBA_TurboLaserCannon"
+			"DBA_TurboLaserCannon",
+			"DBA_TurboLaserCannonOPFOR"
 		};
 		weapons[] = {};
 	};
@@ -73,11 +78,9 @@ class CfgVehicles
 		hasGunner = 1;
 		isUav = 1;
 		getInRadius = 0;
-		uavCameraGunnerPos = "gunner_view";
-		uavCameraGunnerDir = "gunner_view_dir";
 		threat[] = { 0.30000001,0.30000001,1 };
 		cost = 150000;
-		accuracy = 0.12;
+		accuracy = 1;
 		editorPreview = "\A3\EditorPreviews_F_Jets\Data\Cfgvehicles\B_AAA_system_01_F.jpg";
 		unitInfoType = "RscUnitInfoTank";
 		model = "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\DBA_Turbolaser.p3d";
@@ -107,6 +110,8 @@ class CfgVehicles
 		reportOwnPosition = 1;
 		lockDetectionSystem = 0;
 		incomingMissileDetectionSystem = 16;
+		uavCameraGunnerPos = "pos_gunner_view";
+		uavCameraGunnerDir = "pos_gunner_view_dir";
 		class Components : Components
 		{
 			class SensorsManagerComponent
@@ -187,29 +192,43 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				turretInfoType = "RscOptics_crows";
+				turretinfotype = "RscOptics_APC_Tracked_01_gunner";
 				animationSourceBody = "Mainturret";
 				Body = "Mainturret";
 				animationSourceGun = "Maingun";
 				Gun = "Maingun";
-				optics = 0;
+				optics = 1;
 				minElev = -5;
 				maxElev = 35;
 				minTurn = -360;
 				maxTurn = +360;
+				hasgunner = 1;
+				gunnerName = "TurboLaser Gunner";
+				primary = 1;
+				primaryGunner = 1;
+				startEngine = 0;
+				enableManualFire = 1;
 				selectionFireAnim = "zasleh";
 				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
-				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGunnerOptics = "pos_gunner_view";
 				//gunnerLeftHandAnimName = "Heavygun";
 				//gunnerRightHandAnimName = "Heavygun";
-				gunnergetInAction = "";
-				gunnergetOutAction = "";
 				displayName = "";
-				gunnerInAction = "Disabled";
-				gunnerAction = "Disabled";
 				gunnerForceOptics = 1;
-				memoryPointGun[] = {"usti hlavne"};
+				memoryPointGun[] = {"usti hlavne","usti hlavne2" };
+				uavCameraGunnerPos = "pos_gunner_view";
+				uavCameraGunnerDir = "pos_gunner_view_dir";
+				memoryPointGunnerOptics = "pos_gunner_view";
+
+				forceHideGunner = 1;
+				gunnerforceoptics = 1;
+				gunnerOutForceOptics = 1;
+				viewgunnerinExternal = 0;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				castGunnerShadow = 0;
+				showAllTargets = 2;
 				class OpticsIn
 				{
 					class Wide
@@ -252,12 +271,54 @@ class CfgVehicles
 				};
 				weapons[] =
 				{
-					"weapon_Cannon_Phalanx"
+					"DBA_305mw_VKM8_Cannon"
 				};
 				magazines[] =
 				{
-					"magazine_Cannon_Phalanx_x1550",
-					"magazine_Cannon_Phalanx_x1550"
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
+					"DBA_305mm_M19K_HE_x2_mag",
 				};
 				class Components : Components
 				{
@@ -332,8 +393,29 @@ class CfgVehicles
 		author = "Vulgar";
 		scope = 2;
 		scopeCurator = 2;
-		side=0;
+		side=1;
 		faction="O_DBA_CIS_F";
+		crew = "B_UAV_AI";
+		typicalCargo[] =
+		{
+			"B_UAV_AI"
+		};
+	};
+
+	class DBA_TurboLaserCannonOPFOR : DBA_TurboLaserCannon_Base
+	{
+		class SimpleObject
+		{
+			eden = 1;
+			verticalOffset = 2.467;
+			verticalOffsetWorld = -0.039000001;
+			init = "''";
+		};
+		author = "Vulgar";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "O_DBA_CIS_F";
 		crew = "B_UAV_AI";
 		typicalCargo[] =
 		{
