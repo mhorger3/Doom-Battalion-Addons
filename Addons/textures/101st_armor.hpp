@@ -543,7 +543,7 @@ class 101st_Spark_Pauldron: V_RebreatherB
 		uniformType="Default";
 		mass=80;
 		vestType = "Rebreather";
-		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
 		hiddenSelections[] = {"camo1"};
 	};
 };
