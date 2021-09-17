@@ -1641,19 +1641,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\Secutor_Helmet_CO.paa"
 		};
 	};
-	class 101st_Stultus_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Stultus)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Stultus_Helmet_CO.paa"
-		};
-	};
 	class 101st_Alter_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Spark";
@@ -3947,6 +3934,23 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\helmets\NewPilot\Flanker_Helmet_CO.paa"
+		};
+	};
+	class 101st_Stultus_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Seatie";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Stultus)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\helmets\NewPilot\Stultus_Helmet_CO.paa"
 		};
 	};
 	class 101st_Gorman_Helmet : DBA_P2_Pilot_Helm
