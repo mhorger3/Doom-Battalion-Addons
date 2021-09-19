@@ -1,0 +1,81 @@
+class CfgPatches
+{
+	class DBA_CISFaction
+	{
+		author = "Vulgar";
+		requiredaddons[] =
+		{
+		};
+		requiredversion = 0.1;
+		units[] =
+		{
+		};
+		weapons[] =
+		{
+		};
+	};
+};
+
+class CfgFactionClasses
+{
+	class O_DBA_CIS_F
+	{
+		displayName = "DBA CIS";
+	};
+};
+
+class CfgEditorSubcategories
+{
+	class O_DBA_CIS_Spec_Ops
+	{
+		displayName = "DBA CIS Special Operations";
+	};
+	class O_DBA_CIS_B1_Droids
+	{
+		displayName = "DBA CIS Line Infantry";
+	};
+	class O_DBA_CIS_B1_Droids_Geonosis
+	{
+		displayName = "DBA CIS Line Infantry (Geonosis Camo)";
+	};
+	class O_DBA_CIS_B1_Droids_Jungle
+	{
+		displayName = "DBA CIS Line Infantry (Jungle Camo)";
+	};
+	class O_DBA_CIS_B1_Droids_Winter
+	{
+		displayName = "DBA CIS Line Infantry (Winter Camo)";
+	};
+	class O_DBA_CIS_B1_Droids_Training
+	{
+		displayName = "DBA CIS Line Infantry (Simulation)";
+	};
+	class O_DBA_CIS_Helicopters
+	{
+		displayName = "Helicopters";
+	};
+	class O_DBA_CIS_Tanks
+	{
+		displayName = "Tanks";
+	};
+	class O_DBA_CIS_Artillery
+	{
+		displayName = "Artillery";
+	};
+	class O_DBA_CIS_APCs
+	{
+		displayName = "APCs";
+	};
+	class O_DBA_CIS_Cars
+	{
+		displayName = "Cars";
+	};
+	class O_DBA_CIS_AAs
+	{
+		displayName = "AAs";
+	};
+	class O_DBA_CIS_Planes
+	{
+		displayName = "Planes";
+	};
+};

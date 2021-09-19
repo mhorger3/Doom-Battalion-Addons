@@ -3,7 +3,6 @@ class CfgPatches
 	class DBA_B2WristBlaster
 	{
 		author = "Vulgar";
-		name = "101st Aux Mod";
 		requiredaddons[] =
 		{
 			"A3_Weapons_F",

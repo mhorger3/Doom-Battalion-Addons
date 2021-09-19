@@ -1,12 +1,12 @@
 class CfgPatches
 {
-	class DBA_B2Battledroid
+	class DBA_B2BattledroidUniforms
 	{
 		author = "Vulgar";
 		name = "DBA B2 Battledroid";
 		requiredaddons[] =
 		{
-			"A3_Characters_F"
+			"A3_Weapons_F"
 		};
 		requiredversion = 0.1;
 		units[] =

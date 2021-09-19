@@ -11,6 +11,7 @@ class CfgPatches
 		{
 			"DBA_Gundark_F"
 		};
+		units[] = {};
 	};
 };
 class Mode_SemiAuto;

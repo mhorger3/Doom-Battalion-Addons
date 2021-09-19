@@ -3,7 +3,6 @@ class CfgPatches
     class DBA_Aux_Mod_Medical
     {
         author = "Ragwolf";
-        name = "101st Aux Mod Medical";
 
         requiredAddons[] =
         {

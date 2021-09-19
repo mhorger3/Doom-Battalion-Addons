@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class DBA_B2Battledroid
+	class DBA_B2BattledroidUnits
 	{
 		author = "Vulgar";
 		name = "DBA B2 Battledroid";
@@ -101,9 +101,9 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"101st_thermaldet_x1_mag", 
-			"101st_thermaldet_x1_mag", 
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
 		};
 		respawnMagazines[] =
 		{
@@ -122,9 +122,9 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"101st_thermaldet_x1_mag", 
-			"101st_thermaldet_x1_mag", 
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
 		};
 		items[] = {};
 		respawnItems[] = {};
