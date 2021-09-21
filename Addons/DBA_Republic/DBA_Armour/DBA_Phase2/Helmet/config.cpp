@@ -23,10 +23,10 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
-	class DBA_P2Helmet : H_HelmetB
+	class DBA_P2HelmetBase : H_HelmetB
 	{
 		author = "Vulgar";
-		displayName = "[DBA] P2 Helmet";
+		displayName = "[DBA] P2 Helmet Base";
 		//picture = "";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\P2Helmet.p3d";
 		hiddenSelections[] = 

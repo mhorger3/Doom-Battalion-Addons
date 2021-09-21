@@ -55,7 +55,7 @@ class CfgWeapons
 		displayName = "DBA Battlerifle";
 		magazines[] =
 		{
-			"DBA_65_Mag_x20"
+			"DBA_DC15BR_Mag"
 		};
 		reloadAction = "GestureReloadDMR03";
 		recoil = "recoil_dmr_03";
@@ -65,7 +65,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\data\Anim\DMR_03.rtm"
 		};
-		overviewPicture = "\A3\Data_F_Mark\Images\watermarkInfo_page07_ca.paa";
+		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		discreteDistanceInitIndex = 2;
 		cursor = "srifle";
 		class Library
@@ -178,8 +178,8 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_BattleRifle\BattleRifle.p3d";
 		dexterity = 1.6799999;
 		displayName = "DBA Battlerifle";
-		picture = "\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		descriptionShort = "Gun";
 		inertia = 0.80000001;
 		aimTransitionSpeed = 0.69999999;

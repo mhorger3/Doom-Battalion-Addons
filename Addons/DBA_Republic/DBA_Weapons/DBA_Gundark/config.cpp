@@ -65,6 +65,7 @@ class CfgWeapons
 		author = "Vulgar";
 		_generalMacro = "LRR_base_F";
 		scope = 0;
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\gundark.p3d";
 		magazines[] =
 		{
 			"DBA_Gundark_Mag", "DBA_GundarkOvercharge_Mag"
@@ -81,6 +82,21 @@ class CfgWeapons
 		};
 		opticsPPEffects[] = {};
 		opticsFlare = 1;
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\data\Gundark_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\data\Gundark_Scope_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\data\Gundark.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\data\GundarkScope.rvmat"
+		};
 		opticsDisablePeripherialVision = 1;
 		class GunParticles
 		{
@@ -271,10 +287,9 @@ class CfgWeapons
 		_generalMacro = "srifle_LRR_F";
 		baseWeapon = "DBA_Gundark_F";
 		scope = 2;
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\gundark.p3d";
 		displayName = "DBA Gundark";
-		picture = "\A3\Weapons_F\LongRangeRifles\M320\Data\UI\gear_M320_LRR_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_sniper_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Walrus_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Walrus_CA.paa";
 		class Library
 		{
 			libTextDesc = ":wave:";

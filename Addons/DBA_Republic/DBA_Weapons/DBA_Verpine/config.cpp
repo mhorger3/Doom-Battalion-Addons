@@ -223,8 +223,8 @@ class CfgWeapons
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Verpine\verpine.p3d";
 		displayName = "DBA Verpine DMR";
-		picture = "\A3\Weapons_F_EPA\LongRangeRifles\DMR_01\Data\UI\gear_DMR_01_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		descriptionShort = "$STR_A3_CfgWeapons_srifle_DMR_01_F1";
 		hiddenSelections[] =
 		{
@@ -232,7 +232,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Verpine\dta\Verpine_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Verpine\data\Verpine_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{

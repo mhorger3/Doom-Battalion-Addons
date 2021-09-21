@@ -29,8 +29,8 @@ class CfgWeapons
 		scope = 2;
 		displayName = "DBA RPS6";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_RPS6\RPS6.p3d";
-		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
-		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",

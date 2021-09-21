@@ -24,12 +24,26 @@ class CfgPatches
 			"DBA_B1_Sniper",
 			"DBA_B1_Heavy",
 			"DBA_B1_Flamer",
+			"DBA_B1_Geonosis",
+			"DBA_B1_OOM_Geonosis",
+			"DBA_B1_Sniper_Geonosis",
+			"DBA_B1_Jungle",
+			"DBA_B1_Training",
+			"DBA_B1_Winter",
 		};
 		units[] =
 		{
 			"DBA_B1_Backpack",
 			"DBA_B1_Antenna",
 			"DBA_B1_Jetpack",
+			"DBA_B1_Backpack_GeonosisCamo",
+			"DBA_B1_Antenna_GeonosisCamo",
+			"DBA_B1_Backpack_Simulation",
+			"DBA_B1_Antenna_Simulation",
+			"DBA_B1_Backpack_JungleCamo",
+			"DBA_B1_Antenna_JungleCamo",
+			"DBA_B1_Backpack_WinterCamo",
+			"DBA_B1_Antenna_WinterCamo",
 		};
 	};
 };

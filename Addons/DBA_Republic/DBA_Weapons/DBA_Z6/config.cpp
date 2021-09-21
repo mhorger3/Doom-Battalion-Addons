@@ -83,7 +83,7 @@ class CfgWeapons
 		inertia = 0.69999999;
 		aimTransitionSpeed = 0.80000001;
 		dexterity = 1.3;
-		picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_ui_ca.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Z6-X_CA.paa";
 		model = "\MRC\JLTS\weapons\Z6\Z6.p3d";
 		hiddenSelections[] =
 		{
@@ -288,8 +288,8 @@ class CfgWeapons
 		scope = 2;
 		displayName = "DBA Z6X Chaingun";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Z6\DBA_Z6X.p3d";
-		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
-		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Z6-X_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Z6-X_CA.paa";
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",

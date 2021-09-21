@@ -56,7 +56,7 @@ class CfgWeapons
 		author = "Dutch & Trip";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_KathHound\KathHound.p3d";
-		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Kath_CA.paa";
+		picture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Ion_Mag_Green"};
 		magazines[] = { "DBA_556_Mag_x60_Green" };

@@ -58,7 +58,7 @@ class CfgWeapons
 		author = "Dutch";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zakkeg\ZakkegMG.p3d";
-		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Zakkeg_CA.paa";
+		picture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Zakkeg_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_MG_Mag_Green"};
 		magazines[] = { "DBA_Zakkeg_Mag" };
@@ -85,7 +85,6 @@ class CfgWeapons
 		reloadMagazineSound[] = {"SW_CloneWarsWeapons\M134\reload2.ogg",1.5,1,20};
 		soundBullet[] = {};
 		modes[] = {"manual","close","short","medium","far_optic1","far_optic2","ACE_Burst_far"};
-		picture = "\A3\Weapons_F_Mark\Machineguns\MMG_02\Data\UI\gear_MMG_02_black_X_co.paa";
 		recoil = "recoil_mmg_01";
 		simulation = "Weapon";
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
@@ -220,7 +219,7 @@ class CfgWeapons
 		initSpeed = -1;
 		maxRecoilSway = 0.008;
 		swayDecaySpeed = 2;
-		UIPicture = "\A3\weapons_f\data\UI\icon_mg_CA.paa";
+		UIPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Zakkeg_CA.paa";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 150;

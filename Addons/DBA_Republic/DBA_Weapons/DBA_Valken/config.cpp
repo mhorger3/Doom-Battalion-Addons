@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class DBA_Vulkan
+	class DBA_Valken
 	{
 		requiredAddons[] =
 		{
@@ -10,7 +10,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"DBA_Vulkan_F"
+			"DBA_Valken_F"
 		};
 	};
 };
@@ -51,7 +51,7 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 	};
 	class UGL_F;
-	class DBA_Vulkan_Base_F : Rifle_Long_Base_F
+	class DBA_Valken_Base_F : Rifle_Long_Base_F
 	{
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_Overheating_Dispersion = 0;
@@ -64,6 +64,7 @@ class CfgWeapons
 		ace_overpressure_range = 0;
 		author = "Vulgar";
 		_generalMacro = "DMR_01_base_F";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Valken\valken.p3d";
 		scope = 0;
 		magazines[] =
 		{
@@ -128,8 +129,8 @@ class CfgWeapons
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = { 0,0,1 };
 		fireLightAmbient[] = { 0,0,1 };
-		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Vulkan\data\Valken_CO.paa" };
-		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Vulkan\data\Valken.rvmat" };
+		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Valken\data\Valken_CO.paa" };
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Valken\data\Valken.rvmat" };
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
@@ -277,16 +278,15 @@ class CfgWeapons
 		aiDispersionCoefY = 3;
 		aiDispersionCoefX = 2;
 	};
-	class DBA_Vulkan_F : DBA_Vulkan_Base_F
+	class DBA_Valken_F : DBA_Valken_Base_F
 	{
 		author = "Vulgar";
 		_generalMacro = "srifle_DMR_01_F";
-		baseWeapon = "DBA_Vulkan_F";
+		baseWeapon = "DBA_Valken_F";
 		scope = 2;
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Valken\valken.p3d";
-		displayName = "DBA Vulkan";
-		picture = "\A3\Weapons_F_EPA\LongRangeRifles\DMR_01\Data\UI\gear_DMR_01_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		displayName = "DBA Valken";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Valken_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Valken_CA.paa";
 		descriptionShort = "Full auto sniper";
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{

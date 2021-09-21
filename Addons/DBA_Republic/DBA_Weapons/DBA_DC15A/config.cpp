@@ -56,7 +56,7 @@ class CfgWeapons
 		scope = 0;
 		magazines[] =
 		{
-			"DBA_65_Mag_Base"
+			"DBA_DC15A_Mag"
 		};
 		magazineReloadSwitchPhase = 0.5;
 		class Library
@@ -270,8 +270,8 @@ class CfgWeapons
 		scope = 2;
 		displayName = "DBA DC15A";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15A.p3d";
-		picture = "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_rifle_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
@@ -302,8 +302,8 @@ class CfgWeapons
 		scope = 2;
 		displayName = "DBA DC15A GL";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15AGL.p3d";
-		picture = "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_rifle_gl_X_CA.paa";
-		UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		hiddenSelections[] = { "camo1" };
 		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15AGL_CO.paa" };
@@ -345,11 +345,12 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" };
 		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15A_CO.paa" };
 		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15A.rvmat" };
-		picture = "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_lmg_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_MG_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
 		magazines[] =
 		{
-			"100Rnd_65x39_caseless_mag"
+			"DBA_DC15AMod0_Mag",
+			"DBA_DC15A_Mag"
 		};
 		cursor = "mg";
 		class WeaponSlotsInfo : WeaponSlotsInfo
@@ -488,8 +489,13 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15ALE.p3d";
 		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		reloadAction = "GestureReloadMXSniper";
-		picture = "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_dmr_X_CA.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		magazines[] =
+		{
+			"DBA_DC15ALE_Mag",
+			"DBA_DC15A_Mag"
+		};
 		hiddenSelections[] = 
 		{ 
 			"body", 

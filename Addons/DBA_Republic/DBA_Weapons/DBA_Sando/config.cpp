@@ -50,8 +50,8 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\SandoFront.rvmat",
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\SandoBack.rvmat"
 		};
-		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
-		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
@@ -72,7 +72,7 @@ class CfgWeapons
 		maxZeroing = 600;
 		weaponInfoType = "RscOptics_titan";
 		modelOptics = "\A3\Weapons_F_Beta\acc\reticle_titan.p3d";
-		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
 		optics = 1;
 		opticsDisablePeripherialVision = 1;
 		opticsFlare = 1;

@@ -57,6 +57,7 @@ class CfgWeapons
 		author = "Vulgar";
 		_generalMacro = "SMG_02_base_F";
 		scope = 0;
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Enforcer\Enforcer.p3d";
 		magazines[] =
 		{
 			"DBA_Enforcer_Mag"
@@ -232,7 +233,6 @@ class CfgWeapons
 		_generalMacro = "SMG_02_F";
 		baseWeapon = "DBA_Enforcer_F";
 		scope = 2;
-		model = "101st_Aux_Mod\DBA_Republic\DBA_Weapons\DBA_Enforcer\Enforcer.p3d";
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 50;
@@ -242,8 +242,8 @@ class CfgWeapons
 		dexterity = 1.6;
 		initSpeed = 370;
 		displayName = "DBA Enforcer SMG";
-		picture = "\A3\Weapons_F_beta\Smgs\SMG_02\Data\UI\gear_smg_02_X_CA.paa";
-		UiPicture = "\A3\Weapons_F\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
 		descriptionShort = "Enforcer SMG";
 		class Library
 		{

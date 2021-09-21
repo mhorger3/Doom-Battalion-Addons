@@ -56,7 +56,7 @@ class CfgWeapons
 		author = "Trip";
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Boma\Data\Boma_Shotgun.p3d";
-		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Effects\icons\Boma_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Boma_CA.paa";
 		handAnim[] = { "OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm" };
 		muzzles[] = { "this","DBA_3AS_GL_F" };
 		class DBA_3AS_GL_F : UGL_F

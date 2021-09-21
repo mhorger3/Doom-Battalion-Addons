@@ -96,8 +96,8 @@ class cfgWeapons {
 		dexterity = 1.7;
 		initSpeed = -1.1;
 		maxZeroing = 800;
-		picture = "\A3\Weapons_F_Mod\SMGs\SMG_03\data\UI\gear_adr97_tr_ca.paa";
-		UiPicture = "\A3\Weapons_F\data\UI\icon_regular_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
+		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
 		descriptionShort = "A Light SMG";
 		class Library
 		{
@@ -242,6 +242,6 @@ class cfgWeapons {
 		_generalMacro = "SMG_03_TR_black";
 		scope = 2;
 		displayName = "DBA Maalras";
-		picture = "\A3\Weapons_F_Mod\SMGs\SMG_03\data\UI\gear_adr97_tr_black_ca.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
 	};
 };
