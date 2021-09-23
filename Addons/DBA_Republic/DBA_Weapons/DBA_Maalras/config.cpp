@@ -167,7 +167,7 @@ class cfgWeapons {
 			class StandardSound : BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Weapons\Maalras\SMG.ogg",1,1,1800 };
+				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Maalras\SMG.ogg",1,1,1800 };
 				soundBegin[] = { "begin1",1 };
 			};
 		};

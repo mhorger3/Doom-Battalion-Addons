@@ -197,7 +197,7 @@ class CfgWeapons
 				begin1[] = { "MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",2.5,1,1800 };
 				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure1",1 };
+				soundClosure[] = { "closure2",1 };
 			};
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
