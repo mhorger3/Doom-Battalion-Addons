@@ -4,7 +4,6 @@ class B_DBA_P2CloneBeconLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Bear-Can (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -25,7 +24,6 @@ class B_DBA_P2CloneCourageLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Coom-Rage (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -46,7 +44,6 @@ class B_DBA_P2CloneLambertLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Flying Sheep (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -67,7 +64,6 @@ class B_DBA_P2CloneLambertLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Flying Sheep (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -88,7 +84,6 @@ class B_DBA_P2CloneProdigyLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Pro-Diggy (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -109,7 +104,6 @@ class B_DBA_P2CloneQuillLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Quilliam (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =
@@ -130,7 +124,6 @@ class B_DBA_P2CloneSeeforLegacy_F : B_DBA_P2Clone_Base
 	scopeCurator = 2;
 	displayName = "DBA Phase 2 Rats Rats, We are the Rats (Legacy)";
 	editorSubcategory = "O_DBA_Republic_Legacy";
-	side = 0;
 	faction = "B_DBA_Republic_F";
 	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 	hiddenSelections[] =

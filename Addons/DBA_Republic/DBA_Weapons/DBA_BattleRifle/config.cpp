@@ -112,7 +112,7 @@ class CfgWeapons
 			class StandardSound
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "101st_Aux_Mod\DBA_Republic\DBA_Weapons\DBA_Battlerifle\Data\DC15Shot.ogg",1,1,1800 };
+				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Battlerifle\Data\DC15Shot.ogg",1,1,1800 };
 				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure1",1 };

@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\DBA_Weapons\DC15\data\DC-15A_SMDI.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\data\DC15A_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

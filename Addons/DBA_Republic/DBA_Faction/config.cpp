@@ -36,23 +36,23 @@ class CfgEditorSubcategories
 	};
 	class O_DBA_Republic_Broadsword1
 	{
-		displayName = "DBA CIS Line Infantry (Broadsword 1)";
+		displayName = "DBA Republic Line Infantry (Broadsword 1)";
 	};
 	class O_DBA_Republic_Broadsword2
 	{
-		displayName = "DBA CIS Line Infantry (Broadsword 2)";
+		displayName = "DBA Republic Line Infantry (Broadsword 2)";
 	};
 	class O_DBA_Republic_Claymore1
 	{
-		displayName = "DBA CIS Line Infantry (Claymore 1)";
+		displayName = "DBA Republic Line Infantry (Claymore 1)";
 	};
 	class O_DBA_Republic_Claymore2
 	{
-		displayName = "DBA CIS Line Infantry (Claymore 2)";
+		displayName = "DBA Republic Line Infantry (Claymore 2)";
 	};
 	class O_DBA_Republic_Legacy
 	{
-		displayName = "DBA CIS Line Infantry (Legacy)";
+		displayName = "DBA Republic Line Infantry (Legacy)";
 	};
 	class O_DBA_Republic_Helicopters
 	{
@@ -60,7 +60,7 @@ class CfgEditorSubcategories
 	};
 	class O_DBA_Republic_Tanks
 	{
-		displayName = "Tanks";
+		displayName = "DBA Republic Main Battle Tanks";
 	};
 	class O_DBA_Republic_Artillery
 	{

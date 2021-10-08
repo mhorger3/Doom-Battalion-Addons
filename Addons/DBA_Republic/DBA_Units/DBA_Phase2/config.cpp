@@ -31,7 +31,22 @@ class CfgVehicles {
 		editorSubcategory = "O_DBA_Republic_Clones";
 		vehicleClass = "O_DBA_Republic_Clones";
 		side = 1;
-		faction = "B_DBA_Republic_F"; 
+		faction = "B_DBA_Republic_F";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
+		};
 		genericNames = "JLTS_Clones";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		identityTypes[] =
@@ -260,14 +275,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "DBA Phase 2 Clone Recruit";
-		side = 0;
-		faction = "B_DBA_Republic_F";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Recruit_Chest_CO.paa",
@@ -280,14 +288,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "DBA Phase 2 Clone Cadet";
-		side = 0;
-		faction = "B_DBA_Republic_F";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Cadet_Chest_CO.paa",
@@ -295,5 +296,14 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneCadetUniform";
 	};
+	class B_DBA_P2CloneTrooper_F : B_DBA_P2Clone_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "DBA Phase 2 Clone Cadet";
+		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+		uniformClass = "DBA_P2cloneTrooperUniform";
+	};
 	#include "legacy.hpp"
+	#include "CustomArmour.hpp"
 };

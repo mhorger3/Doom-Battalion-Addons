@@ -51,6 +51,10 @@ class CfgWeapons
 		ace_overpressure_damage = 0;
 		ace_overpressure_priority = 1;
 		ace_overpressure_range = 0;
+		discreteDistance[] = { 100,200 };
+		discreteDistanceInitIndex = 0;
+		aiDispersionCoefY = 7;
+		aiDispersionCoefX = 6;
 		selectionFireAnim = "zasleh";
 		flash = "gunfire";
 		author = "Trip";
@@ -66,7 +70,7 @@ class CfgWeapons
 			useModelOptics = 0;
 			useExternalOptic = 0;
 			magazines[] = {};
-			magazineWell[] += {"DBA_GL_Mags_magwell"};
+			magazineWell[] = {};
 			cameraDir = "OP_look";
 			discreteDistance[] = { 50,75,100,150,200,250,300,350,400 };
 			discreteDistanceCameraPoint[] =
@@ -193,6 +197,8 @@ class CfgWeapons
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 500;
 		};
+		distanceZoomMin = 100;
+		distanceZoomMax = 100;
 		inertia = 1.4;
 		dexterity = 1.7;
 		initSpeed = 300;

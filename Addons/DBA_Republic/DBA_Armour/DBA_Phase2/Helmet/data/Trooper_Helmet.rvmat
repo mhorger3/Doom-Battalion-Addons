@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\data\Trooper_Helmet_TI.paa";
 };
 ambient[]={0.5,0.5,0.5,1};
 diffuse[]={0.69999999,0.69999999,0.69999999,1};
@@ -42,7 +42,7 @@ class Stage3
 	{
 		aside[] = {1.0,0.0,0.0};
 		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
+		dir[] = {0.0,0.0,1.0};
 		pos[] = {0.0,0.0,0.0};
 	};
 };

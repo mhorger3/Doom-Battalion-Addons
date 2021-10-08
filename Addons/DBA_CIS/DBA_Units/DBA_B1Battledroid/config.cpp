@@ -48,7 +48,7 @@ class CfgPatches
 			"O_DBA_CIS_B1_AA_Droid_Winter_F",
 			"O_DBA_CIS_B1_AT_Droid_Winter_F",
 			"O_DBA_CIS_OOM_Command_Droid_Winter_F",
-			"O_DBA_CIS_B1_Heavy_Droid_Winter_F"
+			"O_DBA_CIS_B1_Heavy_Droid_Winter_F",
 			"O_DBA_CIS_B1_Sniper_Droid_Winter_F",
 		};
 		weapons[] =

@@ -29,10 +29,20 @@ class CfgWeapons
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[] = 
-		{ 
+		hiddenSelections[] =
+		{
 			"camo1",
 			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -78,5 +88,20 @@ class CfgWeapons
 			mass = 40;
 		};
 	};
+	class DBA_P2CloneTrooperUniform : DBA_P2CloneUniformBase
+	{
+		author = "Vulgar";
+		scope = 2;
+		displayName = "DBA P2 Clone Trooper Armour";
+
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "B_DBA_P2CloneTrooper_F";
+			containerClass = "Supply150";
+			mass = 40;
+		};
+	};
 	#include "legacy.hpp"
+	#include "CustomArmour.hpp"
 };

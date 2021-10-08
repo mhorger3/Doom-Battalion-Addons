@@ -2,11 +2,16 @@ class DBA_P2CloneBaconLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Bear-Can (Legacy)";
+	displayName = "DBA Phase 2 Clone: Bear-Can (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Bacon_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Bacon_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Bacon_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Bacon_Legs.RVMAT"
 	};
 	class ItemInfo : UniformItem
 	{
@@ -20,7 +25,7 @@ class DBA_P2CloneCourageLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Coom-Rage (Legacy)";
+	displayName = "DBA Phase 2 Clone: Coom-Rage (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Courage_Chest_CO.paa",
@@ -38,7 +43,7 @@ class DBA_P2CloneLambertLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Rocket Sheep (Legacy)";
+	displayName = "DBA Phase 2 Clone: Rocket Sheep (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Lambert_Chest_CO.paa",
@@ -56,11 +61,16 @@ class DBA_P2CloneProdigyLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Pro-Diggy (Legacy)";
+	displayName = "DBA Phase 2 Clone: Pro-Diggy (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Prodigy_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Prodigy_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Prodigy_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Prodigy_Legs.RVMAT"
 	};
 	class ItemInfo : UniformItem
 	{
@@ -74,11 +84,16 @@ class DBA_P2CloneQuillLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Quilliam (Legacy)";
+	displayName = "DBA Phase 2 Clone: Quilliam (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Quill_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Quill_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Quill_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Quill_Legs.RVMAT"
 	};
 	class ItemInfo : UniformItem
 	{
@@ -92,11 +107,15 @@ class DBA_P2CloneSeeforLegacyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
 	scope = 2;
-	displayName = "DBA P2 Rats Rats, We are the Rats (Legacy)";
+	displayName = "DBA Phase 2 Clone: Rats Rats, We are the Rats (Legacy)";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Seefor_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Seefor_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Seefor_Chest.RVMAT",
 	};
 	class ItemInfo : UniformItem
 	{
