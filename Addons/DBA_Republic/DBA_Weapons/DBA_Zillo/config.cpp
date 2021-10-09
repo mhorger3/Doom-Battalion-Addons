@@ -51,7 +51,64 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class UGL_F;
+	class ItemCore;
+	class optic_lrps : ItemCore
+	{
+		class ItemInfo;
+	};
+	class DBA_ZILLO_SCOPE : optic_lrps
+	{
+		Author = "Vulgar";
+		Scope = 2;
+		displayName = "Zillo Scope";
+		class ItemInfo : ItemInfo
+		{
+			allowedSlots[] = { 801,701,901 };
+			mass = 16;
+			modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
+			mountAction = "MountOptic";
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			optics = 1;
+			opticType = 2;
+			scope = 0;
+			type = 201;
+			unmountAction = "DismountOptic";
+			weaponInfoType = "RscWeaponRangeZeroingFOV";
+			zeroingSound[] = { "A3\Sounds_F\arsenal\sfx\shared\zeroing_knob_tick_plastic",0.316228,1,5 };
+			class OpticsModes
+			{
+				class snip
+				{
+					cameraDir = "";
+					discreteDistance[] = { 100 };
+					discreteDistanceInitIndex = 0;
+					discretefov[] = { 0.045,0.011 };
+					discreteInitIndex = 0;
+					distanceZoomMax = 2400;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = { "\A3\Weapons_F\acc\reticle_lrps_F","\A3\Weapons_F\acc\reticle_lrps_z_F" };
+					opticsDisablePeripherialVision = 1;
+					opticsDisplayName = "WFOV";
+					opticsFlare = 1;
+					opticsID = 1;
+					opticsPPEffects[] = { "OpticsCHAbera1","OpticsBlur1" };
+					opticsZoomInit = 0.045;
+					opticsZoomMax = 0.045;
+					opticsZoomMin = 0.011;
+					useModelOptics = 1;
+					visionMode[] =
+					{
+						"Normal",
+						"NVG"
+					};
+				};
+			};
+		};
+		descriptionShort = "Standard Zillo Sight";
+	};
+
 	class DBA_Zillo_F : Rifle_Long_Base_F
 	{
 		ACE_overheating_allowSwapBarrel = 1;
