@@ -87,8 +87,6 @@ class CfgPatches
 			"O_DBA_CIS_AAT_Snow_F",
 			"O_DBA_CIS_AAT_Tropic_F",
 			"O_DBA_CIS_AAT_Urban_F",
-			"DBA_Arbalest_SAM",
-			"DBA_ChiNoKu_SAM",
 			"O_DBA_CIS_CISSpeeder_F",
 			"O_DBA_CIS_Plasma_Artillery_F",
 			"O_DBA_CIS_Rocket_Artillery_F",
@@ -126,7 +124,9 @@ class CfgPatches
 			"O_DBA_CIS_Tri_Droid_F",
 			"O_DBA_CIS_Conquest_F",
 			"O_DBA_CIS_Obliterator_F",
-			"O_DBA_CIS_Devil_F"
+			"O_DBA_CIS_Devil_F",
+			"DBA_Arbalest_SAM",
+			"DBA_ChiNoKu_SAM",
 		};
 		weapons[]=
 		{
@@ -10447,7 +10447,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="King AAT (Blue)";
-		armor=1000;
+		armor=1100;
 		armorStructural=10;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
@@ -10752,7 +10752,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="King AAT (Urban)";
-		armor=1000;
+		armor=1100;
 		armorStructural=10;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
