@@ -534,7 +534,7 @@ class CfgWeapons{
 			maxRangeProbab=0.0;
 			aiRateOfFire=1;
 		};
-		class close : Mode_FullAuto{
+		class close : fullAuto{
 			soundBurst=0;
 			textureType = "fullAuto";
 			aiBurstTerminable=1;
@@ -553,7 +553,7 @@ class CfgWeapons{
 			maxRange=75;
 			maxRangeProbab=0.65;
 		};
-		class medium : Mode_SemiAuto{
+		class medium : semi{
 			soundBurst=0;
 			textureType = "semi";
 			aiBurstTerminable=1;
