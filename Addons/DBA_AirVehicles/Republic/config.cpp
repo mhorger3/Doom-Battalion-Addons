@@ -4489,19 +4489,14 @@ class cfgVehicles
 		displayName = "LAAT MK5 (Hammer)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4557,21 +4552,14 @@ class cfgVehicles
 		displayName = "LAAT MK6 (Hammer)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4629,21 +4617,14 @@ class cfgVehicles
 		displayName = "LAAT MK6/2 (Hammer)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4700,20 +4681,15 @@ class cfgVehicles
 		displayName = "LAAT MK5 (Command)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
-		};
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+        };
 		class ACE_SelfActions
 		{
 			class ACE_Passengers
@@ -4735,21 +4711,14 @@ class cfgVehicles
 		displayName = "LAAT MK6 (Command)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4772,21 +4741,14 @@ class cfgVehicles
 		displayName = "LAAT MK6/2 (Command)";
 		side = 1;
 		editorPreview = "";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
