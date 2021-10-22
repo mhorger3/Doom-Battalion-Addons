@@ -201,6 +201,8 @@ class cfgVehicles
 		crew="101st_Pilot_212th";
 		forceInGarage=1;
 		crewExplosionProtection=0;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -1734,6 +1736,8 @@ class cfgVehicles
 		author="Trip";
 		scope=0;
 		side=1;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		crew="101st_Pilot_212th";
 		forceInGarage=1;
 		crewExplosionProtection=0;
@@ -3112,6 +3116,8 @@ class cfgVehicles
 		author="Trip";
 		scope=0;
 		side=1;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		crew="101st_Pilot_212th";
 		forceInGarage=1;
 		crewExplosionProtection=0;
@@ -16770,6 +16776,8 @@ class cfgVehicles
 		faction="Republic_101st";
 		crew="101st_Pilot_212th";
 		alwaysTarget=0;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -16885,6 +16893,8 @@ class cfgVehicles
 		armor=300;
 		scope=2;
 		scopeCurator=2;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		displayName="101st V-19 Torrent";
 		faction="Republic_101st";
 		crew="101st_Pilot_212th";
@@ -16939,6 +16949,8 @@ class cfgVehicles
 		displayname = "101st ARC-170 (FM)"
 		scope = 2;
 		scopeCurator = 2;
+		radarTargetSize = 1.2;
+		irTargetSize = 1.3;
 		faction="Republic_101st";
 		crew="101st_Pilot_212th";
 		weapons[]=
