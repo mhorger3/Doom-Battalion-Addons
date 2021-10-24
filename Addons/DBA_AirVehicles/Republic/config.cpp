@@ -4517,6 +4517,27 @@ class cfgVehicles
 			LAAT_LIGHTS
 			#include "baseLaatSwitcher.hpp"
 		};
+		class AnimationSources: AnimationSources
+		{
+			class Doors
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class Lamps
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class Turrets
+			{
+				source="user";
+				initPhase=1;
+				animPeriod=1;
+			};
+		};
 		class TextureSources
 		{
 			class 101st_base_LAAT
@@ -18919,6 +18940,7 @@ class cfgVehicles
 		waterLinearDampingCoefX=2;
 		waterAngularDampingCoef=3;
 		maxFordingDepth=110.65;
+		incomingMissileDetectionSystem = 16;
 		armor=500;
 		armorStructural=1;
 		altFullForce=137400;
@@ -18958,7 +18980,7 @@ class cfgVehicles
 			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class EventHandlers: DefaultEventHandlers
@@ -20301,6 +20323,12 @@ class cfgVehicles
 				source="user";
 				animPeriod=2;
 				initPhase=0;
+			};
+			class Turrets
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
 			};
 			class HitGlass1
 			{
