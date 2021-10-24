@@ -19916,7 +19916,7 @@ class cfgVehicles
 			maxTurn=120;
 			initTurn=0;
 			minElev=-120;
-			maxElev=10;
+			maxElev=120;
 			initElev=0;
 			maxXRotSpeed=0.30000001;
 			maxYRotSpeed=0.30000001;
