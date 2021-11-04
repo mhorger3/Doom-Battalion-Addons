@@ -137,29 +137,6 @@ class DBA_P2CloneBlackwaterUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneDolittleUniform : DBA_P2CloneUniformBase
-{
-	author = "Vulgar";
-	scope = 2;
-	displayName = "DBA P2 Clone Armour: Dolittle";
-	hiddenSelectionsTextures[] =
-	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dolittle_Chest_CO.paa",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dolittle_Legs_CO.paa"
-	};
-	hiddenSelectionsMaterials[] =
-	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Dolittle_Chest.RVMAT",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Dolittle_Legs.RVMAT"
-	};
-	class ItemInfo : UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "B_DBA_P2CloneDolittle_F";
-		containerClass = "Supply150";
-		mass = 40;
-	};
-};
 class DBA_P2CloneSeatieUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
@@ -312,6 +289,42 @@ class DBA_P2CloneFurnUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
+class DBA_P2ClonePunisherUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Punisher";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Punisher_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Punisher_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2ClonePunisher_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneFodderUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Fodder";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Fodder_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Fodder_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneFodder_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
 class DBA_P2CloneOaksyUniform : DBA_P2CloneUniformBase
 {
 	author = "Vulgar";
@@ -367,6 +380,24 @@ class DBA_P2CloneFalconUniform : DBA_P2CloneUniformBase
 	{
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneFalcon_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneServoUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Servo";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Servo_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Servo_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneServo_F";
 		containerClass = "Supply150";
 		mass = 40;
 	};

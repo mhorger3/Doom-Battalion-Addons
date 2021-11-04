@@ -125,3 +125,26 @@ class DBA_P2CloneSeeforLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
+class DBA_P2CloneDolittleLegacyUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Dolittle? More like DoesLittle (Legacy)";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Dolittle_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Dolittle_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Dolittle_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Dolittle_Legs.RVMAT"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneDolittleLegacy_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
