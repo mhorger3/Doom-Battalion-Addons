@@ -632,10 +632,10 @@ class CfgVehicles
 		model="212th\Vehicles\212th_APC\212th_apc.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\bantha\bantha-ext_arma_material_101st_co.paa",
-			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Tire_Arma_Material_CO.paa",
-			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Turret_Arma_Material_CO.paa",
-			"101st_Aux_Mod\Addons\textures\bantha\Bantha-Int_Arma_Material_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\bantha-ext_arma_material_101st_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Tire_Arma_Material_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Turret_Arma_Material_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Int_Arma_Material_CO.paa"
 		};
 		class TransportMagazines
 		{
@@ -658,7 +658,7 @@ class CfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{
@@ -1149,8 +1149,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_weapons_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_hull_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_weapons_co.paa"
 		};
 		class TransportItems
 		{
@@ -1245,8 +1245,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_weaponsgmg_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_hull_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_weaponsgmg_co.paa"
 		};
 		class TransportItems
 		{
@@ -1331,8 +1331,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_weapons_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_hull_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_weapons_co.paa"
 		};
 		class TransportItems
 		{
@@ -1412,8 +1412,8 @@ class CfgVehicles
 		faction="Republic_101st";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_hull_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Saber\saber_weapons_scout_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_hull_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_weapons_scout_co.paa"
 		};
 		class TransportItems
 		{
@@ -1565,15 +1565,15 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\Vehicles\Warden\overseer_ext1_cream_green_co.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Warden\overseer_ext2_cream_green_co.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Warden\overseer_turret_cream_co.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Warden\overseer_ext3_cream_green_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warden\overseer_ext1_cream_green_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warden\overseer_ext2_cream_green_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warden\overseer_turret_cream_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warden\overseer_ext3_cream_green_co.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 		class EventHandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';";
 		};
 		smokeLauncherGrenadeCount=8;
 		smokeLauncherVelocity=14;
@@ -1996,8 +1996,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_01_101_co.paa",
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_02_101_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_01_101_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_02_101_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
 			"A3\armor_f\data\cage_aaf_co.paa"
 		};
@@ -2082,7 +2082,7 @@ class CfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{
@@ -2122,8 +2122,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_01_co.paa",
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_02_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_01_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_02_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
 			"A3\armor_f\data\cage_aaf_co.paa"
 		};
@@ -2211,7 +2211,7 @@ class CfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{
@@ -2251,8 +2251,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_01_101_co.paa",
-			"101st_Aux_Mod\Addons\textures\Warrior\warrior_ext_02_101_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_01_101_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Warrior\warrior_ext_02_101_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
 			"A3\armor_f\data\cage_aaf_co.paa"
 		};
@@ -2340,7 +2340,7 @@ class CfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\Vehicles\Resupply\autocrate.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';";
 		};
 		class TransportWeapons
 		{
@@ -2374,7 +2374,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Fennek\LSV_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\LSV_CO.paa",
 			"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
 			"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
 		};
@@ -2395,8 +2395,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2493,8 +2493,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2555,8 +2555,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\Fennek\fennek_Medic_CO.paa",
-			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\fennek_Medic_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2719,9 +2719,9 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext01_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext02_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\101st_mbt_03_rcws_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101stMBT_ext01_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101stMBT_ext02_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101st_mbt_03_rcws_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
 		faction="Republic_101st";
@@ -2867,9 +2867,9 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext01_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\101stMBT_ext02_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\101st_mbt_03_rcws_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101stMBT_ext01_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101stMBT_ext02_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101st_mbt_03_rcws_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
 		faction="Republic_101st";
@@ -2996,9 +2996,9 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_body_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_tow_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_addons_101st_CO.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 		faction="Republic_101st";
@@ -3184,8 +3184,8 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_1_101st_Gray_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_1_101st_Gray_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
 		};
 		faction="Republic_101st";
@@ -3377,9 +3377,9 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_body_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_tow_101st_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_01_addons_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_body_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_tow_101st_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_addons_101st_CO.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 		faction="Republic_101st";
@@ -3716,8 +3716,8 @@ class CfgVehicles
 		textureList[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_1_101st_Gray_CO.paa",
-			"101st_Aux_Mod\Addons\textures\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_1_101st_Gray_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
 		};
 		faction="Republic_101st";
@@ -4000,9 +4000,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\marid_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\marid_co.paa",
 			"",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\maridturret_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\maridturret_co.paa",
 			"",
 			""
 		};
@@ -4152,8 +4152,8 @@ class CfgVehicles
 		vehicleClass="RD501_Vehicle_Class_IFV";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\skorpionmain_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\skorpionturret_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\skorpionmain_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\skorpionturret_co.paa",
 			"",
 			""
 		};
@@ -4228,9 +4228,9 @@ class CfgVehicles
 		vehicleClass="RD501_Vehicle_Class_IFV";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\vipermain_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viper2nd_co.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\Testing\viperturret_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\vipermain_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\viper2nd_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Testing\viperturret_co.paa",
 			"",
 			""
 		};
