@@ -15,6 +15,7 @@ class CfgPatches
 	};
 };
 class CfgVehicles {
+	class ACE_Flag_Black;
 	class 101st_Flag_Green : ACE_Flag_Black
 	{
 		dlc = "101st_Aux_Mod";

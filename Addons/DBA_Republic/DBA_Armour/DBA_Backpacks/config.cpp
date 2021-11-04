@@ -15,5 +15,5 @@ class CfgPatches
 	};
 };
 class CfgVehicles {
-	#include "backpacks.hpp";
+	#include "backpacks.hpp"
 };

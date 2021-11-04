@@ -1,4 +1,4 @@
-#include "basicdefines_A3.hpp"
+
 class DefaultEventhandlers;
 
 class CfgPatches
