@@ -766,7 +766,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class VehicleMagazine;
-	class DBA_25mm_PM258_KEP_x160_mag : VehicleMagazine {
+	class DBA_792_M5A_x400_mag : VehicleMagazine {
 		scope = 2;
 		displayname = "7.92mw M-5a";
 		ammo = "DBA_792_M5A";
