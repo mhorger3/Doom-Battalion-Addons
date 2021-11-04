@@ -183,3 +183,261 @@ class DBA_P2CloneB11TLUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
+
+// Broadsword 1-2
+
+class DBA_P2CloneB12Uniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12CIUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 CI";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2CI_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12CI_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12CICUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 CI-C";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2CIC_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12CIC_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12CMUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 CM";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2CM_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12CM_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12CMCUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 CM-C";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2CMC_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12CMC_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12SLUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 Squad Lead";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2SL_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12SL_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB12TLUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-2 Team Lead";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2TL_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB12TL_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+
+// Broadsword 1-3
+
+class DBA_P2CloneB13Uniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13CIUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 CI";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3CI_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13CI_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13CICUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 CI-C";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3CIC_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13CIC_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13CMUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 CM";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3CM_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13CM_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13CMCUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 CM-C";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3CMC_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13CMC_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13SLUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 Squad Lead";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3SL_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13SL_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
+class DBA_P2CloneB13TLUniform : DBA_P2CloneUniformBase
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Broadsword 1-3 Team Lead";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3TL_Armor_upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneB13TL_F";
+		containerClass = "Supply150";
+		mass = 40;
+	};
+};
