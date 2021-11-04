@@ -17,7 +17,9 @@ class CfgPatches
 };
 class CfgWeapons
 {
-
+	#include "legacy.hpp"
+	#include "CustomArmour.hpp"
+	#include "Broadsword1.hpp"
 	class U_I_CombatUniform;
 	class UniformItem;
 	class DBA_P2CloneUniformBase : U_I_CombatUniform
@@ -102,7 +104,4 @@ class CfgWeapons
 			mass = 40;
 		};
 	};
-	#include "legacy.hpp"
-	#include "CustomArmour.hpp"
-	#include "Broadsword1.hpp"
 };
