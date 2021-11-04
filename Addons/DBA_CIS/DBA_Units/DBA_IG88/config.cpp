@@ -58,7 +58,7 @@ class CfgVehicles
 		respawnMagazines[] = {};
 		items[] = {};
 		respawnItems[] = {};
-		armor = 120
+		armor = 120;
 		armorStructural = 10;
 		explosionShielding = 0.40000001;
 		minTotalDamageThreshold = 0.001;

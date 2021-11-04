@@ -12,12 +12,12 @@ class CfgPatches
 			"O_DBA_CIS_B1_Base_F",
 			"O_DBA_CIS_B1_Droid_F",
 			"O_DBA_CIS_B1_Flamer_Droid_F",
-			"O_DBA_CIS_OOM_Command_Droid_F",
+			"O_DBA_CIS_B1_Command_Droid_F",
 			"O_DBA_CIS_B1_Crew_Droid_F",
 			"O_DBA_CIS_B1_Heavy_Droid_F",
-			"O_DBA_CIS_OOM_Marine_Droid_F",
-			"O_DBA_CIS_OOM_Security_Droid_F",
-			"O_DBA_CIS_OOM_Pilot_Droid_F",
+			"O_DBA_CIS_B1_Marine_Droid_F",
+			"O_DBA_CIS_B1_Security_Droid_F",
+			"O_DBA_CIS_B1_Pilot_Droid_F",
 			"O_DBA_CIS_B1_Sniper_Droid_F",
 			"O_DBA_CIS_B1_AA_Droid_F",
 			"O_DBA_CIS_B1_AT_Droid_F",
@@ -26,28 +26,28 @@ class CfgPatches
 			"O_DBA_CIS_B1_Flamer_Droid_Geonosis_F",
 			"O_DBA_CIS_B1_AA_Droid_Geonosis_F",
 			"O_DBA_CIS_B1_AT_Droid_Geonosis_F",
-			"O_DBA_CIS_OOM_Command_Droid_Geonosis_F",
+			"O_DBA_CIS_B1_Command_Droid_Geonosis_F",
 			"O_DBA_CIS_B1_Heavy_Droid_Geonosis_F",
 			"O_DBA_CIS_B1_Sniper_Droid_Geonosis_F",
 			"O_DBA_CIS_B1_Droid_Jungle_F",
 			"O_DBA_CIS_B1_Flamer_Droid_Jungle_F",
 			"O_DBA_CIS_B1_AA_Droid_Jungle_F",
 			"O_DBA_CIS_B1_AT_Droid_Jungle_F",
-			"O_DBA_CIS_OOM_Command_Droid_Jungle_F",
+			"O_DBA_CIS_B1_Command_Droid_Jungle_F",
 			"O_DBA_CIS_B1_Heavy_Droid_Jungle_F",
 			"O_DBA_CIS_B1_Sniper_Droid_Jungle_F",
 			"O_DBA_CIS_B1_Droid_Training_F",
 			"O_DBA_CIS_B1_Flamer_Droid_Training_F",
 			"O_DBA_CIS_B1_AA_Droid_Training_F",
 			"O_DBA_CIS_B1_AT_Droid_Training_F",
-			"O_DBA_CIS_OOM_Command_Droid_Training_F", //
+			"O_DBA_CIS_B1_Command_Droid_Training_F", //
 			"O_DBA_CIS_B1_Heavy_Droid_Training_F",
 			"O_DBA_CIS_B1_Sniper_Droid_Training_F",
 			"O_DBA_CIS_B1_Droid_Winter_F",
 			"O_DBA_CIS_B1_Flamer_Droid_Winter_F",
 			"O_DBA_CIS_B1_AA_Droid_Winter_F",
 			"O_DBA_CIS_B1_AT_Droid_Winter_F",
-			"O_DBA_CIS_OOM_Command_Droid_Winter_F",
+			"O_DBA_CIS_B1_Command_Droid_Winter_F",
 			"O_DBA_CIS_B1_Heavy_Droid_Winter_F",
 			"O_DBA_CIS_B1_Sniper_Droid_Winter_F",
 		};
@@ -372,11 +372,11 @@ class CfgVehicles {
 		};
 		backpack = "DBA_B1_Backpack";
 	};
-	class O_DBA_CIS_OOM_Command_Droid_F : O_DBA_CIS_B1_Base_F
+	class O_DBA_CIS_B1_Command_Droid_F : O_DBA_CIS_B1_Base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OOM Command Droid";
+		displayName = "B1 Command Droid";
 		side = 0;
 		faction = "O_DBA_CIS_F";
 		editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Command_Droid_F.jpg";
@@ -391,7 +391,7 @@ class CfgVehicles {
 			"Head_NATO"
 		};
 		facewear = "";
-		uniformClass = "DBA_B1_OOM";
+		uniformClass = "DBA_B1_Command";
 		weapons[] =
 		{
 			"JLTS_E5",
@@ -722,11 +722,11 @@ class CfgVehicles {
 			};
 		};
 	};
-	class O_DBA_CIS_OOM_Marine_Droid_F : O_DBA_CIS_B1_Base_F
+	class O_DBA_CIS_B1_Marine_Droid_F : O_DBA_CIS_B1_Base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OOM Marine Droid";
+		displayName = "B1 Marine Droid";
 		side = 0;
 		faction = "O_DBA_CIS_F";
 		editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Marine_Droid_F.jpg";
@@ -805,11 +805,11 @@ class CfgVehicles {
 		};
 		backpack = "DBA_B1_Backpack";
 	};
-	class O_DBA_CIS_OOM_Security_Droid_F : O_DBA_CIS_B1_Base_F
+	class O_DBA_CIS_B1_Security_Droid_F : O_DBA_CIS_B1_Base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OOM Security Droid";
+		displayName = "B1 Security Droid";
 		side = 0;
 		faction = "O_DBA_CIS_F";
 		editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Security_Droid_F.jpg";
@@ -886,11 +886,11 @@ class CfgVehicles {
 		};
 		backpack = "DBA_B1_Backpack";
 	};
-	class O_DBA_CIS_OOM_Pilot_Droid_F : O_DBA_CIS_B1_Base_F
+	class O_DBA_CIS_B1_Pilot_Droid_F : O_DBA_CIS_B1_Base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OOM Pilot Droid";
+		displayName = "B1 Pilot Droid";
 		side = 0;
 		faction = "O_DBA_CIS_F";
 		editorPreview = "101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_OOM_Pilot_Droid_F.jpg";
@@ -1416,7 +1416,7 @@ class CfgVehicles {
 			"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"
 		};
 	};
-	class O_DBA_CIS_OOM_Command_Droid_Geonosis_F : O_DBA_CIS_OOM_Command_Droid_F
+	class O_DBA_CIS_B1_Command_Droid_Geonosis_F : O_DBA_CIS_B1_Command_Droid_F
 	{
 		editorSubcategory = "O_DBA_CIS_B1_Droids_Geonosis";
 		vehicleClass = "O_DBA_CIS_B1_Droids_Geonosis";
@@ -1500,7 +1500,7 @@ class CfgVehicles {
 			"101st_Aux_Mod\Addons\DBA_CIS\DBA_Armour\DBA_B1Battledroid\data\Jungle_B1_Body_CO.paa"
 		};
 	};
-	class O_DBA_CIS_OOM_Command_Droid_Jungle_F : O_DBA_CIS_OOM_Command_Droid_F
+	class O_DBA_CIS_B1_Command_Droid_Jungle_F : O_DBA_CIS_B1_Command_Droid_F
 	{
 		editorSubcategory = "O_DBA_CIS_B1_Droids_Jungle";
 		vehicleClass = "O_DBA_CIS_B1_Droids_Jungle";
@@ -1584,7 +1584,7 @@ class CfgVehicles {
 			"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"
 		};
 	};
-	class O_DBA_CIS_OOM_Command_Droid_Training_F : O_DBA_CIS_OOM_Command_Droid_F
+	class O_DBA_CIS_B1_Command_Droid_Training_F : O_DBA_CIS_B1_Command_Droid_F
 	{
 		editorSubcategory = "O_DBA_CIS_B1_Droids_Training";
 		vehicleClass = "O_DBA_CIS_B1_Droids_Training";
@@ -1668,7 +1668,7 @@ class CfgVehicles {
 			"101st_Aux_Mod\Addons\DBA_CIS\DBA_Armour\DBA_B1Battledroid\data\Winter_B1_Body_CO.paa"
 		};
 	};
-	class O_DBA_CIS_OOM_Command_Droid_Winter_F : O_DBA_CIS_OOM_Command_Droid_F
+	class O_DBA_CIS_B1_Command_Droid_Winter_F : O_DBA_CIS_B1_Command_Droid_F
 	{
 		editorSubcategory = "O_DBA_CIS_B1_Droids_Winter";
 		vehicleClass = "O_DBA_CIS_B1_Droids_Winter";

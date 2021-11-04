@@ -17,7 +17,7 @@ class CfgPatches
 			"DBA_B1_Marine",
 			"DBA_B1_Pilot",
 			"DBA_B1_Crew",
-			"DBA_B1_OOM",
+			"DBA_B1_Command",
 			"DBA_B1_Rocket",
 			"DBA_B1_AT",
 			"DBA_B1_AA",
@@ -25,7 +25,7 @@ class CfgPatches
 			"DBA_B1_Heavy",
 			"DBA_B1_Flamer",
 			"DBA_B1_Geonosis",
-			"DBA_B1_OOM_Geonosis",
+			"DBA_B1_Command_Geonosis",
 			"DBA_B1_Sniper_Geonosis",
 			"DBA_B1_Jungle",
 			"DBA_B1_Training",
@@ -260,7 +260,7 @@ class CfgWeapons
 			uniformClass = "O_DBA_CIS_B1_Crew_Droid_F";
 		};
 	};
-	class DBA_B1_OOM : DBA_B1
+	class DBA_B1_Command : DBA_B1
 	{
 		displayName = "DBA B1 Droid Commander";
 		hiddenSelectionsTextures[] =
@@ -269,7 +269,7 @@ class CfgWeapons
 		};
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "O_DBA_CIS_OOM_Command_Droid_F";
+			uniformClass = "O_DBA_CIS_B1_Command_Droid_F";
 		};
 	};
 	class DBA_B1_Rocket : DBA_B1
@@ -340,7 +340,7 @@ class CfgWeapons
 			uniformClass = "O_DBA_CIS_B1_Droid_Geonosis_F";
 		};
 	};
-	class DBA_B1_OOM_Geonosis : DBA_B1
+	class DBA_B1_Geonosis_Commander : DBA_B1
 	{
 		displayName = "DBA B1 Droid Commander (Geonosis Camo)";
 		hiddenSelectionsTextures[] =
@@ -349,7 +349,7 @@ class CfgWeapons
 		};
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "O_DBA_CIS_OOM_Command_Droid_Geonosis_F";
+			uniformClass = "O_DBA_CIS_B1_Command_Droid_Geonosis_F";
 		};
 	};
 	class DBA_B1_Sniper_Geonosis : DBA_B1

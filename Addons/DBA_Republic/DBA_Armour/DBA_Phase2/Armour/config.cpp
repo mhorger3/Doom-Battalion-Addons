@@ -104,4 +104,5 @@ class CfgWeapons
 	};
 	#include "legacy.hpp"
 	#include "CustomArmour.hpp"
+	#include "Broadsword1.hpp"
 };

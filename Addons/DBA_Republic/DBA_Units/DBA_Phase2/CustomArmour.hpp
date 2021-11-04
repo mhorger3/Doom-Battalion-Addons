@@ -182,6 +182,24 @@ class B_DBA_P2CloneSpark_F : B_DBA_P2Clone_Base
 	};
 	uniformClass = "DBA_P2CloneSparkUniform";
 };
+class B_DBA_P2CloneVulgar_F : B_DBA_P2Clone_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "DBA Phase 2 Clone: Vulgar";
+	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Vulgar_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Vulgar_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Vulgar_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Vulgar_Legs.RVMAT"
+	};
+	uniformClass = "DBA_P2CloneVulgarUniform";
+};
 // Claymore
 class B_DBA_P2CloneBlood_F : B_DBA_P2Clone_Base
 {
@@ -201,7 +219,6 @@ class B_DBA_P2CloneBlood_F : B_DBA_P2Clone_Base
 	};
 	uniformClass = "DBA_P2CloneBloodUniform";
 };
-/*
 class B_DBA_P2CloneRepublican_F : B_DBA_P2Clone_Base
 {
 	scope = 2;
@@ -213,9 +230,13 @@ class B_DBA_P2CloneRepublican_F : B_DBA_P2Clone_Base
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Republican_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Republican_Legs_CO.paa"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Republican_Upper.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Republican_Lower.RVMAT"
+	};
 	uniformClass = "DBA_P2CloneRepublicanUniform";
 };
-*/
 class B_DBA_P2CloneFurn_F : B_DBA_P2Clone_Base
 {
 	scope = 2;
