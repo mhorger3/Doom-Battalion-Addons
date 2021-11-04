@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"101st_EWEB"
+			"101st_EWEB", "101st_Tyrant", "101st_Overlord"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -367,6 +367,26 @@ class CfgWeapons
 		{
 			"DBA_lmg_red_x500_mag"
 		};
+	};
+    class B_SAM_System_02_F;
+	class B_SAM_System_01_F;	
+	class 101st_Tyrant : B_SAM_System_02_F
+	{
+		displayName = "OPFOR Tyrant";
+		side = 0;
+		editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
+        faction = "O_DBA_CIS_F";
+		scopeCurator=2;
+	};
+	class 101st_Overlord : B_SAM_System_01_F
+	{
+		displayName = "OPFOR Overlord";
+		side = 0;
+		editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
+        faction = "O_DBA_CIS_F";
+		scopeCurator=2;
 	};
 };
 class CfgMagazines
