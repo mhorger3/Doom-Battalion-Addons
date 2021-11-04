@@ -74,6 +74,7 @@ class CfgVehicles {
 		faction = "O_DBA_CIS_F";
 		genericNames = "JLTS_DroidsB1";
 		model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
+		hiddenSelections[] = {"camo1"};
 		identityTypes[] =
 		{
 			"NoGlasses",

@@ -158,8 +158,8 @@ class CfgVehicles
 		uniformClass = "DBA_BXCommando";
 		model = "3AS\3as_b1_Low_pol\3AS_LPB1_V3\Model\3AS_BX_DROID.p3d";
 		hiddenSelections[] = { "Camo" };
-		hiddenSelectionsTextures[] = { "\3AS\3as_b1_Low_pol\3AS_LPB1_V3\Model\textures\3AS_LPB1_BSC_V3_CA.paa" };
-		hiddenSelectionsMaterial[] = { "\3AS\3as_b1_Low_pol\3AS_LPB1_V3\Model\textures\BX.rvmat" };
+		hiddenSelectionsTextures[] = {"212th\Units\3AS_LPB1_V3\Model\textures\212th_BX_Droid_CO.paa"};
+		hiddenSelectionsMaterials[] = {"212th\Units\3AS_LPB1_V3\Model\textures\BX.rvmat"};
 		linkedItems[] =
 		{
 			"ItemMap",

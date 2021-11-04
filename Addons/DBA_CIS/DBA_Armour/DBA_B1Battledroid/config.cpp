@@ -215,21 +215,23 @@ class CfgWeapons
 	class DBA_B1_Security : DBA_B1
 	{
 		displayName = "DBA B1 Security Droid";
+		hiddenSelections[] = { "camo1" };
 		hiddenSelectionsTextures[] =
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_security_co.paa"
 		};
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "O_DBA_CIS_OOM_Security_Droid_F";
+			uniformClass = "O_DBA_CIS_B1_Security_Droid_F";
 		};
 	};
 	class DBA_B1_Marine : DBA_B1
 	{
 		displayName = "DBA B1 Droid Marine";
+		hiddenSelections[] = { "camo1" };
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "O_DBA_CIS_OOM_Marine_Droid_F";
+			uniformClass = "O_DBA_CIS_B1_Marine_Droid_F";
 		};
 		hiddenSelectionsTextures[] =
 		{
@@ -238,14 +240,15 @@ class CfgWeapons
 	};
 	class DBA_B1_Pilot : DBA_B1
 	{
-		displayName = "$STR_JLTS_names_B1UniformPilot";
+		displayName = "DBA B1 Pilot Droid";
+		hiddenSelections[] = { "camo1" };
 		hiddenSelectionsTextures[] =
 		{
 			"\MRC\JLTS\characters\DroidArmor\data\b1_pilot_co.paa"
 		};
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "O_DBA_CIS_OOM_Pilot_Droid_F";
+			uniformClass = "O_DBA_CIS_B1_Pilot_Droid_F";
 		};
 	};
 	class DBA_B1_Crew : DBA_B1
