@@ -115,24 +115,6 @@ class B_DBA_P2CloneBlackwater_F : B_DBA_P2Clone_Base
 	};
 	uniformClass = "DBA_P2CloneBlackwaterUniform";
 };
-class B_DBA_P2CloneDolittle_F : B_DBA_P2Clone_Base
-{
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "DBA Phase 2 Clone: Dolittle";
-	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
-	hiddenSelectionsTextures[] =
-	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dolittle_Chest_CO.paa",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dolittle_Legs_CO.paa"
-	};
-	hiddenSelectionsMaterials[] =
-	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Dolittle_Upper.RVMAT",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Dolittle_Lower.RVMAT"
-	};
-	uniformClass = "DBA_P2CloneDolittleUniform";
-};
 class B_DBA_P2CloneSeatie_F : B_DBA_P2Clone_Base
 {
 	scope = 2;
@@ -250,6 +232,32 @@ class B_DBA_P2CloneFurn_F : B_DBA_P2Clone_Base
 	};
 	uniformClass = "DBA_P2CloneFurnUniform";
 };
+class B_DBA_P2ClonePunisher_F : B_DBA_P2Clone_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "DBA Phase 2 Clone: Punisher";
+	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Punisher_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Punisher_Legs_CO.paa"
+	};
+	uniformClass = "DBA_P2ClonePunisherUniform";
+};
+class B_DBA_P2CloneFodder_F : B_DBA_P2Clone_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "DBA Phase 2 Clone: Fodder";
+	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Fodder_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Fodder_Legs_CO.paa"
+	};
+	uniformClass = "DBA_P2CloneFodderUniform";
+};
 class B_DBA_P2CloneOaksy_F : B_DBA_P2Clone_Base
 {
 	scope = 2;
@@ -293,4 +301,17 @@ class B_DBA_P2CloneFalcon_F : B_DBA_P2Clone_Base
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Falcon_Legs.RVMAT"
 	};
 	uniformClass = "DBA_P2CloneFalconUniform";
+};
+class B_DBA_P2CloneServo_F : B_DBA_P2Clone_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "DBA Phase 2 Clone: Servo";
+	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Servo_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Servo_Legs_CO.paa"
+	};
+	uniformClass = "DBA_P2CloneServoUniform";
 };

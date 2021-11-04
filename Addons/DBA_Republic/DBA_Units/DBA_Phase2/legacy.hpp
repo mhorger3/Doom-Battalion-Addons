@@ -138,3 +138,21 @@ class B_DBA_P2CloneSeeforLegacy_F : B_DBA_P2Clone_Base
 	};
 	uniformClass = "DBA_P2CloneSeeforLegacyUniform";
 };
+class B_DBA_P2CloneDolittleLegacy_F : B_DBA_P2Clone_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "DBA Phase 2 Clone: Dolittle? More like DoesLittle (Legacy)";
+	editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Dolittle_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Dolittle_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Dolittle_Upper.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Dolittle_Lower.RVMAT"
+	};
+	uniformClass = "DBA_P2CloneDolittleLegacyUniform";
+};
