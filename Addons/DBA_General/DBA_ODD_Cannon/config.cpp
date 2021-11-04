@@ -7,7 +7,6 @@ class CfgPatches
 
         requiredAddons[] =
         {
-            "DBA_Aux_Mod_Common"
         };
         requiredVersion = 0.1;
         units[] = {};

@@ -7,7 +7,6 @@ class CfgPatches
 
         requiredAddons[] =
         {
-            "101st_Aux_Mod_Vehicles"
         };
         requiredVersion = 0.1;
         units[] = {};

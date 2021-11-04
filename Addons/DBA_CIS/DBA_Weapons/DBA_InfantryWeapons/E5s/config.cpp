@@ -3,10 +3,8 @@ class CfgPatches
 	class DBA_Aux_Mod_E5s
 	{
 		author="";
-		requiredAddons[]=
+	requiredAddons[]=
 		{
-			"101st_Aux_Mod",
-			"DBA_patch_weapons",
 		};
 		requiredVersion=0.1;
 		units[]={};

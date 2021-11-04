@@ -7,7 +7,6 @@ class CfgPatches
 
         requiredAddons[] =
         {
-            "101st_Aux_Mod_Vehicles",
             "ace_common",
             "ace_medical"
         };

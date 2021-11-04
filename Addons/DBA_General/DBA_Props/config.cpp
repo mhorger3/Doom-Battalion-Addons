@@ -4,7 +4,7 @@ class cfgPatches
 	{
 		author = "Vulgar";
 		name = "DBA Prop Set";
-		requiredaddons[] = { "101st_Aux_Mod" };
+		requiredaddons[] = {};
 		requiredversion = 0.1;
 		units[] = { "DBA_CommandPost" };
 		weapons[] = {  };
