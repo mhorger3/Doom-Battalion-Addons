@@ -9,20 +9,12 @@
 	class RD501_JLTS_Clone_LR_attachment;
 	class RD501_JLTS_Clone_jumppack_mc;
 	class TFAR_rt1523g_big;
-	class 101st_Support_Backpack: JLTS_Clone_backpack	{
-		dlc = "101st_Aux_Mod";
-			displayname="101st Reciprocating Backpack";
-			maximumLoad=950;
-			hiddenSelectionsTextures[] = {"101st_aux_mod\addons\vehicles\repulsor\data\arms_and_backpack_co.paa"};
-			model = "101st_aux_mod\addons\vehicles\repulsor\cannonBackpack.p3d";
-			hiddenSelections[] = {"camo2"};
-	};
 	class 101st_SCI_Backpack: JLTS_Clone_backpack	{
 			dlc = "101st_Aux_Mod";
 			displayname="101st JTLS Canister (Expanded)";
 			maximumLoad=500;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\GAR_Backpack_CO.paa"};
 	};
 	class 101st_belt_bag: JLTS_Clone_belt_bag
 	{
@@ -56,29 +48,29 @@
 				"camo1"
 			};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\CISClones\Traitor_Backpack_CO.paa"};
-			hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TaitorBackpack.RVMAT" };
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\Traitor_Backpack_CO.paa"};
+			hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\TaitorBackpack.RVMAT" };
 	};
 	class 101st_Scuba_Backpack: JLTS_Clone_backpack	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st Scuba Canister (Expanded)";
 			maximumLoad=500;
-			model = "\101st_Aux_Mod\Addons\textures\101st\backpacks\scubaBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\data\Scuba_Backpack_CO.paa"};
+			model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\scubaBackpack.p3d";
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\data\Scuba_Backpack_CO.paa"};
 	};
 	class 101st_SCI_Backpack_EOD: JLTS_Clone_backpack_eod	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st JTLS EOD Canister (Expanded)";
 			maximumLoad=750;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\EOD_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\EOD_Backpack_CO.paa"};
 	};
 	class 101st_SCI_Backpack_medic: JLTS_Clone_backpack_medic	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st JTLS Medic Canister (Expanded)";
 			maximumLoad=650;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\MED_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\MED_Backpack_CO.paa"};
 	};
 	class 101st_SCI_Backpack_medic_LR: TFAR_rt1523g_big	{
 		dlc = "101st_Aux_Mod";
@@ -86,7 +78,7 @@
 			maximumLoad=650;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
 			hiddenSelections[] = {"camo1"};
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\MED_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\MED_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 			tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -98,7 +90,7 @@
 		maximumLoad=500;
 		hiddenSelections[] = {"camo1"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\GAR_Backpack_CO.paa"};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -110,7 +102,7 @@
 		maximumLoad=500;
 		hiddenSelections[] = {"camo1"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\GAR_Backpack_CO.paa"};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -122,7 +114,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -134,7 +126,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Night_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -146,7 +138,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Night_MedBackpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_MedBackpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -158,7 +150,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Tropic_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -170,7 +162,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Urban_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -182,7 +174,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Winter_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -192,35 +184,35 @@
 			dlc = "101st_Aux_Mod";
 			displayname="101st ARF Arid JTLS Canister (Expanded)";
 			maximumLoad=700;
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 	};
 	class 101st_ARF_Night_Backpack: JLTS_Clone_backpack	{
 			dlc = "101st_Aux_Mod";
 			displayname="101st ARF Night JTLS Canister (Expanded)";
 			maximumLoad=700;
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Night_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 	};
 	class 101st_ARF_Tropic_Backpack: JLTS_Clone_backpack	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st ARF Tropic JTLS Canister (Expanded)";
 			maximumLoad=700;
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Tropic_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 	};
 	class 101st_ARF_Urban_Backpack: JLTS_Clone_backpack	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st ARF Urban JTLS Canister (Expanded)";
 			maximumLoad=700;
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Urban_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 	};
 	class 101st_ARF_Winter_Backpack: JLTS_Clone_backpack	{
 		dlc = "101st_Aux_Mod";
 			displayname="101st ARF Winter JTLS";
 			maximumLoad=700;
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Winter_Backpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 	};
 	class 101st_Arid_Backpack_medic_LR: TFAR_rt1523g_big	{
@@ -229,7 +221,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_MedBackpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_MedBackpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -241,7 +233,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Tropic_MedBackpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_MedBackpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -253,7 +245,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Urban_MedBackpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_MedBackpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -265,7 +257,7 @@
 			maximumLoad=700;
 			hiddenSelections[] = {"camo1"};
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
-			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Winter_MedBackpack_CO.paa"};
+			hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_MedBackpack_CO.paa"};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
 					tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -326,7 +318,7 @@
 		displayname="101st Jumppack (JLTS)";
 		maximumLoad=500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_Jumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\101st_Jumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -339,7 +331,7 @@
 		displayname="101st Medic Jumppack (JLTS)";
 		maximumLoad=500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_MedJumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\101st_MedJumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -352,7 +344,7 @@
 		displayname="101st Dagger Jumppack (JLTS)";
 		maximumLoad=500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_DaggerJumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\101st_DaggerJumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -383,7 +375,7 @@
             };
 		maximumload = 500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_Jumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\101st_Jumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -411,7 +403,7 @@
             };
 		maximumload = 500;
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\textures\101st\backpacks\101st_Hammer_Jumpack_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\101st_Hammer_Jumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";

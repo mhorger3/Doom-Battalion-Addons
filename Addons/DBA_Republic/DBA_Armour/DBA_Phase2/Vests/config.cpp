@@ -81,7 +81,7 @@ class CfgWeapons {
 		scope=1;
 		scopeArsenal=2;
 		displayName="101st Green Suspenders (JLTS)";
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\clone_vest_suspender_green_co.paa"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\clone_vest_suspender_green_co.paa"};
 		class ItemInfo: VestItem
 		{
 			containerClass="Supply100";
@@ -124,7 +124,7 @@ class CfgWeapons {
 			"camo1",
 			"camo2"
 		};
-		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Sgt_Pauldron_CO.paa"};
+		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Sgt_Pauldron_CO.paa"};
 		class ItemInfo: VestItem
 		{
 			containerClass="Supply100";
@@ -151,8 +151,8 @@ class CfgWeapons {
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa" };
-		hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT" };
+		hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\Traitor_Pauldron_CO.paa" };
+		hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\TaitorPauldron.RVMAT" };
 		class ItemInfo : VestItem
 		{
 			containerClass = "Supply100";
@@ -179,8 +179,8 @@ class CfgWeapons {
 			"camo1",
 			"camo2"
 		};
-		hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Pauldron_CO.paa","\101st_Aux_Mod\Addons\textures\CISClones\Traitor_Officer_CO.paa", };
-		hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\textures\CISClones\TaitorPauldron.RVMAT","\101st_Aux_Mod\Addons\textures\CISClones\TaitorOfficer.RVMAT" };
+		hiddenSelectionsTextures[] = { "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\Traitor_Pauldron_CO.paa","\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\Traitor_Officer_CO.paa", };
+		hiddenSelectionsMaterials[] = { "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\TaitorPauldron.RVMAT","\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\TaitorOfficer.RVMAT" };
 		class ItemInfo : VestItem
 		{
 			containerClass = "Supply100";
@@ -203,7 +203,7 @@ class CfgWeapons {
 		scopeArsenal=2;
 		displayName="101st S. Sgt Pauldron (JLTS)";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
-		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_SSGT_Pauldron_CO.paa"};
+		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_SSGT_Pauldron_CO.paa"};
 		ballisticsComputer = 0;
 		hiddenSelections[]=
 		{
@@ -230,7 +230,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Medical_Pauldron_CP_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Pauldron_CP_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -252,7 +252,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_RTO_Pauldron_CP_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Pauldron_CP_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -274,8 +274,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Medical_Kama_CP_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Medical_Pauldron_CP_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Kama_CP_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Pauldron_CP_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -302,8 +302,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_RTO_Kama_CP_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_RTO_Pauldron_CP_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Kama_CP_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Pauldron_CP_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -330,7 +330,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Cpl_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Cpl_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -352,7 +352,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_SrCPL_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_SrCPL_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -374,8 +374,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Kama_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Kama_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -402,8 +402,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Medic_Kama_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_Medical_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Medic_Kama_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_Medical_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -430,8 +430,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Base_Kama_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_Base_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Base_Kama_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_Base_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -458,8 +458,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_RTO_Kama_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_RTO_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_RTO_Kama_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_RTO_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -486,7 +486,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_CC_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_CC_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -508,7 +508,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Blind_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Blind_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -530,7 +530,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Jerec_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Jerec_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -552,7 +552,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Spark_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Spark_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -574,7 +574,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Hambino_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Hambino_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -596,7 +596,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Kel_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Kel_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -618,7 +618,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Seatie_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Seatie_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -640,7 +640,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Company_CSM_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Company_CSM_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -662,7 +662,51 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Platoon_CSM_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Platoon_CSM_Pauldron_CO.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			containerClass="Supply100";
+			uniformType="Default";
+			mass=80;
+			vestType = "Rebreather";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+			hiddenSelections[] = {"camo1"};
+		};
+	};
+	class 101st_Custom_Medical_CSM_Pauldron: V_RebreatherB
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=1;
+		scopeArsenal=2;
+		displayName="101st Medical CSM Pauldron (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\Medical_CSM_Pauldron_CO.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			containerClass="Supply100";
+			uniformType="Default";
+			mass=80;
+			vestType = "Rebreather";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+			hiddenSelections[] = {"camo1"};
+		};
+	};
+	class 101st_Custom_Radio_CSM_Pauldron: V_RebreatherB
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=1;
+		scopeArsenal=2;
+		displayName="101st Radio CSM Pauldron (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\RTO_CSM_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -684,7 +728,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_2ndLT_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_2ndLT_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -706,7 +750,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_1stLT_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_1stLT_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -728,7 +772,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_2ndLT_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_2ndLT_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -750,8 +794,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Kama_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\101st_Airborne_Rigging_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Kama_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -787,221 +831,7 @@ class CfgWeapons {
 			vestType = "Rebreather";
 		};
 	};
-	class JLTS_CloneNVG;
-	class 101st_Visor: JLTS_CloneNVG
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={4};
-		displayName="[101st] CP Custom Visor";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\CP_CO.paa"
-		};
-	};
-	class 101st_RTO_Visor : JLTS_CloneNVG
-	{
-		modelOptics = "";
-		useModelOptics = 0;
-		opticsDisablePeripherialVision = 0;
-		visionMode[] =
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[] = {4};
-		displayName = "[101st] RTO Custom Visor";
-		hiddenSelections[] =
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\RTO_Visor_CO.paa"
-		};
-	};
-	class 101st_Medic_Visor : JLTS_CloneNVG
-	{
-		modelOptics = "";
-		useModelOptics = 0;
-		opticsDisablePeripherialVision = 0;
-		visionMode[] =
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[] = {4};
-		displayName = "[101st] Medic Custom Visor";
-		hiddenSelections[] =
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\Medic_Visor_CO.paa"
-		};
-	};
-	class JLTS_CloneNVGCC;
-	class 101st_Visor_CCVisor : JLTS_CloneNVGCC
-	{
-		displayName = "[101st] Clone Commander Visor";
-		modelOptics = "";
-		useModelOptics = 0;
-		opticsDisablePeripherialVision = 0;
-		visionMode[] =
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[] = { 0,1 };
-	};
-	class 101st_LCP_Visor: JLTS_CloneNVG
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={4};
-		displayName="[101st] LCP Custom Visor";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-	};
-	class JLTS_CloneNVG_black;
-	class 101st_Visor_Black : JLTS_CloneNVG_black
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={4};
-		displayName="[101st] Black Visor";
-	};
-	class JLTS_CloneNVGRange;
-	class 101st_Visor_Range : JLTS_CloneNVGRange
-	{
-		displayName="[101st] White Rangefinder";
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-	};
-	class 101st_Visor_DoomRange : JLTS_CloneNVGRange
-	{
-		displayName="[101st] Doom Rangefinder";
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\Doom_Range_CO.paa"
-		};
-	};
-	class 101st_Visor_GreyRange : JLTS_CloneNVGRange
-	{
-		displayName="[101st] Grey Rangefinder";
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\Doom_RTO_Range_CO.paa"
-		};
-	};
-	class 101st_Visor_MedicRange : JLTS_CloneNVGRange
-	{
-		displayName="[101st] Medic Rangefinder";
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\Doom_Medic_Range_CO.paa"
-		};
-	};
-	class JLTS_CloneNVGRange_black;
-	class 101st_Visor_Range_Black : JLTS_CloneNVGRange_black
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		displayName="[101st] Black Rangefinder";
-	};
-
-	class JLTS_CloneNVG_spec;
-	class 101st_Spec_NVG : JLTS_CloneNVG_spec
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={4};
-		displayName="[101st] White Specialist Visor";
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\textures\Bino\CP_CO.paa"
-		};
-	};
-
-	class JLTS_CloneNVG_spec_black;
-	class 101st_Spec_Black_NVG : JLTS_CloneNVG_spec_black
-	{
-		modelOptics="";
-		useModelOptics=0;
-		opticsDisablePeripherialVision=0;
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={4};
-		displayName="[101st] Black Specialist Visor";
-	};
-
-
-	// binoc
-	class JLTS_CloneBinocular_black;
-	class 101st_CloneBinocular_black : JLTS_CloneBinocular_black
-	{
-		displayName="[101st] Clone Binocular Black";
-	};
-
-	class JLTS_CloneBinocular;
-	class 101st_CloneBinocular : JLTS_CloneBinocular
-	{
-		displayName="[101st] Clone Binocular";
-	};
-
+	
 	class 101st_212_Rebreather: V_RebreatherB
 	{
 		author="Dutch";
