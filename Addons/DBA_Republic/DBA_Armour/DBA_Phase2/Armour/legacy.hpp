@@ -1,3 +1,4 @@
+class UniformItem;
 class DBA_P2CloneUniformBase;
 class DBA_P2CloneBaconLegacyUniform : DBA_P2CloneUniformBase
 {
