@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "101st_Aux_Mod\Addons\Vehicles\Nu\interior_NOHQ.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\interior_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "101st_Aux_Mod\Addons\Vehicles\Nu\interior_AS.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\interior_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "101st_Aux_Mod\Addons\Vehicles\Nu\interior_SMDI.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\interior_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

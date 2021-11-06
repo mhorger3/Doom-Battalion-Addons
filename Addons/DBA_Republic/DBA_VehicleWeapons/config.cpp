@@ -1327,7 +1327,7 @@ class CfgWeapons
 		modes[]= {"Single1", "Single2", "Single3", "Single4", "Single5"};
 		class EventHandlers : DefaultEventhandlers
 		{
-			Fired = "[_this select 6, _this select 4] execVM '101st_Aux_Mod\Addons\DBA_OrbitalDesignator\functions\fn_Fired_nuke.sqf';";
+			Fired = "[_this select 6, _this select 4] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_OrbitalDesignator\functions\fn_Fired_nuke.sqf';";
 		};
 		
 		class GunParticles {
@@ -1422,7 +1422,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					50.1622777,
 					0.8,
 					2500
@@ -1540,7 +1540,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1,
 					1,
 					2100
@@ -1677,7 +1677,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1.25,
 					0.65,
 					2500
@@ -1814,7 +1814,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.85,
 					2100
@@ -2481,7 +2481,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					1.35,
 					2100
@@ -2592,7 +2592,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.8,
 					1,
 					2100
@@ -3698,7 +3698,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					1,
 					3000
@@ -3807,7 +3807,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.875,
 					3000
@@ -5528,7 +5528,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.75,
 					1,
 					2100

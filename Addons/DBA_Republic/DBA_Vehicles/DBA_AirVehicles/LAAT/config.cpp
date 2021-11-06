@@ -510,7 +510,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -546,7 +546,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -556,7 +556,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -569,7 +569,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -580,7 +580,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -2049,7 +2049,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -2085,7 +2085,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -2095,7 +2095,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -2108,7 +2108,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -2119,7 +2119,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -3428,7 +3428,7 @@ class cfgVehicles
 		};
 		class EventHandlers: DefaultEventhandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_3.sqf';";
         };
 		class UserActions
 		{
@@ -3464,7 +3464,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -3474,7 +3474,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -3487,7 +3487,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -3498,7 +3498,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -4499,11 +4499,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4546,8 +4546,8 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
 				};
@@ -4558,7 +4558,7 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
 					"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
@@ -4583,11 +4583,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4609,11 +4609,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
 				};
 			};
 			class 101st_CG_LAAT
@@ -4622,11 +4622,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_doors_CO.paa"
 				};
 			};
 		};
@@ -4648,11 +4648,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4674,11 +4674,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\101st_laat_base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
 				};
 			};
 			class 101st_CG_LAAT
@@ -4687,11 +4687,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_doors_CO.paa"
 				};
 			};
 		};
@@ -4712,11 +4712,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4742,11 +4742,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4772,11 +4772,11 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4809,8 +4809,8 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Wings_Doors_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
         };
@@ -4845,11 +4845,11 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Wings_Doors_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -4882,11 +4882,11 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Wings_Doors_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\Command_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Wings_Doors_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\Command_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -16398,17 +16398,17 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\Vehicles\Nu\exterior_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\wings_CO.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\interior_co.paa",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\cockpit_doors_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\exterior_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\interior_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\cockpit_doors_co.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"101st_Aux_Mod\Addons\Vehicles\Nu\NU-Exterior.rvmat",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\NU-Wings.rvmat",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\NU-Interior.rvmat",
-			"101st_Aux_Mod\Addons\Vehicles\Nu\NU-Cockpit.rvmat"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\NU-Exterior.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\NU-Wings.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\NU-Interior.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\Nu\NU-Cockpit.rvmat"
 		};
 		class ViewPilot
 		{
@@ -16665,7 +16665,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -16675,7 +16675,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -16688,7 +16688,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -16699,7 +16699,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -17436,7 +17436,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -17446,7 +17446,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -17459,7 +17459,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -17470,7 +17470,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -17519,12 +17519,12 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\mk4\body_1_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\mk4\body_1_co.paa",
 			"kobra\442_a_vehicle\laat\data\body_2_co.paa",
 			"kobra\442_a_vehicle\laat\data\door_1_co.paa",
 			"kobra\442_a_vehicle\laat\data\door_2_co.paa",
 			"kobra\442_a_vehicle\laat\data\door_3_co.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\mk4\wings_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\mk4\wings_co.paa",
 			"kobra\442_a_vehicle\laat\data\missiles_co.paa",
 			"kobra\442_a_vehicle\laat\data\cockpits_co.paa",
 			"kobra\442_a_vehicle\laat\data\glass_ca.paa"
@@ -17614,7 +17614,7 @@ class cfgVehicles
 		};
 		class EventHandlers: EventHandlers
         {
-            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_4.sqf';";
+            init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_4.sqf';";
         };
 		class ViewPilot
 		{
@@ -17727,7 +17727,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -17737,7 +17737,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -17750,7 +17750,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -17761,7 +17761,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -18137,8 +18137,8 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
         };
@@ -18172,11 +18172,11 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\GC_LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\GC_LAAT_doors_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -18208,11 +18208,11 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-            "101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\CG_LAAT_Base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
+            "101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 			"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\LAAT\GC_LAAT_doors_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\GC_LAAT_doors_CO.paa"
         };
 		class ACE_SelfActions
 		{
@@ -18244,7 +18244,7 @@ class cfgVehicles
 		getInAction="GetInHigh";
 		getOutAction = "GetOutHigh";
 		driverCanEject = 1;
-		model="\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\YWing.p3d";
+		model="\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
@@ -18624,7 +18624,7 @@ class cfgVehicles
 				priority = 21;
 				onlyForPlayer = 1;
 				condition = "(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 
 			class ThrusterDisngage: ThrusterEngage
@@ -18634,7 +18634,7 @@ class cfgVehicles
 				displayNameDefault = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip = "<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition = "((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 
 			class ThrusterEngage_spam: ThrusterEngage
@@ -18647,7 +18647,7 @@ class cfgVehicles
 				priority = 0;
 				onlyForPlayer = 1;
 				condition = "((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19"
 			};
 
@@ -18658,7 +18658,7 @@ class cfgVehicles
 				displayNameDefault = "";
 				textToolTip = "";
 				condition = "((player == driver this) AND (alive this))";
-				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
 			};
 		};
@@ -18668,9 +18668,9 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
 		};
-		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\cockpit.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\leftwing.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2.rvmat", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\rightwing.rvmat"};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\cockpit.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\leftwing.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\rightwing.rvmat"};
 		insideSoundCoef=0.2;
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
@@ -18702,7 +18702,7 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
 		};
 		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
@@ -18731,7 +18731,7 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Green\Right_wing_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Right_wing_CO.paa"
 		};
 		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
@@ -18760,7 +18760,7 @@ class cfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_AirVehicles\YWing\Red\Right_wing_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Right_wing_CO.paa"
 		};
 		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
 		editorPreview="";
@@ -18977,15 +18977,15 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 		hiddenselectionstextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Hull_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Wings_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Weapons_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
 			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_AirVehicles\Republic\NewLAAT\DBA_Hammer_Interior_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
         };
 		class EventHandlers: DefaultEventHandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\laat_lift_3.sqf';";
+			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_3.sqf';";
 		};
 		class UserActions
 		{
@@ -19021,7 +19021,7 @@ class cfgVehicles
 				priority=21;
 				onlyForPlayer=1;
 				condition="(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 			};
 			class ThrusterDisngage: ThrusterEngage
 			{
@@ -19030,7 +19030,7 @@ class cfgVehicles
 				displayNameDefault="<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip="<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition="((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 			};
 			class ThrusterEngage_spam: ThrusterEngage
 			{
@@ -19042,7 +19042,7 @@ class cfgVehicles
 				priority=0;
 				onlyForPlayer=1;
 				condition="((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\fn_impulseS.sqf""";
+				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19";
 			};
 			class ThrusterDisngage_spam: ThrusterEngage
@@ -19052,7 +19052,7 @@ class cfgVehicles
 				displayNameDefault="";
 				textToolTip="";
 				condition="((player == driver this) AND (alive this))";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
+				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20";
 			};
 		};
