@@ -395,7 +395,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\textures\101st\helmets\ARF_Winter_Phase2_Helm_CO.paa"
 		};
 	};
-	class JLTS_CloneHelmetP2;
 	class 101st_ARF_Base : JLTS_CloneHelmetP2 {
 		author="Dutch";
 		scope=2;
@@ -528,7 +527,6 @@ class CfgWeapons
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
-		};
 	};
 	class 101st_Alfredo_ARF: 101st_ARF_Base
 	{
