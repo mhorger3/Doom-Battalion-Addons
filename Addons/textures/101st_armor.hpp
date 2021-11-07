@@ -635,6 +635,50 @@ class 101st_Custom_CompanyCSM_Pauldron: V_RebreatherB
 		hiddenSelections[] = {"camo1"};
 	};
 };
+class 101st_Radio_CompanyCSM_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Radio CSM Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\RTO_CSM_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
+class 101st_Medical_CompanyCSM_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Medical CSM Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\Medical_CSM_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
 class 101st_Custom_CSM_Pauldron: V_RebreatherB
 {
 	author="Dutch";
@@ -2314,7 +2358,74 @@ class 101st_212_Radar: Uniform_Base
 	DBA_camoType = "base";
 	DBA_hasCamoChanger = 1;
 };
-
+class 101st_212_Hark: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Hark (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Hark_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Hark_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Hark_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "base";
+	DBA_hasCamoChanger = 1;
+};
+class 101st_212_Fodder: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Fodder (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Fodder_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Fodder_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Fodder_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+	DBA_camoTemplate = "101st";
+	DBA_camoType = "base";
+	DBA_hasCamoChanger = 1;
+};
 
 class 101st_212th_Blind: Uniform_Base
 {
@@ -2575,6 +2686,99 @@ class 101st_212_Kai: Uniform_Base
 		mass=40;
 	};
 };
+class 101st_212_Punisher: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Punisher (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Punisher_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Punisher_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Punisher_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Noble: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Noble (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Noble_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Noble_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Noble_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Servo: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Servo (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Servo_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Servo_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Servo_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
 class 101st_212_Hambino: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
@@ -2739,6 +2943,37 @@ class 101st_212_AJ : Uniform_Base
 		mass = 40;
 	};
 };
+class 101st_212_Vulgar : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Vulgar (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Vulgar_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
 class 101st_212_Dolittle : Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
@@ -2831,6 +3066,42 @@ class 101st_212_Falcon : Uniform_Base
 	{
 		uniformModel = "-";
 		uniformClass = "101st_Falcon_212th";
+		containerClass = "supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
+class 101st_212_Republican : Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope = 2;
+	displayName = "101st Republican (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Republican_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Republican_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] = 
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Republican_Upper.rvmat",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\data\Republican_Lower.rvmat"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "101st_Republican_212th";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =
@@ -3242,6 +3513,37 @@ class 101st_212_Lambert: Uniform_Base
 	{
 		uniformModel="-";
 		uniformClass="101st_Lambert_212th";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class 101st_212_Dog: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Dog (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Dog_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\textures\101st\armor\Dog_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="101st_Dog_212th";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
