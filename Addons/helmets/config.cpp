@@ -513,7 +513,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
 	};
-	class 101st_Joey_ARF: JLTS_CloneHelmetP2
+	class 101st_Joey_ARF: 101st_ARF_Base
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -530,7 +530,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
 		};
 	};
-	class 101st_Alfredo_ARF: JLTS_CloneHelmetP2
+	class 101st_Alfredo_ARF: 101st_ARF_Base
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
