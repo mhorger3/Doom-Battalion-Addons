@@ -8354,6 +8354,7 @@ class 101st_Noble_212th : 101st_JLTS_Clone_P2
 			"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Chest_CO.paa",
 			"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Legs_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Chest.rvmat","\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Legs.rvmat"};
 		linkedItems[] =
 		{
 			"101st_Bacon_Helmet",

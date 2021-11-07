@@ -3518,7 +3518,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Punisher_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Punisher_Helmet_CO.paa"
 		};
 	};
 	class 101st_Deadeye_Helmet: JLTS_CloneHelmetP2

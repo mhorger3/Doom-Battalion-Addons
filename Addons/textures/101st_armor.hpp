@@ -2960,6 +2960,7 @@ class 101st_212_Vulgar : Uniform_Base
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Legs_CO.paa"
 	};
+	hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Chest.rvmat","\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Legs.rvmat"};
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
