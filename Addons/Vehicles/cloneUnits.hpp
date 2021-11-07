@@ -8351,8 +8351,8 @@ class 101st_Noble_212th : 101st_JLTS_Clone_P2
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Chest_CO.paa",
-			"\101st_Aux_Mod\Addons\textures\101st\armor\data\Vulgar_Legs_CO.paa"
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Chest_CO.paa",
+			"\101st_Aux_Mod\Addons\textures\101st\armor\Vulgar_Legs_CO.paa"
 		};
 		linkedItems[] =
 		{
