@@ -522,7 +522,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Joey_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Joey_ARF_Helmet_CO.paa",
 			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
@@ -538,7 +538,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Alfredo_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",
 		"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};

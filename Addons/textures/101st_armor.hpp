@@ -635,6 +635,28 @@ class 101st_Custom_CompanyCSM_Pauldron: V_RebreatherB
 		hiddenSelections[] = {"camo1"};
 	};
 };
+class 101st_Hark_CompanyCSM_Pauldron: V_RebreatherB
+{
+	author="Dutch";
+	dlc = "101st_Aux_Mod";
+	scope=1;
+	scopeArsenal=2;
+	displayName="101st Hark CSM Pauldron (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\textures\101st\armor\pauldrons\Hark_Custom_Pauldron_CO.paa"
+	};
+	class ItemInfo: VestItem
+	{
+		containerClass="Supply100";
+		uniformType="Default";
+		mass=80;
+		vestType = "Rebreather";
+		uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
 class 101st_Radio_CompanyCSM_Pauldron: V_RebreatherB
 {
 	author="Dutch";
