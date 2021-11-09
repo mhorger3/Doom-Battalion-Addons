@@ -18678,6 +18678,9 @@ class cfgVehicles
 		 faction="Republic_101st";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
+		acceleration=200;
+		maxSpeed=300;
+		landingSpeed=100;
 	};
 	class 101st_YWing: 101st_YWing_base
 	{
