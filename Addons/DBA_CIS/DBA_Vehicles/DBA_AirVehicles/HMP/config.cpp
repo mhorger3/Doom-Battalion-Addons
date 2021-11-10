@@ -5,14 +5,12 @@ class cfgPatches
 		author = "Vulgar";
 		requiredVersion = 0.1;
 		requiredAddons[] =
-		{};
+		{"A3_Air_F"};
 		units[] =
 		{
 			"DBA_HMP_F",
 			"DBA_HMP_TRANSPORT_F",
 			"DBA_HMP_Wreck",
-			"DBA_HMP_TRANSPORT_F_ISU",
-			"DBA_HMP_F_ISU"
 		};
 		weapons[] = {};
 	};
@@ -1540,13 +1538,6 @@ class cfgVehicles
 			};
 		};
 	};
-	class DBA_HMP_F_ISU : DBA_HMP_F
-	{
-
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "HMP Gunship (Tempestus Variant)";
-	};
 	class DBA_HMP_TRANSPORT_F : DBA_HMP_F
 	{
 		author = "Vulgar";
@@ -1634,12 +1625,6 @@ class cfgVehicles
 			};
 		};
 	};
-	class DBA_HMP_TRANSPORT_F_ISU : DBA_HMP_TRANSPORT_F
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "HMP Transport (Tempestus Variant)";
-	};
 	class Wreck_base_F;
 	class DBA_HMP_Wreck : Wreck_base_F
 	{
@@ -1653,32 +1638,5 @@ class cfgVehicles
 		model = "kobra\442_a_vehicle\hmp\hmp_gunship_w.p3d";
 		editorCategory = "kobra";
 		editorSubcategory = "442_wrecks";
-	};
-};
-
-class Extended_Init_EventHandlers
-{
-	class DBA_HMP_F_ISU
-
-	{
-		class turret1
-		{
-			init = "[_this select 0,'O_DBA_CIS_BEARD_AA_F',[0,5,-.5]] spawn RD501_fnc_apply_aircraft_turrets";
-		};
-		class turret2
-		{
-			init = "[_this select 0,'O_DBA_CIS_BEARD_AA_F',[5,0,-.5]] spawn RD501_fnc_apply_aircraft_turrets";
-		};
-		class turret3
-		{
-			init = "[_this select 0,'O_DBA_CIS_BEARD_AA_F',[-5,0,-.5]] spawn RD501_fnc_apply_aircraft_turrets";
-		};
-	};
-	class DBA_HMP_TRANSPORT_F_ISU
-	{
-		class turret1
-		{
-			init = "[_this select 0,'O_DBA_CIS_BEARD_AA_F',[0,5,-.5]] spawn RD501_fnc_apply_aircraft_turrets";
-		};
 	};
 };
