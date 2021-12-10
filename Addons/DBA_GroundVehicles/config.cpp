@@ -1983,7 +1983,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		armor=700;
+		armor=1100;
+		armorStructural=16;
 		transportSoldier=13;
 		faction="Republic_101st";
 		hiddenSelections[]=
@@ -2009,7 +2010,6 @@ class CfgVehicles
 				{
 					"DBA_40mw_P4M_Cannon",
 					"DBA_762_C95A1_CG",
-					"DBA_127_C3HB_HMG"
 				};
 				magazines[]=
 				{
@@ -2019,7 +2019,6 @@ class CfgVehicles
 					"DBA_40mm_PL31A_HESH_x320_mag",
 					"DBA_40mm_PL31A_HESH_x320_mag",
 					"DBA_762_D61_x2000_mag",
-					"DBA_127_X962_x1500_mag"
 				};
 				class HitPoints: HitPoints
 				{
