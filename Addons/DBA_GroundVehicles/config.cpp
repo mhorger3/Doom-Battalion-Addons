@@ -21,6 +21,7 @@ class CfgPatches
 			"DBA_Fennek_GL",
 			"DBA_Fennek_Medic",
 			"DBA_Fennek_Testbed",
+			"DBA_Command_Mobility_Vehicle",
 			"DBA_Rooikat",
 			"DBA_Leopard",
 			"DBA_Leopard_Testbed",
@@ -608,6 +609,64 @@ class CfgVehicles
 					class CommanderOptics;
 				};
 			};
+		};
+	};
+	class C_Offroad_02_unarmed_F;
+	class DBA_Command_Mobility_Vehicle: C_Offroad_02_unarmed_F
+	{
+		author = "Seatie";
+		scope = 2;
+		scopeCurator = 2;
+		side=1;
+		displayName="Command Mobility Vehicle";
+		faction="Republic_101st";
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		class TextureSources
+		{
+			class Command_Mobility_Vehicle
+			{
+				displayName = "Command Mobility Vehicle";
+				author = "Seatie";
+				textures[] = 
+				{
+				"\101st_Aux_Mod\Addons\textures\Addons\Command_Mobility_Vehicle.paa",
+				"\101st_Aux_Mod\Addons\textures\Addons\Command_Mobility_Vehicle.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+				};
+				factions[] = {"Republic_101st"};
+			};
+		};
+		textureList[]={"Command_Mobility_Vehicle",1};
+		hiddenSelectionsTextures[]= 
+		{
+			"101st_Aux_Mod\Addons\textures\Addons\Command_Mobility_Vehicle.paa",
+			"101st_Aux_Mod\Addons\textures\Addons\Command_Mobility_Vehicle.paa",
+			"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
+			"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+		};
+		class PlateInfos
+		{
+			name="spz";
+			color[]={0,0,0,1};
+			plateFont = "RobotoCondensedLight";
+			//plateFormat = "Lamby's Toes ,Daddy Blind ,ButterBeno ,Hammer had fun ,Dagger had fun ,Biggus Dickus ,Thiccums ,Hoggers,DA DA DA,Wolfe,Corruption dad,Conservative,Asshole,Hoo haw";
+			plateFormat = "Lamby's Toes";
+			plateLetters="ABCDEFHIKLMOPRSTVXYZ";
 		};
 	};
 	class DBA_Bantha_Testbed: 212th_APC_Wheeled_01_base_F
