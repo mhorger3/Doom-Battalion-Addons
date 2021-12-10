@@ -168,8 +168,8 @@ class CfgMagazines{
 		shortnamemagazine="IK-3 ATGM Pod";
 		displayNameMFDFormat="IK-3 ATGM";
 		displayNameShort="IK-3 ATGM";
-		mass=300;
-		count=1;
+		mass=100;
+		count=2;
 		initspeed=100;
 		tracersevery=1;
 	};
@@ -183,8 +183,8 @@ class CfgMagazines{
 		shortnamemagazine="IAD-5 MANPAD";
 		displayNameMFDFormat="IAD-5";
 		displayNameShort="IAD-5";
-		mass=200;
-		count=2;
+		mass=80;
+		count=3;
 		initspeed=100;
 		tracersevery=1;
 	};
@@ -194,9 +194,9 @@ class CfgAmmo{
 	class MissileBase;
 	class ammo_Penetrator_Base;
 	class DBA_IK3_Penetrator : ammo_Penetrator_Base{
-		hit=825;
+		hit=900;
 		warheadName = "Tandem";
-		caliber=23.33333333;
+		caliber=26.33333333;
 	};
 	class DBA_IK3_MMissile : MissileBase{
 		model="\a3\Weapons_F_Tank\Ammo\rocket_spg9.p3d";

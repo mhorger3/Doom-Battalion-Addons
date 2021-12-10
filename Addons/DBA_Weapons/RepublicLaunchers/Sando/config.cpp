@@ -165,7 +165,7 @@ class CfgAmmo{
 	class MissileBase;
 	class ammo_Penetrator_Base;
 	class DBA_Flash_Penetrator : ammo_Penetrator_Base{
-		hit=1100;
+		hit=1000;
 		warheadName = "Tandem";
 		caliber=30;
 	};

@@ -268,7 +268,7 @@ class CfgWeapons{
 					"Normal",
 					"TI"
 				};
-				thermalMode[]={4,5};
+				thermalMode[]={0,1};
 				opticsDisablePeripherialVision=1;
 				discretefov[]={0.0583333,0.0291667};
 				discreteInitIndex=0;
@@ -292,9 +292,9 @@ class CfgMagazines{
 		shortnamemagazine="DR-15 HEAT";
 		displayNameMFDFormat="HEAT";
 		displayNameShort="DR-15 HEAT";
-		mass=100;
+		mass=50;
 		count=1;
-		initspeed=300;
+		initspeed=800;
 		tracersevery=1;
 	};
 	class DBA_SR8_THEAT_mag : CA_LauncherMagazine{
@@ -307,7 +307,7 @@ class CfgMagazines{
 		shortnamemagazine="SR-8 Tandem Heat";
 		displayNameMFDFormat="Tandem Heat";
 		displayNameShort="SR-8 Tandem Heat";
-		mass=250;
+		mass=80;
 		count=1;
 		initspeed=300;
 		tracersevery=1;
@@ -351,11 +351,11 @@ class CfgAmmo{
 		timeToLive=24;
 		airfriction=0.44999999;
 		sideAirFriction=0.0099999998;
-		maxSpeed=820;
-		typicalspeed=400;
+		maxSpeed=1000;
+		typicalspeed=100;
 		initTime=0.029999999;
 		thrustTime=1.25;
-		thrust=400;
+		thrust=1000;
 		fuseDistance=15;
 		effectsMissile="missile2";
 		whistleDist=4;
