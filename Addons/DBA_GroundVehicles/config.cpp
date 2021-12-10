@@ -620,10 +620,12 @@ class CfgVehicles
 		side=1;
 		displayName="Command Mobility Vehicle";
 		faction="Republic_101st";
-		thrustDelay = 0.5;
+		thrustDelay = 0.1;
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 195;
 		fuelCapacity = 16;
+		slowSpeedForwardCoef = 0.55;
+		normalSpeedForwardCoef = 0.95;
 		wheelCircumference = 2.633;
 		antiRollbarForceCoef = 30;
 		antiRollbarForceLimit = 80;
@@ -633,13 +635,30 @@ class CfgVehicles
 		redRpm = 8000;
 		accelAidForceCoef = 6.5;
 		accelAidForceYOffset = -1;
-		accelAidForceSpd = 100;
+		accelAidForceSpd = 150;
 		enginePower = 1500;
 		minOmega = 52.3598775;
 		maxOmega = 837.75804;
 		peakTorque = 1790.493112;
 		crewCrashProtection = 0.000;
 		epeImpulseDamageCoef= 0.0;
+		class complexGearbox
+		{
+        GearboxRatios[] = {"R1",-0.25,"N",0,"D1",3.588,"D2",2.186,"D3",1.405,"D4",1,"D5",0.65};
+        TransmissionRatios[] = {"High",7};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+        gearUpMaxCoef = 0.95;
+        gearDownMaxCoef = 0.85;
+        gearUpMinCoef = 0.65;
+        gearDownMinCoef = 0.55;
+        transmissionDelay = 1;
+		};
+		switchTime = 0.1;
+		latency = 0.5;
 		class TransportItems
 		{
 			class _xx_FirstAidKit
