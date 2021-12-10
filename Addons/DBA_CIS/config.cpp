@@ -82,6 +82,7 @@ class CfgPatches
 			"O_DBA_CIS_GAT_Light_Tan_F",
 			"O_DBA_CIS_GAT_Light_Urban_F",
 			"O_DBA_CIS_GAT_ADAS_F",
+			"O_DBA_CIS_AAT_IAV_F",
 			"O_DBA_CIS_AAT_F",
 			"O_DBA_CIS_AAT_Tan_F",
 			"O_DBA_CIS_AAT_Snow_F",
@@ -10246,6 +10247,31 @@ class CfgVehicles
 					"DBA_90mm_UR62M_HEAT_x24_mag"
 				};
 				stabilizedInAxes = 3;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10297,6 +10323,31 @@ class CfgVehicles
 					"DBA_90mm_UR62M_HEAT_x24_mag"
 				};
 				stabilizedInAxes = 3;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10344,6 +10395,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				minElev=-8;
 				maxElev=45;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10391,6 +10467,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				minElev=-9;
 				maxElev=40;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10438,6 +10539,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				minElev=-9;
 				maxElev=40;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10448,7 +10574,7 @@ class CfgVehicles
 		scopeCurator=2;
 		displayName="King AAT (Blue)";
 		armor=1100;
-		armorStructural=10;
+		armorStructural=9;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
@@ -10478,6 +10604,64 @@ class CfgVehicles
 		redRpm=3000;
 		engineLosses=20;
 		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10512,6 +10696,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				maxHorizontalRotSpeed=0.4444444444;
 				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10541,6 +10750,64 @@ class CfgVehicles
 		redRpm=5652;
 		engineLosses=5;
 		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10590,6 +10857,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				maxHorizontalRotSpeed=0.8;
 				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		
@@ -10601,7 +10893,7 @@ class CfgVehicles
 		scopeCurator=2;
 		displayName="Medium AAT (Snow)";
 		armor=750;
-		armorStructural=10;
+		armorStructural=8;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
@@ -10631,6 +10923,64 @@ class CfgVehicles
 		redRpm=3000;
 		engineLosses=5;
 		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10667,6 +11017,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				maxHorizontalRotSpeed=0.8;
 				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10677,7 +11052,7 @@ class CfgVehicles
 		scopeCurator=2;
 		displayName="Medium AAT (Tropic)";
 		armor=750;
-		armorStructural=10;
+		armorStructural=8;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
@@ -10707,6 +11082,64 @@ class CfgVehicles
 		redRpm=3000;
 		engineLosses=5;
 		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10743,6 +11176,583 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				maxHorizontalRotSpeed=0.8;
 				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
+            };
+        };
+		crew="O_DBA_CIS_B1_Crew_Droid_F";
+	};
+	class O_DBA_CIS_AAT_IAV_F : O_DBA_CIS_AAT_F{
+		scope=2;
+		scopeCurator=2;
+		displayName="AAT (IAV)";
+		hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+		armor=500;
+		ejectDamageLimit = 0.95;
+		armorStructural=15;
+		editorSubcategory="O_DBA_CIS_Tanks";
+		vehicleClass="O_DBA_CIS_Tanks";
+		side=0;
+		faction="O_DBA_CIS_F";
+		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_F.jpg";
+		enginePower=1500;
+		maxOmega=592;
+		maxSpeed=70;
+		peakTorque=4870.024;
+		thrustDelay=0.5;
+		clutchStrength=175;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=650000;
+		idleRpm=2200;
+		redRpm=5652;
+		engineLosses=5;
+		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
+		class Wheels
+		{
+        class L2
+        {
+            boneName = "wheel_podkoloL1";
+            center = "wheel_1_2_axis";
+            boundary = "wheel_1_2_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L3
+        {
+            boneName = "wheel_podkolol2";
+            center = "wheel_1_3_axis";
+            boundary = "wheel_1_3_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L4
+        {
+            boneName = "wheel_podkolol3";
+            center = "wheel_1_4_axis";
+            boundary = "wheel_1_4_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L5
+        {
+            boneName = "wheel_podkolol4";
+            center = "wheel_1_5_axis";
+            boundary = "wheel_1_5_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L6
+        {
+            boneName = "wheel_podkolol5";
+            center = "wheel_1_6_axis";
+            boundary = "wheel_1_6_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L7
+        {
+            boneName = "wheel_podkolol6";
+            center = "wheel_1_7_axis";
+            boundary = "wheel_1_7_bound";
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class L9
+        {
+            boneName = "wheel_podkolol9";
+            center = "wheel_1_9_axis";
+            boundary = "wheel_1_9_bound";
+            sprungMass = 1500;
+            springStrength = 37500;
+            springDamperRate = 7500;
+            maxDroop = 0;
+            maxCompression = 0;
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+        };
+        class L1
+        {
+            boneName = "";
+            center = "wheel_1_1_axis";
+            boundary = "wheel_1_1_bound";
+            sprungMass = 1500;
+            springStrength = 37500;
+            springDamperRate = 7500;
+            maxDroop = 0;
+            maxCompression = 0;
+            damping = 75;
+            steering = 0;
+            side = "left";
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+        };
+        class R2
+        {
+            boneName = "wheel_podkolop1";
+            center = "wheel_2_2_axis";
+            boundary = "wheel_2_2_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R3
+        {
+            boneName = "wheel_podkolop2";
+            center = "wheel_2_3_axis";
+            boundary = "wheel_2_3_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R4
+        {
+            boneName = "wheel_podkolop3";
+            center = "wheel_2_4_axis";
+            boundary = "wheel_2_4_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R5
+        {
+            boneName = "wheel_podkolop4";
+            center = "wheel_2_5_axis";
+            boundary = "wheel_2_5_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R6
+        {
+            boneName = "wheel_podkolop5";
+            center = "wheel_2_6_axis";
+            boundary = "wheel_2_6_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R7
+        {
+            boneName = "wheel_podkolop6";
+            center = "wheel_2_7_axis";
+            boundary = "wheel_2_7_bound";
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            sprungMass = 4000;
+            springStrength = 324000;
+            springDamperRate = 36000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+            maxDroop = 0.15;
+            maxCompression = 0.0;
+        };
+        class R9
+        {
+            boneName = "wheel_podkolop9";
+            center = "wheel_2_9_axis";
+            boundary = "wheel_2_9_bound";
+            sprungMass = 1500;
+            springStrength = 37500;
+            springDamperRate = 7500;
+            maxDroop = 0;
+            maxCompression = 0;
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+        };
+        class R1
+        {
+            boneName = "";
+            center = "wheel_2_1_axis";
+            boundary = "wheel_2_1_bound";
+            sprungMass = 1500;
+            springStrength = 37500;
+            springDamperRate = 7500;
+            maxDroop = 0;
+            maxCompression = 0;
+            side = "right";
+            damping = 75;
+            steering = 0;
+            weight = 150;
+            mass = 150;
+            MOI = 23;
+            latStiffX = 25;
+            latStiffY = 280;
+            longitudinalStiffnessPerUnitGravity = 100000;
+            maxBrakeTorque = 20000;
+            dampingRate = 1;
+            dampingRateInAir = 8000;
+            dampingRateDamaged = 10;
+            dampingRateDestroyed = 10000;
+        };
+    };
+		class Turrets: turrets
+        {
+            class MainTurret: Mainturret
+            {				
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+						"DBA_UKAS_MG",
+						"SmokeLauncher"
+						};
+						magazines[]=
+						{
+						"DBA_762_REC_x2600_mag",
+						"DBA_762_REC_x2600_mag",
+						"SmokeLauncherMag"
+						};
+						startEngine = false;
+						stabilizedInAxes = 3;
+					};
+				};
+				weapons[] =
+				{
+					"DBA_88mw_B18S_Cannon"
+				};
+				magazines[] =
+				{
+					"DBA_88mm_CR13_x20_mag",
+					"DBA_94mm_PM4C_x4_mag",
+				};
+				startEngine = false;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed=1.4444444444;
+				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";
@@ -10753,7 +11763,7 @@ class CfgVehicles
 		scopeCurator=2;
 		displayName="King AAT (Urban)";
 		armor=1100;
-		armorStructural=10;
+		armorStructural=9;
 		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
@@ -10783,6 +11793,64 @@ class CfgVehicles
 		redRpm=3000;
 		engineLosses=20;
 		epeImpulseDamageCoef=0.15;
+		class HitPoints
+		{
+			class HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 		class Turrets: turrets
         {
             class MainTurret: Mainturret
@@ -10818,6 +11886,31 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				maxHorizontalRotSpeed=0.4444444444;
 				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
             };
         };
 		crew="O_DBA_CIS_B1_Crew_Droid_F";

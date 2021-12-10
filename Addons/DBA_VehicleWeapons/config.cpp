@@ -59,6 +59,9 @@ class CfgPatches
 			"DBA_DADS5M_SAM",
 			"DBA_DADS1P_SAM",
 			"DBA_94mw_PN32_FG",
+			"DBA_100mw_HH33G_Cannon",
+			"DBA_88mw_B18S_Cannon",
+			"DBA_25mw_P25S_Cannon",
 		};
 		magazines[]=
 		{
@@ -138,6 +141,9 @@ class CfgPatches
 			"DBA_94mm_P2_x4_mag",
 			"DBA_94mm_SM3_x4_mag",
 			"DBA_94mm_PM4C_x4_mag",
+			"DBA_100mm_UB4H_x100_mag",
+			"DBA_88mm_CR13_x20_mag",
+			"DBA_25mm_PL25S_x300_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
 			"DBA_HMG_orange_x500_mag",
@@ -264,6 +270,11 @@ class CfgPatches
 			"DBA_94mm_SM3_SMK",
 			"DBA_94mm_Canister_Submunition",
 			"DBA_94mm_PM4C_CAN",
+			"DBA_100mm_UB4H_HEF",
+			"DBA_88mm_Canister_Submunition",
+			"DBA_88mm_CR13_CAN",
+			"DBA_PL25S_Penetrator",
+			"DBA_25mm_PL25S_HEDP",
 			"DBA_lancer_mbt_ap_ammo",
 			"DBA_lancer_mbt_he_ammo",
 			"DBA_lancer_mbt_td_ammo"
@@ -5996,7 +6007,6 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
 		};
 		pylonWeapon="DBA_Aircraft_Lasers_Green_Pylon";
 	};
@@ -6021,7 +6031,6 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
 		};
 		pylonWeapon="DBA_Aircraft_Heavy_Lasers_Green_Pylon";
 	};
@@ -6045,7 +6054,6 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
 		};
 		pylonWeapon="DBA_Kannon_Pylon";
 	};
@@ -6059,7 +6067,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="dba_pylon_agm";
@@ -6074,7 +6081,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="dba_pylon_a2a";
@@ -6102,7 +6108,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_pylon_lgm";
@@ -6117,7 +6122,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_pylon_ugm";
@@ -7160,7 +7164,7 @@ class CfgMagazines
 		shortnamemagazine="PS-59 SAPHEI";
 		displayNameMFDFormat="SAPHEI";
 		displayNameShort="SAPHEI";
-		count=500;
+		count=720;
 		initspeed=715;
 		tracersevery=1;
 	};
@@ -7171,7 +7175,7 @@ class CfgMagazines
 		shortnamemagazine="PS-73 SAPHEI";
 		displayNameMFDFormat="SAPHEI";
 		displayNameShort="SAPHEI";
-		count=80;
+		count=200;
 		initspeed=880;
 		tracersevery=1;
 	};
@@ -7390,6 +7394,41 @@ class CfgMagazines
 		initspeed=1570;
 		tracersevery=1;
 	};
+	class DBA_100mm_UB4H_x100_mag : VehicleMagazine{
+		displayname="UB-4A 100mw High Explosive Fragmentation";
+		ammo="DBA_100mm_UB4H_HEF";
+		displaynamemagazine="100mw UB-4H HE-F";
+		shortnamemagazine="UB-4H HE-F";
+		displayNameMFDFormat="HE-F";
+		displayNameShort="HE-F";
+		count=100;
+		initspeed=930;
+		tracersevery=1;
+	};
+	class DBA_88mm_CR13_x20_mag : VehicleMagazine{
+		displayname="CR-13 88mw Canister";
+		ammo="DBA_88mm_CR13_CAN";
+		displaynamemagazine="CR-13 88mw Canister";
+		shortnamemagazine="CR-13 Canister";
+		displayNameMFDFormat="Canister";
+		displayNameShort="Canister";
+		count=20;
+		initspeed=343;
+		tracersevery=1;
+	};
+	//Fennek Gun Start
+	class DBA_25mm_PL25S_x300_mag : VehicleMagazine{
+		displayname="PL-25S 25mw HEDP";
+		ammo="DBA_25mm_PL25S_HEDP";
+		displaynamemagazine="PL-25S 25mw HEDP";
+		shortnamemagazine="PL-25S HEDP";
+		displayNameMFDFormat="HEDP";
+		displayNameShort="HEDP";
+		count=300;
+		initspeed=405;
+		tracersevery=1;
+	};
+	//END
 	class DBA_Laserbeam_mag : VehicleMagazine{
 		displayname="Orbital Laser Designator";
 		ammo="DBA_Laserbeam";
@@ -9800,12 +9839,12 @@ class CfgAmmo
 		};
 	};
 	class DBA_23mm_UM23_HEPF : DBA_50mm_HEPF{
-		hit = 150;
-		indirectHit = 125;
-		indirectHitRange = 16;
+		hit = 65;
+		indirectHit = 45;
+		indirectHitRange = 2;
 		displayname = "23mm UM-23 High Explosive Proxy Fuse";
 		warheadName = "UM-23 HE-PF";
-		explosive = 0.9;
+		explosive = 1.0;
 		airLock = 1;
 		canLock = 2;
 		aiAmmoUsageFlags = "64 + 256";
@@ -9827,9 +9866,9 @@ class CfgAmmo
 		submunitionParentSpeedCoef = 0.000000;
 		submunitionInitialOffset[]={0,0,-0.2};
 		allowAgainstInfantry=1;
-		timeToLive=20;
+		timeToLive=10;
 		coefGravity=0;
-		airfriction=-0;
+		airfriction=0;
 		waterFriction=0;
 	};
 	class DBA_57mm_ap: B_40mm_GPR
@@ -10399,12 +10438,12 @@ class CfgAmmo
 	class ammo_23mm_SAP_Penetrator : ammo_Penetrator_Base{
 		hit=65;
 		warheadName = "SAPHEI";
-		caliber=8.333333333;
+		caliber=21.66666667;
 	};
 	class ammo_45mm_SAP_Penetrator : ammo_Penetrator_Base{
 		hit=425;
 		warheadName = "SAPHEI";
-		caliber=16.66666667;
+		caliber=28.66666667;
 	};
 	class ammo_Fletch_Penetrator : ammo_Penetrator_Base{
 		hit=750;
@@ -10434,8 +10473,8 @@ class CfgAmmo
 	class DBA_23mm_PS59_SAP : G_40mm_HE{
 		displayName="23mw PS59 SAPHEI";
 		hit = 100;
-		indirectHit = 12;
-		indirectHitRange = 6;
+		indirectHit = 35;
+		indirectHitRange = 4;
 		explosive= 1.0
 		warheadName = "SAPHEI";
 		caliber = 1;
@@ -10461,7 +10500,7 @@ class CfgAmmo
 		tracerEndTime = 20;
 		brightness=100000;
 		muzzleEffect = "";
-		typicalSpeed = 500;	
+		typicalSpeed = 100;	
 		allowAgainstInfantry=1;
 		coefGravity=0;
 		waterFriction=0;
@@ -10476,8 +10515,8 @@ class CfgAmmo
 	class DBA_45mm_PS73_SAP : G_40mm_HE{
 		displayName="45mw PS73 SAPHEI";
 		hit = 100;
-		indirectHit = 32;
-		indirectHitRange = 10;
+		indirectHit = 50;
+		indirectHitRange = 7.5;
 		explosive= 1.0
 		warheadName = "SAPHEI";
 		caliber = 1;
@@ -10503,7 +10542,7 @@ class CfgAmmo
 		tracerEndTime = 20;
 		brightness=100000;
 		muzzleEffect = "";
-		typicalSpeed = 500;	
+		typicalSpeed = 100;	
 		allowAgainstInfantry=1;
 		coefGravity=0;
 		waterFriction=0;
@@ -10775,7 +10814,7 @@ class CfgAmmo
 		hit=50;
 		indirectHit=45;
 		manualControl=0;
-		indirectHitRange=6;
+		indirectHitRange=3;
 		explosive=1;
 		cost=30;
 		aiAmmoUsageFlags="128 + 512";
@@ -10811,7 +10850,7 @@ class CfgAmmo
 		hit=50;
 		indirectHit=100;
 		manualControl=0;
-		indirectHitRange=10.5;
+		indirectHitRange=6.5;
 		explosive=1;
 		cost=30;
 		aiAmmoUsageFlags="128 + 512";
@@ -11503,6 +11542,196 @@ class CfgAmmo
 		timeToLive=20;
 	};
 	// END
+	//100mm ADGS Start
+	class DBA_100mm_UB4H_HEF : Sh_120mm_APFSDS{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 15500;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 1850;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 1886;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_small_HD", "ACE_frag_small"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 125;
+		indirectHit = 75;
+		indirectHitRange = 8;
+		displayname = "100mw UB-4H HE Fragmentation";
+		warheadName = "UB-4H HE-F";
+		explosive = 1.0;
+		airLock = 0;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 15;
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		tracerScale = 2.15;
+		tracerStartTime = 0;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 1.100000;
+		typicalSpeed = 930;
+		proximityExplosionDistance = 30;
+		fuseDistance = 50;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=7.50;
+		airfriction=-0;
+		deflecting=0;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 40;
+			distance = 75;
+		};
+
+		class CamShakeHit {
+			power = 80;
+			duration = 2;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeFire {
+			power = 40;
+			duration = 2.5;
+			frequency = 15;
+			distance = 100;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	// END
+	//Start of Canister Round
+	class DBA_88mm_Canister_Submunition : DBA_94mm_Canister_Submunition{
+		hit=8;
+		warheadName="Flechette";
+		indirectHit=5;
+		indirectHitRange=0.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=450;
+		coefGravity=0.33;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=20;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=2.424242424;
+		typicalSpeed=100;
+		deflecting = 20;
+		model="kobra\442_weapons\ammo\orange_tracer.p3d";
+		effectfly="442_plasma_orange";
+	};
+	class DBA_88mm_CR13_CAN : Sh_120mm_APFSDS{
+		displayName="CR-13 88mw Canister Round";
+		hit=0;
+		warheadName="Canister";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=343;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.9;
+		cost=500;
+		CraterEffects = "";
+		coefGravity=0;
+		explosioneffects = "";
+		effectsSmoke = "";
+		tracerStartTime=0.05;
+		tracerScale=0.8;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=18.21493625;
+		typicalSpeed=500;
+		deflecting = 0;
+		simulation = "shotSubmunitions";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="DBA_88mm_Canister_Submunition";
+		triggerDistance = -1;
+		submunitionConeAngle = 0.525;
+		submunitionInitSpeed=630;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			72
+		};
+		triggerTime=0.01;
+		triggerOnImpact = 0;
+		deleteParentWhenTriggered = 1;
+		submunitionInitialOffset[]= {0, 0, -5};
+		aiAmmoUsageFlags="64 + 128";
+		allowAgainstInfantry=1;
+		timeToLive=210;
+	};
+	// END
+	//Fennek Gun Start
+	class DBA_PL25S_Penetrator : ammo_Penetrator_Base{
+		hit=80;
+		warheadName = "HEDP";
+		caliber=2.4;
+	};
+	class DBA_25mm_PL25S_HEDP : B_40mm_GPR{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 140;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 21;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2377;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 75;
+		indirectHit = 55;
+		indirectHitRange = 3.15;
+		explosive= 1;
+		warheadName = "HEDP";
+		caliber = 5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=405;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		cost = 75;
+		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="DBA_PL25S_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.55;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=0;
+		coefGravity=3.5;
+		waterFriction=0;
+	};
+	//END
 	class DBA_aat_king_ammo: 3AS_ATT_redPlasma_AT
 	{
 		hit=650;

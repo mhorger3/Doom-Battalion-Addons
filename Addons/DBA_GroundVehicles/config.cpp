@@ -20,6 +20,7 @@ class CfgPatches
 			"DBA_Fennek",
 			"DBA_Fennek_GL",
 			"DBA_Fennek_Medic",
+			"DBA_Fennek_Testbed",
 			"DBA_Rooikat",
 			"DBA_Leopard",
 			"DBA_Leopard_Testbed",
@@ -2471,6 +2472,147 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
+		};
+		class TransportBackpacks
+		{
+			class _transport_gravpack
+			{
+				backpack="RD501_JLTS_Clone_Flip_backpack";
+				count=1;
+			};
+		};
+	};
+	class DBA_Fennek_Testbed : I_MRAP_03_hmg_F{
+		ace_cargo_space = 400;
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = 
+		{
+			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
+			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
+		};
+		scope=2;
+		scopeCurator=2;
+		side=1;
+		faction="Republic_101st";
+		armor=500;
+		displayName="Fennek CAV (Testbed)";
+		thrustDelay = 0.1;
+		dampingRateFullThrottle = 0.3;
+		dampingRateZeroThrottleClutchEngaged = 3;
+		dampingRateZeroThrottleClutchDisengaged = 0.25;
+		brakeIdleSpeed = 2.5;
+		maxBrakeTorque = 1500;
+		maxHandBrakeTorque = 3000;
+		maxSpeed = 110;
+		accelAidForceCoef = 3.25;
+		accelAidForceYOffset = -1.5;
+		accelAidForceSpd = 65;
+		slowSpeedForwardCoef = 0.55;
+		normalSpeedForwardCoef = 0.95;
+		enginePower = 750;
+		peakTorque = 2106.462485;
+		minOmega = 10.4719755;
+		maxOmega = 356.047167;
+		idleRpm = 100;
+		redRpm = 3400;
+		engineLosses = 0.5;
+		transmissionLosses = 0.5;
+		antiRollbarForceCoef = 30;
+		antiRollbarForceLimit = 80;
+		antiRollbarSpeedMin = 0;
+		antiRollbarSpeedMax = 300;
+		clutchStrength = 225;
+		crewCrashProtection = 0.01;
+		epeImpulseDamageCoef= 0.1;
+		terrainCoef = 0.15;
+		turnCoef = 7.0;
+		class complexGearbox
+		{
+        GearboxRatios[] = {"R1",-0.75,"N",0,"D1",4.3,"D2",2.3,"D3",1.5,"D4",1,"D5",0.73};
+        TransmissionRatios[] = {"High",6.759};
+        AmphibiousRatios[] = {"R1",-30,"N",0,"D1",50};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"DBA_25mw_P25S_Cannon",
+				};
+				magazines[]=
+				{
+					"DBA_25mm_PL25S_x300_mag",
+				};
+				minElev = -8;
+				maxElev = 65;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed=1.244444444;
+				maxVerticalRotSpeed=1.5;
+			};
+			class CommanderTurret: CommanderTurret
+			{
+				weapons[]=
+				{
+					"CMFlareLauncher",
+					"SmokeLauncher",
+					"Laserdesignator_vehicle"
+				};
+				magazines[]=
+				{
+					"300Rnd_CMFlare_Chaff_Magazine",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"Laserbatteries"
+				};
+			};
+		};
+		class TransportItems
+		{
+			class _transport_ToolKit
+			{
+				name="ToolKit";
+				count=2;
+			};
+			class _transport_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=10;
+			};
+			class _transport_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=6;
+			};
+			class _transport_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=40;
+			};
+		};
+		class TransportWeapons
+		{
+			class _transport_ipm5x
+			{
+				weapon="DBA_IPM5x";
+				count=1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _transport_ik3
+			{
+				magazine="DBA_IK3_x1_mag";
+				count=2;
+			};
 		};
 		class TransportBackpacks
 		{
