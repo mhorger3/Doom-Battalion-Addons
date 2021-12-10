@@ -536,7 +536,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -582,7 +582,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -2075,7 +2075,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -2121,7 +2121,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -3454,7 +3454,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -3500,7 +3500,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -16655,7 +16655,7 @@ class cfgVehicles
 				statement = "this animateSource ['rampfront',0]";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -16701,7 +16701,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class ACE_SelfActions
 		{
@@ -17426,7 +17426,7 @@ class cfgVehicles
 				statement = "this animateSource ['Door_R',0];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -17472,7 +17472,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 	};
 
@@ -17717,7 +17717,7 @@ class cfgVehicles
 				condition="(player == driver this OR !(player in crew this) ) AND this animationsourcephase ""laat_door_l"" == 1;";
 				statement="this animatesource [""laat_door_l"",0]; [this, ""laat_door_open""] remoteExec [""say3d"",0,false];";
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -17763,7 +17763,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Components
 		{
@@ -18614,7 +18614,7 @@ class cfgVehicles
 		
 		class UserActions
 		{
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -18660,7 +18660,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		hiddenselections[]=
 		{
@@ -18818,7 +18818,7 @@ class cfgVehicles
 				convexcomponent="engine_hit";
 				hitpoint="engine_hit";
 				name="engine_hit";
-				explosionShielding=0.65;
+				explosionShielding=2;
 				radius=0.1;
 				visual="";
 				passthrough=0.1;
@@ -18830,7 +18830,7 @@ class cfgVehicles
 			{
 				armor=0.75;
 				convexComponent="engine_hit";
-				explosionShielding=0.65;
+				explosionShielding=1.2;
 				material=51;
 				name="engine_hit";
 				hitpoint="engine_hit";
@@ -18900,9 +18900,8 @@ class cfgVehicles
 		gearMinAlt=0;
 		gearsUpFrictionCoef=0.001;
 		nameSound="veh_helicopter_s";
-		fuelCapacity = 1500;
-		fuelConsumptionRate = 0.1;
-		ace_refuel_flowRate = 15;
+		fuelCapacity=700;
+		fuelConsumptionRate=0.2;
 		mainBladeRadius=0.1;
 		liftForceCoef=3;
 		bodyFrictionCoef=1.9845001;
@@ -18950,8 +18949,8 @@ class cfgVehicles
 		altFullForce=137400;
 		altNoForce=172400;
 		crewCrashProtection=0;
-		explosionShielding=0.65;
-		epeImpulseDamageCoef=0.33;
+		explosionShielding=0.33000001;
+		epeImpulseDamageCoef=0;
 		soundEngineOnInt[]=
 		{
 			"3as\3as_laat\sounds\LAAT_Start.ogg",
@@ -19015,7 +19014,7 @@ class cfgVehicles
 				statement="this animateSource ['ramp',0,1];";
 				onlyforplayer=0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName="<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault="<t color='#4C9900'>[Impulsor On]</t>";
@@ -19058,7 +19057,7 @@ class cfgVehicles
 				condition="((player == driver this) AND (alive this))";
 				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_AirVehicles\Impulse\initTD.sqf""";
 				shortcut="User20";
-			};
+			};*/
 		};
 		class Sounds
 		{
@@ -19753,7 +19752,6 @@ class cfgVehicles
 		ace_fastroping_onPrepare="ace_fastroping_fnc_onPrepareCommon";
 		ace_cargo_space=40;
 		ace_cargo_hasCargo=1;
-		ace_refuel_fuelCapacity = 1500;
 		slingLoadMaxCargoMass=50000;
 		slingLoadMemoryPoint="sling";
 		radarType=8;
@@ -19917,11 +19915,11 @@ class cfgVehicles
 				showUAVViewInOptics=0;
 				showSlingLoadManagerInOptics=0;
 			};
-			minTurn=-180;
-			maxTurn=180;
+			minTurn=-120;
+			maxTurn=120;
 			initTurn=0;
 			minElev=-120;
-			maxElev=180;
+			maxElev=120;
 			initElev=0;
 			maxXRotSpeed=0.30000001;
 			maxYRotSpeed=0.30000001;
@@ -20382,12 +20380,12 @@ class cfgVehicles
 				initelev=-5;
 				initturn=-180;
 				iscopilot=1;
-				maxelev=40;
+				maxelev=20;
 				maxturn=-170;
 				memorypointgunneroptics="backview";
 				memorypointsgetingunner="pos_driver";
 				memorypointsgetingunnerdir="pos_driver_dir";
-				minelev=-40;
+				minelev=-20;
 				minturn=-190;
 				outgunnermayfire=1;
 				precisegetinout=1;
