@@ -620,6 +620,26 @@ class CfgVehicles
 		side=1;
 		displayName="Command Mobility Vehicle";
 		faction="Republic_101st";
+		thrustDelay = 0.5;
+		brakeIdleSpeed = 1.78;
+		maxSpeed = 195;
+		fuelCapacity = 16;
+		wheelCircumference = 2.633;
+		antiRollbarForceCoef = 30;
+		antiRollbarForceLimit = 80;
+		antiRollbarSpeedMin = 0;
+		antiRollbarSpeedMax = 300;
+		idleRpm = 500;
+		redRpm = 8000;
+		accelAidForceCoef = 6.5;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 100;
+		enginePower = 1500;
+		minOmega = 52.3598775;
+		maxOmega = 837.75804;
+		peakTorque = 1790.493112;
+		crewCrashProtection = 0.000;
+		epeImpulseDamageCoef= 0.0;
 		class TransportItems
 		{
 			class _xx_FirstAidKit
@@ -2579,7 +2599,7 @@ class CfgVehicles
 		antiRollbarForceLimit = 80;
 		antiRollbarSpeedMin = 0;
 		antiRollbarSpeedMax = 300;
-		clutchStrength = 225;
+		clutchStrength = 105;
 		crewCrashProtection = 0.01;
 		epeImpulseDamageCoef= 0.1;
 		terrainCoef = 0.15;
