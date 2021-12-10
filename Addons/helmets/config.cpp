@@ -3319,7 +3319,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\textures\101st\helmets\Achilles_Helm_CO.paa"
+			"101st_Aux_Mod\Addons\textures\101st\helmets\Achilles_Helmet_CO.paa"
 		};
 	};
 	class 101st_Gustavo_Helm: 101st_Dagger_Helmet
