@@ -624,6 +624,15 @@ class CfgVehicles
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 195;
 		fuelCapacity = 16;
+		wheelCircumference = 3.805;
+		waterLeakiness = 0.0;
+		waterLinearDampingCoefX = 10.0;
+		waterLinearDampingCoefY = 2.0;
+		waterResistanceCoef = 0.0005;
+		rudderForceCoef = 1.25;
+		waterAngularDampingCoef = 1.0;
+		canFloat = 1;
+		transportSoldier=25;
 		slowSpeedForwardCoef = 0.55;
 		normalSpeedForwardCoef = 0.95;
 		wheelCircumference = 2.633;
@@ -645,6 +654,7 @@ class CfgVehicles
 		class complexGearbox
 		{
         GearboxRatios[] = {"R1",-0.25,"N",0,"D1",3.588,"D2",2.186,"D3",1.405,"D4",1,"D5",0.65};
+		AmphibiousRatios[] = {"R1",-0.25,"N",0,"D1",0.65};
         TransmissionRatios[] = {"High",7};
         gearBoxMode = "auto";
         moveOffGear = 1;
