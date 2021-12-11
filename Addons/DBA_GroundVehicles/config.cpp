@@ -624,7 +624,6 @@ class CfgVehicles
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 195;
 		fuelCapacity = 16;
-		wheelCircumference = 3.805;
 		waterLeakiness = 0.0;
 		waterLinearDampingCoefX = 10.0;
 		waterLinearDampingCoefY = 2.0;
