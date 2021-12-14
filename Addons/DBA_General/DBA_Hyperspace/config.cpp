@@ -30,7 +30,6 @@ class CfgFunctions
 			class jumpShipIn {};
 			class jumpShipOut {};
 			class moduleJumpShipIn {};
-			class moduleJumpShipOut {};
 			class zen {};
 			class zeus
 			{
