@@ -5577,11 +5577,11 @@ class CfgWeapons
 			aiRateOfFireDispersion=0;
 			aiRateOfFireDistance=2500;
 			minRange=0;
-			minRangeProbab=0.98;
+			minRangeProbab=0.7;
 			midRange=4750;
-			midRangeProbab=0.98;
+			midRangeProbab=0.7;
 			maxRange=5250;
-			maxRangeProbab=0.9;
+			maxRangeProbab=0.7;
 		};
 	};
 	//Field Gun
