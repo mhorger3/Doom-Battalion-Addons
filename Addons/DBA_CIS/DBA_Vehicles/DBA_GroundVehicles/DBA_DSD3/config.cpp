@@ -72,6 +72,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD3\data\yeet_co.paa"};
 		scope=2;
+		faction = "O_DBA_CIS_F";
+		 editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
 		forceInGarage=1;
 		scopeCurator=2;
 		class Armory

@@ -160,6 +160,8 @@ class CfgVehicles
 		hiddenSelections[] = { "Camo" };
 		hiddenSelectionsTextures[] = {"212th\Units\3AS_LPB1_V3\Model\textures\212th_BX_Droid_CO.paa"};
 		hiddenSelectionsMaterials[] = {"212th\Units\3AS_LPB1_V3\Model\textures\BX.rvmat"};
+		editorSubcategory = "O_DBA_CIS_Spec_Ops";
+		vehicleClass = "O_DBA_CIS_Spec_Ops";
 		linkedItems[] =
 		{
 			"ItemMap",

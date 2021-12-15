@@ -3,7 +3,7 @@ class CfgPatches
 	class DBA_AAT
 	{
 		requiredAddons[] = {"A3_Armor_F_Beta"};
-		units[] = {"O_DBA_CIS_King_AAT_F"};
+		units[] = {"O_DBA_CIS_King_AAT_F", "O_DBA_CIS_Recon_AAT_Tan_F", "O_DBA_CIS_Medium_AAT_Tropic_F", "O_DBA_CIS_Medium_AAT_Snow_F", "O_DBA_CIS_King_AAT_Red_F",		};
 		weapons[] = {};
 	};
 };

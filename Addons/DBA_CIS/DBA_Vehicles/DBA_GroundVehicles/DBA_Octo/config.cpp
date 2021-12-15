@@ -68,7 +68,10 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		crew="B_UAV_AI";
+		faction = "O_DBA_CIS_F";
 		model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_Octo\Octo.p3d";
+		editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
 		scope=2;
 		forceInGarage=1;
 		scopeCurator=2;

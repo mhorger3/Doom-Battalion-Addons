@@ -78,6 +78,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Planes";
 	};
+	class O_DBA_CIS_Turrets
+	{
+		displayName = "Turrets";
+	};
 };
 class CfgMarkers
 {

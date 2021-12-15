@@ -13,7 +13,7 @@ class CfgPatches
 		};
 		weapons[] =
 		{
-			"DBA_IG88",
+			"DBA_BXCommando",
 		};
 	};
 };

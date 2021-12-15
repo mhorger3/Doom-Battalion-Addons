@@ -66,14 +66,16 @@ class CfgVehicles
 		author="DBA";
 		_generalMacro="HMG_01_base_F";
 		scope=0;
-		displayName="EWEB Stationary Turret";
+		displayName="CIS EWEB Stationary Turret";
 		class Armory
 		{
 			description="";
 		};
 		armor=75;
 		model="101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_EWEB\eweb.p3d";
-		editorSubcategory="EdSubcat_Turrets";
+		 editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
+		faction = "O_DBA_CIS_F";
 		picture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
 		UiPicture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
 		threat[]={1,0.30000001,0.30000001};

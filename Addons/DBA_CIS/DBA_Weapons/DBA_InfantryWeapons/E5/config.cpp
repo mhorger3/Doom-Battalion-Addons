@@ -44,13 +44,11 @@ class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
 class UnderBarrelSlot;
-class GunParticles;
+
 class CfgWeapons{
 	class Rifle_Base_F;
 	class arifle_MX_Base_F: Rifle_Base_F
 	{
-		class GunParticles;
-		class GunClouds;
 		class WeaponSlotsInfo;
 	};
 	class DBA_E5_Standard : arifle_MX_Base_F{
@@ -259,15 +257,6 @@ class CfgWeapons{
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[]={};
-			};
-		};
-		class GunParticles
-		{
-			class FirstEffect
-			{
-				directionName="Konec hlavne";
-				effectName="RifleAssaultCloud";
-				positionName="Usti hlavne";
 			};
 		};
 	};

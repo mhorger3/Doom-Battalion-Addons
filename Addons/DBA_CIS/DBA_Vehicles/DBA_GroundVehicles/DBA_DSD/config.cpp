@@ -68,9 +68,12 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		crew = "B_UAV_AI";
+		faction = "O_DBA_CIS_F";
 		model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD.p3d";
 		hiddenSelections[] = {"body", "lights"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Main_CO.paa","101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Lights_CO.paa"};
+		editorSubcategory = "O_DBA_CIS_Turrets";
+        vehicleClass = "O_DBA_CIS_Turrets";
 		scope=2;
 		forceInGarage=1;
 		scopeCurator=2;
