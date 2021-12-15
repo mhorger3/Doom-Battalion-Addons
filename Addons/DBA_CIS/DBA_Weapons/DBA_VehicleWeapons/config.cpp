@@ -762,7 +762,7 @@ class cfgWeapons
 			aiRateOfFireDispersion = 0.1;
 		};
 	};
-
+	class 3AS_GATRepeater;
 	class 101st_CIS_Mech: 3AS_GATRepeater
 	{
 		displayName="CIS Long Range Cannon";
@@ -879,6 +879,205 @@ class cfgWeapons
 			midRangeProbab=0.30000001;
 			maxRange=1500;
 			maxRangeProbab=0.050000001;
+		};
+	};
+	class DBA_88mw_B18S_Cannon : CannonCore{
+		scope=2;
+		displayName="[DBA] 88mw B-13 Canister Cannon";
+		cursor="EmptyCursor";
+		shotFromTurret=0;
+		cursorAim="cannon";
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		magazines[]=
+		{
+			"DBA_88mm_CR13_x20_mag",
+		};
+		reloadTime=2;
+		magazineReloadTime=2;
+		autoReload=1;
+		autoFire=0;
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		class GunParticles
+		{
+		};
+		class manual: Mode_SemiAuto
+		{
+			displayName="88mw B-13 Canister Cannon";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.70,
+					6000
+				};
+				begin2[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.658,
+					6000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.1,
+					"begin2",
+					0.5
+				};
+				class SoundTails
+				{
+					class TailForest
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_forest",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_houses",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+					class TailInterior
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_interior",
+							1.99526,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_meadows",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_trees",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+				};
+			};
+			recoil="Empty";
+			reloadTime=2;
+			soundBurst=0;
+			dispersion=0.000085;
+			showToPlayer=1;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=75;
+		};
+		class close: manual
+		{
+			showToPlayer=0;
+			soundBurst=0;
+			soundContinuous=0;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=150;
+			aiRateOfFireDispersion=0.1;
+			minRange=0;
+			minRangeProbab=0.950000001;
+			midRange=50;
+			midRangeProbab=0.97999998;
+			maxRange=100;
+			maxRangeProbab=0.90000001;
+		};
+		class short: close
+		{
+			minRange=100;
+			minRangeProbab=0.95;
+			midRange=250;
+			midRangeProbab=0.99999999;
+			maxRange=500;
+			maxRangeProbab=0.70000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=500;
+			aiRateOfFireDispersion=0.1;
+		};
+		class medium: close
+		{
+			minRange=500;
+			minRangeProbab=0.95;
+			midRange=650;
+			midRangeProbab=0.95999999;
+			maxRange=800;
+			maxRangeProbab=0.9000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=800;
+			aiRateOfFireDispersion=0.1;
+		};
+		class far: close
+		{
+			minRange=800;
+			minRangeProbab=0.9;
+			midRange=900;
+			midRangeProbab=0.95999999;
+			maxRange=1000;
+			maxRangeProbab=0.950000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=1000;
+			aiRateOfFireDispersion=0.1;
 		};
 	};
 };
