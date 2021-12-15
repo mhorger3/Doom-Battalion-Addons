@@ -3,7 +3,7 @@ class CfgPatches
 	class DBA_AAT
 	{
 		requiredAddons[] = {"A3_Armor_F_Beta"};
-		units[] = {"O_DBA_CIS_King_AAT_F", "O_DBA_CIS_Recon_AAT_Tan_F", "O_DBA_CIS_Medium_AAT_Tropic_F", "O_DBA_CIS_Medium_AAT_Snow_F", "O_DBA_CIS_King_AAT_Red_F",		};
+		units[] = {"O_DBA_CIS_King_AAT_F", "O_DBA_CIS_Recon_AAT_Tan_F", "O_DBA_CIS_Medium_AAT_Tropic_F", "O_DBA_CIS_Medium_AAT_Snow_F", "O_DBA_CIS_King_AAT_Red_F",	"O_DBA_CIS_AAT_IAV_F",};
 		weapons[] = {};
 	};
 };
@@ -78,56 +78,64 @@ class CfgVehicles
 		memoryPointTaskMarker = "TaskMarker_1_pos";
 		hideWeaponsDriver = 1;
 		hideWeaponsCargo = 1;
-		class HitPoints : HitPoints
+		class HitPoints : HitPoints //Handles Module Damage + Internal Component Damage
 		{
-			class HitHull : HitHull {	// Handle internal damage
-				armor = 4.5;
-				material = -1;
-				name = "telo";
-				visual = "zbytek";
-				passThrough = 1;
-				minimalHit = 0.2;
-				explosionShielding = 0.2;
-				radius = 0.12;
-			};
-			class HitEngine : HitEngine {
-				armor = 0.75;
-				material = -1;
-				name = "motor";
-				passThrough = 0.2;
-				minimalHit = 0.24;
-				explosionShielding = 0.2;
-				radius = 0.33;
-			};
-			class HitLTrack : HitLTrack {
-				armor = 0.5;
-				material = -1;
-				name = "track_l_hit";
-				passThrough = 0;
-				minimalHit = 0.08;
-				explosionShielding = 1.44;
-				radius = 0.3;
-			};
-			class HitRTrack : HitRTrack {
-				armor = 0.5;
-				material = -1;
-				name = "track_r_hit";
-				passThrough = 0;
-				minimalHit = 0.08;
-				explosionShielding = 1.44;
-				radius = 0.3;
+			class HitHull : HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
 			};
 			class HitFuel : HitFuel
 			{
-				armor = 1.5;
-				material = -1;
-				name = "palivo";
-				passThrough = 0.1;
-				minimalHit = 0.1;
-				explosionShielding = 0.6;
-				radius = 0.25;
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
 			};
-					};
+			class HitEngine : HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack : HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack : HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
 					animationSourceHatch = "";
 					class Exhausts
 					{
@@ -522,24 +530,24 @@ class CfgVehicles
 							{
 								class HitTurret
 								{
-									armor = 0.8;
+									armor = 0.9;
 									material = -1;
 									name = "otocvez";
 									visual = "vez";
 									passThrough = 0;
-									minimalHit = 0.02;
-									explosionShielding = 1;
+									minimalHit = 0.3333333;
+									explosionShielding = 0.15;
 									radius = 0.15;
 								};
 								class HitGun
 								{
-									armor = 0.75;
+									armor = 0.9;
 									material = -1;
 									name = "otocvez";
 									visual = "";
 									passThrough = 0;
-									minimalHit = 0;
-									explosionShielding = 1;
+									minimalHit = 0.333333;
+									explosionShielding = 0.01;
 									radius = 0.15;
 								};
 							};
@@ -897,6 +905,152 @@ class CfgVehicles
 				maxVerticalRotSpeed = 0.6667;
 			};
 		};
+	};
+	class O_DBA_CIS_AAT_IAV_F : DBA_CIS_AAT_F{
+		displayName="[DBA] IAV AAT (Red)";
+		hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+		armor=500;
+		ejectDamageLimit = 0.95;
+		armorStructural=15;
+		editorSubcategory="O_DBA_CIS_Tanks";
+		vehicleClass="O_DBA_CIS_Tanks";
+		side=0;
+		faction="O_DBA_CIS_F";
+		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_F.jpg";
+		enginePower=1500;
+		maxOmega=592;
+		maxSpeed=70;
+		peakTorque=4870.024;
+		thrustDelay=0.5;
+		clutchStrength=175;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=650000;
+		idleRpm=2200;
+		redRpm=5652;
+		engineLosses=5;
+		epeImpulseDamageCoef=0.15;
+		class HitPoints : HitPoints
+		{
+			class HitHull : HitHull
+			{
+            armor = 4.5;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+            passThrough = 1;
+            minimalHit = 0.2;
+            explosionShielding = 0.2;
+            radius = 0.12;
+			};
+			class HitFuel : HitFuel
+			{
+            armor = 1.5;
+            material = -1;
+            name = "palivo";
+            passThrough = 0.1;
+            minimalHit = 0.1;
+            explosionShielding = 0.6;
+            radius = 0.25;
+            visual = "motor";
+			};
+			class HitEngine : HitEngine
+			{
+            armor = 0.75;
+            material = -1;
+            name = "motor";
+            passThrough = 0.2;
+            minimalHit = 0.24;
+            explosionShielding = 0.2;
+            radius = 0.33;
+            visual = "motor";
+			};
+			class HitLTrack : HitLTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_l_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_L";
+			};
+			class HitRTrack : HitRTrack
+			{
+            armor = 4.5;
+            material = -1;
+            name = "track_r_hit";
+            passThrough = 0;
+            minimalHit = 0.08;
+            explosionShielding = 0.01;
+            radius = 0.3;
+            visual = "pas_P";
+			};
+		};
+		class Turrets: turrets
+        {
+            class MainTurret: Mainturret
+            {				
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+						"DBA_UKAS_MG",
+						"SmokeLauncher"
+						};
+						magazines[]=
+						{
+						"DBA_762_REC_x2600_mag",
+						"DBA_762_REC_x2600_mag",
+						"SmokeLauncherMag"
+						};
+						startEngine = false;
+						stabilizedInAxes = 3;
+					};
+				};
+				weapons[] =
+				{
+					"DBA_88mw_B18S_Cannon"
+				};
+				magazines[] =
+				{
+					"DBA_88mm_CR13_x20_mag",
+					"DBA_94mm_PM4C_x4_mag",
+				};
+				startEngine = false;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed=1.4444444444;
+				maxVerticalRotSpeed=0.6667;
+				class HitPoints
+				{
+                class HitTurret
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "vez";
+                    passThrough = 0;
+                    minimalHit = 0.3333333;
+                    explosionShielding = 0.15;
+                    radius = 0.15;
+                };
+                class HitGun
+                {
+                    armor = 0.9;
+                    material = -1;
+                    name = "otocvez";
+                    visual = "";
+                    passThrough = 0;
+                    minimalHit = 0.333333;
+                    explosionShielding = 0.01;
+                    radius = 0.15;
+                };
+				};
+            };
+        };
 	};
 	// Varients
 	class O_DBA_CIS_Medium_AAT_Snow_F : O_DBA_CIS_Medium_AAT_Tropic_F
