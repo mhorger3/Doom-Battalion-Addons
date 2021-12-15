@@ -762,7 +762,6 @@ class cfgWeapons
 			aiRateOfFireDispersion = 0.1;
 		};
 	};
-	class 3AS_GATRepeater;
 	class 101st_CIS_Mech: 3AS_GATRepeater
 	{
 		displayName="CIS Long Range Cannon";
@@ -1085,6 +1084,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class VehicleMagazine;
+	class CA_Magazine;
 	class 101st_CIS_LR_Mag: CA_Magazine
 	{
 		ammo="DBA_792_M5A";
