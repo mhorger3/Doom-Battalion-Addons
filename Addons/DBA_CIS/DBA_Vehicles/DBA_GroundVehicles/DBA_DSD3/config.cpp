@@ -62,6 +62,7 @@ class CfgVehicles
 	class 101st_DSD3_Droid: StaticMGWeapon
 	{
 		displayName="DSD3 Spider Droid (Prototype)";
+		side = 0;
 		armor=450;
 		explosionshielding=100;
 		scope=2;
