@@ -65,6 +65,7 @@ class CfgVehicles
 		armor=200;
 		explosionshielding=100;
 		scope=2;
+		side = 0;
 		scopeCurator=2;
 		forceInGarage=1;
 		crew = "B_UAV_AI";

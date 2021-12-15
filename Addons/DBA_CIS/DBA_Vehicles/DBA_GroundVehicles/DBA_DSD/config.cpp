@@ -68,6 +68,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		crew = "B_UAV_AI";
+		side = 0;
 		faction = "O_DBA_CIS_F";
 		model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD.p3d";
 		hiddenSelections[] = {"body", "lights"};

@@ -63,6 +63,7 @@ class CfgVehicles
 	{
 		displayName="Octuptarra Tri-Droid (Prototype)";
 		armor=900;
+		side = 0;
 		explosionshielding=0.1;
 		scope=2;
 		scopeCurator=2;
