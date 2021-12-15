@@ -52,7 +52,7 @@ class CfgGroups {
 			name="DBA IND";
 			class Infantry
 			{
-				name="Infantry";
+				name="Infantry (Tuskan)";
 				class O_DBA_IND_Tuskan_Patrol
 				{
 					author="Ragwolf";

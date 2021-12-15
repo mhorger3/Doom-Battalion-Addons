@@ -10,6 +10,7 @@ class UnderBarrelSlot;
 class SensorTemplateIR;
 class cfgWeapons
 {
+	class 3AS_GATRepeater;
 	class CannonCore;
 	class cannon_120mm : CannonCore
 	{
@@ -761,11 +762,139 @@ class cfgWeapons
 			aiRateOfFireDispersion = 0.1;
 		};
 	};
+
+	class 101st_CIS_Mech: 3AS_GATRepeater
+	{
+		displayName="CIS Long Range Cannon";
+		displayNameShort="CIS LR Cannon";
+		author="Dutch";
+		magazines[]=
+		{
+			"101st_CIS_LR_Mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		class manual
+		{
+			displayName="Heavy Repeater";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=0.375;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					0.75,
+					1,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.0115;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=12;
+			burstRangeMax=42;
+			aiRateOfFire=0.5;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=36;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=30;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=8;
+			burstRangeMax=12;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
+		};
+	};
 };
 
 class CfgMagazines
 {
 	class VehicleMagazine;
+	class 101st_CIS_LR_Mag: CA_Magazine
+	{
+		ammo="DBA_792_M5A";
+		count=5000;
+		mass=10;
+		scope=2;
+		weight=0;
+		displayName="101st CIS LR 5000Rnd";
+	};
 	class DBA_792_M5A_x400_mag : VehicleMagazine {
 		scope = 2;
 		displayname = "7.92mw M-5a";

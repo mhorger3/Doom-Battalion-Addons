@@ -1212,6 +1212,7 @@ class cfgGroups
             
 			
 			class Infantry_Winter {
+				name = "Infantry (Winter)";
 				class O_DBA_CIS_B1_Assault_Squad
 				{
 					author = "Vulgar";
@@ -2157,6 +2158,7 @@ class cfgGroups
 			};
 			
 			class Infantry_Jungle {
+				name = "Infantry (Jungle)";
 				class O_DBA_CIS_B1_Assault_Squad
 				{
 					author = "Vulgar";
@@ -3101,6 +3103,7 @@ class cfgGroups
                 };
 			};		
 			class Infantry_Simulation {
+				name = "Infantry (Training)";
 				class O_DBA_CIS_B1_Assault_Squad
 				{
 					author = "Vulgar";
@@ -4046,6 +4049,7 @@ class cfgGroups
 			};
 			
 			class Infantry_Geonosis {
+				name = "Infantry (Geonosis)";
 				class O_DBA_CIS_B1_Assault_Squad
 				{
 					author = "Vulgar";
