@@ -883,7 +883,7 @@ class cfgWeapons
 	};
 	class DBA_88mw_B18S_Cannon : CannonCore{
 		scope=2;
-		displayName="[DBA] 88mw B-13 Canister Cannon";
+		displayName="[DBA] 88mw B-18S Canister Cannon";
 		cursor="EmptyCursor";
 		shotFromTurret=0;
 		cursorAim="cannon";
@@ -1280,6 +1280,18 @@ class CfgMagazines
 		initspeed = 259;
 		tracersevery = 1;
 	};
+	class DBA_88mm_CR13_x20_mag : VehicleMagazine{
+		displayname="CR-13 88mw Canister";
+		ammo="DBA_88mm_CR13_CAN";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="CR-13 88mw Canister";
+		shortnamemagazine="CR-13 Canister";
+		displayNameMFDFormat="Canister";
+		displayNameShort="Canister";
+		count=20;
+		initspeed=343;
+		tracersevery=1;
+	};
 };
 
 class SensorTemplatePassiveRadar;
@@ -1294,7 +1306,8 @@ class CfgAmmo
 {
 	class Sh_120mm_APFSDS;
 	class B_35mm_AA_Tracer_Red;
-	class DBA_792_M5A : B_35mm_AA_Tracer_Red
+	class B_762x54_Ball;
+	class DBA_792_M5A : B_762x54_Ball
 	{
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		allowAgainstInfantry = 1;
@@ -1899,4 +1912,74 @@ class CfgAmmo
 		};
 		timeToLive = 20;
 	};
+	//Start of Canister Round
+	class DBA_88mm_Canister_Submunition : B_762x54_Ball{
+		hit=8;
+		warheadName="Flechette";
+		indirectHit=5;
+		indirectHitRange=0.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=450;
+		coefGravity=0.33;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=20;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=2.424242424;
+		typicalSpeed=100;
+		deflecting = 20;
+		model="kobra\442_weapons\ammo\orange_tracer.p3d";
+		effectfly="442_plasma_orange";
+	};
+	class DBA_88mm_CR13_CAN : Sh_120mm_APFSDS{
+		displayName="CR-13 88mw Canister Round";
+		hit=0;
+		warheadName="Canister";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=343;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.9;
+		cost=500;
+		CraterEffects = "";
+		coefGravity=0;
+		explosioneffects = "";
+		effectsSmoke = "";
+		tracerStartTime=0.05;
+		tracerScale=0.8;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=18.21493625;
+		typicalSpeed=500;
+		deflecting = 0;
+		simulation = "shotSubmunitions";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="DBA_88mm_Canister_Submunition";
+		triggerDistance = -1;
+		submunitionConeAngle = 0.525;
+		submunitionInitSpeed=630;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			72
+		};
+		triggerTime=0.01;
+		triggerOnImpact = 0;
+		deleteParentWhenTriggered = 1;
+		submunitionInitialOffset[]= {0, 0, -5};
+		aiAmmoUsageFlags="64 + 128";
+		allowAgainstInfantry=1;
+		timeToLive=210;
+	};
+	// END
 };
