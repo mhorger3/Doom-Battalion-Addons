@@ -630,6 +630,28 @@ class CfgWeapons {
 			hiddenSelections[] = {"camo1"};
 		};
 	};
+	class 101st_Heretic_Pauldron: V_RebreatherB
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=1;
+		scopeArsenal=2;
+		displayName="101st Heretic Pauldron (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Heretic_Pauldron_CO.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			containerClass="Supply100";
+			uniformType="Default";
+			mass=80;
+			vestType = "Rebreather";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+			hiddenSelections[] = {"camo1"};
+		};
+	};
 	class 101st_Custom_CompanyCSM_Pauldron: V_RebreatherB
 	{
 		author="Dutch";
