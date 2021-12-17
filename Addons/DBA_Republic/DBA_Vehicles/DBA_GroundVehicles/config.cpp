@@ -29,6 +29,7 @@ class CfgPatches
 			"DBA_Armata_Testbed",
 			"DBA_AV7_Testbed",
 			"DBA_Bantha_Testbed",
+			"DBA_Command_Mobility_Vehicle",
 			"DBA_LSV",
 			"DBA_ATTE_Base",
 			"101st_Octo_Droid",
@@ -609,6 +610,112 @@ class CfgVehicles
 					class CommanderOptics;
 				};
 			};
+		};
+	};
+	class C_Offroad_02_unarmed_F;
+	class DBA_Command_Mobility_Vehicle: C_Offroad_02_unarmed_F
+	{
+		author = "Seatie";
+		scope = 2;
+		scopeCurator = 2;
+		side=1;
+		displayName="Command Mobility Vehicle";
+		faction="Republic_101st";
+		thrustDelay = 0.1;
+		brakeIdleSpeed = 1.78;
+		maxSpeed = 195;
+		fuelCapacity = 16;
+		waterLeakiness = 0.0;
+		waterLinearDampingCoefX = 10.0;
+		waterLinearDampingCoefY = 2.0;
+		waterResistanceCoef = 0.0005;
+		rudderForceCoef = 1.25;
+		waterAngularDampingCoef = 1.0;
+		canFloat = 1;
+		transportSoldier=25;
+		slowSpeedForwardCoef = 0.55;
+		normalSpeedForwardCoef = 0.95;
+		wheelCircumference = 2.633;
+		antiRollbarForceCoef = 30;
+		antiRollbarForceLimit = 80;
+		antiRollbarSpeedMin = 0;
+		antiRollbarSpeedMax = 300;
+		idleRpm = 500;
+		redRpm = 8000;
+		accelAidForceCoef = 6.5;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 150;
+		enginePower = 1500;
+		minOmega = 52.3598775;
+		maxOmega = 837.75804;
+		peakTorque = 1790.493112;
+		crewCrashProtection = 0.000;
+		epeImpulseDamageCoef= 0.0;
+		class complexGearbox
+		{
+        GearboxRatios[] = {"R1",-0.25,"N",0,"D1",3.588,"D2",2.186,"D3",1.405,"D4",1,"D5",0.65};
+		AmphibiousRatios[] = {"R1",-0.25,"N",0,"D1",0.65};
+        TransmissionRatios[] = {"High",7};
+        gearBoxMode = "auto";
+        moveOffGear = 1;
+        driveString = "D";
+        neutralString = "N";
+        reverseString = "R";
+        gearUpMaxCoef = 0.95;
+        gearDownMaxCoef = 0.85;
+        gearUpMinCoef = 0.65;
+        gearDownMinCoef = 0.55;
+        transmissionDelay = 1;
+		};
+		switchTime = 0.1;
+		latency = 0.5;
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		class TextureSources
+		{
+			class Command_Mobility_Vehicle
+			{
+				displayName = "Command Mobility Vehicle";
+				author = "Seatie";
+				textures[] = 
+				{
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+				};
+				factions[] = {"Republic_101st"};
+			};
+		};
+		textureList[]={"Command_Mobility_Vehicle",1};
+		hiddenSelectionsTextures[]= 
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+			"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
+			"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+		};
+		class PlateInfos
+		{
+			name="spz";
+			color[]={0,0,0,1};
+			plateFont = "RobotoCondensedLight";
+			//plateFormat = "Lamby's Toes ,Daddy Blind ,ButterBeno ,Hammer had fun ,Dagger had fun ,Biggus Dickus ,Thiccums ,Hoggers,DA DA DA,Wolfe,Corruption dad,Conservative,Asshole,Hoo haw";
+			plateFormat = "Lamby's Toes";
+			plateLetters="ABCDEFHIKLMOPRSTVXYZ";
 		};
 	};
 	class DBA_Bantha_Testbed: 212th_APC_Wheeled_01_base_F
