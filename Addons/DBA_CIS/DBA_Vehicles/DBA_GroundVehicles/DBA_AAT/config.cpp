@@ -912,7 +912,6 @@ class CfgVehicles
 		armor=500;
 		ejectDamageLimit = 0.95;
 		armorStructural=15;
-		editorSubcategory="O_DBA_CIS_Tanks";
 		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
