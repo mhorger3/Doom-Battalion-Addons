@@ -1984,7 +1984,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		armor=700;
+		armor=1100;
+		armorStructural=16;
 		transportSoldier=13;
 		faction="Republic_101st";
 		hiddenSelections[]=
