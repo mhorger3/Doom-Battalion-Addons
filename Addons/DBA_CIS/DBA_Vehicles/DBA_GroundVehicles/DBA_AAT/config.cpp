@@ -3,7 +3,7 @@ class CfgPatches
 	class DBA_AAT
 	{
 		requiredAddons[] = {"A3_Armor_F_Beta"};
-		units[] = {"O_DBA_CIS_King_AAT_F", "O_DBA_CIS_Recon_AAT_Tan_F", "O_DBA_CIS_Medium_AAT_Tropic_F", "O_DBA_CIS_Medium_AAT_Snow_F", "O_DBA_CIS_King_AAT_Red_F",	"O_DBA_CIS_AAT_IAV_F",};
+		units[] = {"O_DBA_CIS_King_AAT_F", "O_DBA_CIS_Recon_AAT_Tan_F", "O_DBA_CIS_Medium_AAT_Tropic_F", "O_DBA_CIS_Medium_AAT_Snow_F", "O_DBA_CIS_King_AAT_Red_F","O_DBA_CIS_AAT_IAV_F"};
 		weapons[] = {};
 	};
 };
@@ -912,7 +912,6 @@ class CfgVehicles
 		armor=500;
 		ejectDamageLimit = 0.95;
 		armorStructural=15;
-		vehicleClass="O_DBA_CIS_Tanks";
 		side=0;
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_AAT_F.jpg";
