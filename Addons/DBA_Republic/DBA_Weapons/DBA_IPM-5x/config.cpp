@@ -16,8 +16,8 @@ class CfgPatches
 		};
 		magazines[]=
 		{
-			"DBA_IK3_x1_mag",
-			"DBA_IAD5_x2_mag",
+			"DBA_IK3_x2_mag",
+			"DBA_IAD5_x3_mag",
 		};
 		ammo[]=
 		{
@@ -69,8 +69,8 @@ class CfgWeapons{
 		};
 		magazines[]=
 		{
-			"DBA_IK3_x1_mag",
-			"DBA_IAD5_x2_mag",
+			"DBA_IK3_x2_mag",
+			"DBA_IAD5_x3_mag",
 		};
 		magazineWell[]={};
 		recoil="recoil_pistol";
@@ -158,7 +158,7 @@ class CfgWeapons{
 };
 class CfgMagazines{
 	class CA_LauncherMagazine;
-	class DBA_IK3_x1_mag : CA_LauncherMagazine{
+	class DBA_IK3_x2_mag : CA_LauncherMagazine{
 		displayname="IK-3 ATGM Pod";
 		ammo="DBA_IK3_MMissile";
 		scope=2;
@@ -168,12 +168,12 @@ class CfgMagazines{
 		shortnamemagazine="IK-3 ATGM Pod";
 		displayNameMFDFormat="IK-3 ATGM";
 		displayNameShort="IK-3 ATGM";
-		mass=300;
-		count=1;
+		mass=100;
+		count=2;
 		initspeed=100;
 		tracersevery=1;
 	};
-	class DBA_IAD5_x2_mag : CA_LauncherMagazine{
+	class DBA_IAD5_x3_mag : CA_LauncherMagazine{
 		displayname="IAD-5 MANPAD Pod";
 		scope=2;
 		ammo="DBA_IAD5_MMissile";
@@ -183,8 +183,8 @@ class CfgMagazines{
 		shortnamemagazine="IAD-5 MANPAD";
 		displayNameMFDFormat="IAD-5";
 		displayNameShort="IAD-5";
-		mass=200;
-		count=2;
+		mass=80;
+		count=3;
 		initspeed=100;
 		tracersevery=1;
 	};
@@ -194,9 +194,9 @@ class CfgAmmo{
 	class MissileBase;
 	class ammo_Penetrator_Base;
 	class DBA_IK3_Penetrator : ammo_Penetrator_Base{
-		hit=825;
+		hit=900;
 		warheadName = "Tandem";
-		caliber=23.33333333;
+		caliber=27.33333333;
 	};
 	class DBA_IK3_MMissile : MissileBase{
 		model="\a3\Weapons_F_Tank\Ammo\rocket_spg9.p3d";
