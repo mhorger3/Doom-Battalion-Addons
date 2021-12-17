@@ -600,7 +600,7 @@ class CfgVehicles
 	class DBA_CIS_AAT_base_F : DBA_AAT_base_F
 	{
 		author = "$STR_3as_Studio";
-		_generalMacro = "B_MBT_01_base_F";
+		_generalMacro = "DBA_CIS_AAT_base_F";
 		features = "Randomization: No						<br />Camo selections: 2 - hull, main turret						<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: None						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 6";
 		crew = "O_DBA_CIS_B1_Crew_Droid_F";
 		side = 0;
