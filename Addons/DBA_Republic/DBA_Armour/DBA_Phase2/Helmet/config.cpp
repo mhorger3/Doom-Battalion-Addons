@@ -3849,7 +3849,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Arcturus_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_CO.paa"
 		};
 	};
 	class DBA_Blue_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3863,7 +3863,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Blue_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Blue_CO.paa"
 		};
 	};
 	class DBA_Cadet_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3877,7 +3877,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Cadet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Cadet_CO.paa"
 		};
 	};
 	class DBA_Clean_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3891,7 +3891,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Clean_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Clean_CO.paa"
 		};
 	};
 	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
@@ -3905,7 +3905,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Craft_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_CO.paa"
 		};
 	};
 	class DBA_Dune_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3919,7 +3919,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Dune_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Dune_CO.paa"
 		};
 	};
 	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3933,7 +3933,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Mockingjay_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mockingjay_CO.paa"
 		};
 	};
 	class DBA_Nyom_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3947,7 +3947,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Nyom_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Nyom_CO.paa"
 		};
 	};
 	class DBA_Trip_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3961,7 +3961,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Trip_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Trip_CO.paa"
 		};
 	};
 	class DBA_Vance_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3975,7 +3975,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Vance_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Vance_Helmet_CO.paa"
 		};
 	};
 	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -3989,7 +3989,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Kaldor_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kaldor_CO.paa"
 		};
 	};
 	class 101st_Kuzy_Helmet : DBA_P2_Pilot_Helm
@@ -4006,7 +4006,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Kuzy_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kuzy_Helmet_CO.paa"
 		};
 	};
 	class 101st_Atlas_Helmet : DBA_P2_Pilot_Helm
@@ -4023,7 +4023,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Atlas_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Atlas_Helmet_CO.paa"
 		};
 	};
 	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
@@ -4040,7 +4040,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Snake_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Snake_Helmet_CO.paa"
 		};
 	};
 	class 101st_Flanker_Helmet : DBA_P2_Pilot_Helm
@@ -4057,7 +4057,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Flanker_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Flanker_Helmet_CO.paa"
 		};
 	};
 	class 101st_Stultus_Helmet : DBA_P2_Pilot_Helm
@@ -4074,7 +4074,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Stultus_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Stultus_Helmet_CO.paa"
 		};
 	};
 	class 101st_Gorman_Helmet : DBA_P2_Pilot_Helm
@@ -4091,7 +4091,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\NewPilot\Gorman_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Gorman_Helmet_CO.paa"
 		};
 	};
 	class 101st_Finch_Helmet : DBA_P2_Pilot_Helm
