@@ -5627,6 +5627,119 @@ class CfgWeapons
 			maxRangeProbab=0.5;
 		};
 	};
+	//Fennek Gun Start
+	class DBA_25mw_P25S_Cannon : HMG_127{
+		displayName = "P-25S Autogun";
+		magazineReloadTime = 5;
+		showAimCursorInternal = 0;
+		ballisticsComputer = "2 + 16";
+		FCSMaxLeadSpeed = 75;
+		FCSZeroingDelay = 0.15;
+		maxZeroing = 5500;
+		magazines[]= 
+		{
+			"DBA_25mm_PL25S_x300_mag",
+		};
+		class manual: MGun {
+			displayName = "P-25S Autogun";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					0.5,
+					0.15,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.2390438247;
+			dispersion = 0.00509054;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class close: manual {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.500000;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.800000;
+			midRange = 20;
+			midRangeProbab = 0.700000;
+			maxRange = 50;
+			maxRangeProbab = 0.200000;
+		};
+
+		class short: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.700000;
+			midRange = 150;
+			midRangeProbab = 0.700000;
+			maxRange = 300;
+			maxRangeProbab = 0.200000;
+		};
+
+		class medium: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.700000;
+			midRange = 600;
+			midRangeProbab = 0.650000;
+			maxRange = 800;
+			maxRangeProbab = 0.100000;
+		};
+
+		class far: close {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.650000;
+			midRange = 800;
+			midRangeProbab = 0.400000;
+			maxRange = 1200;
+			maxRangeProbab = 0.100000;
+		};
+	};
+	//END
 	class 101st_CIS_Mech: 3AS_GATRepeater
 	{
 		displayName="CIS Long Range Cannon";
@@ -7343,6 +7456,28 @@ class CfgMagazines
 		count=4;
 		initspeed=1570;
 		tracersevery=1;
+	};
+	class DBA_100mm_UB4H_x100_mag : VehicleMagazine{
+		displayname="UB-4A 100mw High Explosive Fragmentation";
+		ammo="DBA_100mm_UB4H_HEF";
+		displaynamemagazine="100mw UB-4H HE-F";
+		shortnamemagazine="UB-4H HE-F";
+		displayNameMFDFormat="HE-F";
+		displayNameShort="HE-F";
+		count=100;
+		initspeed=930;
+		tracersevery=1;
+	};
+	class DBA_Laserbeam_mag : VehicleMagazine{
+		displayname="Orbital Laser Designator";
+		ammo="DBA_Laserbeam";
+		displaynamemagazine="Orbital Laser Designator";
+		shortnamemagazine="Orbital Laser Designator";
+		displayNameMFDFormat="OLD";
+		displayNameShort="OLD";
+		count=99999;
+		initspeed=25000;
+		tracersevery=0;
 	};
 	class DBA_Laserbeam_mag : VehicleMagazine{
 		displayname="Orbital Laser Designator";
@@ -11457,6 +11592,125 @@ class CfgAmmo
 		timeToLive=20;
 	};
 	// END
+	class DBA_100mm_UB4H_HEF : Sh_120mm_APFSDS{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 15500;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 1850;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 1886;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_small_HD", "ACE_frag_small"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 125;
+		indirectHit = 75;
+		indirectHitRange = 8;
+		displayname = "100mw UB-4H HE Fragmentation";
+		warheadName = "UB-4H HE-F";
+		explosive = 1.0;
+		airLock = 0;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 15;
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		tracerScale = 2.15;
+		tracerStartTime = 0;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 1.100000;
+		typicalSpeed = 930;
+		proximityExplosionDistance = 30;
+		fuseDistance = 50;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=7.50;
+		airfriction=-0;
+		deflecting=0;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 40;
+			distance = 75;
+		};
+
+		class CamShakeHit {
+			power = 80;
+			duration = 2;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeFire {
+			power = 40;
+			duration = 2.5;
+			frequency = 15;
+			distance = 100;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	//END
+	//Fennek Gun Start
+	class DBA_PL25S_Penetrator : ammo_Penetrator_Base{
+		hit=80;
+		warheadName = "HEDP";
+		caliber=2.4;
+	};
+	class DBA_25mm_PL25S_HEDP : B_40mm_GPR{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 140;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 21;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2377;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 75;
+		indirectHit = 55;
+		indirectHitRange = 3.15;
+		explosive= 1;
+		warheadName = "HEDP";
+		caliber = 5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=405;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
+		cost = 75;
+		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="DBA_PL25S_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.55;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=0;
+		coefGravity=3.5;
+		waterFriction=0;
+	};
+	//END
 	class DBA_aat_king_ammo: 3AS_ATT_redPlasma_AT
 	{
 		hit=650;
