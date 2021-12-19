@@ -5457,6 +5457,133 @@ class CfgWeapons
 		weaponLockSystem=2;
 		textureType="semi";
 	};
+	//ADGS
+	class DBA_100mw_HH33G_Cannon : cannon_120mm{
+		displayName="HH-33G 100mw Naval Gun";
+		displayNameShort="HH-33G";
+		author="ISU";
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 10;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
+		magazines[]=
+		{
+			"DBA_100mm_UB4H_x100_mag",
+		};
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=3.3333;
+		class manual
+		{
+			displayName="HH-33";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=3.333333333;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					10.25,
+					1.75,
+					5500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.00290888;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=100;
+			midRangeProbab=0.9999999998;
+			maxRange=150;
+			maxRangeProbab=0.999999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=500;
+			minRange=0;
+			minRangeProbab=0.88;
+			midRange=500;
+			midRangeProbab=0.90;
+			maxRange=750;
+			maxRangeProbab=1;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=750;
+			minRange=0;
+			minRangeProbab=0.9;
+			midRange=1500;
+			midRangeProbab=0.9;
+			maxRange=2000;
+			maxRangeProbab=0.9;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=1300;
+			minRange=0;
+			minRangeProbab=0.9;
+			midRange=3000;
+			midRangeProbab=0.9;
+			maxRange=3750;
+			maxRangeProbab=0.9;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=2500;
+			minRange=0;
+			minRangeProbab=0.7;
+			midRange=4750;
+			midRangeProbab=0.7;
+			maxRange=5250;
+			maxRangeProbab=0.7;
+		};
+	};
 	//Field Gun
 	class DBA_94mw_PN32_FG : cannon_120mm{
 		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
