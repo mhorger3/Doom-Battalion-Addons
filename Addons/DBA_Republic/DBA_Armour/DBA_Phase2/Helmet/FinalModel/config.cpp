@@ -76,4 +76,15 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\data\Custom\Rage_Helmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Doom : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: DoomBot";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\data\Custom\Doom_Guy_CO.paa"
+		};
+	};
+	
+	
 };
