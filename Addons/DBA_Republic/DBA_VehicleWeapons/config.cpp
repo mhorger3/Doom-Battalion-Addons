@@ -6063,7 +6063,7 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
+			
 		};
 		pylonWeapon="DBA_Aircraft_Lasers_Green_Pylon";
 	};
@@ -6088,7 +6088,7 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
+			
 		};
 		pylonWeapon="DBA_Aircraft_Heavy_Lasers_Green_Pylon";
 	};
@@ -6112,7 +6112,7 @@ class CfgMagazines
 		model="\A3\Weapons_F\DynamicLoadout\PylonPod_Twin_Cannon_20mm.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail"
+			
 		};
 		pylonWeapon="DBA_Kannon_Pylon";
 	};
@@ -6126,7 +6126,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="dba_pylon_agm";
@@ -6141,7 +6140,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="dba_pylon_a2a";
@@ -6169,7 +6167,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_pylon_lgm";
@@ -6184,7 +6181,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Universal_rail",
 			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_pylon_ugm";
