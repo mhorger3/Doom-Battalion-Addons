@@ -5,8 +5,6 @@ class CfgPatches
 		author="";
 		requiredAddons[]=
 		{
-			"101st_Aux_Mod",
-			"DBA_patch_weapons",
 		};
 		requiredVersion=0.1;
 		units[]={

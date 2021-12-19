@@ -77,7 +77,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
 		};
-		class Single : Single
+		class Single : Mode_SemiAuto
 		{
 			dispersion = 0.00047;
 			minRange = 2;
@@ -88,7 +88,7 @@ class CfgWeapons
 			maxRangeProbab = 0.30000001;
 			modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		};
-		class single_medium_optics1 : single_medium_optics1
+		class single_medium_optics1 : Single
 		{
 			dispersion = 0.00073000003;
 			requiredOpticType = 1;
@@ -101,7 +101,7 @@ class CfgWeapons
 			aiRateOfFire = 6;
 			aiRateOfFireDistance = 600;
 		};
-		class single_far_optics2 : single_far_optics2
+		class single_far_optics2 : single_medium_optics1
 		{
 			dispersion = 0.00073000003;
 			requiredOpticType = 2;
