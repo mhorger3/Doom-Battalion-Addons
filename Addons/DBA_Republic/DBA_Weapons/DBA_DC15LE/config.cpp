@@ -151,14 +151,14 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			mass = 2;
-			modelOptics = "\A3\Weapons_F\empty";
+			modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 			optics = 1;
 			class OpticsModes
 			{
 				class MRCOcq
 				{
 					opticsID=1;
-					useModelOptics=0;
+					useModelOptics=1;
 					opticsPPEffects[]=
 					{
 						"Default"
