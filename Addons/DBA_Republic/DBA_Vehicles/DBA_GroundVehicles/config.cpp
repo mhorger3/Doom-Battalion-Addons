@@ -2648,8 +2648,8 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = 
 		{
-			"101st_Aux_Mod\Addons\textures\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\textures\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
 		};
 		scope=2;
 		scopeCurator=2;

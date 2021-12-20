@@ -18,6 +18,11 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class SlotInfo;
+class MuzzleSlot;
+class CowsSlot;
+class PointerSlot;
+class UnderBarrelSlot;
+class GunParticles;
 class CowsSlot_Rail;
 class CowsSlot_Rail_Pistol;
 class CowsSlot_Pistol;
@@ -42,8 +47,12 @@ class PointerSlot_Pistol;
 class PointerSlot_Launcher;
 class CfgWeapons
 {
-	class DBA_DC15A_Base_F;
-	class DBA_DC15A_LE_F : DBA_DC15A_Base_F
+	class Rifle_Base_F;
+	class Rifle_Long_Base_F: Rifle_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+	class DBA_DC15A_LE_F : Rifle_Long_Base_F
 	{
 		author = "Vulgar";
 		_generalMacro = "arifle_MXM_F";
@@ -77,7 +86,6 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
 		};
-		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		class Single : Mode_SemiAuto
 		{
 			dispersion = 0.00047;
@@ -141,7 +149,6 @@ class CfgWeapons
 		initSpeed = 920;
 		recoil = "recoil_mxm";
 		maxZeroing = 1400;
-		descriptionShort = "$STR_A3_CfgWeapons_arifle_XMM1";
 	};
 	class ItemCore;
 	class optic_MRD: ItemCore
