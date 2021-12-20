@@ -9,7 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] =
-		{
+		{"DBA_DC15A_LE_F", "101st_LE_Scope"
 		};
 	};
 };
@@ -77,6 +77,7 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
 		};
+		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		class Single : Mode_SemiAuto
 		{
 			dispersion = 0.00047;
@@ -137,9 +138,9 @@ class CfgWeapons
 	{
 		author = "101st Aux";
 		scope = 2;
-		displayName = "CQC Sight Aurek";
+		displayName = "LE Scope";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Scope.p3d";
-		descriptionShort = "Pistol Scope";
+		descriptionShort = "LE Scope";
 		class ItemInfo: ItemInfo
 		{
 			mass = 2;
