@@ -304,4 +304,13 @@ class CfgVehicles {
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		uniformClass = "DBA_P2cloneTrooperUniform";
 	};
+	#include "b1_platoonunits.hpp";
+	#include "b2_platoonunits.hpp";
+	#include "bhq_platoonunits.hpp";
+	#include "c1_platoonunits.hpp";
+	#include "c2_platoonunits.hpp";
+	#include "chq_platoonunits.hpp";
+	#include "custom_platoonunits.hpp";
+	#include "detach_platoonunits.hpp";
+	#include "reserve_platoonunits.hpp";
 };

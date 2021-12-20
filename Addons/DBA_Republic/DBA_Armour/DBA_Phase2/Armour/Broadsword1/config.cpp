@@ -28,8 +28,3 @@ class CfgWeapons
 {
 #include "101st_platoonarmour.hpp"
 };
-
-class CfgVehicles
-{
-#include "101st_platoonunits.hpp"
-};

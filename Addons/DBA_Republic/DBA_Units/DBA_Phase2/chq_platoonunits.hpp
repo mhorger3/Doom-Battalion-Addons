@@ -1,34 +1,3 @@
-class Man;
-class CAManBase : Man
-{
-	class HitPoints
-	{
-		class HitHead;
-		class HitBody;
-		class HitHands;
-		class HitLegs;
-	};
-
-	class ACE_SelfActions
-	{
-		class ACE_Equipment
-		{
-			class DB101_DeployHolomap
-			{
-				displayName = "Deploy Holomap";
-				condition = "[_player, ""101st_Portable_Holomap""] call ACE_common_fnc_hasItem";
-				statement = "_player call DB101_Holomap_fnc_deploy";
-			};
-		};
-	};
-};
-class SoldierEB : CAManBase
-{
-	threat[] = { 1,0.1,0.1 };
-};
-class ACE_Flag_Black;
-class B_Soldier_f;
-class 101st_JLTS_Clone_P2;
 class ClaymoreHQ_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
