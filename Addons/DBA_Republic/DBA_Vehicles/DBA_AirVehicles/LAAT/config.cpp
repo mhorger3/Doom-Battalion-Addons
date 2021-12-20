@@ -4559,7 +4559,7 @@ class cfgVehicles
 				textures[] = 
 				{
 					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\Vehicles\LAAT\CG_LAAT_Base_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
 					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
 				};

@@ -19,6 +19,7 @@ class cfgPatches
 class cfgWeapons
 {
 	class H_HelmetSpecB;
+	class InventoryItem_Base_F;
 	class HeadgearItem: InventoryItem_Base_F
 	{
 		allowedSlots[]={901,605};
