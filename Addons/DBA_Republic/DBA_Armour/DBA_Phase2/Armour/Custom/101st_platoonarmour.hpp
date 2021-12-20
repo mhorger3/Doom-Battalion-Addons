@@ -1,5 +1,8 @@
+class UniformItem;
+class Uniform_Base;
+
 // Battalion
-class DBA_P2CloneBlindUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneBlindUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -21,7 +24,7 @@ class DBA_P2CloneBlindUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneKelUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneKelUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -44,7 +47,7 @@ class DBA_P2CloneKelUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneDutchUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneDutchUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -63,7 +66,7 @@ class DBA_P2CloneDutchUniform : DBA_P2CloneUniformBase
 	};
 };
 
-class DBA_P2CloneJerecUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneJerecUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -82,7 +85,7 @@ class DBA_P2CloneJerecUniform : DBA_P2CloneUniformBase
 	};
 };
 
-class DBA_P2CloneVinUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneVinUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -100,7 +103,7 @@ class DBA_P2CloneVinUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneKaiUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneKaiUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -119,7 +122,7 @@ class DBA_P2CloneKaiUniform : DBA_P2CloneUniformBase
 	};
 };
 // Broadsword
-class DBA_P2CloneBlackwaterUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneBlackwaterUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -137,7 +140,7 @@ class DBA_P2CloneBlackwaterUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneSeatieUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneSeatieUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -160,7 +163,7 @@ class DBA_P2CloneSeatieUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneAJUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneAJUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -178,7 +181,7 @@ class DBA_P2CloneAJUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneSparkUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneSparkUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -201,7 +204,7 @@ class DBA_P2CloneSparkUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneVulgarUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneVulgarUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -225,7 +228,7 @@ class DBA_P2CloneVulgarUniform : DBA_P2CloneUniformBase
 	};
 };
 // Claymore
-class DBA_P2CloneBloodUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneBloodUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -248,7 +251,7 @@ class DBA_P2CloneBloodUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneRepublicanUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneRepublicanUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -271,7 +274,7 @@ class DBA_P2CloneRepublicanUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneFurnUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneFurnUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -289,7 +292,7 @@ class DBA_P2CloneFurnUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2ClonePunisherUniform : DBA_P2CloneUniformBase
+class DBA_P2ClonePunisherUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -307,7 +310,7 @@ class DBA_P2ClonePunisherUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneFodderUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneFodderUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -325,7 +328,7 @@ class DBA_P2CloneFodderUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneOaksyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneOaksyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -343,7 +346,7 @@ class DBA_P2CloneOaksyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneMisfitUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneMisfitUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -361,7 +364,7 @@ class DBA_P2CloneMisfitUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneFalconUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneFalconUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -384,7 +387,7 @@ class DBA_P2CloneFalconUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneServoUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneServoUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -402,7 +405,7 @@ class DBA_P2CloneServoUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneMuttUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneMuttUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -422,7 +425,7 @@ class DBA_P2CloneMuttUniform : DBA_P2CloneUniformBase
 };
 
 
-class DBA_P2CloneBaconLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneBaconLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -445,7 +448,7 @@ class DBA_P2CloneBaconLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneCourageLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneCourageLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -463,7 +466,7 @@ class DBA_P2CloneCourageLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneLambertLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneLambertLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -481,7 +484,7 @@ class DBA_P2CloneLambertLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneProdigyLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneProdigyLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -504,7 +507,7 @@ class DBA_P2CloneProdigyLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneQuillLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneQuillLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -527,7 +530,7 @@ class DBA_P2CloneQuillLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneSeeforLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneSeeforLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;
@@ -549,7 +552,7 @@ class DBA_P2CloneSeeforLegacyUniform : DBA_P2CloneUniformBase
 		mass = 40;
 	};
 };
-class DBA_P2CloneDolittleLegacyUniform : DBA_P2CloneUniformBase
+class DBA_P2CloneDolittleLegacyUniform : Uniform_Base
 {
 	author = "Vulgar";
 	scope = 2;

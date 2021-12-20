@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class DBA_Custom_ClaymoreHQ_Armour
+	class DBA_Custom_Detachment_Armour
 	{
 		author = "Mutt / Dutch";
 		name = "101st Aux Mod Custom Armor";
