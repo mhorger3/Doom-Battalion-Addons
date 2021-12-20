@@ -1063,19 +1063,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Ryker_Helm_CO.paa"
 		};
 	};
-	class 101st_Mechanic_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Mechanic)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Mechanic_Helmet_CO.paa"
-		};
-	};
 	class 101st_Vulcan_Helmet : JLTS_CloneHelmetP2
 	{
 		author = "Vulgar";
@@ -2650,19 +2637,6 @@ class CfgWeapons
 		};
 	};
 	
-	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Phantom)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Phantom_Helmet_CO.paa"
-		};
-	};
 	class 101st_Joey_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2727,19 +2701,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Wiskjr_Helm_CO.paa"
-		};
-	};
-	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Stryker)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stryker_Helmet_CO.paa"
 		};
 	};
 	class 101st_Oaksy_Helmet: JLTS_CloneHelmetP2
@@ -3924,6 +3885,45 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Clean_CO.paa"
+		};
+	};
+	class 101st_Mechanic_Helmet: DBA_P2_Pilot_Helm
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Mechanic)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Mechanic_Helmet_CO.paa"
+		};
+	};
+	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Phantom)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Phantom_Helmet_CO.paa"
+		};
+	};
+	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Stryker)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stryker_Helmet_CO.paa"
 		};
 	};
 	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
