@@ -1063,7 +1063,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Ryker_Helm_CO.paa"
 		};
 	};
-	class 101st_Mechanic_Helmet: JLTS_CloneHelmetP2
+	class 101st_Mechanic_Helmet: DBA_P2_Pilot_Helm
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -1198,6 +1198,24 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Prodigy_Helm_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_DaggerTraitor_Helm: 101st_Dagger_Helmet
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Dagger Traitor)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\DaggerTraitor_AB_Helmet_CO.paa"
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
@@ -2632,7 +2650,7 @@ class CfgWeapons
 		};
 	};
 	
-	class 101st_Phantom_Helmet: JLTS_CloneHelmetP2
+	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -2711,7 +2729,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Wiskjr_Helm_CO.paa"
 		};
 	};
-	class 101st_Stryker_Helmet: JLTS_CloneHelmetP2
+	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -3852,6 +3870,20 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_CO.paa"
 		};
 	};
+	class DBA_Double_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Arcturus)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Double_Helmet_CO.paa"
+		};
+	};
 	class DBA_Blue_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -3906,6 +3938,20 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_CO.paa"
+		};
+	};
+	class DBA_Ranch_Pilot_Helmet: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Ranch)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Ranch_Helmet_CO.paa"
 		};
 	};
 	class DBA_Dune_Pilot_Helm: DBA_P2_Pilot_Helm

@@ -834,6 +834,34 @@ class CfgWeapons {
 			hiddenSelections[] = {"camo1", "camo2"};
 		};
 	};
+	class 101st_TraitorAirborneNCO_Pauldron: JLTS_CloneVestAirborneNCO
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=1;
+		scopeArsenal=2;
+		displayName="101st Traitor Airborne NCO (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\DaggerTraitorOfficer_Custom_Pauldron_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\DaggerTraitorNCO_Custom_Pauldron_CO.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		class ItemInfo: VestItem
+		{
+			containerClass="Supply100";
+			uniformType="Default";
+			mass=80;
+			vestType = "Rebreather";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
+			hiddenSelections[] = {"camo1", "camo2"};
+		};
+	};
 	class 101st_Custom_NCO_Pauldron: V_RebreatherB
 	{
 		author="Dutch";

@@ -89,6 +89,193 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Doom_Guy_CO.paa"
 		};
 	};
-	
-	
+	class DBA_P2Helmet_Cam : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Cam";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Cam_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Chaap : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Chaap";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Chaap_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Corvax : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Corvax";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Corvax_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Croja : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Croja";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Croja_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Devil : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Devil";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Devil_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Dova : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Dova";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Dova_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Easton : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Easton";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Easton_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Ghost : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Ghost";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Ghost_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Lance : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Lance";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Lance_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Legatorre : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Legatorre";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Legatorre_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Nassau : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Nassau";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Nassau_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Odin : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Odin";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Odin_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Papa : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Papa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Papa_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Renik : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Renik";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Renik_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Robo : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Robo";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Robo_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Ryker : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Ryker";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Ryker_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Scythe : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Scythe";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Scythe_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Seagull : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Scythe";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Seagull_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Shadow : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Shadow";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shadow_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Shepherd : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Sheperd";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shepherd_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Virgo : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Phase 2 Clone Helmet: Virgo";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Virgo_Helmet_CO.paa"
+		};
+	};
 };

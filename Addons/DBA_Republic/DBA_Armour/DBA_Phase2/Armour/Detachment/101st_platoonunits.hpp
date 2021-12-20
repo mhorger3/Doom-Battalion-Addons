@@ -951,3 +951,49 @@ class Hark_DBA : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
+class Dagger_Traitor_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Dagger Traitor (JLTS)";
+	uniformClass = "101st_212_Dagger_Traitor";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\DaggerTraitor_Upper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\DaggerTraitor_Lower_CO.paa"
+	};
+	linkedItems[] =
+	{
+	};
+	respawnLinkedItems[] =
+	{
+	};
+	editorSubcategory = "101st_Clones";
+	identityTypes[] =
+	{
+		"LanguageENG_F",
+		"Head_NATO"
+	};
+	weapons[] =
+	{
+	};
+	respawnWeapons[] =
+	{
+	};
+	magazines[] =
+	{
+	};
+	respawnMagazines[] =
+	{
+	};
+	scope = 2;
+	scopeCurator = 2;
+};

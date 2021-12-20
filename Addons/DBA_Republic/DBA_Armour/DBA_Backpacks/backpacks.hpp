@@ -325,6 +325,19 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
+	class 101st_Jumppack_Standard_Traitor : RD501_JLTS_Clone_jumppack_mc
+	{
+		dlc = "101st_Aux_Mod";
+		displayname="101st Jumppack Traitor (JLTS)";
+		maximumLoad=500;
+		hiddenSelections[]={"camo1"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\DaggerTraitor_Jumppack_CO.paa"};
+		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
+	};
 	class 101st_Jumppack_Medic : RD501_JLTS_Clone_jumppack_mc
 	{
 		dlc = "101st_Aux_Mod";
