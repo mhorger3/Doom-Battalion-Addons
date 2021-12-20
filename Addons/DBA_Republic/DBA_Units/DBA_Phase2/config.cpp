@@ -9,7 +9,8 @@ class CfgPatches
 		};
 		requiredVersion = 0.1;
 		units[] = {
-			"",
+			"101st_JLTS_Clone_P2",
+			"B_DBA_P2CloneDutch_F",
 		};
 		weapons[] =
 		{
@@ -23,7 +24,7 @@ class CfgVehicles {
 	{
 		class HitPoints;
 	};
-	class B_DBA_P2Clone_Base : B_Soldier_F
+	class 101st_JLTS_Clone_P2 : B_Soldier_F
 	{
 		scope = 0;
 		scopeCurator = 0;
@@ -55,7 +56,6 @@ class CfgVehicles {
 			"Head_NATO"
 		};
 		facewear = "";
-		uniformClass = "DBA_P2CloneUniformBase";
 		linkedItems[] =
 		{
 			"ItemMap",
@@ -270,7 +270,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class B_DBA_P2CloneRecruit_F : B_DBA_P2Clone_Base
+	class B_DBA_P2CloneRecruit_F : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -283,7 +283,7 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneRecruitUniform";
 	};
-	class B_DBA_P2CloneCadet_F : B_DBA_P2Clone_Base
+	class B_DBA_P2CloneCadet_F : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -296,7 +296,7 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneCadetUniform";
 	};
-	class B_DBA_P2CloneTrooper_F : B_DBA_P2Clone_Base
+	class B_DBA_P2CloneTrooper_F : 101st_JLTS_Clone_P2
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -304,13 +304,13 @@ class CfgVehicles {
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		uniformClass = "DBA_P2cloneTrooperUniform";
 	};
-	#include "b1_platoonunits.hpp";
-	#include "b2_platoonunits.hpp";
-	#include "bhq_platoonunits.hpp";
-	#include "c1_platoonunits.hpp";
-	#include "c2_platoonunits.hpp";
-	#include "chq_platoonunits.hpp";
-	#include "custom_platoonunits.hpp";
-	#include "detach_platoonunits.hpp";
-	#include "reserve_platoonunits.hpp";
+	#include "b1_platoonunits.hpp"
+	#include "b2_platoonunits.hpp"
+	#include "bhq_platoonunits.hpp"
+	#include "c1_platoonunits.hpp"
+	#include "c2_platoonunits.hpp"
+	#include "chq_platoonunits.hpp"
+	#include "custom_platoonunits.hpp"
+	#include "detach_platoonunits.hpp"
+	#include "reserve_platoonunits.hpp"
 };

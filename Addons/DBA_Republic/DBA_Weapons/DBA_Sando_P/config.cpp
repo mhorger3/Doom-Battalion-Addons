@@ -53,7 +53,7 @@ class CfgWeapons{
 		scope=2;
 		descriptionShort="If you haven't been asked to use it DON'T";
 		baseWeapon="DBA_Sando_Testbed";
-		model = "101st_Aux_Mod\Addons\DBA_Weapons\Rockets\SandoFinal.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\SandoFinal.p3d";
 		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Sando_CA.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32",0.446684,1,20};

@@ -135,6 +135,24 @@ class CfgWeapons
 		initSpeed = 920;
 		recoil = "recoil_mxm";
 		maxZeroing = 1400;
+		class WeaponSlotInfo
+		{
+			mass = 30;
+			class CowsSlot
+			{
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+				iconPinpoint = "Bottom";
+				iconPosition[] = { 0.5,0.34999999 };
+				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+				compatibleItems[] =
+				{
+					"101st_LE_Scope",
+				};
+			};
+		};
 	};
 	class ItemCore;
 	class optic_MRD: ItemCore

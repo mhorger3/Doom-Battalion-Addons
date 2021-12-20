@@ -52,16 +52,27 @@ class DBA_P2CloneDutchUniform : Uniform_Base
 	author = "Vulgar";
 	scope = 2;
 	displayName = "DBA P2 Clone Armour: Dutch";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dutch_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dutch_Legs_CO.paa"
+	};
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
 	};
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneDutch_F";
 		containerClass = "Supply150";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
 		mass = 40;
 	};
 };

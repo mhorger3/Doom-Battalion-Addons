@@ -60,7 +60,7 @@ class CfgWeapons{
 		scope=2;
 		descriptionShort="If you haven't been asked to use it DON'T";
 		baseWeapon="DBA_RPS6_Testbed";
-		model = "101st_Aux_Mod\Addons\DBA_Weapons\Rockets\RPS6.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_RPS6\RPS6.p3d";
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
 		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Weapons\Rockets\data\MAAWS.rtm"};

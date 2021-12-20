@@ -99,14 +99,13 @@ class Kel_DBA : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
-class Dutch_DBA : 101st_JLTS_Clone_P2
+class B_DBA_P2CloneDutch_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
 	faction = "Republic_101st";
 	displayName = "101st Dutch (JLTS)";
 	uniformClass = "DBA_P2CloneDutchUniform";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
 	editorSubcategory = "DBA_Broadsword_HQ";
 	hiddenSelections[] =
 	{
@@ -118,29 +117,10 @@ class Dutch_DBA : 101st_JLTS_Clone_P2
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dutch_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dutch_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
 	identityTypes[] =
 	{
 		"LanguageENG_F",
 		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
 	};
 	scope = 2;
 	scopeCurator = 2;
