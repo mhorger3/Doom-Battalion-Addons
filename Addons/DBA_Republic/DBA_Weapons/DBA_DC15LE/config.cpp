@@ -123,25 +123,11 @@ class CfgWeapons
 			aiRateOfFire = 8;
 			aiRateOfFireDistance = 800;
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		class ItemInfo
 		{
-			mass = 30;
-			class CowsSlot: CowsSlot
-			{
-				compatibleItems[] = {"101st_LE_Scope"};
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleItems[] = {};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[] = {};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleItems[] = {};
-			};
+			priority = 1;
+			RMBhint = "XMM";
+			onHoverText = "TODO XMM DSS";
 		};
 		inertia = 0.60000002;
 		aimTransitionSpeed = 0.80000001;
