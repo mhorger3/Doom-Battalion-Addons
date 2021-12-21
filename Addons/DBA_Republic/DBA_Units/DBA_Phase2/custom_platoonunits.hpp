@@ -516,10 +516,15 @@ class B_DBA_P2CloneMutt_F : 101st_JLTS_Clone_P2
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	faction = "Republic_101st";
 	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Chest_CO.paa",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Mutt\Mutt_Legs_CO.paa"
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Legs_CO.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
