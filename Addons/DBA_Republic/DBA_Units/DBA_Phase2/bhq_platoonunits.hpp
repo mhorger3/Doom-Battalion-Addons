@@ -17,30 +17,7 @@ class BroadswordHQ_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\BroadswordHQ\HQ_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Sergeant_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -63,30 +40,7 @@ class BroadswordHQM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\BroadswordHQ\HQM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -109,30 +63,7 @@ class BroadswordHQRTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\BroadswordHQ\HQR_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };

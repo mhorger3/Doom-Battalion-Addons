@@ -17,30 +17,7 @@ class Claymore1HQ_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\HQ_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Sergeant_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -63,30 +40,7 @@ class Claymore1HQM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\HQM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -109,30 +63,7 @@ class Claymore1HQRTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\HQR_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -155,30 +86,7 @@ class Claymore11Trooper_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -201,30 +109,7 @@ class Claymore11SL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1SL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -247,30 +132,7 @@ class Claymore11TL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1TL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -293,30 +155,7 @@ class Claymore11CMC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1CMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medical_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -339,30 +178,7 @@ class Claymore11CM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1CM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -385,30 +201,7 @@ class Claymore11RTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1CI_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -431,30 +224,7 @@ class Claymore11RTOCadet_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-1CIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -477,30 +247,7 @@ class Claymore12Trooper_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -523,30 +270,7 @@ class Claymore12SL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2SL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -569,30 +293,7 @@ class Claymore12TL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2TL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -615,30 +316,7 @@ class Claymore12CMC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2CMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medical_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -661,30 +339,7 @@ class Claymore12CM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2CM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -707,30 +362,7 @@ class Claymore12RTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2CI_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -753,30 +385,7 @@ class Claymore12RTOCadet_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-2CIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -799,30 +408,7 @@ class Claymore13Trooper_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -845,30 +431,7 @@ class Claymore13SL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3SL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -891,30 +454,7 @@ class Claymore13TL_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3TL_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -937,30 +477,7 @@ class Claymore13CMC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3CMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medical_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -983,30 +500,7 @@ class Claymore13CM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3CM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -1029,30 +523,7 @@ class Claymore13RTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3CI_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -1075,30 +546,7 @@ class Claymore13RTOCadet_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore1\1-3CIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Cadet_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };

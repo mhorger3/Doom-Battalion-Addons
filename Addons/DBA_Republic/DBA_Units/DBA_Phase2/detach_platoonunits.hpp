@@ -17,30 +17,7 @@ class CXC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-C_Clean_Chest_CO.paa.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -63,30 +40,7 @@ class CX_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -109,30 +63,7 @@ class CXX_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -155,30 +86,7 @@ class CXP_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-P_Clean_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -202,30 +110,7 @@ class CXS_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-S_Clean_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -248,30 +133,7 @@ class CXO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-O_Clean_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -294,30 +156,7 @@ class Dagger_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Trooper_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Trooper_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -340,30 +179,7 @@ class Dagger_CP_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Corporal_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Corporal_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -386,30 +202,7 @@ class Dagger_CS_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Sergeant_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Sergeant_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -432,30 +225,7 @@ class Dagger_Medic_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Medic_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_Medic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -478,30 +248,7 @@ class Dagger_RTO_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_RTO_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\Dagger_RTO_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -524,30 +271,7 @@ class Longbow_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\Longbow_Basic_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\Longbow_Basic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -571,30 +295,7 @@ class Longbow_Arid_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Arid_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Arid_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -617,30 +318,7 @@ class Longbow_Recruit_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Recruit_Top_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Recruit_Bottom_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -663,30 +341,7 @@ class Longbow_Tropic_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Tropic_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Tropic_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -709,30 +364,7 @@ class Longbow_Night_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Night_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Night_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -755,30 +387,7 @@ class Longbow_Urban_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Urban_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Urban_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -801,30 +410,7 @@ class Longbow_Winter_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Winter_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Winter_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -847,30 +433,7 @@ class Radar_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Asylum_Arf_Armor_Top_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Asylum_Arf_Armor_Bottom_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -893,30 +456,7 @@ class Hark_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hark_Chest_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hark_Legs_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -939,30 +479,7 @@ class Dagger_Traitor_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\DaggerTraitor_Upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Dagger\DaggerTraitor_Lower_CO.paa"
 	};
-	linkedItems[] =
-	{
-	};
-	respawnLinkedItems[] =
-	{
-	};
-	editorSubcategory = "101st_Clones";
-	identityTypes[] =
-	{
-		"LanguageENG_F",
-		"Head_NATO"
-	};
-	weapons[] =
-	{
-	};
-	respawnWeapons[] =
-	{
-	};
-	magazines[] =
-	{
-	};
-	respawnMagazines[] =
-	{
-	};
+	
 	scope = 2;
 	scopeCurator = 2;
 };

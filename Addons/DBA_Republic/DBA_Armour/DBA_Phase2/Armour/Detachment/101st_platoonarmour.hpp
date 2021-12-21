@@ -20,7 +20,7 @@ class DBA_CXC_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CXC";
+		uniformClass="CXC_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -51,7 +51,7 @@ class DBA_CX_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CX";
+		uniformClass="CX_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -82,7 +82,7 @@ class DBA_CXX_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CXX";
+		uniformClass="CXX_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -113,7 +113,7 @@ class DBA_CXP_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CXP";
+		uniformClass="CXP_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -144,7 +144,7 @@ class DBA_CXS_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CXS";
+		uniformClass="CXS_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -175,7 +175,7 @@ class DBA_CXO_Clean: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="DBA_Clean_CXO";
+		uniformClass="CXO_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -206,7 +206,7 @@ class 101st_212th_Dagger: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_212th";
+		uniformClass="Dagger_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -237,7 +237,7 @@ class 101st_212_Dagger_Corporal: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_Corporal_212th";
+		uniformClass="Dagger_CP_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -268,7 +268,7 @@ class 101st_212_Dagger_Sergeant: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_Sergeant_212th";
+		uniformClass="Dagger_CS_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -299,7 +299,7 @@ class 101st_212_Dagger_Medic: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_Medic_212th";
+		uniformClass="Dagger_Medic_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -330,7 +330,7 @@ class 101st_212_Dagger_RTO: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_RTO_212th";
+		uniformClass="Dagger_RTO_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -361,7 +361,7 @@ class 101st_212_Longbow: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_212th";
+		uniformClass="Longbow_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -395,7 +395,7 @@ class 101st_212_Longbow_Arid: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_Arid_212th";
+		uniformClass="Longbow_Arid_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -429,7 +429,7 @@ class 101st_212_Longbow_Recruit : Uniform_Base
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "101st_Longbow_Recruit_212th";
+		uniformClass = "Longbow_Recruit_DBA";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =
@@ -463,7 +463,7 @@ class 101st_212_Longbow_Tropic: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_Tropic_212th";
+		uniformClass="Longbow_Tropic_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -497,7 +497,7 @@ class 101st_212_Longbow_Night: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_Night_212th";
+		uniformClass="Longbow_Night_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -531,7 +531,7 @@ class 101st_212_Longbow_Urban: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_Urban_212th";
+		uniformClass="Longbow_Urban_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -565,7 +565,7 @@ class 101st_212_Longbow_Winter: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Longbow_Winter_212th";
+		uniformClass="Longbow_Winter_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -599,7 +599,7 @@ class 101st_212_Dagger_Traitor: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Dagger_Traitor_212th";
+		uniformClass="Dagger_Traitor_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -630,7 +630,7 @@ class 101st_212_Radar: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Radar_212th";
+		uniformClass="Radar_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -664,7 +664,7 @@ class 101st_212_Hark: Uniform_Base
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="101st_Hark_212th";
+		uniformClass="Hark_DBA";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
