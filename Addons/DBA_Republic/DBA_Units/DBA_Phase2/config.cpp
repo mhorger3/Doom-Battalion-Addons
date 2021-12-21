@@ -165,7 +165,7 @@ class CfgPatches
 			"Longbow_Winter_DBA",
 			"Radar_DBA",
 			"Hark_DBA",
-			"Dagger_Traitor_DBA",
+			"Dagger_Traitor_DBA"
 		};
 		weapons[] =
 		{

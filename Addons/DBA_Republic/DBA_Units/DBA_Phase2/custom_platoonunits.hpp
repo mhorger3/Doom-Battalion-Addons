@@ -526,7 +526,7 @@ class B_DBA_P2CloneMutt_F : 101st_JLTS_Clone_P2
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Chest.RVMAT",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Legs.RVMAT"
 	};
-	
+};
 class B_DBA_P2CloneBacon_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
