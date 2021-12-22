@@ -9902,12 +9902,12 @@ class CfgAmmo
 		};
 	};
 	class DBA_23mm_UM23_HEPF : DBA_50mm_HEPF{
-		hit = 150;
-		indirectHit = 125;
-		indirectHitRange = 16;
+		hit = 65;
+		indirectHit = 45;
+		indirectHitRange = 2;
 		displayname = "23mm UM-23 High Explosive Proxy Fuse";
 		warheadName = "UM-23 HE-PF";
-		explosive = 0.9;
+		explosive = 1;
 		airLock = 1;
 		canLock = 2;
 		aiAmmoUsageFlags = "64 + 256";
@@ -9921,17 +9921,16 @@ class CfgAmmo
 		caliber = 0.875;
 		initSpeed=1050;
 		typicalSpeed = 500;
-		proximityExplosionDistance = 16;
-		fuseDistance = 25;
+		fuseDistance = 10;
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 690;
 		submunitionParentSpeedCoef = 0.000000;
 		submunitionInitialOffset[]={0,0,-0.2};
 		allowAgainstInfantry=1;
-		timeToLive=20;
+		timeToLive=10;
 		coefGravity=0;
-		airfriction=-0;
+		airfriction=0;
 		waterFriction=0;
 	};
 	class DBA_57mm_ap: B_40mm_GPR
