@@ -18780,7 +18780,7 @@ class cfgVehicles
 		irTargetSize = 1.3;
 		access=2;
 		faction="Republic_101st";
-		displayName="LAAT Pylon TTB (Test)";
+		displayName="LAAT MK7";
 		author="3AS + Ammendments by DBA";
 		model="3as\3as_laat\LAATi\model\tcw_laat.p3d";
 		icon="\3AS\3as_Laat\LAATI\data\ui\Map_laat_CA.paa";
@@ -18803,7 +18803,7 @@ class cfgVehicles
 				armor=4;
 				convexComponent="hull_hit";
 				depends="Total";
-				explosionShielding=0.5;
+				explosionShielding=0.8;
 				material=51;
 				name="hull_hit";
 				passThrough=1;
@@ -18946,7 +18946,7 @@ class cfgVehicles
 		altFullForce=137400;
 		altNoForce=172400;
 		crewCrashProtection=0;
-		explosionShielding=0.33000001;
+		explosionShielding=0.88;
 		epeImpulseDamageCoef=0;
 		soundEngineOnInt[]=
 		{
@@ -19912,11 +19912,11 @@ class cfgVehicles
 				showUAVViewInOptics=0;
 				showSlingLoadManagerInOptics=0;
 			};
-			minTurn=-120;
-			maxTurn=120;
+			minTurn=-180;
+			maxTurn=180;
 			initTurn=0;
-			minElev=-120;
-			maxElev=120;
+			minElev=-40;
+			maxElev=40;
 			initElev=0;
 			maxXRotSpeed=0.30000001;
 			maxYRotSpeed=0.30000001;
