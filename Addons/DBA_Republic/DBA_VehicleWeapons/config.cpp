@@ -59,6 +59,7 @@ class CfgPatches
 			"DBA_DADS5M_SAM",
 			"DBA_DADS1P_SAM",
 			"DBA_94mw_PN32_FG",
+			"DBA_25mw_P25S_Cannon",
 			"DBA_100mw_HH33G_Cannon"
 		};
 		magazines[]=
@@ -139,6 +140,7 @@ class CfgPatches
 			"DBA_94mm_P2_x4_mag",
 			"DBA_94mm_SM3_x4_mag",
 			"DBA_94mm_PM4C_x4_mag",
+			"DBA_25mm_PL25S_x300_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
 			"DBA_HMG_orange_x500_mag",
@@ -265,6 +267,8 @@ class CfgPatches
 			"DBA_94mm_SM3_SMK",
 			"DBA_94mm_Canister_Submunition",
 			"DBA_94mm_PM4C_CAN",
+			"DBA_PL25S_Penetrator",
+			"DBA_25mm_PL25S_HEDP",
 			"DBA_lancer_mbt_ap_ammo",
 			"DBA_lancer_mbt_he_ammo",
 			"DBA_lancer_mbt_td_ammo"
@@ -7475,6 +7479,19 @@ class CfgMagazines
 		initspeed=25000;
 		tracersevery=0;
 	};
+	//Fennek Gun Start
+	class DBA_25mm_PL25S_x300_mag : VehicleMagazine{
+		displayname="PL-25S 25mw HEDP";
+		ammo="DBA_25mm_PL25S_HEDP";
+		displaynamemagazine="PL-25S 25mw HEDP";
+		shortnamemagazine="PL-25S HEDP";
+		displayNameMFDFormat="HEDP";
+		displayNameShort="HEDP";
+		count=300;
+		initspeed=405;
+		tracersevery=1;
+	};
+	//END
 	class DBA_Laserbeam_mag : VehicleMagazine{
 		displayname="Orbital Laser Designator";
 		ammo="DBA_Laserbeam";
