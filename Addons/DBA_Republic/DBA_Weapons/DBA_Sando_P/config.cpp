@@ -54,7 +54,7 @@ class CfgWeapons{
 		descriptionShort="If you haven't been asked to use it DON'T";
 		baseWeapon="DBA_Sando_Testbed";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\SandoFinal.p3d";
-		picture="101st_Aux_Mod\Addons\DBA_Weapons\effects\icons\Sando_CA.paa";
+		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Sando_CA.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32",0.446684,1,20};
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
@@ -64,6 +64,21 @@ class CfgWeapons{
         ace_overpressure_range = 10;  // Range in meters in which the damage is applied
         ace_overpressure_damage = 0.25;  // Damage multiplier
 		reloadaction = "ReloadRPG";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\Front_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\Back_gun_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\SandoFront.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Sando\Data\SandoBack.rvmat"
+		};
 		class Library
 		{
 			libtextdesc = "";

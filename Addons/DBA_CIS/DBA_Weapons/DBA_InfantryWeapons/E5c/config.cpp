@@ -119,7 +119,7 @@ class CfgWeapons{
 					1
 				};
 			};
-			reloadTime=0.06666666667;
+			reloadTime=0.05454545455;
 			dispersion=0.002327104;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
@@ -158,7 +158,7 @@ class CfgWeapons{
 			aiRateOfFire=0.1;
 			aiRateOfFireDispersion=0;
 			aiRateOfFireDistance=750;
-			minRange=500;
+			minRange=0;
 			minRangeProbab=0.9;
 			midRange=600;
 			midRangeProbab=0.9;
@@ -174,7 +174,7 @@ class CfgWeapons{
 			aiRateOfFire=0.1;
 			aiRateOfFireDispersion=0;
 			aiRateOfFireDistance=1300;
-			minRange=900;
+			minRange=0;
 			minRangeProbab=0.9;
 			midRange=1000;
 			midRangeProbab=0.9;
@@ -190,7 +190,7 @@ class CfgWeapons{
 			aiRateOfFire=0.1;
 			aiRateOfFireDispersion=0;
 			aiRateOfFireDistance=2500;
-			minRange=1500;
+			minRange=0;
 			minRangeProbab=0.98;
 			midRange=2000;
 			midRangeProbab=0.98;
@@ -268,7 +268,7 @@ class CfgWeapons{
 			"far"
 		};
 		class manual : Mode_FullAuto{
-			reloadTime=0.1445783133;
+			reloadTime=0.09836065574;
 			sounds[]=
 			{
 				"StandardSound"
@@ -416,7 +416,7 @@ class CfgMagazines{
 		shortnamemagazine="7.92mw Mag";
 		displayNameMFDFormat="7.92mw";
 		displayNameShort="7.92mw";
-		count=120;
+		count=240;
 		initspeed=809;
 		tracersevery=1;
 	};
@@ -430,7 +430,7 @@ class CfgMagazines{
 		shortnamemagazine="13.2mw Mag";
 		displayNameMFDFormat="13.2mw";
 		displayNameShort="13.2mw";
-		count=80;
+		count=160;
 		initspeed=510;
 		tracersevery=1;
 	};
@@ -438,7 +438,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class BulletBase;
 	class DBA_792_59_PKW : BulletBase{
-		hit = 13;
+		hit = 16;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;
@@ -462,7 +462,7 @@ class CfgAmmo{
 		waterFriction=0;
 	};
 	class DBA_132_92_TUF : BulletBase{
-		hit = 22;
+		hit = 28;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;

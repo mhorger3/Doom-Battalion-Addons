@@ -678,11 +678,47 @@ class CfgAmmo
 	};
 	class DBA_AntiTank_base :DBA_ammo_base //AT Rifle Ammo
 	{
+		hit = 550; //How much damage when it hits
+		indirecthit = 40; //Splash Damage
+		indirecthitrange = 2.5; //Splash Damage Range in meters
+		caliber = 16; //Acts as penetration multiplier for the projectile.
+		typicalspeed = 400; //What speed does this need to be going to inflict full damage
+
+		visibleFire = 5;
+		audibleFire = 120;
+		visibleFireTime = 3; //Alerts AI from further away
+
+		tracerScale = 3;
+		model = "101st_Aux_Mod\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
+		effectfly = "DBA_Plasma_Red";
+
+		dangerRadiusBulletClose = 8;
+		dangerRadiusHit = 12;
+		suppressionRadiusBulletClose = 6;
+		suppressionRadiusHit = 8;
+		aiAmmoUsageFlags = 64;
+		class CamShakeExplode
+		{
+			power = 3.1622801;
+			duration = 0.60000002;
+			frequency = 20;
+			distance = 9.4868298;
+		};
+		class CamShakeHit
+		{
+			power = 10;
+			duration = 0.40000001;
+			frequency = 20;
+			distance = 1;
+		};
+	};
+	class DBA_Billow_base :DBA_ammo_base //AT Rifle Ammo
+	{
 		hit = 1000; //How much damage when it hits
-		indirecthit = 20; //Splash Damage
-		indirecthitrange = 2; //Splash Damage Range in meters
+		indirecthit = 40; //Splash Damage
+		indirecthitrange = 2.5; //Splash Damage Range in meters
 		caliber = 30; //Acts as penetration multiplier for the projectile.
-		typicalspeed = 800; //What speed does this need to be going to inflict full damage
+		typicalspeed = 400; //What speed does this need to be going to inflict full damage
 
 		visibleFire = 5;
 		audibleFire = 120;

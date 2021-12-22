@@ -85,7 +85,7 @@ class CfgWeapons
 		descriptionShort = "DBA AT Rifle";
 		muzzles[] = { "this" };
 		//magazines[] = {"101st_Zillo_Mag"};
-		magazines[] = { "DBA_Zillo_Mag" };
+		magazines[] = { "DBA_Billo_Mag" };
 		displayName = "DBA Billo AT-9";
 		drySound[] = { "A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_dry",0.501187,1,20 };
 		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Billo\billo_co.paa" };

@@ -161,6 +161,17 @@ class CfgMagazines
 		count = 7;
 		initspeed = 909;
 	};
+	class DBA_Billo_Mag : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "DBA Billo Mag (2rnd)";
+		ammo = "DBA_Billow_base";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass = 56;
+		count = 2;
+		initspeed = 909;
+	};
 	class DBA_ZilloEMP_Mag : DBA_Mag_Base
 	{
 		scope = 2;

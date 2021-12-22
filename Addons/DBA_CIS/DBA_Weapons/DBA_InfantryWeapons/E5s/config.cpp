@@ -279,8 +279,8 @@ class CfgWeapons{
 				{
 					"MRC\JLTS\weapons\E5\sounds\E5_fire_2",
 					10,
-					0.5,
-					1800
+					0.45,
+					3000
 				};
 				soundBegin[]=
 				{
@@ -304,31 +304,31 @@ class CfgWeapons{
 			showToPlayer=0;
 			aiRateOfFireDistance=1;
 			minRange=0.1;
-			minRangeProbab=0.0;
-			midRange=0.2;
-			midRangeProbab=0.0;
-			maxRange=0.3;
-			maxRangeProbab=0.0;
+			minRangeProbab=0.9;
+			midRange=100;
+			midRangeProbab=0.9;
+			maxRange=200;
+			maxRangeProbab=0.9;
 		};
 		class medium : close{
 			showToPlayer=0;
 			aiRateOfFireDistance=1;
 			minRange=0.1;
-			minRangeProbab=0.0;
-			midRange=0.2;
-			midRangeProbab=0.0;
-			maxRange=0.3;
-			maxRangeProbab=0.0;
+			minRangeProbab=0.9;
+			midRange=400;
+			midRangeProbab=0.9;
+			maxRange=650;
+			maxRangeProbab=0.9;
 		};
 		class far : medium{
 			showToPlayer=0;
 			aiRateOfFireDistance=1;
 			minRange=0.1;
-			minRangeProbab=0.0;
-			midRange=0.2;
-			midRangeProbab=0.0;
-			maxRange=0.3;
-			maxRangeProbab=0.0;
+			minRangeProbab=0.9;
+			midRange=850;
+			midRangeProbab=0.9;
+			maxRange=1100;
+			maxRangeProbab=0.8;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -386,7 +386,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class BulletBase;
 	class DBA_9_57_AUS : BulletBase{
-		hit = 18;
+		hit = 32;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;
@@ -410,19 +410,19 @@ class CfgAmmo{
 		waterFriction=0;
 	};
 	class DBA_25_163_MFE : BulletBase{
-		hit = 80;
-		indirectHit = 3;
-		indirectHitRange = 0.5;
+		hit = 550;
+		indirectHit = 10;
+		indirectHitRange = 1.5;
 		explosive= 0.0;
 		warheadName = "25w";
-		caliber = 11.42857143;
+		caliber = 19.04761905;
 		deflecting = 1;
 		airFriction = 0;
 		timeToLive = 40;
 		initSpeed=875;
 		aiAmmoUsageFlags= "64 + 128 + 256";
 		cost = 1.2;
-		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		model="101st_Aux_Mod\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 		tracerScale = 1.7;
 		tracerStartTime = 0.05;
 		tracerEndTime = 20;

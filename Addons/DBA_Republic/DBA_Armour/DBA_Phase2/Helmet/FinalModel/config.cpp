@@ -245,7 +245,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Seagull : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Scythe";
+		displayName = "DBA Phase 2 Clone Helmet: Seagull";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Seagull_Helmet_CO.paa"
@@ -276,6 +276,15 @@ class cfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Virgo_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Blackwater : DBA_P2HelmetBase
+	{
+		author = "Dune";
+		displayName = "DBA Phase 2 Clone Helmet: Blackwater";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Blackwater_Helmet_CO.paa"
 		};
 	};
 };
