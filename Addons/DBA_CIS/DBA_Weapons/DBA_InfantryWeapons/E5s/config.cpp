@@ -386,7 +386,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class BulletBase;
 	class DBA_9_57_AUS : BulletBase{
-		hit = 18;
+		hit = 32;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;
@@ -410,12 +410,12 @@ class CfgAmmo{
 		waterFriction=0;
 	};
 	class DBA_25_163_MFE : BulletBase{
-		hit = 80;
+		hit = 200;
 		indirectHit = 3;
 		indirectHitRange = 0.5;
 		explosive= 0.0;
 		warheadName = "25w";
-		caliber = 11.42857143;
+		caliber = 19.04761905;
 		deflecting = 1;
 		airFriction = 0;
 		timeToLive = 40;
