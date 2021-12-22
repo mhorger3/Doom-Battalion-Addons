@@ -662,12 +662,12 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "[DBA] King AAT";
 		forceingarage = 1;
-		armor = 1000;
-		armorStructural = 15;
-		enginePower = 485;
+		armor = 1150;
+		armorStructural = 9;
+		enginePower = 985;
 		maxOmega = 314.159265;
-		maxSpeed = 38;
-		peakTorque = 1850;
+		maxSpeed = 48;
+		peakTorque = 2850;
 		torqueCurve[] =
 		{
 			{0, 0},
@@ -840,8 +840,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		forceingarage = 1;
 		displayname = "[DBA] Medium AAT (Tropic)";
-		armor = 750;
-		armorStructural = 12;
+		armor = 800;
+		armorStructural = 8;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
 		editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
