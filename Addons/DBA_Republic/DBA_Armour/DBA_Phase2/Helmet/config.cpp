@@ -3076,6 +3076,24 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Gustavo_Helm_CO.paa"
 		};
 	};
+	class 101st_Allendyne_Helm: 101st_Dagger_Helmet
+	{
+		author="Spark";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Allendyne)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\textures\101st\helmets\Allendyne_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
 	class 101st_Grae_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
