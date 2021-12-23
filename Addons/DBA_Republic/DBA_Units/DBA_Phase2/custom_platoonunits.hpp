@@ -528,9 +528,11 @@ class B_DBA_P2CloneMutt_F : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Chest.RVMAT",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Mutt_Legs.RVMAT"
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs.RVMAT"
 	};
+	scope = 2;
+	scopeCurator = 2;
 };
 class B_DBA_P2CloneBacon_F : 101st_JLTS_Clone_P2
 {
@@ -585,12 +587,13 @@ class B_DBA_P2CloneLambert_F : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Lambert_Chest_CO.paa",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Lmabert_Legs_CO.paa"
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\Lambert_Legs_CO.paa"
 	};
 	
 	scope = 2;
 	scopeCurator = 2;
 };
+
 class B_DBA_P2CloneProdigy_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";

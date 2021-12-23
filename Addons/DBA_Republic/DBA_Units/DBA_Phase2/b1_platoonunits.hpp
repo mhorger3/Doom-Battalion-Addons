@@ -107,7 +107,7 @@ class Broadsword11SL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-1SL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -130,7 +130,7 @@ class Broadsword11TL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-1TL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -268,7 +268,7 @@ class Broadsword12SL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2SL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -291,7 +291,7 @@ class Broadsword12TL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-2TL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -429,7 +429,7 @@ class Broadsword13SL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3SL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -452,7 +452,7 @@ class Broadsword13TL_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Broadsword1\1-3TL_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\PlatoonArmours\NCO_Armor_lower_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\NCO_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;

@@ -114,7 +114,7 @@ class DBA_ReserveCM : Uniform_Base
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "ReserveCM_DBA";
+		uniformClass = "ReservistCM_DBA";
 		containerClass = "supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =

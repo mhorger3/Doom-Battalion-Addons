@@ -245,7 +245,7 @@ class Claymore22Trooper_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore2\2-2_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Trooper_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
@@ -407,7 +407,7 @@ class Claymore23Trooper_DBA : 101st_JLTS_Clone_P2
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore2\2-3_Armor_upper_CO.paa",
-		"\101st_Aux_Mod\Addons\textures\101st\armor\Trooper_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	
 	scope = 2;
