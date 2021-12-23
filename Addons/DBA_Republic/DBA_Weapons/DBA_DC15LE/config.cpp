@@ -150,6 +150,7 @@ class CfgWeapons
 				compatibleItems[] =
 				{
 					"101st_LE_Scope",
+					"DBA_MRCO_B",
 				};
 			};
 		};
