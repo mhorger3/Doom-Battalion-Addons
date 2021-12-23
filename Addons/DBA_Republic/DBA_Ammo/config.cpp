@@ -128,6 +128,17 @@ class CfgMagazines
 		count = 300;
 		initspeed = 909;
 	};
+	class DBA_Kathhound_Mag : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "DBA Kathhound Mag (300rnd)";
+		ammo = "DBA_556_base";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass = 35;
+		count = 60;
+		initspeed = 780;
+	};
 	class DBA_Boma_Slug_Mag : DBA_Mag_Base
 	{
 		scope = 2;

@@ -59,7 +59,7 @@ class CfgWeapons
 		picture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Maalras_CA.paa";
 		muzzles[] = {"this"};
 		//magazines[] = {"101st_Ion_Mag_Green"};
-		magazines[] = { "DBA_556_Mag_x60_Green" };
+		magazines[] = { "DBA_Kathhound_Mag" };
 		reloadAction = "ReloadMagazine";
 		displayName = "DBA IR-01 Kath Hound";
 		descriptionShort = "Hound Ion Rifle";
