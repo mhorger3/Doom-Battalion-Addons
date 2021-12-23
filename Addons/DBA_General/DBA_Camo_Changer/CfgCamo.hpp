@@ -9,8 +9,8 @@ class DBA_Camo
             displayName = "Base";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\Longbow_Basic_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\Longbow_Basic_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\Longbow_Basic_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\Longbow_Basic_Legs_CO.paa"
             };
             backpackTextures[] =
             {
@@ -24,8 +24,8 @@ class DBA_Camo
             displayName = "Arid";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Arid_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Arid_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Arid_Legs_CO.paa"
             };
             backpackTextures[] =
             {
@@ -39,8 +39,8 @@ class DBA_Camo
             displayName = "Night";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Night_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Night_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Night_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Night_Legs_CO.paa"
             };
             backpackTextures[] =
             {
@@ -54,8 +54,8 @@ class DBA_Camo
             displayName = "Tropic";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Tropic_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Tropic_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Tropic_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Tropic_Legs_CO.paa"
             };
             backpackTextures[] =
             {
@@ -69,12 +69,12 @@ class DBA_Camo
             displayName = "Urban";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Urban_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Urban_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Urban_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Urban_Legs_CO.paa"
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Urban_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Urban";
         };
@@ -84,12 +84,12 @@ class DBA_Camo
             displayName = "Winter";
             uniformTextures[] =
             {
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Winter_Chest_CO.paa",
-                "\101st_Aux_Mod\Addons\textures\101st\armor\ARF_Winter_Legs_CO.paa"
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Winter_Chest_CO.paa",
+                "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Longbow\ARF_Winter_Legs_CO.paa"
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Winter_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Winter";
         };
