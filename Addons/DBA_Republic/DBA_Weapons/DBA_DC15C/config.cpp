@@ -71,7 +71,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
-		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
+		magazines[] = { "DBA_DC15C_Mag","DBA_DC15C_45_Mag" };
 		muzzles[] = {"this","Stun"};
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15S.p3d";
 		hiddenSelections[] = {"camo1"};
@@ -168,7 +168,7 @@ class CfgWeapons
 	class DBA_DC15S_Secondary_Base: Pistol_Base_F
 	{
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
-		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
+		magazines[] = { "DBA_DC15C_Mag","DBA_DC15C_45_Mag" };
 		scope = 2;
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15S_Pistol.p3d";
 		JLTS_canHaveShield = 1;
@@ -352,7 +352,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
-		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
+		magazines[] = { "DBA_DC15C_Mag","DBA_DC15C_45_Mag" };
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class DBA_3AS_GL_F: UGL_F

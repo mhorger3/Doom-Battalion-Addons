@@ -151,9 +151,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -174,9 +174,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -396,9 +396,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -414,9 +414,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -461,9 +461,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -479,9 +479,9 @@ class O_soldier_base_F;
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -525,9 +525,9 @@ class O_soldier_base_F;
 			"91st_musket_load",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -543,9 +543,9 @@ class O_soldier_base_F;
 			"91st_musket_load",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -589,9 +589,9 @@ class O_soldier_base_F;
 			"DBA_408_Mag_Base",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -607,9 +607,9 @@ class O_soldier_base_F;
 			"DBA_408_Mag_Base",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -653,9 +653,9 @@ class O_soldier_base_F;
 			"DBA_P7_Magazine",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -671,9 +671,9 @@ class O_soldier_base_F;
 			"DBA_P7_Magazine",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -713,9 +713,9 @@ class O_soldier_base_F;
 			"DBA_20mm_x7_base",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -727,9 +727,9 @@ class O_soldier_base_F;
 			"DBA_20mm_x7_base",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{
@@ -769,9 +769,9 @@ class O_soldier_base_F;
 			"327th_FirepuncherCIS_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		respawnMagazines[]=
 		{
@@ -783,9 +783,9 @@ class O_soldier_base_F;
 			"327th_FirepuncherCIS_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag",
-			"101st_thermaldet_x1_mag"
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag",
+			"DBA_thermaldet_x1_mag"
 		};
 		items[]=
 		{

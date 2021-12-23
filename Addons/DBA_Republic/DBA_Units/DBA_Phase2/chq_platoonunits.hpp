@@ -14,7 +14,7 @@ class ClaymoreHQ_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\ClaymoreHQ\HQ_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore2\HQ_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Sergeant_Legs_CO.paa"
 	};
 	
@@ -37,7 +37,7 @@ class ClaymoreHQM_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\ClaymoreHQ\HQM_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore2\HQM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Medic_Legs_CO.paa"
 	};
 	
@@ -60,7 +60,7 @@ class ClaymoreHQRTO_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\ClaymoreHQ\HQR_Armor_upper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Claymore2\HQR_Armor_upper_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\RTO_Legs_CO.paa"
 	};
 	

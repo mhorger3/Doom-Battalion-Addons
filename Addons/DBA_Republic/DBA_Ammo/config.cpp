@@ -73,6 +73,28 @@ class CfgMagazines
 		count = 120;
 		initspeed = 909;
 	};
+	class DBA_DC15C_Mag : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "DBA DC15A Mag (30rnd)";
+		ammo = "DBA_65_base";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass = 10;
+		count = 30;
+		initspeed = 909;
+	};
+	class DBA_DC15C_x45_Mag : DBA_Mag_Base
+	{
+		scope = 2;
+		displayname = "DBA DC15A Mag (45rnd)";
+		ammo = "DBA_65_base";
+		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
+		mass = 15;
+		count = 45;
+		initspeed = 909;
+	};
 	class DBA_DC15BR_Mag : DBA_Mag_Base
 	{
 		scope = 2;

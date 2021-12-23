@@ -14,7 +14,7 @@ class Reservist_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\Res_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\Res_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
 	
@@ -37,7 +37,7 @@ class ReservistCI_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCI_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCI_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
 	
@@ -60,7 +60,7 @@ class ReserveCIC_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCIC_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
 	
@@ -84,7 +84,7 @@ class ReservistCM_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCM_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
 	
@@ -107,7 +107,7 @@ class ReserveCMC_DBA : 101st_JLTS_Clone_P2
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCMC_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
 	
