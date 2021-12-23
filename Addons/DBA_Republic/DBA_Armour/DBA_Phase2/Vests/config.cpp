@@ -44,7 +44,7 @@ class CfgWeapons {
 		scopeArsenal=2;
 		displayName="101st Green Holster (JLTS)";
 		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\CloneVestHolster_ui_ca.paa";
-		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\textures\CleanThings\Holster\OfficerAccessories_co.paa"};
+		hiddenSelectionsTextures[] = {"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\OfficerAccessories_co.paa"};
 		class ItemInfo: VestItem
 		{
 			containerClass="Supply150";
@@ -641,6 +641,28 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Heretic_Pauldron_CO.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			containerClass="Supply100";
+			uniformType="Default";
+			mass=80;
+			vestType = "Rebreather";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+			hiddenSelections[] = {"camo1"};
+		};
+	};
+	class 101st_Hark_Pauldron: V_RebreatherB
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=1;
+		scopeArsenal=2;
+		displayName="101st Hark Pauldron (JLTS)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Hark_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
