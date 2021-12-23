@@ -97,8 +97,8 @@ class CfgWeapons
 		};
 		magazines[] =
 		{
-			"DBA_12gaScatter_Mag_Base",
-			"DBA_12gaSlug_Mag_Base"
+			"DBA_Boma_Scatter_Mag",
+			"DBA_Boma_Slug_Mag"
 		};
 		reloadAction = "ReloadMagazine";
 		displayName = "DBA Boma GL";
