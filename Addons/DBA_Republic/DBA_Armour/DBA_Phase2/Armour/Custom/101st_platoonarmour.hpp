@@ -889,3 +889,127 @@ class DBA_P2CloneDolittleLegacyUniform : Uniform_Base
 		mass = 40;
 	};
 };
+class DBA_P2CloneDogUniform: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Dog (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dog_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dog_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="B_DBA_P2CloneDog_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_P2CloneHereticUniform: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Heretic (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Heretic_Upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Heretic_Lower_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="B_DBA_P2CloneHeretic_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_P2CloneHambinoUniform: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Hambino (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hambino_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hambino_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="B_DBA_P2CloneHambino_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_P2CloneNobleUniform: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Noble (JLTS)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Noble_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Noble_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="B_DBA_P2CloneNoble_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};

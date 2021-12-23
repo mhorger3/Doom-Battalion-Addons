@@ -557,6 +557,74 @@ class B_DBA_P2CloneBacon_F : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
+class B_DBA_P2CloneHambino_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Hambino (JLTS)";
+	uniformClass = "DBA_P2CloneHambinoUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hambino_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Hambino_Legs_CO.paa"
+	};
+	scope = 2;
+	scopeCurator = 2;
+};
+class B_DBA_P2CloneHeretic_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Heretic (JLTS)";
+	uniformClass = "DBA_P2CloneHambinoUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Heretic_Upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Heretic_Lower_CO.paa"
+	};
+	scope = 2;
+	scopeCurator = 2;
+};
+class B_DBA_P2CloneDog_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Dog (JLTS)";
+	uniformClass = "DBA_P2CloneDogUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dog_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dog_Legs_CO.paa"
+	};
+	scope = 2;
+	scopeCurator = 2;
+};
+class B_DBA_P2CloneNoble_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Noble (JLTS)";
+	uniformClass = "DBA_P2CloneNobleUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelectionsTextures[]=
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Noble_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Noble_Legs_CO.paa"
+	};
+	scope = 2;
+	scopeCurator = 2;
+};
 class B_DBA_P2CloneCourage_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
