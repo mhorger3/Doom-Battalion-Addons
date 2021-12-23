@@ -989,13 +989,13 @@ class CfgVehicles
             visual = "pas_P";
 			};
 		};
-		class Turrets
+		class Turrets : turrets
         {
-            class MainTurret
+            class MainTurret : Mainturret
             {				
-				class Turrets
+				class Turrets : Turrets
 				{
-					class CommanderOptics
+					class CommanderOptics : CommanderOptics
 					{
 						weapons[]=
 						{
