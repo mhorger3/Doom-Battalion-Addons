@@ -3,7 +3,7 @@ class CfgPatches
 	class DBA_AA
 	{
 		requiredAddons[] = {"A3_Armor_F_Beta"};
-		units[] = {"DBA_SM0L_ADGS", "101st_Tyrant", "101st_Overlord", "DBA_Arbalest_SAM", "DBA_ChiNoKu_SAM"};
+		units[] = {"DBA_SM0L_ADGS", "101st_Tyrant", "101st_Overlord", "DBA_Arbalest_SAM", "DBA_ChiNoKu_SAM", "DBA_CIS_Tempestus"};
 		weapons[] = {};
 	};
 };
@@ -12,6 +12,43 @@ class CfgVehicles
 {
 	class B_SAM_System_02_F;
 	class B_SAM_System_01_F;	
+	class LandVehicle;
+	class StaticWeapon: LandVehicle
+	{
+		class Turrets;
+	};
+	class StaticMGWeapon: StaticWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+		class Components;
+	};
+	class AAA_System_01_base_F: StaticMGWeapon
+	{
+		class Components: Components
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+			};
+		};
+	};
+	class B_AAA_System_01_F: AAA_System_01_base_F
+	{
+		class Components: Components
+		{
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+			};
+		};
+	};
 	class 101st_Tyrant : B_SAM_System_02_F
 	{
 		displayName = "OPFOR Tyrant";
@@ -30,7 +67,32 @@ class CfgVehicles
         faction = "O_DBA_CIS_F";
 		scopeCurator=2;
 	};
-	
+	class DBA_CIS_Tempestus: B_AAA_System_01_F
+	{
+		scope=2;
+		scopeCurator=2;
+		displayName="Tempestus CIWS";
+		editorSubcategory="O_DBA_CIS_AAs";
+		vehicleClass="O_DBA_CIS_AAs";
+		side=0;
+		faction="O_DBA_CIS_F";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				canUseScanner=1;
+				weapons[]=
+				{
+					"DBA_23mw_G765"
+				};
+				magazines[]=
+				{
+					"DBA_23mm_UM23_HEPF_x5000_mag"
+				};
+			};
+		};
+		crew="O_DBA_CIS_B1_Crew_Droid_F";
+	};
 	class B_Ship_Gun_01_F;
 	class DBA_SM0L_ADGS : B_Ship_Gun_01_F {
     scope = 2;
