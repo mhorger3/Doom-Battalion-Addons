@@ -73,9 +73,9 @@ class CfgWeapons
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
 		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
 		muzzles[] = {"this","Stun"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\DC15S.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15S.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\data\DC15S_CO.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\data\DC15S_CO.paa"};
 		ACE_Overheating_Dispersion = 0;
 		ACE_Overheating_SlowdownFactor = 0;
 		ACE_Overheating_JamChance = 0;
@@ -170,7 +170,7 @@ class CfgWeapons
 		//magazines[] = {"DBA_DC15s_x60_mag","DBA_DC15_underwater_x40_mag"};
 		magazines[] = { "DBA_65_Mag_Base","DBA_65_Mag_x45_Blue" };
 		scope = 2;
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\DC15S_Pistol.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15S_Pistol.p3d";
 		JLTS_canHaveShield = 1;
 		JLTS_shieldedWeapon = "DBA_DC15S_Secondary_Shield";
 		reloadAction = "ReloadMagazine";
@@ -291,9 +291,9 @@ class CfgWeapons
 		scope = 1;
 		JLTS_isShielded = 1;
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\data\DC15S_CO.paa", "\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\data\DC15S_CO.paa", "\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
 		JLTS_baseWeapon = "DBA_DC15S_Secondary_Base";
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\DC15S_Shielded.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15S_Shielded.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC17SA\anims\DC17SA_shielded_handanim.rtm"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -389,7 +389,7 @@ class CfgWeapons
 		};
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
 		muzzles[] = {"this","DBA_3AS_GL_F"};
-		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DC15C\DC15SGL.p3d";
+		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15SGL.p3d";
 		ACE_clearJamAction = "ReloadMagazine";
 		modes[] = {"FullAuto","Single","close","short","medium"};
 		class Single;
