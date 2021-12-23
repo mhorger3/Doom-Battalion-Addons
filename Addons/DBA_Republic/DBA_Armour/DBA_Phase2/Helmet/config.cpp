@@ -488,7 +488,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
 	class 101st_Alfredo_ARF: 101st_ARF_Base
 	{
@@ -504,7 +504,7 @@ class CfgWeapons
 		"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\helmets\Longbow\Longbow.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
 	class 101st_Warlord_ARF: 101st_ARF_Base
 	{
