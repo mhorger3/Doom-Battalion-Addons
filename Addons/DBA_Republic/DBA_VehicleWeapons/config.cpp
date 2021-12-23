@@ -26,6 +26,7 @@ class CfgPatches
 			"DBA_305mw_VKM8_Cannon",
 			"DBA_60mw_PG60H_Cannon",
 			"DBA_184mw_LP4M5_Cannon",
+			"DBA_88mw_B18S_Cannon",
 			"DBA_20mw_GAIBO1_AC",
 			"DBA_20mw_LAATBALL_AC",
 			"DBA_25mw_P252G_AC",
