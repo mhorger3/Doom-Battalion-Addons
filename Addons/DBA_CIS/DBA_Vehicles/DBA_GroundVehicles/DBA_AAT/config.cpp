@@ -136,465 +136,463 @@ class CfgVehicles
             visual = "pas_P";
 			};
 		};
-					animationSourceHatch = "";
-					class Exhausts
+		animationSourceHatch = "";
+		class Exhausts
+		{
+			class Exhaust_1
+			{
+				position = "Exhaust_1_pos";
+				direction = "Exhaust_1_dir";
+				effect = "ExhaustsEffectHeliBig";
+			};
+			class Exhaust_2
+			{
+				position = "Exhaust_2_pos";
+				direction = "Exhaust_2_dir";
+				effect = "ExhaustsEffectHeliBig";
+			};
+		};
+		insideSoundCoef = 0.89999998;
+		threat[] = {0.80000001,1,0.30000001};
+		class RenderTargets
+		{
+			class commander_display
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition = "commanderview";
+					pointDirection = "commanderview_dir";
+					renderVisionMode = 0;
+					renderQuality = 2;
+					fov = 0.305731;
+					turret[] = {0,0};
+				};
+				BBoxes[] =
+				{
+					"PIP_COM_TL",
+					"PIP_COM_TR",
+					"PIP_COM_BL",
+					"PIP_COM_BR"
+				};
+			};
+			class driver_display
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition = "PIP0_pos";
+					pointDirection = "PIP0_dir";
+					renderVisionMode = 0;
+					renderQuality = 2;
+					fov = 0.80000001;
+					turret[] = {-1};
+				};
+				BBoxes[] =
+				{
+					"PIP_DRV_TL",
+					"PIP_DRV_TR",
+					"PIP_DRV_BL",
+					"PIP_DRV_BR"
+				};
+			};
+		};
+		class compartmentsLights
+		{
+			class Comp1
+			{
+				class Light1
+				{
+					color[] = {13,20,20};
+					ambient[] = {0,0,0};
+					intensity = 2;
+					size = 0;
+					useFlare = 0;
+					flareSize = 0;
+					flareMaxDistance = 0;
+					dayLight = 0;
+					blinking = 0;
+					class Attenuation
 					{
-						class Exhaust_1
-						{
-							position = "Exhaust_1_pos";
-							direction = "Exhaust_1_dir";
-							effect = "ExhaustsEffectHeliBig";
-						};
-						class Exhaust_2
-						{
-							position = "Exhaust_2_pos";
-							direction = "Exhaust_2_dir";
-							effect = "ExhaustsEffectHeliBig";
-						};
+						start = 0;
+						constant = 0;
+						linear = 1;
+						quadratic = 70;
+						hardLimitStart = 0.15000001;
+						hardLimitEnd = 1.15;
 					};
-					insideSoundCoef = 0.89999998;
-					threat[] = {0.80000001,1,0.30000001};
-					class RenderTargets
+					point = "light_interior1";
+				};
+				class Light2 : Light1
+				{
+					point = "light_interior2";
+					color[] = {13,20,20};
+					ambient[] = {0,0,0};
+					intensity = 1.5;
+				};
+				class Light3 : Light1
+				{
+					point = "light_interior3";
+					color[] = {13,20,20};
+					ambient[] = {0,0,0};
+					intensity = 1.5;
+				};
+				class Light4 : Light1
+				{
+					point = "light_interior4";
+					color[] = {13,20,20};
+					ambient[] = {0,0,0};
+					intensity = 0.69999999;
+				};
+				class Light5 : Light1
+				{
+					point = "light_interior5";
+					color[] = {18,20,20};
+					ambient[] = {0,0,0};
+					intensity = 0.2;
+					size = 0;
+				};
+				class Light6 : Light1
+				{
+					point = "light_interior6";
+					color[] = {18,20,20};
+					ambient[] = {0,0,0};
+					intensity = 3;
+					size = 0;
+				};
+				class Light7 : Light1
+				{
+					point = "light_interior7";
+					color[] = {18,20,20};
+					ambient[] = {0,0,0};
+					intensity = 4;
+					size = 0;
+				};
+				class Light8 : Light1
+				{
+					point = "light_interior8";
+					color[] = {18,20,20};
+					ambient[] = {0,0,0};
+					intensity = 4;
+					size = 0;
+				};
+			};
+		};
+		class Reflectors
+		{
+			class Left
+			{
+				color[] = {1900,1800,1700};
+				ambient[] = {5,5,5};
+				position = "Light_L";
+				direction = "Light_L_end";
+				hitpoint = "Light_L";
+				selection = "Light_L";
+				size = 1;
+				innerAngle = 100;
+				outerAngle = 179;
+				coneFadeCoef = 10;
+				intensity = 1;
+				useFlare = 0;
+				dayLight = 0;
+				flareSize = 1;
+				class Attenuation
+				{
+					start = 1;
+					constant = 0;
+					linear = 0;
+					quadratic = 0.25;
+					hardLimitStart = 30;
+					hardLimitEnd = 60;
+				};
+			};
+			class Right : Left
+			{
+				position = "Light_R";
+				direction = "Light_R_end";
+				hitpoint = "Light_R";
+				selection = "Light_R";
+			};
+			class Right2 : Right
+			{
+				position = "light_R_flare";
+				hitpoint = "Light_R_flare";
+				useFlare = 1;
+			};
+			class Left2 : Left
+			{
+				position = "light_L_flare";
+				hitpoint = "Light_L_flare";
+				useFlare = 1;
+			};
+		};
+		aggregateReflectors[] =
+		{
+			{
+				"Left",
+				"Right",
+				"Left2",
+				"Right2"
+			}
+		};
+		soundLocked[] =
+		{
+			"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",
+			1,
+			1
+		};
+		soundIncommingMissile[] =
+		{
+			"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",
+			0.31622776,
+			1
+		};
+		smokeLauncherGrenadeCount = 8;
+		smokeLauncherVelocity = 14;
+		smokeLauncherOnTurret = 1;
+		smokeLauncherAngle = 120;
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
 					{
-						class commander_display
+						body = "Obsturret";
+						gun = "Obsgun";
+						proxyIndex = 1;
+						viewGunnerInExternal = 0;
+						proxytype = "CPCommander";
+						gunnername = "Commander";
+						animationSourceBody = "Obsturret";
+						animationSourceGun = "Obsgun";
+						minOutElev = -25;
+						maxOutElev = 45;
+						initOutElev = 0;
+						minOutTurn = -90;
+						maxOutTurn = 90;
+						initOutTurn = 0;
+						maxHorizontalRotSpeed = 1.8;	// 1 = 45°/sec
+						maxVerticalRotSpeed = 1.8;		// 1 = 45°/sec
+						stabilizedInAxes = 3;
+						soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", db - 40, 1.0,50};
+						minElev = -10;
+						maxElev = +20;
+						initElev = 0;
+						minTurn = -15;
+						maxTurn = +15;
+						initTurn = 0;
+						gunnerAction = "";
+						gunnerInAction = mbt2_slot2b_in;
+						forceHideGunner = 0;
+						outGunnerMayFire = 1;
+						inGunnerMayFire = 1;
+						gunnerRightHandAnimName = "konec hlavne3";
+						gunnerLeftHandAnimName = "konec hlavne3";
+						soundAttenuationTurret = "HeliAttenuationGunner";
+						isPersonTurret = 1;
+						personTurretAction = "vehicle_turnout_1";
+						memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+						weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
+						magazines[] = {"3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","SmokeLauncherMag"};
+						turretInfoType = "RscWeaponRangeZeroing";
+						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+						discreteDistanceInitIndex = 2;
+						memoryPointGunnerOptics = "CommanderView";
+						memoryPointGunnerOutOptics = "commanderview";
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOutOpticsModel = "";
+						gunnerOpticsEffect[] = {};
+						gunnerHasFlares = 1;
+						turretFollowFreeLook = 1;
+						commanding = 1;
+						class ViewOptics : ViewOptics
 						{
-							renderTarget = "rendertarget0";
-							class CameraView1
+							initAngleX = 0;
+							minAngleX = -15;
+							maxAngleX = 15;
+							initAngleY = 0;
+							minAngleY = -10;
+							maxAngleY = 60;
+							initFov = 0.155;
+							minFov = 0.034;
+							maxFov = 0.155;
+							visionMode[] = {"Normal","NVG","Ti"};
+							thermalMode[] = {2,3,4};
+						};
+						gunnerGetInAction = "GetInHigh";
+						gunnerGetOutAction = "GetOutHigh";
+						startEngine = 0;
+						LODTurnedOut = "VIEW_GUNNER";
+						LODTurnedIn = "VIEW_GUNNER";
+						class HitPoints
+						{
+							class HitTurret
 							{
-								pointPosition = "commanderview";
-								pointDirection = "commanderview_dir";
-								renderVisionMode = 0;
-								renderQuality = 2;
-								fov = 0.305731;
-								turret[] = {0,0};
+								armor = 0.6;
+								material = -1;
+								name = "Commander_Turret";
+								visual = "commander_turret";
+								passThrough = 0;
+								minimalHit = 0.03;
+								explosionShielding = 0.6;
+								radius = 0.15;
 							};
-							BBoxes[] =
+							class HitGun
 							{
-								"PIP_COM_TL",
-								"PIP_COM_TR",
-								"PIP_COM_BL",
-								"PIP_COM_BR"
+								armor = 0.6;
+								material = -1;
+								name = "Commander_Gun";
+								visual = "Commander_Gun";
+								passThrough = 0;
+								minimalHit = 0.03;
+								explosionShielding = 0.6;
+								radius = 0.15;
 							};
 						};
-						class driver_display
-						{
-							renderTarget = "rendertarget1";
-							class CameraView1
-							{
-								pointPosition = "PIP0_pos";
-								pointDirection = "PIP0_dir";
-								renderVisionMode = 0;
-								renderQuality = 2;
-								fov = 0.80000001;
-								turret[] = {-1};
-							};
-							BBoxes[] =
-							{
-								"PIP_DRV_TL",
-								"PIP_DRV_TR",
-								"PIP_DRV_BL",
-								"PIP_DRV_BR"
-							};
-						};
+						selectionFireAnim = "zasleh3";
 					};
-					class compartmentsLights
+				};
+				memoryPointGun = "usti hlavne";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				weapons[] = {"3AS_AATCannon","SmokeLauncher"};
+				magazines[] = {"3as_24Rnd_AAT_AP","3as_24Rnd_AAT_AP","SmokeLauncherMag"};
+				turretInfoType = "RscWeaponRangeZeroing";
+				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+				selectionFireAnim = "zasleh";
+				animationSourceBody = "Mainturret";
+				animationSourceGun = "MainGun";
+				body = "Mainturret";
+				gun = "MainGun";
+				discreteDistanceInitIndex = 5;
+				memoryPointGunnerOptics = "gunnerview";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsEffect[] = {};
+				gunnerOpticsEffect[] = {};
+				gunnerForceOptics = 1;
+				visionMode[] = {"Normal"};
+				thermalMode[] = {};
+				class OpticsIn
+				{
+					class Wide
 					{
-						class Comp1
-						{
-							class Light1
-							{
-								color[] = {13,20,20};
-								ambient[] = {0,0,0};
-								intensity = 2;
-								size = 0;
-								useFlare = 0;
-								flareSize = 0;
-								flareMaxDistance = 0;
-								dayLight = 0;
-								blinking = 0;
-								class Attenuation
-								{
-									start = 0;
-									constant = 0;
-									linear = 1;
-									quadratic = 70;
-									hardLimitStart = 0.15000001;
-									hardLimitEnd = 1.15;
-								};
-								point = "light_interior1";
-							};
-							class Light2 : Light1
-							{
-								point = "light_interior2";
-								color[] = {13,20,20};
-								ambient[] = {0,0,0};
-								intensity = 1.5;
-							};
-							class Light3 : Light1
-							{
-								point = "light_interior3";
-								color[] = {13,20,20};
-								ambient[] = {0,0,0};
-								intensity = 1.5;
-							};
-							class Light4 : Light1
-							{
-								point = "light_interior4";
-								color[] = {13,20,20};
-								ambient[] = {0,0,0};
-								intensity = 0.69999999;
-							};
-							class Light5 : Light1
-							{
-								point = "light_interior5";
-								color[] = {18,20,20};
-								ambient[] = {0,0,0};
-								intensity = 0.2;
-								size = 0;
-							};
-							class Light6 : Light1
-							{
-								point = "light_interior6";
-								color[] = {18,20,20};
-								ambient[] = {0,0,0};
-								intensity = 3;
-								size = 0;
-							};
-							class Light7 : Light1
-							{
-								point = "light_interior7";
-								color[] = {18,20,20};
-								ambient[] = {0,0,0};
-								intensity = 4;
-								size = 0;
-							};
-							class Light8 : Light1
-							{
-								point = "light_interior8";
-								color[] = {18,20,20};
-								ambient[] = {0,0,0};
-								intensity = 4;
-								size = 0;
-							};
-						};
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.155;
+						minFov = 0.155;
+						maxFov = 0.155;
+						visionMode[] = {"Normal","NVG","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOpticsEffect[] = {};
 					};
-					class Reflectors
+					class Narrow : Wide
 					{
-						class Left
-						{
-							color[] = {1900,1800,1700};
-							ambient[] = {5,5,5};
-							position = "Light_L";
-							direction = "Light_L_end";
-							hitpoint = "Light_L";
-							selection = "Light_L";
-							size = 1;
-							innerAngle = 100;
-							outerAngle = 179;
-							coneFadeCoef = 10;
-							intensity = 1;
-							useFlare = 0;
-							dayLight = 0;
-							flareSize = 1;
-							class Attenuation
-							{
-								start = 1;
-								constant = 0;
-								linear = 0;
-								quadratic = 0.25;
-								hardLimitStart = 30;
-								hardLimitEnd = 60;
-							};
-						};
-						class Right : Left
-						{
-							position = "Light_R";
-							direction = "Light_R_end";
-							hitpoint = "Light_R";
-							selection = "Light_R";
-						};
-						class Right2 : Right
-						{
-							position = "light_R_flare";
-							hitpoint = "Light_R_flare";
-							useFlare = 1;
-						};
-						class Left2 : Left
-						{
-							position = "light_L_flare";
-							hitpoint = "Light_L_flare";
-							useFlare = 1;
-						};
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
 					};
-					aggregateReflectors[] =
+				};
+				gunnerAction = "mbt2_slot2b_in";
+				forceHideGunner = 1;
+				outGunnerMayFire = 1;
+				gunnerInAction = "mbt2_slot2b_in";
+				gunnerRightHandAnimName = "";
+				gunnerLeftHandAnimName = "";
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				proxyIndex = 1;
+				viewGunnerInExternal = 0;
+				gunnerName = "Gunner";
+				proxytype = "CPGunner";
+				isPersonTurret = 0;
+				personTurretAction = "vehicle_turnout_1";
+				minOutElev = -10;
+				maxOutElev = 15;
+				initOutElev = 0;
+				minOutTurn = -90;
+				maxOutTurn = 90;
+				initOutTurn = 0;
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", db - 40, 1.0,50};
+				minElev = -9;
+				maxElev = +20;
+				initElev = 0;
+				inGunnerMayFire = 1;
+				class HitPoints
+				{
+					class HitTurret
 					{
-
-						{
-							"Left",
-							"Right",
-							"Left2",
-							"Right2"
-						}
+						armor = 0.9;
+						material = -1;
+						name = "otocvez";
+						visual = "vez";
+						passThrough = 0;
+						minimalHit = 0.3333333;
+						explosionShielding = 0.15;
+						radius = 0.15;
 					};
-					soundLocked[] =
+					class HitGun
 					{
-						"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",
-						1,
-						1
+						armor = 0.9;
+						material = -1;
+						name = "otocvez";
+						visual = "";
+						passThrough = 0;
+						minimalHit = 0.333333;
+						explosionShielding = 0.01;
+						radius = 0.15;
 					};
-					soundIncommingMissile[] =
-					{
-						"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",
-						0.31622776,
-						1
-					};
-					smokeLauncherGrenadeCount = 8;
-					smokeLauncherVelocity = 14;
-					smokeLauncherOnTurret = 1;
-					smokeLauncherAngle = 120;
-					class Turrets : Turrets
-					{
-						class MainTurret : MainTurret
-						{
-							class Turrets : Turrets
-							{
-								class CommanderOptics : CommanderOptics
-								{
-									body = "Obsturret";
-									gun = "Obsgun";
-									proxyIndex = 1;
-									viewGunnerInExternal = 0;
-									proxytype = "CPCommander";
-									gunnername = "Commander";
-									animationSourceBody = "Obsturret";
-									animationSourceGun = "Obsgun";
-									minOutElev = -25;
-									maxOutElev = 45;
-									initOutElev = 0;
-									minOutTurn = -90;
-									maxOutTurn = 90;
-									initOutTurn = 0;
-									maxHorizontalRotSpeed = 1.8;	// 1 = 45°/sec
-									maxVerticalRotSpeed = 1.8;		// 1 = 45°/sec
-									stabilizedInAxes = 3;
-									soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", db - 40, 1.0,50};
-									minElev = -10;
-									maxElev = +20;
-									initElev = 0;
-									minTurn = -15;
-									maxTurn = +15;
-									initTurn = 0;
-									gunnerAction = "";
-									gunnerInAction = mbt2_slot2b_in;
-									forceHideGunner = 0;
-									outGunnerMayFire = 1;
-									inGunnerMayFire = 1;
-									gunnerRightHandAnimName = "konec hlavne3";
-									gunnerLeftHandAnimName = "konec hlavne3";
-									soundAttenuationTurret = "HeliAttenuationGunner";
-									isPersonTurret = 1;
-									personTurretAction = "vehicle_turnout_1";
-									memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
-									weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
-									magazines[] = {"3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","3AS_500Rnd_ATT_RedPlasma","SmokeLauncherMag"};
-									turretInfoType = "RscWeaponRangeZeroing";
-									discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
-									discreteDistanceInitIndex = 2;
-									memoryPointGunnerOptics = "CommanderView";
-									memoryPointGunnerOutOptics = "commanderview";
-									gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
-									gunnerOutOpticsModel = "";
-									gunnerOpticsEffect[] = {};
-									gunnerHasFlares = 1;
-									turretFollowFreeLook = 1;
-									commanding = 1;
-									class ViewOptics : ViewOptics
-									{
-										initAngleX = 0;
-										minAngleX = -15;
-										maxAngleX = 15;
-										initAngleY = 0;
-										minAngleY = -10;
-										maxAngleY = 60;
-										initFov = 0.155;
-										minFov = 0.034;
-										maxFov = 0.155;
-										visionMode[] = {"Normal","NVG","Ti"};
-										thermalMode[] = {2,3,4};
-									};
-									gunnerGetInAction = "GetInHigh";
-									gunnerGetOutAction = "GetOutHigh";
-									startEngine = 0;
-									LODTurnedOut = "VIEW_GUNNER";
-									LODTurnedIn = "VIEW_GUNNER";
-									class HitPoints
-									{
-										class HitTurret
-										{
-											armor = 0.6;
-											material = -1;
-											name = "Commander_Turret";
-											visual = "commander_turret";
-											passThrough = 0;
-											minimalHit = 0.03;
-											explosionShielding = 0.6;
-											radius = 0.15;
-										};
-										class HitGun
-										{
-											armor = 0.6;
-											material = -1;
-											name = "Commander_Gun";
-											visual = "Commander_Gun";
-											passThrough = 0;
-											minimalHit = 0.03;
-											explosionShielding = 0.6;
-											radius = 0.15;
-										};
-									};
-									selectionFireAnim = "zasleh3";
-								};
-							};
-							memoryPointGun = "usti hlavne";
-							gunBeg = "usti hlavne";
-							gunEnd = "konec hlavne";
-							weapons[] = {"3AS_AATCannon","SmokeLauncher"};
-							magazines[] = {"3as_24Rnd_AAT_AP","3as_24Rnd_AAT_AP","SmokeLauncherMag"};
-							turretInfoType = "RscWeaponRangeZeroing";
-							discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
-							selectionFireAnim = "zasleh";
-							animationSourceBody = "Mainturret";
-							animationSourceGun = "MainGun";
-							body = "Mainturret";
-							gun = "MainGun";
-							discreteDistanceInitIndex = 5;
-							memoryPointGunnerOptics = "gunnerview";
-							gunnerOutOpticsModel = "";
-							gunnerOutOpticsEffect[] = {};
-							gunnerOpticsEffect[] = {};
-							gunnerForceOptics = 1;
-							visionMode[] = {"Normal"};
-							thermalMode[] = {};
-							class OpticsIn
-							{
-								class Wide
-								{
-									initAngleX = 0;
-									minAngleX = -30;
-									maxAngleX = 30;
-									initAngleY = 0;
-									minAngleY = -100;
-									maxAngleY = 100;
-									initFov = 0.155;
-									minFov = 0.155;
-									maxFov = 0.155;
-									visionMode[] = {"Normal","NVG","Ti"};
-									thermalMode[] = {0,1};
-									gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
-									gunnerOpticsEffect[] = {};
-								};
-								class Narrow : Wide
-								{
-									gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
-									initFov = 0.047;
-									minFov = 0.047;
-									maxFov = 0.047;
-								};
-							};
-							gunnerAction = "mbt2_slot2b_in";
-							forceHideGunner = 1;
-							outGunnerMayFire = 1;
-							gunnerInAction = "mbt2_slot2b_in";
-							gunnerRightHandAnimName = "";
-							gunnerLeftHandAnimName = "";
-							gunnerFireAlsoInInternalCamera = 1;
-							gunnerOutFireAlsoInInternalCamera = 1;
-							proxyIndex = 1;
-							viewGunnerInExternal = 0;
-							gunnerName = "Gunner";
-							proxytype = "CPGunner";
-							isPersonTurret = 0;
-							personTurretAction = "vehicle_turnout_1";
-							minOutElev = -10;
-							maxOutElev = 15;
-							initOutElev = 0;
-							minOutTurn = -90;
-							maxOutTurn = 90;
-							initOutTurn = 0;
-							soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", db - 40, 1.0,50};
-							minElev = -9;
-							maxElev = +20;
-							initElev = 0;
-							inGunnerMayFire = 1;
-							class HitPoints
-							{
-								class HitTurret
-								{
-									armor = 0.9;
-									material = -1;
-									name = "otocvez";
-									visual = "vez";
-									passThrough = 0;
-									minimalHit = 0.3333333;
-									explosionShielding = 0.15;
-									radius = 0.15;
-								};
-								class HitGun
-								{
-									armor = 0.9;
-									material = -1;
-									name = "otocvez";
-									visual = "";
-									passThrough = 0;
-									minimalHit = 0.333333;
-									explosionShielding = 0.01;
-									radius = 0.15;
-								};
-							};
-						};
-					};
-					class Damage
-					{
-						tex[] = {};
-						mat[] =
-						{
-							"3as\3as_aat\data\aat.rvmat",
-							"3as\3as_aat\data\aat.rvmat",
-							"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
-
-						};
-					};
-					class AnimationSources //:AnimationSources
-					{
-						class muzzle_rot_cannon
-						{
-						source = "ammorandom";
-						weapon = "3AS_AAT_Repeater";
-						};
-						class recoil_source
-						{
-						source = "reload";
-						weapon = "3AS_AATCannon";
-						};
-						class muzzle_rot_coax
-						{
-						source = "ammorandom";
-						weapon = "3AS_AAT_Repeater";
-						};
-					};
-					animationList[] =
-					{
-						"showCamonetCannon",
-						0,
-						"showCamonetPlates1",
-						0,
-						"showCamonetPlates2",
-						0,
-						"showCamonetTurret",
-						0,
-						"showCamonetHull",
-						0
-					};
+				};
+			};
+		};
+		class Damage
+		{
+			tex[] = {};
+			mat[] =
+			{
+				"3as\3as_aat\data\aat.rvmat",
+				"3as\3as_aat\data\aat.rvmat",
+				"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+			};
+		};
+		class AnimationSources //:AnimationSources
+		{
+			class muzzle_rot_cannon
+			{
+				source = "ammorandom";
+				weapon = "3AS_AAT_Repeater";
+			};
+			class recoil_source
+			{
+				source = "reload";
+				weapon = "3AS_AATCannon";
+			};
+			class muzzle_rot_coax
+			{
+				source = "ammorandom";
+				weapon = "3AS_AAT_Repeater";
+			};
+		};
+		animationList[] =
+		{
+			"showCamonetCannon",
+			0,
+			"showCamonetPlates1",
+			0,
+			"showCamonetPlates2",
+			0,
+			"showCamonetTurret",
+			0,
+			"showCamonetHull",
+			0
+		};
 	};
 	//----------Faction Base----------
 	class DBA_CIS_AAT_base_F : DBA_AAT_base_F
@@ -610,52 +608,52 @@ class CfgVehicles
 	class DBA_CIS_AAT_F : DBA_CIS_AAT_base_F //scope=0
 	{
 		author = "Vulgar";
-			editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_MBT_01_cannon_F.jpg";
-			scope = 0;
-			driverAction = "driver_apcwheeled2_out";
-			driverInAction = "driver_apcwheeled2_in";
-			viewDriverInExternal = 0;
-			forcehideDriver = true;
-			displayName = "[DBA] AAT";
-			hiddenSelections[] =
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_MBT_01_cannon_F.jpg";
+		scope = 0;
+		driverAction = "driver_apcwheeled2_out";
+		driverInAction = "driver_apcwheeled2_in";
+		viewDriverInExternal = 0;
+		forcehideDriver = true;
+		displayName = "[DBA] AAT";
+		hiddenSelections[] =
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"3AS\3AS_AAT\data\CIS_AAT_CO.paa"
+		};
+		class TextureSources
+		{
+			class Tan
 			{
-				"Camo1"
+				displayName = "Trade Federation";
+				author = "3AS Mod Team";
+				textures[] = {"3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
+				factions[] = {"O_DBA_CIS_F"};
 			};
-			hiddenSelectionsTextures[] =
+			class CIS
 			{
-				"3AS\3AS_AAT\data\CIS_AAT_CO.paa"
+				displayName = "CIS";
+				author = "3AS Mod Team";
+				textures[] = {"3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
+				factions[] = {"O_DBA_CIS_F"};
 			};
-			class TextureSources
+			class Green
 			{
-				class Tan
-				{
-					displayName = "Trade Federation";
-					author = "3AS Mod Team";
-					textures[] = {"3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
-					factions[] = {"O_DBA_CIS_F"};
-				};
-				class CIS
-				{
-					displayName = "CIS";
-					author = "3AS Mod Team";
-					textures[] = {"3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
-					factions[] = {"O_DBA_CIS_F"};
-				};
-				class Green
-				{
-					displayName = "Green";
-					author = "3AS Mod Team";
-					textures[] = {"3AS\3AS_AAT\data\Green_AAT_CO.paa"};
-					factions[] = {"O_DBA_CIS_F"};
-				};
-				class Red
-				{
-					displayName = "Red";
-					author = "3AS Mod Team";
-					textures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
-					factions[] = {"O_DBA_CIS_F"};
-				};
+				displayName = "Green";
+				author = "3AS Mod Team";
+				textures[] = {"3AS\3AS_AAT\data\Green_AAT_CO.paa"};
+				factions[] = {"O_DBA_CIS_F"};
 			};
+			class Red
+			{
+				displayName = "Red";
+				author = "3AS Mod Team";
+				textures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+				factions[] = {"O_DBA_CIS_F"};
+			};
+		};
 	};
 	class O_DBA_CIS_King_AAT_F : DBA_CIS_AAT_F{
 		scope = 2;
