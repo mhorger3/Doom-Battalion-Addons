@@ -609,7 +609,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side=1;
 		displayName="Command Mobility Vehicle";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		thrustDelay = 0.1;
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 195;
@@ -686,7 +686,7 @@ class CfgVehicles
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
 				};
-				factions[] = {"Republic_101st"};
+				factions[] = {"B_DBA_Republic_F"};
 			};
 		};
 		textureList[]={"Command_Mobility_Vehicle",1};
@@ -713,7 +713,7 @@ class CfgVehicles
 		scopeCurator=2;
 		side=1;
 		editorSubcategory="EdSubcat_APCs";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=700;
 		armorStructural=8;
 		displayName="Bantha Testbed";
@@ -957,7 +957,7 @@ class CfgVehicles
 		idleRpm=700;
 		redRpm=2400;
 		displayname="AT-TE Test Bed";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		side=1;
 		transportSoldier=24;
 		armor=10000;
@@ -1237,7 +1237,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -1333,7 +1333,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -1419,7 +1419,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -1505,7 +1505,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Saber\saber_hull_co.paa",
@@ -1637,7 +1637,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		editorSubcategory="EdSubcat_APCs";
 		transportSoldier=8;
 		LESH_canTow=1;
@@ -2063,14 +2063,14 @@ class CfgVehicles
 	{
 		displayName="OPFOR Tyrant";
 		side=0;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		scopeCurator=2;
 	};
 	class DBA_Overlord: B_SAM_System_01_F
 	{
 		displayName="OPFOR Overlord";
 		side=0;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		scopeCurator=2;
 	};
 	class DBA_Warrior_Testbed: I_APC_tracked_03_cannon_F
@@ -2083,7 +2083,7 @@ class CfgVehicles
 		armor=1100;
 		armorStructural=16;
 		transportSoldier=13;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -2209,7 +2209,7 @@ class CfgVehicles
 		side=1;
 		armor=700;
 		ace_cargo_space=400;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -2338,7 +2338,7 @@ class CfgVehicles
 		scopeCurator=2;
 		side=1;
 		armor=700;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -2478,7 +2478,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="LSV-808";
 	};
@@ -2498,7 +2498,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="RFV-101 Fennek";
 		class Turrets: Turrets
@@ -2596,7 +2596,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="RFV-101 Fennek GMG";
 		class TransportItems
@@ -2653,7 +2653,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=500;
 		displayName="Fennek CAV (Testbed)";
 		thrustDelay = 0.1;
@@ -2799,7 +2799,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="RFV-101 Medical Fennek";
 		class Turrets: Turrets
@@ -2893,7 +2893,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="AV-7 Test Bed";
 		crew="101st_CloneTrooper_212th";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -2962,7 +2962,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101st_mbt_03_rcws_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		normalSpeedForwardCoef=0.94999999;
 		slowSpeedForwardCoef=0.25;
 		enginePower=1677.825;
@@ -3110,7 +3110,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\101st_mbt_03_rcws_co.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
@@ -3239,7 +3239,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_addons_101st_CO.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		normalSpeedForwardCoef=0.94999999;
 		slowSpeedForwardCoef=0.25;
 		engineMOI=9;
@@ -3426,7 +3426,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		normalSpeedForwardCoef=0.94999999;
 		slowSpeedForwardCoef=0.25;
 		engineMOI=7;
@@ -3620,7 +3620,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_01_addons_101st_CO.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
@@ -3737,7 +3737,7 @@ class CfgVehicles
 			"\A3\soft_F\MRAP_02\data\MRAP_02_ext_02_CO.paa",
 			"\A3\Data_F\Vehicles\turret_opfor_co.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
@@ -3804,7 +3804,7 @@ class CfgVehicles
 			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_02_ghex_CO.paa",
 			"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
@@ -3873,7 +3873,7 @@ class CfgVehicles
 			"\A3\Soft_F_Exp\MRAP_02\data\MRAP_02_ext_02_ghex_CO.paa",
 			"\A3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
@@ -3958,7 +3958,7 @@ class CfgVehicles
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\MBT\MBT_04_exterior_2_101st_Gray_CO.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
 		};
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		class TransportItems
 		{
 			class _transport_ToolKit
