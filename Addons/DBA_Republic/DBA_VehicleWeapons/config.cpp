@@ -62,7 +62,8 @@ class CfgPatches
 			"DBA_DADS1P_SAM",
 			"DBA_94mw_PN32_FG",
 			"DBA_25mw_P25S_Cannon",
-			"DBA_100mw_HH33G_Cannon"
+			"DBA_100mw_HH33G_Cannon",
+			"Memehorn"
 		};
 		magazines[]=
 		{
@@ -12276,5 +12277,21 @@ class CfgAmmo
 		timeToLive=240;
 		triggerTime=5;
 		triggerOnImpact="true";
+	};
+	class Default;
+	class Memehorn: Default
+	{
+		cursor = "";
+		cursorAim = "";
+		scope = 2;
+		displayName = "Meme Horn";
+		reloadTime = 0;
+		drySound[] = 
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Sound\Warthog_Music.ogg", 5, 1, 200
+		};
+		canLock = 0;
+		optics = 0;
+		enableAttack = 0;
 	};
 };
