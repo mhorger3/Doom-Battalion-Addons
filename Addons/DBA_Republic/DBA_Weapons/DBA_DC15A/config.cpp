@@ -102,7 +102,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Rifles\MX\data\Anim\mx.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15aHandAnim.rtm"
 		};
 		modes[] =
 		{
@@ -275,7 +275,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_afg.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15aHandAnim.rtm"
 		};
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15A_CO.paa" };

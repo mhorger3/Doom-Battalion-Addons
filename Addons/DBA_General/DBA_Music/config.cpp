@@ -37,8 +37,3 @@ class CfgMusicClasses
 		displayName="101st - VideoGames";
 	};
 };
-class cfgMods
-{
-	author="Aussiemutt";
-	timepacked="1595362869";
-};

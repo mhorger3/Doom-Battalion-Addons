@@ -41,6 +41,12 @@ class CfgFunctions
 			file = "101st_Aux_Mod\Addons\DBA_General\DBA_OrbitalDesignator\functions";
 
 			class Fired {};
+			class ResupplyAmmoDrop {};
+			class ResupplyExplosiveDrop {};
+			class ResupplyLauncherAmmoDrop {};
+			class ResupplyMedicalDrop {};
+			class ResupplyRepairDrop {};
+			class ResupplySecondaryAmmoDrop {};
 		};
 	};
 };

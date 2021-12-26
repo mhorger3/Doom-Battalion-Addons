@@ -13,6 +13,7 @@ class CfgPatches
 		{
 			"DBA_Ground_HMG_Generic",
 			"DBA_Ground_AC_Generic",
+			"DBA_Command_Relay",
 			"DBA_57mw_Cannon",
 			"DBA_240mw_Cannon",
 			"DBA_MBT_Cannon",
@@ -1395,6 +1396,80 @@ class CfgWeapons
 		};
 
 		class Single5: Single1 {
+			displayName = "Five Charges";
+			artilleryCharge = 0.8525;
+		};
+	};
+	class DBA_Command_Relay : mortar_155mm_AMOS {
+		ace_overpressure_angle = 0;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+		ace_overpressure_range = 0;  // Range in meters in which the damage is applied
+		ace_overpressure_damage = 0;  // Damage multiplier
+		scope = 1;
+		displayName = "Orbital Relay";
+		nameSound = "cannon";
+		cursor = "mortar";
+		cursorAim = "EmptyCursor";
+		sounds[] = { "StandardSound" };
+		class StandardSound {
+			begin1[] = { "A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 3.511886, 0.525, 1500 };
+			soundBegin[] = { "begin1", 1 };
+		};
+		reloadSound[] = { "A3\Sounds_F\vehicles\armor\noises\reload_tank_cannon_2", 31.622778, 1, 15 };
+		magazineReloadTime = 1;
+		autoReload = 1;
+		canLock = 0;
+		magazines[] = {
+			"DBA_210mm_AMMO_Resupply_x1_mag",
+			"DBA_210mm_Explosive_Resupply_x1_mag",
+			"DBA_210mm_Launcher_Resupply_x1_mag",
+			"DBA_210mm_Medical_Resupply_x1_mag",
+			"DBA_210mm_Repair_Resupply_x1_mag",
+			"DBA_210mm_Secondary_Resupply_x1_mag",
+		};
+		modes[] = { "Single1", "Single2", "Single3", "Single4", "Single5" };
+		class EventHandlers : DefaultEventhandlers
+		{
+			Fired = "[_this select 6, _this select 4] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_OrbitalDesignator\functions\fn_Fired_Relay.sqf';";
+		};
+
+		class Single1 : Mode_SemiAuto {
+			displayName = "Single Charge";
+			sounds[] = { "StandardSound" };
+
+			class StandardSound {
+				begin1[] = { "A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant", 0, 0, 0 };
+				soundBegin[] = { "begin1", 1 };
+			};
+			reloadSound[] = { "A3\sounds_f\dummysound", 1.000000, 1, 20 };
+			reloadTime = 1.75;
+			artilleryDispersion = 3.850000;
+			artilleryCharge = 0.100000;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+		};
+
+		class Single2 : Single1 {
+			displayName = "Two Charges";
+			artilleryCharge = 0.250000;
+		};
+
+		class Single3 : Single1 {
+			displayName = "Three Charges";
+			artilleryCharge = 0.400000;
+		};
+
+		class Single4 : Single1 {
+			displayName = "Four Charges";
+			artilleryCharge = 0.67500000;
+		};
+
+		class Single5 : Single1 {
 			displayName = "Five Charges";
 			artilleryCharge = 0.8525;
 		};
@@ -7166,6 +7241,72 @@ class CfgMagazines
 		initspeed=855;
 		tracersevery=1;
 	};
+	class DBA_210mm_AMMO_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Ammo Resupply";
+		ammo = "DBA_OrbitalRelay_AmmoResupply";
+		displaynamemagazine = "Orbital Ammo Resupply";
+		shortnamemagazine = "ORB AMMO";
+		displayNameMFDFormat = "AMMO R.";
+		displayNameShort = "AMMO R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
+	class DBA_210mm_Explosive_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Explosive Resupply";
+		ammo = "DBA_OrbitalRelay_ExplosiveResupply";
+		displaynamemagazine = "Orbital Explosive Resupply";
+		shortnamemagazine = "ORB EXPLO";
+		displayNameMFDFormat = "EXPL R.";
+		displayNameShort = "EXPL R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
+	class DBA_210mm_Launcher_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Launcher Resupply";
+		ammo = "DBA_OrbitalRelay_LauncherResupply";
+		displaynamemagazine = "Orbital Launcher Resupply";
+		shortnamemagazine = "ORB LAUNCH";
+		displayNameMFDFormat = "LANC R.";
+		displayNameShort = "LANC R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
+	class DBA_210mm_Medical_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Medical Resupply";
+		ammo = "DBA_OrbitalRelay_MedicalResupply";
+		displaynamemagazine = "Orbital Medical Resupply";
+		shortnamemagazine = "ORB MEDICAL";
+		displayNameMFDFormat = "MED R.";
+		displayNameShort = "MED R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
+	class DBA_210mm_Repair_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Repair Resupply";
+		ammo = "DBA_OrbitalRelay_RepairResupply";
+		displaynamemagazine = "Orbital Repair Resupply";
+		shortnamemagazine = "ORB REPAIR";
+		displayNameMFDFormat = "REPAIR R.";
+		displayNameShort = "REPAIR R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
+	class DBA_210mm_Secondary_Resupply_x1_mag : DBA_210mm_K17_x6_mag {
+		displayname = "Orbital Secondary Resupply";
+		ammo = "DBA_OrbitalRelay_SecondaryResupply";
+		displaynamemagazine = "Orbital Secondary Resupply";
+		shortnamemagazine = "ORB SEC";
+		displayNameMFDFormat = "SEC R.";
+		displayNameShort = "SEC R.";
+		count = 3;
+		initspeed = 855;
+		tracersevery = 1;
+	};
 	class DBA_305mm_M19K_HE_x2_mag : VehicleMagazine{
 		displayname="305mw M-19K High Explosive";
 		ammo="DBA_305mm_M19K_HE";
@@ -9777,6 +9918,138 @@ class CfgAmmo
 		aimAboveTarget[]= {10};
 		aimAboveDefault = 0;
 		DBA_isNuke = 1;
+	};
+	class DBA_OrbitalRelay_AmmoResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Ammo Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 1;
+	};
+	class DBA_OrbitalRelay_ExplosiveResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Explosive Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 2;
+	};
+	class DBA_OrbitalRelay_LauncherResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Launcher Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 3;
+	};
+	class DBA_OrbitalRelay_MedicalResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Medical Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 4;
+	};
+	class DBA_OrbitalRelay_RepairResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Repair & Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 5;
+	};
+	class DBA_OrbitalRelay_SecondaryAmmoResupply : Sh_155mm_AMOS {
+		displayName = "DBA Orbital Secondary Ammo Resupply";
+		artilleryLock = 1;
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initSpeed = 855;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		tracerScale = 0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 0.02;
+		timetolive = 220;
+		airFriction = 0.0;
+		simulation = "shotSubmunitions";
+		submunitionConeType[] = { "poissondisc", 1 };
+		submunitionConeAngle = 1;
+		simulationStep = 0.010000;
+		triggerDistance = 15;
+		aimAboveTarget[] = { 10 };
+		aimAboveDefault = 0;
+		DBA_isAmmoResupply = 6;
 	};
 	class DBA_210mm_TACN_Submunition : Sh_155mm_AMOS{
 		hit = 3000;

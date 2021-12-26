@@ -459,7 +459,7 @@ class CfgVehicles {
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "DBA Phase 2 Clone Cadet";
+		displayName = "DBA Phase 2 Clone";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		uniformClass = "DBA_P2cloneTrooperUniform";
 	};
