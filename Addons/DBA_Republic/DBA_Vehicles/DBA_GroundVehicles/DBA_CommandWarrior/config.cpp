@@ -1,9 +1,9 @@
 class cfgPatches
 {
-	class DBA_CommandBantha
+	class DBA_CommandWarrior
 	{
 		author="Vulgar";
-		name="DBA Command Bantha";
+		name="DBA Command Warrior";
 		units[]=
 		{
 			"DBA_CommandAPC_Wheeled_03_base_F",
@@ -13,8 +13,8 @@ class cfgPatches
 		};
 		requiredAddons[]=
 		{
-			"A3_Armor_F",
 			"A3_Armor_F_Gamma",
+			"A3_Soft_F"
 		};
 	};
 };
@@ -355,8 +355,8 @@ class CfgVehicles
 		waterResistanceCoef=0.5;
 		engineShiftY=1.1;
 		wheelDestroyRadiusCoef=0.60000002;
-		armor=1060;
-		armorStructural=6;
+		armor=1560;
+		armorStructural=19;
 		armorLights=0.1;
 		crewExplosionProtection=0.99949998;
 		damageResistance=0.0071899998;
@@ -2458,7 +2458,7 @@ class CfgVehicles
 				{
 					class HitTurret
 					{
-						armor=1.5;
+						armor=15;
 						material=-1;
 						armorComponent="hit_main_turret";
 						name="hit_main_turret_point";
@@ -2471,7 +2471,7 @@ class CfgVehicles
 					};
 					class HitGun
 					{
-						armor=1.5;
+						armor=15;
 						material=-1;
 						armorComponent="hit_main_gun";
 						name="hit_main_gun_point";

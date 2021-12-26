@@ -1405,7 +1405,7 @@ class CfgWeapons
 		ace_overpressure_range = 0;  // Range in meters in which the damage is applied
 		ace_overpressure_damage = 0;  // Damage multiplier
 		scope = 1;
-		displayName = "Orbital Relay";
+		displayName = "Orbital Relay Uplink";
 		nameSound = "cannon";
 		cursor = "mortar";
 		cursorAim = "EmptyCursor";
@@ -9041,7 +9041,7 @@ class CfgAmmo
 	};
 	class DBA_105mm_S416_SMK : DBA_105mm_P900_KEP{
 		displayName="105mw S416 Smoke Shell";
-		hit=0;
+		hit=1;
 		warheadName="SMK";
 		indirectHit=0;
 		indirectHitRange=0;

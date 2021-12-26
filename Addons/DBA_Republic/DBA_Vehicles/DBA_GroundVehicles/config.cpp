@@ -37,6 +37,9 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Armor_F_Beta",
+			"A3_Armor_F_EPB",
+			"A3_Armor_F_EPC",
+			"A3_Armor_F_Exp",
 			"A3_Armor_F",
 			"A3_Armor_F_Gamma",
 			"3AS_SaberTank"
@@ -6097,9 +6100,4 @@ class CfgVehicles
         };
     };
 	};
-};
-class cfgMods
-{
-	author="DutchBoi03";
-	timepacked="1631207670";
 };
