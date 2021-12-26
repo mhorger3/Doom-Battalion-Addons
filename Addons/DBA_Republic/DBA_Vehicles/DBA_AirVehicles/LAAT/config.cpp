@@ -193,7 +193,7 @@ class cfgVehicles
 	{
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		displayName="101st LAAT MKV (Republic)";
 		author="Trip";
 		scope=0;
@@ -1731,7 +1731,7 @@ class cfgVehicles
 	{
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		displayName="101st LAAT MKVI (Republic)";
 		author="Trip";
 		scope=0;
@@ -3111,7 +3111,7 @@ class cfgVehicles
 	{
 		TFAR_hasIntercom=1;
 		ace_cargo_space = 400;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		displayName="LAAT MKVI Lights (Republic)";
 		author="Trip";
 		scope=0;
@@ -16359,7 +16359,7 @@ class cfgVehicles
 		side=1;
 		author = "Muttie The Modder";
 		displayName = "101st LAAT/I VTOL Refit";
-		faction="Republic_101st";	
+		faction="B_DBA_Republic_F";	
 
 		//I personally think this is cursed af - Trip
 	};
@@ -16367,7 +16367,7 @@ class cfgVehicles
 	class 3as_nuclass_f;
 	class 101st_Nuclass: 3as_nuclass_f
 	{
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		displayName="101st Nu Class Shuttle";
 		author="Trip";
 
@@ -16794,7 +16794,7 @@ class cfgVehicles
 		armor=300;
 		scope=2;
 		displayName="101st Z-95 Headhunter";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		crew="101st_Pilot_212th";
 		alwaysTarget=0;
 		radarTargetSize = 1.2;
@@ -16917,7 +16917,7 @@ class cfgVehicles
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
 		displayName="101st V-19 Torrent";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		crew="101st_Pilot_212th";
 		alwaysTarget=0;
 		weapons[]=
@@ -16972,7 +16972,7 @@ class cfgVehicles
 		scopeCurator = 2;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		crew="101st_Pilot_212th";
 		weapons[]=
 		{
@@ -17340,7 +17340,7 @@ class cfgVehicles
 	{
 		displayname="101st LAAT/le";
 		crew="101st_Pilot_212th";
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		scope=2;
 		scopeCurator=2;
 		memoryPointGun[] = {"L_Muzzle","R_muzzle"};
@@ -17534,7 +17534,7 @@ class cfgVehicles
 		allowTabLock=1;
 		side=1;
 
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 
 		icon="kobra\442_a_vehicle\laat\data\ui\laat_icon.paa";
 		editorpreview="kobra\442_a_vehicle\laat\data\ui\laat_preview.jpg";
@@ -18675,7 +18675,7 @@ class cfgVehicles
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
 		armor=95;
-		 faction="Republic_101st";
+		 faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
 	};
@@ -18687,7 +18687,7 @@ class cfgVehicles
 		displayName = "Y-Wing BTL-B StarFighter";
 		side=1;
 		forceingarage=1;
-        faction="Republic_101st";
+        faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
@@ -18716,7 +18716,7 @@ class cfgVehicles
 		displayName = "Y-Wing BTL-B StarFighter (Green)";
 		side=1;
 		forceingarage=1;
-         faction="Republic_101st";
+         faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
@@ -18745,7 +18745,7 @@ class cfgVehicles
 		displayName = "Y-Wing BTL-B StarFighter (Red)";
 		side=1;
 		forceingarage=1;
-         faction="Republic_101st";
+         faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
@@ -18779,7 +18779,7 @@ class cfgVehicles
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
 		access=2;
-		faction="Republic_101st";
+		faction="B_DBA_Republic_F";
 		displayName="LAAT MK7";
 		author="3AS + Ammendments by DBA";
 		model="3as\3as_laat\LAATi\model\tcw_laat.p3d";

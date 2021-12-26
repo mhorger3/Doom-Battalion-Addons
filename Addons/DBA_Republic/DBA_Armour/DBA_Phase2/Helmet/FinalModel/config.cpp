@@ -30,8 +30,8 @@ class cfgWeapons
 	class DBA_P2HelmetBase : H_HelmetSpecB
 	{
 		author = "Vulgar";
-		displayName = "[DBA] P2 Helmet Base";
-		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Blankp2Arsenal_CA.paa";
+		displayName = "DBA Clone trooper P2 Helmet Base";
+		picture = "\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\Blankp2Arsenal_ca.paa";
 		//picture = "";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\P2Helmet.p3d";
 		hiddenSelections[] = 
@@ -74,7 +74,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Rage : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Rage";
+		displayName = "DBA Clone trooper P2 Helmet: Rage";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Rage_Helmet_CO.paa"
@@ -83,7 +83,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Doom : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: DoomBot";
+		displayName = "DBA Clone trooper P2 Helmet: DoomBot";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Doom_Guy_CO.paa"
@@ -92,7 +92,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Cam : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Cam";
+		displayName = "DBA Clone trooper P2 Helmet: Cam";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Cam_Helmet_CO.paa"
@@ -101,7 +101,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Chaap : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Chaap";
+		displayName = "DBA Clone trooper P2 Helmet: Chaap";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Chaap_Helmet_CO.paa"
@@ -110,7 +110,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Corvax : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Corvax";
+		displayName = "DBA Clone trooper P2 Helmet: Corvax";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Corvax_Helmet_CO.paa"
@@ -119,7 +119,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Croja : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Croja";
+		displayName = "DBA Clone trooper P2 Helmet: Croja";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Croja_Helmet_CO.paa"
@@ -128,7 +128,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Devil : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Devil";
+		displayName = "DBA Clone trooper P2 Helmet: Devil";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Devil_Helmet_CO.paa"
@@ -137,7 +137,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Dova : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Dova";
+		displayName = "DBA Clone trooper P2 Helmet: Dova";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Dova_Helmet_CO.paa"
@@ -146,7 +146,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Easton : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Easton";
+		displayName = "DBA Clone trooper P2 Helmet: Easton";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Easton_Helmet_CO.paa"
@@ -155,7 +155,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Ghost : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Ghost";
+		displayName = "DBA Clone trooper P2 Helmet: Ghost";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Ghost_Helmet_CO.paa"
@@ -164,7 +164,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Lance : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Lance";
+		displayName = "DBA Clone trooper P2 Helmet: Lance";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Lance_Helmet_CO.paa"
@@ -173,7 +173,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Legatorre : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Legatorre";
+		displayName = "DBA Clone trooper P2 Helmet: Legatorre";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Legatorre_Helmet_CO.paa"
@@ -182,7 +182,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Nassau : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Nassau";
+		displayName = "DBA Clone trooper P2 Helmet: Nassau";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Nassau_Helmet_CO.paa"
@@ -191,7 +191,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Odin : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Odin";
+		displayName = "DBA Clone trooper P2 Helmet: Odin";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Odin_Helmet_CO.paa"
@@ -200,7 +200,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Papa : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Papa";
+		displayName = "DBA Clone trooper P2 Helmet: Papa";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Papa_Helmet_CO.paa"
@@ -209,7 +209,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Renik : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Renik";
+		displayName = "DBA Clone trooper P2 Helmet: Renik";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Renik_Helmet_CO.paa"
@@ -218,7 +218,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Robo : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Robo";
+		displayName = "DBA Clone trooper P2 Helmet: Robo";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Robo_Helmet_CO.paa"
@@ -227,7 +227,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Ryker : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Ryker";
+		displayName = "DBA Clone trooper P2 Helmet: Ryker";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Ryker_Helmet_CO.paa"
@@ -236,7 +236,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Scythe : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Scythe";
+		displayName = "DBA Clone trooper P2 Helmet: Scythe";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Scythe_Helmet_CO.paa"
@@ -245,7 +245,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Seagull : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Seagull";
+		displayName = "DBA Clone trooper P2 Helmet: Seagull";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Seagull_Helmet_CO.paa"
@@ -254,7 +254,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Shadow : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Shadow";
+		displayName = "DBA Clone trooper P2 Helmet: Shadow";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shadow_Helmet_CO.paa"
@@ -263,7 +263,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Shepherd : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Sheperd";
+		displayName = "DBA Clone trooper P2 Helmet: Sheperd";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shepherd_Helmet_CO.paa"
@@ -272,7 +272,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Virgo : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
-		displayName = "DBA Phase 2 Clone Helmet: Virgo";
+		displayName = "DBA Clone trooper P2 Helmet: Virgo";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Virgo_Helmet_CO.paa"
@@ -281,7 +281,7 @@ class cfgWeapons
 	class DBA_P2Helmet_Blackwater : DBA_P2HelmetBase
 	{
 		author = "Dune";
-		displayName = "DBA Phase 2 Clone Helmet: Blackwater";
+		displayName = "DBA Clone trooper P2 Helmet: Blackwater";
 		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Blackwater_Helmet_CO.paa"
