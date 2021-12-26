@@ -132,7 +132,7 @@ class CfgVehicles
 		fuelCapacity=24;
 		wheelCircumference=3.8050001;
 		waterLeakiness=2.5;
-		normalSpeedForwardCoef=0.51999998;
+		normalSpeedForwardCoef=0.9999998;
 		accelAidForceYOffset=-1.5;
 		antiRollbarForceCoef=24;
 		antiRollbarForceLimit=30;
@@ -146,7 +146,7 @@ class CfgVehicles
 		rearBias=1.3;
 		centreBias=1.3;
 		enginePower=372.5;
-		peakTorque=2033.75;
+		peakTorque=1533.75;
 		maxOmega=220;
 		minOmega=40;
 		idleRpm=388;
@@ -203,7 +203,7 @@ class CfgVehicles
 			GearboxRatios[]=
 			{
 				"R1",
-				-4.8400002,
+				-0.6400002,
 				"N",
 				0,
 				"D1",
@@ -227,11 +227,11 @@ class CfgVehicles
 			AmphibiousRatios[]=
 			{
 				"R1",
-				-8,
+				-0.5,
 				"N",
 				0,
 				"D1",
-				35
+				0.5
 			};
 			gearBoxMode="auto";
 			moveOffGear=1;
@@ -355,8 +355,8 @@ class CfgVehicles
 		waterResistanceCoef=0.5;
 		engineShiftY=1.1;
 		wheelDestroyRadiusCoef=0.60000002;
-		armor=1560;
-		armorStructural=19;
+		armor=1400;
+		armorStructural=22;
 		armorLights=0.1;
 		crewExplosionProtection=0.99949998;
 		damageResistance=0.0071899998;
@@ -4110,7 +4110,6 @@ class CfgVehicles
 					"DBA_Command_Relay",
 					"DBA_40mw_P4M_Cannon",
 					"DBA_762_C95A1_CG",
-					"DBA_127_C3HB_HMG"
 				};
 				magazines[] =
 				{
@@ -4138,7 +4137,6 @@ class CfgVehicles
 					"DBA_40mm_PL31A_HESH_x320_mag",
 					"DBA_40mm_PL31A_HESH_x320_mag",
 					"DBA_762_D61_x2000_mag",
-					"DBA_127_X962_x1500_mag"
 				};
 				gunnerName = "Orbital Relay Controller";
 				soundServo[]=
