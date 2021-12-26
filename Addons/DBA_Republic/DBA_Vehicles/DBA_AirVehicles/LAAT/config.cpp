@@ -536,7 +536,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -582,7 +582,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -2075,7 +2075,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -2121,7 +2121,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -3454,7 +3454,7 @@ class cfgVehicles
 				statement = "this animateSource ['ramp',0,1];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -3500,7 +3500,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Turrets: Turrets
 		{
@@ -16655,7 +16655,7 @@ class cfgVehicles
 				statement = "this animateSource ['rampfront',0]";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -16701,7 +16701,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class ACE_SelfActions
 		{
@@ -17426,7 +17426,7 @@ class cfgVehicles
 				statement = "this animateSource ['Door_R',0];";				
 				onlyforplayer = 0;
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -17472,7 +17472,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 	};
 
@@ -17717,7 +17717,7 @@ class cfgVehicles
 				condition="(player == driver this OR !(player in crew this) ) AND this animationsourcephase ""laat_door_l"" == 1;";
 				statement="this animatesource [""laat_door_l"",0]; [this, ""laat_door_open""] remoteExec [""say3d"",0,false];";
 			};
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -17763,7 +17763,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		class Components
 		{
@@ -18614,7 +18614,7 @@ class cfgVehicles
 		
 		class UserActions
 		{
-			class ThrusterEngage
+			/*class ThrusterEngage
 			{
 				displayName = "<t color='#4C9900'>[Impulsor On]</t>";
 				displayNameDefault = "<t color='#4C9900'>[Impulsor On]</t>";
@@ -18660,7 +18660,7 @@ class cfgVehicles
 				condition = "((player == driver this) AND (alive this))";
 				statement = "this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
 				shortcut="User20"
-			};
+			};*/
 		};
 		hiddenselections[]=
 		{
