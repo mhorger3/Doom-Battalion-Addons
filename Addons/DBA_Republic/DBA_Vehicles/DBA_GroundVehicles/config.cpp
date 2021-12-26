@@ -2944,7 +2944,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="Leopard Test Bed";
+		displayName="Leopard Cavalry Tank";
 		crew="101st_CloneTrooper_212th";
 		armor=950;
 		armorStructural=10;
@@ -2966,12 +2966,15 @@ class CfgVehicles
 			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 		};
 		faction="B_DBA_Republic_F";
-		normalSpeedForwardCoef=0.94999999;
+		accelAidForceCoef = 1.35;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 65;
+		normalSpeedForwardCoef=0.99999999;
 		slowSpeedForwardCoef=0.25;
 		enginePower=1677.825;
 		maxOmega=273;
 		minOmega=84;
-		maxSpeed=78;
+		maxSpeed=90;
 		peakTorque=8150;
 		thrustDelay=0.2;
 		clutchStrength=250;
@@ -2998,7 +3001,7 @@ class CfgVehicles
 			GearboxRatios[]=
 			{
 				"R1",
-				-1.15,
+				-0.55,
 				"N",
 				0,
 				"D1",
@@ -3221,10 +3224,11 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="Merkava Testbed MODTEAM ONLY <- Read";
+		displayName="Merkava Infantry Tank";
 		crew="101st_CloneTrooper_212th";
-		armor=1100;
-		armorStructural=10;
+		armor=1300;
+		armorStructural=12;
+		transportSoldier=13;
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -3259,8 +3263,8 @@ class CfgVehicles
 		idleRpm=700;
 		redRpm=2400;
 		engineLosses=5;
-		accelAidForceCoef=4;
-		accelAidForceSpd=30;
+		accelAidForceCoef= 4;
+		accelAidForceSpd= 40;
 		torqueCurve[]=
 		{
 			{0.36363599,0.80000001},
@@ -3412,10 +3416,10 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="Armata Testbed";
+		displayName="T-14 Heavy Tank";
 		crew="101st_CloneTrooper_212th";
-		armor=1450;
-		armorStructural=15;
+		armor=1500;
+		armorStructural=16;
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -3447,7 +3451,7 @@ class CfgVehicles
 		redRpm=2400;
 		engineLosses=5;
 		accelAidForceCoef=2.5;
-		accelAidForceSpd=15;
+		accelAidForceSpd=25;
 		torqueCurve[]=
 		{
 			{0.41666701,0.86363602},
@@ -3465,7 +3469,7 @@ class CfgVehicles
 			GearboxRatios[]=
 			{
 				"R1",
-				-1.05,
+				-0.55,
 				"N",
 				0,
 				"D1",
