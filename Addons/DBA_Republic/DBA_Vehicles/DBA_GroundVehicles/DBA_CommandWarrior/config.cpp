@@ -128,7 +128,7 @@ class CfgVehicles
 		displayName="DBA Command Warrior Base";
 		thrustDelay=0.34999999;
 		brakeIdleSpeed=1.78;
-		maxSpeed=110;
+		maxSpeed=75;
 		fuelCapacity=24;
 		wheelCircumference=3.8050001;
 		waterLeakiness=2.5;
@@ -355,8 +355,8 @@ class CfgVehicles
 		waterResistanceCoef=0.5;
 		engineShiftY=1.1;
 		wheelDestroyRadiusCoef=0.60000002;
-		armor=480;
-		armorStructural=5;
+		armor=1060;
+		armorStructural=6;
 		armorLights=0.1;
 		crewExplosionProtection=0.99949998;
 		damageResistance=0.0071899998;
@@ -2214,7 +2214,7 @@ class CfgVehicles
 					{
 						memoryPointGunnerOutOptics="commanderview";
 						memoryPointGunnerOptics="commanderview";
-						gunnerName = "cargo";
+						gunnerName = "Commander";
 						minElev=-25;
 						maxElev=60;
 						initElev=0;
@@ -4107,28 +4107,38 @@ class CfgVehicles
 			{
 				weapons[] =
 				{
-					"DBA_Command_Relay"
+					"DBA_Command_Relay",
+					"DBA_40mw_P4M_Cannon",
+					"DBA_762_C95A1_CG",
+					"DBA_127_C3HB_HMG"
 				};
 				magazines[] =
 				{
 					"DBA_210mm_AMMO_Resupply_x1_mag",
-					"DBA_210mm_Explosive_Resupply_x1_mag",
-					"DBA_210mm_Launcher_Resupply_x1_mag",
-					"DBA_210mm_Medical_Resupply_x1_mag",
-					"DBA_210mm_Repair_Resupply_x1_mag",
-					"DBA_210mm_Secondary_Resupply_x1_mag",
+					"DBA_210mm_AMMO_Resupply_x1_mag",
 					"DBA_210mm_AMMO_Resupply_x1_mag",
 					"DBA_210mm_Explosive_Resupply_x1_mag",
-					"DBA_210mm_Launcher_Resupply_x1_mag",
-					"DBA_210mm_Medical_Resupply_x1_mag",
-					"DBA_210mm_Repair_Resupply_x1_mag",
-					"DBA_210mm_Secondary_Resupply_x1_mag",
-					"DBA_210mm_AMMO_Resupply_x1_mag",
+					"DBA_210mm_Explosive_Resupply_x1_mag",
 					"DBA_210mm_Explosive_Resupply_x1_mag",
 					"DBA_210mm_Launcher_Resupply_x1_mag",
+					"DBA_210mm_Launcher_Resupply_x1_mag",
+					"DBA_210mm_Launcher_Resupply_x1_mag",
+					"DBA_210mm_Medical_Resupply_x1_mag",
+					"DBA_210mm_Medical_Resupply_x1_mag",
 					"DBA_210mm_Medical_Resupply_x1_mag",
 					"DBA_210mm_Repair_Resupply_x1_mag",
+					"DBA_210mm_Repair_Resupply_x1_mag",
+					"DBA_210mm_Repair_Resupply_x1_mag",
 					"DBA_210mm_Secondary_Resupply_x1_mag",
+					"DBA_210mm_Secondary_Resupply_x1_mag",
+					"DBA_210mm_Secondary_Resupply_x1_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PL31A_HESH_x320_mag",
+					"DBA_40mm_PL31A_HESH_x320_mag",
+					"DBA_762_D61_x2000_mag",
+					"DBA_127_X962_x1500_mag"
 				};
 				gunnerName = "Orbital Relay Controller";
 				soundServo[]=
