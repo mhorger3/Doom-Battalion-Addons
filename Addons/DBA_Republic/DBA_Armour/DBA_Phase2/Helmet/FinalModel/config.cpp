@@ -293,7 +293,11 @@ class cfgWeapons
 		displayName = "DBA Phase 2 Clone Helmet: SecutorTest";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_AS.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_NOHQ.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_CO.paa",
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Helmet.rvmat",
 		};
 	};
 };
