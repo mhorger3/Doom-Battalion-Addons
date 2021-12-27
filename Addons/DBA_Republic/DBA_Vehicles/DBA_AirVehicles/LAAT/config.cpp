@@ -206,11 +206,11 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
-			"DBA_Aircraft_Heavy_Lasers_Blue",
-			"dba_wynd_a2a",
-			"dba_wynd_ugm",
-			"dba_wynd_lgm",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
+			"DBA_D39M_AAM_Weapon",
+			"DBA_107mw_R10P_Rockets",
+			"DBA_148mw_K2M_ATGM",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -220,12 +220,12 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"dba_ugm_x10_mag",
-			"dba_a2a_x4_mag",
-			"dba_lgm_x4_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_D39M_x4_pylon",
+			"DBA_148mm_Fletch_x4_mag",
 		};
 		smokeLauncherGrenadeCount = 48;
 		smokeLauncherAngle = 360;
@@ -1745,11 +1745,11 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
-			"DBA_Aircraft_Heavy_Lasers_Blue",
-			"dba_wynd_a2a",
-			"dba_wynd_ugm",
-			"dba_wynd_lgm",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
+			"DBA_D39M_AAM_Weapon",
+			"DBA_107mw_R10P_Rockets",
+			"DBA_148mw_K2M_ATGM",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -1759,12 +1759,12 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"dba_ugm_x10_mag",
-			"dba_a2a_x4_mag",
-			"dba_lgm_x4_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_D39M_x4_pylon",
+			"DBA_148mm_Fletch_x4_mag",
 		};
 		smokeLauncherGrenadeCount = 48;
 		smokeLauncherAngle = 360;
@@ -3124,11 +3124,11 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
-			"DBA_Aircraft_Heavy_Lasers_Blue",
-			"dba_wynd_a2a",
-			"dba_wynd_ugm",
-			"dba_wynd_lgm",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
+			"DBA_D39M_AAM_Weapon",
+			"DBA_107mw_R10P_Rockets",
+			"DBA_148mw_K2M_ATGM",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -3138,12 +3138,12 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"dba_ugm_x10_mag",
-			"dba_a2a_x4_mag",
-			"dba_lgm_x4_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_107mm_R10P_x12_pod",
+			"DBA_D39M_x4_pylon",
+			"DBA_148mm_Fletch_x4_mag",
 		};
 		smokeLauncherGrenadeCount = 48;
 		smokeLauncherAngle = 360;
@@ -5757,8 +5757,8 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
-			"DBA_Aircraft_Heavy_Lasers_Blue",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -5768,13 +5768,8 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
 		};
 		memoryPointGun[]=
 		{
@@ -16377,8 +16372,8 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
-			"DBA_Aircraft_Heavy_Lasers_Blue",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -16388,13 +16383,8 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_gun_blue_x1000_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag",
-			"DBA_generic_aircraft_cannon_blue_x200_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -17349,7 +17339,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
+			"DBA_23mw_GH197_AC",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -17359,7 +17349,7 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag"
+			"DBA_23mm_PS59_x400_mag",
 		};
 		class UserActions
 		{		
@@ -17489,7 +17479,8 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_Aircraft_Lasers_Blue",
+			"DBA_23mw_GH197_AC",
+			"DBA_45mw_GH20K_AC",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -17499,7 +17490,8 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_generic_aircraft_gun_blue_x1000_mag"
+			"DBA_23mm_PS59_x400_mag",
+			"DBA_45mm_PS73_x80_mag",
 		};
 		hiddenselections[]=
 		{
