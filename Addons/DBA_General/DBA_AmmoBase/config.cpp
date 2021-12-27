@@ -198,6 +198,9 @@ class CfgAmmo
 {
 	class BulletBase;
 	class ShotgunBase;
+	class G_40mm_HE;
+	class OPTRE_G_M8_Flare;
+	class FlareBase;
 	class DBA_ammo_base : BulletBase
 	{
 		hit = 8;
@@ -844,6 +847,11 @@ class CfgAmmo
 		suppressionRadiusBulletClose = 2;
 		suppressionRadiusHit = 4;
 	};
+	class DBA_127x33_yellow : DBA_127x33_base
+	{
+		model = "kobra\442_weapons\ammo\yellow_tracer.p3d";
+		effectfly = "442_plasma_yellow";
+	};
 
 	//Shotgun Calibers
 
@@ -890,5 +898,98 @@ class CfgAmmo
 			duration = 1;
 			frequency = 20;
 		};
+	};
+	// GL
+	class DBA_GL_HE_ammo : G_40mm_HE
+	{
+		hit = 60;
+		indirectHit = 50;
+		indirectHitRange = 5;
+		timeToLive = 30;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_orange.p3d";
+		lightcolor[] = { 1,0.37,0 };
+		effectfly = "JLTS_plasma_orange";
+		fuseDistance = 3;
+	};
+
+	class DBA_GL_AP_ammo : G_40mm_HE
+	{
+		hit = 175;
+		indirectHit = 1;
+		indirectHitRange = 0.1;
+		timeToLive = 30;
+		model = "\MRC\JLTS\weapons\Core\effects\laser_orange.p3d";
+		lightcolor[] = { 1,0.37,0 };
+		effectfly = "JLTS_plasma_orange";
+		fuseDistance = 3;
+		explosive = 0.0001;
+		deflecting = 5;
+		caliber = 20;
+		ace_frag_enabled = 0;
+		ace_frag_force = 0;
+		ace_frag_classes[] = { "" };
+		ace_frag_metal = 0;
+		ace_frag_charge = 0;
+		ace_frag_gurney_c = 0;
+		ace_frag_gurney_k = "0";
+		ace_rearm_caliber = 0;
+	};
+	// Flares
+
+	class DBA_40mm_white_ammo : FlareBase
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 1,1,1,1 };
+		useFlare = 1;
+		deflecting = 30;
+		smokeColor[] = { 1,1,1,1 };
+		brightness = 1200;
+		size = 3;
+		triggerTime = 3;
+		triggerSpeedCoef = 1;
+		audibleFire = 20;
+		intensity = 1000000;
+		flareSize = 3;
+		timeToLive = 120;
+		flareMaxDistance = 300;
+	};
+	class DBA_40mm_green_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 0,1,0,0 };
+	};
+	class DBA_40mm_red_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 1,0,0,0 };
+	};
+	class DBA_40mm_yellow_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 1,1,0,0 };
+	};
+	class DBA_40mm_CIR_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 0.5,0.5,0.25,0 };
+	};
+	class DBA_40mm_blue_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 0,0,1,0 };
+	};
+	class DBA_40mm_cyan_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 0,1,1,0 };
+	};
+	class DBA_40mm_purple_ammo : DBA_40mm_white_ammo
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = { 0.7,0,1,0 };
+	};
+	class ACE_G_Handflare_Purple : OPTRE_G_M8_Flare {
+		LightColor[] = { 1,0,1,0.5 };
+		model = "\A3\weapons_f\ammo\flare_yellow";
 	};
 };

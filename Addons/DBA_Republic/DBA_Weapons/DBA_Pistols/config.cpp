@@ -289,7 +289,7 @@ class CfgWeapons
 
 		modes[] = {"Single"};
 
-		displayName = "[101st] DC-17";
+		displayName = "[DBA] DC-17";
 		baseWeapon = "DBA_DC17";
 		scope = 2;
 		scopeArsenal = 2;
@@ -297,7 +297,7 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightAmbient[] = {0,0,.5};
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
-		magazines[] = {"DBA_45acp_Mag_Base"};
+		magazines[] = {"DBA_DC17_Mag"};
 		magazineWell[] = {"DBA_DC17_GL_Mags_magwell"};
 		class Single: Single
 		{
@@ -330,7 +330,7 @@ class CfgWeapons
 	};
 	class DBA_DC17_shield: DBA_DC17
 	{
-		displayName = "[101st] DC17 Shielded";
+		displayName = "[DBA] DC17 Shielded";
 		baseWeapon = "DBA_DC17_shield";
 		scope = 1;
 		scopeArsenal = 1;
@@ -368,16 +368,16 @@ class CfgWeapons
 		baseweapon="DBA_Cannok";
 		JLTS_canHaveShield=1;
 		JLTS_shieldedWeapon="DBA_Cannok_shield";
-		model="101st_Aux_Mod\Addons\DBA_Weapons\Pistols\revolver.p3d";
+		model="101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\revolver.p3d";
 		picture = "\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\UI\gear_Pistol_heavy_02_X_CA.paa";
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_12gaSlug_x5_Blue",
-			"DBA_12gaScatter_x5_Blue"
+			"DBA_Cannok_Slug_Mag",
+			"DBA_Cannok_Scatter_Mag"
 		};
 		magazineWell[] = {};
-		displayName = "[101st] CR-8 Cannok";
+		displayName = "[DBA] CR-8 Cannok";
 		descriptionShort = "CR-8 Revolver";
 		hiddenSelections[]=
 		{
@@ -385,9 +385,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\base_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\barrel_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Weapons\Pistols\data\scope_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\data\base_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\data\barrel_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\data\scope_CO.paa"
 		};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\reload_Zubr",0.562341,1,10};
 		reloadAction = "GestureReloadPistolHeavy02";
@@ -511,7 +511,7 @@ class CfgWeapons
 	};
 	class DBA_Cannok_shield: DBA_Cannok
 	{
-		displayName="[101st] CR-8 Cannok (shield)";
+		displayName="[DBA] CR-8 Cannok (shield)";
 		baseWeapon="DBA_Cannok_shield";
 		scope=1;
 		JLTS_isShielded=1;
@@ -544,7 +544,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_9mm_Mag_x25"
+			"DBA_Defender_Mag"
 		};
 		hiddenSelections[]=
 		{
@@ -756,7 +756,7 @@ class CfgWeapons
 		muzzles[] = {"this", "Stun"};
 		magazines[]=
 		{
-			"DBA_127x33_x7_Yellow"
+			"DBA_HammerHead_Mag"
 		};
 		magazineWell[] = {};
 		displayName = "[101st] Westar-35 'Hammerhead'";
@@ -829,7 +829,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"Dual_Hammerhead_x9_Magazine"
+			"DBA_DuelHammerHead_Mag"
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -922,7 +922,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"Dual_Defender_x22_Magazine"
+			"DBA_DuelDefender_Mag"
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -1098,39 +1098,6 @@ class CfgWeapons
 class CfgMagazines
 {
 	class CA_Magazine;
-	class Dual_Hammerhead_x9_Magazine: CA_Magazine
-	{
-		author="Trip";
-		scope=2;
-		displayName = "9Rnd Dual Hammerhead Magazine";
-		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
-		ammo="DBA_Dual_Hammerhead_ammo";
-		count=9;
-		mass=4;
-		initSpeed=310;
-		tracersEvery=1;
-		modelSpecial="101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\Dual\WestarDualMag.p3d";
-		modelSpecialIsProxy = 1;
-		descriptionShort="For the fastest guns in the west";
-	};
-	
-	class Dual_Defender_x22_Magazine: CA_Magazine
-	{
-		author="Trip";
-		scope=2;
-		displayName="101st PDW Dual Defender Magazine";
-		ammo="DBA_9x21_green";
-		tracersEvery = 1;
-		lastRoundsTracer = 28;
-		type = 256;
-		count=22;
-		descriptionShort="101st PDW";
-		displayNameShort = "101st PDW";
-		mass=10;
-		initSpeed=300;
-		modelSpecial="101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\Dual\DualDefenderMag.p3d";
-		modelSpecialIsProxy = 1;
-	};
 	class DBA_A180_Mag_x20: CA_Magazine
 	{
 		author="Trip";
@@ -1143,27 +1110,6 @@ class CfgMagazines
 		initSpeed=400;
 		typicalSpeed=400;
 		tracersEvery=1;
-	};
-};
-class CfgAmmo
-{
-	class JLTS_bullet_pistol_yellow;
-	class DBA_Dual_Hammerhead_ammo:JLTS_bullet_pistol_yellow
-	{	
-		model="101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Pistols\data\tracer_yellow_dual.p3d";
-		hit=7.5; //How much damage when it hits
-		indirecthit=0; //Splash Damage
-		indirecthitrange=0; //Splash Damage Range in meters
-		caliber=1; //Acts as penetration multiplier for the projectile.
-		typicalSpeed=420; //What speed does this need to be going to inflict full damage
-
-		audibleFire=50;
-
-		aiAmmoUsageFlags=64;
-		dangerRadiusBulletClose=4;
-		dangerRadiusHit=8;
-		suppressionRadiusBulletClose=2;
-		suppressionRadiusHit=4;
 	};
 };
 /*class CfgVehicles
