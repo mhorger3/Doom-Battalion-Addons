@@ -474,7 +474,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Joey_ARF: 101st_ARF_Base
+	class 101st_Joey_ARF: 101st_ARF_Base {
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -484,13 +484,12 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Joey_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Joey_ARF_Helmet_CO.paa","101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Alfredo_ARF: 101st_ARF_Base
+	class 101st_Alfredo_ARF: 101st_ARF_Base {
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -500,13 +499,12 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",
-		"101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
+			"101st_Aux_Mod\Addons\helmets\Longbow\textures\Alfredo_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\helmets\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Warlord_ARF: 101st_ARF_Base
+	class 101st_Warlord_ARF: 101st_ARF_Base {
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -605,7 +603,6 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-
 	class 101st_ATRT_Urban : 101st_ATRT_Base {
 		author="Dutch";
 		scope=2;
@@ -1041,6 +1038,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Furn_Helm_CO.paa"
 		};
 	};
+	/*
 	class 101st_Gill_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1055,6 +1053,7 @@ class CfgWeapons
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	*/
 	class 101st_Fresh_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -1104,6 +1103,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	/*
 	class 101st_Techno_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1132,6 +1132,7 @@ class CfgWeapons
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	*/
 	class 101st_Stadlen_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1239,6 +1240,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Remnant_Helm_CO.paa"
 		};
 	};
+	/*
 	class 101st_Itachi_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1252,7 +1254,8 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Itachi_Helm_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
+	}; 
+	*/
 	class 101st_Mutt_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1425,6 +1428,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	/*
 	class 101st_Krusader_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1443,6 +1447,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	*/
 	class 101st_Quicksilver_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1479,6 +1484,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	/*
 	class 101st_Mute_Helm: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -1515,6 +1521,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	*
 	class 101st_Navo_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -1533,6 +1540,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	*/
 	class 101st_Rez_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -1551,6 +1559,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	/*
 	class 101st_Zelph_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -1605,7 +1614,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
-		
+	*/	
 	class RD501_pilot_helmet_cxc;
 	class 101st_Crooked_Helmet: JLTS_CloneHelmetP2
 	{
@@ -2117,6 +2126,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Rick_Helmet_CO.paa"
 		};
 	}
+	/*
 	class 101st_Des_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -2143,6 +2153,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Slapshot_Helmet_CO.paa"
 		};
 	}
+	*/
 	class 101st_Frosty_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2760,6 +2771,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Joey_Helmet_CO.paa"
 		};
 	};
+	/*
 	class 101st_Waterfall_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
@@ -2773,6 +2785,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Waterfall_Helmet_CO.paa"
 		};
 	};
+	*/
 	class 101st_Veerio_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
