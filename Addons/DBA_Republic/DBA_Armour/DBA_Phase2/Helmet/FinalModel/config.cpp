@@ -287,4 +287,13 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Blackwater_Helmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Oni : DBA_P2HelmetBase
+	{
+		author = "Dune";
+		displayName = "DBA Phase 2 Clone Helmet: SecutorTest";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_AS.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Test_Helmet_NOHQ.paa"
+		};
+	};
 };
