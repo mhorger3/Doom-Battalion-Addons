@@ -24,6 +24,8 @@ class CfgVehicles
 	};
 	class DBA_IG100MagnaGuard_Base_F : O_Soldier_F
 	{
+		DBA_IsDroid = 1;
+		DBA_EMPProtection = 1;
 		author = "MrClock + Dutch";
 		scope = 0;
 		scopeCurator = 0;

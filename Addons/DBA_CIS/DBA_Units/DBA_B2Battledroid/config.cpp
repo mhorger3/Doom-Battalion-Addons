@@ -30,6 +30,8 @@ class CfgVehicles
 	};
 	class DBA_B2Battledroid_F : O_Soldier_F
 	{
+		DBA_IsDroid = 1;
+		DBA_EMPProtection = 1;
 		author = "MrClock + Dutch";
 		scope = 2;
 		displayName = "DBA B2 Battledroid";

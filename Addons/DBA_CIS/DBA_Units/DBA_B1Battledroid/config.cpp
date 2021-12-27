@@ -65,6 +65,7 @@ class CfgVehicles {
 	};
 	class O_DBA_CIS_B1_Base_F : O_Soldier_F
 	{
+		DBA_IsDroid = 1;
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "";

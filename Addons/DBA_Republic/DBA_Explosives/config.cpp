@@ -2,7 +2,6 @@ class CfgPatches
 {
 	class DBA_Explosives
 	{
-		addonRootClass = "A3_Weapons_F";
 		requiredAddons[] =
 		{
 			"A3_Weapons_F"

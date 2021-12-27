@@ -24,6 +24,8 @@ class CfgWeapons
 	class UniformItem;
 	class DBA_IG100MagnaGuard : U_I_CombatUniform
 	{
+		DBA_IsDroid = 1;
+		DBA_EMPProtection = 1;
 		JLTS_isDroid = 1;
 		JLTS_hasEMPProtection = 1;
 		JLTS_deathSounds = "DeathDroid";

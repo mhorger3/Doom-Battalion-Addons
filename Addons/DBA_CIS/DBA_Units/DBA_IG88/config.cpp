@@ -24,6 +24,8 @@ class CfgVehicles
 	};
 	class DBA_CIS_IG_Base : O_Soldier_F
 	{
+		DBA_IsDroid = 1;
+		DBA_EMPProtection = 1;
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "IG";

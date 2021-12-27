@@ -23,6 +23,7 @@ class CfgWeapons
 	class UniformItem;
 	class DBA_B2 : U_I_CombatUniform
 	{
+		DBA_isDroid = 1;
 		JLTS_isDroid = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_deathSounds = "DeathDroid";
