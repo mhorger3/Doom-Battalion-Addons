@@ -80,7 +80,16 @@ class cfgammo
 			1,
 			90
 		};
+		explosionEffects = "";
+		explosionSoundEffect = "";
 		simulation = "shotGrenade";
+		class CamShakeExplode
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
 		ace_frag_enabled = 0;
 		ace_frag_force = 0;
 		class NVGMarkers
