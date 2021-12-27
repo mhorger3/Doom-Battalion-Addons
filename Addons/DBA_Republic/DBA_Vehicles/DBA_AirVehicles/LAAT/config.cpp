@@ -4546,10 +4546,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
 				};
 			};
 			class 101st_CG_LAAT
@@ -4558,10 +4559,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapon_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Interior_CO.paa"
 				};
 			};
 		};
@@ -4609,11 +4611,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
 				};
 			};
 			class 101st_CG_LAAT
@@ -4622,11 +4624,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapon_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Interior_CO.paa"
 				};
 			};
 		};
@@ -4674,11 +4676,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_wings_doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\101st_laat_base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\DBA_Hammer_Interior_CO.paa"
 				};
 			};
 			class 101st_CG_LAAT
@@ -4687,11 +4689,11 @@ class cfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Wings_Doors_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_Base_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_guns_CO.paa",
-					"3AS\3as_Laat\LAATI\Textures\LAAT_Inside_CO.paa",
-					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_LAAT_doors_CO.paa"
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Hull_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Wings_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapons_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Weapon_Details_CO.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\LAAT\CG_Interior_CO.paa"
 				};
 			};
 		};
