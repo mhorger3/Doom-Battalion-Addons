@@ -257,10 +257,10 @@ class CfgAmmo
 	};
 	class DBA_ThermalDetBlock_Ammo : PipeBombBase
 	{
-		hit = 4000;
-		indirectHit = 4000;
+		hit = 5000;
+		indirectHit = 5000;
 		indirectHitRange = 0.2;
-		explosive = 1;
+		explosive = 0;
 		explosionType = "bomb";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\ThermalDetBlock.p3d";
 		hiddenSelections[] =
