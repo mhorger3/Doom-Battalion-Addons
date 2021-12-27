@@ -70,7 +70,7 @@ class CfgMagazines
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
 		mass = 15;
-		count = 30;
+		count = 15;
 		initspeed = 909;
 	};
 	class DBA_DC15AMod0_Mag : DBA_Mag_Base

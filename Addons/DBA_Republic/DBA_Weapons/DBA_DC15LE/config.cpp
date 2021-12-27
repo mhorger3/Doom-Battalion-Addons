@@ -86,6 +86,12 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
 		};
+		modes[] =
+		{
+			"Single",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
 		class Single : Mode_SemiAuto
 		{
 			dispersion = 0.00047;
@@ -184,9 +190,9 @@ class CfgWeapons
 					};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.25;
-					opticsZoomMax=1.25;
-					opticsZoomInit=0.75;
+					opticsZoomMin=0.01;
+					opticsZoomMax=0.25;
+					opticsZoomInit=0.25;
 					memoryPointCamera="eye";
 					visionMode[]={};
 					distanceZoomMin=300;
