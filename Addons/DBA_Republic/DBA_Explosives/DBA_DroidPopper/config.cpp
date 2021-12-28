@@ -90,7 +90,13 @@ class cfgammo
 			frequency = 0;
 			distance = 0;
 		};
+		ace_frag_metal = 0;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 0;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2843;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 3/5;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_small_HD"};
 		ace_frag_enabled = 0;
+		ace_frag_skip = 1;
 		ace_frag_force = 0;
 		class NVGMarkers
 		{
