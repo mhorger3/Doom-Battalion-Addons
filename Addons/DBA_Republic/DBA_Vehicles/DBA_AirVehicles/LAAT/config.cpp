@@ -19876,6 +19876,7 @@ class cfgVehicles
 					visionMode[]=
 					{
 						"Normal",
+						"NVG",
 						"Ti"
 					};
 					thermalMode[]={0,1};
@@ -19909,8 +19910,8 @@ class cfgVehicles
 			minTurn=-180;
 			maxTurn=180;
 			initTurn=0;
-			minElev=-60;
-			maxElev=60;
+			minElev=-75;
+			maxElev=75;
 			initElev=0;
 			maxXRotSpeed=0.30000001;
 			maxYRotSpeed=0.30000001;
