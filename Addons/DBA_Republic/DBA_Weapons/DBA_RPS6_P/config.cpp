@@ -437,11 +437,11 @@ class CfgAmmo{
         ace_frag_charge = 472.5;  // Amount of explosive filler (grams) - information below
         ace_frag_gurney_c = 2830;  // Gurney velocity constant for explosive type - information below
         ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
-        ace_frag_classes[] = {"ACE_frag_small_HD", "ACE_frag_small"};  // Type of fragments - information below
+        ace_frag_classes[] = {"ACE_frag_huge"};  // Type of fragments - information below
         ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
         ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
 		hit=50;
-		indirectHit=25;
+		indirectHit=33;
 		indirectHitRange=8;
 		explosive=1.00000000;
 		cost=30;
