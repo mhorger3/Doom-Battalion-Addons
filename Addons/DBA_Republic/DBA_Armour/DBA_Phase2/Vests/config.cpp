@@ -670,7 +670,7 @@ class CfgWeapons {
 			uniformType="Default";
 			mass=80;
 			vestType = "Rebreather";
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
 			hiddenSelections[] = {"camo1"};
 		};
 	};
