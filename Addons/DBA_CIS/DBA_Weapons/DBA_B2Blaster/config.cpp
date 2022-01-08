@@ -60,7 +60,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Weapons\DBA_B2Blaster\b2gun.p3d";
 		muzzles[] = { "this","Secondary" };
-		magazines[] = { "101st_B2_Mag" };
+		magazines[] = { "DBA_B2_Mag" };
 		reloadAction = "ReloadMagazine";
 		Modeloptics = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 		displayname = "B2 HandBlaster";
@@ -106,7 +106,7 @@ class CfgWeapons
 			scopeArsenal = 2;
 			model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Weapons\DBA_B2Blaster\b2gun.p3d";
 			muzzles[] = { "this" };
-			magazines[] = { "101st_B2_Rocket" };
+			magazines[] = { "DBA_B2_Rocket" };
 			reloadAction = "ReloadMagazine";
 			Modeloptics = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 			displayname = "B2 Rockets";
@@ -312,7 +312,7 @@ class CfgWeapons
 class CfgAmmo
 {
 		class JLTS_bullet_carbine_red;
-		class 101st_Wrist_Rocket_Ammo : JLTS_bullet_carbine_red {
+		class DBA_Wrist_Rocket_Ammo : JLTS_bullet_carbine_red {
 			cost = 200;
 			caliber = 3;
 			dangerRadiusBulletClose = 16;
@@ -355,7 +355,7 @@ class CfgAmmo
 			tracerScale = 1;
 			typicalSpeed = 30;
 		};
-		class 101st_B2_Ammo : JLTS_bullet_carbine_red {
+		class DBA_B2_Ammo : JLTS_bullet_carbine_red {
 			cost = 1;
 			caliber = 3;
 			dangerRadiusBulletClose = 16;
@@ -392,7 +392,7 @@ class CfgAmmo
 
 class CfgMagazines {
 	class CA_Magazine;
-	class 101st_B2_Rocket : CA_Magazine {
+	class DBA_B2_Rocket : CA_Magazine {
 		count = 5;
 		descriptionShort = "5Rnd Wrist Rockets";
 		displayName = "5Rnd B2 Wrist Rockets";
@@ -402,10 +402,10 @@ class CfgMagazines {
 		scope = 2;
 		type = 16;
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
-		ammo = "101st_Wrist_Rocket_Ammo";
+		ammo = "DBA_Wrist_Rocket_Ammo";
 		tracersEvery=1;
 	};
-	class 101st_B2_Mag : CA_Magazine {
+	class DBA_B2_Mag : CA_Magazine {
 		count = 60;
 		descriptionShort = "60Rnd B2 Droid Magazine";
 		displayName = "60Rnd B2 Droid Magazine";
@@ -414,7 +414,7 @@ class CfgMagazines {
 		scope = 2;
 		type = 16;
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
-		ammo = "101st_B2_Ammo";
+		ammo = "DBA_B2_Ammo";
 		tracersEvery=1;
 	};
 };
