@@ -6,7 +6,7 @@ class CfgPatches
 		{
 			"101st_EWEB", "101st_Tyrant", "101st_Overlord"
 		};
-		weapons[]={};
+		weapons[]={"101st_EWEB_Repeater"};
 		magazines[]={};
 		ammo[]=
 		{
