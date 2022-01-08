@@ -213,29 +213,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
@@ -248,17 +248,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
@@ -396,46 +396,46 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Command";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"RD501_thermaldet_x1_mag",
 			"RD501_thermaldet_x1_mag",
 			"RD501_thermaldet_x1_mag"
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag"
@@ -475,29 +475,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Crew";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
@@ -510,17 +510,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
@@ -562,29 +562,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Heavy";
 		weapons[] =
 		{
-			"JLTS_E5C_stock",
+			"DBA_E5c_Heavy",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5C_stock",
+			"DBA_E5c_Heavy",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -598,17 +598,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
-			"JLTS_E5C_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
+			"DBA_132_TUF_x80_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -745,31 +745,31 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Marine";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
@@ -777,17 +777,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
@@ -828,29 +828,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Security";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
@@ -858,17 +858,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
@@ -909,29 +909,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Pilot";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -945,17 +945,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1010,29 +1010,29 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Sniper";
 		weapons[] =
 		{
-			"JLTS_E5S",
+			"DBA_E5s_Standard",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5S",
+			"DBA_E5s_Standard",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1046,17 +1046,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
-			"JLTS_E5S_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
+			"DBA_9_57_x10_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1107,31 +1107,34 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_AA";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"launch_B_Titan_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"launch_B_Titan_F",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"M_Titan_AA",
+			"M_Titan_AA",
+			"M_Titan_AA",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1145,17 +1148,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1198,31 +1201,31 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_AT";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1236,17 +1239,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1293,31 +1296,31 @@ class CfgVehicles {
 		uniformClass = "DBA_B1_Rocket";
 		weapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"JLTS_E5",
+			"DBA_E5_Standard",
 			"JLTS_E60R_AT",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
@@ -1332,17 +1335,17 @@ class CfgVehicles {
 		};
 		respawnMagazines[] =
 		{
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
-			"JLTS_E5_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
+			"DBA_792_PKW_x40_mag",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
