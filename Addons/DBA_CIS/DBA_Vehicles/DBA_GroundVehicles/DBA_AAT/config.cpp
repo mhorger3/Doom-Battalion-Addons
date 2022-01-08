@@ -684,9 +684,9 @@ class CfgVehicles
 			{0.973846, 0.895026},
 			{1.281920, 0.827273}
 		};
-		class Turrets : turrets
+		class Turrets : Turrets
 		{
-			class MainTurret : Mainturret
+			class MainTurret : MainTurret
 			{
 				class Turrets : Turrets
 				{
@@ -788,9 +788,9 @@ class CfgVehicles
 		redRpm = 5652;
 		engineLosses = 5;
 		epeImpulseDamageCoef = 0.15;
-		class Turrets : turrets
+		class Turrets : Turrets
 		{
-			class MainTurret : Mainturret
+			class MainTurret : MainTurret
 			{
 				class Turrets : Turrets
 				{
@@ -874,9 +874,9 @@ class CfgVehicles
 		redRpm = 3000;
 		engineLosses = 5;
 		epeImpulseDamageCoef = 0.15;
-		class Turrets : turrets
+		class Turrets : Turrets
 		{
-			class MainTurret : Mainturret
+			class MainTurret : MainTurret
 			{
 				class Turrets : Turrets
 				{
@@ -994,9 +994,9 @@ class CfgVehicles
             visual = "pas_P";
 			};
 		};
-		class Turrets : turrets
+		class Turrets : Turrets
         {
-            class MainTurret : Mainturret
+            class MainTurret : MainTurret
             {				
 				class Turrets : Turrets
 				{
