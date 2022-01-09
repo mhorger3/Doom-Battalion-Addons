@@ -29,6 +29,7 @@ class CfgVehicles
 		{
 			class MainTurret: NewTurret
 			{
+				class ViewGunner;
 				class Turrets
 				{
 					class CommanderOptics;
@@ -190,8 +191,8 @@ class CfgVehicles
 				gunnerForceOptics=0;
 				gunnerAction="Commander_APC_Wheeled_02_rcws_F_out";
 				gunnerInAction="Commander_APC_Wheeled_02_rcws_F_in";
-				body="mainTurret";
-				gun="mainGun";
+				body="MainTurret";
+				gun="MainGun";
 				weapons[]=
 				{
 					"GMG_40mm",
@@ -208,8 +209,8 @@ class CfgVehicles
 					"DBA_LMG_orange_x500_mag",
 					"SmokeLauncherMag"
 				};
-				animationSourceBody="mainTurret";
-				animationSourceGun="mainGun";
+				animationSourceBody="MainTurret";
+				animationSourceGun="MainGun";
 				soundServo[]=
 				{
 					"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",
