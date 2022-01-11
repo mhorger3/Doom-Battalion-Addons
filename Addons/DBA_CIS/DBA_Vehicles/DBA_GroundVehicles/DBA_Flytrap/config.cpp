@@ -1,7 +1,8 @@
 class CfgPatches
 {
-	class 101st_Flytrap
+	class DBA_Flytrap
 	{
+		requiredAddons[] = {"A3_Armor_F_Beta"};
 		units[]=
 		{
 			"101st_Longbow_CIS", 
