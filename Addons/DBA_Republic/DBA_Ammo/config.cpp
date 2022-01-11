@@ -261,6 +261,18 @@ class CfgMagazines
 		count = 50;
 		initspeed = 909;
 	};
+	
+	class DBA_Verpine_Mag: DBA_Mag_Base
+        {
+        scope=2;
+        displayname="DBA Verpine Mag (30rnd)";
+        ammo="DBA_762_base";
+        picture="\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
+        model="\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+        mass=12;
+        count=30;
+        initspeed=909;
+        };
 
 	// Pistols
 
