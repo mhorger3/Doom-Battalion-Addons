@@ -39,7 +39,6 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class UGL_F;
 	class DBA_Boma_Shotgun_F : Rifle_Long_Base_F
 	{
 		ACE_overheating_allowSwapBarrel = 1;

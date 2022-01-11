@@ -1085,9 +1085,9 @@ class CfgMagazines
 {
 	class VehicleMagazine;
 	class CA_Magazine;
-	class 101st_CIS_LR_Mag: VehicleMagazine
+	class 101st_CIS_LR_Mag: CA_Magazine
 	{
-		ammo="DBA_792_M5A";
+		ammo="DBA_338_base";
 		count=5000;
 		mass=10;
 		scope=2;

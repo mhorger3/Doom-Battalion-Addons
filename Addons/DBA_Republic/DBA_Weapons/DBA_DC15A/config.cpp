@@ -13,7 +13,7 @@ class CfgPatches
 		};
 	};
 };
-
+class UGL_F;
 class Mode_SemiAuto;
 class Mode_Burst: Mode_SemiAuto
 {
@@ -58,7 +58,6 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
-	class UGL_F;
 	class DBA_DC15A_Base_F : Rifle_Base_F
 	{
 		author = "Vulgar";

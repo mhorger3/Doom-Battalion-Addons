@@ -705,12 +705,12 @@ class O_soldier_base_F;
 		};
 		magazines[]=
 		{
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"DBA_thermaldet_x1_mag",
@@ -719,12 +719,12 @@ class O_soldier_base_F;
 		};
 		respawnMagazines[]=
 		{
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
-			"DBA_20mm_x7_base",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
+			"DBA_Zillo_Mag",
 			"Chemlight_yellow",
 			"Chemlight_yellow",
 			"DBA_thermaldet_x1_mag",

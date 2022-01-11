@@ -52,7 +52,6 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
-	class UGL_F;
 	class 101st_stun_muzzle;
 	class JLTS_stun_muzzle;
 	class JLTS_DC15S: arifle_MX_Base_F
