@@ -419,9 +419,9 @@ class CfgVehicles {
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"RD501_thermaldet_x1_mag",
-			"RD501_thermaldet_x1_mag",
-			"RD501_thermaldet_x1_mag"
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade"
 		};
 		respawnMagazines[] =
 		{
@@ -436,9 +436,9 @@ class CfgVehicles {
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag"
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade"
 		};
 		items[] =
 		{
@@ -591,9 +591,9 @@ class CfgVehicles {
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 			"DBA_imploder_x1_mag"
 		};
 		respawnMagazines[] =
@@ -615,9 +615,9 @@ class CfgVehicles {
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 			"DBA_imploder_x1_mag"
 		};
 		items[] =
@@ -1039,7 +1039,7 @@ class CfgVehicles {
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_imploder_x1_mag"
@@ -1063,7 +1063,7 @@ class CfgVehicles {
 			"SmokeShellYellow",
 			"SmokeShellYellow",
 			"SmokeShellYellow",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
 			"DBA_thermaldet_x1_mag",
 			"DBA_thermaldet_x1_mag",
 			"DBA_imploder_x1_mag"

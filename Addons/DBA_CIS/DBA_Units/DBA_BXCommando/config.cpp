@@ -196,10 +196,12 @@ class CfgVehicles
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		respawnMagazines[] =
 		{
@@ -209,10 +211,12 @@ class CfgVehicles
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
-			"DBA_imploder_x1_mag",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		enableStamina = 0;
 		accuracy = 3;

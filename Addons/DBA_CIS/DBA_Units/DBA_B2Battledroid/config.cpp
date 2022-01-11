@@ -103,9 +103,9 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		respawnMagazines[] =
 		{
@@ -124,9 +124,9 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		items[] = {};
 		respawnItems[] = {};

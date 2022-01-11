@@ -271,9 +271,11 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		respawnMagazines[] =
 		{
@@ -294,9 +296,11 @@ class CfgVehicles
 			"SmokeShellGreen",
 			"Chemlight_green",
 			"Chemlight_green",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
-			"DBA_thermaldet_x1_mag",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SNF15_x1_Flash",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
+			"DBA_SN3_x1_Grenade",
 		};
 		model = "101st_Aux_Mod\Addons\DBA_CIS\DBA_Armour\DBA_IG100MagnaGuard\Magna.p3d";
 		hiddenSelections[] = { "camo1" };
