@@ -393,9 +393,9 @@ class CfgAmmo
 class CfgMagazines {
 	class CA_Magazine;
 	class DBA_B2_Rocket : CA_Magazine {
-		count = 5;
-		descriptionShort = "5Rnd Wrist Rockets";
-		displayName = "5Rnd B2 Wrist Rockets";
+		count = 2;
+		descriptionShort = "2Rnd Wrist Rockets";
+		displayName = "2Rnd B2 Wrist Rockets";
 		initSpeed = 100;
 		mass = 50;
 		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
