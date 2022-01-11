@@ -125,6 +125,7 @@ class CfgWeapons
 				closure1[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
 				soundBegin[] = { "begin1", 1 };
 				soundClosure[] = { "closure2", 1 };
+			};
 		};
 		class single_medium_optics1 : Single
 		{
