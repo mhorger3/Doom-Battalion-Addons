@@ -90,7 +90,6 @@ class CfgVehicles
 		{
 			"DBA_B2_Rocket",
 			"DBA_B2_Rocket",
-			"DBA_B2_Rocket",
 			"DBA_B2_Mag",
 			"DBA_B2_Mag",
 			"DBA_B2_Mag",
