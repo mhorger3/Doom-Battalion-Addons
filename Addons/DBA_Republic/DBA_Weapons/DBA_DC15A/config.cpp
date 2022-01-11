@@ -15,8 +15,18 @@ class CfgPatches
 };
 
 class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
+class Mode_Burst: Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
+class Mode_FullAuto: Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
 class SlotInfo;
 class CowsSlot_Rail;
 class CowsSlot_Rail_Pistol;
@@ -102,7 +112,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15aHandAnim.rtm"
 		};
 		modes[] =
 		{
@@ -143,11 +153,17 @@ class CfgWeapons
 		{
 			soundContinuous = 0;
 			soundBurst = 0;
-			sounds[] =
+			sounds[] = {"StandardSound"};
+			
+			class BaseSoundModeType
 			{
-				"StandardSound"
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound
+				
+			class StandardSound : BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
 				begin1[] = { "101st_Aux_Mod\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
@@ -171,11 +187,17 @@ class CfgWeapons
 		{
 			soundContinuous = 0;
 			soundBurst = 0;
-			sounds[] =
+			sounds[] = {"StandardSound"};
+			
+			class BaseSoundModeType
 			{
-				"StandardSound"
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound
+			
+			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
 				begin1[] = { "101st_Aux_Mod\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
@@ -275,7 +297,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15aHandAnim.rtm"
 		};
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15A_CO.paa" };
