@@ -121,8 +121,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				// DC15LE Sound still needs to be imported to Data folder
-				begin1[] = {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Sound.ogg",1,1,1800};
 				closure1[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
 				soundBegin[] = { "begin1", 1 };
 				soundClosure[] = { "closure2", 1 };
