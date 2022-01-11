@@ -36,14 +36,14 @@ class Stage2
 };
 class Stage3
 {
-	texture="101st_Aux_Mod\Addons\DBA_Repubic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs_mc.paa";
-	uvSource="tex";
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
 	class uvTransform
 	{
-		aside[]={1,0,0};
-		up[]={0,1,0};
-		dir[]={0,0,1};
-		pos[]={0,0,0};
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,1.0};
+		pos[] = {0.0,0.0,0.0};
 	};
 };
 class Stage4
