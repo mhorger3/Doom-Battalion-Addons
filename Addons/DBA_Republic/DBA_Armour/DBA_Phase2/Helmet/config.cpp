@@ -474,7 +474,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Joey_ARF: 101st_ARF_Base {
+	class 101st_Joey_ARF: 101st_ARF_Base 
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -490,7 +490,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Alfredo_ARF: 101st_ARF_Base {
+	class 101st_Alfredo_ARF: 101st_ARF_Base 
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
@@ -506,7 +506,7 @@ class CfgWeapons
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
-	class 101st_Warlord_ARF: 101st_ARF_Base {
+	class 101st_Warlord_ARF: 101st_ARF_Base 
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";

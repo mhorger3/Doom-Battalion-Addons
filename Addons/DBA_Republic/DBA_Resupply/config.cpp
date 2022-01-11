@@ -2,8 +2,8 @@ class CfgPatches
 {
 	class 101st_Aux_Mod_Resupply
 	{
-		author="Trip";
-		name="101st Aux Mod";
+		author = "Trip";
+		name = "101st Aux Mod";
 		requiredaddons[] = {};
 		requiredversion = 0.1;
 		units[] =
@@ -16,7 +16,7 @@ class CfgPatches
 			"DBA_AmmoBox_Explosive_F",
 			"DBA_AmmoBox_Repair_F",
 		};
-		weapons[]={};
+		weapons[] = {};
 	};
 
 };
@@ -33,12 +33,12 @@ class cfgVehicles
 		displayName = "Cargo Ammo Base";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
@@ -48,9 +48,9 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
 		armor = 999999;
@@ -66,12 +66,12 @@ class cfgVehicles
 		displayName = "Cargo Medical Base";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Medical_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Medical_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
@@ -81,9 +81,9 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\Medical_Crate.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\Handle.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\Medical_Crate.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\Handle.rvmat",
 		};
 
 		armor = 999999;
@@ -99,12 +99,12 @@ class cfgVehicles
 		displayName = "Cargo Explosive Base";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
@@ -114,9 +114,9 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Explosive_Crate.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
 		armor = 999999;
@@ -136,12 +136,12 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
@@ -151,20 +151,20 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
 		transportMaxWeapons = 10000;
-        transportMaxMagazines = 10000;
-        transportMaxItems = 10000;
-        maximumload = 10000;
+		transportMaxMagazines = 10000;
+		transportMaxItems = 10000;
+		maximumload = 10000;
 
-        class TransportWeapons {};
-        class TransportMagazines {};
-        class TransportItems {};
-        class TransportBackpacks {};
+		class TransportWeapons {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 	class DBA_AmmoBox_F : DBA_AmmoBox_Base
 	{
@@ -175,120 +175,115 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 
-        class TransportWeapons {};
-        class TransportMagazines
+		class TransportWeapons {};
+		class TransportMagazines
 		{
-			class DBA_12gaScatter_Mag_Base
+			class DBA_DC15A_Mag
 			{
-				magazine = "DBA_12gaScatter_Mag_Base";
+				magazine = "DBA_DC15A_Mag";
 				count = 8;
 			};
-			class DBA_12gaSlug_Mag_Base
+			class DBA_DC15x_Mag
 			{
-				magazine = "DBA_12gaSlug_Mag_Base";
+				magazine = "DBA_DC15x_Mag";
 				count = 8;
 			};
-			class DBA_338_Mag_Base
+			class DBA_DC15ALE_Mag
 			{
-				magazine = "DBA_338_Mag_Base";
+				magazine = "DBA_DC15ALE_Mag";
 				count = 15;
 			};
-			class DBA_20mm_x7_Base
+			class DBA_DC15AMod0_Mag
 			{
-				magazine = "DBA_20mm_x7_Base";
+				magazine = "DBA_DC15AMod0_Mag";
 				count = 7;
 			};
-			class DBA_65_Mag_Base
+			class DBA_DC15C_Mag
 			{
-				magazine = "DBA_65_Mag_Base";
+				magazine = "DBA_DC15C_Mag";
 				count = 15;
 			};
-			class DBA_65_Mag_x120
+			class DBA_DC15C_x45_Mag
 			{
-				magazine = "DBA_65_Mag_x120";
+				magazine = "DBA_DC15C_x45_Mag";
 				count = 5;
 			};
-			class DBA_65_Mag_x45_Blue
+			class DBA_DC15BR_Mag
 			{
-				magazine = "DBA_65_Mag_x45_Blue";
+				magazine = "DBA_DC15BR_Mag";
 				count = 5;
 			};
-			class DBA_127x99_Mag_Base
+			class DBA_Z6_Mag
 			{
-				magazine = "DBA_127x99_Mag_Base";
+				magazine = "DBA_Z6_Mag";
 				count = 5;
 			};
-			class DBA_127x99Overcharge_Mag_Base
+			class DBA_Kathhound_Mag
 			{
-				magazine = "DBA_127x99Overcharge_Mag_Base";
+				magazine = "DBA_Kathhound_Mag";
 				count = 5;
 			};
-			class DBA_556_Mag_x60_Green
+			class DBA_Boma_Slug_Mag
 			{
-				magazine = "DBA_556_Mag_x60_Green";
+				magazine = "DBA_Boma_Slug_Mag";
 				count = 5;
 			};
-			class DBA_45acp_Mag_x45_Green
+			class DBA_Boma_Scatter_Mag
 			{
-				magazine = "DBA_45acp_Mag_x45_Green";
+				magazine = "DBA_Boma_Scatter_Mag";
 				count = 5;
 			};
-			class DBA_762_x75_Green
+			class DBA_Zakkeg_Mag
 			{
-				magazine = "DBA_762_x75_Green";
+				magazine = "DBA_Zakkeg_Mag";
 				count = 5;
 			};
-			class DBA_9mm_Mag_x100
+			class DBA_Maalras_Mag
 			{
-				magazine = "DBA_9mm_Mag_x100";
+				magazine = "DBA_Maalras_Mag";
 				count = 5;
 			};
-			class DBA_408_Mag_Base
+			class DBA_Enforcer_Mag
 			{
-				magazine = "DBA_408_Mag_Base";
+				magazine = "DBA_Enforcer_Mag";
 				count = 5;
 			};
-			class DBA_762_Mag_x50
+			class DBA_Zillo_Mag
 			{
-				magazine = "DBA_762_Mag_x50";
+				magazine = "DBA_Zillo_Mag";
 				count = 5;
 			};
-			class DBA_556_Mag_x300
+			class DBA_ZilloEMP_Mag
 			{
-				magazine = "DBA_556_Mag_x300";
+				magazine = "DBA_ZilloEMP_Mag";
 				count = 5;
 			};
-			class DBA_20mm_x7_Base
+			class DBA_Gundark_Mag
 			{
-				magazine = "DBA_20mm_x7_Base";
+				magazine = "DBA_Gundark_Mag";
 				count = 5;
 			};
-			class DBA_EMP_x1_Base
+			class DBA_GundarkOvercharge_Mag
 			{
-				magazine = "DBA_EMP_x1_Base";
+				magazine = "DBA_GundarkOvercharge_Mag";
 				count = 5;
 			};
-			class DBA_AT_GL_x6_mag
+			class DBA_Valken_Mag
 			{
-				magazine = "DBA_AT_GL_x6_mag";
+				magazine = "DBA_Valken_Mag";
 				count = 5;
 			};
-			class DBA_HE_GL_x8_mag
+			class DBA_AP_GL_x2_mag
 			{
-				magazine = "DBA_HE_GL_x8_mag";
-				count = 5;
-			};
-			class DBA_AT_GL_x2_mag
-			{
-				magazine = "DBA_AT_GL_x2_mag";
+				magazine = "DBA_AP_GL_x2_mag";
 				count = 5;
 			};
 			class DBA_HE_GL_x3_mag
@@ -381,10 +376,10 @@ class cfgVehicles
 				magazine = "3Rnd_SmokeBlue_Grenade_shell";
 				count = 5;
 			};
-			
+
 		};
-        class TransportItems {};
-        class TransportBackpacks {};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 	class DBA_AmmoBox_Handgun_F : DBA_AmmoBox_Base
 	{
@@ -395,29 +390,29 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 
 		class TransportMagazines
 		{
-			class DBA_12gaScatter_x5_Blue
+			class DBA_DC17_Mag
 			{
-				magazine = "DBA_12gaScatter_x5_Blue";
+				magazine = "DBA_DC17_Mag";
 				count = 10;
 			};
-			class DBA_12gaSlug_x5_Blue
+			class DBA_Cannok_Slug_Mag
 			{
-				magazine = "DBA_12gaSlug_x5_Blue";
+				magazine = "DBA_Cannok_Slug_Mag";
 				count = 10;
 			};
-			class DBA_45acp_Mag_Base
+			class DBA_Cannok_Scatter_Mag
 			{
-				magazine = "DBA_45acp_Mag_Base";
+				magazine = "DBA_Cannok_Scatter_Mag";
 				count = 10;
 			};
 			class DBA_40mm_Blue_x1_mag
@@ -465,12 +460,12 @@ class cfgVehicles
 				magazine = "1Rnd_SmokeYellow_Grenade_shell";
 				count = 10;
 			}
-			class 1Rnd_SmokeWhite_Grenade_shell
+				class 1Rnd_SmokeWhite_Grenade_shell
 			{
 				magazine = "1Rnd_SmokeWhite_Grenade_shell";
 				count = 10;
 			}
-			class 1Rnd_SmokeRed_Grenade_shell
+				class 1Rnd_SmokeRed_Grenade_shell
 			{
 				magazine = "1Rnd_SmokeRed_Grenade_shell";
 				count = 10;
@@ -495,52 +490,34 @@ class cfgVehicles
 				magazine = "1Rnd_SmokeBlue_Grenade_shell";
 				count = 10;
 			};
-			class Dual_Defender_x22_Magazine
+			class DBA_Defender_Mag
 			{
-				magazine = "Dual_Defender_x22_Magazine";
+				magazine = "DBA_Defender_Mag";
 				count = 10;
 			}
-			class Dual_Hammerhead_x9_Magazine
+			class DBA_DuelDefender_Mag
 			{
-				magazine = "Dual_Hammerhead_x9_Magazine";
+				magazine = "DBA_DuelDefender_Mag";
 				count = 10;
 			};
-			class DBA_9mm_Mag_x25
+			class DBA_Mag_ORBITAL
 			{
-				magazine = "DBA_9mm_Mag_x25";
+				magazine = "DBA_Mag_ORBITAL";
 				count = 10;
 			};
-			class DBA_127x33_x7_Yellow
+			class DBA_HammerHead_Mag
 			{
-				magazine = "DBA_127x33_x7_Yellow";
+				magazine = "DBA_HammerHead_Mag";
+				count = 10;
+			};
+			class DBA_DuelHammerHead_Mag
+			{
+				magazine = "DBA_DuelHammerHead_Mag";
 				count = 10;
 			}
 		};
-		class TransportWeapons
-		{
-			class _xx_101st_Westar35
-			{
-				weapon = "DBA_Westar35_Mod_0";
-				count = 2;
-			};
-			class _xx_101st_DC_17
-			{
-				weapon = "DBA_DC17";
-				count = 2;
-			};
-			class _xx_RevolverShot
-			{
-				weapon = "DBA_Cannok";
-				count = 2;
-			};
-			class _xx_PDW_Defender
-			{
-				weapon = "DBA_Defender";
-				count = 2;
-			};
-		};
-        class TransportItems {};
-        class TransportBackpacks {};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 	class DBA_AmmoBox_Launcher_F : DBA_AmmoBox_Base
 	{
@@ -551,50 +528,50 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 
-       class TransportMagazines
+		class TransportMagazines
 		{
-			class xx_101st_Chaingun_Mag
+			class DBA_25mm_PL15SN_x1000_mag
 			{
-				magazine = "101st_Chaingun_Mag";
+				magazine = "DBA_25mm_PL15SN_x1000_mag";
 				count = 2;
 			};
-			class xx_101st_AA_Mag
+			class DBA_180mm_Flash_x1_mag
 			{
-				magazine = "101st_AA_Mag";
+				magazine = "DBA_180mm_Flash_x1_mag";
 				count = 2;
 			};
-			class xx_101st_AP_Mag
+			class DBA_90mm_IK55_HEAT_x1_mag
 			{
-				magazine = "101st_AP_Mag";
+				magazine = "DBA_90mm_IK55_HEAT_x1_mag";
 				count = 2;
 			};
-			class xx_101st_AT_Mag
+			class DBA_90mm_IK55T_THEAT_x1_mag
 			{
-				magazine = "101st_AT_Mag";
+				magazine = "DBA_90mm_IK55T_THEAT_x1_mag";
 				count = 5;
 			};
-			class 101st_RPS6_HEAA
+			class DBA_90mm_IK60_HEP_x1_mag
 			{
-				magazine = "101st_RPS6_HEAA";
+				magazine = "DBA_90mm_IK60_HEP_x1_mag";
 				count = 10;
 			};
-			class 101st_RPS6_HEDP
+			class DBA_90mm_IK40_FRAG_x1_mag
 			{
-				magazine = "101st_RPS6_HEDP";
+				magazine = "DBA_90mm_IK40_FRAG_x1_mag";
 				count = 10;
 			};
 		};
 		class TransportWeapons {};
-        class TransportItems {};
-        class TransportBackpacks {};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 	class DBA_AmmoBox_Medical_F : DBA_AmmoBox_Base
 	{
@@ -605,12 +582,12 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Medical_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Medical_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 
 		class TransportMagazines {};
@@ -684,12 +661,12 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Explosive_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 
 		class TransportMagazines {};
@@ -833,12 +810,12 @@ class cfgVehicles
 
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectP3D\CargoBox.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectP3D\CargoBox.p3d";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Ammo_Crate_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectTextures\CargoBox\Handle_CO.paa",
 		};
 		hiddenSelections[] =
 		{
@@ -848,35 +825,35 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Ammo_Crate.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Resupply\ObjectRVMAT\CargoBox\Handle.rvmat",
 		};
 
-		ace_refuel_fuelCargo=150;
-		ace_rearm_defaultSupply=0;
-		ace_repair_canRepair=1;
-		ace_refuel_hooks[]=
+		ace_refuel_fuelCargo = 150;
+		ace_rearm_defaultSupply = 0;
+		ace_repair_canRepair = 1;
+		ace_refuel_hooks[] =
 		{
 			{0.38,-3.1700001,-0.69999999},
 			{-0.41,-3.1700001,-0.69999999}
 		};
 
 		transportMaxWeapons = 10000;
-        transportMaxMagazines = 10000;
-        transportMaxItems = 10000;
-        maximumload = 10000;
+		transportMaxMagazines = 10000;
+		transportMaxItems = 10000;
+		maximumload = 10000;
 
-        class TransportWeapons {};
-        class TransportMagazines {};
-        class TransportItems 
-        {
-        	class _xx_ToolKit
+		class TransportWeapons {};
+		class TransportMagazines {};
+		class TransportItems
+		{
+			class _xx_ToolKit
 			{
-				name="ToolKit";
-				count=2;
+				name = "ToolKit";
+				count = 2;
 			};
-        };
-        class TransportBackpacks {};
+		};
+		class TransportBackpacks {};
 	};
 };
