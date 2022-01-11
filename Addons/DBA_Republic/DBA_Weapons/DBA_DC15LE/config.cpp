@@ -14,9 +14,21 @@ class CfgPatches
 	};
 };
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
+class Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+};
+class Mode_Burst
+{
+	class BaseSoundModeType;
+	class StandardSound;
+};
+class Mode_FullAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+};
 class SlotInfo;
 class MuzzleSlot;
 class CowsSlot;
@@ -64,6 +76,10 @@ class CfgWeapons
 		reloadAction = "GestureReloadMXSniper";
 		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
 		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
+		changeFiremodeSound[] = {"",1,1};		
+		drySound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_Dry_01",0.50118721,1,20};
+		reloadMagazineSound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_reload",0.177828,1,10};
+		soundBullet[] = {};
 		magazines[] =
 		{
 			"DBA_DC15ALE_Mag",
@@ -81,17 +97,8 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Canister_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Muzzle_CO.paa",
 		};
-		handAnim[] =
-		{
-			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"
-		};
-		modes[] =
-		{
-			"Single",
-			"single_medium_optics1",
-			"single_far_optics2"
-		};
+		handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"};
+		modes[] = {"Single", "single_medium_optics1", "single_far_optics2"};
 		class Single : Mode_SemiAuto
 		{
 			dispersion = 0.00047;
@@ -102,6 +109,23 @@ class CfgWeapons
 			maxRange = 450;
 			maxRangeProbab = 0.30000001;
 			modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
+			
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = { "A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_1",0.398107,1,30 };
+				closure2[] = { "A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_2",0.398107,1,30 };
+				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				// DC15LE Sound still needs to be imported to Data folder
+				begin1[] = {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",2.5,1,1800};
+				closure1[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+				soundBegin[] = { "begin1", 1 };
+				soundClosure[] = { "closure2", 1 };
 		};
 		class single_medium_optics1 : Single
 		{
