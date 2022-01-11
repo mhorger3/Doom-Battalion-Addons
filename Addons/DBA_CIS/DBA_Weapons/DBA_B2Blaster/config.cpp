@@ -146,7 +146,7 @@ class CfgWeapons
 				};
 				recoil = "recoil_auto_primary_3outof10";
 				recoilProne = "recoil_single_prone_mx";
-				reloadTime = 0.2;
+				reloadTime = 0.5;
 				burst = 1;
 				dispersion = 0.00073;
 				minRange = 5;
@@ -393,7 +393,7 @@ class CfgAmmo
 class CfgMagazines {
 	class CA_Magazine;
 	class DBA_B2_Rocket : CA_Magazine {
-		count = 2;
+		count = 8;
 		descriptionShort = "2Rnd Wrist Rockets";
 		displayName = "2Rnd B2 Wrist Rockets";
 		initSpeed = 100;
