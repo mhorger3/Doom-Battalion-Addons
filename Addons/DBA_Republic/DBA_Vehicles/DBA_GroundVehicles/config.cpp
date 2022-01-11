@@ -670,7 +670,7 @@ class CfgVehicles
 				count=4;
 			};
 		};
-		weapons[]
+		weapons[] =
 		{
 			"worthorn",
 		};
