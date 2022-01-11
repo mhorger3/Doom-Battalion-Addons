@@ -113,7 +113,7 @@ class CfgWeapons
 			class StandardSound : BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zillo\pulserifle.ogg",2.5,1,2700 };
+				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Billo\Billow_Shot.ogg",2,1,2700 };
 				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure2",1 };

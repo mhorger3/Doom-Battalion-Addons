@@ -661,6 +661,7 @@ class CfgVehicles
 		};
 		switchTime = 0.1;
 		latency = 0.5;
+		crew = "B_DBA_P2CloneSeatie_F";
 		class TransportItems
 		{
 			class _xx_FirstAidKit
@@ -668,6 +669,10 @@ class CfgVehicles
 				name="FirstAidKit";
 				count=4;
 			};
+		};
+		weapons[]
+		{
+			"worthorn",
 		};
 		hiddenSelections[]=
 		{

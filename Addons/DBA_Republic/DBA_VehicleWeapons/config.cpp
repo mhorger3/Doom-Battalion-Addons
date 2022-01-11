@@ -63,7 +63,7 @@ class CfgPatches
 			"DBA_94mw_PN32_FG",
 			"DBA_25mw_P25S_Cannon",
 			"DBA_100mw_HH33G_Cannon",
-			"Memehorn"
+			"worthorn"
 		};
 		magazines[]=
 		{
@@ -12279,7 +12279,7 @@ class CfgAmmo
 		triggerOnImpact="true";
 	};
 	class Default;
-	class Memehorn: Default
+	class worthorn: Default
 	{
 		cursor = "";
 		cursorAim = "";

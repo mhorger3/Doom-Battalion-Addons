@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_AS.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Seatie_Legs_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_SMDI.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Seatie_Legs_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
