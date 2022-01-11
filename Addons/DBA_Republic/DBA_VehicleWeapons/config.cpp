@@ -61,6 +61,7 @@ class CfgPatches
 			"DBA_DADS5M_SAM",
 			"DBA_DADS1P_SAM",
 			"DBA_94mw_PN32_FG",
+			"DBA_88mw_B18S_Cannon",
 			"DBA_25mw_P25S_Cannon",
 			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
@@ -143,6 +144,7 @@ class CfgPatches
 			"DBA_94mm_P2_x4_mag",
 			"DBA_94mm_SM3_x4_mag",
 			"DBA_94mm_PM4C_x4_mag",
+			"DBA_88mm_CR13_x20_mag",
 			"DBA_25mm_PL25S_x300_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
@@ -270,6 +272,8 @@ class CfgPatches
 			"DBA_94mm_SM3_SMK",
 			"DBA_94mm_Canister_Submunition",
 			"DBA_94mm_PM4C_CAN",
+			"DBA_88mm_Canister_Submunition",
+			"DBA_88mm_CR13_CAN",
 			"DBA_PL25S_Penetrator",
 			"DBA_25mm_PL25S_HEDP",
 			"DBA_lancer_mbt_ap_ammo",
@@ -5708,6 +5712,206 @@ class CfgWeapons
 			maxRangeProbab=0.5;
 		};
 	};
+	//Canister
+	class DBA_88mw_B18S_Cannon : CannonCore{
+		scope=2;
+		displayName="[DBA] 88mw B-18S Canister Cannon";
+		cursor="EmptyCursor";
+		shotFromTurret=0;
+		cursorAim="cannon";
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		magazines[]=
+		{
+			"DBA_88mm_CR13_x20_mag",
+		};
+		reloadTime=2;
+		magazineReloadTime=2;
+		autoReload=1;
+		autoFire=0;
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		class GunParticles
+		{
+		};
+		class manual: Mode_SemiAuto
+		{
+			displayName="88mw B-13 Canister Cannon";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.70,
+					6000
+				};
+				begin2[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.658,
+					6000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.1,
+					"begin2",
+					0.5
+				};
+				class SoundTails
+				{
+					class TailForest
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_forest",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_houses",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+					class TailInterior
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_interior",
+							1.99526,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_meadows",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_trees",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+				};
+			};
+			recoil="Empty";
+			reloadTime=2;
+			soundBurst=0;
+			dispersion=0.000085;
+			showToPlayer=1;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=75;
+		};
+		class close: manual
+		{
+			showToPlayer=0;
+			soundBurst=0;
+			soundContinuous=0;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			aiRateOfFireDispersion=0.1;
+			minRange=0;
+			minRangeProbab=0.950000001;
+			midRange=50;
+			midRangeProbab=0.97999998;
+			maxRange=100;
+			maxRangeProbab=0.90000001;
+		};
+		class short: close
+		{
+			minRange=100;
+			minRangeProbab=0.95;
+			midRange=250;
+			midRangeProbab=0.99999999;
+			maxRange=500;
+			maxRangeProbab=0.70000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=100;
+			aiRateOfFireDispersion=0.1;
+		};
+		class medium: close
+		{
+			minRange=500;
+			minRangeProbab=0.95;
+			midRange=650;
+			midRangeProbab=0.95999999;
+			maxRange=800;
+			maxRangeProbab=0.9000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=200;
+			aiRateOfFireDispersion=0.1;
+		};
+		class far: close
+		{
+			minRange=800;
+			minRangeProbab=0.9;
+			midRange=900;
+			midRangeProbab=0.95999999;
+			maxRange=1000;
+			maxRangeProbab=0.950000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=300;
+			aiRateOfFireDispersion=0.1;
+		};
+	};
 	//Fennek Gun Start
 	class DBA_25mw_P25S_Cannon : HMG_127{
 		displayName = "P-25S Autogun";
@@ -7621,6 +7825,19 @@ class CfgMagazines
 		count=99999;
 		initspeed=25000;
 		tracersevery=0;
+	};
+	//Canister
+	class DBA_88mm_CR13_x20_mag : VehicleMagazine{
+		displayname="CR-13 88mw Canister";
+		ammo="DBA_88mm_CR13_CAN";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="CR-13 88mw Canister";
+		shortnamemagazine="CR-13 Canister";
+		displayNameMFDFormat="Canister";
+		displayNameShort="Canister";
+		count=20;
+		initspeed=343;
+		tracersevery=1;
 	};
 	//Fennek Gun Start
 	class DBA_25mm_PL25S_x300_mag : VehicleMagazine{
@@ -11948,6 +12165,76 @@ class CfgAmmo
 		};
 	};
 	//END
+	//Start of Canister Round
+	class DBA_88mm_Canister_Submunition : B_762x54_Ball{
+		hit=8;
+		warheadName="Flechette";
+		indirectHit=5;
+		indirectHitRange=0.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=450;
+		coefGravity=0.33;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=20;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=2.424242424;
+		typicalSpeed=100;
+		deflecting = 20;
+		model="kobra\442_weapons\ammo\orange_tracer.p3d";
+		effectfly="442_plasma_orange";
+	};
+	class DBA_88mm_CR13_CAN : Sh_120mm_APFSDS{
+		displayName="CR-13 88mw Canister Round";
+		hit=0;
+		warheadName="Canister";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=343;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.9;
+		cost=500;
+		CraterEffects = "";
+		coefGravity=0;
+		explosioneffects = "";
+		effectsSmoke = "";
+		tracerStartTime=0.05;
+		tracerScale=0.8;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=18.21493625;
+		typicalSpeed=500;
+		deflecting = 0;
+		simulation = "shotSubmunitions";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="DBA_88mm_Canister_Submunition";
+		triggerDistance = -1;
+		submunitionConeAngle = 0.525;
+		submunitionInitSpeed=630;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			72
+		};
+		triggerTime=0.01;
+		triggerOnImpact = 0;
+		deleteParentWhenTriggered = 1;
+		submunitionInitialOffset[]= {0, 0, -5};
+		aiAmmoUsageFlags="64 + 128";
+		allowAgainstInfantry=1;
+		timeToLive=210;
+	};
+	// END
 	//Fennek Gun Start
 	class DBA_PL25S_Penetrator : ammo_Penetrator_Base{
 		hit=80;

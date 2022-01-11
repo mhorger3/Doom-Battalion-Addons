@@ -1024,7 +1024,9 @@ class CfgVehicles
 				magazines[] =
 				{
 					"DBA_88mm_CR13_x20_mag",
-					"DBA_94mm_PM4C_x4_mag",
+					"DBA_88mm_CR13_x20_mag",
+					"DBA_88mm_CR13_x20_mag",
+					"DBA_88mm_CR13_x20_mag",
 				};
 				startEngine = false;
 				stabilizedInAxes = 3;
