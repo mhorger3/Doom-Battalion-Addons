@@ -178,24 +178,24 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"DBA_E5_Commando",
+			"JLTS_E5",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[] =
 		{
-			"DBA_E5_Commando",
+			"JLTS_E5",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
 			"DBA_imploder_x1_mag",
 			"DBA_imploder_x1_mag",
 			"DBA_imploder_x1_mag",
@@ -203,12 +203,12 @@ class CfgVehicles
 		};
 		respawnMagazines[] =
 		{
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
-			"DBA_792_PKW_x64_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
+			"JLTS_E5_mag",
 			"DBA_imploder_x1_mag",
 			"DBA_imploder_x1_mag",
 			"DBA_imploder_x1_mag",
