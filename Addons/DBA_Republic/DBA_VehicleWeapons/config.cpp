@@ -135,7 +135,7 @@ class CfgPatches
 			"DBA_107mm_R10P_x12_pod",
 			"DBA_107mm_R10P_x24_pod",
 			"DBA_200mm_R20P_x5_pod",
-			"DBA_AD3M_x2_pylon",
+			"DBA_AD3M_x3_pylon",
 			"DBA_D39M_x4_pylon",
 			"DBA_DADS5M_mag_x21",
 			"DBA_DADS1P_mag_x8",
@@ -5434,7 +5434,7 @@ class CfgWeapons
 		};
 		magazines[]=
 		{
-			"DBA_AD3M_x2_pylon",
+			"DBA_AD3M_x3_pylon",
 		};
 		minRange=50;
 		minRangeProbab=0.40000001;
@@ -7768,9 +7768,9 @@ class CfgMagazines
 		};
 		pylonWeapon="DBA_200mw_R20P_Rockets";
 	};
-	class DBA_AD3M_x2_pylon : VehicleMagazine{
+	class DBA_AD3M_x3_pylon : VehicleMagazine{
 		ammo="DBA_AD3M_AAM";
-		count=2;
+		count=3;
 		displayName="AD-3M AAM";
 		displayNameShort="AD-3M AAM";
 		tracersEvery=1;
