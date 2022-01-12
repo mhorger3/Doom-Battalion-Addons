@@ -5371,7 +5371,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=-16;
 		canLock=2;
 		lockAcquire = 0;
-		weaponLockDelay=1.25;
+		weaponLockDelay=3.25;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
@@ -5447,7 +5447,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=-16;
 		canLock=2;
 		lockAcquire = 0;
-		weaponLockDelay=2.5;
+		weaponLockDelay=4.35;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
@@ -11508,7 +11508,7 @@ class CfgAmmo
 		simulationStep = 0.002000;
 		timeToLive = 75;
 		initTime = 0.05;
-		thrustTime = 6.25;
+		thrustTime = 8.25;
 		thrust = 440;
 		maxSpeed = 584;
 		maneuvrability = 30;
@@ -11528,14 +11528,14 @@ class CfgAmmo
 						class AirTarget
 						{
                         minRange = 100;
-                        maxRange = 5000;
+                        maxRange = 7000;
                         objectDistanceLimitCoef = -1;
                         viewDistanceLimitCoef = 1;
 						};
 						class GroundTarget
 						{
                         minRange = 100;
-                        maxRange = 5000;
+                        maxRange = 7000;
                         objectDistanceLimitCoef = 1;
                         viewDistanceLimitCoef = 1;
 						};
@@ -11543,7 +11543,7 @@ class CfgAmmo
 						angleRangeHorizontal = 30;
 						angleRangeVertical = 30;
 						componentType = "IRSensorComponent";
-						typeRecognitionDistance = 2000;
+						typeRecognitionDistance = 7000;
 						maxFogSeeThrough = 1.0;
 						color[] = {1,0,0,1};
 						allowsMarking = 1;
@@ -11563,7 +11563,7 @@ class CfgAmmo
 		flightProfiles[] = {"Direct"};
 		missileLockCone = 35;
 		missileKeepLockedCone = 70;
-		missileLockMaxDistance = 3750;
+		missileLockMaxDistance = 5000;
 		missileLockMinDistance = 100;
 		missileLockMaxSpeed = 900;
 		irLock = 1;
@@ -11581,7 +11581,7 @@ class CfgAmmo
 		lockType = 0;
 		manualControl = 0;
 		weaponLockSystem = 2;
-		cmImmunity = 0.8;
+		cmImmunity = 0.75;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "";
 		submunitionDirectionType = "SubmunitionModelDirection";
@@ -11617,7 +11617,7 @@ class CfgAmmo
 		cost = 500;
 		missileLockCone = 80;
 		missileKeepLockedCone = 40;
-		missileLockMaxDistance = 5500;
+		missileLockMaxDistance = 3250;
 		missileLockMinDistance = 10;
 		missileLockMaxSpeed = 900;
 		irLock = 1;
@@ -11647,7 +11647,7 @@ class CfgAmmo
 						angleRangeHorizontal = 30;
 						angleRangeVertical = 30;
 						componentType = "IRSensorComponent";
-						typeRecognitionDistance = 2000;
+						typeRecognitionDistance = 7500;
 						maxFogSeeThrough = 1.0;
 						color[] = {1,0,0,1};
 						allowsMarking = 1;
@@ -11677,7 +11677,7 @@ class CfgAmmo
 		lockType = 0;
 		manualControl = 0;
 		weaponLockSystem = 2;
-		cmImmunity = 0.975;
+		cmImmunity = 0.85;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "";
 		submunitionDirectionType = "SubmunitionModelDirection";
