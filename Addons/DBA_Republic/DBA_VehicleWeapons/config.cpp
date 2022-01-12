@@ -4710,7 +4710,7 @@ class CfgWeapons
 		displayName = "50mw R-5P Rocketpod";
 		scope=2;
 		magazines[]= {"DBA_50mm_R5P_x24_pod","DBA_50mm_R5P_x48_pod"};
-		modes[]= {"Far_AI", "Medium_AI", "Burst", "FullSalvo"};
+		modes[]= {"Far_AI", "Medium_AI", "Single", "Burst", "FullSalvo"};
 		canLock = 0;
 		weaponLockDelay = 0;
 		weaponLockSystem = 0;
@@ -4760,7 +4760,29 @@ class CfgWeapons
 			maxRange = 3000;
 			maxRangeProbab = 0.300000;
 		};
+		class Single: RocketPods{
+			displayName = "50mw R-5P Rocketpod";
+			burst = 1;
+			soundContinuous = 0;
+			autoFire = 0;
+			reloadTime = 0.06315789474;
+			dispersion = 0.01036216;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+			sounds[]= {"StandardSound"};
 
+			class StandardSound {
+				begin1[]= {"A3\Sounds_F\weapons\Rockets\new_rocket_7", 1.778279, 0.47500000, 1600};
+				soundBegin[]= {"begin1", 1};
+			};
+			textureType = "semi";
+		};
 		class Burst: RocketPods {
 			displayName = "50mw R-5P Rocketpod";
 			burst = 4;
@@ -4812,7 +4834,7 @@ class CfgWeapons
 		displayName = "107mw R-10P Rocketpod";
 		scope=2;
 		magazines[]= {"DBA_107mm_R10P_x12_pod","DBA_107mm_R10P_x24_pod"};
-		modes[]= {"Far_AI", "Medium_AI", "Burst", "FullSalvo"};
+		modes[]= {"Far_AI", "Medium_AI", "Single", "Burst", "FullSalvo"};
 		canLock = 0;
 		weaponLockDelay = 0;
 		weaponLockSystem = 0;
@@ -4862,7 +4884,29 @@ class CfgWeapons
 			maxRange = 3000;
 			maxRangeProbab = 0.300000;
 		};
+		class Single: RocketPods{
+			displayName = "107mw R-10P Rocketpod";
+			burst = 1;
+			soundContinuous = 0;
+			autoFire = 0;
+			reloadTime = 0.06315789474;
+			dispersion = 0.01036216;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+			sounds[]= {"StandardSound"};
 
+			class StandardSound {
+				begin1[]= {"A3\Sounds_F\weapons\Rockets\new_rocket_7", 1.778279, 0.47500000, 1600};
+				soundBegin[]= {"begin1", 1};
+			};
+			textureType = "semi";
+		};
 		class Burst: RocketPods {
 			displayName = "107mw R-10P Rocketpod";
 			burst = 4;
@@ -4914,7 +4958,7 @@ class CfgWeapons
 		displayName = "200mw R-20P Rocketpod";
 		magazines[]= {"DBA_200mm_R20P_x5_pod"};
 		scope=2;
-		modes[]= {"Far_AI", "Medium_AI", "Burst", "FullSalvo"};
+		modes[]= {"Far_AI", "Medium_AI", "Single", "Burst", "FullSalvo"};
 		canLock = 0;
 		weaponLockDelay = 0;
 		weaponLockSystem = 0;
@@ -4964,7 +5008,29 @@ class CfgWeapons
 			maxRange = 3000;
 			maxRangeProbab = 0.300000;
 		};
+		class Single: RocketPods{
+			displayName = "200mw R-20P Rocketpod";
+			burst = 1;
+			soundContinuous = 0;
+			autoFire = 0;
+			reloadTime = 0.06315789474;
+			dispersion = 0.01036216;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.010000;
+			midRange = 1;
+			midRangeProbab = 0.010000;
+			maxRange = 2;
+			maxRangeProbab = 0.010000;
+			sounds[]= {"StandardSound"};
 
+			class StandardSound {
+				begin1[]= {"A3\Sounds_F\weapons\Rockets\new_rocket_7", 1.778279, 0.47500000, 1600};
+				soundBegin[]= {"begin1", 1};
+			};
+			textureType = "semi";
+		};
 		class Burst: RocketPods {
 			displayName = "200mw R-20P Rocketpod";
 			burst = 1;
@@ -7642,6 +7708,7 @@ class CfgMagazines
 		hardpoints[]=
 		{
 			"DBA_Universal_rail",
+			"DBA_LE_Rail",
 		};
 		pylonWeapon="DBA_50mw_R5P_Rockets";
 	};
@@ -7670,6 +7737,7 @@ class CfgMagazines
 		hardpoints[]=
 		{
 			"DBA_Universal_rail",
+			"DBA_LE_Rail",
 		};
 		pylonWeapon="DBA_107mw_R10P_Rockets";
 	};
@@ -7696,6 +7764,7 @@ class CfgMagazines
 		hardpoints[]=
 		{
 			"DBA_Universal_rail",
+			"DBA_LE_Rail",
 		};
 		pylonWeapon="DBA_200mw_R20P_Rockets";
 	};
@@ -7710,6 +7779,7 @@ class CfgMagazines
 		hardpoints[]=
 		{
 			"DBA_Universal_rail",
+			"DBA_LE_Rail",
 		};
 		pylonWeapon="DBA_AD3M_AAM_Weapon";
 	};

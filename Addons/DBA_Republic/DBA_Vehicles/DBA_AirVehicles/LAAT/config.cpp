@@ -17353,6 +17353,35 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"DBA_23mm_PS59_x400_mag",
 		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture="\kobra\442_a_vehicle\laat\data\ui\laat_ui.paa";
+				class Pylons
+				{
+					class Pylon1
+					{
+						attachment="DBA_107mm_R10P_x12_pod";
+						priority=1;
+						hardpoints[]=
+						{
+							"DBA_LE_Rail",
+						};
+						turret[]={};
+						UIposition[] = {0.35,0.275};
+					};
+				};
+				class Presets
+				{
+					class Empty
+					{
+						displayName="Empty";
+						attachment[]={};
+					};
+				};
+			};
+		};
 		class UserActions
 		{		
 			class beacons_start
