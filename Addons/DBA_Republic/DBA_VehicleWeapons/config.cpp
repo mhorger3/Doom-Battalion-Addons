@@ -11561,8 +11561,8 @@ class CfgAmmo
 			};
 		};
 		flightProfiles[] = {"Direct"};
-		missileLockCone = 35;
-		missileKeepLockedCone = 70;
+		missileLockCone = 50;
+		missileKeepLockedCone = 90;
 		missileLockMaxDistance = 5000;
 		missileLockMinDistance = 100;
 		missileLockMaxSpeed = 900;
@@ -11615,8 +11615,8 @@ class CfgAmmo
 		trackLead = 0.56;
 		airFriction = 0.05;
 		cost = 500;
-		missileLockCone = 80;
-		missileKeepLockedCone = 40;
+		missileLockCone = 90;
+		missileKeepLockedCone = 50;
 		missileLockMaxDistance = 3250;
 		missileLockMinDistance = 10;
 		missileLockMaxSpeed = 900;
