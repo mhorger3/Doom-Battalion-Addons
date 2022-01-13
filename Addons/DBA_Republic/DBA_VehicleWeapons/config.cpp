@@ -11499,8 +11499,8 @@ class CfgAmmo
 		model = "\A3\Weapons_F\Ammo\Missile_AT_03_fly_F";
 		proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
 		hit = 400;
-		indirectHit = 400;
-		indirectHitRange = 3.0;
+		indirectHit = 550;
+		indirectHitRange = 4.5;
 		proximityExplosionDistance=6;
 		explosive = 1.00000;
 		warheadName = "AAM";
