@@ -208,7 +208,7 @@ class CfgMagazines{
 		displayName = "SN-3 Shrapnel Det.";
 		picture = "\A3\Weapons_F\Data\UI\gear_M67_CA.paa";
 		displayNameShort = "SN-3 Shrapnel Det.";
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\ctype.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\imploder.p3d";
 		type = 256;
 		ammo = "DBA_SN3_Det";
 		count = 1;
@@ -373,10 +373,10 @@ class CfgAmmo{
 	class DBA_SN3_Det : GrenadeHand{
 		displayName = "SN-3 Shrapnel Bomb";
 		soundFly[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",3.75,0.35,100};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\ctype.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\imploder.p3d";
 		hiddenselections[] = {"camo1"};
-		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\CType\ctype.rvmat"};
-		hiddenselectionstextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\CType\TypeC_CO.paa"};
+		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\ThermalImploder\imploder.rvmat"};
+		hiddenselectionstextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\ThermalImploder\ThermalImploder_CO.paa"};
 		hit = 10;
 		indirectHit = 40;
 		indirectHitRange = 8.25;
