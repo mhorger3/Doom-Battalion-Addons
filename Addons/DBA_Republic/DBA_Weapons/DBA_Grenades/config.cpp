@@ -379,7 +379,7 @@ class CfgAmmo{
 		hiddenselectionstextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\ThermalImploder\ThermalImploder_CO.paa"};
 		hit = 10;
 		indirectHit = 40;
-		indirectHitRange = 8.25;
+		indirectHitRange = 6.25;
 		explosive = 1.0;
 		ace_frag_enabled = 1;
 		ace_frag_skip = 0;
