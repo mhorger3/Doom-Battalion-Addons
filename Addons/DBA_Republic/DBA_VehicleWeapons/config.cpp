@@ -11060,9 +11060,9 @@ class CfgAmmo
 	};
 	// LAAT Technical Testbed Munitions
 	class ammo_23mm_SAP_Penetrator : ammo_Penetrator_Base{
-		hit=65;
+		hit=135;
 		warheadName = "SAPHEI";
-		caliber=8.333333333;
+		caliber=9.5;
 	};
 	class ammo_45mm_SAP_Penetrator : ammo_Penetrator_Base{
 		hit=425;
