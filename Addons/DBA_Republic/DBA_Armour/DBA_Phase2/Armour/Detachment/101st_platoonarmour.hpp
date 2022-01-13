@@ -1,10 +1,10 @@
 class UniformItem;
 class Uniform_Base;
-class DBA_CXC_Clean: Uniform_Base
+class DBA_Reserve_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX-C (Clean)";
+	displayName="101st Pilot (Reservist)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -14,13 +14,13 @@ class DBA_CXC_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-C_Clean_Chest_CO.paa.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Reserve_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CXC_DBA";
+		uniformClass="DBA_Reserve_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -31,11 +31,11 @@ class DBA_CXC_Clean: Uniform_Base
 		mass=40;
 	};
 };
-class DBA_CX_Clean: Uniform_Base
+class DBA_11_Cadet_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX (Clean)";
+	displayName="101st Cadet Pilot (1-1)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -45,13 +45,13 @@ class DBA_CX_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_1-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CX_DBA";
+		uniformClass="DBA_11_Cadet_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -62,11 +62,11 @@ class DBA_CX_Clean: Uniform_Base
 		mass=40;
 	};
 };
-class DBA_CXX_Clean: Uniform_Base
+class DBA_12_Cadet_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX-T (Clean)";
+	displayName="101st Cadet Pilot (1-2)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -76,13 +76,13 @@ class DBA_CXX_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_1-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CXX_DBA";
+		uniformClass="DBA_12_Cadet_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -93,11 +93,11 @@ class DBA_CXX_Clean: Uniform_Base
 		mass=40;
 	};
 };
-class DBA_CXP_Clean: Uniform_Base
+class DBA_21_Cadet_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX-P (Clean)";
+	displayName="101st Cadet Pilot (2-1)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -107,13 +107,13 @@ class DBA_CXP_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-P_Clean_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_2-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CXP_DBA";
+		uniformClass="DBA_21_Cadet_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -124,11 +124,11 @@ class DBA_CXP_Clean: Uniform_Base
 		mass=40;
 	};
 };
-class DBA_CXS_Clean: Uniform_Base
+class DBA_22_Cadet_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX-S (Clean)";
+	displayName="101st Cadet Pilot (2-2)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -138,13 +138,13 @@ class DBA_CXS_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-S_Clean_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_2-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CXS_DBA";
+		uniformClass="DBA_22_Cadet_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -155,11 +155,11 @@ class DBA_CXS_Clean: Uniform_Base
 		mass=40;
 	};
 };
-class DBA_CXO_Clean: Uniform_Base
+class DBA_31_Cadet_Pilot: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;
-	displayName="101st Pilot CX-O (Clean)";
+	displayName="101st Cadet Pilot (3-1)";
 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	hiddenSelections[]=
@@ -169,13 +169,13 @@ class DBA_CXO_Clean: Uniform_Base
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-O_Clean_Chest_CO.paa",
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_3-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Cadet_Legs_CO.paa"
 	};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
-		uniformClass="CXO_DBA";
+		uniformClass="DBA_31_Cadet_Pilot_F";
 		containerClass="supply150";
 		uniformType="Neopren";
 		hiddenSelections[]=
@@ -186,6 +186,627 @@ class DBA_CXO_Clean: Uniform_Base
 		mass=40;
 	};
 };
+class DBA_11_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot (1-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_1-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_11_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_12_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot (1-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_1-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_12_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_21_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot (2-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_2-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_21_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_22_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot (2-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_2-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_22_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_31_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot (3-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_3-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_31_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_11_VTOL_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st VTOL Pilot (1-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_1-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_11_VTOL_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_12_VTOL_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st VTOL Pilot (1-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_1-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_12_VTOL_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_21_VTOL_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st VTOL Pilot (2-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_2-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_21_VTOL_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_22_VTOL_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st VTOL Pilot (2-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_2-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_22_VTOL_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_31_VTOL_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st VTOL Pilot (3-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_3-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_VTOL_Pilot_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_31_VTOL_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_11_Bravo_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Bravo Pilot (1-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_2IC_1-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_11_Bravo_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_12_Bravo_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Bravo Pilot (1-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_2IC_1-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_12_Bravo_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_21_Bravo_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Bravo Pilot (2-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_2IC_2-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_21_Bravo_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_22_Bravo_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Bravo Pilot (2-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_2IC_2-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_22_Bravo_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_31_Bravo_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Bravo Pilot (3-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_2IC_3-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_31_Bravo_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_11_Alpha_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Alpha Pilot (1-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Lead_1-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_11_Alpha_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_12_Alpha_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Alpha Pilot (1-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Lead_1-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_12_Alpha_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_21_Alpha_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Alpha Pilot (2-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Lead_2-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_21_Alpha_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_22_Alpha_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Alpha Pilot (2-2)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Lead_2-2_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_22_Alpha_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_31_Alpha_Pilot: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Alpha Pilot (3-1)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_Lead_3-1_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_NCO_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="DBA_31_Alpha_Pilot_F";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+//Dagger
 class 101st_212th_Dagger: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
@@ -341,6 +962,7 @@ class 101st_212_Dagger_RTO: Uniform_Base
 		mass=40;
 	};
 };
+//Longbow
 class 101st_212_Longbow: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";

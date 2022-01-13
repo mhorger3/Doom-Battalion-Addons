@@ -346,7 +346,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Winter_Phase2_Helm_CO.paa"
 		};
 	};
-	class JLTS_CloneHelmetP2;
 	class 101st_ARF_Base : JLTS_CloneHelmetP2 {
 		author="Dutch";
 		scope=2;
@@ -1125,20 +1124,6 @@ class CfgWeapons
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
 	*/
-	class 101st_Stadlen_Helmet: 101st_Dagger_Helmet
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Stadlen)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stadlen_Helmet_AB_CO.paa"
-		};
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
 	class 101st_Heretic_Helmet: 101st_Dagger_Helmet
 	{
 		author="Dutch";
@@ -2078,33 +2063,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Buzzer_Helmet_CO.paa"
 		};
-	}
-	class 101st_Allen_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Allen)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Allen_Helmet_CO.paa"
-		};
-	}
-	class 101st_Shatterstorm_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Shatterstorm)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Shatterstorm_Helmet_CO.paa"
-		};
-	}
+	};
 	class 101st_Rick_Helmet: 101st_Dagger_Helmet
 	{
 		author="Spark";
@@ -2117,7 +2076,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Rick_Helmet_CO.paa"
 		};
-	}
+	};
 	/*
 	class 101st_Des_Helmet: 101st_Dagger_Helmet
 	{
@@ -3683,21 +3642,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Walker_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	
-	class 101st_Zareth_ARF: 101st_ARF_Base {
-		author = "Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Zareth ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 		hiddenSelections[]= {"camo1", "camo2"};
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
