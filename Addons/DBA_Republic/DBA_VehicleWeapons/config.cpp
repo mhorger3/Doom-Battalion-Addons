@@ -63,6 +63,7 @@ class CfgPatches
 			"DBA_94mw_PN32_FG",
 			"DBA_88mw_B18S_Cannon",
 			"DBA_25mw_P25S_Cannon",
+			"DBA_37mw_HH10A_AAA",
 			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
 		};
@@ -145,6 +146,7 @@ class CfgPatches
 			"DBA_94mm_SM3_x4_mag",
 			"DBA_94mm_PM4C_x4_mag",
 			"DBA_88mm_CR13_x20_mag",
+			"DBA_37mm_UB15_x500_mag",
 			"DBA_25mm_PL25S_x300_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
@@ -274,6 +276,7 @@ class CfgPatches
 			"DBA_94mm_PM4C_CAN",
 			"DBA_88mm_Canister_Submunition",
 			"DBA_88mm_CR13_CAN",
+			"DBA_37mm_UB15_HEI",
 			"DBA_PL25S_Penetrator",
 			"DBA_25mm_PL25S_HEDP",
 			"DBA_lancer_mbt_ap_ammo",
@@ -2189,6 +2192,145 @@ class CfgWeapons
 				maxRange = 3000;
 				maxRangeProbab = 0.050000;
 			};
+		};
+	};
+	//GAT AA Gun
+	class DBA_37mw_HH10A_AAA : LMG_RCWS{
+		displayName="HH-10A 37mw Anti-Aircraft Gun";
+		displayNameShort="HH-10A";
+		author="ISU";
+		ballisticsComputer = 1;
+		class GunParticles
+		{
+			class effect1
+			{
+				positionName="z_gunl_chamber";
+				directionName="z_gunl_muzzle";
+				effectName="MachineGunCloud";
+			};
+			class effect2
+			{
+				positionName="z_gunr_chamber";
+				directionName="z_gunr_muzzle";
+				effectName="MachineGunCloud";
+			};
+		};
+		magazines[]=
+		{
+			"DBA_37mm_UB15_x500_mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=8;
+		class manual
+		{
+			displayName="HH-10A";
+			textureType = "fullAuto";
+			reloadTime=0.1411764706;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					1.5,
+					0.7,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.0085;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=100;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=1000;
+			minRangeProbab=0.64999998;
+			midRange=2000;
+			midRangeProbab=0.30000001;
+			maxRange=3500;
+			maxRangeProbab=0.050000001;
 		};
 	};
 	class DBA_25mw_P252G_AC : CannonCore{
@@ -7909,6 +8051,19 @@ class CfgMagazines
 		initspeed=343;
 		tracersevery=1;
 	};
+	//GAT AA Ammo
+	class DBA_37mm_UB15_x500_mag  : VehicleMagazine{
+		displayname="UB-15 37mw HE-I";
+		ammo="DBA_37mm_UB15_HEI";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="UB-15 37mw HE-I";
+		shortnamemagazine="UB-15 HE-I";
+		displayNameMFDFormat="UB-15";
+		displayNameShort="UB-15";
+		count=500;
+		initspeed=880;
+		tracersevery=1;
+	};
 	//Fennek Gun Start
 	class DBA_25mm_PL25S_x300_mag : VehicleMagazine{
 		displayname="PL-25S 25mw HEDP";
@@ -12235,6 +12390,49 @@ class CfgAmmo
 		};
 	};
 	//END
+	//GAT AA Round 
+	class DBA_37mm_UB15_HEI : B_40mm_GPR{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 735;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 40;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2970;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 65;
+		indirectHit = 55;
+		indirectHitRange = 3.5;
+		explosive= 0.35;
+		warheadName = "HE-I";
+		caliber = 9.777777778;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=880;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.55;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=1;
+		coefGravity=0.15;
+		waterFriction=0;
+	};
 	//Start of Canister Round
 	class DBA_88mm_Canister_Submunition : B_762x54_Ball{
 		hit=8;
