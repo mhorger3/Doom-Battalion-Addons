@@ -2240,7 +2240,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"kobra\442_a_vehicle\laat\sounds\dc-15r.wss",
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1.5,
 					0.7,
 					2100
@@ -6143,7 +6143,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\Weapons\cannon.ogg",
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.15,
 					2100
