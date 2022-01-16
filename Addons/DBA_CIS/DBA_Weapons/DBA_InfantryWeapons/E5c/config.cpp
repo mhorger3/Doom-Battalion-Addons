@@ -47,8 +47,6 @@ class GunParticles;
 class CfgWeapons{
 	class Rifle_Base_F;
 	class Rifle_Long_Base_F: Rifle_Base_F{
-		class GunParticles;
-		class GunClouds;
 		class WeaponSlotsInfo;
 	};
 	class DBA_E5C_Standard : Rifle_Long_Base_F{
