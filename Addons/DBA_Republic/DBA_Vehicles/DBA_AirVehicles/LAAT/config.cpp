@@ -20259,7 +20259,7 @@ class cfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="DBA_AD3M_x2_pylon";
+						attachment="DBA_AD3M_x3_pylon";
 						priority=5;
 						hardpoints[]=
 						{
