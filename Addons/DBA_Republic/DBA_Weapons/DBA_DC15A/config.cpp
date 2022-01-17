@@ -15,6 +15,11 @@ class CfgPatches
 };
 class UGL_F;
 class Mode_SemiAuto;
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
 class Mode_Burst: Mode_SemiAuto
 {
 	class BaseSoundModeType;
@@ -78,6 +83,11 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		maxRecoilSway = 0.0125;
 		swayDecaySpeed = 1.25;
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\firemode_Mx",0.177828,1,5};		
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		soundBullet[] = {};
+		
 		class GunParticles : GunParticles
 		{
 			class SecondEffect
@@ -125,18 +135,24 @@ class CfgWeapons
 		{
 			soundContinuous = 0;
 			soundBurst = 0;
-			sounds[] =
+			sounds[] = {"StandardSound"};
+			
+			class BaseSoundModeType
 			{
-				"StandardSound"
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
+				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
 			};
-			class StandardSound
+			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
 				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
 				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure2",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
+			
 			reloadTime = 0.13;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
@@ -159,17 +175,17 @@ class CfgWeapons
 				weaponSoundEffect = "DefaultRifle";
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
 			};
-				
-			class StandardSound : BaseSoundModeType
+			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
 				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
 				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure2",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
+
 			reloadTime = 0.13;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
@@ -193,17 +209,17 @@ class CfgWeapons
 				weaponSoundEffect = "DefaultRifle";
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
 			};
-			
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
 				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
 				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure1",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
+
 			reloadTime = 0.05;
 			dispersion = 0.00087;
 			minRange = 0;
