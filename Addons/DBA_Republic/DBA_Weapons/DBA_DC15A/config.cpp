@@ -14,7 +14,7 @@ class CfgPatches
 	};
 };
 class UGL_F;
-class Mode_SemiAuto;
+class Mode_SemiAuto:
 {
 	class BaseSoundModeType;
 	class StandardSound;
