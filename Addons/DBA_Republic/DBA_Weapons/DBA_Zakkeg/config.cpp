@@ -81,8 +81,8 @@ class CfgWeapons
 		changeFiremodeSound[] = {"",1,1};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zakkeg\data\Zakkeg_CO.paa"};
 		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zakkeg\data\mgv2.rvmat" };
-		drySound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG_02_Dry",0.177828,1,10};
-		reloadMagazineSound[] = {"SW_CloneWarsWeapons\M134\reload2.ogg",1.5,1,20};
+		drySound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_dry",0.251189,1,20};
+		reloadMagazineSound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_reload",1,1,10};
 		soundBullet[] = {};
 		modes[] = {"manual","close","short","medium","far_optic1","far_optic2","ACE_Burst_far"};
 		recoil = "recoil_mmg_01";
