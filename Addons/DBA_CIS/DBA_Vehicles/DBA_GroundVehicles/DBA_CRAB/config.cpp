@@ -2,6 +2,11 @@ class CfgPatches
 {
 	class 101st_Crab
 	{
+		requiredAddons[]=
+		{
+			"A3_Weapons",
+			"A3_Armor"
+		};
 		units[]=
 		{
 			"101st_Crab_Droid", 
