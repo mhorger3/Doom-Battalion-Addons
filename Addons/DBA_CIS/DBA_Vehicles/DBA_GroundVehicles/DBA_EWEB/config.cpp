@@ -2,11 +2,6 @@ class CfgPatches
 {
 	class 101st_EWEB
 	{
-		requiredAddons[]=
-		{
-			"A3_Weapons",
-			"A3_Armor"
-		};
 		units[]=
 		{
 			"101st_EWEB", "101st_Tyrant", "101st_Overlord"
