@@ -2845,7 +2845,7 @@ class CfgVehicles
 					"DBA_762_D61_x400_mag",
 					"DBA_762_D61_x400_mag"
 				};
-				minElev=-16;
+				minElev=-20;
 				maxElev=45;
 				class Turrets: Turrets
 				{
@@ -3160,6 +3160,7 @@ class CfgVehicles
 					"DBA_762_D61_x400_mag",
 					"DBA_762_D61_x400_mag"
 				};
+				minElev=-16;
 				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
