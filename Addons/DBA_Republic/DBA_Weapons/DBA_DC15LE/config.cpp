@@ -208,15 +208,12 @@ class CfgWeapons
 				{
 					opticsID=1;
 					useModelOptics=1;
-					opticsPPEffects[]=
-					{
-						"Default"
-					};
+					opticsPPEffects[]= {"Default"};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.01;
-					opticsZoomMax=0.25;
-					opticsZoomInit=0.25;
+					opticsZoomMin = 0.25;
+					opticsZoomMax = 1.25;
+					opticsZoomInit = 0.75;
 					memoryPointCamera="eye";
 					visionMode[]={};
 					distanceZoomMin=300;
