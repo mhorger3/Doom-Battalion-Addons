@@ -71,7 +71,6 @@ class CfgWeapons
 		scope = 2;
 		displayName = "DBA DC15A LE";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\DCLE.p3d";
-		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		reloadAction = "GestureReloadMXSniper";
 		picture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
 		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\15S_CA.paa";
@@ -107,8 +106,6 @@ class CfgWeapons
 			midRangeProbab = 0.69999999;
 			maxRange = 450;
 			maxRangeProbab = 0.30000001;
-			modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
-			
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
