@@ -9,8 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] =
-		{"DBA_DC15A_LE_F", "101st_LE_Scope"
-		};
+		{"DBA_DC15A_LE_F"};
 	};
 };
 
@@ -165,10 +164,10 @@ class CfgWeapons
 		initSpeed = 920;
 		recoil = "recoil_mxm";
 		maxZeroing = 1400;
-		class WeaponSlotInfo
+		class WeaponSlotInfo : WeaponSlotsInfo
 		{
 			mass = 30;
-			class CowsSlot
+			class CowsSlot : CowsSlot
 			{
 				displayName = "Optics Slot";
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
@@ -183,6 +182,19 @@ class CfgWeapons
 					"DBA_MRCO_B",
 				};
 			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleItems[] = { "bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk" };
+			}
 		};
 	};
 	class ItemCore;

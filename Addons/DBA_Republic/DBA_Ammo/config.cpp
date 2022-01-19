@@ -37,7 +37,7 @@ class CfgMagazines
 		reloadaction = "";
 		useactiontitle = "";
 		modelspecial = "";
-		tracersevery = 1;
+		tracersEvery=1;
 		picture = "";
 		type = 256;
 	};
@@ -172,6 +172,7 @@ class CfgMagazines
 		mass = 35;
 		count = 70;
 		initspeed = 909;
+		tracersEvery=1;
 	};
 	class DBA_Maalras_Mag : DBA_Mag_Base
 	{
