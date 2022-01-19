@@ -161,7 +161,7 @@ class CfgWeapons
 		initSpeed = 920;
 		recoil = "recoil_mxm";
 		maxZeroing = 1400;
-		class WeaponSlotInfo : WeaponSlotsInfo
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 30;
 			class CowsSlot : CowsSlot
