@@ -215,7 +215,7 @@ class CfgWeapons
 					opticsZoomMax = 1.25;
 					opticsZoomInit = 0.75;
 					memoryPointCamera="eye";
-					visionMode[]={};
+					visionMode[] = { "Normal","NVG","TI" };
 					distanceZoomMin=300;
 					distanceZoomMax=300;
 				};
