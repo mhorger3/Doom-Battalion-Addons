@@ -132,6 +132,22 @@ class CfgWeapons
 		modes[] = {"Single"};
 		class Single: Single
 		{
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = { "A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_1",0.398107,1,30 };
+				closure2[] = { "A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_2",0.398107,1,30 };
+				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Sound.ogg",1,1,1800};
+				closure1[] = {"A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10};
+				soundBegin[] = { "begin1", 1 };
+				soundClosure[] = { "closure2", 1 };
+			};
 			reloadTime = 0.5;
 			dispersion = 0.00029;
 			minRange = 1;
