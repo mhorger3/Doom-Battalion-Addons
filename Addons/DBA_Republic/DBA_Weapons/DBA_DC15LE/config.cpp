@@ -208,7 +208,7 @@ class CfgWeapons
 				{
 					opticsID=1;
 					useModelOptics=1;
-					opticsPPEffects[]= {"Default"};
+					opticsPPEffects[]= {"OpticsCHAbera1","OpticsBlur1"};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
 					opticsZoomMin = 0.25;
