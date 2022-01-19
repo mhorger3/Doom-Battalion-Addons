@@ -196,6 +196,9 @@ class CfgWeapons
 		scope = 2;
 		displayName = "LE Scope";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Scope.p3d";
+		hiddenSelections[] = {"LE_Scope"};
+		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Scope_CO.paa"};
+		hiddenSelectionsMaterials[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Scope.rvmat"};
 		descriptionShort = "LE Scope";
 		class ItemInfo: ItemInfo
 		{
