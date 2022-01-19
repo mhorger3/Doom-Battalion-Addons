@@ -70,6 +70,7 @@ class CfgWeapons
 		{
 			"DBA_Valken_Mag"
 		}; 
+		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		class OpticsModes
 		{
 			class Snip
@@ -78,7 +79,7 @@ class CfgWeapons
 				discreteDistance[] = { 300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600 };
 				discreteDistanceInitIndex = 1;
 				discreteInitIndex = 1;
-				discretefov[] = { 0.0625, 0.03125, 0.05208, 0.01041 };
+				discretefov[] = { ".25/4",".25/8",".25/12",".25/24" };
 				distanceZoomMax = 4000;
 				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
@@ -87,7 +88,7 @@ class CfgWeapons
 				opticsFlare = 1;
 				opticsID = 1;
 				weaponInfoType = "RscOptics_nightstalkergreencompass";
-				opticsZoomMin = 0.01041;
+				opticsZoomMin = ".25/24";
 				opticsZoomMax = 0.25;
 				opticsZoomInit = 0.25;
 				thermalMode[] = { 1 };
