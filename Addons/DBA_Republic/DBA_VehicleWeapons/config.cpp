@@ -64,6 +64,11 @@ class CfgPatches
 			"DBA_88mw_B18S_Cannon",
 			"DBA_25mw_P25S_Cannon",
 			"DBA_37mw_HH10A_AAA",
+			"DBA_20mw_HH30C_AC",
+			"DBA_75mw_B32S_Cannon",
+			"DBA_80mw_HH10G_Cannon",
+			"DBA_13mw_H92C_MG",
+			"DBA_25mw_H96C_AC",
 			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
 		};
@@ -147,7 +152,13 @@ class CfgPatches
 			"DBA_94mm_PM4C_x4_mag",
 			"DBA_88mm_CR13_x20_mag",
 			"DBA_37mm_UB15_x500_mag",
+			"DBA_20mm_UR18_x20_mag",
+			"DBA_75mm_CR34_x40_mag",
+			"DBA_80mm_UBF5_x50_mag",
+			"DBA_13mm_UR2_x80_mag",
+			"DBA_25mm_UB5_x50_mag",
 			"DBA_25mm_PL25S_x300_mag",
+			"DBA_100mm_UB4H_x100_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
 			"DBA_HMG_orange_x500_mag",
@@ -277,6 +288,12 @@ class CfgPatches
 			"DBA_88mm_Canister_Submunition",
 			"DBA_88mm_CR13_CAN",
 			"DBA_37mm_UB15_HEI",
+			"DBA_20mm_UR18_API",
+			"DBA_75mm_Canister_Submunition",
+			"DBA_75mm_CR34_CAN",
+			"DBA_80mm_UBF5_HEF",
+			"DBA_13mm_UR2_API",
+			"DBA_25mm_UB5_HEI",
 			"DBA_PL25S_Penetrator",
 			"DBA_25mm_PL25S_HEDP",
 			"DBA_lancer_mbt_ap_ammo",
@@ -6120,6 +6137,694 @@ class CfgWeapons
 			aiRateOfFireDispersion=0.1;
 		};
 	};
+	//New Turrets
+	class DBA_20mw_HH30C_AC : LMG_RCWS{
+		displayName="HH30C 20mw Autocannon";
+		displayNameShort="HH30C";
+		author="ISU";
+		magazines[]=
+		{
+			"DBA_20mm_UR18_x20_mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=3;
+		class manual
+		{
+			displayName="HH30C";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=0.75;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					1.0,
+					1.65,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=0;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.0015;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=0.1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=0.2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=0.2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=0.4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
+		};
+	};
+	class DBA_75mw_B32S_Cannon : LMG_RCWS{
+		displayName="75mw B-32S Canister Cannon";
+		cursor="EmptyCursor";
+		shotFromTurret=0;
+		cursorAim="cannon";
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.85,
+			10
+		};
+		magazines[]=
+		{
+			"DBA_75mm_CR34_x40_mag",
+		};
+		reloadTime=3.25;
+		magazineReloadTime=3.25;
+		autoReload=1;
+		autoFire=0;
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		class manual: Mode_SemiAuto
+		{
+			displayName="75mw B-32S Canister Cannon";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.558,
+					6000
+				};
+				begin2[]=
+				{
+					"3AS\3AS_AAT\data\sounds\AAT_Cannon.wss",
+					10,
+					0.458,
+					6000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.1,
+					"begin2",
+					0.5
+				};
+				class SoundTails
+				{
+					class TailForest
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_forest",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_houses",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+					class TailInterior
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_interior",
+							1.99526,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_meadows",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_trees",
+							1,
+							1,
+							2200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+				};
+			};
+			recoil="Empty";
+			reloadTime=2;
+			soundBurst=0;
+			dispersion=0.000085;
+			showToPlayer=1;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=75;
+		};
+		class close: manual
+		{
+			showToPlayer=0;
+			soundBurst=0;
+			soundContinuous=0;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			aiRateOfFireDispersion=0.1;
+			minRange=0;
+			minRangeProbab=0.950000001;
+			midRange=50;
+			midRangeProbab=0.97999998;
+			maxRange=100;
+			maxRangeProbab=0.90000001;
+		};
+		class short: close
+		{
+			minRange=100;
+			minRangeProbab=0.95;
+			midRange=250;
+			midRangeProbab=0.99999999;
+			maxRange=500;
+			maxRangeProbab=0.70000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=100;
+			aiRateOfFireDispersion=0.1;
+		};
+		class medium: close
+		{
+			minRange=500;
+			minRangeProbab=0.95;
+			midRange=650;
+			midRangeProbab=0.95999999;
+			maxRange=800;
+			maxRangeProbab=0.9000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=200;
+			aiRateOfFireDispersion=0.1;
+		};
+		class far: close
+		{
+			minRange=800;
+			minRangeProbab=0.9;
+			midRange=900;
+			midRangeProbab=0.95999999;
+			maxRange=1000;
+			maxRangeProbab=0.950000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=300;
+			aiRateOfFireDispersion=0.1;
+		};
+	};
+	class DBA_80mw_HH10G_Cannon : LMG_RCWS{
+		displayName="HH-10G 80mw Heavy Cannon";
+		displayNameShort="HH-10G";
+		author="ISU";
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 10;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
+		magazines[]=
+		{
+			"DBA_80mm_UBF5_x50_mag",
+		};
+		modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=3.3333;
+		class manual
+		{
+			displayName="HH-10G";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=3.333333333;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					10.25,
+					1.75,
+					5500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.00290888;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=100;
+			midRangeProbab=0.9999999998;
+			maxRange=150;
+			maxRangeProbab=0.999999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=500;
+			minRange=0;
+			minRangeProbab=0.88;
+			midRange=500;
+			midRangeProbab=0.90;
+			maxRange=750;
+			maxRangeProbab=1;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=750;
+			minRange=0;
+			minRangeProbab=0.9;
+			midRange=1500;
+			midRangeProbab=0.9;
+			maxRange=2000;
+			maxRangeProbab=0.9;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=1300;
+			minRange=0;
+			minRangeProbab=0.9;
+			midRange=3000;
+			midRangeProbab=0.9;
+			maxRange=3750;
+			maxRangeProbab=0.9;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=0.1;
+			aiRateOfFireDispersion=0;
+			aiRateOfFireDistance=2500;
+			minRange=0;
+			minRangeProbab=0.98;
+			midRange=4750;
+			midRangeProbab=0.98;
+			maxRange=5250;
+			maxRangeProbab=0.9;
+		};
+	};
+	class DBA_13mw_H92C_MG : LMG_RCWS{
+		displayName="H-92C 13.2mw Repeater";
+		displayNameShort="H-92C";
+		author="ISU";
+		magazines[]=
+		{
+			"DBA_13mm_UR2_x80_mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=4;
+		class manual
+		{
+			displayName="H-92C";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=0.07058823529;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					0.5,
+					0.95,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.0045;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
+		};
+	};
+	class DBA_25mw_H96C_AC : LMG_RCWS{
+		displayName="H-96C 25mw Autocannon";
+		displayNameShort="H-96C";
+		author="ISU";
+		magazines[]=
+		{
+			"DBA_25mm_UB5_x50_mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=3.5;
+		class manual
+		{
+			displayName="H-96C";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=0.1363636364;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					0.5,
+					1.00,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.0045;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
+		};
+	};
 	//Fennek Gun Start
 	class DBA_25mw_P25S_Cannon : HMG_127{
 		displayName = "P-25S Autogun";
@@ -8062,6 +8767,67 @@ class CfgMagazines
 		displayNameShort="UB-15";
 		count=500;
 		initspeed=880;
+		tracersevery=1;
+	};
+	//New Turrets
+	class DBA_20mm_UR18_x20_mag : VehicleMagazine{
+		displayname="UR-18 20mw AP-I";
+		ammo="DBA_20mm_UR18_API";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="UR-18 20mw AP-I";
+		shortnamemagazine="UR-18 AP-I";
+		displayNameMFDFormat="UR-18";
+		displayNameShort="UR-18";
+		count=20;
+		initspeed=800;
+		tracersevery=1;
+	};
+	class DBA_75mm_CR34_x40_mag : VehicleMagazine{
+		displayname="CR-34 75mw Canister";
+		ammo="DBA_75mm_CR34_CAN";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="CR-34 75mw Canister";
+		shortnamemagazine="CR-34 Canister";
+		displayNameMFDFormat="CR-34";
+		displayNameShort="CR-34";
+		count=40;
+		initspeed=400;
+		tracersevery=1;
+	};
+	class DBA_80mm_UBF5_x50_mag : VehicleMagazine{
+		displayname="UBF-5 80mw HE-F";
+		ammo="DBA_80mm_UBF5_HEF";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="UBF-5 80mw HE-F";
+		shortnamemagazine="UBF-5 HE-F";
+		displayNameMFDFormat="UBF-5";
+		displayNameShort="UBF-5";
+		count=50;
+		initspeed=680;
+		tracersevery=1;
+	};
+	class DBA_13mm_UR2_x80_mag : VehicleMagazine{
+		displayname="UR-2 13mw API";
+		ammo="DBA_13mm_UR2_API";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="UR-2 13mw API";
+		shortnamemagazine="UR-2 API";
+		displayNameMFDFormat="UR-2";
+		displayNameShort="UR-2";
+		count=80;
+		initspeed=805;
+		tracersevery=1;
+	};
+	class DBA_25mm_UB5_x50_mag : VehicleMagazine{
+		displayname="UB-5 25mw HE-I";
+		ammo="DBA_25mm_UB5_HEI";
+		muzzleimpulsefactor[] = { 0.050000001,0.050000001 };
+		displaynamemagazine="UB-5 25mw HE-I";
+		shortnamemagazine="UB-5 HE-I";
+		displayNameMFDFormat="UB-5";
+		displayNameShort="UB-5";
+		count=50;
+		initspeed=900;
 		tracersevery=1;
 	};
 	//Fennek Gun Start
@@ -12503,6 +13269,316 @@ class CfgAmmo
 		timeToLive=210;
 	};
 	// END
+	//New Turret Ammo
+	class DBA_20mm_UR18_API : B_40mm_GPR{
+		ace_frag_enabled = 0;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 0;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 0;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2377;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 1;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 0;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 30;
+		indirectHit = 5;
+		indirectHitRange = 0.25;
+		explosive= 1;
+		warheadName = "API";
+		caliber = 7.5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=800;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.15;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=1;
+		coefGravity=0.3;
+		waterFriction=0;
+	};
+	class DBA_75mm_Canister_Submunition : B_762x54_Ball{
+		hit=6;
+		warheadName="Flechette";
+		indirectHit=5;
+		indirectHitRange=0.5;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=450;
+		coefGravity=0.33;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.3;
+		tracerEndTime=20;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=2.424242424;
+		typicalSpeed=100;
+		deflecting = 20;
+		timeToLive = 10;
+		model="kobra\442_weapons\ammo\red_tracer.p3d";
+		effectfly="442_plasma_red";
+	};
+	class DBA_75mm_CR34_CAN : Sh_120mm_APFSDS{
+		displayName="CR-34 75mw Canister Round";
+		hit=0;
+		warheadName="Canister";
+		indirectHit=0;
+		indirectHitRange=0;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=343;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0.9;
+		cost=500;
+		CraterEffects = "";
+		coefGravity=0;
+		explosioneffects = "";
+		effectsSmoke = "";
+		tracerStartTime=0.05;
+		tracerScale=0.8;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=5.21493625;
+		typicalSpeed=300;
+		deflecting = 0;
+		simulation = "shotSubmunitions";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		submunitionAmmo="DBA_75mm_Canister_Submunition";
+		triggerDistance = -1;
+		submunitionConeAngle = 0.355;
+		submunitionInitSpeed=430;
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			40
+		};
+		triggerTime=0.01;
+		triggerOnImpact = 0;
+		deleteParentWhenTriggered = 1;
+		submunitionInitialOffset[]= {0, 0, -5};
+		aiAmmoUsageFlags="64 + 128";
+		allowAgainstInfantry=1;
+		timeToLive=210;
+	};
+	class DBA_80mm_UBF5_HEF : Sh_120mm_APFSDS{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 5900;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 480;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2830;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_medium"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 150;
+		indirectHit = 60;
+		indirectHitRange = 4.5;
+		displayname = "80mw UBF-5 HE Fragmentation";
+		warheadName = "UBF-5 HE-F";
+		explosive = 1.0;
+		airLock = 0;
+		canLock = 2;
+		aiAmmoUsageFlags = "64 + 128";
+		cost = 15;
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		tracerScale = 2.15;
+		tracerStartTime = 0;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		caliber = 1.100000;
+		typicalSpeed = 680;
+		proximityExplosionDistance = 30;
+		fuseDistance = 15;
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 910;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]={0,0,-0.2};
+		allowAgainstInfantry=1;
+		timeToLive=20;
+		coefGravity=0.15;
+		airfriction=-0;
+		deflecting=0;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.75;
+			frequency = 40;
+			distance = 75;
+		};
+
+		class CamShakeHit {
+			power = 80;
+			duration = 2;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeFire {
+			power = 10;
+			duration = 1.5;
+			frequency = 15;
+			distance = 100;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_13mm_UR2_API : B_40mm_GPR{
+		hit = 19;
+		indirectHit = 5;
+		indirectHitRange = 0.25;
+		explosive= 1;
+		warheadName = "API";
+		caliber = 5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=805;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.15;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=1;
+		coefGravity=0.3;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 10;
+			duration = 1.00;
+			frequency = 40;
+			distance = 10;
+		};
+
+		class CamShakeHit {
+			power = 80;
+			duration = 2;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeFire {
+			power = 0;
+			duration = 1.5;
+			frequency = 15;
+			distance = 0;
+		};
+
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	};
+	class DBA_25mm_UB5_HEI : B_40mm_GPR{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 250;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 10;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2377;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		hit = 30;
+		indirectHit = 20;
+		indirectHitRange = 4.25;
+		explosive= 1;
+		warheadName = "HEI";
+		caliber = 5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 20;
+		initSpeed=900;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		model="\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.15;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=1;
+		coefGravity=0.15;
+		waterFriction=0;
+		class CamShakeExplode {
+			power = 15;
+			duration = 1.7;
+			frequency = 40;
+			distance = 20;
+		};
+
+		class CamShakeHit {
+			power = 80;
+			duration = 2;
+			frequency = 20;
+			distance = 25;
+		};
+
+		class CamShakeFire {
+			power = 0;
+			duration = 1.5;
+			frequency = 15;
+			distance = 0;
+		};
+		class CamShakePlayerFire {
+			power = 0.000000001;
+			duration = 0.050000;
+			frequency = 10;
+			distance = 0.5;
+		};
+	}; 
+	//END
 	//Fennek Gun Start
 	class DBA_PL25S_Penetrator : ammo_Penetrator_Base{
 		hit=80;
