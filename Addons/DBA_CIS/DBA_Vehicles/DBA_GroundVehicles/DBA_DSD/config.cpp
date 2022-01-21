@@ -121,11 +121,11 @@ class CfgVehicles
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
 				weapons[]=
 				{
-					"DBA_20mw_HH30C_AC"
+					"101st_CIS_Mech"
 				};
 				magazines[]=
 				{
-					"DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag"
+					"101st_CIS_LR_Mag", "101st_CIS_LR_Mag"
 				};
 				memoryPointGunnerOptics = "gunnerview";
 				//gunnerLeftHandAnimName = "Heavygun";

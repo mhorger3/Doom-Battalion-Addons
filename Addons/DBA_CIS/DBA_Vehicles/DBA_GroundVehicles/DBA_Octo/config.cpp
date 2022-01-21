@@ -119,19 +119,19 @@ class CfgVehicles
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
 				weapons[]=
 				{
-					"DBA_80mw_HH10G_Cannon",
+					"DBA_Ground_AC_Generic",
 				};
 				magazines[]=
 				{
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag",
-					"DBA_80mm_UBF5_x50_mag"
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag",
+					"DBA_AC_red_x100_mag"
 
 				};
 				memoryPointGunnerOptics = "gunnerview";
