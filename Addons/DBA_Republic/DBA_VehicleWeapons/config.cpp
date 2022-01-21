@@ -13282,7 +13282,7 @@ class CfgAmmo
 		hit = 30;
 		indirectHit = 5;
 		indirectHitRange = 0.25;
-		explosive= 1;
+		explosive= 0;
 		warheadName = "API";
 		caliber = 7.5;
 		deflecting = 3;
@@ -13453,7 +13453,7 @@ class CfgAmmo
 		hit = 19;
 		indirectHit = 5;
 		indirectHitRange = 0.25;
-		explosive= 1;
+		explosive= 0;
 		warheadName = "API";
 		caliber = 5;
 		deflecting = 3;
