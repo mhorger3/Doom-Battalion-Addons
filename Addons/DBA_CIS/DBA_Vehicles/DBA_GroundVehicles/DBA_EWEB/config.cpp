@@ -132,14 +132,18 @@ class CfgVehicles
 				};
 				weapons[]=
 				{
-					"101st_EWEB_Repeater"
+					"DBA_13mw_H92C_MG"
 				};
 				magazines[]=
 				{
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
 				};
 				gunnerAction="RepeaterGunner";
 				memoryPointGunnerOptics="gunnerview";
