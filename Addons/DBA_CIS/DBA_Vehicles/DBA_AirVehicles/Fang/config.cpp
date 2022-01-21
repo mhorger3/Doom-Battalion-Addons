@@ -93,9 +93,9 @@ class CfgVehicles
 	class 101st_Mando_base: Plane_Fighter_03_dynamicLoadout_base_F
 	{
 		irTarget=1;
-		irTargetSize=0.34999999;
+		irTargetSize=1;
 		radarTarget=1;
-		radarTargetSize=0.2;
+		radarTargetSize=1;
 		memoryPointDriverOptics="PilotCamera_pos";
 		unitInfoType="RscOptics_CAS_Pilot";
 		driverWeaponsInfoType="RscOptics_CAS_01_TGP";

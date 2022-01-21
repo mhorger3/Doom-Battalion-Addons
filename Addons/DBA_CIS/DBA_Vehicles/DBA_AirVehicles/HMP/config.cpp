@@ -94,6 +94,10 @@ class cfgVehicles
 	{
 		ace_fastroping_enabled = 0;
 		ace_cargo_hasCargo = 0;
+		irTarget=1;
+		irTargetSize=1;
+		radarTarget=1;
+		radarTargetSize=1;
 		weapons[] =
 		{
 			"DBA_Aircraft_Heavy_Lasers_Red",
