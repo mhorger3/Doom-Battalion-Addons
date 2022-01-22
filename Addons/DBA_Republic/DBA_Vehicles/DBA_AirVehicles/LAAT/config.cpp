@@ -198,7 +198,7 @@ class cfgVehicles
 		author="Trip";
 		scope=0;
 		side=1;
-		crew="101st_Pilot_212th";
+		
 		forceInGarage=1;
 		crewExplosionProtection=0;
 		radarTargetSize = 1.2;
@@ -1738,7 +1738,7 @@ class cfgVehicles
 		side=1;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
-		crew="101st_Pilot_212th";
+		
 		forceInGarage=1;
 		crewExplosionProtection=0;
 
@@ -3118,7 +3118,7 @@ class cfgVehicles
 		side=1;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
-		crew="101st_Pilot_212th";
+		
 		forceInGarage=1;
 		crewExplosionProtection=0;
 		weapons[]=
@@ -16602,7 +16602,7 @@ class cfgVehicles
 		};
 		scope=2;
 		side=1;
-		crew="101st_Pilot_212th";
+		
 		armor=1300;
 		class UserActions
 		{
@@ -16787,7 +16787,7 @@ class cfgVehicles
 		scope=2;
 		displayName="101st Z-95 Headhunter";
 		faction="B_DBA_Republic_F";
-		crew="101st_Pilot_212th";
+		
 		alwaysTarget=0;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
@@ -16910,7 +16910,7 @@ class cfgVehicles
 		irTargetSize = 1.3;
 		displayName="101st V-19 Torrent";
 		faction="B_DBA_Republic_F";
-		crew="101st_Pilot_212th";
+		
 		alwaysTarget=0;
 		weapons[]=
 		{
@@ -16965,7 +16965,7 @@ class cfgVehicles
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
 		faction="B_DBA_Republic_F";
-		crew="101st_Pilot_212th";
+		
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -17331,7 +17331,7 @@ class cfgVehicles
 	class DBA_Patrol_LAAT:3AS_Patrol_LAAT_Republic
 	{
 		displayname="101st LAAT/le";
-		crew="101st_Pilot_212th";
+		
 		faction="B_DBA_Republic_F";
 		scope=2;
 		scopeCurator=2;
@@ -17503,7 +17503,7 @@ class cfgVehicles
 	class DBA_LAAT_Pylons: 442_laat_2_ab
 	{
 		ace_cargo_space=400;
-		crew="101st_Pilot_212th";
+		
 
 
 
@@ -18269,7 +18269,7 @@ class cfgVehicles
 		driverCanEject = 1;
 		model="\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\YWing.p3d";
 		displayName = "Y-Wing BTL-B StarFighter";
-		crew="101st_Pilot_212th";
+		
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";
 		hiddenselections[]=
@@ -18298,7 +18298,7 @@ class cfgVehicles
 		forceingarage=1;
         faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
-		crew="101st_Pilot_212th";
+		
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
 		{
@@ -18326,7 +18326,7 @@ class cfgVehicles
 		forceingarage=1;
          faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
-		crew="101st_Pilot_212th";
+		
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
 		{
@@ -18355,7 +18355,7 @@ class cfgVehicles
          faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Air";
-		crew="101st_Pilot_212th";
+		
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
 		{
