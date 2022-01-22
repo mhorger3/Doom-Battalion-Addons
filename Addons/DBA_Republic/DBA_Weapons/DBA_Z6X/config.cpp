@@ -236,15 +236,15 @@ class CfgMagazines{
 class CfgAmmo{
 	class ammo_Penetrator_Base;
 	class DBA_PL15SM_Penetrator : ammo_Penetrator_Base{
-		hit=65;
+		hit=55;
 		warheadName = "Tandem";
 		caliber=7.666666667;
 	};
 	class M_NLAW_AT_F;
 	class DBA_25mm_PL15SN_SAPHEI: M_NLAW_AT_F
 	{
-		hit=30;
-		indirectHit=40;
+		hit=20;
+		indirectHit=20;
 		indirectHitRange=0.25;
 		explosive=1;
 		caliber=2;
