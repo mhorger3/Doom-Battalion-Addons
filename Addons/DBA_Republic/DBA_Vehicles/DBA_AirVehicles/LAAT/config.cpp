@@ -18287,19 +18287,17 @@ class cfgVehicles
 		armor=95;
 		 faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
-		vehicleClass = "Air";
 	};
 	class 101st_YWing: 101st_YWing_base
 	{
 		scope=2;
-		scopecurator=2;
-		scopearsenal=2;
+		scopeCurator=2;
+		scopeArsenal=2;
 		displayName = "Y-Wing BTL-B StarFighter";
 		side=1;
 		forceingarage=1;
         faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
-		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
@@ -18321,14 +18319,13 @@ class cfgVehicles
 	class 101st_YWing_Green: 101st_YWing_base
 	{
 		scope=2;
-		scopecurator=2;
-		scopearsenal=2;
+		scopeCurator=2;
+		scopeArsenal=2;
 		displayName = "Y-Wing BTL-B StarFighter (Green)";
 		side=1;
 		forceingarage=1;
          faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
-		vehicleClass = "Air";
 		crew="101st_Pilot_212th";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		availableForSupportTypes[]=
@@ -18350,8 +18347,8 @@ class cfgVehicles
 	class 101st_YWing_Red: 101st_YWing_base
 	{
 		scope=2;
-		scopecurator=2;
-		scopearsenal=2;
+		scopeCurator=2;
+		scopeArsenal=2;
 		displayName = "Y-Wing BTL-B StarFighter (Red)";
 		side=1;
 		forceingarage=1;
