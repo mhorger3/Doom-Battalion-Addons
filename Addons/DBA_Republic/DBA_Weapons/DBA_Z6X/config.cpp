@@ -64,7 +64,7 @@ class DBA_Z6X_P : Launcher_Base_F
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Exp\Launchers\RPG7\Data\Anim\RPG7V.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Z6X\anims\Z6XHandAnim.rtm"
 		};
 		hiddenSelections[] =
 		{
@@ -236,15 +236,15 @@ class CfgMagazines{
 class CfgAmmo{
 	class ammo_Penetrator_Base;
 	class DBA_PL15SM_Penetrator : ammo_Penetrator_Base{
-		hit=55;
+		hit=65;
 		warheadName = "Tandem";
 		caliber=7.666666667;
 	};
 	class M_NLAW_AT_F;
 	class DBA_25mm_PL15SN_SAPHEI: M_NLAW_AT_F
 	{
-		hit=20;
-		indirectHit=20;
+		hit=30;
+		indirectHit=40;
 		indirectHitRange=0.25;
 		explosive=1;
 		caliber=2;
