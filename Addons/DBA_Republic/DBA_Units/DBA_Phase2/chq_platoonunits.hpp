@@ -1,11 +1,11 @@
 class ClaymoreHQ_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Claymore HQ (JLTS)";
 	uniformClass = "DBA_ClaymoreHQ";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -24,11 +24,11 @@ class ClaymoreHQ_DBA : 101st_JLTS_Clone_P2
 class ClaymoreHQM_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Claymore HQ Medic (JLTS)";
 	uniformClass = "DBA_ClaymoreHQM";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -47,11 +47,11 @@ class ClaymoreHQM_DBA : 101st_JLTS_Clone_P2
 class ClaymoreHQRTO_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Claymore HQ RTO (JLTS)";
 	uniformClass = "DBA_ClaymoreHQRTO";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{

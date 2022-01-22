@@ -1,11 +1,11 @@
 class BroadswordHQ_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Broadsword HQ (JLTS)";
 	uniformClass = "DBA_BroadswordHQ";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Broadsword_HQ";
 	hiddenSelections[] =
 	{
@@ -24,11 +24,11 @@ class BroadswordHQ_DBA : 101st_JLTS_Clone_P2
 class BroadswordHQM_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Broadsword HQ Medic (JLTS)";
 	uniformClass = "DBA_BroadswordHQM";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Broadsword_HQ";
 	hiddenSelections[] =
 	{
@@ -47,11 +47,11 @@ class BroadswordHQM_DBA : 101st_JLTS_Clone_P2
 class BroadswordHQRTO_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Broadsword HQ RTO (JLTS)";
 	uniformClass = "DBA_BroadswordHQRTO";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Broadsword_HQ";
 	hiddenSelections[] =
 	{

@@ -2,11 +2,11 @@
 class CXC_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX-C (JLTS)";
 	uniformClass = "DBA_CXC_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -25,11 +25,11 @@ class CXC_DBA : 101st_JLTS_Clone_P2
 class CX_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX (JLTS)";
 	uniformClass = "DBA_CX_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -48,11 +48,11 @@ class CX_DBA : 101st_JLTS_Clone_P2
 class CXX_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX-T (JLTS)";
 	uniformClass = "DBA_CXX_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -71,11 +71,11 @@ class CXX_DBA : 101st_JLTS_Clone_P2
 class CXP_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX-P (JLTS)";
 	uniformClass = "DBA_CXP_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -95,11 +95,11 @@ class CXP_DBA : 101st_JLTS_Clone_P2
 class CXS_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX-S (JLTS)";
 	uniformClass = "DBA_CXS_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -118,11 +118,11 @@ class CXS_DBA : 101st_JLTS_Clone_P2
 class CXO_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot CX-O (JLTS)";
 	uniformClass = "DBA_CXO_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -141,11 +141,11 @@ class CXO_DBA : 101st_JLTS_Clone_P2
 class DBA_Reserve_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (Reserve)";
 	uniformClass = "DBA_CXC_Clean";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -164,11 +164,11 @@ class DBA_Reserve_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_11_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Cadet Pilot (1-1)";
 	uniformClass = "DBA_11_Cadet_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -187,11 +187,11 @@ class DBA_11_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_12_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Cadet Pilot (1-2)";
 	uniformClass = "DBA_12_Cadet_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -210,11 +210,11 @@ class DBA_12_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_21_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Cadet Pilot (2-1)";
 	uniformClass = "DBA_21_Cadet_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -233,11 +233,11 @@ class DBA_21_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_22_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Cadet Pilot (2-2)";
 	uniformClass = "DBA_22_Cadet_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -256,11 +256,11 @@ class DBA_22_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_31_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Cadet Pilot (3-1)";
 	uniformClass = "DBA_31_Cadet_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -279,11 +279,11 @@ class DBA_31_Cadet_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_11_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (1-1)";
 	uniformClass = "DBA_11_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -302,11 +302,11 @@ class DBA_11_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_12_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (1-2)";
 	uniformClass = "DBA_11_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -325,11 +325,11 @@ class DBA_12_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_21_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (2-1)";
 	uniformClass = "DBA_21_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -348,11 +348,11 @@ class DBA_21_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_22_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (2-2)";
 	uniformClass = "DBA_22_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -371,11 +371,11 @@ class DBA_22_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_31_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Pilot (3-1)";
 	uniformClass = "DBA_31_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -394,11 +394,11 @@ class DBA_31_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_11_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st VTOL Pilot (1-1)";
 	uniformClass = "DBA_11_VTOL_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -417,11 +417,11 @@ class DBA_11_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_12_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st VTOL Pilot (1-2)";
 	uniformClass = "DBA_12_VTOL_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -440,11 +440,11 @@ class DBA_12_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_21_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st VTOL Pilot (2-1)";
 	uniformClass = "DBA_21_VTOL_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -463,11 +463,11 @@ class DBA_21_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_22_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st VTOL Pilot (2-2)";
 	uniformClass = "DBA_22_VTOL_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -486,11 +486,11 @@ class DBA_22_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_31_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st VTOL Pilot (3-1)";
 	uniformClass = "DBA_31_VTOL_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -509,11 +509,11 @@ class DBA_31_VTOL_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_11_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Bravo Pilot (1-1)";
 	uniformClass = "DBA_11_Bravo_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -532,11 +532,11 @@ class DBA_11_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_12_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Bravo Pilot (1-2)";
 	uniformClass = "DBA_12_Bravo_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -555,11 +555,11 @@ class DBA_12_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_21_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Bravo Pilot (2-1)";
 	uniformClass = "DBA_21_Bravo_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -578,11 +578,11 @@ class DBA_21_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_22_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Bravo Pilot (2-2)";
 	uniformClass = "DBA_22_Bravo_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -601,11 +601,11 @@ class DBA_22_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_31_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Bravo Pilot (3-1)";
 	uniformClass = "DBA_31_Bravo_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -624,11 +624,11 @@ class DBA_31_Bravo_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_11_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Alpha Pilot (1-1)";
 	uniformClass = "DBA_11_Alpha_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -647,11 +647,11 @@ class DBA_11_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_12_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Alpha Pilot (1-2)";
 	uniformClass = "DBA_12_Alpha_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -670,11 +670,11 @@ class DBA_12_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_21_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Alpha Pilot (2-1)";
 	uniformClass = "DBA_21_Alpha_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -693,11 +693,11 @@ class DBA_21_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_22_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Alpha Pilot (2-2)";
 	uniformClass = "DBA_22_Alpha_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -716,11 +716,11 @@ class DBA_22_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 class DBA_31_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Alpha Pilot (3-1)";
 	uniformClass = "DBA_31_Alpha_Pilot";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -740,11 +740,11 @@ class DBA_31_Alpha_Pilot_F : 101st_JLTS_Clone_P2
 class Dagger_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger Trooper (JLTS)";
 	uniformClass = "101st_212th_Dagger";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -763,11 +763,11 @@ class Dagger_DBA : 101st_JLTS_Clone_P2
 class Dagger_CP_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger Corporal (JLTS)";
 	uniformClass = "101st_212_Dagger_Corporal";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -786,11 +786,11 @@ class Dagger_CP_DBA : 101st_JLTS_Clone_P2
 class Dagger_CS_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger Sergeant (JLTS)";
 	uniformClass = "101st_212_Dagger_Sergeant";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -809,11 +809,11 @@ class Dagger_CS_DBA : 101st_JLTS_Clone_P2
 class Dagger_Medic_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger Medic (JLTS)";
 	uniformClass = "101st_212_Dagger_Medic";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -832,11 +832,11 @@ class Dagger_Medic_DBA : 101st_JLTS_Clone_P2
 class Dagger_RTO_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger RTO (JLTS)";
 	uniformClass = "101st_212_Dagger_RTO";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -856,11 +856,11 @@ class Dagger_RTO_DBA : 101st_JLTS_Clone_P2
 class Longbow_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Trooper (JLTS)";
 	uniformClass = "101st_212_Longbow";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -880,11 +880,11 @@ class Longbow_DBA : 101st_JLTS_Clone_P2
 class Longbow_Arid_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Arid (JLTS)";
 	uniformClass = "101st_212_Longbow_Arid";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -903,11 +903,11 @@ class Longbow_Arid_DBA : 101st_JLTS_Clone_P2
 class Longbow_Recruit_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Recruit (JLTS)";
 	uniformClass = "101st_212_Longbow_Recruit";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -926,11 +926,11 @@ class Longbow_Recruit_DBA : 101st_JLTS_Clone_P2
 class Longbow_Tropic_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Tropic (JLTS)";
 	uniformClass = "101st_212_Longbow_Tropic";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -949,11 +949,11 @@ class Longbow_Tropic_DBA : 101st_JLTS_Clone_P2
 class Longbow_Night_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Night (JLTS)";
 	uniformClass = "101st_212_Longbow_Night";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -972,11 +972,11 @@ class Longbow_Night_DBA : 101st_JLTS_Clone_P2
 class Longbow_Urban_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Urban (JLTS)";
 	uniformClass = "101st_212_Longbow_Urban";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -995,11 +995,11 @@ class Longbow_Urban_DBA : 101st_JLTS_Clone_P2
 class Longbow_Winter_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Longbow Winter (JLTS)";
 	uniformClass = "101st_212_Longbow_Winter";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -1018,11 +1018,11 @@ class Longbow_Winter_DBA : 101st_JLTS_Clone_P2
 class Radar_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Radar (JLTS)";
 	uniformClass = "101st_212_Radar";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -1041,11 +1041,11 @@ class Radar_DBA : 101st_JLTS_Clone_P2
 class Hark_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Hark (JLTS)";
 	uniformClass = "101st_212_Hark";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{
@@ -1064,11 +1064,11 @@ class Hark_DBA : 101st_JLTS_Clone_P2
 class Dagger_Traitor_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Dagger Traitor (JLTS)";
 	uniformClass = "101st_212_Dagger_Traitor";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Claymore_HQ";
 	hiddenSelections[] =
 	{

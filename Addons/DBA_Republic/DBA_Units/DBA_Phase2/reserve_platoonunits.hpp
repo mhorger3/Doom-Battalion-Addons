@@ -1,11 +1,11 @@
 class Reservist_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Reservist (JLTS)";
 	uniformClass = "DBA_ReserveArmour";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Reservist";
 	hiddenSelections[] =
 	{
@@ -24,11 +24,11 @@ class Reservist_DBA : 101st_JLTS_Clone_P2
 class ReservistCI_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Reservist CI (JLTS)";
 	uniformClass = "DBA_ReserveCI";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Reservist";
 	hiddenSelections[] =
 	{
@@ -47,11 +47,11 @@ class ReservistCI_DBA : 101st_JLTS_Clone_P2
 class ReserveCIC_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Reservist CI-C (JLTS)";
 	uniformClass = "DBA_ReserveCIC";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Reservist";
 	hiddenSelections[] =
 	{
@@ -71,11 +71,11 @@ class ReserveCIC_DBA : 101st_JLTS_Clone_P2
 class ReservistCM_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Reservist CM (JLTS)";
 	uniformClass = "DBA_ReserveCM";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Reservist";
 	hiddenSelections[] =
 	{
@@ -94,11 +94,11 @@ class ReservistCM_DBA : 101st_JLTS_Clone_P2
 class ReserveCMC_DBA : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	displayName = "101st Reservist CM-C (JLTS)";
 	uniformClass = "DBA_ReserveCMC";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "Republic_101st";
+	faction = "B_DBA_Republic_F";
 	editorSubcategory = "DBA_Reservist";
 	hiddenSelections[] =
 	{
