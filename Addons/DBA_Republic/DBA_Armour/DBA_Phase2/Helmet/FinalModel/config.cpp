@@ -125,6 +125,15 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Croja_Helmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_NuMo : DBA_P2HelmetBase
+	{
+		author = "Vulgar";
+		displayName = "DBA Clone trooper P2 Helmet: NuMo";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\NuMo_Helmet_CO.paa"
+		};
+	};
 	class DBA_P2Helmet_Devil : DBA_P2HelmetBase
 	{
 		author = "Vulgar";
