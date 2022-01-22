@@ -14,7 +14,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\GAR_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\GAR_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Base";
         };
@@ -29,7 +29,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Arid_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Arid";
         };
@@ -44,7 +44,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Night_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Night";
         };
@@ -59,7 +59,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "101st_Aux_Mod\Addons\textures\101st\backpacks\ARF_Tropic_Backpack_CO.paa"
+                "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"
             };
             helmetClass = "101st_ARF_Tropic";
         };
