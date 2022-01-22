@@ -89,9 +89,22 @@ class CfgVehicles
 				magazines[]=
 				{
 					"DBA_94mm_PM1_x4_mag",
+					"DBA_94mm_PM1_x4_mag",
+					"DBA_94mm_PM1_x4_mag",
+					"DBA_94mm_PM5_x4_mag",
 					"DBA_94mm_PM5_x4_mag",
 					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
+					"DBA_94mm_P2_x4_mag",
 					"DBA_94mm_SM3_x4_mag",
+					"DBA_94mm_SM3_x4_mag",
+					"DBA_94mm_PM4C_x4_mag",
+					"DBA_94mm_PM4C_x4_mag",
 					"DBA_94mm_PM4C_x4_mag",
 				};
 				viewGunnerInExternal=1;
