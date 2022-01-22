@@ -52,7 +52,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
-		faction="Republic_101st";
+		 faction="B_DBA_Republic_F";
 		editorSubcategory="EdSubcat_Turrets";
 		displayName="PN32 Field Gun";
 		model="\OPTRE_Weapons\static\FG75\FG75.p3d";
