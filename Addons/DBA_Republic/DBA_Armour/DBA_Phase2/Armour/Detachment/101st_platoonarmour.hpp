@@ -1,6 +1,192 @@
 class UniformItem;
 class Uniform_Base;
-class DBA_Reserve_Pilot: Uniform_Base
+class DBA_CXC_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX-C (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-C_Clean_Chest_CO.paa.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CXC_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_CX_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CX_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_CXX_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX-T (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CXX_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_CXP_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX-P (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-P_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CXP_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_CXS_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX-S (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-S_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CXS_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_CXO_Clean: Uniform_Base
+{
+	dlc = "101st_Aux_Mod";
+	scope=2;
+	displayName="101st Pilot CX-O (Clean)";
+	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-O_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="CXO_DBA";
+		containerClass="supply150";
+		uniformType="Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass=40;
+	};
+};
+class DBA_Reserve_Clean: Uniform_Base
 {
 	dlc = "101st_Aux_Mod";
 	scope=2;

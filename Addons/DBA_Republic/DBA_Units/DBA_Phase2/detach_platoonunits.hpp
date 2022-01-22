@@ -1,4 +1,143 @@
 //Hammer
+class CXC_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX-C (JLTS)";
+	uniformClass = "DBA_CXC_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-C_Clean_Chest_CO.paa.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
+class CX_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX (JLTS)";
+	uniformClass = "DBA_CX_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
+class CXX_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX-T (JLTS)";
+	uniformClass = "DBA_CXX_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-X_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
+class CXP_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX-P (JLTS)";
+	uniformClass = "DBA_CXP_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-P_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
+
+class CXS_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX-S (JLTS)";
+	uniformClass = "DBA_CXS_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-S_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
+class CXO_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Pilot CX-O (JLTS)";
+	uniformClass = "DBA_CXO_Clean";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX-O_Clean_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Hammer\DBA_CX_Clean_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
 class DBA_Reserve_Pilot_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
