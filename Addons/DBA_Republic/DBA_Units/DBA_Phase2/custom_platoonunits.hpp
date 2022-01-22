@@ -387,6 +387,29 @@ class B_DBA_P2ClonePunisher_F : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
+class B_DBA_P2CloneKodiak_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "Republic_101st";
+	displayName = "101st Kodiak (JLTS)";
+	uniformClass = "DBA_P2CloneKodiakUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "Republic_101st";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Kodiak_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Kodiak_Legs_CO.paa"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
 class B_DBA_P2CloneFodder_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";

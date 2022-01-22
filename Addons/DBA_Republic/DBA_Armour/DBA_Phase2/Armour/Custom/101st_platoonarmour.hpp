@@ -475,6 +475,35 @@ class DBA_P2ClonePunisherUniform : Uniform_Base
 		mass = 40;
 	};
 };
+class DBA_P2CloneKodiakUniform : Uniform_Base
+{
+	author = "Vulgar";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Kodiak";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Kodiak_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Kodiak_Legs_CO.paa"
+	};
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneKodiak_F";
+		containerClass = "Supply150";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
 class DBA_P2CloneFodderUniform : Uniform_Base
 {
 	author = "Vulgar";

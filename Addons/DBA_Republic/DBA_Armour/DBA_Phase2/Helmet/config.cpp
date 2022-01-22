@@ -3370,6 +3370,19 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Punisher_Helmet_CO.paa"
 		};
 	};
+	class 101st_Kodiak_Helmet: JLTS_CloneHelmetP2
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Kodiak)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Kodiak_Helmet_CO.paa"
+		};
+	};
 	class 101st_Deadeye_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
