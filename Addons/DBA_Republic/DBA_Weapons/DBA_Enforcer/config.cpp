@@ -74,7 +74,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_beta\Smgs\SMG_02\data\Anim\SMG_02.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Enforcer\anims\EnforcerHandAnim.rtm"
 		};
 		hiddenSelections[] =
 		{

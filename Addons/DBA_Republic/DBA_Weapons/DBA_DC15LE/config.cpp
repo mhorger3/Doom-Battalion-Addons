@@ -95,7 +95,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Canister_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\LE_Muzzle_CO.paa",
 		};
-		handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F\Rifles\MX\data\Anim\MX_dmr.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15LE\anims\DC15LEHandAnim.rtm"};
 		modes[] = {"Single", "single_medium_optics1", "single_far_optics2"};
 		class Single : Mode_SemiAuto
 		{

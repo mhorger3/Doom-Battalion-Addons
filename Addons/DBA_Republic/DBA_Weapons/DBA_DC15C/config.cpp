@@ -88,6 +88,7 @@ class CfgWeapons
 		fireLightDiffuse[] = {0,0,1};
 		fireLightDuration = 0.05;
 		modes[] = {"Single","FullAuto","close","short","medium"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\anims\DC15sHandAnim.rtm"};
 		class Stun: 101st_stun_muzzle
 		{
 			reloadAction = "ReloadMagazine";
@@ -386,7 +387,7 @@ class CfgWeapons
 				10
 			};
 		};
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\anims\DC15SGLHandAnim.rtm"};
 		muzzles[] = {"this","DBA_3AS_GL_F"};
 		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15C\DC15SGL.p3d";
 		ACE_clearJamAction = "ReloadMagazine";

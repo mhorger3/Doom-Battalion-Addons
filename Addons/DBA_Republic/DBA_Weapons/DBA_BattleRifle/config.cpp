@@ -63,7 +63,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\data\Anim\DMR_03.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_BattleRifle\anims\BattlerifleHandAnim.rtm"
 		};
 		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		discreteDistanceInitIndex = 2;

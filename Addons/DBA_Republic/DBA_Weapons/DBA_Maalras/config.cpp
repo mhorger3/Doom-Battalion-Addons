@@ -86,7 +86,7 @@ class cfgWeapons {
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Mod\SMGs\SMG_03\data\Anim\P90.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Maalras\anims\MaalrasHandAnim.rtm"
 		};
 		reloadAction = "GestureReload_smg_03";
 		recoil = "recoil_smg_03";

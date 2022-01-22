@@ -87,7 +87,7 @@ class CfgWeapons
 		modes[] = {"manual","close","short","medium","far_optic1","far_optic2","ACE_Burst_far"};
 		recoil = "recoil_mmg_01";
 		simulation = "Weapon";
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zakkeg\anims\ZakkegHandAnimC.rtm"};
 		fireLightDuration = 0.05;
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,1,0};
