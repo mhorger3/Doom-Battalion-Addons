@@ -71,7 +71,7 @@ class CfgWeapons
 		modes[] = {"Single","FullAuto","close","short","medium"};
 		recoil = "recoil_mk20";
 		simulation = "Weapon";
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_KathHound\anims\KathHoundHandAnim.rtm"};
 		fireLightDiffuse[] = {0,1,0};
 		fireLightAmbient[] = {0,1,0};
 		class Single: Mode_SemiAuto
