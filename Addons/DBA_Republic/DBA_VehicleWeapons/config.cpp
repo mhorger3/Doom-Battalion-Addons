@@ -13111,7 +13111,7 @@ class CfgAmmo
 		lockType = 0;
 		manualControl = 0;
 		weaponLockSystem = "2 + 8";
-		cmImmunity = 0.825;
+		cmImmunity = 0.925;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "";
 		submunitionDirectionType = "SubmunitionModelDirection";
@@ -13241,7 +13241,7 @@ class CfgAmmo
 		lockType = 0;
 		manualControl = 0;
 		weaponLockSystem = "2 + 8";
-		cmImmunity = 0.8;
+		cmImmunity = 0.875;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "";
 		submunitionDirectionType = "SubmunitionModelDirection";
@@ -14135,7 +14135,7 @@ class CfgAmmo
 		lockType = 0;
 		manualControl = 0;
 		weaponLockSystem = 2;
-		cmImmunity = 0.75;
+		cmImmunity = 0.85;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "";
 		submunitionDirectionType = "SubmunitionModelDirection";
