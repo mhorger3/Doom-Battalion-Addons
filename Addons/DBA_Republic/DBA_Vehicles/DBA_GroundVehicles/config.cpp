@@ -1869,6 +1869,7 @@ class CfgVehicles
 		ace_cargo_space=400;
 		displayName="Warrior Test Bed";
 		scope=2;
+		forceInGarage=1;
 		scopeCurator=2;
 		side=1;
 		armor=1100;
@@ -1998,6 +1999,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
+		forceInGarage=1;
 		armor=700;
 		ace_cargo_space=400;
 		faction="B_DBA_Republic_F";
@@ -2127,6 +2129,7 @@ class CfgVehicles
 		displayName="RFV-103 Warrior";
 		scope=2;
 		scopeCurator=2;
+		forceInGarage=1;
 		side=1;
 		armor=700;
 		faction="B_DBA_Republic_F";
@@ -2254,6 +2257,7 @@ class CfgVehicles
 	class DBA_LSV: O_T_LSV_02_unarmed_black_F
 	{
 		ace_cargo_space=400;
+		forceInGarage=1;
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -2289,6 +2293,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
+		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="RFV-101 Fennek";
@@ -2374,6 +2379,7 @@ class CfgVehicles
 	class DBA_Fennek_GL: I_MRAP_03_gmg_F
 	{
 		ace_cargo_space=400;
+		forceInGarage=1;
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -2444,6 +2450,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
+		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=500;
 		displayName="Fennek CAV (Testbed)";
@@ -2590,6 +2597,7 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		side=1;
+		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=700;
 		displayName="RFV-101 Medical Fennek";
