@@ -86,7 +86,7 @@ class CfgWeapons
 		ACE_overheating_allowSwapBarrel = 1;
 		ACE_clearJamAction = "ReloadMagazine";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\dc15x.p3d";
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_EPA\LongRangeRifles\DMR_01\data\Anim\dmr_01.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\anims\DC15XHandAnim.rtm"};
 		//magazines[] = {"101st_DC15x_Mag"};
 		magazines[] = { "DBA_DC15x_Mag" };
 		recoil = "recoil_m320";
@@ -215,6 +215,7 @@ class CfgWeapons
 		baseWeapon = "DBA_Forest_DC15x";
 		displayName = "[101st] W4-LRUS (Forest)";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\DC15X_Camo.p3d";
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\anims\DC15XCHandAnim.rtm"};
 		hiddenSelections[] = {"camo","camo1","camo2"};
 		hiddenSelectionsTextures[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\data\DC15X_CO.paa","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\data\DC15X_Scope_CO.paa","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15x\data\DC15X_Netting_Forest_CO.paa"};
 	};

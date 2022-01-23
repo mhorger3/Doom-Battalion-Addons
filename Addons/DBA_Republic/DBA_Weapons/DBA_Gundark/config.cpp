@@ -78,7 +78,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\LongRangeRifles\M320\data\Anim\m320.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Gundark\anims\GundarkHandAnim.rtm"
 		};
 		opticsPPEffects[] = {};
 		opticsFlare = 1;

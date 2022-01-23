@@ -135,7 +135,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_EPA\LongRangeRifles\DMR_01\data\Anim\dmr_01.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Valken\anims\ValkenHandAnim.rtm"
 		};
 		cursor = "srifle";
 		class WeaponSlotsInfo : WeaponSlotsInfo
