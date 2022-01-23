@@ -9,7 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] =
-		{
+		{"DBA_DC15A_F", "DBA_DC15A_GL_F", "DBA_DC15A_Mod0_F"
 		};
 	};
 };
@@ -107,6 +107,7 @@ class CfgWeapons
 			class CowsSlot : CowsSlot_Rail
 			{
 				iconPosition[] = { 0.5,0.34999999 };
+				compatibleItems[] = {"DBA_MRCO_A", "DBA_MRCO_B"};
 				iconScale = 0.2;
 			};
 			class PointerSlot : PointerSlot_Rail
@@ -142,15 +143,15 @@ class CfgWeapons
 				weaponSoundEffect = "DefaultRifle";
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
+				soundClosure[] = {"closure1",0.5,"closure2",0.5 };
 			};
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
 				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure2",0.5 };
+				soundClosure[] = {"closure2",0.5 };
 			};
 			
 			reloadTime = 0.13;
