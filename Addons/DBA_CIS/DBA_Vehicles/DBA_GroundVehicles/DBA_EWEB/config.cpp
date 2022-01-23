@@ -208,10 +208,14 @@ class CfgVehicles
 			{
 				magazines[]=
 				{
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
-					"DBA_lmg_red_x500_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
 				};
 			};
 		};
