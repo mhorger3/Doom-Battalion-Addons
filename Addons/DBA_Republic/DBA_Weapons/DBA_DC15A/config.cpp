@@ -14,9 +14,24 @@ class CfgPatches
 	};
 };
 class UGL_F;
-class Mode_SemiAuto;
-class Mode_Burst: Mode_SemiAuto;
-class Mode_FullAuto: Mode_SemiAuto;
+class Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
+class Mode_Burst: Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
+class Mode_FullAuto: Mode_SemiAuto
+{
+	class BaseSoundModeType;
+	class StandardSound;
+
+};
 class SlotInfo;
 class CowsSlot_Rail;
 class CowsSlot_Rail_Pistol;
