@@ -19447,10 +19447,8 @@ class cfgVehicles
 		{
 			"DBA_23mm_PS59_x400_mag",
 			"DBA_45mm_PS73_x80_mag",
+			"DBA_45mm_PS73_x80_mag",
 			"Laserbatteries",
-			"192Rnd_CMFlare_Chaff_Magazine",
-			"192Rnd_CMFlare_Chaff_Magazine",
-			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 		};
 		memoryPointGun[]=
