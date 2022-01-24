@@ -164,7 +164,7 @@ class CfgWeapons
 		reloadAction = "GestureReloadLRR";
 		reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_reload",1,1,10 };
 		UiPicture = "\A3\weapons_f\data\UI\icon_sniper_CA.paa";
-		handAnim[] = { "OFP2_ManSkeleton","OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zillo\anims\ZilloHandAnim.rtm" };
+		handAnim[] = { "OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Zillo\anims\ZilloHandAnim.rtm" };
 		class Single : Mode_SemiAuto
 		{
 			sounds[] =
