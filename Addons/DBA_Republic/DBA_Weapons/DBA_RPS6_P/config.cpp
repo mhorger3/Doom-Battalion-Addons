@@ -63,7 +63,7 @@ class CfgWeapons{
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_RPS6\RPS6.p3d";
 		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
-		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\RPS6\anims\RPS6_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_RPS6_P\anims\RPS6HandAnim.rtm"};
 		sounds[] = {"StandardSound"};
 		cameraDir = "look";
 		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)

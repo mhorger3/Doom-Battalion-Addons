@@ -34,7 +34,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F\Launchers\RPG32\data\Anim\RPG32.rtm"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_RPS6\anims\RPS6HandAnim.rtm"
 		};
 		hiddenSelections[] =
 		{
