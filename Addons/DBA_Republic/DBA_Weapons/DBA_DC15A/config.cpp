@@ -141,9 +141,9 @@ class CfgWeapons
 			class BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5 };
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
@@ -174,9 +174,9 @@ class CfgWeapons
 			class BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
@@ -208,9 +208,9 @@ class CfgWeapons
 			class BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = { "closure1",0.5,"closure2",0.5 };
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
