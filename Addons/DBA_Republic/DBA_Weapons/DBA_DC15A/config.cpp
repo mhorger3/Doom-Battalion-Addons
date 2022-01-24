@@ -83,7 +83,7 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		maxRecoilSway = 0.0125;
 		swayDecaySpeed = 1.25;
-		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\firemode_Mx",0.177828,1,5};		
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\firemode_Mx",0.3,1,5};		
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
 		soundBullet[] = {};
@@ -134,9 +134,9 @@ class CfgWeapons
 		};
 		class Single : Mode_SemiAuto
 		{
-			soundContinuous = 0;
-			soundBurst = 0;
 			sounds[] = {"StandardSound"};
+			soundContinuous = 0;
+			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
@@ -167,9 +167,9 @@ class CfgWeapons
 		};
 		class FullAuto : Mode_FullAuto
 		{
-			soundContinuous = 0;
-			soundBurst = 0;
 			sounds[] = {"StandardSound"};
+			soundContinuous = 0;
+			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
@@ -201,9 +201,9 @@ class CfgWeapons
 		};
 		class Burst : Mode_Burst
 		{
-			soundContinuous = 0;
-			soundBurst = 0;
 			sounds[] = {"StandardSound"};
+			soundContinuous = 0;
+			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
