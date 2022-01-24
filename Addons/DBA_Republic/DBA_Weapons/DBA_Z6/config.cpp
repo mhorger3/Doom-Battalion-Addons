@@ -65,7 +65,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
-			"\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"
+			"\MRC\JLTS\weapons\Z6\anims\Z6_handanim.rtm"
 		};
 		class ItemInfo
 		{
