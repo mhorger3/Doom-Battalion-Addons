@@ -18554,7 +18554,7 @@ class cfgVehicles
 		altNoForce=172400;
 		crewCrashProtection=0;
 		explosionShielding=0.88;
-		epeImpulseDamageCoef=0;
+		epeImpulseDamageCoef=0.25;
 		soundEngineOnInt[]=
 		{
 			"3as\3as_laat\sounds\LAAT_Start.ogg",
