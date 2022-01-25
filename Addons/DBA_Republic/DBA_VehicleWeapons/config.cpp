@@ -12399,7 +12399,7 @@ class CfgAmmo
 	class DBA_23mm_PS59_SAP : G_40mm_HE{
 		displayName="23mw PS59 SAPHEI";
 		hit = 100;
-		indirectHit = 12;
+		indirectHit = 27;
 		indirectHitRange = 6;
 		explosive= 1.0
 		warheadName = "SAPHEI";
@@ -12441,7 +12441,7 @@ class CfgAmmo
 	class DBA_45mm_PS73_SAP : G_40mm_HE{
 		displayName="45mw PS73 SAPHEI";
 		hit = 100;
-		indirectHit = 32;
+		indirectHit = 55;
 		indirectHitRange = 10;
 		explosive= 1.0
 		warheadName = "SAPHEI";
