@@ -149,6 +149,7 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0.44999999,0.38 };
 				iconScale = 0.2;
+				compatibleItems[] = {""};
 			};
 			class PointerSlot : PointerSlot_Rail
 			{

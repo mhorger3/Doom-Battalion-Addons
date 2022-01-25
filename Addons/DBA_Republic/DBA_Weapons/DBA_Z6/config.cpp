@@ -116,6 +116,7 @@ class CfgWeapons
 				iconPinpoint = "center";
 				iconPosition[] = { 0.551,0.219 };
 				iconScale = 0.2;
+				compatibleItems[] = {""};
 			};
 			class PointerSlot : PointerSlot_Rail
 			{
