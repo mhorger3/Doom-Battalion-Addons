@@ -219,7 +219,7 @@ class CfgAmmo
 		audiblefire = 35;
 		brightness = 1000;
 		effectfly = "DBA_BluePlasma";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltBlue.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		lightcolor[] = { 0.5,0.5,0.5 };
 		flaresize = 5;
 		tracerscale = 0.5;
