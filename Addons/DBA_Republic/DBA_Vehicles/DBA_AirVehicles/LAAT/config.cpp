@@ -17326,12 +17326,27 @@ class cfgVehicles
 	};
 	
 	//Experimental LAAT
-
-	class 3AS_Patrol_LAAT_Republic;
+	class 3AS_Patrol_LAAT_Base: Heli_Attack_01_base_F{
+		class Turrets: Turrets
+		{
+			class Copilot: MainTurret
+			{
+	
+			};
+		};
+	};
+	class 3AS_Patrol_LAAT_Republic : 3AS_Patrol_LAAT_Base{
+		class Turrets: Turrets
+		{
+			class Copilot: MainTurret
+			{
+	
+			};
+		};
+	};
 	class DBA_Patrol_LAAT:3AS_Patrol_LAAT_Republic
 	{
 		displayname="101st LAAT/le";
-		
 		faction="B_DBA_Republic_F";
 		scope=2;
 		scopeCurator=2;
@@ -17341,7 +17356,6 @@ class cfgVehicles
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
-			"DBA_23mw_GH197_AC",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -17351,7 +17365,128 @@ class cfgVehicles
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine",
-			"DBA_23mm_PS59_x400_mag",
+		};
+		class Turrets: Turrets
+		{
+			class Copilot: MainTurret
+			{
+				caneject=0;
+				castgunnershadow=1;
+				commanding=-1;
+				discretedistance[]={100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100};
+				discretedistanceinitindex=5;
+				gunneraction="LE_Pilot";
+				gunnerforceoptics=0;
+				displayname="CoPilot";
+				gunnergetinaction="Heli_Attack_01_Gunner_Enter";
+				gunnergetoutaction="Heli_Attack_01_Gunner_Exit";
+				gunnerinaction="";
+				gunnerlefthandanimname="lever_copilot";
+				gunneropticseffect[]=
+				{
+					"TankCommanderOptics1",
+					"BWTV"
+				};
+				gunneropticsmodel="";
+				gunnerrighthandanimname="stick_copilot";
+				initelev=0;
+				initturn=0;
+				iscopilot=1;
+				maxelev=20;
+				maxturn=75;
+				memorypointgunneroptics="GunnerView";
+				memorypointsgetingunner="pos_driver";
+				memorypointsgetingunnerdir="pos_driver_dir";
+				minelev=-65;
+				minturn=-75;
+				outgunnermayfire=1;
+				precisegetinout=1;
+				primarygunner=0;
+				selectionfireanim="zasleh";
+				soundservo[]=
+				{
+					"",
+					0.0099999998,
+					1
+				};
+				startengine=0;
+				animationSourceBody="mainTurret";
+				animationsourcegun="Maingun";
+				animationsourcehatch="";
+				body="mainTurret";
+				gun="Maingun";
+				turretinfotype="RscOptics_Heli_Attack_01_gunner";
+				weapons[]=
+				{
+					"DBA_23mw_GH197_AC",		
+				};
+				magazines[]=
+				{
+					"DBA_23mm_PS59_x400_mag"
+				};
+				class OpticsIn
+				{
+					class Wide
+					{
+						gunneropticsmodel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
+						initanglex=0;
+						initangley=0;
+						initfov=0.46599999;
+						maxanglex=30;
+						maxangley=100;
+						maxfov=0.46599999;
+						minanglex=-30;
+						minangley=-100;
+						minfov=0.46599999;
+						opticsdisplayname="W";
+						thermalmode[]={0,1};
+						visionmode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+					};
+					class Medium: Wide
+					{
+						gunneropticsmodel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
+						initfov=0.093000002;
+						maxfov=0.093000002;
+						minfov=0.093000002;
+						opticsdisplayname="M";
+					};
+					class Narrow: Wide
+					{
+						gunneropticsmodel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
+						initfov=0.028999999;
+						maxfov=0.028999999;
+						minfov=0.028999999;
+						opticsdisplayname="N";
+					};
+				};
+				class OpticsOut
+				{
+					class Monocular
+					{
+						gunneropticseffect[]={};
+						gunneropticsmodel="";
+						initanglex=0;
+						initangley=0;
+						initfov=1.1;
+						maxanglex=30;
+						maxangley=100;
+						maxfov=1.1;
+						minanglex=-30;
+						minangley=-100;
+						minfov=0.133;
+						visionmode[]=
+						{
+							"Normal",
+							"NVG"
+						};
+					};
+				};
+			};
 		};
 		class Components: Components
 		{
@@ -17496,7 +17631,6 @@ class cfgVehicles
 			};
 		};
 	};
-
 
 	class 442_laat_2_ab;
 	class Eventhandlers;
