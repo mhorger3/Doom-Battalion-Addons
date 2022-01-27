@@ -12841,7 +12841,7 @@ class CfgAmmo
                         objectDistanceLimitCoef = 1;
                         viewDistanceLimitCoef = 1;
 						};
-						maxTrackableSpeed = 95;
+						maxTrackableSpeed = 1595;
 						angleRangeHorizontal = 30;
 						angleRangeVertical = 30;
 						componentType = "IRSensorComponent";
@@ -12867,7 +12867,7 @@ class CfgAmmo
 		missileKeepLockedCone = 90;
 		missileLockMaxDistance = 5000;
 		missileLockMinDistance = 100;
-		missileLockMaxSpeed = 900;
+		missileLockMaxSpeed = 9000;
 		irLock = 1;
 		airLock = 2;
 		aiAmmoUsageFlags = "128 + 512";
@@ -12921,7 +12921,7 @@ class CfgAmmo
 		missileKeepLockedCone = 50;
 		missileLockMaxDistance = 3250;
 		missileLockMinDistance = 10;
-		missileLockMaxSpeed = 900;
+		missileLockMaxSpeed = 1900;
 		irLock = 1;
 		airLock = 2;
 		class Components{
@@ -12945,7 +12945,7 @@ class CfgAmmo
                         objectDistanceLimitCoef = 1;
                         viewDistanceLimitCoef = 1;
 						};
-						maxTrackableSpeed = 95;
+						maxTrackableSpeed = 9500;
 						angleRangeHorizontal = 30;
 						angleRangeVertical = 30;
 						componentType = "IRSensorComponent";
