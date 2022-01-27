@@ -214,8 +214,8 @@ class CfgMagazines
 		ammo = "DBA_Billow_base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 56;
-		count = 2;
+		mass = 40;
+		count = 3;
 		initspeed = 909;
 	};
 	class DBA_ZilloEMP_Mag : DBA_Mag_Base
