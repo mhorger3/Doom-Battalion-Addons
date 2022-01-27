@@ -16832,7 +16832,7 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_agm_x4_mag";
+						attachment="DBA_AD3M_x3_pylon";
 						priority=10;
 						maxweight=300;
 						UIposition[]={0.60000002,0.44999999};
@@ -16848,7 +16848,7 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_aa_x3_mag";
+						attachment="DBA_AD3M_x3_pylon";
 						priority=9;
 						maxweight=2500;
 						UIposition[]={0.55000001,0.34999999};
@@ -16864,7 +16864,7 @@ class cfgVehicles
 						{
 							"DBA_Universal_rail"
 						};
-						attachment="DBA_pylon_stomper_aa_x3_mag";
+						attachment="";
 						priority=7;
 						maxweight=5000;
 						UIposition[]={0.5,0.25};
@@ -16879,7 +16879,6 @@ class cfgVehicles
 						hardpoints[]=
 						{
 							"DBA_Universal_rail",
-							"B_HARM_RAIL",
 							"z95_CANON_PYLON"
 						};
 						priority=5;
@@ -16916,8 +16915,8 @@ class cfgVehicles
 		{
 			"Laserdesignator_pilotCamera",
 			"DBA_Aircraft_Heavy_Lasers_Green",
-			"dba_wynd_a2a",
-			"dba_wynd_agm",
+			"DBA_AD3M_AAM_Weapon",
+			"DBA_148mw_K2M_ATGM",
 			"CMFlareLauncher"
 		};
 		magazines[]=
@@ -16947,8 +16946,8 @@ class cfgVehicles
 			"DBA_generic_aircraft_cannon_Green_x200_mag",
 			"DBA_generic_aircraft_cannon_Green_x200_mag",
 			"DBA_generic_aircraft_cannon_Green_x200_mag",
-			"dba_a2a_x4_mag",
-			"dba_agm_x6_mag"
+			"DBA_AD3M_x3_pylon",
+			"DBA_148mm_Fletch_x4_mag"
 		};			
 	};
 	
