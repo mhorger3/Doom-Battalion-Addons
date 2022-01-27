@@ -74,7 +74,7 @@ class CfgWeapons
 		recoil = "recoil_m320";
 		maxZeroing = 2400;
 		cursor = "srifle";
-		initSpeed = 910;
+		initSpeed = 1050;
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
