@@ -27,6 +27,7 @@ class DBA_P2CloneBlindUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneBlind_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren"; // Adds swimsuit material to uniform allowing user to "shift" (fast) swim
 		hiddenSelections[]=
 		{
 			"camo",
@@ -61,6 +62,7 @@ class DBA_P2CloneKelUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneKel_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -90,6 +92,7 @@ class DBA_P2CloneDutchUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneDutch_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -120,6 +123,7 @@ class DBA_P2CloneJerecUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneJerec_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -150,6 +154,7 @@ class DBA_P2CloneVinUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneVin_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -179,6 +184,7 @@ class DBA_P2CloneKaiUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneKai_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -209,6 +215,7 @@ class DBA_P2CloneBlackwaterUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneBlackwater_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -243,6 +250,7 @@ class DBA_P2CloneSeatieUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneSeatie_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -272,6 +280,7 @@ class DBA_P2CloneAJUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneAJ_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -306,6 +315,7 @@ class DBA_P2CloneSparkUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneSpark_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -340,6 +350,7 @@ class DBA_P2CloneVulgarUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneVulgar_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -375,6 +386,7 @@ class DBA_P2CloneBloodUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneBlood_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -409,6 +421,7 @@ class DBA_P2CloneRepublicanUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneRepublican_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -438,6 +451,7 @@ class DBA_P2CloneFurnUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneFurn_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -467,6 +481,7 @@ class DBA_P2ClonePunisherUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2ClonePunisher_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -496,6 +511,7 @@ class DBA_P2CloneKodiakUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneKodiak_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -525,6 +541,7 @@ class DBA_P2CloneFodderUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneFodder_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -554,6 +571,7 @@ class DBA_P2CloneOaksyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneOaksy_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -583,6 +601,7 @@ class DBA_P2CloneMisfitUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneMisfit_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -617,6 +636,7 @@ class DBA_P2CloneFalconUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneFalcon_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -646,6 +666,7 @@ class DBA_P2CloneServoUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneServo_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -680,6 +701,7 @@ class DBA_P2CloneMuttUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneMutt_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -716,6 +738,7 @@ class DBA_P2CloneBaconLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneBacon_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -745,6 +768,7 @@ class DBA_P2CloneCourageLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneCourage_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -774,6 +798,7 @@ class DBA_P2CloneLambertLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneLambert_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -808,6 +833,7 @@ class DBA_P2CloneProdigyLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneProdigy_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -842,6 +868,7 @@ class DBA_P2CloneQuillLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneQuill_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -875,6 +902,7 @@ class DBA_P2CloneSeeforLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneSeefor_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -909,6 +937,7 @@ class DBA_P2CloneDolittleLegacyUniform : Uniform_Base
 		uniformModel = "-";
 		uniformClass = "B_DBA_P2CloneDolittle_F";
 		containerClass = "Supply150";
+		uniformType = "Neopren";
 		hiddenSelections[]=
 		{
 			"camo",
