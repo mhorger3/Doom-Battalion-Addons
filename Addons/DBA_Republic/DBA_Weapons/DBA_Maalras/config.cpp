@@ -209,11 +209,13 @@ class cfgWeapons {
 			{
 				iconPosition[] = { 0.33000001,0.37 };
 				iconScale = 0.25;
+				compatibleItems[] = {};
 			};
 			class MuzzleSlot : MuzzleSlot_57
 			{
 				iconPosition[] = { 0,0.5 };
 				iconScale = 0.25;
+				compatibleItems[] = {};
 			};
 			mass = 50;
 		};

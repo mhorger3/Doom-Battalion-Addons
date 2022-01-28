@@ -110,6 +110,7 @@ class CfgWeapons
 				iconPinpoint = "center";
 				iconPosition[] = { -0.07,0.389 };
 				iconScale = 0.2;
+				compatibleItems[] = {};
 			};
 			class CowsSlot : CowsSlot_Rail
 			{

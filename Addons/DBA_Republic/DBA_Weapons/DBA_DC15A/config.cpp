@@ -103,6 +103,7 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0,0.44999999 };
 				iconScale = 0.2;
+				compatibleItems[] = {};
 			};
 			class CowsSlot : CowsSlot_Rail
 			{
