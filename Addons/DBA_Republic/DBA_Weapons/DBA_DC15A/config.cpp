@@ -147,7 +147,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
 				soundBegin[] = {"begin1",1};
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
@@ -179,7 +179,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
 				soundBegin[] = {"begin1",1};
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
@@ -213,7 +213,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
 				soundBegin[] = {"begin1",1};
 				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
 				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
