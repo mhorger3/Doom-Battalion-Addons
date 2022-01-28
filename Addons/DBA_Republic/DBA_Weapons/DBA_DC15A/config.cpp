@@ -135,8 +135,6 @@ class CfgWeapons
 		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound"};
-			soundContinuous = 0;
-			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
@@ -148,10 +146,8 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundBegin[] = { "begin1",1 };
-				soundClosure[] = {"closure2",0.5 };
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				soundBegin[] = {"begin1",1};
 			};
 			
 			reloadTime = 0.13;
@@ -168,8 +164,6 @@ class CfgWeapons
 		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound"};
-			soundContinuous = 0;
-			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
@@ -181,10 +175,8 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure2",0.5 };
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				soundBegin[] = {"begin1",1};
 			};
 
 			reloadTime = 0.13;
@@ -202,8 +194,6 @@ class CfgWeapons
 		class Burst : Mode_Burst
 		{
 			sounds[] = {"StandardSound"};
-			soundContinuous = 0;
-			soundBurst = 1;
 			
 			class BaseSoundModeType
 			{
@@ -215,10 +205,8 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800 };
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundBegin[] = { "begin1",1 };
-				soundClosure[] = { "closure2",0.5 };
+				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\Data\DC15Shot.ogg",1,1,1800};
+				soundBegin[] = {"begin1",1};
 			};
 
 			reloadTime = 0.05;
