@@ -136,22 +136,16 @@ class CfgWeapons
 		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound"};
-			
+
 			class BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 };
+				closure2[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10 };
+				soundBegin[] = { "begin1",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
 			
 			reloadTime = 0.13;
@@ -168,22 +162,16 @@ class CfgWeapons
 		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound"};
-			
+
 			class BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 };
+				closure2[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10 };
+				soundBegin[] = { "begin1",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
 
 			reloadTime = 0.13;
@@ -202,22 +190,16 @@ class CfgWeapons
 		{
 			
 			sounds[] = {"StandardSound"};
-			
+
 			class BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
-				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_DC15A\DC15Shot.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_01",0.5,1,10};
-				closure2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 };
+				closure2[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10 };
+				soundBegin[] = { "begin1",1 };
+				soundClosure[] = { "closure2",0.5 };
 			};
 
 			reloadTime = 0.05;
