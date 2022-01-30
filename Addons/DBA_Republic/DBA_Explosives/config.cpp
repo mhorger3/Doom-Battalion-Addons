@@ -731,7 +731,7 @@ class CfgMagazines
 		allowedSlots[] = { 901 };
 		value = 5;
 		ammo = "DBA_ThermalDetBlock_Ammo";
-		mass = 80;
+		mass = 60;
 		count = 1;
 		initSpeed = 0;
 		maxLeadSpeed = 0;
