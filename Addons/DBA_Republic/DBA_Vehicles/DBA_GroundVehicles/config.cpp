@@ -2287,8 +2287,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2296,6 +2296,7 @@ class CfgVehicles
 		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=700;
+		crew="B_DBA_P2CloneTrooper_F";
 		displayName="RFV-101 Fennek";
 		class Turrets: Turrets
 		{
@@ -2375,6 +2376,31 @@ class CfgVehicles
 				count=1;
 			};
 		};
+		class TextureSources
+		{
+			class DBA_Fennek_Green
+			{
+				displayName = "Green";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+			class DBA_Fennek_Red
+			{
+				displayName = "Red";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+		};
 	};
 	class DBA_Fennek_GL: I_MRAP_03_gmg_F
 	{
@@ -2387,14 +2413,15 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
 		};
 		scope=2;
 		scopeCurator=2;
 		side=1;
 		faction="B_DBA_Republic_F";
 		armor=700;
+		crew="B_DBA_P2CloneTrooper_F";
 		displayName="RFV-101 Fennek GMG";
 		class TransportItems
 		{
@@ -2438,14 +2465,39 @@ class CfgVehicles
 				count=1;
 			};
 		};
+		class TextureSources
+		{
+			class DBA_Fennek_Green
+			{
+				displayName = "Green";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+			class DBA_Fennek_Red
+			{
+				displayName = "Red";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+		};
 	};
 	class DBA_Fennek_Testbed : I_MRAP_03_hmg_F{
 		ace_cargo_space = 400;
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = 
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek101st_ext_co.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2453,6 +2505,7 @@ class CfgVehicles
 		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=500;
+		crew="B_DBA_P2CloneTrooper_F";
 		displayName="Fennek CAV (Testbed)";
 		thrustDelay = 0.1;
 		dampingRateFullThrottle = 0.3;
@@ -2581,18 +2634,17 @@ class CfgVehicles
 			};
 		};
 	};
-	class DBA_Fennek_Medic: I_MRAP_03_hmg_F
+	class I_MRAP_03_F;
+	class DBA_Fennek_Medic: I_MRAP_03_F
 	{
 		ace_cargo_space=400;
 		hiddenSelections[]=
 		{
-			"Camo1",
-			"Camo2"
+			"Camo1"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\fennek_Medic_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Turret_co.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\fennek_Red_Medic_CO.paa"
 		};
 		scope=2;
 		scopeCurator=2;
@@ -2600,43 +2652,8 @@ class CfgVehicles
 		forceInGarage=1;
 		faction="B_DBA_Republic_F";
 		armor=700;
+		crew="B_DBA_P2CloneTrooper_F";
 		displayName="RFV-101 Medical Fennek";
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[]=
-				{
-					"DBA_Ground_HMG_Generic"
-				};
-				magazines[]=
-				{
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_green_x500_mag"
-				};
-			};
-			class CommanderTurret: CommanderTurret
-			{
-				weapons[]=
-				{
-					"CMFlareLauncher",
-					"SmokeLauncher",
-					"Laserdesignator_vehicle"
-				};
-				magazines[]=
-				{
-					"300Rnd_CMFlare_Chaff_Magazine",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"Laserbatteries"
-				};
-			};
-		};
 		class TransportBackpacks
 		{
 			class _transport_gravpack
@@ -2681,6 +2698,29 @@ class CfgVehicles
 			{
 				name="ACE_tourniquet";
 				count=20;
+			};
+		};
+		class TextureSources
+		{
+			class DBA_Fennek_Green
+			{
+				displayName = "Green";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_Medic_co.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+			class DBA_Fennek_Red
+			{
+				displayName = "Red";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Medic_co.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
 			};
 		};
 	};
