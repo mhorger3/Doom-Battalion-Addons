@@ -511,8 +511,8 @@ class cfgWeapons
 				soundBegin[] = {"begin1", 0.500000, "begin2", 0.500000};
 			};
 			reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar", 1.000000, 1.35, 20};
-			reloadTime = 0.10000;
-			artilleryDispersion = 1.00000;
+			reloadTime = 1.15000;
+			artilleryDispersion = 1.80000;
 			artilleryCharge = 0.4212;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 10;
@@ -531,7 +531,7 @@ class cfgWeapons
 
 		class Single3: Single1 {
 			displayName = "Full Charge";
-			artilleryCharge = 1;
+			artilleryCharge = 0.8;
 		};
 
 		class Burst1: Mode_Burst {
@@ -637,8 +637,8 @@ class cfgWeapons
 				soundBegin[] = {"begin1", 0.500000, "begin2", 0.500000};
 			};
 			reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar", 1.000000, 0.95, 20};
-			reloadTime = 0.150000;
-			artilleryDispersion = 1.500000;
+			reloadTime = 1.550000;
+			artilleryDispersion = 2.100000;
 			artilleryCharge = 0.4212;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 10;
@@ -657,7 +657,7 @@ class cfgWeapons
 
 		class Single3: Single1 {
 			displayName = "Full Charge";
-			artilleryCharge = 1;
+			artilleryCharge = 0.80;
 		};
 
 		class Burst1: Mode_Burst {
@@ -726,7 +726,7 @@ class cfgWeapons
 		reloadSound[]= {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar", 1.000000, 0.77, 20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_magazine_Mortar", 1.000000, 0.77, 20};
 		soundServo[] = {"", 0.000100, 1.000000};
-		reloadTime = 0.100000;
+		reloadTime = 2.150000;
 		magazineReloadTime = 0.15;
 		autoReload = 1;
 		canLock = 0;
@@ -761,8 +761,8 @@ class cfgWeapons
 				soundBegin[] = {"begin1", 0.500000, "begin2", 0.500000};
 			};
 			reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar", 1.000000, 0.77, 20};
-			reloadTime = 1.800000;
-			artilleryDispersion = 0.750000;
+			reloadTime = 2.150000;
+			artilleryDispersion = 1.650000;
 			artilleryCharge = 0.350000;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 10;
@@ -781,7 +781,7 @@ class cfgWeapons
 
 		class Single3: Single1 {
 			displayName = "Full Charge";
-			artilleryCharge = 1;
+			artilleryCharge = 0.85;
 		};
 
 		class Burst1: Mode_Burst {
@@ -941,7 +941,7 @@ class CfgMagazines{
 		shortnamemagazine="GPL-8 HE";
 		displayNameMFDFormat="HE";
 		displayNameShort="HE";
-		count=1;
+		count=6;
 		initspeed=142;
 		muzzleImpulseFactor[]= {0.000000, 0.000000};
 		tracersevery=1;
@@ -969,7 +969,7 @@ class CfgMagazines{
 		shortnamemagazine="GPM-15 HE";
 		displayNameMFDFormat="HE";
 		displayNameShort="HE";
-		count=1;
+		count=4;
 		initspeed=193;
 		muzzleImpulseFactor[]= {0.000000, 0.000000};
 		tracersevery=1;
@@ -1005,7 +1005,7 @@ class CfgMagazines{
 		shortnamemagazine="GPH-40 HE";
 		displayNameMFDFormat="HE";
 		displayNameShort="HE";
-		count=1;
+		count=2;
 		initspeed=211;
 		muzzleImpulseFactor[]= {0.000000, 0.000000};
 		tracersevery=1;
@@ -1029,70 +1029,70 @@ class CfgMagazines{
 	class DBA_60mm_GPL8_HE_csw_mag: DBA_60mm_GPL8_HE_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 6;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_60mm_GPL9_SMK_csw_mag: DBA_60mm_GPL9_SMK_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 3;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_60mm_GPL10_ILLUM_csw_mag: DBA_60mm_GPL10_ILLUM_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 3;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_94mm_GPM15_HE_csw_mag: DBA_94mm_GPM15_HE_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 4;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_94mm_GPM16_SMK_csw_mag: DBA_94mm_GPM16_SMK_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 3;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_94mm_GPM17_ILLUM_csw_mag: DBA_94mm_GPM17_ILLUM_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 2;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_94mm_GPM18_AB_csw_mag: DBA_94mm_GPM18_AB_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 3;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_120mm_GPH40_HE_csw_mag: DBA_120mm_GPH40_HE_Mag{
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 2;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_120mm_GPH42_SMK_csw_mag: DBA_120mm_GPH42_SMK_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 2;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
 	class DBA_120mm_GPH46_AB_csw_mag: DBA_120mm_GPH46_AB_Mag {
         scope = 2;
         type = 256;  // Must be 256 to show up in Arsenal
-        count = 1;
+        count = 2;
         model = "\A3\Weapons_F\Ammo\shell.p3d";
         ACE_isBelt = 1; // Enables belt linking for this magazine
     };
@@ -1219,10 +1219,10 @@ class CfgAmmo{
 		timeToLive = 180;
 		airFriction = 0;
 		sideairFriction = 0.000000;
-		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 1.0, 1900};
-		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 1.0, 1900};
-		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 1.0, 1900};
-		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 1.0, 1900};
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.95, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.9, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.925, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.97, 1900};
 		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 
 		class CamShakeExplode {
@@ -1272,12 +1272,13 @@ class CfgAmmo{
 		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
 		effectFlare = "CounterMeasureFlare";
 		aimAboveTarget[]= {30, 60, 120, 180, 240, 300, 360};
-		aimAboveDefault = 5;
+		aimAboveDefault = 7;
 		triggerTime = -1;
 		triggerSpeedCoef = 1;
 		lightColor[]= {0.950000, 0.950000, 1.000000, 0.500000};
 		smokeColor[]= {1.000000, 1.000000, 1.000000, 0.500000};
 		intensity= 10000;
+		brightness = 100;
 	};
 	class DBA_94mm_GPM18_AB : Sh_155mm_AMOS{
 		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
@@ -1372,14 +1373,14 @@ class CfgAmmo{
 		timeToLive = 180;
 		airFriction = 0;
 		sideairFriction = 0.000000;
-		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.67, 1900};
-		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.67, 1900};
-		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.67, 1900};
-		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.67, 1900};
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 3.511886, 0.67, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 3.511886, 0.65, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 3.511886, 0.60, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 3.511886, 0.57, 1900};
 		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 
 		class CamShakeExplode {
-			power = 30;
+			power = 50;
 			duration = 2.400000;
 			frequency = 10;
 			distance = 125.598999;
