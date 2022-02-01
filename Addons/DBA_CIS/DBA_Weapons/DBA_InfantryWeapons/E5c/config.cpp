@@ -117,7 +117,7 @@ class CfgWeapons{
 					1
 				};
 			};
-			reloadTime=0.05454545455;
+			reloadTime=0.0618556701;
 			dispersion=0.002327104;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
@@ -266,7 +266,7 @@ class CfgWeapons{
 			"far"
 		};
 		class manual : Mode_FullAuto{
-			reloadTime=0.09836065574;
+			reloadTime=0.1333333333;
 			sounds[]=
 			{
 				"StandardSound"
