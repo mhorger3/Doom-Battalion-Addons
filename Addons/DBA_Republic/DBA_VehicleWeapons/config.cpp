@@ -4583,7 +4583,6 @@ class CfgWeapons
 		displayName = "GH-197 23mw Rotary Autocannon";
 		scope=2;
 		muzzles[]= {"Low", "High"};
-		ballisticsComputer="2 + 4 + 16";
 		FCSMaxLeadSpeed=500;
 		FCSZeroingDelay=0.5;
 		canLock=0;
@@ -4591,6 +4590,7 @@ class CfgWeapons
 		class Low : autocannon_Base_F {
 			displayName = "GH-197 23mw Rotary Autocannon";
 			displayNameShort="GH-197";
+			ballisticsComputer=1;
 			magazines[]= 
 			{
 			"DBA_23mm_PS59_x400_mag",
@@ -4598,7 +4598,7 @@ class CfgWeapons
 			magazineReloadTime = 0.5;
 			class player: player 
 			{
-				dispersion = 0.0145444;
+				dispersion = 0.009308416;
 				reloadTime=0.04615384615;
 				textureType = "semi";
 				sounds[]=
@@ -4689,7 +4689,7 @@ class CfgWeapons
 		class High : Low {
 			class player: player 
 			{
-				dispersion = 0.0145444;
+				dispersion = 0.01163552;
 				reloadTime=0.02608695652;
 				textureType = "fullAuto";
 				sounds[]=
@@ -4782,13 +4782,13 @@ class CfgWeapons
 		displayName = "GH20K 45mw Heavy Autocannon";
 		scope=2;
 		muzzles[]= {"manual"};
-		ballisticsComputer="2 + 4 + 16";
 		FCSMaxLeadSpeed=500;
 		FCSZeroingDelay=0.5;
 		canLock=0;
 		shotFromTurret=0;
 		class manual : autocannon_Base_F {
 			displayName = "GH20K 45mw Heavy Autocannon";
+			ballisticsComputer=1;
 			magazines[]= 
 				{
 					"DBA_45mm_PS73_x80_mag",
@@ -4900,7 +4900,7 @@ class CfgWeapons
 		cursorAim = "Rocket";
 		showAimCursorInternal = 1;
 		holdsterAnimValue = 1;
-		ballisticsComputer="2 + 8 + 16";
+		ballisticsComputer=8;
 		class Far_AI: RocketPods {
 			displayName = "50mw R-5P Rocketpod";
 			sounds[]= {"StandardSound"};
@@ -5024,7 +5024,7 @@ class CfgWeapons
 		cursorAim = "Rocket";
 		showAimCursorInternal = 1;
 		holdsterAnimValue = 1;
-		ballisticsComputer="2 + 8 + 16";
+		ballisticsComputer=8;
 		class Far_AI: RocketPods {
 			displayName = "107mw R-10P Rocketpod";
 			sounds[]= {"StandardSound"};
@@ -5148,7 +5148,7 @@ class CfgWeapons
 		cursorAim = "Rocket";
 		showAimCursorInternal = 1;
 		holdsterAnimValue = 1;
-		ballisticsComputer="2 + 8 + 16";
+		ballisticsComputer=8;
 		class Far_AI: RocketPods {
 			displayName = "107mw R-10P Rocketpod";
 			sounds[]= {"StandardSound"};
@@ -5261,7 +5261,7 @@ class CfgWeapons
 		displayName="K-2M Fletch ATGM";
 		scope=2;
 		reloadTime=0.5;
-		magazineReloadTime=30;
+		magazineReloadTime=5;
 		reloadMagazineSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\reload_Missile_Launcher",
@@ -5334,7 +5334,7 @@ class CfgWeapons
 		displayName="AK-114A Ballista ATGM";
 		scope=2;
 		reloadTime=0.5;
-		magazineReloadTime=30;
+		magazineReloadTime=5;
 		reloadMagazineSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\reload_Missile_Launcher",
@@ -5626,7 +5626,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=-16;
 		canLock=2;
 		lockAcquire = 0;
-		weaponLockDelay=4.35;
+		weaponLockDelay=3.75;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
@@ -8905,7 +8905,7 @@ class CfgMagazines
 		shortnamemagazine="PS-73 SAPHEI";
 		displayNameMFDFormat="SAPHEI";
 		displayNameShort="SAPHEI";
-		count=80;
+		count=160;
 		initspeed=880;
 		tracersevery=1;
 	};
@@ -13026,7 +13026,7 @@ class CfgAmmo
 		cost = 500;
 		missileLockCone = 90;
 		missileKeepLockedCone = 50;
-		missileLockMaxDistance = 3250;
+		missileLockMaxDistance = 2500;
 		missileLockMinDistance = 10;
 		missileLockMaxSpeed = 1900;
 		irLock = 1;
