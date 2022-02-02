@@ -973,18 +973,6 @@ class CfgVehicles
 				gunnerForceOptics=0;
 				forceHideGunner=0;
 				commanding=1;
-				class OpticsIn: Optics_Gunner_MBT_02
-				{
-					class Wide: Wide
-					{
-					};
-					class Medium: Medium
-					{
-					};
-					class Narrow: Narrow
-					{
-					};
-				};
 				class HitPoints
 				{
 					class HitTurret
