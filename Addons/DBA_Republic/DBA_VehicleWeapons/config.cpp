@@ -73,6 +73,7 @@ class CfgPatches
 			"DBA_MG33A_AAM",
 			"DBA_CIS_Chafflauncher",
 			"DBA_80mw_UP8R_Rockets",
+			"DBA_170mw_PK72_Cannon",
 			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
 		};
@@ -166,6 +167,9 @@ class CfgPatches
 			"DBA_80mm_UP8R_x48_Pylon",
 			"DBA_Chaff_x100_mag",
 			"DBA_25mm_PL25S_x300_mag",
+			"DBA_170mm_K46_x10_mag",
+			"DBA_170mm_KN46_x10_mag",
+			"DBA_170mm_K46H_x10_mag",
 			"DBA_100mm_UB4H_x100_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
@@ -307,6 +311,11 @@ class CfgPatches
 			"DBA_80mm_UP8R_Rocket",
 			"DBA_PL25S_Penetrator",
 			"DBA_25mm_PL25S_HEDP",
+			"DBA_K46_Penetrator",
+			"DBA_K46H_Penetrator",
+			"DBA_170mm_K46_AC",
+			"DBA_170mm_KN46_HE",
+			"DBA_170mm_K46H_HEAT",
 			"DBA_lancer_mbt_ap_ammo",
 			"DBA_lancer_mbt_he_ammo",
 			"DBA_lancer_mbt_td_ammo"
@@ -6836,6 +6845,70 @@ class CfgWeapons
 			maxRangeProbab=0.050000001;
 		};
 	};
+	//Borodino Weapons
+	class DBA_170mw_PK72_Cannon : cannon_120mm{
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 20;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
+		displayName="170mw PK-72 Ymir Mass Driver";
+		scope=2;
+		magazines[]=
+		{
+			"DBA_170mm_K46_x10_mag",
+			"DBA_170mm_K46H_x10_mag",
+			"DBA_170mm_KN46_x10_mag",
+		};
+		magazineReloadTime=21.5;
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.65,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.65,
+			10
+		};
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					15.555,
+					0.57,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=21.5;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+		};
+	};
 	//Vulture Weapons
 	class DBA_30mw_G108K : CannonCore{
 		displayName = "G108K 30mw Autocannon";
@@ -9101,6 +9174,40 @@ class CfgMagazines
 		displayNameShort="UB-15";
 		count=500;
 		initspeed=880;
+		tracersevery=1;
+	};
+	//Borodino Ammo
+	class DBA_170mm_K46_x10_mag : VehicleMagazine{
+		displayname="K46 170mw Anti-Concrete";
+		ammo="DBA_170mm_K46_AC";
+		displaynamemagazine="K46 170mw Anti-Concrete";
+		shortnamemagazine="K46 Anti-Concrete";
+		displayNameMFDFormat="Anti-Concrete";
+		displayNameShort="Anti-Concrete";
+		count=10;
+		initspeed=920;
+		tracersevery=1;
+	};
+	class DBA_170mm_KN46_x10_mag : VehicleMagazine{
+		displayname="KN46 170mw High Explosive";
+		ammo="DBA_170mm_KN46_HE";
+		displaynamemagazine="KN46 170mw High Explosive";
+		shortnamemagazine="KN46 High Explosive";
+		displayNameMFDFormat="High Explosive";
+		displayNameShort="High Explosive";
+		count=10;
+		initspeed=920;
+		tracersevery=1;
+	};
+	class DBA_170mm_K46H_x10_mag : VehicleMagazine{
+		displayname="K46H 170mw High Explosive Anti-Tank";
+		ammo="DBA_170mm_K46H_HEAT";
+		displaynamemagazine="K46H 170mw HEAT";
+		shortnamemagazine="K46H HEAT";
+		displayNameMFDFormat="HEAT";
+		displayNameShort="HEAT";
+		count=10;
+		initspeed=920;
 		tracersevery=1;
 	};
 	//New Turrets
@@ -13251,6 +13358,151 @@ class CfgAmmo
 		triggerOnImpact = 1;
 		deleteParentWhenTriggered = 0;
 	};
+	//Borodino Ammo
+	class DBA_K46_Penetrator : ammo_Penetrator_Base{
+		hit=2500;
+		warheadName = "Anti-Concrete";
+		caliber=32;
+	};
+	class DBA_K46H_Penetrator : ammo_Penetrator_Base{
+		hit=1700;
+		warheadName = "HEAT";
+		caliber=29;
+	};
+	class DBA_170mm_K46_AC : Sh_120mm_APFSDS{
+		displayName="170mw K46 Anti-Concrete Round";
+		hit=500;
+		warheadName="Anti-Concrete";
+		indirectHit=300;
+		indirectHitRange=0.33;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=920;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=0;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=10;
+		airFriction=0;
+		muzzleEffect="";
+		caliber=28.50356295;
+		typicalSpeed=1000;
+		coefGravity=0.0;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01", 1.778279, 0.6, 1800};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02", 1.778279, 0.7, 1800};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03", 1.778279, 0.65, 1800};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04", 1.778279, 0.75, 1800};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo = "DBA_K46_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_170mm_KN46_HE : Sh_120mm_APFSDS{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 62595.696;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 6971.70904;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2440;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		displayName="170mw PL-1 High Explosive High Drag";
+		hit=400;
+		warheadName="HE";
+		indirectHit=1000;
+		indirectHitRange=20;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=920;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=0.0;
+		muzzleEffect="";
+		caliber=5.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01", 1.778279, 0.65, 1800};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02", 1.778279, 0.75, 1800};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03", 1.778279, 0.6, 1800};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04", 1.778279, 0.7, 1800};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_170mm_K46H_HEAT : Sh_120mm_APFSDS{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 27000;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 2750;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2440;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		displayName="170mw PL-1 High Explosive High Drag";
+		hit=300;
+		warheadName="HE";
+		indirectHit=300;
+		indirectHitRange=8;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=920;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=0.0;
+		muzzleEffect="";
+		caliber=5.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01", 1.778279, 0.65, 1800};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02", 1.778279, 0.75, 1800};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03", 1.778279, 0.6, 1800};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04", 1.778279, 0.7, 1800};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo = "DBA_K46H_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		triggerOnImpact = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	//END
 	// Start of PN32 Field Gun Munitions
 	class DBA_PM1_Penetrator : ammo_Penetrator_Base{
 		hit=500;
