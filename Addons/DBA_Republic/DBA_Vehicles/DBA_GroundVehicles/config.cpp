@@ -30,6 +30,7 @@ class CfgPatches
 			"DBA_Command_Mobility_Vehicle",
 			"DBA_LSV",
 			"DBA_ATTE_Base",
+			"DBA_Borodino_TD",
 			"101st_patrolcraft",
 			"DBA_Highgrav_transport_HMG",
 			"DBA_Highgrav_transport_HE"
@@ -611,32 +612,32 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side=1;
-		displayName="Command Mobility Vehicle";
+		displayName="Bommand Mobility Vehicle";
 		faction="B_DBA_Republic_F";
 		thrustDelay = 0.1;
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 195;
 		fuelCapacity = 16;
 		waterLeakiness = 0.0;
-		waterLinearDampingCoefX = 10.0;
+		waterLinearDampingCoefX = 7.0;
 		waterLinearDampingCoefY = 2.0;
 		waterResistanceCoef = 0.0005;
-		rudderForceCoef = 1.25;
+		rudderForceCoef = 0.65;
 		waterAngularDampingCoef = 1.0;
 		canFloat = 1;
 		transportSoldier=25;
 		slowSpeedForwardCoef = 0.55;
 		normalSpeedForwardCoef = 0.95;
 		wheelCircumference = 2.633;
-		antiRollbarForceCoef = 30;
-		antiRollbarForceLimit = 80;
+		antiRollbarForceCoef = 300;
+		antiRollbarForceLimit = 800;
 		antiRollbarSpeedMin = 0;
 		antiRollbarSpeedMax = 300;
 		idleRpm = 500;
 		redRpm = 8000;
 		accelAidForceCoef = 6.5;
 		accelAidForceYOffset = -1;
-		accelAidForceSpd = 150;
+		accelAidForceSpd = 195;
 		enginePower = 1500;
 		minOmega = 52.3598775;
 		maxOmega = 837.75804;
@@ -713,6 +714,197 @@ class CfgVehicles
 			//plateFormat = "Lamby's Toes ,Daddy Blind ,ButterBeno ,Hammer had fun ,Dagger had fun ,Biggus Dickus ,Thiccums ,Hoggers,DA DA DA,Wolfe,Corruption dad,Conservative,Asshole,Hoo haw";
 			plateFormat = "Lamby's Toes";
 			plateLetters="ABCDEFHIKLMOPRSTVXYZ";
+		};
+	};
+	//Borodino TD
+	class MBT_02_base_F : Tank_F{
+		class turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class MBT_02_arty_base_F : MBT_02_base_F{
+		class turrets: turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+	};
+	class DBA_Borodino_TD : MBT_02_arty_base_F{
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Borodino Tank Destroyer";
+		editorSubcategory="EdSubcat_Tanks";
+		crew="";
+		faction="B_DBA_Republic_F";
+		armor=1250;
+		armorStructural=8;
+		damageResistance=0.0038900001;
+		cost=2500000;
+		crewVulnerable=0;
+		crewExplosionProtection=0.0;
+		artilleryScanner = 0;
+		normalSpeedForwardCoef=1.0;
+		slowSpeedForwardCoef=0.55;
+		enginePower=703.657434;
+		maxOmega=366.5;
+		minOmega=62.83;
+		maxSpeed=40;
+		peakTorque=1921;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=800000;
+		idleRpm=600;
+		redRpm=3500;
+		epeImpulseDamageCoef=0.000;
+		class complexGearbox
+		{
+			GearboxRatios[]=
+			{
+				"R1",
+				-0.54000002,
+				"N",
+				0,
+				"D1",
+				3.4300001,
+				"D2",
+				2.01,
+				"D3",
+				1.42,
+				"D4",
+				1,
+				"D5",
+				0.82999998,
+				"D6",
+				0.58999997
+			};
+			TransmissionRatios[]=
+			{
+				"High",
+				8
+			};
+			gearBoxMode="auto";
+			moveOffGear=1;
+			driveString="D";
+			neutralString="N";
+			reverseString="R";
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+							"DBA_25mw_P25S_Cannon",
+							"SmokeLauncher"
+						};
+						magazines[]=
+						{
+							"DBA_25mm_PL25S_x300_mag",
+							"SmokeLauncherMag"
+						};
+					};
+				};
+				animationSourceHatch="hatchCommander";
+				gunnerAction="Gunner_MBT_02_arty_F_out";
+				gunnerInAction="Gunner_MBT_02_arty_F_in";
+				selectionFireAnim="";
+				gunBeg="Usti hlavne3";
+				gunEnd="Konec hlavne3";
+				weapons[]=
+				{
+					"DBA_170mw_PK72_Cannon"
+				};
+				magazines[]=
+				{
+					"DBA_170mm_K46_x10_mag",
+					"DBA_170mm_KN46_x10_mag",
+					"DBA_170mm_K46H_x10_mag",
+				};
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",
+					0.15848932,
+					0.85,
+					50
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",
+					0.15848932,
+					0.85,
+					50
+				};
+				minElev=-8;
+				maxElev=50;
+				initElev=10;
+				minCamElev=-8;
+				maxCamElev=50;
+				elevationMode=0;
+				maxHorizontalRotSpeed=0.55999997;
+				maxVerticalRotSpeed=0.5299999;
+				stabilizedInAxes = 3;
+				memoryPointGunnerOptics="gunnerview";
+				cameraDir="look";
+				turretInfoType="RscOptics_MBT_02_gunner";
+				gunnerForceOptics=0;
+				forceHideGunner=0;
+				commanding=1;
+				class OpticsIn: Optics_Gunner_MBT_02
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=0.80000001;
+						material=-1;
+						armorComponent="hit_main_turret";
+						name="hit_main_turret_point";
+						visual="-";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.2;
+						radius=0.25;
+						isTurret=1;
+					};
+					class HitGun
+					{
+						armor=0.60000002;
+						material=-1;
+						armorComponent="hit_main_gun";
+						name="hit_main_gun_point";
+						visual="-";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.40000001;
+						radius=0.2;
+						isGun=1;
+					};
+				};
+			};
 		};
 	};
 	class 3as_ATTE_Base: Tank_F
