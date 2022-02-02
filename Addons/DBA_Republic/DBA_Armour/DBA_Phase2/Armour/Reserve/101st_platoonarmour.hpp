@@ -15,7 +15,7 @@ class DBA_ReserveArmour : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\Res_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\Res_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -46,7 +46,7 @@ class DBA_ReserveCI : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCI_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCI_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -77,7 +77,7 @@ class DBA_ReserveCIC : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCIC_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -108,7 +108,7 @@ class DBA_ReserveCM : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCM_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
@@ -139,7 +139,7 @@ class DBA_ReserveCMC : Uniform_Base
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCMC_Armor_uppper_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\ResCMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
 	};
 	class ItemInfo : UniformItem
