@@ -4103,6 +4103,7 @@ class CfgWeapons
 		class HE: autocannon_30mm_RCWS {
 			displayName = "GAI-BO1 Autocannon";
 			shotFromTurret=0;
+			ballisticsComputer=1;
 			magazines[]= 
 				{
 					"DBA_20mm_P594_x250_mag",
@@ -4111,7 +4112,7 @@ class CfgWeapons
 			class player: player 
 			{
 				reloadTime = 0.06;
-				dispersion = 0.000170;
+				dispersion = 0.00436332;
 				sounds[]=
 				{
 					"StandardSound"
@@ -4210,6 +4211,7 @@ class CfgWeapons
 		class AP: autocannon_30mm_RCWS {
 			displayName = "GAI-BO1 Autocannon";
 			shotFromTurret=0;
+			ballisticsComputer=1;
 			magazines[]= 
 				{
 					"DBA_20mm_PM359_x150_mag",
@@ -4219,7 +4221,7 @@ class CfgWeapons
 			{
 				reloadTime = 0.06;
 				
-				dispersion = 0.000170;
+				dispersion = 0.00436332;
 				sounds[]=
 				{
 					"StandardSound"
@@ -4315,10 +4317,9 @@ class CfgWeapons
 			};
 		}; 
 		showAimCursorInternal = 0;
-		ballisticsComputer = "2 + 16";
 		FCSMaxLeadSpeed = 60;
 		FCSZeroingDelay = 0.5;
-		maxZeroing = 2500;
+		maxZeroing = 3500;
 	};
 	class DBA_20mw_LAATBALL_AC : autocannon_30mm_RCWS {
 		muzzles[] = { "HE", "AP" };
@@ -4333,7 +4334,7 @@ class CfgWeapons
 			class player : player
 			{
 				reloadTime = 0.06;
-				dispersion = 0.000550;
+				dispersion = 0.00436332;
 				sounds[] =
 				{
 					"StandardSound"
@@ -4441,7 +4442,7 @@ class CfgWeapons
 			{
 				reloadTime = 0.06;
 
-				dispersion = 0.000170;
+				dispersion = 0.00436332;
 				sounds[] =
 				{
 					"StandardSound"
@@ -4537,9 +4538,9 @@ class CfgWeapons
 			};
 		};
 		showAimCursorInternal = 0;
-		ballisticsComputer = "1";
 		FCSMaxLeadSpeed = 60;
 		FCSZeroingDelay = 0.5;
+		ballisticsComputer=1;
 		maxZeroing = 2500;
 	};
 	class DBA_G13_Coaxial : LMG_RCWS {
@@ -11759,7 +11760,7 @@ class CfgAmmo
 		SoundSetExplosion[]= {"", "Shell155mm_Tail_SoundSet", "Explosion_Debris_SoundSet"};
 	};
 	class DBA_20mm_PM359_KEP : B_40mm_GPR{
-		hit = 80;
+		hit = 40;
 		indirectHit = 5;
 		indirectHitRange = 0.15;
 		explosive= 0.0
@@ -11817,8 +11818,8 @@ class CfgAmmo
 	};
 	class DBA_20mm_P594_HEI : DBA_20mm_PM359_KEP{
 		hit = 10;
-		indirectHit = 40;
-		indirectHitRange = 6.45;
+		indirectHit = 20;
+		indirectHitRange = 5.5;
 		explosive= 1
 		warheadName = "HEI";
 		caliber = 5;
