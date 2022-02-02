@@ -75,9 +75,13 @@ class CfgVehicles
 		damageResistance = 0.0054700002;
 		cost = 2500000;
 		crewVulnerable = 0;
-		epeImpulseDamageCoef = 18;
+		epeImpulseDamageCoef = 0.1;
 		waterPPInVehicle = 0;
 		wheelCircumference = 2.1500001;
+		antiRollbarForceCoef = 300;
+		antiRollbarForceLimit = 800;
+		antiRollbarSpeedMin = 0;
+		antiRollbarSpeedMax = 300;
 		tracksSpeed = 1.4;
 		model = "\3AS\3AS_AAT\model\3AS_AAT.p3d";
 		picture = "\A3\armor_f_gamma\MBT_01\Data\UI\Slammer_M2A1_Base_ca.paa";

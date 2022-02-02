@@ -145,6 +145,10 @@ class CfgVehicles
 				epeImpulseDamageCoef = 0.55;
 				waterPPInVehicle = 0;
 				wheelCircumference = 2.1500001;
+				antiRollbarForceCoef = 300;
+				antiRollbarForceLimit = 800;
+				antiRollbarSpeedMin = 0;
+				antiRollbarSpeedMax = 300;
 				tracksSpeed = 1.4;
 				model = "\3AS\3AS_GAT\3AS_GAT.p3d";
 				picture = "\A3\armor_f_gamma\MBT_01\Data\UI\Slammer_M2A1_Base_ca.paa";
