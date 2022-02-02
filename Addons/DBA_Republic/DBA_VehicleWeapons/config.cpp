@@ -9182,6 +9182,7 @@ class CfgMagazines
 		displayname="K46 170mw Anti-Concrete";
 		ammo="DBA_170mm_K46_AC";
 		displaynamemagazine="K46 170mw Anti-Concrete";
+		muzzleimpulsefactor[] = { 5,5 };
 		shortnamemagazine="K46 Anti-Concrete";
 		displayNameMFDFormat="Anti-Concrete";
 		displayNameShort="Anti-Concrete";
@@ -9193,6 +9194,7 @@ class CfgMagazines
 		displayname="KN46 170mw High Explosive";
 		ammo="DBA_170mm_KN46_HE";
 		displaynamemagazine="KN46 170mw High Explosive";
+		muzzleimpulsefactor[] = { 5,5 };
 		shortnamemagazine="KN46 High Explosive";
 		displayNameMFDFormat="High Explosive";
 		displayNameShort="High Explosive";
@@ -9204,6 +9206,7 @@ class CfgMagazines
 		displayname="K46H 170mw High Explosive Anti-Tank";
 		ammo="DBA_170mm_K46H_HEAT";
 		displaynamemagazine="K46H 170mw HEAT";
+		muzzleimpulsefactor[] = { 5,5 };
 		shortnamemagazine="K46H HEAT";
 		displayNameMFDFormat="HEAT";
 		displayNameShort="HEAT";
