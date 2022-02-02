@@ -636,6 +636,8 @@ class CfgVehicles
 		antiRollbarSpeedMax = 300;
 		idleRpm = 100;
 		redRpm = 2100;
+		maxCompression = 0.15;
+		maxDroop = 0.15;
 		accelAidForceCoef = 1.2;
 		accelAidForceYOffset = -1;
 		accelAidForceSpd = 55;
@@ -735,6 +737,8 @@ class CfgVehicles
 		rudderForceCoef = 0.65;
 		waterAngularDampingCoef = 1.0;
 		canFloat = 1;
+		maxCompression = 0.15;
+		maxDroop = 0.15;
 		transportSoldier=25;
 		slowSpeedForwardCoef = 0.55;
 		normalSpeedForwardCoef = 0.95;
