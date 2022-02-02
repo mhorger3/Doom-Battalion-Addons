@@ -2927,6 +2927,31 @@ class CfgVehicles
 				count=1;
 			};
 		};
+		class TextureSources
+		{
+			class DBA_Fennek_Green
+			{
+				displayName = "Green";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Green_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+			class DBA_Fennek_Red
+			{
+				displayName = "Red";
+				author = "Seatie";
+				textures[] = 
+				{
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_co.paa",
+					"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\Fennek\Fennek_Red_Turret_CO.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
+		};
 	};
 	class I_MRAP_03_F;
 	class DBA_Fennek_Medic: I_MRAP_03_F
