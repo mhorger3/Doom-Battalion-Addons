@@ -1710,9 +1710,6 @@ class CfgVehicles
 						minTrackableATL=-1e+010;
 						maxTrackableATL=1e+010;
 					};
-                class DataLinkSensorComponent
-                {
-                };
             };
         };
         class TransportCountermeasuresComponent
