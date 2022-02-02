@@ -8906,7 +8906,7 @@ class CfgMagazines
 		displayNameMFDFormat="SAPHEI";
 		displayNameShort="SAPHEI";
 		count=160;
-		initspeed=880;
+		initspeed=1415;
 		tracersevery=1;
 	};
 	class DBA_148mm_Fletch_x4_mag : VehicleMagazine{
@@ -12279,7 +12279,7 @@ class CfgAmmo
 		timeToLive=20;
 	};
 	class DBA_792_M5A : B_762x54_Ball {
-		hit = 32;
+		hit = 18;
 		indirectHit = 8;
 		indirectHitRange = 0.5;
 		displayname = "7.92 M-5a";
@@ -12309,7 +12309,7 @@ class CfgAmmo
 		waterFriction=0;
 	};
 	class DBA_762_54_REC : B_762x54_Ball{
-		hit = 40;
+		hit = 22;
 		indirectHit = 6;
 		indirectHitRange = 0.66;
 		displayname = "7.62mw REC";
@@ -12341,7 +12341,7 @@ class CfgAmmo
 	};
 	class DBA_762_51_D61 : DBA_762_54_REC
 	{
-		hit = 38;
+		hit = 22;
 		indirectHit = 2;
 		indirectHitRange = 0.2;
 		displayname = "7.62mw D61";
@@ -12373,7 +12373,7 @@ class CfgAmmo
 	};
 	class DBA_792_PKW : DBA_762_54_REC
 	{
-		hit = 42;
+		hit = 25;
 		indirectHit = 3;
 		indirectHitRange = 0.1;
 		displayname = "7.92mw PKW";
@@ -12405,7 +12405,7 @@ class CfgAmmo
 	};
 
 	class DBA_762_54_DN71 : B_762x54_Ball{
-		hit = 40;
+		hit = 25;
 		indirectHit = 3;
 		indirectHitRange = 0.1;
 		displayname = "7.62mw DN71";
@@ -12437,7 +12437,7 @@ class CfgAmmo
 	};
 	class DBA_127_X962_SLAP : DBA_762_51_D61
 	{
-		hit = 60;
+		hit = 32;
 		indirectHit = 10;
 		indirectHitRange = 0.8;
 		displayname = "12.7mw X962";
@@ -12479,29 +12479,29 @@ class CfgAmmo
 		caliber=16.66666667;
 	};
 	class ammo_Fletch_Penetrator : ammo_Penetrator_Base{
-		hit=750;
+		hit=675;
 		warheadName = "HEAT";
 		caliber=26.66666667;
 	};
 	class ammo_Ballista_Penetrator : ammo_Penetrator_Base{
-		hit=1000;
+		hit=1100;
 		warheadName = "Tandem";
 		caliber=40;
 	};
 	class ammo_Onager_Penetrator : ammo_Penetrator_Base{
-		hit=2000;
+		hit=5000;
 		warheadName = "Tandem";
 		caliber=40;
 	};
 	class ammo_R10P_Penetrator : ammo_Penetrator_Base{
-		hit=600;
+		hit=500;
 		warheadName = "HEAT";
-		caliber=25;
+		caliber=28;
 	};
 	class ammo_R20P_Penetrator : ammo_Penetrator_Base{
-		hit=850;
+		hit=950;
 		warheadName = "HEAT";
-		caliber=36.66666667;
+		caliber=39.66666667;
 	};
 	class DBA_23mm_PS59_SAP : G_40mm_HE{
 		displayName="23mw PS59 SAPHEI";
@@ -12558,10 +12558,10 @@ class CfgAmmo
 		airFriction = 0;
 		timeToLive = 40;
 		initSpeed=1415;
-		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
-		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
-		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
-		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 1, 1600};
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 2.778279, 0.9, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 2.778279, 0.95, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 2.778279, 0.93, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 2.778279, 0.92, 1600};
 		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
@@ -12601,7 +12601,7 @@ class CfgAmmo
 		simulationStep = 0.002000;
 		timeToLive = 75;
 		initTime = 0.05;
-		thrustTime = 3;
+		thrustTime = 15;
 		thrust = 80;
 		maxSpeed = 160;
 		maneuvrability = 10;
@@ -12738,14 +12738,14 @@ class CfgAmmo
 						angleRangeHorizontal = 30;
 						angleRangeVertical = 30;
 						componentType = "IRSensorComponent";
-						typeRecognitionDistance = 2000;
+						typeRecognitionDistance = 20000;
 						maxFogSeeThrough = 1.0;
 						color[] = {1,0,0,1};
 						allowsMarking = 1;
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
 						minSpeedThreshold = 0;
-						maxSpeedThreshold = 100;
+						maxSpeedThreshold = 1000;
 						animDirection = "";
 						aimDown = 0;
 						minTrackableSpeed = -1e+010;
@@ -12770,7 +12770,7 @@ class CfgAmmo
 		missileKeepLockedCone = 70;
 		missileLockMaxDistance = 11000;
 		missileLockMinDistance = 100;
-		missileLockMaxSpeed = 95;
+		missileLockMaxSpeed = 905;
 		irLock = 1;
 		aiAmmoUsageFlags = "128 + 512";
 		dangerRadiusHit = 1000;
@@ -12834,7 +12834,7 @@ class CfgAmmo
 	class DBA_107mm_R10P_Rocket : RocketBase{
 		model = "\A3\Weapons_F\Ammo\Rocket_01_fly_F";
 		proxyShape = "\A3\Weapons_F_EPC\Ammo\Rocket_03_HE_F.p3d";
-		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1",0.630957,1.2,1700};
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1",0.630957,0.9,1700};
 		warheadName="HEAT/FRAG";
 		simulation="shotRocket";
 		submunitionAmmo="ammo_R10P_Penetrator";
@@ -12870,7 +12870,7 @@ class CfgAmmo
 	class DBA_200mm_R20P_Rocket : RocketBase{
 		model = "\A3\Weapons_F\Ammo\Rocket_01_fly_F";
 		proxyShape = "\A3\Weapons_F_EPC\Ammo\Rocket_03_HE_F.p3d";
-		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1",0.630957,1.2,1700};
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_1",0.630957,0.8,1700};
 		warheadName="BESH";
 		simulation="shotRocket";
 		submunitionAmmo="ammo_R20P_Penetrator";
