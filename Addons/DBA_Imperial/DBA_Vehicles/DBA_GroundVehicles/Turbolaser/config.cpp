@@ -83,7 +83,7 @@ class CfgVehicles
 		accuracy = 1;
 		editorPreview = "\A3\EditorPreviews_F_Jets\Data\Cfgvehicles\B_AAA_system_01_F.jpg";
 		unitInfoType = "RscUnitInfoTank";
-		model = "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\DBA_Turbolaser.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\DBA_Turbolaser.p3d";
 		hiddenSelections[] =
 		{
 			"Camo",
@@ -91,8 +91,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\Data\Turbo_Laser_Tower_Body_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\Data\Turbo_Laser_Gun_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Gun_CO.paa"
 		};
 		extCameraPosition[] = { 0,1.5,-10 };
 		canFloat = 0;
