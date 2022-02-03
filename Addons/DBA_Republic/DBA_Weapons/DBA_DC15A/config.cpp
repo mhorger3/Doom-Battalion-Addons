@@ -399,6 +399,18 @@ class CfgWeapons
 			midRangeProbab = 0.0099999998;
 			maxRange = 400;
 			maxRangeProbab = 0.0099999998;
+			
+			sounds[] = {"StandardSound"};
+
+			class BaseSoundModeType {};
+			
+			class StandardSound : BaseSoundModeType
+			{
+				begin1[] = { "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800 };
+				closure2[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Closure_Mx_02",0.5,1,10 };
+				soundBegin[] = { "begin1",1 };
+				soundClosure[] = { "closure2",0.5 };
+			};
 		};
 		class ItemInfo
 		{
