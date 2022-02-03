@@ -620,7 +620,7 @@ class CfgVehicles
 		maxSpeed = 85;
 		fuelCapacity = 16;
 		waterLeakiness = 10.0;
-		waterLinearDampingCoefX = 7.0;
+		waterLinearDampingCoefX = 10.0;
 		waterLinearDampingCoefY = 2.0;
 		waterResistanceCoef = 0.0005;
 		rudderForceCoef = 0.65;
@@ -731,7 +731,7 @@ class CfgVehicles
 		maxSpeed = 195;
 		fuelCapacity = 16;
 		waterLeakiness = 0.0;
-		waterLinearDampingCoefX = 7.0;
+		waterLinearDampingCoefX = 10.0;
 		waterLinearDampingCoefY = 2.0;
 		waterResistanceCoef = 0.0005;
 		rudderForceCoef = 0.65;
