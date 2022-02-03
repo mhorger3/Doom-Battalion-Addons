@@ -78,8 +78,8 @@ class CfgVehicles
 		epeImpulseDamageCoef = 0.1;
 		waterPPInVehicle = 0;
 		wheelCircumference = 2.1500001;
-		antiRollbarForceCoef = 300;
-		antiRollbarForceLimit = 800;
+		antiRollbarForceCoef = 45;
+		antiRollbarForceLimit = 100;
 		antiRollbarSpeedMin = 0;
 		antiRollbarSpeedMax = 300;
 		tracksSpeed = 1.4;

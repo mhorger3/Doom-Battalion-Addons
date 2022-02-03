@@ -630,8 +630,8 @@ class CfgVehicles
 		slowSpeedForwardCoef = 0.55;
 		normalSpeedForwardCoef = 1.00;
 		wheelCircumference = 2.633;
-		antiRollbarForceCoef = 300;
-		antiRollbarForceLimit = 800;
+		antiRollbarForceCoef = 45;
+		antiRollbarForceLimit = 100;
 		antiRollbarSpeedMin = 0;
 		antiRollbarSpeedMax = 300;
 		idleRpm = 100;
@@ -743,8 +743,8 @@ class CfgVehicles
 		slowSpeedForwardCoef = 0.55;
 		normalSpeedForwardCoef = 0.95;
 		wheelCircumference = 2.633;
-		antiRollbarForceCoef = 300;
-		antiRollbarForceLimit = 800;
+		antiRollbarForceCoef = 45;
+		antiRollbarForceLimit = 100;
 		antiRollbarSpeedMin = 0;
 		antiRollbarSpeedMax = 300;
 		idleRpm = 500;
