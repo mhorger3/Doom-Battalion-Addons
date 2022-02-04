@@ -6918,6 +6918,74 @@ class CfgWeapons
 			maxRangeProbab=0.5;
 		};
 	};
+	//Iskra Gun
+	class DBA_150mw_PG33H_Cannon : cannon_120mm {
+		ace_overpressure_angle = 55;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 20;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
+		displayName="150mw PG-33H Jotnar Mass Driver";
+		scope=2;
+		magazineReloadTime=13.5;
+		ballisticsComputer = 2;
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.25,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.25,
+			10
+		};
+		muzzles[]= {"Direct"};
+		class Direct: cannon_120mm
+		{
+			displayName="150mw PG-33H Jotnar Mass Driver";
+			magazines[]={
+				"DBA_150mm_UG33_x15_mag",
+				"DBA_150mm_UG39_x10_mag",
+				"DBA_150mm_UG42A_x10_mag",
+			};
+			class player : player {
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					15.555,
+					0.85,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=13.25;
+			autoReload=0;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+			};
+		};
+	};
 	//Vulture Weapons
 	class DBA_30mw_G108K : CannonCore{
 		displayName = "G108K 30mw Autocannon";
@@ -12018,14 +12086,6 @@ class CfgAmmo
 		ace_frag_skip=0;
 		ace_frag_force=1;
 	};
-	//class ammo_115mm_AP_Penetrator : ammo_Penetrator_Base{
-	//	hit=500;
-	//	caliber=30.02070393;
-	//};
-	//class ammo_115mm_HEAT_Penetrator : ammo_Penetrator_Base{
-	//	hit=345;
-	//	caliber=39.64912281;
-	//};
 	class DBA_115mm_B3M_AP : Sh_120mm_APFSDS
 	{
 		displayName="115mw B-3M Kinetic Energy Penetrator";
@@ -14405,75 +14465,7 @@ class CfgAmmo
 		};
 	}; 
 	//END
-	//Iskra Gun
-	class DBA_150mw_PG33H_Cannon : cannon_120mm{
-		ace_overpressure_angle = 55;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
-        ace_overpressure_range = 20;  // Range in meters in which the damage is applied
-        ace_overpressure_damage = 0.25;  // Damage multiplier
-		displayName="150mw PG-33H Jotnar Mass Driver";
-		scope=2;
-		magazineReloadTime=13.5;
-		ballisticsComputer = 2;
-		reloadSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
-			2.5118899,
-			0.25,
-			10
-		};
-		reloadMagazineSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
-			2.5118899,
-			0.25,
-			10
-		};
-		muzzles[]= {"Direct"};
-		class Direct: cannon_120mm
-		{
-			displayName="150mw PG-33H Jotnar Mass Driver";
-			magazines[]={
-				"DBA_150mm_UG33_x15_mag",
-				"DBA_150mm_UG39_x10_mag",
-				"DBA_150mm_UG42A_x10_mag",
-			};
-			class player : player{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound
-			{
-				begin1[]=
-				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
-					15.555,
-					0.85,
-					3000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			soundContinuous=0;
-			reloadTime=13.25;
-			autoReload=0;
-			autoFire=0;
-			dispersion=0.0000001;
-			aiRateOfFire=1;
-			aiRateOfFireDistance=10;
-			minRange=0;
-			minRangeProbab=0.64999998;
-			midRange=1250;
-			midRangeProbab=0.80000001;
-			maxRange=1750;
-			maxRangeProbab=0.5;
-			};
-		};
-	};
-	
+		
 	//Vulture Armaments
 	class DBA_30mm_STN_HEI : B_40mm_GPR{
 		ace_frag_enabled = 0;  // Enable fragmentation (0-disabled, 1-enabled)
