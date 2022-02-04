@@ -798,21 +798,38 @@ class CfgVehicles
 		};
 		class TextureSources
 		{
+			class Bommand_Mobility_Vehicle
+			{
+				displayName = "Bommand Mobility Vehicle";
+				author = "Seatie";
+				textures[] = 
+				{
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV.paa",
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
+				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+				};
+				factions[] = {"B_DBA_Republic_F"};
+			};
 			class Command_Mobility_Vehicle
 			{
 				displayName = "Command Mobility Vehicle";
 				author = "Seatie";
 				textures[] = 
 				{
-				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
-				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+				"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
+				"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
 				};
 				factions[] = {"B_DBA_Republic_F"};
 			};
 		};
-		textureList[]={"Command_Mobility_Vehicle",1};
+		textureList[]=
+		{
+			"Bommand_Mobility_Vehicle",1,
+			"Command_Mobility_Vehicle", 0
+		};
 		hiddenSelectionsTextures[]= 
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\Command_Mobility_Vehicle.paa",
