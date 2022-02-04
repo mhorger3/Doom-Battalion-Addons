@@ -275,12 +275,12 @@ class cfgVehicles
 			{
 				magazine = "DBA_Verpine_Mag";
 				count = 5;
-			}
+			};
 			class DBA_Billo_Mag
 			{
 				magazine = "DBA_Billo_Mag";
 				count = 5;
-			}
+			};
 			class DBA_GundarkOvercharge_Mag
 			{
 				magazine = "DBA_GundarkOvercharge_Mag";
