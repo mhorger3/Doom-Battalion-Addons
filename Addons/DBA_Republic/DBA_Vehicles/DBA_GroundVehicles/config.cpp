@@ -32,6 +32,7 @@ class CfgPatches
 			"DBA_LSV",
 			"DBA_ATTE_Base",
 			"DBA_Borodino_TD",
+			"DBA_Iskra_AG",
 			"101st_patrolcraft",
 			"DBA_Highgrav_transport_HMG",
 			"DBA_Highgrav_transport_HE"
