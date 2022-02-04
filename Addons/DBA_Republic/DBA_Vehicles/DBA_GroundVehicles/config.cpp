@@ -57,6 +57,13 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
+class Optics_Armored;
+class Optics_Gunner_MBT_02: Optics_Armored
+{
+	class Wide;
+	class Medium;
+	class Narrow;
+};
 class DefaultVehicleSystemsDisplayManagerLeft
 {
 	class components;
@@ -990,6 +997,190 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				memoryPointGunnerOptics="gunnerview";
 				cameraDir="look";
+				class OpticsIn: Optics_Gunner_MBT_02
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+				turretInfoType="RscOptics_MBT_02_gunner";
+				gunnerForceOptics=0;
+				forceHideGunner=0;
+				commanding=1;
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=0.80000001;
+						material=-1;
+						armorComponent="hit_main_turret";
+						name="hit_main_turret_point";
+						visual="-";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.2;
+						radius=0.25;
+						isTurret=1;
+					};
+					class HitGun
+					{
+						armor=0.60000002;
+						material=-1;
+						armorComponent="hit_main_gun";
+						name="hit_main_gun_point";
+						visual="-";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.40000001;
+						radius=0.2;
+						isGun=1;
+					};
+				};
+			};
+		};
+	};
+	class DBA_Iskra_AG : MBT_02_arty_base_F{
+		scope=2;
+		side=1;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="Iskra Assault Gun";
+		editorSubcategory="EdSubcat_Tanks";
+		crew="";
+		faction="B_DBA_Republic_F";
+		armor=1500;
+		armorStructural=11;
+		damageResistance=0.0038900001;
+		cost=2500000;
+		crewVulnerable=0;
+		crewExplosionProtection=0.0;
+		artilleryScanner = 0;
+		normalSpeedForwardCoef=1.0;
+		slowSpeedForwardCoef=0.55;
+		enginePower=703.657434;
+		maxOmega=366.5;
+		minOmega=62.83;
+		maxSpeed=40;
+		peakTorque=1921;
+		thrustDelay=0.2;
+		clutchStrength=250;
+		brakeIdleSpeed=7;
+		latency=0.1;
+		tankTurnForce=800000;
+		idleRpm=600;
+		redRpm=3500;
+		epeImpulseDamageCoef=0.000;
+		class complexGearbox
+		{
+			GearboxRatios[]=
+			{
+				"R1",
+				-0.54000002,
+				"N",
+				0,
+				"D1",
+				3.4300001,
+				"D2",
+				2.01,
+				"D3",
+				1.42,
+				"D4",
+				1,
+				"D5",
+				0.82999998,
+				"D6",
+				0.58999997
+			};
+			TransmissionRatios[]=
+			{
+				"High",
+				8
+			};
+			gearBoxMode="auto";
+			moveOffGear=1;
+			driveString="D";
+			neutralString="N";
+			reverseString="R";
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						weapons[]=
+						{
+							"DBA_25mw_P25S_Cannon",
+							"SmokeLauncher"
+						};
+						magazines[]=
+						{
+							"DBA_25mm_PL25S_x300_mag",
+							"SmokeLauncherMag"
+						};
+					};
+				};
+				animationSourceHatch="hatchCommander";
+				gunnerAction="Gunner_MBT_02_arty_F_out";
+				gunnerInAction="Gunner_MBT_02_arty_F_in";
+				selectionFireAnim="";
+				gunBeg="Usti hlavne3";
+				gunEnd="Konec hlavne3";
+				weapons[]=
+				{
+					"DBA_150mw_PG33H_Cannon"
+				};
+				magazines[]=
+				{
+					"DBA_150mm_UG33_x15_mag",
+					"DBA_150mm_UG39_x10_mag",
+					"DBA_150mm_UG42A_x10_mag",
+				};
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",
+					0.15848932,
+					0.85,
+					50
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",
+					0.15848932,
+					0.85,
+					50
+				};
+				minElev=-8;
+				maxElev=80;
+				initElev=10;
+				minCamElev=-8;
+				maxCamElev=50;
+				elevationMode=0;
+				maxHorizontalRotSpeed=0.3333333333;
+				maxVerticalRotSpeed=0.2222222222;
+				stabilizedInAxes = 3;
+				memoryPointGunnerOptics="gunnerview";
+				cameraDir="look";
+				class OpticsIn: Optics_Gunner_MBT_02
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
 				turretInfoType="RscOptics_MBT_02_gunner";
 				gunnerForceOptics=0;
 				forceHideGunner=0;

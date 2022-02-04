@@ -74,6 +74,7 @@ class CfgPatches
 			"DBA_CIS_Chafflauncher",
 			"DBA_80mw_UP8R_Rockets",
 			"DBA_170mw_PK72_Cannon",
+			"DBA_150mw_PG33H_Cannon",
 			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
 		};
@@ -170,6 +171,9 @@ class CfgPatches
 			"DBA_170mm_K46_x10_mag",
 			"DBA_170mm_KN46_x10_mag",
 			"DBA_170mm_K46H_x10_mag",
+			"DBA_150mm_UG33_x15_mag",
+			"DBA_150mm_UG39_x10_mag",
+			"DBA_150mm_UG42A_x10_mag",
 			"DBA_100mm_UB4H_x100_mag",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
@@ -316,6 +320,10 @@ class CfgPatches
 			"DBA_170mm_K46_AC",
 			"DBA_170mm_KN46_HE",
 			"DBA_170mm_K46H_HEAT",
+			"DBA_UG39_Penetrator",
+			"DBA_150mm_UG33_HE",
+			"DBA_150mm_UG39_SC",
+			"DBA_150mm_UG42A_DEMO",
 			"DBA_lancer_mbt_ap_ammo",
 			"DBA_lancer_mbt_he_ammo",
 			"DBA_lancer_mbt_td_ammo"
@@ -9214,6 +9222,40 @@ class CfgMagazines
 		initspeed=920;
 		tracersevery=1;
 	};
+	//Iskra Ammo
+	class DBA_150mm_UG33_x15_mag  : VehicleMagazine{
+		displayname="UG-33 150mw High Explosive";
+		ammo="DBA_150mm_UG33_HE";
+		displaynamemagazine="UG-33 High Explosive";
+		shortnamemagazine="UG-33 HE";
+		displayNameMFDFormat="HE";
+		displayNameShort="HE";
+		count=15;
+		initspeed=240;
+		tracersevery=1;
+	};
+	class DBA_150mm_UG39_x10_mag : VehicleMagazine{
+		displayname="UG-39 150mw Shaped Charge";
+		ammo="DBA_150mm_UG39_SC";
+		displaynamemagazine="UG-39 Shaped Charge";
+		shortnamemagazine="UG-39 SC";
+		displayNameMFDFormat="SC";
+		displayNameShort="SC";
+		count=10;
+		initspeed=240;
+		tracersevery=1;
+	};
+	class DBA_150mm_UG42A_x10_mag : VehicleMagazine{
+		displayname="UG-42A 150mw Demolition Shell";
+		ammo="DBA_150mm_UG42A_DEMO";
+		displaynamemagazine="UG-42A Demolition Shell";
+		shortnamemagazine="UG-42A Demo";
+		displayNameMFDFormat="Demo";
+		displayNameShort="Demo";
+		count=10;
+		initspeed=240;
+		tracersevery=1;
+	};
 	//New Turrets
 	class DBA_20mm_UR18_x20_mag : VehicleMagazine{
 		displayname="UR-18 20mw AP-I";
@@ -9381,6 +9423,7 @@ class CfgAmmo
 	class ammo_Penetrator_Base;
 	class ammo_Penetrator_120mm;
 	class Sh_120mm_APFSDS;
+	class Sh_120mm_HE;
 	class Sh_155mm_AMOS;
 	class G_40mm_HE;
 	class B_35mm_AA_Tracer_Red;
@@ -13507,6 +13550,152 @@ class CfgAmmo
 		timeToLive=20;
 	};
 	//END
+	//Iskra Ammo
+	class DBA_UG39_Penetrator : ammo_Penetrator_Base{
+		hit=850;
+		warheadName = "HEAT";
+		caliber=30;
+	}; 
+	class DBA_150mm_UG33_HE : Sh_120mm_HE{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 38101.728;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 8618.248;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 1886;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		displayName="150mw UG-33 High Explosive";
+		hit=300;
+		warheadName="HE";
+		indirectHit=750;
+		indirectHitRange=15;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=240;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=1.5;
+		muzzleEffect="";
+		caliber=5.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.8, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.75, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.73, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.78, 1900};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_150mm_UG39_SC : Sh_120mm_HE{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 24947.56;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 3855.532;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2440;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		displayName="150mw UG-39 Shaped Charge";
+		hit=300;
+		warheadName="HE";
+		indirectHit=200;
+		indirectHitRange=6;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=240;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=1.0;
+		muzzleEffect="";
+		caliber=5.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.8, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.75, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.73, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.78, 1900};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo = "DBA_UG39_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
+	class DBA_150mm_UG42A_DEMO : Sh_120mm_HE{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 47627.16;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 27215.52;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 1886;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_medium_HD", "ACE_frag_medium"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
+		displayName="150mw UG-42A High Explosive";
+		hit=300;
+		warheadName="HE";
+		indirectHit=1750;
+		indirectHitRange=12.25;
+		visibleFire=42;
+		audibleFire=42;
+		initSpeed=240;
+		explosionSoundEffect="DefaultExplosion";
+		explosive=1;
+		cost=500;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		tracerStartTime=0.05;
+		tracerScale=1.7;
+		tracerEndTime=120;
+		airFriction=0;
+		coefGravity=2.00;
+		muzzleEffect="";
+		caliber=5.0;
+		typicalSpeed=1000;
+		deflecting = 1;
+		soundHit1[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_01", 2.511886, 0.8, 1900};
+		soundHit2[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_02", 2.511886, 0.75, 1900};
+		soundHit3[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_03", 2.511886, 0.73, 1900};
+		soundHit4[]= {"A3\Sounds_F\arsenal\explosives\shells\Artillery_tank_shell_155mm_explosion_04", 2.511886, 0.78, 1900};
+		multiSoundHit[]= {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		aiAmmoUsageFlags="128 + 512";
+		allowAgainstInfantry=0;
+		timeToLive=20;
+	};
 	// Start of PN32 Field Gun Munitions
 	class DBA_PM1_Penetrator : ammo_Penetrator_Base{
 		hit=500;
@@ -14216,6 +14405,75 @@ class CfgAmmo
 		};
 	}; 
 	//END
+	//Iskra Gun
+	class DBA_150mw_PG33H_Cannon : cannon_120mm{
+		ace_overpressure_angle = 55;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 20;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
+		displayName="150mw PG-33H Jotnar Mass Driver";
+		scope=2;
+		magazineReloadTime=13.5;
+		ballisticsComputer = 2;
+		reloadSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.25,
+			10
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_vehicles\cannon_125mm\Cannon_125mm_Reload_01",
+			2.5118899,
+			0.25,
+			10
+		};
+		muzzles[]= {"Direct"};
+		class Direct: cannon_120mm
+		{
+			displayName="150mw PG-33H Jotnar Mass Driver";
+			magazines[]={
+				"DBA_150mm_UG33_x15_mag",
+				"DBA_150mm_UG39_x10_mag",
+				"DBA_150mm_UG42A_x10_mag",
+			};
+			class player : player{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					15.555,
+					0.85,
+					3000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			soundContinuous=0;
+			reloadTime=13.25;
+			autoReload=0;
+			autoFire=0;
+			dispersion=0.0000001;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.64999998;
+			midRange=1250;
+			midRangeProbab=0.80000001;
+			maxRange=1750;
+			maxRangeProbab=0.5;
+			};
+		};
+	};
+	
 	//Vulture Armaments
 	class DBA_30mm_STN_HEI : B_40mm_GPR{
 		ace_frag_enabled = 0;  // Enable fragmentation (0-disabled, 1-enabled)
