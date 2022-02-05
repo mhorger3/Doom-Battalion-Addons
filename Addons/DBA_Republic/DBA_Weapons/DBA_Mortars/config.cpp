@@ -125,6 +125,9 @@ class CfgVehicles{
 				{
 					"DBA_60mw_PNM10"
 				};
+				magazines[]={
+					"DBA_60mm_GPL8_HE_Mag",
+				};
 				memoryPointGunnerOptics="gunnerview";
 				cameraDir="look";
 				discreteDistanceCameraPoint[]=
@@ -168,17 +171,6 @@ class CfgVehicles{
 				class ViewOptics;
 			};
 		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="";
-			displayName="";
-			dissasembleTo[]=
-			{
-				"DBA_CSW_PNM10_Mortar"
-			};
-		};
 		class Damage
 		{
 			tex[]={};
@@ -209,16 +201,17 @@ class CfgVehicles{
 		};
 		faction="B_DBA_Republic_F";
 		scopeCurator=2;
-		class ACE_CSW {
-            enabled = 1; // Enables ACE CSW for this weapon              
-            proxyWeapon = "DBA_60mw_PNM10_proxy"; // The proxy weapon created above
-            magazineLocation = "_target selectionPosition 'magazine'"; // Ammo handling interaction point location
-            disassembleWeapon = "DBA_PNM10_carry";  // Carryable weapon created above
-            disassembleTurret = "ace_csw_carryMortarBaseplate";  // Which static tripod will appear when weapon is disassembled
-            ammoLoadTime = 1;   // How long it takes in seconds to load ammo into the weapon           
-            ammoUnloadTime = 1; // How long it takes in seconds to unload ammo from the weapon
-            desiredAmmo = 1;  // When the weapon is reloaded it will try and reload to this ammo capacity
-        };
+		class ace_csw
+		{
+			enabled = 1;
+			disassembleWeapon = "DBA_PNM10_carry";
+			disassembleTurret = "ace_csw_mortarBaseplate";
+			desiredAmmo = 1;
+			ammoLoadTime = 3;
+			ammoUnloadTime = 3;
+			proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon";
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+		};
 	};
 	class DBA_94mw_PNM15_Mortar : B_Mortar_01_F{
 		displayname="PNM-15 Infantry Mortar";
@@ -243,6 +236,9 @@ class CfgVehicles{
 				{
 					"DBA_94mw_PNM15"
 				};
+				magazines[]={
+					"DBA_94mm_GPM15_HE_Mag",
+				};
 				memoryPointGunnerOptics="gunnerview";
 				cameraDir="look";
 				discreteDistanceCameraPoint[]=
@@ -286,17 +282,6 @@ class CfgVehicles{
 				class ViewOptics;
 			};
 		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="";
-			displayName="";
-			dissasembleTo[]=
-			{
-				"DBA_CSW_PNM10_Mortar"
-			};
-		};
 		class Damage
 		{
 			tex[]={};
@@ -329,8 +314,8 @@ class CfgVehicles{
 		scopeCurator=2;
 		class ACE_CSW {
             enabled = 1; // Enables ACE CSW for this weapon              
-            proxyWeapon = "DBA_94mw_PNM15_proxy"; // The proxy weapon created above
-            magazineLocation = "_target selectionPosition 'magazine'"; // Ammo handling interaction point location
+            proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon"; // The proxy weapon created above
+            magazineLocation = "_target selectionPosition 'usti hlavne'"; // Ammo handling interaction point location
             disassembleWeapon = "DBA_PNM15_carry";  // Carryable weapon created above
             disassembleTurret = "ace_csw_carryMortarBaseplate";  // Which static tripod will appear when weapon is disassembled
             ammoLoadTime = 1;   // How long it takes in seconds to load ammo into the weapon           
@@ -361,6 +346,10 @@ class CfgVehicles{
 				{
 					"DBA_120mw_PNM30"
 				};
+				magazines[]=
+				{
+					"DBA_120mm_GPH40_HE_Mag",
+				};
 				memoryPointGunnerOptics="gunnerview";
 				cameraDir="look";
 				discreteDistanceCameraPoint[]=
@@ -404,17 +393,6 @@ class CfgVehicles{
 				class ViewOptics;
 			};
 		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="";
-			displayName="";
-			dissasembleTo[]=
-			{
-				"DBA_CSW_PNM10_Mortar"
-			};
-		};
 		class Damage
 		{
 			tex[]={};
@@ -447,7 +425,7 @@ class CfgVehicles{
 		scopeCurator=2;
 		class ACE_CSW {
             enabled = 1; // Enables ACE CSW for this weapon              
-            proxyWeapon = "DBA_120mw_PNM30_proxy"; // The proxy weapon created above
+            proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon"; // The proxy weapon created above
             magazineLocation = "_target selectionPosition 'magazine'"; // Ammo handling interaction point location
             disassembleWeapon = "DBA_PNM30_carry";  // Carryable weapon created above
             disassembleTurret = "ace_csw_carryMortarBaseplate";  // Which static tripod will appear when weapon is disassembled
