@@ -812,8 +812,8 @@ class CfgVehicles
 				author = "Seatie";
 				textures[] = 
 				{
-				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV.paa",
-				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV.paa",
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV_CO.paa",
+				"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\CMV\BMV_CO.paa",
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa",
 				"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
 				};
