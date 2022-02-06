@@ -520,7 +520,7 @@ class CfgAmmo
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 2; //Acts as penetration multiplier for the projectile.
 		typicalSpeed = 890; //What speed does this need to be going to inflict full damage
-		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		tracerScale = 0.4;
 
 		audibleFire = 80; //Alerts AI from further away
