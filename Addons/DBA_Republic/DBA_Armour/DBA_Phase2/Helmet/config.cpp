@@ -3978,6 +3978,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
 		};
 	};
+	/*
 	class DBA_Blue_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -3992,6 +3993,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Blue_CO.paa"
 		};
 	};
+	*/
 	class DBA_Cadet_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4073,6 +4075,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_CO.paa"
 		};
 	};
+	/*
 	class DBA_Ranch_Pilot_Helmet: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4101,6 +4104,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Dune_CO.paa"
 		};
 	};
+	*/
 	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4115,6 +4119,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mockingjay_CO.paa"
 		};
 	};
+	/*
 	class DBA_Nyom_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4143,6 +4148,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Trip_CO.paa"
 		};
 	};
+	*/
 	class DBA_Vance_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4157,6 +4163,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Vance_Helmet_CO.paa"
 		};
 	};
+	/*
 	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4171,6 +4178,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kaldor_CO.paa"
 		};
 	};
+	*/
 	class 101st_Kuzy_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Vulgar";
@@ -4273,6 +4281,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Gorman_Pilot_Helmet_CO.paa"
 		};
 	};
+	/*
 	class 101st_Finch_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Spark";
@@ -4290,6 +4299,7 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Finch_Helmet_CO.paa"
 		};
 	};
+	*/
 	class 101st_Squirtle_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Spark";
@@ -4322,3 +4332,27 @@ class CfgWeapons
 		};
 	};
 };
+
+/*
+Commented pilot helmets need to be deleted as no longer pilots/in 101st
+Need to delete following .paa's of old helmets.
+	Blue_CO.paa - No longer pilot
+	Double_Helmet_CO.paa - Old naming convention
+	Dune_CO.paa - No longer in 101st
+	Flanker_Helmet_CO.paa - Old naming convention
+	Gorman_helmet_CO.paa - Old naming convention
+	Hines_CO.paa - No longer in 101st
+	Ironclad_CO.paa - No longer in 101st
+	Kaldor_CO.paa - No longer in 101st
+	Kink_CO.paa - No longer in 101st
+	Nyom_CO.paa - No longer in 101st
+	OLDCraft_CO.paa - TBD
+	OLDTrip_CO.paa - No longer in 101st
+	Phantom_Helmet_CO.paa - Old naming convention
+	Ranch_Helmet_CO.paa - No longer in 101st
+	Ranch_Pilot_Helmet_CO - No longer in 101st
+	Shaw_CO.paa - No longer in 101st
+	Snake_Helmet_CO.paa - Old naming convention
+	Stultus_Helmet_CO.paa - Old naming convention
+	Trip_CO.paa - No longer in 101st
+*/
