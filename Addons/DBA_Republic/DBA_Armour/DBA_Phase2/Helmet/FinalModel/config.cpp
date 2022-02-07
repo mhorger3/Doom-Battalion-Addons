@@ -309,4 +309,13 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Oni_Helmet.rvmat",
 		};
 	};
+	class DBA_P2Helmet_Achilles : DBA_P2HelmetBase
+	{
+		author = "Seatie";
+		displayName = "DBA Clone trooper P2 Helmet: Achilles";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Achilles_NewHelmet_CO.paa"
+		};
+	};
 };
