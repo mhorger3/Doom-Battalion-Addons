@@ -4258,3 +4258,5 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
 		};
+	};
+};
