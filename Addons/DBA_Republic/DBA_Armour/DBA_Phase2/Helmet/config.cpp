@@ -3942,7 +3942,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TraitorHelmet.rvmat" };
 	};
-//Pilot Helmets
+
+//Pilot Helmets. Place in Alphabetical Order
 	class 3as_P2_Pilot_helmet;
 	class DBA_P2_Pilot_Helm: 3as_P2_Pilot_helmet
 	{
@@ -3955,71 +3956,13 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Pilot_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Pilot_Pilot_Helmet_CO.paa"
 		};
 		subItems[]=
 		{
 			"Integrated_NVG_TI_0_F"
 		};
 	};
-	class DBA_Arcturus_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Arcturus)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_CO.paa"
-		};
-	};
-	class DBA_Double_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Double)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Double_Pilot_Helmet_CO.paa"
-		};
-	};
-	class DBA_Zelph_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Zelph)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
-		};
-	};
-	/*
-	class DBA_Blue_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Blue)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Blue_CO.paa"
-		};
-	};
-	*/
 	class DBA_Cadet_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4031,7 +3974,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Cadet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Cadet_Pilot_Helmet_CO.paa"
 		};
 	};
 	class DBA_Clean_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -4045,181 +3988,21 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Clean_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Clean_Pilot_Helmet_CO.paa"
 		};
 	};
-	class 101st_Mechanic_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Mechanic)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Mechanic_Pilot_Helmet_CO.paa"
-		};
-	};
-	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Phantom)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Phantom_Pilot_Helmet_CO.paa"
-		};
-	};
-	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Stryker)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stryker_Pilot_Helmet_CO.paa"
-		};
-	};
-	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
+	class DBA_Arcturus_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
 		scope=2;
 		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Craft)";
+		displayName="101st Pilot Helmet (Arcturus)";
 		hiddenSelections[]=
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_CO.paa"
-		};
-	};
-	/*
-	class DBA_Ranch_Pilot_Helmet: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Ranch)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Ranch_Pilot_Helmet_CO.paa"
-		};
-	};
-	class DBA_Dune_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Dune)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Dune_CO.paa"
-		};
-	};
-	*/
-	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Mockingjay)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mockingjay_CO.paa"
-		};
-	};
-	/*
-	class DBA_Nyom_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Nyom)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Nyom_CO.paa"
-		};
-	};
-	class DBA_Trip_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Trip)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Trip_CO.paa"
-		};
-	};
-	*/
-	class DBA_Vance_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Vance)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Vance_Helmet_CO.paa"
-		};
-	};
-	/*
-	class DBA_Kaldor_Pilot_Helm: DBA_P2_Pilot_Helm
-	{
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Kaldor)";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kaldor_CO.paa"
-		};
-	};
-	*/
-	class 101st_Kuzy_Helmet : DBA_P2_Pilot_Helm
-	{
-		author = "Vulgar";
-		dlc = "101st_Aux_Mod";
-		scope = 2;
-		scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Kuzy)";
-		hiddenSelections[] =
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kuzy_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_Pilot_Helmet_CO.paa"
 		};
 	};
 	class 101st_Atlas_Helmet : DBA_P2_Pilot_Helm
@@ -4239,21 +4022,32 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Atlas_Helmet_CO.paa"
 		};
 	};
-	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
+	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
 	{
-		author = "Vulgar";
-		dlc = "101st_Aux_Mod";
-		scope = 2;
-		scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Snake)";
-		hiddenSelections[] =
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Craft)";
+		hiddenSelections[]=
 		{
 			"Camo"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Snake_Pilot_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_Pilot_Helmet_CO.paa"
+		};
+	};
+	class DBA_Double_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Double)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Double_Pilot_Helmet_CO.paa"
 		};
 	};
 	class 101st_Flanker_Helmet : DBA_P2_Pilot_Helm
@@ -4273,23 +4067,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Flanker_Pilot_Helmet_CO.paa"
 		};
 	};
-	class 101st_Stultus_Helmet : DBA_P2_Pilot_Helm
-	{
-		author = "Seatie";
-		dlc = "101st_Aux_Mod";
-		scope = 2;
-		scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Stultus)";
-		hiddenSelections[] =
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Stultus_Pilot_Helmet_CO.paa"
-		};
-	};
 	class 101st_Gorman_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Vulgar";
@@ -4307,25 +4084,102 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Gorman_Pilot_Helmet_CO.paa"
 		};
 	};
-	/*
-	class 101st_Finch_Helmet : DBA_P2_Pilot_Helm
+	class DBA_Javelin_Pilot_Helm: DBA_P2_Pilot_Helm
 	{
-		author = "Spark";
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Javelin)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Javelin_Pilot_Helmet_CO.paa"
+		};
+	};
+	class 101st_Kuzy_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
 		dlc = "101st_Aux_Mod";
 		scope = 2;
 		scopeArsenal = 2;
 		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Finch)";
+		displayName = "101st Pilot Helmet (Kuzy)";
 		hiddenSelections[] =
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Finch_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Kuzy_Pilot_Helmet_CO.paa"
 		};
 	};
-	*/
+	class 101st_Mechanic_Helmet: DBA_P2_Pilot_Helm
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Mechanic)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Mechanic_Pilot_Helmet_CO.paa"
+		};
+	};
+	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Mockingjay)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mockingjay_CO.paa"
+		};
+	};
+	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
+	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Phantom)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Phantom_Pilot_Helmet_CO.paa"
+		};
+	};
+	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Vulgar";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Snake)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Snake_Pilot_Helmet_CO.paa"
+		};
+	};
 	class 101st_Squirtle_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Spark";
@@ -4343,42 +4197,64 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Squirtle_Helmet_CO.paa"
 		};
 	};
-	class DBA_Javelin_Pilot_Helm: DBA_P2_Pilot_Helm
+	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
 	{
+		author="Dutch";
+		dlc = "101st_Aux_Mod";
 		scope=2;
-		weaponPoolAvailable=1;
-		displayName="101st Pilot Helmet (Javelin)";
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Stryker)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelections[]=
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Javelin_Pilot_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stryker_Pilot_Helmet_CO.paa"
 		};
 	};
-};
-
-/*
-Commented pilot helmets need to be deleted as no longer pilots/in 101st
-Need to delete following .paa's of old helmets.
-	Blue_CO.paa - No longer pilot
-	Double_Helmet_CO.paa - Old naming convention
-	Dune_CO.paa - No longer in 101st
-	Flanker_Helmet_CO.paa - Old naming convention
-	Gorman_helmet_CO.paa - Old naming convention
-	Hines_CO.paa - No longer in 101st
-	Ironclad_CO.paa - No longer in 101st
-	Kaldor_CO.paa - No longer in 101st
-	Kink_CO.paa - No longer in 101st
-	Nyom_CO.paa - No longer in 101st
-	OLDCraft_CO.paa - TBD
-	OLDTrip_CO.paa - No longer in 101st
-	Phantom_Helmet_CO.paa - Old naming convention
-	Ranch_Helmet_CO.paa - No longer in 101st
-	Ranch_Pilot_Helmet_CO - No longer in 101st
-	Shaw_CO.paa - No longer in 101st
-	Snake_Helmet_CO.paa - Old naming convention
-	Stultus_Helmet_CO.paa - Old naming convention
-	Trip_CO.paa - No longer in 101st
-*/
+	class 101st_Stultus_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Seatie";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Stultus)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Stultus_Pilot_Helmet_CO.paa"
+		};
+	};
+	class DBA_Vance_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Vance)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Vance_Helmet_CO.paa"
+		};
+	};
+	class DBA_Zelph_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Zelph)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
+		};
