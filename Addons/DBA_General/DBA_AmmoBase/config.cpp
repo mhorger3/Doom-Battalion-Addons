@@ -199,7 +199,6 @@ class CfgAmmo
 	class BulletBase;
 	class ShotgunBase;
 	class G_40mm_HE;
-	class OPTRE_G_M8_Flare;
 	class FlareBase;
 	class DBA_ammo_base : BulletBase
 	{
@@ -988,7 +987,7 @@ class CfgAmmo
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
 		lightColor[] = { 0.7,0,1,0 };
 	};
-	class ACE_G_Handflare_Purple : OPTRE_G_M8_Flare {
+	class ACE_G_Handflare_Purple : DBA_40mm_white_ammo {
 		LightColor[] = { 1,0,1,0.5 };
 		model = "\A3\weapons_f\ammo\flare_yellow";
 	};

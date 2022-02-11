@@ -7,14 +7,14 @@ class CfgPatches
 
         requiredAddons[] =
         {
-			"442_misc_holotable",
+//			"442_misc_holotable",
             "JLTS_C_Intel"
         };
         requiredVersion = 0.1;
         units[] = {
 			"101st_Holomap",
-			"101st_HoloTable_Long",
-			"101st_HoloTable_Round"
+	//		"101st_HoloTable_Long",
+	//		"101st_HoloTable_Round"
 		};
         weapons[] = {};
     };
@@ -50,9 +50,10 @@ class CfgFunctions
 
 class CfgVehicles
 {
+	/*
     class land_mesa;
-	class 442_holotable;
-	class 442_holotable2;
+//	class 442_holotable;
+//	class 442_holotable2;
 
 	class 101st_Holomap : land_mesa
 	{
@@ -71,7 +72,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+	
 	class 101st_HoloTable_Round : 442_holotable
 	{
 		displayName = "Holo Table (Round)";
@@ -107,7 +108,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+	*/
 	class Weapon_Base_F;
 	class 101st_GH_Portable_Holomap : Weapon_Base_F
 	{

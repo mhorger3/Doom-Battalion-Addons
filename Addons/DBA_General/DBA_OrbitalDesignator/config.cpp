@@ -13,8 +13,8 @@ class cfgPatches
 
 class DefaultEventHandlers;
 class CfgVehicles {
-	class k_mag_thermal_det;
-	class DBA_LaserTarget : k_mag_thermal_det
+	class Headgear_H_Bandanna_gry;
+	class DBA_LaserTarget : Headgear_H_Bandanna_gry
 	{
 		placement = "vertical";
 		mapSize = 1;

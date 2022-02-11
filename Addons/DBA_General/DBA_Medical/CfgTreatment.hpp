@@ -59,5 +59,16 @@ class ACE_Medical_Treatment
 			timeTillMaxEffect = 0;
 			viscosityChange = -1;
 		};
+
+		class DBA_Medical_AffideCrystal: Morphine
+		{
+			hrIncreaseLow[] = { 0 };
+			hrIncreaseNormal[] = { 0 };
+			hrIncreaseHigh[] = { 0 };
+			maxDose = 10;
+			painReduce = 0.4;
+			timeTillMaxEffect = 0;
+			viscosityChange = -10000;
+		};
 	};
 };

@@ -18,7 +18,8 @@ class CfgPatches
 			"DBA_Medical_Spray_Bandage",
 			"DBA_Medical_Comaren",
 			"DBA_Medical_Cordrazine",
-			"DBA_Medical_Symoxin"
+			"DBA_Medical_Symoxin",
+			"DBA_Medical_AffideCrystal"
         };
     };
 };

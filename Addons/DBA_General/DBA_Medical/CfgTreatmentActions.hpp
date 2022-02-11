@@ -44,4 +44,12 @@ class ACE_Medical_Treatment_Actions
 		items[] = { "DBA_Medical_Symoxin" };
 		treatmentTime = 1;
 	};
+
+	class DBA_Medical_AffideCrystal: Morphine
+	{
+		displayName = "Inject Affide Crystal";
+		displayNameProgress = "Injecting Affide Crystal...";
+		items[] = { "DBA_Medical_AffideCrystal" };
+		treatmentTime = 5;
+	};
 };

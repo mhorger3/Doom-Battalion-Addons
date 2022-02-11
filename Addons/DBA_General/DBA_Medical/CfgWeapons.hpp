@@ -28,6 +28,11 @@ class CfgWeapons
 		displayName = "Comaren Hypoinjector";
 	};
 
+	class DBA_Medical_AffideCrystal: ACE_morphine
+	{
+		displayName = "Affide Crystal";
+	};
+
 	class ACE_epinephrine;
 	class DBA_Medical_Cordrazine: ACE_epinephrine
 	{
