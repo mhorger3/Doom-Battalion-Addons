@@ -394,14 +394,14 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side=1;
-		faction="B_DBA_Republic_F";
+		faction="B_DBA_Imperial_F";
 		crew = "B_UAV_AI";
 		typicalCargo[] =
 		{
 			"B_UAV_AI"
 		};
 	};
-
+/*
 	class DBA_TurboLaserCannonOPFOR : DBA_TurboLaserCannon_Base
 	{
 		class SimpleObject
@@ -421,5 +421,5 @@ class CfgVehicles
 		{
 			"B_UAV_AI"
 		};
-	};
+	}; */
 };

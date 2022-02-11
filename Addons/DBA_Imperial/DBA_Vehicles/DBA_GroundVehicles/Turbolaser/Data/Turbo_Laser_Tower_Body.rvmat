@@ -12,7 +12,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\Data\Turbo_Laser_Tower_Body_NOHQ.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\Data\Turbo_Laser_Tower_Body_AS.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "101st_Aux_Mod\Addons\DBA_GroundVehicles\data\TurboLaser\Data\Turbo_Laser_Tower_Body_SMDI.paa";
+	texture = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

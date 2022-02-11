@@ -47,9 +47,10 @@ class ACE_Medical_Treatment_Actions
 
 	class DBA_Medical_AffideCrystal: Morphine
 	{
-		displayName = "Inject Affide Crystal";
-		displayNameProgress = "Injecting Affide Crystal...";
+		displayName = "Swallow Affide Crystal";
+		displayNameProgress = "Swallow Affide Crystal...";
 		items[] = { "DBA_Medical_AffideCrystal" };
+		allowedSelections[] ={"Head"};
 		treatmentTime = 5;
 	};
 };

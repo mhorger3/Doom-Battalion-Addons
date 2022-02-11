@@ -218,7 +218,7 @@ class CfgAmmo
 		audiblefire = 35;
 		brightness = 1000;
 		effectfly = "DBA_BluePlasma";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltBlue.p3d";
 		lightcolor[] = { 0.5,0.5,0.5 };
 		flaresize = 5;
 		tracerscale = 0.5;
@@ -246,7 +246,7 @@ class CfgAmmo
 		};
 		bulletFly1[] =
 		{
-			"101st_Aux_Mod\DBA_General\DBA_AmmoBase\DBA_BlasterFire.wss",
+			"101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\DBA_BlasterFire.wss",
 			1.58,
 			1,
 			30
@@ -317,7 +317,7 @@ class CfgAmmo
 		};
 		effectfly = "DBA_BluePlasma";
 		simulation = "shotSpread";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltBlue.p3d";
 		lightcolor[] = { 0.5,0.5,0.5 };
 		flaresize = 5;
 		tracerscale = 1.1;
@@ -519,7 +519,7 @@ class CfgAmmo
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 2; //Acts as penetration multiplier for the projectile.
 		typicalSpeed = 890; //What speed does this need to be going to inflict full damage
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltBlue.p3d";
 		tracerScale = 0.4;
 
 		audibleFire = 80; //Alerts AI from further away
@@ -691,7 +691,7 @@ class CfgAmmo
 		visibleFireTime = 3; //Alerts AI from further away
 
 		tracerScale = 3;
-		model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltGreen.p3d";
 		effectfly = "DBA_Plasma_Red";
 
 		dangerRadiusBulletClose = 8;
@@ -727,7 +727,7 @@ class CfgAmmo
 		visibleFireTime = 3; //Alerts AI from further away
 
 		tracerScale = 5;
-		model = "kobra\442_weapons\ammo\pink_tracer.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 		effectfly = "DBA_Plasma_Red";
 
 		dangerRadiusBulletClose = 8;
@@ -763,7 +763,7 @@ class CfgAmmo
 		visibleFireTime = 3; //Alerts AI from further away
 
 		tracerScale = 3;
-		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 		effectfly = "DBA_Plasma_Red";
 
 		DBA_isDisruptorRound = 1;
@@ -848,7 +848,7 @@ class CfgAmmo
 	};
 	class DBA_127x33_yellow : DBA_127x33_base
 	{
-		model = "kobra\442_weapons\ammo\yellow_tracer.p3d";
+		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 		effectfly = "442_plasma_yellow";
 	};
 

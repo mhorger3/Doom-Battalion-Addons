@@ -62,13 +62,14 @@ class ACE_Medical_Treatment
 
 		class DBA_Medical_AffideCrystal: Morphine
 		{
-			hrIncreaseLow[] = { 0 };
-			hrIncreaseNormal[] = { 0 };
-			hrIncreaseHigh[] = { 0 };
-			maxDose = 10;
+			hrIncreaseLow[] = { 255, 265 };
+			hrIncreaseNormal[] = { 250, 265 };
+			hrIncreaseHigh[] = { 250, 265 };
+			maxDose = 1;
+			allowedSelections[] ={"Head"};
 			painReduce = 0.4;
-			timeTillMaxEffect = 0;
-			viscosityChange = -10000;
+			timeTillMaxEffect = 20;
+			viscosityChange = -10;
 		};
 	};
 };
