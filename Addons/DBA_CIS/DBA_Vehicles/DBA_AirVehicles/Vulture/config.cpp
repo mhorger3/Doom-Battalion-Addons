@@ -482,7 +482,7 @@ class CfgVehicles
 		insideSoundCoef=0.2;
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
-		armor=350;
+		armor=200;
 		class HitPoints: HitPoints
 		{
 			class HitHull: HitHull
