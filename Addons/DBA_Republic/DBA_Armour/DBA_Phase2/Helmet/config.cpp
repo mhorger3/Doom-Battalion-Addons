@@ -2535,6 +2535,7 @@ class CfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Kel_Helmet_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\data\Kel_Helmet.rvmat" };
 	};
 	class 101st_Kennedy_Helmet: JLTS_CloneHelmetP2
 	{
