@@ -5667,7 +5667,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=-16;
 		canLock=2;
 		lockAcquire = 0;
-		weaponLockDelay=3.25;
+		weaponLockDelay=2.85;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
@@ -5743,8 +5743,8 @@ class CfgWeapons
 		aiRateOfFireDispersion=-16;
 		canLock=2;
 		lockAcquire = 0;
-		weaponLockDelay=3.75;
-		weaponLockSystem=2;
+		weaponLockDelay=3.45;
+		weaponLockSystem=8;
 		textureType="semi";
 	};
 	// SAM Weapons
@@ -13069,7 +13069,7 @@ class CfgAmmo
 		proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
 		hit = 400;
 		indirectHit = 550;
-		indirectHitRange = 4.5;
+		indirectHitRange = 6;
 		proximityExplosionDistance=6;
 		explosive = 1.00000;
 		warheadName = "AAM";
@@ -13165,8 +13165,8 @@ class CfgAmmo
 		model = "\A3\Weapons_F\Ammo\Missile_AT_03_fly_F";
 		proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
 		hit = 400;
-		indirectHit = 300;
-		indirectHitRange = 12.0;
+		indirectHit = 325;
+		indirectHitRange = 15.0;
 		proximityExplosionDistance=15;
 		explosive = 1.00000;
 		warheadName = "AAM";
@@ -14612,8 +14612,8 @@ class CfgAmmo
 		model = "\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
 		proxyShape = "\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
 		hit = 250;
-		indirectHit = 1000;
-		indirectHitRange = 10;
+		indirectHit = 600;
+		indirectHitRange = 9;
 		proximityExplosionDistance=12;
 		explosive = 1.00000;
 		warheadName = "SAM";
