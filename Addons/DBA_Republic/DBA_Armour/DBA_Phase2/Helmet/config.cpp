@@ -1075,7 +1075,24 @@ class CfgWeapons
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
+	};	class 101st_Griddle_Helm: 101st_Dagger_Helmet
+		{
+			author="Gorman";
+			dlc = "101st_Aux_Mod";
+			scope=2;
+			scopeArsenal=2;
+			displayName="101st Clone helmet (Griddle)";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Griddle_Helmet_AB_CO.paa"
+			};
+			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+			subItems[] = {"JLTS_CloneNVG_spec"};
+		};
 	class 101st_Gustavo_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
