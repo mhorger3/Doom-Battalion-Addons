@@ -12,8 +12,8 @@ class CfgPatches
 		{
 			"DBA_Bantha_Testbed_Base_F",
 			"DBA_B_Bantha_Testbed_F",
-			"DBA_B_Bantha_Testbed_Base_F"
-
+			"DBA_B_Bantha_Testbed_Base_F",
+			"DBA_Bantha_Grozny"
 		};
 		weapons[] = {};
 	};
@@ -27,6 +27,31 @@ class WeaponFireMGun;
 class WeaponCloudsMGun;
 class RCWSOptics;
 class Optics_Armored;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
 class Optics_Commander_01 : Optics_Armored
 {
 	class Wide;
@@ -1445,6 +1470,8 @@ class CfgVehicles
 						"SmokeLauncherMag",
 						"SmokeLauncherMag",
 						"DBA_127_X962_x1500_mag",
+						"DBA_127_X962_x1500_mag",
+						"DBA_127_X962_x1500_mag",
 						"Laserbatteries"
 						};
 						soundServo[] =
@@ -2340,6 +2367,294 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
+		};
+	};
+	class DBA_Bantha_Grozny : DBA_B_Bantha_Testbed_F{
+		displayName="Bantha Grozny SPAA";
+		icon="\A3\Armor_F_EPB\APC_Tracked_03\Data\UI\map_APC_Tracked_03_CA.paa";
+		radarType = 2;
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+                        minRange = 8000;
+                        maxRange = 8000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+                        minRange = 6000;
+                        maxRange = 6000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 8000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						aimDown = -45;
+						maxTrackableSpeed = 1900;
+					};
+					class DataLinkSensorComponent
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft
+			{
+				class Components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
+					};
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType = "MineDetectorDisplayComponent";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType = "SlingLoadDisplayComponent";
+					};
+				};
+				componentType = "VehicleSystemsDisplayManager";
+				left = 1;
+				defaultDisplay = "EmptyDisplay";
+				x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+				y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+			};
+			class VehicleSystemsDisplayManagerComponentRight
+			{
+				class Components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
+					};
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType = "MineDetectorDisplayComponent";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType = "SlingLoadDisplayComponent";
+					};
+				};
+				componentType = "VehicleSystemsDisplayManager";
+				right = 1;
+				defaultDisplay = "EmptyDisplay";
+				x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+				y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+			};
+		};
+		class turrets : turrets
+		{
+			class MainTurret : Mainturret
+			{
+				gunnerCanSee= 1+4+16;
+				radarType = 2;
+				class Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft
+					{
+						class Components
+						{
+							class SensorDisplay
+							{
+								componentType = "SensorsDisplayComponent";
+								range[] = {10000,8000,4000,2000};
+								resource = "RscCustomInfoSensors";
+							};
+							class VehicleDriverDisplay
+							{
+								componentType = "TransportFeedDisplayComponent";
+								source = "Driver";
+							};
+							class VehicleCommanderDisplay
+							{
+								componentType = "TransportFeedDisplayComponent";
+								source = "Commander";
+							};
+							class EmptyDisplay
+							{
+								componentType = "EmptyDisplayComponent";
+							};
+							class MinimapDisplay
+							{
+								componentType = "MinimapDisplayComponent";
+							};
+							class MineDetectorDisplay
+							{
+								componentType = "MineDetectorDisplayComponent";
+							};
+							class CrewDisplay
+							{
+								componentType = "CrewDisplayComponent";
+							};
+							class UAVDisplay
+							{
+								componentType = "UAVFeedDisplayComponent";
+							};
+							class SlingLoadDisplay
+							{
+								componentType = "SlingLoadDisplayComponent";
+							};
+						};
+                    componentType = "VehicleSystemsDisplayManager";
+                    left = 1;
+                    defaultDisplay = "EmptyDisplay";
+                    x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+                    y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+                };
+                class VehicleSystemsDisplayManagerComponentRight
+                {
+                    defaultDisplay = "SensorDisplay";
+                    class Components
+                    {
+                        class SensorDisplay
+                        {
+                            componentType = "SensorsDisplayComponent";
+                            range[] = {12000,8000,4000,2000};
+                            resource = "RscCustomInfoSensors";
+                        };
+                        class VehicleDriverDisplay
+                        {
+                            componentType = "TransportFeedDisplayComponent";
+                            source = "Driver";
+                        };
+                        class VehicleCommanderDisplay
+                        {
+                            componentType = "TransportFeedDisplayComponent";
+                            source = "Commander";
+                        };
+                        class EmptyDisplay
+                        {
+                            componentType = "EmptyDisplayComponent";
+                        };
+                        class MinimapDisplay
+                        {
+                            componentType = "MinimapDisplayComponent";
+                        };
+                        class MineDetectorDisplay
+                        {
+                            componentType = "MineDetectorDisplayComponent";
+                        };
+                        class CrewDisplay
+                        {
+                            componentType = "CrewDisplayComponent";
+                        };
+                        class UAVDisplay
+                        {
+                            componentType = "UAVFeedDisplayComponent";
+                        };
+                        class SlingLoadDisplay
+                        {
+                            componentType = "SlingLoadDisplayComponent";
+                        };
+                    };
+                    componentType = "VehicleSystemsDisplayManager";
+                    right = 1;
+                    x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+                    y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+                };
+            };
+				weapons[] = {
+					"DBA_30mw_GH38C_AC",
+					"DBA_DM311_SAM_Weapon",
+				};
+				magazines[] = {
+					"DBA_30mm_PL84_x902_mag",
+					"DBA_30mm_PL84_x902_mag",
+					"DBA_30mm_PL84_x902_mag",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4",
+					"DBA_DM311_mag_x4"
+				};
+				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+				minElev=-17;
+				maxElev=60;
+				allowTabLock = 1;
+				canUseScanner = 1;
+				class Turrets: Turrets
+				{
+					radarType = 2;
+					class CommanderOptics : CommanderOptics{
+						weapons[] = {
+						"SmokeLauncher",
+						"DBA_127_C3HB_RCWS",
+						"Laserdesignator_vehicle",
+						};
+						allowTabLock = 1;
+						canUseScanner = 1;
+						magazines[] = {
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"SmokeLauncherMag",
+						"DBA_127_X962_x1500_mag",
+						"DBA_127_X962_x1500_mag",
+						"DBA_127_X962_x1500_mag",
+						"Laserbatteries"
+						};
+					};
+				};
+			};
 		};
 	};
 };

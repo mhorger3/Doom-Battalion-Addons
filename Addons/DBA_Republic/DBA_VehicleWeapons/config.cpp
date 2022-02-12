@@ -76,6 +76,8 @@ class CfgPatches
 			"DBA_170mw_PK72_Cannon",
 			"DBA_150mw_PG33H_Cannon",
 			"DBA_100mw_HH33G_Cannon",
+			"DBA_DM311_SAM_Weapon",
+			"DBA_100mw_HH33G_Cannon",
 			"worthorn"
 		};
 		magazines[]=
@@ -175,6 +177,8 @@ class CfgPatches
 			"DBA_150mm_UG39_x10_mag",
 			"DBA_150mm_UG42A_x10_mag",
 			"DBA_100mm_UB4H_x100_mag",
+			"DBA_30mm_PL84_x902_mag",
+			"DBA_DM311_mag_x4",
 			"DBA_HMG_blue_x500_mag",
 			"DBA_HMG_green_x500_mag",
 			"DBA_HMG_orange_x500_mag",
@@ -324,6 +328,8 @@ class CfgPatches
 			"DBA_150mm_UG33_HE",
 			"DBA_150mm_UG39_SC",
 			"DBA_150mm_UG42A_DEMO",
+			"DBA_30mm_PL84_HEI",
+			"DBA_DM311_Missile",
 			"DBA_lancer_mbt_ap_ammo",
 			"DBA_lancer_mbt_he_ammo",
 			"DBA_lancer_mbt_td_ammo"
@@ -2478,6 +2484,210 @@ class CfgWeapons
 			};
 		};
 	};
+	//Grozd 
+	class DBA_30mw_GH38C_AC : CannonCore{
+		displayName = "GH38C 30mw Vozd Autocannons";
+		ballisticsComputer=4;
+		FCSMaxLeadSpeed=2000;
+		FCSZeroingDelay=0.1;
+		canLock=1;
+		airlock=1;
+		shotFromTurret=0;
+		magazines[]=
+		{
+			"DBA_30mm_PL84_x902_mag"
+		};
+		modes[]=
+		{
+			"manual",
+			"short",
+			"medium",
+			"far"
+		};
+		magazineReloadTime=8;
+		class manual
+		{
+			displayName="GH38C Vozd";
+			textureType = "fullAuto";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			reloadTime=0.048;
+			class StandardSound
+			{
+				begin1[]=
+				{
+					"3AS\3AS_Main\Sounds\ATRT\canon.wss",
+					0.85,
+					0.35,
+					2100
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			autoFire=1;
+			soundContinuous=0;
+			burst = 1;
+			soundBurst=0;
+			multiplier=1;
+			dispersion=0.007853976;
+			aiRateOfFire=1;
+			showToPlayer = 1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual
+		{
+			soundBurst=0;
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=0.1;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.69999999;
+			midRange=100;
+			midRangeProbab=0.75;
+			maxRange=300;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=0.2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.75;
+			midRange=300;
+			midRangeProbab=0.75;
+			maxRange=600;
+			maxRangeProbab=0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=3;
+			aiRateOfFireDispersion=0.2;
+			aiRateOfFireDistance=300;
+			minRange=300;
+			minRangeProbab=0.75;
+			midRange=600;
+			midRangeProbab=0.64999998;
+			maxRange=800;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=50;
+			burstRangeMax=100;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=0.4;
+			aiRateOfFireDistance=800;
+			minRange=800;
+			minRangeProbab=0.64999998;
+			midRange=1000;
+			midRangeProbab=0.30000001;
+			maxRange=1500;
+			maxRangeProbab=0.050000001;
+		};
+	};
+	class DBA_DM311_SAM_Weapon : MissileLauncher{
+		displayName="DM-311 SAM";
+		reloadTime=1.5;
+		magazineReloadTime=8;
+		cursor = "EmptyCursor";
+		cursoraim = "EmptyCursor";
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\reload_Missile_Launcher",
+			0.89125091,
+			0.525,
+			10
+		};
+		sounds[]=
+		{
+			"StandardSound"
+		};
+		class StandardSound
+		{
+			begin1[]=
+			{
+				"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Titan",
+				1.4125376,
+				0.35,
+				1100
+			};
+			soundBegin[]=
+			{
+				"begin1",
+				1
+			};
+			soundSetShot[]=
+			{
+				"Launcher_Vorona_Shot_SoundSet",
+				"Launcher_Vorona_Tail_SoundSet"
+			};
+		};
+		holdsterAnimValue=1;
+		soundFly[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",
+			1,
+			0.675,
+			700
+		};
+		lockingTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan",
+			0.56234133,
+			1
+		};
+		lockedTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan",
+			0.56234133,
+			2.5
+		};
+		magazines[]=
+		{
+			"DBA_DM311_mag_x4",
+		};
+		minRange=50;
+		minRangeProbab=0.40000001;
+		midRange=500;
+		midRangeProbab=0.85000002;
+		maxRange=2000;
+		maxRangeProbab=0.85000002;
+		aiRateOfFire=24;
+		aiRateOfFireDistance=2000;
+		aiRateOfFireDispersion=-16;
+		canLock=2;
+		lockAcquire = 0;
+		weaponLockDelay=3.75;
+		weaponLockSystem=2;
+		textureType="semi";
+	};
+	//END
 	class DBA_93mw_TPV13_Rockets : MissileLauncher{
 		displayName = "93mw TPV-13 Rocketpod";
 		magazines[]= {"DBA_93mm_TPV13_TBR_x24_mag"};
@@ -2776,8 +2986,8 @@ class CfgWeapons
 			};
 			soundContinuous = 0;
 			soundBurst = 0;
-			reloadTime = 0.04615384615;
-			dispersion = 0.000750;
+			reloadTime = 0.06;
+			dispersion = 0.001745328;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 10;
 			minRange = 0;
@@ -2999,8 +3209,8 @@ class CfgWeapons
 			};
 			soundContinuous = 0;
 			soundBurst = 0;
-			reloadTime = 0.04615384615;
-			dispersion = 0.000750;
+			reloadTime = 0.06;
+			dispersion = 0.001745328;
 			aiRateOfFire = 1;
 			aiRateOfFireDistance = 10;
 			minRange = 0;
@@ -8668,7 +8878,7 @@ class CfgMagazines
 		shortnamemagazine="SLAP";
 		displayNameMFDFormat="SLAP";
 		displayNameShort="12.7mw X-962 SLAP";
-		count=1500;
+		count=400;
 		initspeed=1300;
 		maxLeadSpeed=100;
 		tracersevery=1;
@@ -9209,6 +9419,29 @@ class CfgMagazines
 		displayNameShort="Demo";
 		count=10;
 		initspeed=240;
+		tracersevery=1;
+	};
+	//Grozd Magazines
+	class DBA_30mm_PL84_x902_mag : VehicleMagazine{
+		displayname="PL-84 30mw HE-I";
+		ammo="DBA_30mm_PL84_HEI";
+		displaynamemagazine="PL-84 30mw HE-I";
+		shortnamemagazine="PL-84 HE-I";
+		displayNameMFDFormat="PL-84";
+		displayNameShort="PL-84";
+		count=902;
+		initspeed=910;
+		tracersevery=1;
+	};
+	class DBA_DM311_mag_x4 : VehicleMagazine{
+		displayname="DM-311 Missile";
+		ammo="DBA_DM311_Missile";
+		displaynamemagazine="DM-311 SAM";
+		shortnamemagazine="DM-311 SAM";
+		displayNameMFDFormat="SAM";
+		displayNameShort="SAM";
+		count=4;
+		initspeed=110;
 		tracersevery=1;
 	};
 	//New Turrets
@@ -14472,6 +14705,139 @@ class CfgAmmo
 		deleteParentWhenTriggered = 0;
 	};
 	//END
+	//Grozd
+	class DBA_30mm_PL84_HEI : B_40mm_GPR{
+		hit = 50;
+		indirectHit = 45;
+		indirectHitRange = 4;
+		explosive= 1;
+		airLock=1;
+		warheadName = "HE-I";
+		caliber = 7.5;
+		deflecting = 3;
+		cost = 40;
+		airFriction = 0;
+		timeToLive = 10;
+		initSpeed=910;
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 0.5, 1600};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 0.5, 1600};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 0.5, 1600};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.778279, 0.5, 1600};
+		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		submunitionAmmo="";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
+		tracerScale = 1.15;
+		tracerStartTime = 0.1;
+		tracerEndTime = 20;
+		brightness=100000;
+		muzzleEffect = "";
+		typicalSpeed = 50;	
+		allowAgainstInfantry=1;
+		coefGravity=0;
+		waterFriction=0;
+	};
+	class DBA_DM311_Missile : MissileBase{
+		displayName="DM-311 SAM";
+		model = "\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
+		proxyShape = "\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
+		hit = 250;
+		indirectHit = 275;
+		indirectHitRange = 6;
+		proximityExplosionDistance=5;
+		explosive = 1.00000;
+		warheadName = "SAM";
+		simulation = "shotMissile";
+		simulationStep = 0.002000;
+		timeToLive = 75;
+		initTime = 0.05;
+		thrustTime = 20;
+		thrust = 600;
+		maxSpeed = 910;
+		maneuvrability = 34;
+		fuseDistance = 100;
+		trackLead = 1.0;
+		trackOversteer = 1.0;
+		airFriction = 0.18;
+		sideAirFriction = 0.100000;
+		cost = 100;
+		class Components{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+                        minRange = 8000;
+                        maxRange = 8000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+                        minRange = 8000;
+                        maxRange = 8000;
+                        objectDistanceLimitCoef = 1;
+                        viewDistanceLimitCoef = 1;
+						};
+						maxTrackableSpeed = 1950;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						componentType = "IRSensorComponent";
+						typeRecognitionDistance = 8000;
+						maxFogSeeThrough = 1.0;
+						color[] = {1,0,0,1};
+						allowsMarking = 1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 1900;
+						animDirection = "";
+						aimDown = 0;
+						minTrackableSpeed = -1e+010;
+						minTrackableATL = -1e+010;
+						maxTrackableATL = 1e+010;
+					};
+				};
+			};
+		};
+		flightProfiles[] = {"Direct"};
+		missileLockCone = 80;
+		missileKeepLockedCone = 85;
+		missileLockMaxDistance = 9000;
+		missileLockMinDistance = 50;
+		missileLockMaxSpeed = 1900;
+		irLock = 1;
+		airLock = 2;
+		aiAmmoUsageFlags = "128 + 256";
+		dangerRadiusHit = 1000;
+		suppressionRadiusHit = 120;
+		craterEffects = "ATRocketCrater";
+		explosionEffects = "ATRocketExplosion";
+		explosionSoundEffect = "DefaultExplosion";
+		effectsMissileInit = "RocketBackEffectsRPG";
+		effectsMissile = "missile2";
+		muzzleEffect = "";
+		whistleDist = 4;
+		lockType = 0;
+		manualControl = 0;
+		weaponLockSystem = 2;
+		cmImmunity = 0.875;
+		cameraViewAvailable = 1;
+		submunitionAmmo = "";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+	};
 	//Fennek Gun Start
 	class DBA_PL25S_Penetrator : ammo_Penetrator_Base{
 		hit=80;
