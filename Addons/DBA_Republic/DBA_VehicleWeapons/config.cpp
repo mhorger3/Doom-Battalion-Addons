@@ -77,7 +77,7 @@ class CfgPatches
 			"DBA_150mw_PG33H_Cannon",
 			"DBA_100mw_HH33G_Cannon",
 			"DBA_DM311_SAM_Weapon",
-			"DBA_100mw_HH33G_Cannon",
+			"DBA_30mw_GH38C_AC",
 			"worthorn"
 		};
 		magazines[]=
