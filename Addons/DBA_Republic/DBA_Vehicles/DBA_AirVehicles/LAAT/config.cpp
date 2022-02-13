@@ -18637,7 +18637,7 @@ class cfgVehicles
 		gearMinAlt=0;
 		gearsUpFrictionCoef=0.001;
 		nameSound="veh_helicopter_s";
-		fuelCapacity=800;
+		fuelCapacity=1600;
 		fuelConsumptionRate=0.05;
 		mainBladeRadius=0.1;
 		liftForceCoef=3;
