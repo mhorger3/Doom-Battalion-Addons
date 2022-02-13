@@ -16796,15 +16796,15 @@ class cfgVehicles
 			"Laserdesignator_pilotCamera",
 			"DBA_Aircraft_Lasers_Green",
 			"DBA_Aircraft_Heavy_Lasers_Green",
-			"CMFlareLauncher"
+			"DBA_CIS_Chafflauncher"
 		};
 		magazines[]=
 		{
 			"Laserbatteries",
-			"192Rnd_CMFlare_Chaff_Magazine",
-			"192Rnd_CMFlare_Chaff_Magazine",
-			"192Rnd_CMFlare_Chaff_Magazine",
-			"192Rnd_CMFlare_Chaff_Magazine",
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
 			"DBA_generic_aircraft_gun_Green_x1000_mag",
 			"DBA_generic_aircraft_gun_Green_x1000_mag",
 			"DBA_generic_aircraft_cannon_Green_x200_mag",
@@ -16970,7 +16970,7 @@ class cfgVehicles
 			"Laserdesignator_pilotCamera",
 			"DBA_Aircraft_Lasers_Blue",
 			"DBA_generic_kannon",
-			"CMFlareLauncher"
+			"DBA_CIS_Chafflauncher"
 			
 		};
 		magazines[]=
@@ -16979,10 +16979,10 @@ class cfgVehicles
 			"DBA_generic_aircraft_gun_blue_x1000_mag",
 			"DBA_Kannon_x100_mag",
 			"Laserbatteries",
-			"120Rnd_CMFlare_Chaff_Magazine",
-			"120Rnd_CMFlare_Chaff_Magazine",
-			"120Rnd_CMFlare_Chaff_Magazine",
-			"120Rnd_CMFlare_Chaff_Magazine"
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
+			"DBA_Chaff_x100_mag",
 		};
 		class pilotCamera
 		{
