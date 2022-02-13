@@ -1,4 +1,27 @@
-
+class cfgPatches
+{
+	class DBA_CISWeapons_Vehicle
+	{
+		author = "Vulgar";
+		name = "E11";
+		requiredaddons[] = {
+			"A3_Weapons_F",
+		};
+		requiredversion = 0.1;
+		units[] = {};
+		weapons[] = 
+		{
+			"DBA_G13_Coaxial",
+			"DBA_UKAS_MG",
+			"DBA_57mw_Cannon",
+			"DBA_130mw_HH30_Cannon",
+			"DBA_115mw_B5TC_Cannon",
+			"DBA_90mw_HFAH1_Cannon",
+			"DBA_165mw_B9M_ORD_Mortar",
+			"101st_CIS_Mech",
+		};
+	};
+};
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;

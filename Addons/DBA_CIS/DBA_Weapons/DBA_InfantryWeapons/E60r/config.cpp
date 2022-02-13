@@ -418,7 +418,7 @@ class CfgAmmo{
 		whistleDist = 4;
 		lockType = 0;
 		maxControlRange = 10000;
-		weaponLockSystem[]= {"1+2+16"};
+		weaponLockSystem= "1+2+16";
 		cmImmunity = 1;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "DBA_SR8_Penetrator";

@@ -195,6 +195,7 @@ class CfgWeapons{
 					"NVG",
 					"TI"
 				};
+				thermalMode[] = { 5,6 };
 			};
 			class Iron: Snip
 			{
