@@ -7866,7 +7866,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_Aircraft_Lasers_Yellow_Pylon";
 	};
@@ -7890,7 +7889,6 @@ class CfgMagazines
 		model="a3\weapons_f\empty.p3d";
 		hardpoints[]=
 		{
-			"DBA_Opfor_rail"
 		};
 		pylonWeapon="DBA_Aircraft_Heavy_Lasers_Yellow_Pylon";
 	};
