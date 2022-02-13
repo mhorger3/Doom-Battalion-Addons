@@ -7302,7 +7302,7 @@ class CfgWeapons
 	};
 	class DBA_MG33A_AAM : MissileLauncher{
 		displayName="MG-33A AAM System";
-		reloadTime=4.25;
+		reloadTime=3.25;
 		magazineReloadTime=2;
 		cursor = "EmptyCursor";
 		cursoraim = "EmptyCursor";
