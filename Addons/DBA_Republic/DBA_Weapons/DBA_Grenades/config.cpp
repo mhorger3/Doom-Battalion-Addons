@@ -20,6 +20,7 @@ class CfgPatches
 			"DBA_UT5_x3_Grenade",
 			"DBA_UTN7_x1_Grenade",
 			"DBA_UTD7C_x1_Satchel",
+			"DBA_UTF3_x1_Grenade",
 			"DBA_SN3_x1_Grenade",
 			"DBA_SNF15_x1_Flash",
 		};
@@ -30,6 +31,7 @@ class CfgPatches
 			"DBA_UT5_TD",
 			"DBA_UTN7_TD",
 			"DBA_UTD7C_TD",
+			"DBA_UTF3_Flash",
 			"DBA_SN3_Det",
 			"DBA_SNF15_Flash",
 		};
@@ -41,7 +43,7 @@ class cfgWeapons
 	class GrenadeLauncher;
 	class Throw : GrenadeLauncher
 	{
-		muzzles[] +={"DBA_UT2","DBA_UT3","DBA_UT5","DBA_UTN7","DBA_UTD7C","DBA_SN3","DBA_SNF15"};
+		muzzles[] +={"DBA_UT2","DBA_UT3","DBA_UT5","DBA_UTN7","DBA_UTD7C","DBA_UTF3","DBA_SN3","DBA_SNF15"};
 		class ThrowMuzzle;
 		class DBA_UT2 : ThrowMuzzle
 		{
@@ -83,6 +85,14 @@ class cfgWeapons
 				"DBA_UTD7C_x1_Satchel"
 			};
 		};
+		class DBA_UTF3 : ThrowMuzzle
+		{
+			model = "\z\ace\addons\grenades\models\ACE_m84_thrown.p3d";
+			magazines[] =
+			{
+				"DBA_UTF3_x1_Grenade"
+			};
+		};
 		class DBA_SN3 : ThrowMuzzle
 		{
 			model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\ctype.p3d";
@@ -104,7 +114,7 @@ class CfgMagazines{
 	class CA_Magazine;
 	class DBA_UT2_x1_Grenade : CA_Magazine{
 		author = "ISU";
-		mass = 10;
+		mass = 5;
 		scope = 2;
 		value = 1;
 		maxThrowHoldTime = 2; 
@@ -123,7 +133,7 @@ class CfgMagazines{
 	};
 	class DBA_UT3_x1_Grenade : CA_Magazine{
 		author = "ISU";
-		mass = 10;
+		mass = 5;
 		scope = 2;
 		value = 1;
 		maxThrowHoldTime = 2; 
@@ -142,7 +152,7 @@ class CfgMagazines{
 	};
 	class DBA_UT5_x3_Grenade : CA_Magazine{
 		author = "ISU";
-		mass = 10;
+		mass = 5;
 		scope = 2;
 		value = 1;
 		maxThrowHoldTime = 2; 
@@ -161,7 +171,7 @@ class CfgMagazines{
 	};
 	class DBA_UTN7_x1_Grenade : CA_Magazine{
 		author = "ISU";
-		mass = 10;
+		mass = 8;
 		scope = 2;
 		value = 1;
 		maxThrowHoldTime = 2; 
@@ -194,6 +204,25 @@ class CfgMagazines{
 		ammo = "DBA_UTD7C_TD";
 		count = 1;
 		initSpeed = 15;
+		nameSound = "handgrenade";
+		maxLeadSpeed = 7;
+	};
+	class DBA_UTF3_x1_Grenade : CA_Magazine{
+		author = "ISU";
+		mass = 1;
+		scope = 2;
+		value = 1;
+		maxThrowHoldTime = 2; 
+		maxThrowIntensityCoef = 3.4;
+		minThrowIntensityCoef = 1.2;
+		displayName = "UTF-3 Paraflashbang";
+		picture = "\A3\Weapons_F\Data\UI\gear_M67_CA.paa";
+		displayNameShort = "UTF-3 Paraflash";
+		model = "\z\ace\addons\grenades\models\ACE_m84_thrown.p3d";
+		type = 256;
+		ammo = "DBA_UTF3_Flash";
+		count = 1;
+		initSpeed = 26;
 		nameSound = "handgrenade";
 		maxLeadSpeed = 7;
 	};
@@ -369,6 +398,36 @@ class CfgAmmo{
 		thrust=400;
 		timeToLive=24;
 		explosionTime = 10;
+	};
+	class DBA_UTF3_Flash : GrenadeHand{
+		displayName = "UTF-3 Paraflash";
+		soundFly[] = {"101st_Aux_Mod\Addons\DBA_Republic\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",6.75,1.75,200};
+		model = "\z\ace\addons\grenades\models\ACE_m84_thrown.p3d";
+		effectsSmoke = "ACE_M84FlashbangEffect";
+		simulation = "shotSmoke";
+		hit = 15;
+		indirectHit = 2;
+		indirectHitRange = 0.25;
+		explosive = 0;
+		ace_grenades_flashbang = 1;
+        ace_grenades_flashbangBangs = 3;                    
+        ace_grenades_flashbangInterval = 1;             
+        ace_grenades_flashbangIntervalMaxDeviation = 0.25; 
+		ace_frag_enabled = 0;
+		ace_frag_skip = 0;
+		ace_frag_force = 0;
+		ace_frag_classes[] = {"ace_frag_tiny_HD"};
+		ace_frag_metal = 0;
+		ace_frag_charge = 0;
+		ace_frag_gurney_c = 1886;
+		ace_frag_gurney_k = "3/5";
+		submunitionAmmo="";
+		smokeColor[] = {0,0,0,0};
+		allowAgainstInfantry=1;
+		thrustTime=2.15;
+		thrust=800;
+		timeToLive=7.5;
+		explosionTime = 2;
 	};
 	class DBA_SN3_Det : GrenadeHand{
 		displayName = "SN-3 Shrapnel Bomb";
