@@ -18518,7 +18518,7 @@ class cfgVehicles
 		scopeArsenal = 2;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
-		cost=20000;
+		cost=10000000;
 		access=2;
 		faction="B_DBA_Republic_F";
 		displayName="LAAT MK7";
