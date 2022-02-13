@@ -4,7 +4,6 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"O_DBA_CIS_Vulture_Droid_F",
 			"DBA_CIS_Vulture_Droid_Base",
 			"DBA_CIS_Vulture_Interim",
 		};
@@ -45,7 +44,7 @@ class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
 	class components;
 };
 class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
+{/*
 	class components;
 };
 class CfgVehicles
@@ -62,8 +61,8 @@ class CfgVehicles
 		faction="O_DBA_CIS_F";
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_3as_F.jpg";
 		crew="O_DBA_CIS_OOM_Pilot_Droid_F";
-	};
-	class Plane_Fighter_03_dynamicLoadout_base_F;
+	};*/
+	class Plane_Fighter_03_dynamicLoadout_base_F; 
 	class MFD
 	{
 	};

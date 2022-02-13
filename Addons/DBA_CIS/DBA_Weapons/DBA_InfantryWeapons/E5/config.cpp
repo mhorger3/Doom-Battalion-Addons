@@ -522,6 +522,33 @@ class CfgWeapons{
 			aiRateOfFire=1;
 		};
 		class close : Mode_FullAuto{
+			sounds[] =
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+			};
+			class StandardSound : BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[] =
+				{
+					"MRC\JLTS\weapons\E5\sounds\E5_fire_2",
+					4,
+					1,
+					1800
+				};
+				soundBegin[] =
+				{
+					"begin1",
+					1
+				};
+			};
 			soundBurst=0;
 			textureType = "fullAuto";
 			aiBurstTerminable=1;
@@ -541,6 +568,33 @@ class CfgWeapons{
 			maxRangeProbab=0.65;
 		};
 		class medium : Mode_SemiAuto{
+			sounds[] =
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+			};
+			class StandardSound : BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[] =
+				{
+					"MRC\JLTS\weapons\E5\sounds\E5_fire_2",
+					4,
+					1,
+					1800
+				};
+				soundBegin[] =
+				{
+					"begin1",
+					1
+				};
+			};
 			soundBurst=0;
 			textureType = "semi";
 			aiBurstTerminable=1;
