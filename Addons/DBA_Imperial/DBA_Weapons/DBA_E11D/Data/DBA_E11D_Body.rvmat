@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\E11D_Body_AS.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11D\Data\E11D_Body_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\E11D_Body_SMDI.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11D\Data\E11D_Body_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

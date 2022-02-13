@@ -124,7 +124,7 @@ class DBA_PlasmaDamage
 	class SparksLight
 	{
 		simulation = "light";
-		type = "DBA_Sparks1";
+		type = "DBA_Sparks";
 		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
@@ -133,7 +133,7 @@ class DBA_PlasmaDamage
 	class ImpactSparks1
 	{
 		simulation = "particles";
-		type = "DBA_Sparks2";
+		type = "DBA_Sparks1";
 		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
@@ -167,6 +167,27 @@ class CfgLights
 		color[] = {1,0,0,1};
 		ambient[] = {1,0,0,1};
 		diffuse[] = {1,0,0};
+	};
+	class DBA_sparks
+	{
+		diffuse[] = {1,0.80000001,0.80000001};
+		color[] = {1,0.80000001,0.80000001};
+		ambient[] = {0,0,0,0};
+		brightness = 50;
+		size = 1;
+		intensity = 1000;
+		drawLight = 0;
+		blinking = 0;
+		class Attenuation
+		{
+			start = 0;
+			constant = 0;
+			linear = 0;
+			quadratic = 1;
+			hardLimitStart = 40;
+			hardLimitEnd = 80;
+		};
+		position[] = {0,0,0};
 	};
 };
 class DBA_BluePlasma
