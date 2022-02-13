@@ -16789,8 +16789,8 @@ class cfgVehicles
 		faction="B_DBA_Republic_F";
 		
 		alwaysTarget=0;
-		radarTargetSize = 1.2;
-		irTargetSize = 1.3;
+		radarTargetSize = 1.0;
+		irTargetSize = 1.0;
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
