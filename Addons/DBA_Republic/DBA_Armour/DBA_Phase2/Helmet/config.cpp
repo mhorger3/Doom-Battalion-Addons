@@ -1075,8 +1075,9 @@ class CfgWeapons
 		};
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
-	};	class 101st_Griddle_Helm: 101st_Dagger_Helmet
-		{
+	};
+	class 101st_Griddle_Helm: 101st_Dagger_Helmet
+	{
 			author="Gorman";
 			dlc = "101st_Aux_Mod";
 			scope=2;
@@ -1092,7 +1093,7 @@ class CfgWeapons
 			};
 			picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 			subItems[] = {"JLTS_CloneNVG_spec"};
-		};
+	};
 	class 101st_Gustavo_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
