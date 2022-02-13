@@ -4,7 +4,10 @@ class cfgPatches
 	{
 		author = "Vulgar";
 		name = "E11";
-		requiredaddons[] = { "A3_Weapons_F" };
+		requiredaddons[] = { 
+			"A3_Weapons_F",
+			"A3_Weapons_F_Items"
+		};
 		requiredversion = 0.1;
 		units[] = {};
 		weapons[] = {"DBA_E11_F"};
@@ -52,6 +55,7 @@ class cfgWeapons
 	};
 
 	class ItemCore;
+	class InventoryFlashLightItem_Base_F;
 	class optic_MRCO : ItemCore
 	{
 		class ItemInfo;
@@ -62,7 +66,7 @@ class cfgWeapons
 		_generalMacro = "arifle_Katiba_Base_F";
 		magazines[] =
 		{
-			"30Rnd_65x39_caseless_mag"
+			"DBA_E11_Mag"
 		};
 		reloadAction = "GestureReloadKatiba";
 		recoil = "recoil_ktb";
@@ -114,7 +118,7 @@ class cfgWeapons
 			{
 				iconPosition[] = {0.34999999,0.44999999};
 				iconScale = 0.2;
-				compatibleItems[] = {};
+				compatibleItems[] = { "DBA_E11_Pointer" };
 			};
 		};
 		class GunParticles : GunParticles
@@ -326,6 +330,31 @@ class cfgWeapons
 					cameraDir = "";
 				};
 
+			};
+		};
+		inertia = 0.1;
+	};
+	class DBA_E11_Pointer : ItemCore
+	{
+		author = "Vulgar";
+		_generalMacro = "acc_pointer_IR";
+		scope = 2;
+		displayName = "[DBA] E11 Laser Pointer";
+		descriptionUse = "[DBA] E11 Laser Pointer";
+		picture = "\A3\weapons_F\Data\UI\gear_accv_pointer_CA.paa";
+		model = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\DBA_E11LaserPointer.p3d";
+		descriptionShort = "$STR_A3_cfgWeapons_acc_pointer_IR1";
+		class ItemInfo : InventoryFlashLightItem_Base_F
+		{
+			mass = 6;
+			class Pointer
+			{
+				irLaserPos = "laser pos";
+				irLaserEnd = "laser dir";
+				irDistance = 5;
+			};
+			class FlashLight
+			{
 			};
 		};
 		inertia = 0.1;

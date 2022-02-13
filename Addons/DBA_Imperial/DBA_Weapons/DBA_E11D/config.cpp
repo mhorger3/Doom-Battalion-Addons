@@ -160,7 +160,7 @@ class cfgWeapons
 			class StandardSound
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11D\Data\E11DShot.ogg",0,1,900 };
+				begin1[] = { "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11D\Data\E11DShot.ogg",1,1,1800 };
 				closure1[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure1",1 };
