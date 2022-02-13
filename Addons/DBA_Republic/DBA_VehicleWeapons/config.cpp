@@ -12665,7 +12665,7 @@ class CfgAmmo
 	};
 	class DBA_23mm_PS59_SAP : G_40mm_HE{
 		displayName="23mw PS59 SAPHEI";
-		hit = 100;
+		hit = 150;
 		indirectHit = 27;
 		indirectHitRange = 6;
 		explosive= 1.0
@@ -12703,11 +12703,12 @@ class CfgAmmo
 		submunitionParentSpeedCoef = 0.000000;
 		submunitionInitialOffset[]= {0, 0, -0.200000};
 		triggerOnImpact = 1;
+		airLock=1;
 		deleteParentWhenTriggered = 0;
 	};
 	class DBA_45mm_PS73_SAP : G_40mm_HE{
 		displayName="45mw PS73 SAPHEI";
-		hit = 100;
+		hit = 200;
 		indirectHit = 55;
 		indirectHitRange = 10;
 		explosive= 1.0
@@ -12725,6 +12726,7 @@ class CfgAmmo
 		multiSoundHit[] = {"soundHit1", 0.250000, "soundHit2", 0.250000, "soundHit3", 0.250000, "soundHit4", 0.250000};
 		aiAmmoUsageFlags = "128 + 256 + 512";
 		cost = 75;
+		airLock=1;
 		model="\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
 		tracerColor[]=
 		{
