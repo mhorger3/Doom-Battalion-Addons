@@ -852,6 +852,7 @@ class CfgVehicles
 		crew="O_UAV_AI";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="3as\3as_vulture\data\vulture_picture_co.paa";
+		explosionShielding=0.5;
 		availableForSupportTypes[]=
 		{
 			"CAS_Bombing"
