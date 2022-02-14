@@ -98,6 +98,30 @@ class CfgVehicles
 				"A3\Static_F_Gamma\data\StaticTurret_03_destruct.rvmat"
 			};
 		};
+		
+		destrType = "DestructBuilding"; 
+		explosionEffect = "FuelExplosion";
+		class DestructionEffects 
+		{
+			class SmokeSmall
+			{
+				simulation = "particles";
+				type = "BarelDestructionSmoke";
+				position[] = {0,0,0};
+				intensity = 0.2;
+				interval = 1;
+				lifeTime = 1;
+			};
+			class Sound
+			 {
+				position = "destructionEffect";
+				simulation = "sound";
+				type = "Fire";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};	
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
