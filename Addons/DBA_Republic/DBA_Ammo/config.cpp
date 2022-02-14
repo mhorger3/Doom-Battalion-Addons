@@ -143,23 +143,23 @@ class CfgMagazines
 	class DBA_Boma_Slug_Mag : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "DBA Boma Slug Mag (12rnd)";
+		displayname = "DBA Boma Slug Mag (10rnd)";
 		ammo = "DBA_12gaSlug_Base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 25;
-		count = 12;
+		mass = 18;
+		count = 10;
 		initspeed = 909;
 	};
 	class DBA_Boma_Scatter_Mag : DBA_Mag_Base
 	{
 		scope = 2;
-		displayname = "DBA Boma Scatter Mag (12rnd)";
+		displayname = "DBA Boma Scatter Mag (8rnd)";
 		ammo = "DBA_12gaPellets_Base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 25;
-		count = 12;
+		mass = 18;
+		count = 8;
 		initspeed = 909;
 	};
 	class DBA_Zakkeg_Mag : DBA_Mag_Base

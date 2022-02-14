@@ -888,7 +888,7 @@ class CfgAmmo
 	};
 	class DBA_12gaPellets_Base :DBA_shotgun_base //12GA
 	{
-		hit = 4; //Vanilla is 2
+		hit = 6; //Vanilla is 2
 		indirectHit = 2;
 		indirectHitRange = 0.4;
 		cost = 5;
