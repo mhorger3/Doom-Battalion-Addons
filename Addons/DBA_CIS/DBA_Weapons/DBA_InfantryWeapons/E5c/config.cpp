@@ -90,32 +90,11 @@ class CfgWeapons{
 			"far"
 		};
 		class manual : Mode_FullAuto{
-			sounds[]=
+			sounds[] = {"StandardSound"};
+			class StandardSound
 			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\E5\sounds\E5_fire_2",
-					1,
-					1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+				begin1[] = {"swlw_rework\sounds\e-series\E5C_shot.wss",1,1.15,500};
+				soundBegin[] = {"begin1",1};
 			};
 			reloadTime=0.0618556701;
 			dispersion=0.002327104;
@@ -267,32 +246,11 @@ class CfgWeapons{
 		};
 		class manual : Mode_FullAuto{
 			reloadTime=0.1333333333;
-			sounds[]=
+			sounds[] = {"StandardSound"};
+			class StandardSound
 			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\E5\sounds\E5_fire_2",
-					2.5,
-					0.825,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+				begin1[] = {"swlw_rework\sounds\e-series\E5C_shot.wss",1,0.835,500};
+				soundBegin[] = {"begin1",1};
 			};
 			dispersion=0.001018108;
 			recoil="recoil_auto_mx";

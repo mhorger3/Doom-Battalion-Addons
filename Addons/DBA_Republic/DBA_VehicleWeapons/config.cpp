@@ -7105,7 +7105,7 @@ class CfgWeapons
 			"DBA_30mm_STN_x800_mag"
 		};
 		canLock = 0;
-		ballisticsComputer = "1 + 2 + 16";
+		ballisticsComputer = 1;
 		FCSMaxLeadSpeed = 800;
 		FCSZeroingDelay = 0.500000;
 		maxZeroing = 2500;
@@ -9066,8 +9066,8 @@ class CfgMagazines
 		shortnamemagazine="PS-59 SAPHEI";
 		displayNameMFDFormat="SAPHEI";
 		displayNameShort="SAPHEI";
-		count=500;
-		initspeed=715;
+		count=600;
+		initspeed=915;
 		tracersevery=1;
 	};
 	class DBA_45mm_PS73_x80_mag : VehicleMagazine{
@@ -11917,7 +11917,7 @@ class CfgAmmo
 	class DBA_210mm_TACN_Submunition : Sh_155mm_AMOS{
 		hit = 3000;
 		indirectHit = 12500;
-		indirectHitRange = 650;
+		indirectHitRange = 850;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		explosionTime = 0.1;
 		ExplosionEffects = "";
@@ -12158,7 +12158,7 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=26.91511387;
-		typicalSpeed=1610;
+		typicalSpeed=110;
 		deflecting = 5;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
@@ -12191,7 +12191,7 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=28.07017544;
-		typicalSpeed=950;
+		typicalSpeed=100;
 		deflecting = 5;
 		model = "kobra\442_weapons\ammo\red_tracer.p3d";
 		submunitionAmmo="";
@@ -12224,7 +12224,7 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=20;
-		typicalSpeed=905;
+		typicalSpeed=105;
 		deflecting = -5;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
@@ -12256,7 +12256,7 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=33.33333333;
-		typicalSpeed=1800;
+		typicalSpeed=100;
 		deflecting = 5;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
@@ -12288,8 +12288,8 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=4.761904762;
-		typicalSpeed=980;
-		deflecting = -5;
+		typicalSpeed=100;
+		deflecting = 5;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
 		submunitionDirectionType = "SubmunitionModelDirection";
@@ -12320,7 +12320,7 @@ class CfgAmmo
 		airFriction=0;
 		muzzleEffect="";
 		caliber=33.33333333;
-		typicalSpeed=1500;
+		typicalSpeed=100;
 		deflecting = 5;
 		model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
 		submunitionAmmo="";
@@ -12427,11 +12427,17 @@ class CfgAmmo
 			frequency = 20;
 			distance = 50;
 		};
+		class CamShakeExplode {
+			power = 100;
+			duration = 3.5;
+			distance = 50;
+			frequency = 20;
+		};
 		class CamShakeHit
 		{
 			power = 100;
 			duration = 3.5;
-			distance = 25;
+			distance = 50;
 			frequency = 20;
 		};
 		timeToLive=20;
@@ -12629,12 +12635,12 @@ class CfgAmmo
 	class ammo_23mm_SAP_Penetrator : ammo_Penetrator_Base{
 		hit=135;
 		warheadName = "SAPHEI";
-		caliber=9.5;
+		caliber=11.5;
 	};
 	class ammo_45mm_SAP_Penetrator : ammo_Penetrator_Base{
 		hit=425;
 		warheadName = "SAPHEI";
-		caliber=16.66666667;
+		caliber=18.66666667;
 	};
 	class ammo_Fletch_Penetrator : ammo_Penetrator_Base{
 		hit=675;
@@ -12647,7 +12653,7 @@ class CfgAmmo
 		caliber=40;
 	};
 	class ammo_Onager_Penetrator : ammo_Penetrator_Base{
-		hit=5000;
+		hit=7500;
 		warheadName = "Tandem";
 		caliber=40;
 	};
@@ -12663,17 +12669,17 @@ class CfgAmmo
 	};
 	class DBA_23mm_PS59_SAP : G_40mm_HE{
 		displayName="23mw PS59 SAPHEI";
-		hit = 150;
+		hit = 177;
 		indirectHit = 27;
 		indirectHitRange = 6;
 		explosive= 1.0
 		warheadName = "SAPHEI";
-		caliber = 1;
+		caliber = 8;
 		deflecting = 1;
 		cost = 40;
 		airFriction = 0;
 		timeToLive = 40;
-		initSpeed=715;
+		initSpeed=915;
 		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.778279, 1, 1600};
 		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.778279, 1, 1600};
 		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.778279, 1, 1600};
@@ -12874,43 +12880,76 @@ class CfgAmmo
 		cost = 500;
 		class Components
 		{
-        class SensorsManagerComponent
-        {
+			class SensorsManagerComponent
+			{
 				class Components
 				{
 					class IRSensorComponent
 					{
 						class AirTarget
 						{
-                        minRange = 100;
-                        maxRange = 1500;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = 1;
+							minRange = 100;
+							maxRange = 1500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
 						};
 						class GroundTarget
 						{
-                        minRange = 10;
-                        maxRange = 11000;
-                        objectDistanceLimitCoef = 1;
-                        viewDistanceLimitCoef = 1;
+							minRange = 10;
+							maxRange = 11000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
 						};
-						maxTrackableSpeed = 95;
-						angleRangeHorizontal = 30;
-						angleRangeVertical = 30;
-						componentType = "IRSensorComponent";
-						typeRecognitionDistance = 20000;
-						maxFogSeeThrough = 1.0;
-						color[] = {1,0,0,1};
-						allowsMarking = 1;
-						groundNoiseDistanceCoef = -1;
-						maxGroundNoiseDistance = -1;
-						minSpeedThreshold = 0;
-						maxSpeedThreshold = 1000;
-						animDirection = "";
-						aimDown = 0;
-						minTrackableSpeed = -1e+010;
-						minTrackableATL = -1e+010;
-						maxTrackableATL = 1e+010;
+							maxTrackableSpeed = 95;
+							angleRangeHorizontal = 90;
+							angleRangeVertical = 90;
+							componentType = "IRSensorComponent";
+							typeRecognitionDistance = 20000;
+							maxFogSeeThrough = 1.0;
+							color[] = {1,0,0,1};
+							allowsMarking = 1;
+							groundNoiseDistanceCoef = -1;
+							maxGroundNoiseDistance = -1;
+							minSpeedThreshold = 0;
+							maxSpeedThreshold = 1000;
+							animDirection = "";
+							aimDown = 0;
+							minTrackableSpeed = -1e+010;
+							minTrackableATL = -1e+010;
+							maxTrackableATL = 1e+010;
+					};
+					class ActiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=20000;
+						angleRangeHorizontal=90;
+						angleRangeVertical=90;
+						groundNoiseDistanceCoef=1;
+						componentType="ActiveRadarSensorComponent";
+						maxGroundNoiseDistance=20000;
+						minSpeedThreshold=5;
+						maxSpeedThreshold=1500;
+						color[]={0,1,1,1};
+						allowsMarking=1;
+						animDirection="";
+						aimDown=0;
+						minTrackableSpeed=-1e+010;
+						maxTrackableSpeed=1e+010;
+						minTrackableATL=-1e+010;
+						maxTrackableATL=1e+010;
 					};
 				};
 			};
@@ -12944,7 +12983,7 @@ class CfgAmmo
 		whistleDist = 4;
 		lockType = 0;
 		manualControl = 0;
-		weaponLockSystem = 2;
+		weaponLockSystem = "2+8";
 		cmImmunity = 1;
 		cameraViewAvailable = 1;
 		submunitionAmmo = "ammo_Onager_Penetrator";
@@ -13164,7 +13203,7 @@ class CfgAmmo
 		displayName="D-39M AAM";
 		model = "\A3\Weapons_F\Ammo\Missile_AT_03_fly_F";
 		proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
-		hit = 400;
+		hit = 200;
 		indirectHit = 325;
 		indirectHitRange = 15.0;
 		proximityExplosionDistance=15;
