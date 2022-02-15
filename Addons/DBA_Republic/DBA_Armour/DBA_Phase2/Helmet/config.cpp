@@ -4024,23 +4024,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_Pilot_Helmet_CO.paa"
 		};
 	};
-	class 101st_Atlas_Helmet : DBA_P2_Pilot_Helm
-	{
-		author = "Vulgar";
-		dlc = "101st_Aux_Mod";
-		scope = 2;
-		scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		displayName = "101st Pilot Helmet (Atlas)";
-		hiddenSelections[] =
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Atlas_Helmet_CO.paa"
-		};
-	};
 	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
 	{
 		scope=2;
@@ -4053,6 +4036,23 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Craft_Pilot_Helmet_CO.paa"
+		};
+	};
+	class 101st_Denial_Helmet : DBA_P2_Pilot_Helm
+	{
+		author = "Gorman";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		displayName = "101st Pilot Helmet (Denial)";
+		hiddenSelections[] =
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Denial_Helmet_CO.paa"
 		};
 	};
 	class DBA_Double_Pilot_Helm: DBA_P2_Pilot_Helm
