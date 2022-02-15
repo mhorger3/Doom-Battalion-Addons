@@ -2019,24 +2019,13 @@ class CfgVehicles
 				{
 					"Laserdesignator_pilotCamera",
 					"CMFlareLauncher",
-					"DBA_Ground_HMG_Generic",
-					"dba_wynd_a2a"
+					"DBA_25mw_P25S_Cannon",
 				};
 				magazines[]=
 				{
 					"Laserbatteries",
-					"DBA_HMG_blue_x500_mag",
-					"DBA_HMG_green_x500_mag",
-					"DBA_HMG_orange_x500_mag",
-					"DBA_HMG_red_x500_mag",
-					"DBA_HMG_pink_x500_mag",
-					"DBA_HMG_purple_x500_mag",
-					"DBA_HMG_black_x500_mag",
-					"DBA_HMG_yellow_x500_mag",
-					"dba_a2a_x4_mag",
-					"dba_a2a_x4_mag",
-					"dba_a2a_x4_mag",
-					"dba_a2a_x4_mag"
+					"DBA_25mm_PL25S_x300_mag",
+					"DBA_25mm_PL25S_x300_mag",
 				};
 			};
 			class CommanderOptics: CommanderOptics
