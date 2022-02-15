@@ -3291,11 +3291,18 @@ class CfgVehicles
 					"DBA_210mm_K17_x6_mag",
 					"DBA_210mm_K17_x6_mag",
 					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K17_x6_mag",
+					"DBA_210mm_K18_x3_mag",
 					"DBA_210mm_K18_x3_mag",
 					"DBA_210mm_S19_x8_mag",
+					"DBA_210mm_S19_x8_mag",
+					"DBA_210mm_CK17_x4_mag",
+					"DBA_210mm_CK17_x4_mag",
+					"DBA_210mm_CK17_x4_mag",
 					"DBA_210mm_CK17_x4_mag",
 					"DBA_210mm_UMK20_x4_mag",
-					"DBA_210mm_ATN3S_TACN_x1_mag"
+					"DBA_210mm_UMK20_x4_mag",
 				};
 			};
 		};
@@ -3458,8 +3465,8 @@ class CfgVehicles
 		scope=2;
 		side=1;
 		scopeCurator=2;
-		forceInGarage=1;
-		displayName="RFV-104 Leopard";
+		forceInGarage=1; 
+		displayName="RFV-104 Leopard (Deprecated)";
 		crew="101st_CloneTrooper_212th";
 		armor=700;
 		hiddenSelections[]=
@@ -3971,7 +3978,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="RFV-105 Merkava";
+		displayName="RFV-105 Merkava (Deprecated)";
 		crew="101st_CloneTrooper_212th";
 		armor=750;
 		hiddenSelections[]=
@@ -4313,7 +4320,7 @@ class CfgVehicles
 		side=1;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="RFV-106 Armata";
+		displayName="RFV-106 Armata (Deprecated)";
 		crew="101st_CloneTrooper_212th";
 		armor=700;
 		hiddenSelections[]=
