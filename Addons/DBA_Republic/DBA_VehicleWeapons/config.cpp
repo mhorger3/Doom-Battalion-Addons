@@ -220,6 +220,7 @@ class CfgPatches
 			"ammo_50mm_SAP_penetrator",
 			"DBA_50mm_SAP",
 			"DBA_50mm_HEPF",
+			"DBA_PM225_Penetrator",
 			"DBA_40mm_PM225_AP",
 			"DBA_40mm_PL31A_HESH",
 			"DBA_105mm_P900_KEP",
@@ -10746,12 +10747,12 @@ class CfgAmmo
 		waterFriction=0;
 	};
 	class DBA_40mm_PL31A_HESH : B_40mm_GPR{
-		hit = 125;
-		indirectHit = 50;
-		indirectHitRange = 9;
+		hit = 155;
+		indirectHit = 55;
+		indirectHitRange = 6.25;
 		explosive= 0.8
-		warheadName = "HEP";
-		caliber = 4.600000;
+		warheadName = "HESH";
+		caliber = 10.600000;
 		deflecting = 10;
 		cost = 40;
 		airFriction = -0.000600;
@@ -10802,14 +10803,19 @@ class CfgAmmo
 			distance = 0.5;
 		};
 	};
+	class DBA_PM225_Penetrator : ammo_Penetrator_Base{
+		hit=165;
+		warheadName = "Kinetic Energy";
+		caliber=26.66666667;
+	};
 	class DBA_40mm_PM225_AP : DBA_40mm_PL31A_HESH
 	{
-		hit = 180;
+		hit = 100;
 		indirectHit = 5;
 		indirectHitRange = 0.25;
 		explosive= 0.0
 		warheadName = "KEP";
-		caliber = 20;
+		caliber = 10;
 		deflecting = 1;
 		cost = 40;
 		airFriction = -0.000600;
@@ -10832,6 +10838,13 @@ class CfgAmmo
 		allowAgainstInfantry=0;
 		coefGravity=0;
 		waterFriction=0;
+		submunitionAmmo = "DBA_PM225_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0.000000;
+		submunitionInitialOffset[]= {0, 0, -0.200000};
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
 		class CamShakeExplode {
 			power = 10;
 			duration = 1.75;
