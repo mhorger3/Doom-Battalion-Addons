@@ -1,4 +1,19 @@
-tracks[] = {ArcTrooper,noHeroAcademia,VulgarChugjug,bountyHunter,gnrJungle,warthog,blackFlags,ambushMando,jawasMando,lament,sandman,nurseMando,resistBite,starkiller,durge,fallenOrder,fleet,paintBlack,vipersSting, unshaken,xcom,Mandalorian,Mandalorian2,AtWorldsEnd,Bastila,Batman,BattleHymn,BlackBetty,BlueMoon,British,Caesar,Cantina,DawnCome,DestinyTheme,DominusGhaul,DutchMarch,Episode3,Fallout4,FalloutMeltdown,ForceTheme,holdingHero, hypersleep,inYourHeart,NMSInfilitration,JourneyDestiny,kickHead,LostSector, LostBatallion,MondayBlue,ModernWarfare,National, Monolith, notMyVault,Parallax,Pirate,oldRepublic,outerWorlds,rancor,RainingMen,revan, ResistLegion, RiseSkywalker, RisingSun,skyrimDeath,StarWarsDeath,skyrimFar,taris,thatsLife,theFall,Thunderstruck,TwoSteps,vietnam,lotr1,lotr2, BadBatch, CloneTheme, planetsideVanu, planetsideFaction, doomRip, battlefieldTheme, cloneWars, overArray, crossingBridge, holyGrail, dangerZone, starship, spiderMan, crysis, droidMarchEpic, mastermind, MissileGuidance, HomeDepot, GandalfSax, umbara, siege, kraken, spark };
+tracks[] = {ArcTrooper,noHeroAcademia,VulgarChugjug,bountyHunter,gnrJungle,warthog,blackFlags,ambushMando,jawasMando,lament,sandman,nurseMando,resistBite,starkiller,durge,fallenOrder,fleet,paintBlack,vipersSting, unshaken,xcom,Mandalorian,Mandalorian2,AtWorldsEnd,Bastila,Batman,BattleHymn,BlackBetty,BlueMoon,British,Caesar,Cantina,DawnCome,DestinyTheme,DominusGhaul,DutchMarch,Episode3,Fallout4,FalloutMeltdown,ForceTheme,holdingHero, hypersleep,inYourHeart,NMSInfilitration,JourneyDestiny,kickHead,LostSector, LostBatallion,MondayBlue,ModernWarfare,National, Monolith, notMyVault,Parallax,Pirate,oldRepublic,outerWorlds,rancor,RainingMen,revan, ResistLegion, RiseSkywalker, RisingSun,skyrimDeath,StarWarsDeath,skyrimFar,taris,thatsLife,theFall,Thunderstruck,TwoSteps,vietnam,lotr1,lotr2, BadBatch, CloneTheme, planetsideVanu, planetsideFaction, doomRip, battlefieldTheme, cloneWars, overArray, crossingBridge, holyGrail, dangerZone, starship, spiderMan, crysis, droidMarchEpic, mastermind, MissileGuidance, HomeDepot, GandalfSax, umbara, siege, kraken, spark, order66SK, redSea };
+// wave 7
+class order66SK
+{
+	name = "Samuel Kim - Order 66";
+	musicClass = "101st_SW";
+	sound[]	= { "\101st_Aux_Mod\Addons\DBA_General\DBA_Music\music\wave7\Order66SK.ogg", db + 10, 1};
+	duration="181";
+};
+class redSea
+{
+	name = "Project Wingman - Red Sea";
+	musicClass = "101st_Soundtracks";
+	sound[]	= { "\101st_Aux_Mod\Addons\DBA_General\DBA_Music\music\wave7\RedSea.ogg", db + 10, 1};
+	duration="187";
+};
 // wave 6
 class spark
 {
