@@ -2299,6 +2299,8 @@ class CfgVehicles
 				magazines[] = 
 				{
 					"DBA_25mm_PM258_KEP_x160_mag",
+					"DBA_25mm_PM258_KEP_x160_mag",
+					"DBA_25mm_PL266_HE_x360_mag",
 					"DBA_25mm_PL266_HE_x360_mag",
 					"DBA_93mm_TPV13_TBR_x24_mag",
 					"DBA_127mm_PVX90_ATGM_x2_mag",
