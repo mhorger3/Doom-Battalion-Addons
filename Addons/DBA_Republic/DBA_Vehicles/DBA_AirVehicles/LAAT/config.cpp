@@ -18681,12 +18681,12 @@ class cfgVehicles
 		maxFordingDepth=110.65;
 		lockDetectionSystem="2+4+8+16";
 		incomingMissileDetectionSystem="2+4+8+16";
-		armor=500;
-		armorStructural=1;
+		armor=650;
+		armorStructural=2;
 		altFullForce=137400;
 		altNoForce=172400;
 		crewCrashProtection=0;
-		explosionShielding=0.88;
+		explosionShielding=0.75;
 		epeImpulseDamageCoef=0.25;
 		soundEngineOnInt[]=
 		{
@@ -20311,7 +20311,7 @@ class cfgVehicles
 					1,
 					30
 				};
-				stabilizedinaxes=0;
+				stabilizedinaxes=3;
 				viewgunnershadow=1;
 				class ViewOptics
 				{
