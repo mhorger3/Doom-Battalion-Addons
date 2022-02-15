@@ -2370,13 +2370,13 @@ class CfgVehicles
 	class DBA_Warrior_Testbed: I_APC_tracked_03_cannon_F
 	{
 		ace_cargo_space=400;
-		displayName="Warrior Test Bed";
+		displayName="Warrior Heavy Infantry Fighting Vehicle";
 		scope=2;
 		forceInGarage=1;
 		scopeCurator=2;
 		side=1;
-		armor=1100;
-		armorStructural=16;
+		armor=1350;
+		armorStructural=20;
 		transportSoldier=13;
 		faction="B_DBA_Republic_F";
 		hiddenSelections[]=
@@ -2402,17 +2402,16 @@ class CfgVehicles
 				{
 					"DBA_40mw_P4M_Cannon",
 					"DBA_762_C95A1_CG",
-					"DBA_127_C3HB_HMG"
 				};
 				magazines[]=
 				{
 					"DBA_40mm_PM225_AP_x80_mag",
 					"DBA_40mm_PM225_AP_x80_mag",
 					"DBA_40mm_PM225_AP_x80_mag",
+					"DBA_40mm_PM225_AP_x80_mag",
 					"DBA_40mm_PL31A_HESH_x320_mag",
 					"DBA_40mm_PL31A_HESH_x320_mag",
-					"DBA_762_D61_x2000_mag",
-					"DBA_127_X962_x1500_mag"
+					"DBA_762_D61_x2000_mag"
 				};
 				class HitPoints: HitPoints
 				{
