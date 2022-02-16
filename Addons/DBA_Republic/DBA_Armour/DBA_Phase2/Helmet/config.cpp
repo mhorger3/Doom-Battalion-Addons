@@ -1567,63 +1567,6 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
-
-	/*
-	class 101st_Zelph_Helm: 101st_Dagger_Helmet
-	{
-		author="Spark";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone AB helmet (Zelph)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Zelph_Helmet_CO.paa"
-		};
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
-	class 101st_Biscuit_Helm: 101st_Dagger_Helmet
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Biscuit)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Biscuit_Helmet_CO.paa"
-		};
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
-	class 101st_Pizza_Helm: 101st_Dagger_Helmet
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Pizza)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Pizza_Helmet_CO.paa"
-		};
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
-		subItems[] = {"JLTS_CloneNVG_spec"};
-	};
-	*/
 	class RD501_pilot_helmet_cxc;
 	class 101st_Crooked_Helmet: JLTS_CloneHelmetP2
 	{
@@ -1664,20 +1607,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\CM_Recruit_Helmet_CO.paa"
 		};
 	};
-	/*
-	class 101st_Medkit_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Medkit)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Medkit_Helm_CO.paa"
-		};
-	};*/
 	class 101st_Milk_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
