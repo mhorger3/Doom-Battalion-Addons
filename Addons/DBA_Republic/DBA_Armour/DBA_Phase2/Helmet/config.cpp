@@ -3981,7 +3981,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Denial_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Denial_Pilot_Helmet_CO.paa"
 		};
 	};
 	class DBA_Double_Pilot_Helm: DBA_P2_Pilot_Helm
