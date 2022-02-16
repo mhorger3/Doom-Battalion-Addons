@@ -14759,8 +14759,8 @@ class CfgAmmo
 	//END
 	//Grozd
 	class DBA_30mm_PL84_HEI : B_40mm_GPR{
-		hit = 50;
-		indirectHit = 45;
+		hit = 225;
+		indirectHit = 75;
 		indirectHitRange = 4;
 		explosive= 1;
 		airLock=1;
@@ -14799,8 +14799,8 @@ class CfgAmmo
 		proxyShape = "\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
 		hit = 250;
 		indirectHit = 275;
-		indirectHitRange = 6;
-		proximityExplosionDistance=5;
+		indirectHitRange = 10;
+		proximityExplosionDistance=10;
 		explosive = 1.00000;
 		warheadName = "SAM";
 		simulation = "shotMissile";
