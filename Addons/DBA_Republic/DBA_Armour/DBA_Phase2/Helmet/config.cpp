@@ -4094,23 +4094,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mockingjay_CO.paa"
 		};
 	};
-	class 101st_Phantom_Helmet: DBA_P2_Pilot_Helm
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Clone helmet (Phantom)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Phantom_Pilot_Helmet_CO.paa"
-		};
-	};
 	class 101st_Snake_Helmet : DBA_P2_Pilot_Helm
 	{
 		author = "Vulgar";
