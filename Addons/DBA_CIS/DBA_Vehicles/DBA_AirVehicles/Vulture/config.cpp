@@ -44,12 +44,12 @@ class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
 	class components;
 };
 class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{/*
+{
 	class components;
 };
 class CfgVehicles
 {
-	class 3as_Vulture_dynamicLoadout_AA;
+	/*class 3as_Vulture_dynamicLoadout_AA;
 	class O_DBA_CIS_Vulture_Droid_F: 3as_Vulture_dynamicLoadout_AA
 	{
 		scope=2;
