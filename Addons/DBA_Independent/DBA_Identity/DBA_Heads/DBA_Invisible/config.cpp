@@ -31,7 +31,7 @@ class CfgFaces
 			author="Morn";
 			head="DBA_Invisible";
 			identityTypes[]={};
-			displayname="No Head";
+			displayname="DBA Invisible Head";
 			texture=""
 			material = "";
 			disabled=0;

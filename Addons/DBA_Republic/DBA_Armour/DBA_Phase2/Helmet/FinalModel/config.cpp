@@ -318,4 +318,22 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Achilles_NewHelmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Limit : DBA_P2HelmetBase
+	{
+		author = "Morn";
+		displayName = "DBA Clone trooper P2 Helmet: Limit"
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Limit_NewHelmet_CO.paa"
+		};
+		};
+	class DBA_P2Helmet_Bond : DBA_P2Helmet
+	{
+		author = "Morn";
+		displayName = "DBA Clone trooper P2 Helmet: Bond"
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Bond_NewHelmet_CO.paa"
+		};
+};
 };

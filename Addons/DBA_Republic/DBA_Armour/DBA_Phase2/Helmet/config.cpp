@@ -2262,32 +2262,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Kei_Helmet_CO.paa"
 		};
 	};
-	class 101st_Limit_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Morn";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Limit)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Limit_NewHelmet_CO.paa"
-		};
-	};
-	class 101st_Bond_Helmet: JLTS_CloneHelmetP2
-	{
-		author="Morn";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Clone helmet (Bond)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Bond_NewHelmet_CO.paa"
-		};
-	};
 	class 101st_Leon_Helmet: JLTS_CloneHelmetP2
 	{
 		author="Dutch";
