@@ -109,11 +109,11 @@ class cfgWeapons
 	};
 	class DBA_P2Helmet_Corvax : DBA_P2HelmetBase
 	{
-		author = "Vulgar";
+		author = "Morn";
 		displayName = "DBA Clone trooper P2 Helmet: Corvax";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Corvax_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Corvax_NewHelmet_CO.paa"
 		};
 	};
 	class DBA_P2Helmet_Croja : DBA_P2HelmetBase
@@ -190,11 +190,11 @@ class cfgWeapons
 	};
 	class DBA_P2Helmet_Nassau : DBA_P2HelmetBase
 	{
-		author = "Vulgar";
+		author = "Morn";
 		displayName = "DBA Clone trooper P2 Helmet: Nassau";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Nassau_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Nassau_NewHelmet_CO.paa"
 		};
 	};
 	class DBA_P2Helmet_Odin : DBA_P2HelmetBase
@@ -326,7 +326,6 @@ class cfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Limit_NewHelmet_CO.paa"
 		};
-		};
 	class DBA_P2Helmet_Bond : DBA_P2Helmet
 	{
 		author = "Morn";
@@ -335,5 +334,4 @@ class cfgWeapons
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Bond_NewHelmet_CO.paa"
 		};
-};
 };
