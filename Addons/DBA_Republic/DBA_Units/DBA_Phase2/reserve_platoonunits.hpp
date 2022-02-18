@@ -17,7 +17,7 @@ class Reservist_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\Res_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
-	
+
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -40,7 +40,7 @@ class ReservistCI_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCI_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
-	
+
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -63,7 +63,7 @@ class ReserveCIC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCIC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
-	
+
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -87,7 +87,7 @@ class ReservistCM_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCM_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
-	
+
 	scope = 2;
 	scopeCurator = 2;
 };
@@ -110,7 +110,30 @@ class ReserveCMC_DBA : 101st_JLTS_Clone_P2
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCMC_Armor_upper_CO.paa",
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
 	};
-	
+
+	scope = 2;
+	scopeCurator = 2;
+};
+class Recruit_DBA : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "B_DBA_Republic_F";
+	displayName = "101st Recruit (JLTS)";
+	uniformClass = "DBA_Recruit";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "B_DBA_Republic_F";
+	editorSubcategory = "DBA_Reservist";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Recruit_Chest_CO.paa",
+		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Recruit_Legs_CO.paa"
+	};
+
 	scope = 2;
 	scopeCurator = 2;
 };
