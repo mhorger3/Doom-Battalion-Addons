@@ -14148,9 +14148,9 @@ class cfgVehicles
 					initAngleY=0;
 					minAngleY=0;
 					maxAngleY=0;
-					initFov="(25 / 120)";
-					minFov="(25 / 120)";
-					maxFov="(25 / 120)";
+					initFov="(30 / 120)";
+					minFov="(30 / 120)";
+					maxFov="(30 / 120)";
 					directionStabilized=1;
 					visionMode[]=
 					{
@@ -14169,17 +14169,17 @@ class cfgVehicles
 				class Medium: Wide
 				{
 					opticsDisplayName="MFOV";
-					initFov="(10 / 120)";
-					minFov="(10 / 120)";
-					maxFov="(10 / 120)";
+					initFov="(15 / 120)";
+					minFov="(15 / 120)";
+					maxFov="(15 / 120)";
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class Narrow: Wide
 				{
 					opticsDisplayName="NFOV";
-					initFov="(1.15 / 120)";
-					minFov="(1.15 / 120)";
-					maxFov="(1.15 / 120)";
+					initFov="(3.75 / 120)";
+					minFov="(3.75 / 120)";
+					maxFov="(3.75 / 120)";
 					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics=1;
