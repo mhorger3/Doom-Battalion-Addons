@@ -14743,7 +14743,7 @@ class CfgAmmo
 		effectsMissile = "missile2";
 		muzzleEffect = "";
 		whistleDist = 4;
-		lockType = 0;
+		lockType = 2;
 		manualControl = 0;
 		weaponLockSystem = 2;
 		cmImmunity = 0.85;
