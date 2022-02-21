@@ -933,9 +933,9 @@ class CfgAmmo
 	};
 	class ammo_Penetrator_Base;
 	class DBA_GL_AP_Penetrator : ammo_Penetrator_Base{
-		hit=175;
+		hit=280;
 		warheadName = "HEAT";
-		caliber=23.33333333;
+		caliber=24.33333333;
 	};
 	class DBA_GL_AP_ammo : G_40mm_HE
 	{
