@@ -3132,7 +3132,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Grae_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Grae_JLTS_P2_Helmet_CO.paa"
 		};
 	};
 	class 101st_Whale_Helmet: JLTS_CloneHelmetP2
