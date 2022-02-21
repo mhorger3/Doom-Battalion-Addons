@@ -1018,27 +1018,27 @@ class CfgVehicles
 				{
 					class HitTurret
 					{
-						armor=0.80000001;
+						armor=0.2000001;
 						material=-1;
 						armorComponent="hit_main_turret";
 						name="hit_main_turret_point";
 						visual="-";
 						passThrough=0;
-						minimalHit=0.1;
+						minimalHit=50;
 						explosionShielding=0.2;
 						radius=0.25;
 						isTurret=1;
 					};
 					class HitGun
 					{
-						armor=0.60000002;
+						armor=0.20000002;
 						material=-1;
 						armorComponent="hit_main_gun";
 						name="hit_main_gun_point";
 						visual="-";
 						passThrough=0;
-						minimalHit=0.1;
-						explosionShielding=0.40000001;
+						minimalHit=50;
+						explosionShielding=0.10000001;
 						radius=0.2;
 						isGun=1;
 					};
@@ -1190,27 +1190,27 @@ class CfgVehicles
 				{
 					class HitTurret
 					{
-						armor=0.80000001;
+						armor=0.20000001;
 						material=-1;
 						armorComponent="hit_main_turret";
 						name="hit_main_turret_point";
 						visual="-";
 						passThrough=0;
-						minimalHit=0.1;
-						explosionShielding=0.2;
+						minimalHit=100;
+						explosionShielding=0.05;
 						radius=0.25;
 						isTurret=1;
 					};
 					class HitGun
 					{
-						armor=0.60000002;
+						armor=0.20000002;
 						material=-1;
 						armorComponent="hit_main_gun";
 						name="hit_main_gun_point";
 						visual="-";
 						passThrough=0;
-						minimalHit=0.1;
-						explosionShielding=0.40000001;
+						minimalHit=100;
+						explosionShielding=0.05000001;
 						radius=0.2;
 						isGun=1;
 					};
