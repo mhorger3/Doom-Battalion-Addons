@@ -209,20 +209,10 @@ class CfgWeapons{
 			class BaseSoundModeType
 			{
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",
-					1.9952624,
-					1,
-					1500
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+            begin1[] = {"swlw_rework\sounds\launcher\PLX_shot.wss",10,0.87,2000};
+            soundBegin[] = {"begin1",1};
 			};
 			recoil="recoil_single_law";
 			aiRateOfFire=7;
@@ -406,6 +396,7 @@ class CfgAmmo{
 		trackLead = 1;
 		maneuvrability = 32;
 		cost = 500;
+		soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss",10,0.95,700};
 		aiAmmoUsageFlags = "128 + 512";
 		dangerRadiusHit = 1000;
 		suppressionRadiusHit = 120;
