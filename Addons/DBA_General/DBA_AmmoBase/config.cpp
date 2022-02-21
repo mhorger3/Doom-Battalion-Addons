@@ -813,14 +813,14 @@ class CfgAmmo
 
 	//Pistol Calibers
 
-	class DBA_9x21_base :DBA_ammo_base //9mm Luger
+	class DBA_9x39_base :DBA_ammo_base //9mm Luger
 	{
-		hit = 5; //How much damage when it hits
+		hit = 6.5; //How much damage when it hits
 		indirecthit = 0; //Splash Damage
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1.2; //Acts as penetration multiplier for the projectile.
-		typicalSpeed = 380; //What speed does this need to be going to inflict full damage
-
+		typicalSpeed = 150; //What speed does this need to be going to inflict full damage
+		airFriction=0.3;
 		tracerScale = 0.2;
 
 		audibleFire = 30;
@@ -833,12 +833,12 @@ class CfgAmmo
 	};
 	class DBA_45acp_base :DBA_ammo_base //45ACP
 	{
-		hit = 5; //How much damage when it hits
+		hit = 9; //How much damage when it hits
 		indirecthit = 0; //Splash Damage
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1.2; //Acts as penetration multiplier for the projectile.
-		typicalSpeed = 280; //What speed does this need to be going to inflict full damage
-
+		typicalSpeed = 150; //What speed does this need to be going to inflict full damage
+		airFriction=0.5;
 		tracerScale = 0.2;
 
 		audibleFire = 50;
@@ -851,16 +851,15 @@ class CfgAmmo
 	};
 	class DBA_127x33_base :DBA_ammo_base //.50 Action Express
 	{
-		hit = 7.5; //How much damage when it hits
+		hit = 20; //How much damage when it hits
 		indirecthit = 0; //Splash Damage
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1; //Acts as penetration multiplier for the projectile.
-		typicalSpeed = 420; //What speed does this need to be going to inflict full damage
-
+		typicalSpeed = 350; //What speed does this need to be going to inflict full damage
+		initSpeed=470;
+		airFriction=1;
 		tracerScale = 0.2;
-
 		audibleFire = 50;
-
 		aiAmmoUsageFlags = 64;
 		dangerRadiusBulletClose = 4;
 		dangerRadiusHit = 8;
