@@ -931,7 +931,12 @@ class CfgAmmo
 		effectfly = "JLTS_plasma_orange";
 		fuseDistance = 3;
 	};
-
+	class ammo_Penetrator_Base;
+	class DBA_GL_AP_Penetrator : ammo_Penetrator_Base{
+		hit=175;
+		warheadName = "HEAT";
+		caliber=23.33333333;
+	};
 	class DBA_GL_AP_ammo : G_40mm_HE
 	{
 		hit = 175;
@@ -944,7 +949,13 @@ class CfgAmmo
 		fuseDistance = 3;
 		explosive = 0.0001;
 		deflecting = 5;
-		caliber = 20;
+		caliber = 5;
+		submunitionAmmo = "DBA_GL_AP_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 1;
+		triggerOnImpact = 1;
+		submunitionInitialOffset[]={0,0,-0.2};
 		ace_frag_enabled = 0;
 		ace_frag_force = 0;
 		ace_frag_classes[] = { "" };
