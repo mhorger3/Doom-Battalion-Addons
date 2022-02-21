@@ -130,6 +130,33 @@ class B_DBA_P2CloneVin_F : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
+class B_DBA_P2CloneGrae_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "B_DBA_Republic_F";
+	displayName = "101st Grae (JLTS)";
+	uniformClass = "DBA_P2CloneGraeUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	editorSubcategory = "DBA_Claymore_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Grae_Upper_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Grae_Lower_CO.paa"
+	};
+	identityTypes[] =
+	{
+		"LanguageENG_F",
+		"Head_NATO"
+	};
+	
+	scope = 2;
+	scopeCurator = 2;
+};
 class B_DBA_P2CloneKai_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
