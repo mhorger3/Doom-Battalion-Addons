@@ -286,7 +286,7 @@ class CfgMagazines
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		mass = 8;
 		count = 20;
-		initspeed = 254;
+		initspeed = 255;
 	};
 	class DBA_Cannok_Slug_Mag : DBA_Mag_Base
 	{
@@ -352,7 +352,7 @@ class CfgMagazines
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		mass = 12;
 		count = 7;
-		initspeed = 350;
+		initspeed = 470;
 	};
 	class DBA_DuelHammerHead_Mag : DBA_Mag_Base //Hammerhead
 	{
@@ -363,7 +363,7 @@ class CfgMagazines
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		mass = 12;
 		count = 14;
-		initspeed = 350;
+		initspeed = 470;
 	};
 	class DBA_AP_GL_x2_mag : CA_Magazine
 	{
