@@ -66,7 +66,7 @@ class CfgWeapons
 			"DBA_792_LSPUR_x30_mag"
 		};
 		reloadAction = "GestureReloadDMR03";
-		recoil="recoil_gm6";
+		recoil="recoil_sdar";
 		maxZeroing = 1600;
 		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		discreteDistanceInitIndex = 0;
@@ -304,6 +304,7 @@ class CfgWeapons
 		{
 			"DBA_65_Ainu_x32_mag",
 		};
+		recoil="recoil_smg_02";
 		reloadAction = "GestureReloadDMR03";
 		maxZeroing = 1600;
 		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
@@ -542,6 +543,7 @@ class CfgWeapons
 		{
 			"DBA_77_RRB_x40_mag"
 		};
+		recoil="recoil_mxm";
 		reloadAction = "GestureReloadDMR03";
 		maxZeroing = 1600;
 		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
