@@ -62,7 +62,55 @@ class CfgVehicles
 		editorPreview="101st_Aux_Mod\Addons\DBA_CIS\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_3as_F.jpg";
 		crew="O_DBA_CIS_OOM_Pilot_Droid_F";
 	};*/
-	class Plane_Fighter_03_dynamicLoadout_base_F; 
+	class Air;
+	class Plane: Air
+	{
+		class HitPoints;
+	};
+	class Plane_Base_F: Plane
+	{
+		class AnimationSources;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+		};
+		class Components;
+		class Eventhandlers;
+		class ViewPilot;
+	};
+	class Ejection_Seat_Base_F;
+	class Plane_Canopy_Base_F;
+	class Plane_Fighter_03_base_F: Plane_Base_F
+	{
+		class HitPoints: HitPoints
+		{
+			class HitHull: HitHull
+			{
+			};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				};
+			};
+		};
+		class Eventhandlers;
+		class ViewPilot;
+	};
+	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				class Pylons;
+				class Presets;
+			};
+		};
+	};
 	class MFD
 	{
 	};
