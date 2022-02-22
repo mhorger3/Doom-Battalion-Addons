@@ -336,4 +336,13 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Bond_NewHelmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Secutor : DBA_P2Helmet
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Secutor"
+			hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Secutor_Helmet_CO.paa"
+		};
+	};
 };
