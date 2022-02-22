@@ -180,7 +180,7 @@ class CfgVehicles
 				{
 					class HitGun
 					{
-						armor = 1;
+						armor = 2500;
 						material = -1;
 						name = "gun";
 						visual = "autonomous_unhide";
@@ -189,7 +189,7 @@ class CfgVehicles
 					};
 					class HitTurret: HitGun
 					{
-						armor = 1;
+						armor = 2500;
 						name = "turret";
 					};
 				};
