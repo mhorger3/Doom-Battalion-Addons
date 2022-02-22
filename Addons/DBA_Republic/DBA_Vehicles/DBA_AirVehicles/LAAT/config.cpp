@@ -12238,17 +12238,28 @@ class cfgVehicles
 	class CopilotTurret;
 	class Components;
 	class NewTurret;
-	class 3as_arc_170_green;
-	class 101st_ARC_Modified : 3as_arc_170_green
+	class 3as_arc_170_blue; //changed from 3as_arc_170_green due to broken model
+	class 101st_ARC_Modified : 3as_arc_170_blue //changed from 3as_arc_170_green due to broken model
 	{
-		author = "Mutt";
+		author = "Mutt"; //temp fix by Gorman
 		displayname = "101st ARC-170 (FM)"
 		scope = 2;
 		scopeCurator = 2;
 		radarTargetSize = 1.2;
 		irTargetSize = 1.3;
 		faction="B_DBA_Republic_F";
-		
+		hiddenSelections[]= //guns, body, wings
+		{
+			"camo",
+			"camo1",
+			"camo2",
+		};
+		hiddenselectionstextures[] = //pulled paa's
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\ARC-170\101st_Guns_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\ARC-170\101st_Main_Frame_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\ARC-170\101st_Wings_Engines_CO.paa",
+		};
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
