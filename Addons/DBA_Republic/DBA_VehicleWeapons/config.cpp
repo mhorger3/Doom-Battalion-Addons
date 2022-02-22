@@ -2488,7 +2488,7 @@ class CfgWeapons
 	//Grozd 
 	class DBA_30mw_GH38C_AC : CannonCore{
 		displayName = "GH38C 30mw Vozd Autocannons";
-		ballisticsComputer=4;
+		ballisticsComputer=1;
 		FCSMaxLeadSpeed=2000;
 		FCSZeroingDelay=0.1;
 		canLock=1;
