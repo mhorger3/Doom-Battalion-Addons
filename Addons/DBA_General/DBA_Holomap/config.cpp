@@ -7,14 +7,14 @@ class CfgPatches
 
         requiredAddons[] =
         {
-//			"442_misc_holotable",
+  			"442_misc_holotable",
             "JLTS_C_Intel"
         };
         requiredVersion = 0.1;
         units[] = {
 			"101st_Holomap",
-	//		"101st_HoloTable_Long",
-	//		"101st_HoloTable_Round"
+	  		"101st_HoloTable_Long",
+			"101st_HoloTable_Round"
 		};
         weapons[] = {};
     };
