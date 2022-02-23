@@ -345,4 +345,28 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Secutor_Helmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Caboose : DBA_P2Helmet
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Caboose"
+			hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Caboose_Helmet_CO.paa"
+		};
+		class DBA_P2Helmet_JohnBen : DBA_P2Helmet
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: JohnBen"
+			hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\JohnBen_Helmet_CO.paa"
+		};
+		class DBA_P2Helmet_Richter : DBA_P2Helmet
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Richter"
+			hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Richter_Helmet_CO.paa"
+		};
 };
