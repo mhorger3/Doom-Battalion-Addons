@@ -322,59 +322,63 @@ class cfgWeapons
 	{
 		author = "Morn";
 		displayName = "DBA Clone trooper P2 Helmet: Limit"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Limit_NewHelmet_CO.paa"
 		};
 	};
-	class DBA_P2Helmet_Bond : DBA_P2Helmet
+	class DBA_P2Helmet_Bond : DBA_P2HelmetBase
 	{
 		author = "Morn";
 		displayName = "DBA Clone trooper P2 Helmet: Bond"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Bond_NewHelmet_CO.paa"
 		};
 	};
-	class DBA_P2Helmet_Secutor : DBA_P2Helmet
+	class DBA_P2Helmet_Secutor : DBA_P2HelmetBase
 	{
 		author = "Secutor";
 		displayName = "DBA Clone trooper P2 Helmet: Secutor"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Secutor_Helmet_CO.paa"
 		};
 	};
-	class DBA_P2Helmet_Caboose : DBA_P2Helmet
+	class DBA_P2Helmet_Caboose : DBA_P2HelmetBase
 	{
 		author = "Secutor";
 		displayName = "DBA Clone trooper P2 Helmet: Caboose"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Caboose_Helmet_CO.paa"
 		};
-		class DBA_P2Helmet_JohnBen : DBA_P2Helmet
+	};
+	class DBA_P2Helmet_JohnBen : DBA_P2HelmetBase
 	{
 		author = "Secutor";
 		displayName = "DBA Clone trooper P2 Helmet: JohnBen"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\JohnBen_Helmet_CO.paa"
 		};
-		class DBA_P2Helmet_Richter : DBA_P2Helmet
+	};
+	class DBA_P2Helmet_Richter : DBA_P2HelmetBase
 	{
 		author = "Secutor";
 		displayName = "DBA Clone trooper P2 Helmet: Richter"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Richter_Helmet_CO.paa"
 		};
-		class DBA_P2Helmet_Roma : DBA_P2Helmet
+	};
+	class DBA_P2Helmet_Roma : DBA_P2HelmetBase
 	{
 		author = "Secutor";
 		displayName = "DBA Clone trooper P2 Helmet: Roma"
-			hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Roma_Helmet_CO.paa"
 		};
+	};
 };
