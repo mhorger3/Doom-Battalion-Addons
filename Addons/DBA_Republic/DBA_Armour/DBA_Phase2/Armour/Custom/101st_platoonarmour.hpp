@@ -356,6 +356,36 @@ class DBA_P2CloneSparkUniform : Uniform_Base
 		mass = 40;
 	};
 };
+class DBA_P2CloneSecutorUniform : Uniform_Base
+{
+	author = "Secutor";
+	scope = 2;
+	displayName = "DBA P2 Clone Armour: Secutor (Legacy)";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Legs_CO.paa"
+	};
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneSecutor_F";
+		containerClass = "Supply150";
+		uniformType = "Neopren";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
 class DBA_P2CloneVulgarUniform : Uniform_Base
 {
 	author = "Vulgar";
