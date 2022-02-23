@@ -3927,6 +3927,20 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Arcturus_Pilot_Helmet_CO.paa"
 		};
 	};
+	class DBA_Athely_Pilot_Helm: DBA_P2_Pilot_Helm
+	{
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="101st Pilot Helmet (Athely)";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Athely_Pilot_Helmet_CO.paa"
+		};
+	};
 	class DBA_Craft_Pilot_Helmet: DBA_P2_Pilot_Helm
 	{
 		scope=2;
