@@ -15,6 +15,7 @@ class CfgPatches
 			"B_DBA_P2CloneKel_F",
 			"B_DBA_P2CloneJerec_F",
 			"B_DBA_P2CloneVin_F",
+			"B_DBA_P2CloneGrae_F",
 			"B_DBA_P2CloneKai_F",
 			"B_DBA_P2CloneBlackwater_F",
 			"B_DBA_P2CloneKodiak_F",
