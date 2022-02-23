@@ -3865,7 +3865,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = { "101st_Aux_Mod\Addons\textures\CISClones\TraitorHelmet.rvmat" };
 	};
 
-//Pilot Helmets. Place in Alphabetical Order
+//Pilot Helmets. Place in Alphabetical Order. PAAs go in DBA_Phase2\Helmet\Pilot
 	class 3as_P2_Pilot_helmet;
 	class DBA_P2_Pilot_Helm: 3as_P2_Pilot_helmet
 	{
@@ -4065,7 +4065,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Mechanic_Pilot_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Mechanic_Pilot_Helmet_CO.paa"
 		};
 	};
 	class DBA_Mockingjay_Pilot_Helm: DBA_P2_Pilot_Helm
@@ -4113,7 +4113,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Squirtle_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Squirtle_Pilot_Helmet_CO.paa"
 		};
 	};
 	class 101st_Stryker_Helmet: DBA_P2_Pilot_Helm
@@ -4130,7 +4130,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Stryker_Pilot_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Stryker_Pilot_Helmet_CO.paa"
 		};
 	};
 	class 101st_Stultus_Helmet : DBA_P2_Pilot_Helm
