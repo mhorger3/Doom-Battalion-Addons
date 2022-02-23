@@ -50,10 +50,9 @@ class CfgFunctions
 
 class CfgVehicles
 {
-	/*
     class land_mesa;
-//	class 442_holotable;
-//	class 442_holotable2;
+	class 442_holotable;
+	class 442_holotable2;
 
 	class 101st_Holomap : land_mesa
 	{
@@ -108,7 +107,6 @@ class CfgVehicles
 			};
 		};
 	};
-	*/
 	class Weapon_Base_F;
 	class 101st_GH_Portable_Holomap : Weapon_Base_F
 	{
