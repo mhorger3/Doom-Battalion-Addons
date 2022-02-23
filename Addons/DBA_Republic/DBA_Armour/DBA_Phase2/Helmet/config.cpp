@@ -4057,8 +4057,7 @@ class CfgWeapons
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
-		displayName="101st Clone helmet (Mechanic)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		displayName="101st Pilot Helmet (Mechanic)";
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -4122,8 +4121,7 @@ class CfgWeapons
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
-		displayName="101st Clone helmet (Stryker)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		displayName="101st Pilot Helmet (Stryker)";
 		hiddenSelections[]=
 		{
 			"Camo"
