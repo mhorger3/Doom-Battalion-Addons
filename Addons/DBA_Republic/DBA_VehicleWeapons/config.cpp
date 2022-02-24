@@ -13856,6 +13856,7 @@ class CfgAmmo
 		submunitionDirectionType = "";
 		submunitionInitSpeed = 1000;
 		submunitionParentSpeedCoef = 1;
+		triggerOnImpact=1;
 		submunitionInitialOffset[]={0,0,-0.2};
 		aiAmmoUsageFlags="128 + 512";
 		allowAgainstInfantry=0;
@@ -14072,6 +14073,7 @@ class CfgAmmo
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1000;
 		submunitionParentSpeedCoef = 1;
+		triggerOnImpact=1;
 		submunitionInitialOffset[]={0,0,-0.2};
 		aiAmmoUsageFlags="128 + 512";
 		allowAgainstInfantry=0;
