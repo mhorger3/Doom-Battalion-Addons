@@ -9,7 +9,7 @@ class CfgPatches
 		};
 		requiredVersion = 0.1;
 		units[] = {
-			"101st_JLTS_Clone_P2",
+			"B_DBA_P2Clone_Base",
 			"B_DBA_P2CloneDutch_F",
 			"B_DBA_P2CloneBlind_F",
 			"B_DBA_P2CloneKel_F",
@@ -210,7 +210,7 @@ class CfgVehicles {
 	{
 		class HitPoints;
 	};
-	class 101st_JLTS_Clone_P2 : B_Soldier_F
+	class B_DBA_P2Clone_Base : B_Soldier_F
 	{
 		scope = 0;
 		scopeCurator = 0;
@@ -456,11 +456,11 @@ class CfgVehicles {
 			};
 		};
 	};
-	class B_DBA_P2CloneRecruit_F : 101st_JLTS_Clone_P2
+	class B_DBA_P2CloneRecruit_F : B_DBA_P2Clone_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "DBA Phase 2 Clone Recruit";
+		displayName = "[DBA] Phase 2 Clone Recruit";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		hiddenSelectionsTextures[] =
 		{
@@ -469,11 +469,11 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneRecruitUniform";
 	};
-	class B_DBA_P2CloneCadet_F : 101st_JLTS_Clone_P2
+	class B_DBA_P2CloneCadet_F : B_DBA_P2Clone_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "DBA Phase 2 Clone Cadet";
+		displayName = "[DBA] Phase 2 Clone Cadet";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		hiddenSelectionsTextures[] =
 		{
@@ -482,21 +482,87 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneCadetUniform";
 	};
-	class B_DBA_P2CloneTrooper_F : 101st_JLTS_Clone_P2
+	class B_DBA_P2CloneTrooper_F : B_DBA_P2Clone_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "DBA Phase 2 Clone";
+		displayName = "[DBA] Phase 2 Clone";
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		uniformClass = "DBA_P2cloneTrooperUniform";
 	};
+	class B_DBA_P2CloneDemo_F : B_DBA_P2Clone_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[DBA] Phase 2 Clone: Demolitions Expert";
+		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Demo_Chest_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Demo_Legs_CO.paa"
+		};
+		uniformClass = "DBA_P2cloneDemoTrooperUniform";
+	};
+	class B_DBA_P2CI_F : B_DBA_P2Clone_Base
+	{
+		displayName = "[DBA] Phase 2 Clone: Reservist CI";
+		uniformClass = "DBA_P2CIUniform";
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCI_Armor_upper_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
+		};
+
+		scope = 2;
+		scopeCurator = 2;
+	};
+	class B_DBA_P2CIC_F : B_DBA_P2Clone_Base
+	{
+		displayName = "[DBA] Phase 2 Clone: Reservist CI-C";
+		uniformClass = "DBA_P2CICUniform";
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCIC_Armor_upper_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
+		};
+
+		scope = 2;
+		scopeCurator = 2;
+	};
+
+	class B_DBA_P2CM_F : B_DBA_P2Clone_Base
+	{
+		displayName = "[DBA] Phase 2 Clone: Reservist CM";
+		uniformClass = "DBA_P2CMUniform";
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCM_Armor_upper_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
+		};
+
+		scope = 2;
+		scopeCurator = 2;
+	};
+	class B_DBA_P2CMC_F : B_DBA_P2Clone_Base
+	{
+		displayName = "[DBA] Phase 2 Clone: Reservist CM-C";
+		uniformClass = "DBA_P2CMCUniform";
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\ResCMC_Armor_upper_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
+		};
+
+		scope = 2;
+		scopeCurator = 2;
+	};
 	#include "b1_platoonunits.hpp"
 	#include "b2_platoonunits.hpp"
-	#include "bhq_platoonunits.hpp"
+	#include "bhq_companyunits.hpp"
 	#include "c1_platoonunits.hpp"
 	#include "c2_platoonunits.hpp"
-	#include "chq_platoonunits.hpp"
-	#include "custom_platoonunits.hpp"
-	#include "detach_platoonunits.hpp"
-	#include "reserve_platoonunits.hpp"
+	#include "chq_companyunits.hpp"
+	#include "hammer_flightunits.hpp"
+	#include "custom_units.hpp"
+	#include "d1_platoonunits.hpp"
 };

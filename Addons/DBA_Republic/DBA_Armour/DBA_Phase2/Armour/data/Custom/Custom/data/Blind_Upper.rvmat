@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Custom\Custom\data\BlindUpper_TI.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\BlindUpper_TI.paa";
 };
 ambient[]={0.5,0.5,0.5,1};
 diffuse[]={0.69999999,0.69999999,0.69999999,1};

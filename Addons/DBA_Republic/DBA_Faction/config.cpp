@@ -34,6 +34,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "DBA Republic Line Infantry";
 	};
+	class O_DBA_Republic_Broadsword
+	{
+		displayName = "DBA Republic Command (Broadsword HQ)";
+	};
 	class O_DBA_Republic_Broadsword1
 	{
 		displayName = "DBA Republic Line Infantry (Broadsword 1)";
@@ -41,6 +45,10 @@ class CfgEditorSubcategories
 	class O_DBA_Republic_Broadsword2
 	{
 		displayName = "DBA Republic Line Infantry (Broadsword 2)";
+	};
+	class O_DBA_Republic_Claymore
+	{
+		displayName = "DBA Republic Command (Claymore HQ)";
 	};
 	class O_DBA_Republic_Claymore1
 	{
@@ -50,9 +58,25 @@ class CfgEditorSubcategories
 	{
 		displayName = "DBA Republic Line Infantry (Claymore 2)";
 	};
+	class O_DBA_Republic_Custom
+	{
+		displayName = "DBA Republic Line Infantry (Custom)";
+	};
 	class O_DBA_Republic_Legacy
 	{
 		displayName = "DBA Republic Line Infantry (Legacy)";
+	};
+	class O_DBA_Republic_Airborne
+	{
+		displayName = "DBA Republic Airborne (Dagger)";
+	};
+	class O_DBA_Republic_Recon
+	{
+		displayName = "DBA Republic Recon (Longbow)";
+	};
+	class O_DBA_Republic_AirCorp
+	{
+		displayName = "DBA Republic Air Corp (Hammer)";
 	};
 	class O_DBA_Republic_Helicopters
 	{
