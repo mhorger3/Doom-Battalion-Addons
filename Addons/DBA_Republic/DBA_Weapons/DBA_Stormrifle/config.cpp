@@ -66,7 +66,7 @@ class CfgWeapons
 			"DBA_792_LSPUR_x30_mag"
 		};
 		reloadAction = "GestureReloadDMR03";
-		recoil="recoil_sdar";
+		recoil="recoil_trg20";
 		maxZeroing = 1600;
 		overviewPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Verpine_CA.paa";
 		discreteDistanceInitIndex = 0;
@@ -291,7 +291,7 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0.30000001,0.80000001 };
 				iconScale = 0.30000001;
-				compatibleItems[] = {};
+				compatibleItems[] = {"bipod_01_f_blk"};
 			};
 		};
 		distanceZoomMin = 300;
@@ -299,10 +299,10 @@ class CfgWeapons
 	};
 	class DBA_DC25G_Battlerifle : DBA_DC25F_Battlerifle{
 		scope=2;
-		displayName = "DC-24G BR (Concept B)";
+		displayName = "DC-24G Battle-Rifle Concept B";
 		magazines[] =
 		{
-			"DBA_65_Ainu_x32_mag",
+			"DBA_65_Ainu_x35_mag",
 		};
 		recoil="recoil_smg_02";
 		reloadAction = "GestureReloadDMR03";
@@ -432,7 +432,7 @@ class CfgWeapons
 					1
 				};
 			};
-			reloadTime=0.1;
+			reloadTime=0.1043478261;
 			dispersion=0.000872664;
 			recoil="recoil_auto_dmr";
 			recoilProne="recoil_auto_prone_dmr";
@@ -530,7 +530,7 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0.30000001,0.80000001 };
 				iconScale = 0.30000001;
-				compatibleItems[] = {};
+				compatibleItems[] = {"bipod_01_f_blk"};
 			};
 		};
 		distanceZoomMin = 300;
@@ -769,7 +769,7 @@ class CfgWeapons
 			{
 				iconPosition[] = { 0.30000001,0.80000001 };
 				iconScale = 0.30000001;
-				compatibleItems[] = {};
+				compatibleItems[] = {"bipod_01_f_blk"};
 			};
 		};
 		distanceZoomMin = 300;
@@ -810,18 +810,18 @@ class CfgMagazines{
 		initspeed=844;
 		tracersevery=1;
 	};
-	class DBA_65_Ainu_x32_mag : CA_Magazine{
-		displayname="6.5mw Ainu Mag (32 Rounds)";
+	class DBA_65_Ainu_x35_mag : CA_Magazine{
+		displayname="6.5mw Ainu Mag (35 Rounds)";
 		dlc="DBA";
 		scope = 2;
 		ammo="DBA_65_Ainu";
 		picture="\MRC\JLTS\weapons\E5\data\ui\E5_mag_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E5\E5_mag.p3d";
-		displaynamemagazine="6.5mw Ainu Mag (32 Rounds)";
+		displaynamemagazine="6.5mw Ainu Mag (35 Rounds)";
 		shortnamemagazine="6.5mw Ainu";
 		displayNameMFDFormat="6.5mw";
 		displayNameShort="6.5mw";
-		count=32;
+		count=35;
 		mass=15;
 		initspeed=770;
 		tracersevery=1;

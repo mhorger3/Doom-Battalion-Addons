@@ -846,7 +846,7 @@ class CfgAmmo
 	};
 	class DBA_127x33_base :DBA_ammo_base //.50 Action Express
 	{
-		hit = 20; //How much damage when it hits
+		hit = 18; //How much damage when it hits
 		indirecthit = 0; //Splash Damage
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1; //Acts as penetration multiplier for the projectile.
