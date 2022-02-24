@@ -189,7 +189,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayname = "DBA Enforcer Mag (100rnd)";
-		ammo = "DBA_9x21_base";
+		ammo = "DBA_9x39_base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
 		mass = 10;
@@ -314,7 +314,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayname = "DBA Defender Mag (25rnd)";
-		ammo = "DBA_9x21_base";
+		ammo = "DBA_9x39_base";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		mass = 6;
@@ -325,7 +325,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayname = "DBA Duel Defender Mag (25rnd Each)";
-		ammo = "DBA_9x21_base";
+		ammo = "DBA_9x39_base";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
 		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		mass = 6;

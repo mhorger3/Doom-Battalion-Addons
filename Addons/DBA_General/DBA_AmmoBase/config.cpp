@@ -820,11 +820,8 @@ class CfgAmmo
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1.2; //Acts as penetration multiplier for the projectile.
 		typicalSpeed = 150; //What speed does this need to be going to inflict full damage
-		airFriction=0.3;
 		tracerScale = 0.2;
-
 		audibleFire = 30;
-
 		aiAmmoUsageFlags = 64;
 		dangerRadiusBulletClose = 4;
 		dangerRadiusHit = 8;
@@ -838,11 +835,9 @@ class CfgAmmo
 		indirecthitrange = 0; //Splash Damage Range in meters
 		caliber = 1.2; //Acts as penetration multiplier for the projectile.
 		typicalSpeed = 150; //What speed does this need to be going to inflict full damage
-		airFriction=0.5;
 		tracerScale = 0.2;
-
 		audibleFire = 50;
-
+		coefgravity=0.5;
 		aiAmmoUsageFlags = 64;
 		dangerRadiusBulletClose = 4;
 		dangerRadiusHit = 8;
@@ -857,7 +852,6 @@ class CfgAmmo
 		caliber = 1; //Acts as penetration multiplier for the projectile.
 		typicalSpeed = 350; //What speed does this need to be going to inflict full damage
 		initSpeed=470;
-		airFriction=1;
 		tracerScale = 0.2;
 		audibleFire = 50;
 		aiAmmoUsageFlags = 64;
