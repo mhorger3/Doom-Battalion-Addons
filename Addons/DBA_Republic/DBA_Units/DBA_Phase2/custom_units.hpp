@@ -188,7 +188,7 @@ class B_DBA_P2CloneBlood_F : B_DBA_P2CloneDutch_F
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Blood_Chest_CO.paa",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Blood_Legs_CO.paa"
 	};
-	hiddenSelectionsMaterials[] =
+	hiddenSelevctionsMaterials[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Blood_Chest.RVMAT",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Blood_Legs.RVMAT"
@@ -212,6 +212,28 @@ class B_DBA_P2CloneRepublican_F : B_DBA_P2CloneDutch_F
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Republican_Lower.RVMAT"
 	};
 	
+	scope = 2;
+	scopeCurator = 2;
+};
+class B_DBA_P2CloneSecutor_F : 101st_JLTS_Clone_P2
+{
+	dlc = "101st_Aux_Mod";
+	faction = "B_DBA_Secutor_F";
+	displayName = "101st Secutor (JLTS)";
+	uniformClass = "DBA_P2CloneSecutorUniform";
+	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+	faction = "B_DBA_Secutor_F";
+	editorSubcategory = "DBA_Broadsword_HQ";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Legs_CO.paa"
+	};
 	scope = 2;
 	scopeCurator = 2;
 };
