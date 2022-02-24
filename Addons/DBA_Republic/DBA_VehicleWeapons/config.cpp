@@ -7370,7 +7370,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=1;
 		canLock=2;
 		lockAcquire = 1;
-		weaponLockDelay=6.25;
+		weaponLockDelay=5.0;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
