@@ -211,10 +211,10 @@ class B_DBA_P2CloneRepublican_F : B_DBA_P2CloneDutch_F
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Republican_Upper.RVMAT",
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Republican_Lower.RVMAT"
 	};
-	
 	scope = 2;
 	scopeCurator = 2;
 };
+class 101st_JLTS_Clone_P2;
 class B_DBA_P2CloneSecutor_F : 101st_JLTS_Clone_P2
 {
 	dlc = "101st_Aux_Mod";
@@ -222,7 +222,6 @@ class B_DBA_P2CloneSecutor_F : 101st_JLTS_Clone_P2
 	displayName = "101st Secutor (JLTS)";
 	uniformClass = "DBA_P2CloneSecutorUniform";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	faction = "B_DBA_Secutor_F";
 	editorSubcategory = "DBA_Broadsword_HQ";
 	hiddenSelections[] =
 	{
@@ -237,7 +236,6 @@ class B_DBA_P2CloneSecutor_F : 101st_JLTS_Clone_P2
 	scope = 2;
 	scopeCurator = 2;
 };
-
 class B_DBA_P2CloneFurn_F : B_DBA_P2CloneDutch_F
 {
 	displayName = "[DBA] Phase 2 Clone: Furn";

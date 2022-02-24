@@ -254,12 +254,6 @@ class CfgVehicles {
 			"ItemGPS",
 			"ItemCompass"
 		};
-		weapons[] = {};
-		respawnWeapons[] = {};
-		magazines[] = {};
-		respawnMagazines[] = {};
-		items[] = {};
-		respawnItems[] = {};
 		armor = 2;
 		armorStructural = 4;
 		explosionShielding = 0.40000001;

@@ -29,7 +29,6 @@ class B_DBA_P2CloneCHQM_F : B_DBA_P2CloneCHQ_F
 class B_DBA_P2CloneCHQR_F : B_DBA_P2CloneCHQ_F
 {
 	displayName = "DBA Phase 2 Clone: Claymore Romeo";
-	uniformClass = "DBA_ClaymoreHQRTO";
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\ClaymoreHQ\HQR_Armor_upper_CO.paa",

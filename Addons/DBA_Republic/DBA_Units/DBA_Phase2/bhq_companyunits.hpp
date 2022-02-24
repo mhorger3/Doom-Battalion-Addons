@@ -30,7 +30,6 @@ class B_DBA_P2CloneBHQM_F : B_DBA_P2CloneBHQ_F
 class B_DBA_P2CloneBHQR_F : B_DBA_P2CloneBHQ_F
 {
 	displayName = "DBA Phase 2 Clone: Broadsword Romeo";
-	uniformClass = "DBA_BroadswordHQRTO";
 	hiddenSelectionsTextures[] =
 	{
 		"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\BroadswordHQ\HQR_Armor_upper_CO.paa",
