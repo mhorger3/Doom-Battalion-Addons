@@ -9,7 +9,7 @@ class cfgPatches
 		weapons[] = {"DBA_DC25F_Battlerifle", "DBA_DC25G_Battlerifle", "DBA_DC25D_Battlerifle"};
 		magazines[]=
 		{
-			"DBA_792_LSPUR_x30_mag",
+			"DBA_792_LSPUR_x25_mag",
 			"DBA_65_Ainu_x32_mag",
 			"DBA_77_RRB_x40_mag",
 		};
@@ -63,7 +63,7 @@ class CfgWeapons
 		displayName = "DC-24G Battle-Rifle Concept A";
 		magazines[] =
 		{
-			"DBA_792_LSPUR_x30_mag"
+			"DBA_792_LSPUR_x25_mag"
 		};
 		reloadAction = "GestureReloadDMR03";
 		recoil="recoil_trg20";
@@ -778,18 +778,18 @@ class CfgWeapons
 };
 class CfgMagazines{
 	class CA_Magazine;
-	class DBA_792_LSPUR_x30_mag : CA_Magazine{
-		displayname="7.92mw L-Spur (30 Rounds)";
+	class DBA_792_LSPUR_x25_mag : CA_Magazine{
+		displayname="7.92mw L-Spur (25 Rounds)";
 		dlc="DBA";
 		scope = 2;
 		ammo="DBA_792_LSPUR";
 		picture="\MRC\JLTS\weapons\E5\data\ui\E5_mag_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E5\E5_mag.p3d";
-		displaynamemagazine="7.92mw L-Spur (30 Rounds)";
+		displaynamemagazine="7.92mw L-Spur (25 Rounds)";
 		shortnamemagazine="7.92mw L-Spur";
 		displayNameMFDFormat="7.92mw";
 		displayNameShort="7.92mw";
-		count=30;
+		count=25;
 		mass=25;
 		initspeed=878;
 		tracersevery=1;
