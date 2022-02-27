@@ -559,4 +559,5 @@ class CfgVehicles {
 	#include "hammer_flightunits.hpp"
 	#include "custom_units.hpp"
 	#include "d1_platoonunits.hpp"
+	#include "l1_platoonunits.hpp"
 };

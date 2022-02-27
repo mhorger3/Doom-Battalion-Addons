@@ -216,4 +216,5 @@ class CfgWeapons
 #include "hammer_flightarmour.hpp"
 #include "d1_platoonarmour.hpp"
 #include "custom_armour.hpp"
+#include "l1_platoonarmour.hpp"
 };
