@@ -214,12 +214,11 @@ class B_DBA_P2CloneRepublican_F : B_DBA_P2CloneDutch_F
 	scope = 2;
 	scopeCurator = 2;
 };
-class 101st_JLTS_Clone_P2;
-class B_DBA_P2CloneSecutor_F : 101st_JLTS_Clone_P2
+class B_DBA_P2CloneSecutor_F : B_DBA_P2CloneDutch_F
 {
 	dlc = "101st_Aux_Mod";
 	faction = "B_DBA_Secutor_F";
-	displayName = "101st Secutor (JLTS)";
+	displayName = "[DBA] Phase 2 Clone: Secuotr";
 	uniformClass = "DBA_P2CloneSecutorUniform";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	editorSubcategory = "DBA_Broadsword_HQ";
