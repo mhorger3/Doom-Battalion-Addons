@@ -41,6 +41,15 @@ class CowsSlot;
 class PointerSlot;
 class UnderBarrelSlot;
 class GunParticles;
+class CfgRecoils{
+	class Default;
+	class DBA_Recoil_Z6X : Default {
+		muzzleOuter[]= {0.050000, 0.1500000, 0.1, 0.150000};
+		kickBack[]= {0.0005000, 0.0050000};
+		permanent = 0.0050000;
+		temporary = 0.0050000;
+	};
+};
 class CfgWeapons{
 	class Launcher;
 	class Launcher_Base_F: Launcher
@@ -85,7 +94,7 @@ class DBA_Z6X_P : Launcher_Base_F
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Z6\Data\Z6X_Mag.RVMAT",
 		};
 		reloadAction = "ReloadRPG";
-		recoil = "recoil_auto_mk200";
+		recoil = "DBA_Recoil_Z6X";
 		maxZeroing = 600;
 		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		weaponInfoType = "RscWeaponEmpty";
