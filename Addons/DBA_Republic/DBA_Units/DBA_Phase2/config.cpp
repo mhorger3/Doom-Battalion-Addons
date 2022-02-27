@@ -497,19 +497,6 @@ class CfgVehicles {
 		};
 		uniformClass = "DBA_P2cloneDemoTrooperUniform";
 	};
-	class B_DBA_P2Res : B_DBA_P2Clone_Base
-	{s
-		displayName = "[DBA] Phase 2 Clone Reservist";
-		uniformClass = "DBA_P2ResUniform";
-		hiddenSelectionsTextures[] =
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\Reserve\textures\Res_Armor_upper_CO.paa",
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\base\Trooper_Armor_lower_CO.paa"
-		};
-
-		scope = 2;
-		scopeCurator = 2;
-	};
 	class B_DBA_P2CI_F : B_DBA_P2Clone_Base
 	{
 		displayName = "[DBA] Phase 2 Clone: Reservist CI";

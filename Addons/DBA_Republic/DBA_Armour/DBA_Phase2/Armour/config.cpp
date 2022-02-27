@@ -114,28 +114,6 @@ class CfgWeapons
 			mass = 40;
 		};
 	};
-	class DBA_P2ResUniform : DBA_P2cloneRecruitUniform
-	{
-		displayName = "[DBA] Phase 2 Clone Reservist";
-		hiddenSelectionsTextures[] =
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Reserve\Res_Armor_upper_CO.paa",
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Base\Trooper_Armor_lower_CO.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "B_DBA_P2Res";
-			containerClass = "supply150";
-			uniformType = "Neopren";
-			hiddenSelections[] =
-			{
-				"camo",
-				"camo1"
-			};
-			mass = 40;
-		};
-	};
 	class DBA_P2CIUniform : DBA_P2cloneRecruitUniform
 	{
 		displayName = "[DBA] Phase 2 Clone: Reservist CI";
