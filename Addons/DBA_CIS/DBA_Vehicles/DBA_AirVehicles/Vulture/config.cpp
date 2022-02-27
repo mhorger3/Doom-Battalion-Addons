@@ -897,7 +897,7 @@ class CfgVehicles
 		editorSubcategory = "O_DBA_CIS_Planes";
         vehicleClass = "O_DBA_CIS_Planes";
         faction = "O_DBA_CIS_F";
-		crew="O_UAV_AI";
+		crew="O_DBA_CIS_B1_Pilot_Droid_F";
 		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
 		picture="3as\3as_vulture\data\vulture_picture_co.paa";
 		explosionShielding = 3;
@@ -924,6 +924,7 @@ class CfgVehicles
 		magazines[]=
 		{
 			"DBA_30mm_STN_x800_mag",
+			"DBA_Chaff_x100_mag",
 			"DBA_Chaff_x100_mag"
 		};
 	};
