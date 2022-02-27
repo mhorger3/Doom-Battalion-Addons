@@ -7370,7 +7370,7 @@ class CfgWeapons
 		aiRateOfFireDispersion=1;
 		canLock=2;
 		lockAcquire = 1;
-		weaponLockDelay=5.0;
+		weaponLockDelay=3.25;
 		weaponLockSystem=2;
 		textureType="semi";
 	};
@@ -14684,7 +14684,7 @@ class CfgAmmo
 		trackOversteer = 0.95;
 		airFriction = 0.18;
 		sideAirFriction = 0.100000;
-		cost = 100;
+		cost = 50;
 		class Components{
 			class SensorsManagerComponent
 			{
@@ -14745,7 +14745,6 @@ class CfgAmmo
 		effectsMissile = "missile2";
 		muzzleEffect = "";
 		whistleDist = 4;
-		lockType = 2;
 		manualControl = 0;
 		weaponLockSystem = 2;
 		cmImmunity = 0.85;
