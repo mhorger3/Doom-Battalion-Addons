@@ -218,7 +218,7 @@ class B_DBA_P2CloneSecutor_F : B_DBA_P2CloneDutch_F
 {
 	dlc = "101st_Aux_Mod";
 	faction = "B_DBA_Secutor_F";
-	displayName = "[DBA] Phase 2 Clone: Secuotr";
+	displayName = "[DBA] Phase 2 Clone: Secutor";
 	uniformClass = "DBA_P2CloneSecutorUniform";
 	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 	editorSubcategory = "DBA_Broadsword_HQ";

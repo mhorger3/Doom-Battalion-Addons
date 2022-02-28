@@ -260,6 +260,29 @@ class DBA_P2CloneSparkUniform : DBA_P2cloneRecruitUniform
 		};
 		mass = 40;
 	};
+	class DBA_P2CloneSecutorUniform : DBA_P2cloneRecruitUniform
+{
+	author = "Secutor";
+	scope = 2;
+	displayName = "[DBA] Phase 2 Clone: Secutor";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneKodiak_F";
+		containerClass = "Supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
 };
 class DBA_P2CloneVulgarUniform : DBA_P2cloneRecruitUniform
 {
