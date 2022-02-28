@@ -3,6 +3,7 @@ class B_DBA_P2CloneDutch_F : B_DBA_P2Clone_Base
 {
 	displayName = "[DBA] Phase 2 Clone: Dutch";
 	uniformClass = "DBA_P2CloneDutchUniform";
+	editorSubcategory = "O_DBA_Republic_Custom";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Dutch_Chest_CO.paa",
@@ -15,7 +16,6 @@ class B_DBA_P2CloneBlind_F : B_DBA_P2CloneDutch_F
 {
 	displayName = "[DBA] Phase 2 Clone: Blind";
 	uniformClass = "DBA_P2CloneBlindUniform";
-	editorSubcategory = "O_DBA_Republic_Custom";
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Blind_Chest_CO.paa",
