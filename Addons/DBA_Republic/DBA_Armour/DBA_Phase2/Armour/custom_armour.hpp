@@ -273,7 +273,7 @@ class DBA_P2CloneSparkUniform : DBA_P2cloneRecruitUniform
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "B_DBA_P2CloneKodiak_F";
+		uniformClass = "B_DBA_P2CloneSecutor_F";
 		containerClass = "Supply150";
 		uniformType = "Neopren";
 		hiddenSelections[] =
