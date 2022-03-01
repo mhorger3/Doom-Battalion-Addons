@@ -440,14 +440,26 @@ class CfgVehicles
 			};
 		};
 	};
-	class 3as_saber_01_Base: Tank_F
+	class 3as_saber_01_Base : Tank_F
 	{
-		class Turrets: Turrets
+		class Turrets : Turrets
 		{
-			class MainTurret_bottom: NewTurret
+			class MainTurret_bottom : NewTurret
 			{
 			};
-			class Mainturret_top: MainTurret_bottom
+			class Mainturret_top : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret
+			{
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+			};
+			class CargoTurret_03 : CargoTurret_02
+			{
+			};
+			class CargoTurret_04 : CargoTurret_01
 			{
 			};
 		};
@@ -456,10 +468,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : NewTurret
 			{
 			};
-			class Mainturret_top: Mainturret_top
+			class Mainturret_top : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret
+			{
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+			};
+			class CargoTurret_03 : CargoTurret_02
+			{
+			};
+			class CargoTurret_04 : CargoTurret_01
 			{
 			};
 		};
@@ -468,10 +492,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : NewTurret
 			{
 			};
-			class Mainturret_top: Mainturret_top
+			class Mainturret_top : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret
+			{
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+			};
+			class CargoTurret_03 : CargoTurret_02
+			{
+			};
+			class CargoTurret_04 : CargoTurret_01
 			{
 			};
 		};
@@ -480,10 +516,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : NewTurret
 			{
 			};
-			class Mainturret_top: Mainturret_top
+			class Mainturret_top : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret
+			{
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+			};
+			class CargoTurret_03 : CargoTurret_02
+			{
+			};
+			class CargoTurret_04 : CargoTurret_01
 			{
 			};
 		};
@@ -492,10 +540,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : NewTurret
 			{
 			};
-			class Mainturret_top: Mainturret_top
+			class Mainturret_top : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret
+			{
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+			};
+			class CargoTurret_03 : CargoTurret_02
+			{
+			};
+			class CargoTurret_04 : CargoTurret_01
 			{
 			};
 		};
@@ -504,7 +564,19 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class Mainturret_super: MainTurret_bottom
+			class Mainturret_super : Mainturret_top
+			{
+			};
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+			class CargoTurret_04 : CargoTurret_04
 			{
 			};
 		};
@@ -513,7 +585,19 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class Mainturret_super: Mainturret_super
+			class Mainturret_super : Mainturret_super
+			{
+			};
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+			class CargoTurret_04 : CargoTurret_04
 			{
 			};
 		};
@@ -522,10 +606,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_top: Mainturret_top
+			class MainTurret_top : Mainturret_top
 			{
 			};
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+			class CargoTurret_04 : CargoTurret_04
 			{
 			};
 		};
@@ -534,10 +630,22 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret_top: MainTurret_top
+			class MainTurret_top : Mainturret_top
 			{
 			};
-			class MainTurret_bottom: MainTurret_bottom
+			class MainTurret_bottom : MainTurret_bottom
+			{
+			};
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+			class CargoTurret_04 : CargoTurret_04
 			{
 			};
 		};
