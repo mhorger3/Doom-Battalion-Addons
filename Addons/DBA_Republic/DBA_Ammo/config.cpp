@@ -266,12 +266,12 @@ class CfgMagazines
 	class DBA_Verpine_Mag: DBA_Mag_Base
         {
         scope=2;
-        displayname="DBA Verpine Mag (30rnd)";
+        displayname="DBA Verpine Mag (15rnd)";
         ammo="DBA_762_base";
         picture="\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
         model="\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         mass=12;
-        count=30;
+        count=15;
         initspeed=909;
         };
 
