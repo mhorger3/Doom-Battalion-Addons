@@ -167,7 +167,7 @@ class cfgWeapons
 		displayName = "DBA Clone trooper P2 Helmet: Ghost";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Ghost_Helmet_CO.paa"
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
 		};
 	};
 	class DBA_P2Helmet_Lance : DBA_P2HelmetBase
