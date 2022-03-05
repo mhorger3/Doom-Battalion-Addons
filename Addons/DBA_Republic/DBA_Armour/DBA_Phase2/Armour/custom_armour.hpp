@@ -260,7 +260,8 @@ class DBA_P2CloneSparkUniform : DBA_P2cloneRecruitUniform
 		};
 		mass = 40;
 	};
-	class DBA_P2CloneSecutorUniform : DBA_P2cloneRecruitUniform
+};
+class DBA_P2CloneSecutorUniform : DBA_P2cloneRecruitUniform
 {
 	author = "Secutor";
 	scope = 2;
