@@ -312,16 +312,17 @@ class CfgVehicles{
 		};
 		faction="B_DBA_Republic_F";
 		scopeCurator=2;
-		class ACE_CSW {
-            enabled = 1; // Enables ACE CSW for this weapon              
-            proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon"; // The proxy weapon created above
-            magazineLocation = "_target selectionPosition 'usti hlavne'"; // Ammo handling interaction point location
-            disassembleWeapon = "DBA_PNM15_carry";  // Carryable weapon created above
-            disassembleTurret = "ace_csw_carryMortarBaseplate";  // Which static tripod will appear when weapon is disassembled
-            ammoLoadTime = 1;   // How long it takes in seconds to load ammo into the weapon           
-            ammoUnloadTime = 1; // How long it takes in seconds to unload ammo from the weapon
-            desiredAmmo = 1;  // When the weapon is reloaded it will try and reload to this ammo capacity
-        };
+		class ace_csw
+		{
+			enabled = 1;
+			disassembleWeapon = "DBA_PNM15_carry";
+			disassembleTurret = "ace_csw_mortarBaseplate";
+			desiredAmmo = 1;
+			ammoLoadTime = 3;
+			ammoUnloadTime = 3;
+			proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon";
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+		};
 	};
 	class DBA_120mw_PNM30_Mortar : B_Mortar_01_F{
 		displayname="PNM-30 Heavy Mortar";
@@ -423,16 +424,17 @@ class CfgVehicles{
 		};
 		faction="B_DBA_Republic_F";
 		scopeCurator=2;
-		class ACE_CSW {
-            enabled = 1; // Enables ACE CSW for this weapon              
-            proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon"; // The proxy weapon created above
-            magazineLocation = "_target selectionPosition 'magazine'"; // Ammo handling interaction point location
-            disassembleWeapon = "DBA_PNM30_carry";  // Carryable weapon created above
-            disassembleTurret = "ace_csw_carryMortarBaseplate";  // Which static tripod will appear when weapon is disassembled
-            ammoLoadTime = 1;   // How long it takes in seconds to load ammo into the weapon           
-            ammoUnloadTime = 1; // How long it takes in seconds to unload ammo from the weapon
-            desiredAmmo = 1;  // When the weapon is reloaded it will try and reload to this ammo capacity
-        };
+		class ace_csw
+		{
+			enabled = 1;
+			disassembleWeapon = "DBA_PNM30_carry";
+			disassembleTurret = "ace_csw_mortarBaseplate";
+			desiredAmmo = 1;
+			ammoLoadTime = 3;
+			ammoUnloadTime = 3;
+			proxyWeapon = "ace_mk6mortar_fnc_csw_getProxyWeapon";
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+		};
 	};
 };
 class cfgWeapons
