@@ -346,408 +346,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Winter_Phase2_Helm_CO.paa"
 		};
 	};
-	class 101st_ARF_Base : JLTS_CloneHelmetP2 {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Base Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\ARF_Helm_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-		class ItemInfo: HeadgearItem
-		{
-			mass=10;
-			uniformModel = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			hiddenSelections[]= {"camo1", "camo2"};
-		};
-	};
-	class 101st_ATRT_Base : JLTS_CloneHelmetP2 {
-		author="Dutch";
-		scope=0;
-		scopeArsenal=0;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Base Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\ARF_Helm_CO.paa",
-			"",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ATRT\ARF.p3d";
-		class ItemInfo: HeadgearItem
-		{
-			mass=10;
-			uniformModel = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ATRT\ARF.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		};
-	};
-	class 101st_ATRT_Winter : 101st_ATRT_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Winter Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Winter_Flaps_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
-	};
-
-	class 101st_ARF_Winter : 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Winter Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-
-	class 101st_ARF_Recruit : 101st_ARF_Base{
-		author = "Vulgar";
-		scope = 2;
-		scopeArsenal = 2;
-		dlc = "101st_Aux_Mod";
-		displayName = "101st ARF Recruit Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Helmet_Recruit_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[] = {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-
-	class 101st_Hark_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Hark ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Hark_Helmet_ARF_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Dune_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Dune ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Dune_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Joey_ARF: 101st_ARF_Base
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Joey ARF Helmet (JLTS)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Joey_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Alfredo_ARF: 101st_ARF_Base
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Alfredo ARF Helmet (JLTS)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Warlord_ARF: 101st_ARF_Base
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="101st Warlord ARF Helmet (JLTS)";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Warlord_ARF_Helmet_CO.paa",
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Satch_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Satch ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Satch_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Nova_ARF: 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Nova ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Nova_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Recon_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Recon ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Recon_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Quill_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Quill ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Quill_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Zareth_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Zareth ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Deadeye_ARF: 101st_ARF_Base {
-		author="Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Deadeye ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Deadeye_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Marsh_ARF: 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Marshmallow ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Marshmallow_ARF_Helmet_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_ATRT_Urban : 101st_ATRT_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Urban Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Urban_Flaps_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
-	};
-	class 101st_ARF_Urban : 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Urban Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_ATRT_Tropic : 101st_ATRT_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Tropic Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Jungle_Flaps_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
-	};
-	class 101st_ARF_Tropic : 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Tropic Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_ATRT_Arid : 101st_ATRT_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Arid Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Arid_Flaps_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
-	};
-	class 101st_ARF_Arid : 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Arid Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_ATRT_Night : 101st_ATRT_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ATRT Night Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Night_Flaps_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2", "camo3"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
-	};
-	class 101st_ARF_Night : 101st_ARF_Base {
-		author="Dutch";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st ARF Night Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
 
 	class 101st_Scuba_New : H_HelmetSpecB
 	{
@@ -3621,62 +3219,6 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Nautilus_Helm_CO.paa"
 		};
 	};
-	class 101st_Asylum_ARF: 101st_ARF_Base {
-		author = "Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Asylum ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Asylum_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Euget_ARF: 101st_ARF_Base {
-		author = "Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Euget ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Euget_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Leon_ARF: 101st_ARF_Base {
-		author = "Secutor";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Leon ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
-	class 101st_Walker_ARF: 101st_ARF_Base {
-		author = "Spark";
-		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
-		displayName="101st Walker ARF Helmet (JLTS)";
-		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Walker_ARF_Helmet_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
-		};
-		hiddenSelections[]= {"camo1", "camo2"};
-		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
-	};
 
 	class 101st_Izuu_Helmet: JLTS_CloneHelmetP2
 	{
@@ -4230,6 +3772,372 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Zelph_Pilot_Helmet_CO.paa"
+		};
+	};
+
+	// Longbow
+
+	class DBA_ARF_Base : JLTS_CloneHelmetP2{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "[DBA] Phase 2 ARF Trooper: Base";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\ARF_Helm_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+		class ItemInfo : HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+			allowedSlots[] = {801,901,701,605};
+			modelSides[] = {6};
+			hiddenSelections[] = {"camo1", "camo2"};
+		};
+	};
+	class 101st_ATRT_Base : JLTS_CloneHelmetP2{
+		author = "Dutch";
+		scope = 0;
+		scopeArsenal = 0;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Base Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\ARF_Helm_CO.paa",
+			"",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ATRT\ARF.p3d";
+		class ItemInfo : HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ATRT\ARF.p3d";
+			allowedSlots[] = {801,901,701,605};
+			modelSides[] = {6};
+			hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		};
+	};
+	class 101st_ATRT_Winter : 101st_ATRT_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Winter Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Winter_Flaps_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
+	};
+
+	class DBA_ARF_Winter : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Winter";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Winter_Plates_CO.paa"
+		};
+	};
+
+	class DBA_ARF_Recruit : DBA_ARF_Base{
+		author = "Vulgar";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Recruit";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Helmet_Recruit_CO.paa",
+		};
+	};
+
+	class DBA_Hark_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Hark";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Hark_Helmet_ARF_CO.paa",
+		};
+	};
+	class DBA_Dune_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Dune";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Dune_Helmet_CO.paa",
+		};
+	};
+	class DBA_Joey_ARF : DBA_ARF_Base
+	{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Joey";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Joey_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Alfredo_ARF : DBA_ARF_Base
+	{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Alfredo";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Warlord_ARF : DBA_ARF_Base
+	{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Warlord";
+		hiddenSelectionsTextures[] =
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Warlord_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Satch_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Satch";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Satch_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Nova_ARF : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Nova";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Nova_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Recon_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Recon";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Recon_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Quill_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Quill";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Quill_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Zareth_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Zareth";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Deadeye_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Deadeye";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Deadeye_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Marsh_ARF : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Marsh";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Marshmallow_ARF_Helmet_CO.paa",
+		};
+	};
+	class 101st_ATRT_Urban : 101st_ATRT_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Urban Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Urban_Flaps_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
+	};
+	class DBA_ARF_Urban : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "[DBA] Phase 2 ARF Trooper: Urban";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Urban_Plates_CO.paa"
+		};
+	};
+	class 101st_ATRT_Tropic : 101st_ATRT_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Tropic Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Jungle_Flaps_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
+	};
+	class DBA_ARF_Tropic : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ARF Tropic Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Jungle_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_ATRT_Arid : 101st_ATRT_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Arid Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Arid_Flaps_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
+	};
+	class DBA_ARF_Arid : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Arid";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",
+		};
+	};
+	class 101st_ATRT_Night : 101st_ATRT_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "101st ATRT Night Helmet (JLTS)";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\textures\Night_Flaps_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_Plates_CO.paa"
+		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
+	};
+	class DBA_ARF_Night : DBA_ARF_Base{
+		author = "Dutch";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Night";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Night_Plates_CO.paa"
+		};
+	};
+
+	class DBA_Asylum_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Asylum";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Asylum_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Euget_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Euget";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Euget_ARF_Helmet_CO.paa",
+		};
+	};
+	class DBA_Leon_ARF : DBA_ARF_Base{
+		author = "Secutor";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[DBA] Phase 2 ARF Trooper: Leon";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa", 
+		};
+	};
+	class DBA_Walker_ARF : DBA_ARF_Base{
+		author = "Spark";
+		scope = 2;
+		scopeArsenal = 2;
+		dlc = "101st_Aux_Mod";
+		displayName = "[DBA] Phase 2 ARF Trooper: Walker";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Walker_ARF_Helmet_CO.paa", 
 		};
 	};
 };
