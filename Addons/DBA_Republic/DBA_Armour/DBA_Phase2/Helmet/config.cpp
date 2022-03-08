@@ -3842,7 +3842,7 @@ class CfgWeapons
 		};
 	};
 	class 101st_ATRT_Winter : 101st_ATRT_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -3858,7 +3858,7 @@ class CfgWeapons
 	};
 
 	class DBA_ARF_Winter : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Winter";
@@ -3870,7 +3870,7 @@ class CfgWeapons
 	};
 
 	class DBA_ARF_Recruit : DBA_ARF_Base{
-		author = "Vulgar";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Recruit";
@@ -3881,7 +3881,7 @@ class CfgWeapons
 	};
 
 	class DBA_Hark_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Hark";
@@ -3891,7 +3891,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Dune_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Dune";
@@ -3902,7 +3902,7 @@ class CfgWeapons
 	};
 	class DBA_Joey_ARF : DBA_ARF_Base
 	{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Joey";
@@ -3913,7 +3913,7 @@ class CfgWeapons
 	};
 	class DBA_Alfredo_ARF : DBA_ARF_Base
 	{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Alfredo";
@@ -3924,7 +3924,7 @@ class CfgWeapons
 	};
 	class DBA_Warlord_ARF : DBA_ARF_Base
 	{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Warlord";
@@ -3934,7 +3934,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Satch_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Satch";
@@ -3944,7 +3944,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Nova_ARF : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Nova";
@@ -3954,7 +3954,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Recon_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Recon";
@@ -3964,7 +3964,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Quill_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Quill";
@@ -3974,7 +3974,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Zareth_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Zareth";
@@ -3984,7 +3984,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Deadeye_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Deadeye";
@@ -3994,7 +3994,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Marsh_ARF : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Marsh";
@@ -4004,7 +4004,7 @@ class CfgWeapons
 		};
 	};
 	class 101st_ATRT_Urban : 101st_ATRT_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4020,7 +4020,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
 	};
 	class DBA_ARF_Urban : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4032,7 +4032,7 @@ class CfgWeapons
 		};
 	};
 	class 101st_ATRT_Tropic : 101st_ATRT_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4048,7 +4048,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
 	};
 	class DBA_ARF_Tropic : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4063,7 +4063,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
 	};
 	class 101st_ATRT_Arid : 101st_ATRT_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4079,7 +4079,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
 	};
 	class DBA_ARF_Arid : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Arid";
@@ -4089,7 +4089,7 @@ class CfgWeapons
 		};
 	};
 	class 101st_ATRT_Night : 101st_ATRT_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
@@ -4105,7 +4105,7 @@ class CfgWeapons
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\ARFV2\ARF.p3d";
 	};
 	class DBA_ARF_Night : DBA_ARF_Base{
-		author = "Dutch";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Night";
@@ -4117,7 +4117,7 @@ class CfgWeapons
 	};
 
 	class DBA_Asylum_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Asylum";
@@ -4127,7 +4127,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Euget_ARF : DBA_ARF_Base{
-		author = "Spark";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Euget";
@@ -4137,7 +4137,7 @@ class CfgWeapons
 		};
 	};
 	class DBA_Leon_ARF : DBA_ARF_Base{
-		author = "Secutor";
+		author = "Asylum";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[DBA] Phase 2 ARF Trooper: Leon";
@@ -4146,15 +4146,4 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa",
 		};
 	};
-	class DBA_Walker_ARF : DBA_ARF_Base{
-		author = "Spark";
-		scope = 2;
-		scopeArsenal = 2;
-		dlc = "101st_Aux_Mod";
-		displayName = "[DBA] Phase 2 ARF Trooper: Walker";
-		hiddenSelectionsTextures[] =
-		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Walker_ARF_Helmet_CO.paa",
-		};
-	};
-};
+
