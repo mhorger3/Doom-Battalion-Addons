@@ -90,6 +90,7 @@ class CfgVehicles
 		memoryPointsGetInCargo = "GetIn_cargo_pos";
 		memoryPointsGetInCargoDir = "GetIn_cargo_dir";
 		memoryPointLRocket = "Rocket_1_pos";
+		memorypointlmissile = "Bomb_1_pos";
 		memoryPointCM[] =
 		{
 			"Flare_launcher_1_pos",
@@ -145,12 +146,16 @@ class CfgVehicles
 		selectionRotorMove = "Rotors_blur";
 		cabinOpening = 0;
 		gearRetracting = 0;
+		gunBeg = "Cannon_barrel_end";
+		gunEnd = "Cannon_barrel_beg";
 		weapons[] =
 		{
+			"gatling_30mm_VTOL_02",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
+			"250Rnd_30mm_HE_shells_Tracer_Green",
 			"168Rnd_CMFlare_Chaff_Magazine"
 		};
 		maxSpeed = 700;
