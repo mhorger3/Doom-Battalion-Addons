@@ -346,7 +346,186 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Winter_Phase2_Helm_CO.paa"
 		};
 	};
-
+	class 101st_Asylum_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Asylum ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Asylum_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Hark_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Hark ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Hark_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+    class 101st_Euget_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Euget ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Euget_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Deadeye_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Deadeye ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Deadeye_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Alfredo_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Alfredo ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Alfredo_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Zareth_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Zareth ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Warlord_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Warlord ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Warlord_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Satch_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Satch ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Satch_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+    class 101st_Recon_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Recon ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Recon_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+    class 101st_Quill_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Quill ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Quill_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+    class 101st_Nova_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Nova ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Nova_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
+	class 101st_Leon_ARF: 101st_ARF_Base
+	{
+		author="Asylum";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Leon ARF Helmet";
+		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_Helmet_ARF_CO.paa", "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
+		};
+		hiddenSelections[]= {"camo1", "camo2"};
+		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\Longbow.p3d";
+	};
 	class 101st_Scuba_New : H_HelmetSpecB
 	{
 		author="Dutch";
