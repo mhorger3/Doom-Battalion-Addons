@@ -1093,6 +1093,42 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
+	class 101st_Soulify_Helm: 101st_Dagger_Helmet
+	{
+		author="Gorman";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Soulify)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Soulify_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
+	class 101st_Dral_Helm: 101st_Dagger_Helmet
+	{
+		author="Gorman";
+		dlc = "101st_Aux_Mod";
+		scope=2;
+		scopeArsenal=2;
+		displayName="101st Clone helmet (Dral)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\Dral_Helmet_AB_CO.paa"
+		};
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		subItems[] = {"JLTS_CloneNVG_spec"};
+	};
 	/*
 	class 101st_Krusader_Helm: 101st_Dagger_Helmet
 	{
@@ -4146,4 +4182,3 @@ class CfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa",
 		};
 	};
-
