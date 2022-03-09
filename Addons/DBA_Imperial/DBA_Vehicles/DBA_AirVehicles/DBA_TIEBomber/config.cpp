@@ -155,20 +155,20 @@ class CfgVehicles
 		selectionRotorStill = "Rotors_static";
 		selectionRotorMove = "Rotors_blur";
 		cabinOpening = 0;
-		shotFromTurret = false;
 		gearRetracting = 0;
-		memoryPointGun = "Cannon_barrel_beg1";
-		gunBeg = "Cannon_barrel_end1";
-		gunEnd = "Cannon_barrel_beg1";
+		memoryPointGun[] = { "z_gunL_muzzle","z_gunR_muzzle" };
+	//	gunBeg = "Cannon_barrel_end";
+	//	gunEnd = "Cannon_barrel_beg";
 		weapons[] =
 		{
+			"3AS_GATRepeater",
 			"DBA_305mw_VKM8_Cannon",
 			"gatling_30mm_VTOL_02",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
-
+			"3AS_500Rnd_GAT_redPlasma",
 			"DBA_305mm_M19K_HE_x2_mag",
 			"DBA_305mm_M19K_HE_x2_mag",
 			"DBA_305mm_M19K_HE_x2_mag",
@@ -216,7 +216,7 @@ class CfgVehicles
 			"250Rnd_30mm_HE_shells_Tracer_Green",
 			"168Rnd_CMFlare_Chaff_Magazine"
 		};
-		maxSpeed = 700;
+		maxSpeed = 850;
 		landingAoa = "10*3.1415/180";
 		landingSpeed = 0;
 		stallSpeed = 210;
@@ -371,6 +371,11 @@ class CfgVehicles
 		};
 		class AnimationSources : AnimationSources
 		{
+			class muzzle_rot_cannon
+			{
+				source = "ammorandom";
+				weapon = "3AS_GATRepeater";
+			};
 			class Rockets_revolving_source
 			{
 				source = "revolving";
@@ -399,7 +404,7 @@ class CfgVehicles
 			};
 		};
 		lightOnGear = 1;
-		/*	aggregateReflectors[] =
+		aggregateReflectors[] =
 		{
 
 			{
@@ -416,25 +421,27 @@ class CfgVehicles
 			{
 				color[] = { 7000,7500,10000 };
 				ambient[] = { 70,75,100 };
-				intensity = 50;
-				size = 1;
+				intensity = 100;
+				size = 3;
 				innerAngle = 5;
 				outerAngle = 65;
 				coneFadeCoef = 10;
 				position = "Light_1_pos";
 				direction = "Light_1_dir";
 				useFlare = 1;
-				flareSize = 10;
-				flareMaxDistance = 250;
-				dayLight = 0;
+				flareSize = 100;
+				flareMaxDistance = 650;
+				dayLight = 1;
+				hitpoint = "";
+				selection = "";
 				class Attenuation
 				{
 					start = 0;
 					constant = 0;
 					linear = 1;
 					quadratic = 1;
-					hardLimitStart = 100;
-					hardLimitEnd = 200;
+					hardLimitStart = 500;
+					hardLimitEnd = 700;
 				};
 			};
 			class Light_2 : Light_1
@@ -457,7 +464,7 @@ class CfgVehicles
 				position = "Light_5_pos";
 				direction = "Light_5_dir";
 			};
-		}; */
+		}; 
 		memoryPointRDust = "WheelDust_right_pos";
 		memoryPointLDust = "WheelDust_left_pos";
 		dustEffect = "VTOLDust";
@@ -587,6 +594,7 @@ class CfgVehicles
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 			};
+			driverForceOptics = true;
 			minTurn = -30;
 			maxTurn = 160;
 			initTurn = 0;
@@ -753,13 +761,18 @@ class CfgVehicles
 	};
 	class DBA_TIEBomber_VTOL_Dynamic_F : DBA_TIEBomber_VTOL_Dynamic_Base_F
 	{
-		author = "$STR_A3_Bohemia_Interactive";
+		author = "Vulgar";
 		editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_VTOL_02_infantry_dynamicLoadout_F.jpg";
 		_generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[DBA] TIE Bomber";
 		side = 1;
+		crew = "B_Fighter_Pilot_F";
+		typicalCargo[] =
+		{
+			"B_Fighter_Pilot_F"
+		};
 		faction = "B_DBA_Imperial_F";
 		textureList[] =
 		{

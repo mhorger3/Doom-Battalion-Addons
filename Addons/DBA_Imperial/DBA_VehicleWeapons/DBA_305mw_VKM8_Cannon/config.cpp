@@ -133,6 +133,21 @@ class CfgWeapons
 			maxRange = 2500;
 			maxRangeProbab = 0.9;
 		};
+		class GunParticles
+		{
+			class effect1
+			{
+				positionName = "konec hlavne";
+				directionName = "usti hlavne";
+				effectName = "MachineGunCloud";
+			};
+			class effect2
+			{
+				positionName = "konec hlavne2";
+				directionName = "usti hlavne2";
+				effectName = "MachineGunCloud";
+			};
+		};
 	};
 };
 class CfgMagazines
