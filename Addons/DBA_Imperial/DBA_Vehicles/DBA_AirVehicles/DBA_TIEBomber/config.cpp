@@ -133,7 +133,7 @@ class CfgVehicles
 		};
 		accuracy = 0.5;
 		driverForceOptics = true;
-		armor = 100;
+		armor = 325;
 		armorStructural = 2;
 		explosionShielding = 1;
 		epeImpulseDamageCoef = 50;
@@ -147,8 +147,8 @@ class CfgVehicles
 		radarTargetSize = 1.4;
 		visualTargetSize = 1.2;
 		irTargetSize = 1.4;
-		lockDetectionSystem = "8 + 4";
-		incomingMissileDetectionSystem = "8 + 16";
+		lockDetectionSystem = "2 + 8 + 4 + 16";
+		incomingMissileDetectionSystem = "2 + 8 + 16";
 		maximumLoad = 3000;
 		supplyRadius = 5;
 		getInRadius = 3;
@@ -161,14 +161,14 @@ class CfgVehicles
 	//	gunEnd = "Cannon_barrel_beg";
 		weapons[] =
 		{
-			"3AS_GATRepeater",
+			"DBA_30mw_GH38C_AC",
 			"DBA_305mw_VKM8_Cannon",
 			"gatling_30mm_VTOL_02",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
-			"3AS_500Rnd_GAT_redPlasma",
+			"DBA_30mm_PL84_x902_mag",
 			"DBA_305mm_M19K_HE_x2_mag",
 			"DBA_305mm_M19K_HE_x2_mag",
 			"DBA_305mm_M19K_HE_x2_mag",
@@ -216,22 +216,27 @@ class CfgVehicles
 			"250Rnd_30mm_HE_shells_Tracer_Green",
 			"168Rnd_CMFlare_Chaff_Magazine"
 		};
-		maxSpeed = 850;
+		minGunElev = -5;
+		maxGunElev = 5;
+		minGunTurn = 8;
+		maxGunTurn = 8;
+		maxSpeed = 975;
 		landingAoa = "10*3.1415/180";
 		landingSpeed = 0;
-		stallSpeed = 210;
+		stallSpeed = 150;
 		stallWarningTreshold = 0.2;
-		wheelSteeringSensitivity = 0.69999999;
+		wheelSteeringSensitivity = 0.55;
 		airBrake = 1;
+		airBrakeFrictionCoef = 5.0;
 		flaps = 1;
-		flapsFrictionCoef = 0;
+		flapsFrictionCoef = 0.75;
 		angleOfIndicence = "1*3.1415/180";
 		envelope[] = { 0,0.0099999998,0.2,4,6,7.5999999,8.3999996,9.1999998,9.3999996,9.6000004,9.6999998,9.8000002,8,1 };
 		altNoForce = 11000;
-		altFullForce = 2500;
+		altFullForce = 5500;
 		throttleToThrustLogFactor = 2;
-		thrustCoef[] = { 1.42,1.17,1.15,1.14,1.13,1.12,1.1,1.0700001,0.99000001,0.2,0,0,0 };
-		aileronSensitivity = 0.5;
+		thrustCoef[] = { 1.2,1.2,1.2,1.10,1.10,1.10,1.10,1.0700001,0.99000001,0.8,0.7,0.6,0.35 };
+		aileronSensitivity = 0.555;
 		aileronCoef[] = { 0.60000002,0.80000001,1,1.1,1.2,1.2,0.40000001 };
 		elevatorSensitivity = 0.89999998;
 		elevatorCoef[] = { 0.2,0.38999999,0.50999999,0.60000002,0.68000001,0.75,0.80000001,0.85000002,0.89999998,0.74000001,0.30000001 };
@@ -241,8 +246,8 @@ class CfgVehicles
 		elevatorControlsSensitivityCoef = 4;
 		rudderControlsSensitivityCoef = 2;
 		draconicForceXCoef = 14;
-		draconicForceYCoef = 1;
-		draconicForceZCoef = 1;
+		draconicForceYCoef = 0.55;
+		draconicForceZCoef = 0.575;
 		draconicTorqueXCoef[] = { 14,12,11.2,10.6,9.8999996,9.6000004,9.6999998,10.5,11,11.5,12 };
 		draconicTorqueYCoef[] = { 0.5,1,2,2.3,3,2.5999999,2.4000001,2.2,2,1.9,1.8 };
 		vtol = 4;
@@ -250,6 +255,7 @@ class CfgVehicles
 		VTOLPitchInfluence = 2;
 		VTOLRollInfluence = 8;
 		maxOmega = 2000;
+		acceleration=535;
 		defaultUserMFDvalues[] = { 0.15000001,1,0.15000001,1 };
 		hiddenSelections[] =
 		{
@@ -547,6 +553,7 @@ class CfgVehicles
 					};
 				};
 			};
+			
 		};
 		memoryPointDriverOptics = "PilotCamera_pos";
 		unitInfoType = "RscOptics_CAS_Pilot";

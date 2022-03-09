@@ -849,10 +849,10 @@ class CfgVehicles
 		waterLeakiness = 0.0;
 		waterLinearDampingCoefX = 10.0;
 		waterLinearDampingCoefY = 2.0;
-		waterResistanceCoef = 0.0005;
+		waterResistanceCoef = 0.1;
 		rudderForceCoef = 0.65;
 		waterAngularDampingCoef = 1.0;
-		canFloat = 1;
+		canFloat = 0;
 		maxCompression = 0.15;
 		maxDroop = 0.15;
 		transportSoldier=25;
@@ -998,6 +998,9 @@ class CfgVehicles
 		crewVulnerable=0;
 		crewExplosionProtection=0.0;
 		artilleryScanner = 0;
+		accelAidForceCoef = 1.5;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 30;
 		normalSpeedForwardCoef=1.0;
 		slowSpeedForwardCoef=0.55;
 		enginePower=703.657434;
@@ -1170,6 +1173,9 @@ class CfgVehicles
 		crewVulnerable=0;
 		crewExplosionProtection=0.0;
 		artilleryScanner = 0;
+		accelAidForceCoef = 1.5;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 30;
 		normalSpeedForwardCoef=1.0;
 		slowSpeedForwardCoef=0.55;
 		enginePower=703.657434;
@@ -1346,6 +1352,9 @@ class CfgVehicles
 		enginePower=50000;
 		maxOmega=200;
 		minOmega=50;
+		accelAidForceCoef = 1.5;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 30;
 		maxSpeed=30;
 		peakTorque=4000;
 		thrustDelay=0.5;
@@ -2473,6 +2482,9 @@ class CfgVehicles
 		scopeCurator=2;
 		side=1;
 		armor=1350;
+		accelAidForceCoef = 1.75;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 30;
 		armorStructural=20;
 		transportSoldier=13;
 		faction="B_DBA_Republic_F";
@@ -3400,6 +3412,7 @@ class CfgVehicles
 					"DBA_210mm_CK17_x4_mag",
 					"DBA_210mm_UMK20_x4_mag",
 					"DBA_210mm_UMK20_x4_mag",
+					"DBA_210mm_ATN3S_TACN_x1_mag",
 				};
 			};
 		};
@@ -3905,10 +3918,13 @@ class CfgVehicles
 		normalSpeedForwardCoef=0.94999999;
 		slowSpeedForwardCoef=0.25;
 		engineMOI=7;
+		accelAidForceCoef = 1.25;
+		accelAidForceYOffset = -1;
+		accelAidForceSpd = 35;
 		enginePower=1342.26;
 		maxOmega=251.32739;
 		minOmega=73.303001;
-		maxSpeed=45;
+		maxSpeed=47;
 		peakTorque=5840.7554;
 		thrustDelay=0.2;
 		clutchStrength=250;
@@ -3931,13 +3947,14 @@ class CfgVehicles
 			{0.91666698,0.86363602},
 			{1,0.854545}
 		};
-		epeImpulseDamageCoef=0.0099999998;
+		epeImpulseDamageCoef=0.0;
+		crewCrashProtection = 0.0;
 		class complexGearbox
 		{
 			GearboxRatios[]=
 			{
 				"R1",
-				-0.55,
+				-0.35,
 				"N",
 				0,
 				"D1",
@@ -4024,10 +4041,15 @@ class CfgVehicles
 				magazines[]=
 				{
 					"DBA_152mm_Tanto1_x25_mag",
+					"DBA_152mm_Tanto1_x25_mag",
+					"DBA_152mm_Tanto3_x35_mag",
+					"DBA_152mm_Tanto3_x35_mag",
 					"DBA_152mm_Tanto3_x35_mag",
 					"DBA_152mm_Tanto5_x2_mag",
 					"DBA_60mm_PLX772_x5_mag",
 					"DBA_60mm_PLX772_x5_mag",
+					"DBA_762_DN71_x250_mag",
+					"DBA_762_DN71_x250_mag",
 					"DBA_762_DN71_x250_mag",
 					"DBA_762_DN71_x250_mag"
 				};
