@@ -546,3 +546,16 @@ class B_DBA_P2CloneHark_F : B_DBA_P2CloneDutch_F
 	scope = 2;
 	scopeCurator = 2;
 };
+class B_DBA_P2CloneShatterstorm_F : B_DBA_P2CloneDutch_F
+{
+	displayName = "[DBA] Phase 2 Clone: Shatterstorm";
+	uniformClass = "DBA_P2CloneShatterstormUniform";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Shatter_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Shatter_Legs_CO.paa"
+	};
+
+	scope = 2;
+	scopeCurator = 2;
+};
