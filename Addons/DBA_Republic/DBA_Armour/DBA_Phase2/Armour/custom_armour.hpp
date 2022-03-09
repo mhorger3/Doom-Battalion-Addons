@@ -963,3 +963,27 @@ class DBA_P2CloneHarkUniform : DBA_P2cloneRecruitUniform
 	DBA_camoType = "base";
 	DBA_hasCamoChanger = 1;
 };
+class DBA_P2CloneShatterstormUniform : DBA_P2cloneRecruitUniform
+{
+	author = "Shatterstorm";
+	scope = 2;
+	displayName = "[DBA] Phase 2 Clone: Shatterstorm";
+	hiddenSelectionsTextures[] =
+	{
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Shatter_Chest_CO.paa",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Shatter_Legs_CO.paa"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "B_DBA_P2CloneShatterstorm_F";
+		containerClass = "Supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};
