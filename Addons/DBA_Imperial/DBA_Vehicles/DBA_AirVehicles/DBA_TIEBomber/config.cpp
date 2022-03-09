@@ -1,8 +1,7 @@
 class CfgPatches
 {
-	class A3_Air_F_Exp_VTOL_02
+	class DBA_TIEBomber
 	{
-		addonRootClass = "A3_Air_F_Exp";
 		requiredAddons[] =
 		{
 			"A3_Air_F_Exp"
@@ -10,16 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] =
 		{
-			"O_T_VTOL_02_infantry_dynamicLoadout_F",
-			"O_T_VTOL_02_infantry_F",
-			"O_T_VTOL_02_infantry_ghex_F",
-			"O_T_VTOL_02_infantry_grey_F",
-			"O_T_VTOL_02_infantry_hex_F",
-			"O_T_VTOL_02_vehicle_dynamicLoadout_F",
-			"O_T_VTOL_02_vehicle_F",
-			"O_T_VTOL_02_vehicle_ghex_F",
-			"O_T_VTOL_02_vehicle_grey_F",
-			"O_T_VTOL_02_vehicle_hex_F"
+			"DBA_TIEBomber_VTOL_Dynamic_F"
 		};
 		weapons[] = {};
 	};
@@ -91,6 +81,8 @@ class CfgVehicles
 		memoryPointsGetInCargoDir = "GetIn_cargo_dir";
 		memoryPointLRocket = "Rocket_1_pos";
 		memorypointlmissile = "Bomb_1_pos";
+		memoryPointRRocket = "Rocket_1_pos";
+		memorypointRmissile = "Bomb_1_pos";
 		memoryPointCM[] =
 		{
 			"Flare_launcher_1_pos",
@@ -122,7 +114,25 @@ class CfgVehicles
 		{
 			"Compartment3"
 		};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position = "Exhaust_1_pos";
+				direction = "Exhaust_1_dir";
+				effect = "ExhaustsEffectVTOL1HP";
+				engineIndex = 0;
+			};
+			class Exhaust2
+			{
+				position = "Exhaust_2_pos";
+				direction = "Exhaust_2_dir";
+				effect = "ExhaustsEffectVTOL1HP";
+				engineIndex = 1;
+			};
+		};
 		accuracy = 0.5;
+		driverForceOptics = true;
 		armor = 100;
 		armorStructural = 2;
 		explosionShielding = 1;
@@ -145,16 +155,64 @@ class CfgVehicles
 		selectionRotorStill = "Rotors_static";
 		selectionRotorMove = "Rotors_blur";
 		cabinOpening = 0;
+		shotFromTurret = false;
 		gearRetracting = 0;
-		gunBeg = "Cannon_barrel_end";
-		gunEnd = "Cannon_barrel_beg";
+		memoryPointGun = "Cannon_barrel_beg1";
+		gunBeg = "Cannon_barrel_end1";
+		gunEnd = "Cannon_barrel_beg1";
 		weapons[] =
 		{
+			"DBA_305mw_VKM8_Cannon",
 			"gatling_30mm_VTOL_02",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
+
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
+			"DBA_305mm_M19K_HE_x2_mag",
 			"250Rnd_30mm_HE_shells_Tracer_Green",
 			"168Rnd_CMFlare_Chaff_Magazine"
 		};
@@ -701,8 +759,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[DBA] TIE Bomber";
-		side = 0;
-		faction = "OPF_T_F";
+		side = 1;
+		faction = "B_DBA_Imperial_F";
 		textureList[] =
 		{
 			"GreenHex",
