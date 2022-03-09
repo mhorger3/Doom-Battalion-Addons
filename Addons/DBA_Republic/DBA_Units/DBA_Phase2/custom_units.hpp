@@ -216,17 +216,8 @@ class B_DBA_P2CloneRepublican_F : B_DBA_P2CloneDutch_F
 };
 class B_DBA_P2CloneSecutor_F : B_DBA_P2CloneDutch_F
 {
-	dlc = "101st_Aux_Mod";
-	faction = "B_DBA_Secutor_F";
 	displayName = "[DBA] Phase 2 Clone: Secutor";
 	uniformClass = "DBA_P2CloneSecutorUniform";
-	model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-	editorSubcategory = "DBA_Broadsword_HQ";
-	hiddenSelections[] =
-	{
-		"camo1",
-		"camo2"
-	};
 	hiddenSelectionsTextures[] =
 	{
 		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Secutor_Chest_CO.paa",
