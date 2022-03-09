@@ -3525,10 +3525,11 @@ class CfgWeapons
 		displayName="101st Pilot Helmet (Hammer)";
 		hiddenSelections[]=
 		{
-			"Camo"
+			"Camo", "camo4"
 		};
 		hiddenSelectionsTextures[]=
 		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Pilot_Pilot_Helmet_CO.paa",
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Pilot\Pilot_Pilot_Helmet_CO.paa"
 		};
 		subItems[]=
