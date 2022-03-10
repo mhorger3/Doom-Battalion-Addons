@@ -1099,7 +1099,7 @@ class CfgWeapons
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
-		displayName="101st Clone helmet (Gorman)";s
+		displayName="101st Clone helmet (Gorman)";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -1117,7 +1117,7 @@ class CfgWeapons
 		dlc = "101st_Aux_Mod";
 		scope=2;
 		scopeArsenal=2;
-		displayName="101st Clone helmet (Bluetwo)";s
+		displayName="101st Clone helmet (Bluetwo)";
 		hiddenSelections[]=
 		{
 			"camo1"
