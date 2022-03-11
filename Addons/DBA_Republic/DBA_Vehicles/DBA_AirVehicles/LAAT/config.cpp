@@ -12962,8 +12962,11 @@ class cfgVehicles
 		destrType="DestructWreck";
 		driveraction="Plane_Fighter_03_pilot";
 		armor=95;
-		 faction="B_DBA_Republic_F";
+		faction="B_DBA_Republic_F";
 		editorSubcategory = "EdSubcat_Planes";
+		class Turrets
+		{
+		};
 	};
 	class 101st_YWing: 101st_YWing_base
 	{
