@@ -12933,6 +12933,12 @@ class cfgVehicles
 		irTargetSize=0.34999999;
 		radarTarget=1;
 		radarTargetSize=0.2;
+		aileronControlsSensitivityCoef = 1;
+		aileronSensitivity = 0.5;
+		rudderControlsSensitivityCoef = 1.5;// V-44 Blackfish
+		rudderInfluence = 0.9396;// V-44 Blackfish
+		draconicForceYCoef = 5.5;
+		rudderCoef[] = {0,0.4,1,1.4,1.8,2,2.2,2.3,2.4,2.5,2.5,2.5,2.6};	// V-44 Blackfish
 		memoryPointDriverOptics="PilotCamera_pos";
 		unitInfoType="RscOptics_CAS_Pilot";
 		driverWeaponsInfoType="RscOptics_CAS_01_TGP";
@@ -12941,6 +12947,7 @@ class cfgVehicles
 		scope=1;
 		scopecurator=1;
 		side=1;
+		vtol=1;
 		getInAction="GetInHigh";
 		getOutAction = "GetOutHigh";
 		driverCanEject = 1;
