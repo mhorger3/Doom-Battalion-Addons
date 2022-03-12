@@ -31,7 +31,7 @@ class DBA_Camo
             {
                 "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"
             };
-            helmetClass = "101st_ARF_Arid";
+            helmetClass = "DBA_ARF_Arid";
         };
 
         class Night
@@ -46,7 +46,7 @@ class DBA_Camo
             {
                 "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"
             };
-            helmetClass = "101st_ARF_Night";
+            helmetClass = "DBA_ARF_Night";
         };
 
         class Tropic
@@ -61,7 +61,7 @@ class DBA_Camo
             {
                 "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"
             };
-            helmetClass = "101st_ARF_Tropic";
+            helmetClass = "DBA_ARF_Tropic";
         };
 
         class Urban
@@ -76,7 +76,7 @@ class DBA_Camo
             {
                 "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"
             };
-            helmetClass = "101st_ARF_Urban";
+            helmetClass = "DBA_ARF_Urban";
         };
 
         class Winter
@@ -91,7 +91,7 @@ class DBA_Camo
             {
                 "101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"
             };
-            helmetClass = "101st_ARF_Winter";
+            helmetClass = "DBA_ARF_Winter";
         };
     };
 };

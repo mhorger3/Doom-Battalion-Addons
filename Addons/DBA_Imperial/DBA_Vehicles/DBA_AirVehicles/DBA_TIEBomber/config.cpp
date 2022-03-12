@@ -254,9 +254,10 @@ class CfgVehicles
 		VTOLYawInfluence = 6;
 		VTOLPitchInfluence = 2;
 		VTOLRollInfluence = 8;
-		maxOmega = 2000;
+		maxOmega = 2450;
 		acceleration=535;
 		defaultUserMFDvalues[] = { 0.15000001,1,0.15000001,1 };
+
 		hiddenSelections[] =
 		{
 			"Camo_1",
@@ -602,12 +603,12 @@ class CfgVehicles
 				};
 			};
 			driverForceOptics = true;
-			minTurn = -30;
-			maxTurn = 160;
+			minTurn = -0;
+			maxTurn = 0;
 			initTurn = 0;
-			minElev = -5;
-			maxElev = 90;
-			initElev = 5;
+			minElev = -0;
+			maxElev = 0;
+			initElev = 0;
 			maxXRotSpeed = 1;
 			maxYRotSpeed = 1;
 			maxMouseXRotSpeed = 0.5;
@@ -783,15 +784,12 @@ class CfgVehicles
 		faction = "B_DBA_Imperial_F";
 		textureList[] =
 		{
-			"GreenHex",
+			"YellowWing",
 			1
 		};
 		hiddenSelectionsTextures[] =
-		{
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_CO.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_CO.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_CO.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"
+		{ 
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingBomber\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingBomber\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingBomber\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingBomber\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingBomber\Yellow\Right_wing_CO.paa"
 		};
 	};
 };
