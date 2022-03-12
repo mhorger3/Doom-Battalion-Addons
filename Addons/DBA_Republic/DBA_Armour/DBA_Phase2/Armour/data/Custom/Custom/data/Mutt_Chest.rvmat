@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="101st_Aux_Mod\Addons\DBA_Repubic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_ti.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_ti.paa";
 };
 ambient[]={0.5,0.5,0.5,1};
 diffuse[]={0.69999999,0.69999999,0.69999999,1};
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="101st_Aux_Mod\Addons\DBA_Repubic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_as.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\DBA_Repubic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_smdi.paa";
+	texture="101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

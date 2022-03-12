@@ -427,7 +427,7 @@ class B_DBA_P2CloneLambert_F : B_DBA_P2CloneDutch_F
 	scope = 2;
 	scopeCurator = 2;
 };
-class B_DBA_P2CloneLambert_F : B_DBA_P2CloneDutch_F
+class B_DBA_P2CloneMutt_F : B_DBA_P2CloneDutch_F
 {
 	displayName = "DBA P2 Clone Armour: Mutt";
 	uniformClass = "DBA_P2CloneMuttUniform";
@@ -438,8 +438,8 @@ class B_DBA_P2CloneLambert_F : B_DBA_P2CloneDutch_F
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest.rvmat",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs.rvmat"
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs.RVMAT"
 	};
 
 	scope = 2;
