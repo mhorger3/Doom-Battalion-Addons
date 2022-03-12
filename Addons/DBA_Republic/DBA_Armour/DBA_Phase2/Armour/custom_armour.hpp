@@ -572,7 +572,7 @@ class DBA_P2CloneServoUniform : DBA_P2cloneRecruitUniform
 };
 class DBA_P2CloneMuttUniform : DBA_P2cloneRecruitUniform
 {
-	author = "Vulgar";
+	author = "Mutt";
 	scope = 2;
 	displayName = "[DBA] Phase 2 Clone: Mutt";
 	hiddenSelectionsTextures[] =
@@ -582,8 +582,8 @@ class DBA_P2CloneMuttUniform : DBA_P2cloneRecruitUniform
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest.rvmat",
-		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs.rvmat"
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Chest.RVMAT",
+		"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\data\Mutt_Legs.RVMAT"
 	};
 	class ItemInfo : UniformItem
 	{
