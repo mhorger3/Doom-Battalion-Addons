@@ -3949,7 +3949,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Recruit";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Helmet_Recruit_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Customs\ARF_Helmet_Recruit_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 
@@ -3960,7 +3961,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Hark";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Hark_Helmet_ARF_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Hark_Helmet_ARF_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Dune_ARF : DBA_ARF_Base{
@@ -3970,7 +3972,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Dune";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Dune_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Dune_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Joey_ARF : DBA_ARF_Base
@@ -3981,7 +3984,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Joey";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Joey_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Joey_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Alfredo_ARF : DBA_ARF_Base
@@ -3992,7 +3996,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Alfredo";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Alfredo_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Warlord_ARF : DBA_ARF_Base
@@ -4003,7 +4008,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Warlord";
 		hiddenSelectionsTextures[] =
 		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Warlord_ARF_Helmet_CO.paa",
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Warlord_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Satch_ARF : DBA_ARF_Base{
@@ -4013,7 +4019,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Satch";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Satch_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Satch_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Nova_ARF : DBA_ARF_Base{
@@ -4023,7 +4030,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Nova";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Nova_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Nova_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Recon_ARF : DBA_ARF_Base{
@@ -4033,7 +4041,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Recon";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Recon_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Recon_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Quill_ARF : DBA_ARF_Base{
@@ -4043,7 +4052,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Quill";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Quill_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Quill_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Zareth_ARF : DBA_ARF_Base{
@@ -4053,7 +4063,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Zareth";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Zareth_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Deadeye_ARF : DBA_ARF_Base{
@@ -4063,7 +4074,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Deadeye";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Deadeye_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Deadeye_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Marsh_ARF : DBA_ARF_Base{
@@ -4073,7 +4085,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Marsh";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Marshmallow_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Marshmallow_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class 101st_ATRT_Urban : 101st_ATRT_Base{
@@ -4125,7 +4138,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		dlc = "101st_Aux_Mod";
-		displayName = "101st ARF Tropic Helmet (JLTS)";
+		displayName = "[DBA] Phase 2 ARF Trooper: Tropic";
 		picture = "3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
 		hiddenSelectionsTextures[] =
 		{
@@ -4158,7 +4171,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Arid";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Arid_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class 101st_ATRT_Night : 101st_ATRT_Base{
@@ -4196,7 +4210,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Asylum";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Asylum_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Asylum_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Euget_ARF : DBA_ARF_Base{
@@ -4206,7 +4221,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Euget";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Euget_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Euget_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 	class DBA_Leon_ARF : DBA_ARF_Base{
@@ -4216,7 +4232,8 @@ class CfgWeapons
 		displayName = "[DBA] Phase 2 ARF Trooper: Leon";
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa",
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Leon_ARF_Helmet_CO.paa",,
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\Longbow\textures\Plates_CO.paa"
 		};
 	};
 };

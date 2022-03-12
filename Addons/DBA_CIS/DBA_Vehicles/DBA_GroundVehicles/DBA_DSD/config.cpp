@@ -149,7 +149,7 @@ class CfgVehicles
 				};
 				magazines[]=
 				{
-					"DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag"
+					"DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag","DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag","DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag", "DBA_20mm_UR18_x20_mag"
 				};
 				memoryPointGunnerOptics = "gunnerview";
 				//gunnerLeftHandAnimName = "Heavygun";

@@ -202,8 +202,8 @@ class CfgVehicles
             weapon = "cannon_105mm";
         };
     };
-    armor = 450;
-    armorStructural = 8;
+    armor = 750;
+    armorStructural = 12;
     damageResistance = 0.004;
     damageEffect = "AirDestructionEffects";
     explosionEffect = "FuelExplosionBig";
@@ -214,11 +214,11 @@ class CfgVehicles
     {
         class HitHull
         {
-            armor = 1.6;
+            armor = 500;
             name = "hit_hull";
             visual = "zbytek";
             radius = 0.2;
-            minimalHit = 0.2;
+            minimalHit = -0.5;
             explosionShielding = 0.01;
             depends = "Total";
             passThrough = 0.05;
@@ -226,22 +226,26 @@ class CfgVehicles
         };
         class HitEngine
         {
-            armor = 0.8;
+            armor = 0.2;
             material = -1;
             name = "motor";
             passThrough = 1;
         };
         class HitTurret
         {
-            armor = 0.8;
+            armor = 5000;
             material = -1;
+			minimalHit = -0.5;
+            explosionShielding = 0.01;
             name = "vez";
             passThrough = 1;
         };
         class HitGun
         {
-            armor = 0.6;
+            armor = 5000;
             material = -1;
+			minimalHit = -0.5;
+            explosionShielding = 0.01;
             name = "zbran";
             passThrough = 1;
         };

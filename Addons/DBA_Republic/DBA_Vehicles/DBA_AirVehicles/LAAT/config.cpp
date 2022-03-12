@@ -24,9 +24,6 @@ class CfgPatches
 			"101st_laat_HammerCG",
 			"DBA_V19_base",
 			"DBA_Patrol_LAAT",
-			"101st_YWing",
-			"101st_YWing_Red",
-			"101st_YWing_Green",
 			"DBA_LAAT_PYLON_TESTBED"
 		};
 		requiredVersion=0.1;
@@ -12925,131 +12922,6 @@ class cfgVehicles
 			};
 		};
 	};
-
-	class 3AS_BTLB_Bomber;
-	class 101st_YWing_base: 3AS_BTLB_Bomber
-	{
-		irTarget=1;
-		irTargetSize=0.34999999;
-		radarTarget=1;
-		radarTargetSize=0.2;
-		memoryPointDriverOptics="PilotCamera_pos";
-		unitInfoType="RscOptics_CAS_Pilot";
-		driverWeaponsInfoType="RscOptics_CAS_01_TGP";
-		selectionFireAnim="zasleh";
-		simulation="airplaneX";
-		scope=1;
-		scopecurator=1;
-		side=1;
-		getInAction="GetInHigh";
-		getOutAction = "GetOutHigh";
-		driverCanEject = 1;
-		model="\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\YWing.p3d";
-		displayName = "Y-Wing BTL-B StarFighter";
-		
-		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
-		picture="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";
-		hiddenselections[]=
-		{
-			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
-		};
-		hiddenselectionstextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
-		};
-		hiddenSelectionsMaterials[] = {"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\cockpit.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\leftwing.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2.rvmat", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\rightwing.rvmat"};
-		insideSoundCoef=0.2;
-		destrType="DestructWreck";
-		driveraction="Plane_Fighter_03_pilot";
-		armor=95;
-		 faction="B_DBA_Republic_F";
-		editorSubcategory = "EdSubcat_Planes";
-	};
-	class 101st_YWing: 101st_YWing_base
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		displayName = "Y-Wing BTL-B StarFighter";
-		side=1;
-		forceingarage=1;
-        faction="B_DBA_Republic_F";
-		editorSubcategory = "EdSubcat_Planes";
-		
-		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
-		availableForSupportTypes[]=
-		{
-			"CAS_Bombing"
-		};
-		hiddenselections[]=
-		{
-			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
-		};
-		hiddenselectionstextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Right_wing_CO.paa"
-		};
-		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		editorPreview="";
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
-	};
-	class 101st_YWing_Green: 101st_YWing_base
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		displayName = "Y-Wing BTL-B StarFighter (Green)";
-		side=1;
-		forceingarage=1;
-         faction="B_DBA_Republic_F";
-		editorSubcategory = "EdSubcat_Planes";
-		
-		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
-		availableForSupportTypes[]=
-		{
-			"CAS_Bombing"
-		};
-	hiddenselections[]=
-		{
-			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
-		};
-		hiddenselectionstextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Green\Right_wing_CO.paa"
-		};
-		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		editorPreview="";
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
-	};
-	class 101st_YWing_Red: 101st_YWing_base
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		displayName = "Y-Wing BTL-B StarFighter (Red)";
-		side=1;
-		forceingarage=1;
-         faction="B_DBA_Republic_F";
-		editorSubcategory = "EdSubcat_Planes";
-		vehicleClass = "Air";
-		
-		icon="A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa";
-		availableForSupportTypes[]=
-		{
-			"CAS_Bombing"
-		};
-			hiddenselections[]=
-		{
-			"ballgun", "body", "cockpit", "leftwing", "r2", "rightwing", 
-		};
-		hiddenselectionstextures[]=
-		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Red\Right_wing_CO.paa"
-		};
-		weapons[] = {"dba_wynd_agm","DBA_ClusterBomb","DBA_SDBLauncher","DBA_LGBLauncher","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		editorPreview="";
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","DBA_HMG_red_x500_mag","DBA_HMG_red_x500_mag","DBA_agm_x6_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_cluster_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_sdb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag","DBA_lgb_bomb_x4_mag"};
-	};
 	//Laat testbed
 	class DBA_LAAT_PYLON_TESTBED : B_Heli_Attack_01_base_F{
 		tas_max_impulse=800;
@@ -13232,7 +13104,7 @@ class cfgVehicles
 		altNoForce=172400;
 		crewCrashProtection=0;
 		explosionShielding=0.75;
-		epeImpulseDamageCoef=0.25;
+		epeImpulseDamageCoef=0.05;
 		soundEngineOnInt[]=
 		{
 			"3as\3as_laat\sounds\LAAT_Start.ogg",

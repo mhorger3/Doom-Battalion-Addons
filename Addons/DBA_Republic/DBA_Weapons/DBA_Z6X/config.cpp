@@ -44,9 +44,9 @@ class GunParticles;
 class CfgRecoils{
 	class Default;
 	class DBA_Recoil_Z6X : Default {
-		muzzleOuter[]= {0.050000, 0.1500000, 0.1, 0.150000};
-		kickBack[]= {0.0005000, 0.0050000};
-		permanent = 0.0050000;
+		muzzleOuter[]= {0.150000, 0.1500000, 0.1, 0.150000};
+		kickBack[]= {0.00075000, 0.00750000};
+		permanent = 0.00750000;
 		temporary = 0.0050000;
 	};
 };
@@ -235,7 +235,7 @@ class CfgMagazines{
 		count=1000;
 		descriptionShort="PL15 Snub-Nose Ammo Drum";
 		displayNameShort="25mw Snub-Nose";
-		mass=120;
+		mass=200;
 		initSpeed=1000;
 		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 		model="\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
@@ -245,7 +245,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class ammo_Penetrator_Base;
 	class DBA_PL15SM_Penetrator : ammo_Penetrator_Base{
-		hit=55;
+		hit=40;
 		warheadName = "Tandem";
 		caliber=7.666666667;
 	};
@@ -253,7 +253,7 @@ class CfgAmmo{
 	class DBA_25mm_PL15SN_SAPHEI: M_NLAW_AT_F
 	{
 		hit=20;
-		indirectHit=20;
+		indirectHit=10;
 		indirectHitRange=0.25;
 		explosive=1;
 		caliber=2;
