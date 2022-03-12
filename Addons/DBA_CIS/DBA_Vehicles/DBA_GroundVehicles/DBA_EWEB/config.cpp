@@ -168,6 +168,14 @@ class CfgVehicles
 					"DBA_13mm_UR2_x80_mag",
 					"DBA_13mm_UR2_x80_mag",
 					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
+					"DBA_13mm_UR2_x80_mag",
 				};
 				gunnerAction="RepeaterGunner";
 				memoryPointGunnerOptics="gunnerview";

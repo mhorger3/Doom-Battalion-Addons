@@ -3544,6 +3544,7 @@ class CfgVehicles
 					class CommanderOptics: CommanderOptics
 					{
 						memoryPointGun="usti hlavne2";
+						stabilizedInAxes=3;
 						selectionFireAnim="zasleh2";
 						weapons[]=
 						{
@@ -3863,6 +3864,7 @@ class CfgVehicles
 						selectionFireAnim="commander_muzzleflash";
 						minElev=-20;
 						maxElev=40;
+						stabilizedInAxes=3;
 						discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 						discreteDistanceInitIndex=2;
 						turretInfoType="RscOptics_MBT_01_commander_RCWS";
@@ -4063,6 +4065,7 @@ class CfgVehicles
 						selectionFireAnim="zasleh2";
 						minElev=-18;
 						maxElev=70;
+						stabilizedInAxes=3;
 						weapons[]=
 						{
 							"DBA_20mw_GAIBO1_AC",
