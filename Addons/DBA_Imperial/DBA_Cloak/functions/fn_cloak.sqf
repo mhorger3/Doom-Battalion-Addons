@@ -4,7 +4,6 @@ params ["_this"];
 _vehic = _this;
 _pil = driver _this;
 _vehic setvariable ["cloakStatus",true,true];
-_stealthMode = createGroup civillian;
 _this enableSimulationGlobal enable;
 
 
