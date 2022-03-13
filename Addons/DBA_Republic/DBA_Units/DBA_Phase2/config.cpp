@@ -13,6 +13,7 @@ class CfgPatches
 			"B_DBA_P2CloneDutch_F",
 			"B_DBA_P2CloneBlind_F",
 			"B_DBA_P2CloneKel_F",
+			"B_DBA_P2CloneMutt_F",
 			"B_DBA_P2CloneJerec_F",
 			"B_DBA_P2CloneVin_F",
 			"B_DBA_P2CloneKai_F",
