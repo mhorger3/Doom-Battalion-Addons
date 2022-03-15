@@ -94,7 +94,6 @@ class DBA_Z6X_P : Launcher_Base_F
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Z6\Data\Z6X_Mag.RVMAT",
 		};
 		reloadAction = "ReloadRPG";
-		recoil = "DBA_Recoil_Z6X";
 		maxZeroing = 600;
 		modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
 		weaponInfoType = "RscWeaponEmpty";
@@ -164,7 +163,7 @@ class DBA_Z6X_P : Launcher_Base_F
 			};
 			reloadTime = 0.03243243243;
 			dispersion = 0.002327104;
-			recoil = "recoil_auto_mk200";
+			recoil = "DBA_Recoil_Z6X";
 			minRange = 2;
 			minRangeProbab = 0.95;
 			midRange = 300;
