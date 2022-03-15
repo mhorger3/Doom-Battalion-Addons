@@ -457,7 +457,7 @@ class cfgWeapons
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_magazine_Mortar", 1.000000, 1.35, 20};
 		soundServo[]= {"", 0.000100, 1.000000};
 		reloadTime = 1.800000;
-		magazineReloadTime = 0.15;
+		magazineReloadTime = 2.5;
 		autoReload = 1;
 		canLock = 0;
 		magazines[]= 
@@ -581,7 +581,7 @@ class cfgWeapons
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_magazine_Mortar", 1.000000, 0.95, 20};
 		soundServo[] = {"", 0.000100, 1.000000};
 		reloadTime = 1.800000;
-		magazineReloadTime = 0.15;
+		magazineReloadTime = 2.5;
 		autoReload = 1;
 		canLock = 0;
 		magazines[]= 
@@ -707,7 +707,7 @@ class cfgWeapons
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_magazine_Mortar", 1.000000, 0.77, 20};
 		soundServo[] = {"", 0.000100, 1.000000};
 		reloadTime = 2.150000;
-		magazineReloadTime = 0.15;
+		magazineReloadTime = 2.5;
 		autoReload = 1;
 		canLock = 0;
 		magazines[]= 
