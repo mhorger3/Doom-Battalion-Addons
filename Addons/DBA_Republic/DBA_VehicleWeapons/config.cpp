@@ -10599,8 +10599,8 @@ class CfgAmmo
 	};
 	class DBA_TPV13_TBR_Submunition : SubmunitionBase{
 		hit = 100;
-		indirectHit = 50;
-		indirectHitRange = 12.5;
+		indirectHit = 15;
+		indirectHitRange = 5;
 		explosive= 1.0
 		model="\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 	};
@@ -10610,14 +10610,14 @@ class CfgAmmo
 		submunitionAmmo="DBA_TPV13_TBR_Submunition";
 		submunitionDirectionType="SubmunitionModelDirection";
 		submunitionConeType[]= {"poissondisc", 8};
-		submunitionInitSpeed=100;
-		submunitionParentSpeedCoef=0;
+		submunitionInitSpeed=175;
+		submunitionParentSpeedCoef=0.2;
 		submunitionInitialOffset[]={0,0,-0.2};
 		triggerOnImpact=1;
 		deleteParentWhenTriggered=0;
 		hit=50;
-		indirectHit=125;
-		indirectHitRange=13;
+		indirectHit=30;
+		indirectHitRange=8;
 		explosive=0.80000001;
 		cost=30;
 		aiAmmoUsageFlags="128 + 512";
