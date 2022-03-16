@@ -381,4 +381,17 @@ class cfgWeapons
 			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Roma_Helmet_CO.paa"
 		};
 	};
+	class DBA_P2Helmet_Shatterstorm : DBA_P2HelmetBase
+	{
+		author = "Morn";
+		displayName = "DBA Phase 2 Clone Helmet: Shatterstorm";
+		hiddenSelectionsTextures[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shatterstorm_Helmet_CO.paa",
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shatterstorm_Helmet.rvmat",
+		};
+	};
 };
