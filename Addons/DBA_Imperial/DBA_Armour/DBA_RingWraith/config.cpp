@@ -27,7 +27,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "[DBA] Wraith";
 		picture = "";
-		model = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Armour\DBA_RingWraith\data\Royal_guard_t.p3d";
+		model = "DBA_Imperial\Addons\DBA_Imperial\DBA_Armour\DBA_RingWraith\data\Royal_guard_t.p3d";
 		hiddenSelections[] = { "camo1" };
 		class ItemInfo : UniformItem
 		{

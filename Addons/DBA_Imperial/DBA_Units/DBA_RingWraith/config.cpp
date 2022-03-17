@@ -32,7 +32,7 @@ class CfgVehicles
 		vehicleClass = "O_DBA_Imperial_Spec_Ops";
 		side = 1;
 		faction = "B_DBA_Imperial_F";
-		model = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Armour\DBA_RingWraith\data\Royal_guard_t.p3d";
+		model = "DBA_Imperial\Addons\DBA_Imperial\DBA_Armour\DBA_RingWraith\data\Royal_guard_t.p3d";
 		identityTypes[] =
 		{
 			"NoGlasses",

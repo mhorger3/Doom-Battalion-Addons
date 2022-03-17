@@ -61,7 +61,7 @@ class CfgWeapons
 			{
 				begin1[] =
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					50.1622777,
 					0.8,
 					2500
@@ -181,7 +181,7 @@ class CfgAmmo
 		deflecting = 0;
 		explosive = 0.800000;
 		cost = 300;
-		model = "101st_aux_mod\addons\dba_general\dba_AmmoBase\CapitalShipBlasterBoltGreen.p3d";
+		model = "DBA_Core\addons\dba_general\dba_AmmoBase\CapitalShipBlasterBoltGreen.p3d";
 		tracerStartTime = 0.15;
 		tracerEndTime = 10000000;
 		tracerScale = 2.25;

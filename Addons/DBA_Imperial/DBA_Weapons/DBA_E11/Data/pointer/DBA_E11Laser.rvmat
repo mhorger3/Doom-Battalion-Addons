@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_NOHQ.paa";
+	texture="DBA_Imperial\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_AS.paa";
+	texture="DBA_Imperial\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="101st_Aux_Mod\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_SMDI.paa";
+	texture="DBA_Imperial\Addons\DBA_Imperial\DBA_Weapons\DBA_E11\Data\pointer\E11Laser_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

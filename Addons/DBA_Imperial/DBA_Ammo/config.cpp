@@ -23,11 +23,11 @@ class CfgAmmo
 	class DBA_HeavyWeapon_base;
 	class DBA_65_Imperial : DBA_65_base
 	{
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
+		model = "DBA_Core\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 	};
 	class DBA_HeavyWeapon_Imperial : DBA_HeavyWeapon_base
 	{
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
+		model = "DBA_Core\Addons\DBA_General\DBA_AmmoBase\BlasterBoltRed.p3d";
 	};
 };
 class CfgMagazines

@@ -21,7 +21,7 @@ class CfgFunctions
     {
         class functions
         {
-            file = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Cloak\functions";
+            file = "DBA_Imperial\Addons\DBA_Imperial\DBA_Cloak\functions";
 
             class cloak {};
             class cloakDisable {};
