@@ -498,17 +498,17 @@ class CfgWeapons {
 			hiddenSelections[] = {"camo1"};
 		};
 	};
-	class 101st_Blind_Pauldron: V_RebreatherB
+	class 101st_BC_Pauldron: V_RebreatherB
 	{
 		author="Dutch";
 		dlc = "101st_Aux_Mod";
 		scope=1;
 		scopeArsenal=2;
-		displayName="101st Blind Pauldron (JLTS)";
+		displayName="101st BC Pauldron (JLTS)";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_Blind_Pauldron_CO.paa"
+			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Armour\DBA_Phase2\Vests\101st_BC_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
