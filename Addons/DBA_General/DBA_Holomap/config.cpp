@@ -3,18 +3,15 @@ class CfgPatches
     class 101st_Aux_Holomap
     {
         author = "Ragwolf";
-        name = "101st Aux Mod Holomap";
+        name = "DBA Aux Mod Holomap";
 
         requiredAddons[] =
         {
-  			"442_misc_holotable",
             "JLTS_C_Intel"
         };
         requiredVersion = 0.1;
         units[] = {
 			"101st_Holomap",
-	  		"101st_HoloTable_Long",
-			"101st_HoloTable_Round"
 		};
         weapons[] = {};
     };
@@ -26,7 +23,7 @@ class CfgFunctions
     {
         class functions
         {
-            file = "101st_Aux_Mod\Addons\DBA_General\DBA_Holomap\functions";
+            file = "DBA_Core\Addons\DBA_General\DBA_Holomap\functions";
 
 			class calculateParticlePositions {};
 			class create {};
@@ -71,7 +68,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
+	/*
 	class 101st_HoloTable_Round : 442_holotable
 	{
 		displayName = "Holo Table (Round)";
@@ -106,7 +103,7 @@ class CfgVehicles
 				init = "_this call DB101_Holomap_fnc_create";
 			};
 		};
-	};
+	};*/
 	class Weapon_Base_F;
 	class 101st_GH_Portable_Holomap : Weapon_Base_F
 	{
@@ -143,6 +140,6 @@ class Extended_PreInit_EventHandlers
 {
     class DBA_Holomap_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '101st_Aux_Mod\Addons\DBA_General\DBA_Holomap\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_General\DBA_Holomap\XEH_preInit.sqf'";
     };
 };

@@ -27,14 +27,14 @@ class CfgFaces
 			head = "DefaultHead_A3";
 			identityTypes[] = {};
 			displayname = "Chiss Head 01";
-			texture = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
-			material = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
-			materialWounded1 = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
-			materialWounded2 = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
-			textureHL = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
-			materialHL = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
-			textureHL2 = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
-			materialHL2 = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
+			texture = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
+			material = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
+			materialWounded1 = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
+			materialWounded2 = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
+			textureHL = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
+			materialHL = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
+			textureHL2 = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
+			materialHL2 = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01.RVMAT";
 			disabled = 0;
 		};
 
@@ -43,9 +43,9 @@ class CfgFaces
 			author = "Vulgar";
 			head = "DefaultHead_A3";
 			displayname = "Chiss Head 02";
-			texture = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
-			textureHL = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
-			textureHL2 = "\101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
+			texture = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
+			textureHL = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
+			textureHL2 = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_02_CO.paa";
 		};
 	};
 };

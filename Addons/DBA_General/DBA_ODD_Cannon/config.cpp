@@ -3,7 +3,7 @@ class CfgPatches
     class DBA_Aux_Mod_ODD_Cannon
     {
         author = "Ragwolf";
-        name = "101st Aux Mod ODD Cannon";
+        name = "DBA Aux Mod ODD Cannon";
 
         requiredAddons[] =
         {
@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class cannon
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_ODD_Cannon\functions\cannon";
+			file = "DBA_Core\Addons\DBA_General\DBA_ODD_Cannon\functions\cannon";
 
             class createControls {};
             class initLauncher {};
@@ -31,7 +31,7 @@ class CfgFunctions
 
         class gui
         {
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_ODD_Cannon\functions\gui";
+			file = "DBA_Core\Addons\DBA_General\DBA_ODD_Cannon\functions\gui";
 
             class cancelButton {};
             class controlSettingsOnLoad {};

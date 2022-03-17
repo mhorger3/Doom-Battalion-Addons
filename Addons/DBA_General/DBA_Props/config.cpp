@@ -21,7 +21,7 @@ class cfgVehicles {
 		displayName = "DBA Command Post";
 		editorCategory = "Category101stAux";
 		editorSubcategory = "101st_Props";
-		model = "101st_Aux_Mod\Addons\DBA_General\DBA_Props\DBA_CommandPost.p3d";
+		model = "DBA_Core\Addons\DBA_General\DBA_Props\DBA_CommandPost.p3d";
 		hiddenSelections[] =
 		{
 			"Base", "Icon", "Pylons"
@@ -43,10 +43,10 @@ class cfgVehicles {
 		displayName = "Baby Yoda (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\BabyYoda.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\BabyYoda.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\greenyweeny_co.paa",
+			"DBA_Core\Addons\DBA_General\DBA_Props\greenyweeny_co.paa",
 		};
 		hiddenSelections[] = 
 		{
@@ -63,10 +63,10 @@ class cfgVehicles {
 		displayName = "Carbonite Gungan (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\GunganCarbo.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\GunganCarbo.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\GunganCarbonite_co.paa",
+			"DBA_Core\Addons\DBA_General\DBA_Props\GunganCarbonite_co.paa",
 		};
 		hiddenSelections[] = 
 		{
@@ -82,10 +82,10 @@ class cfgVehicles {
 		displayName = "Carbonite Trandoshan (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\TrandoCarbo.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\TrandoCarbo.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\TrandoCarbonite_co.paa",
+			"DBA_Core\Addons\DBA_General\DBA_Props\TrandoCarbonite_co.paa",
 		};
 		hiddenSelections[] = 
 		{
@@ -101,10 +101,10 @@ class cfgVehicles {
 		displayName = "Acklay (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\Acklay.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\Acklay.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\Acklay_Body_CO.paa", "101st_Aux_Mod\Addons\DBA_General\DBA_Props\Acklay_Legs_CO.paa"
+			"DBA_Core\Addons\DBA_General\DBA_Props\Acklay_Body_CO.paa", "DBA_Core\Addons\DBA_General\DBA_Props\Acklay_Legs_CO.paa"
 		};
 		hiddenSelections[] = 
 		{
@@ -120,10 +120,10 @@ class cfgVehicles {
 		displayName = "Jabba (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\Jabba.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\Jabba.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\head_co.paa", "101st_Aux_Mod\Addons\DBA_General\DBA_Props\body_CO.paa"
+			"DBA_Core\Addons\DBA_General\DBA_Props\head_co.paa", "DBA_Core\Addons\DBA_General\DBA_Props\body_CO.paa"
 		};
 		hiddenSelections[] = 
 		{
@@ -139,10 +139,10 @@ class cfgVehicles {
 		displayName = "Rancor (Static)";
 		editorCategory="Category101stAux";
 		editorSubcategory="101st_Props";
-		model =  "101st_Aux_Mod\Addons\DBA_General\DBA_Props\Rancor.p3d";
+		model =  "DBA_Core\Addons\DBA_General\DBA_Props\Rancor.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"101st_Aux_Mod\Addons\DBA_General\DBA_Props\Rancor_Body_CO.paa", "101st_Aux_Mod\Addons\DBA_General\DBA_Props\Rancor_Head_CO.paa"
+			"DBA_Core\Addons\DBA_General\DBA_Props\Rancor_Body_CO.paa", "DBA_Core\Addons\DBA_General\DBA_Props\Rancor_Head_CO.paa"
 		};
 		hiddenSelections[] = 
 		{

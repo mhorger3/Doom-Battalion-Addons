@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_Disruptor\functions";
+			file = "DBA_Core\Addons\DBA_General\DBA_Disruptor\functions";
 
             class onHit {};
             class onHitDisruptorRound {};

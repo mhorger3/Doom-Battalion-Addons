@@ -31,7 +31,7 @@ class CfgFunctions
 	{
 		class AdvancedUrbanRappelling
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_AdvancedUrbanRappelling\functions";
+			file = "DBA_Core\Addons\DBA_General\DBA_AdvancedUrbanRappelling\functions";
 			class advancedUrbanRappellingInit{postInit=1;};
 		};
 	};
@@ -42,19 +42,19 @@ class CfgSounds
 	class AUR_Rappel_Loop
 	{
 		name = "AUR_Rappel_Loop";
-		sound[] = {"101st_Aux_Mod\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_Loop.ogg", db+5, 1};
+		sound[] = {"DBA_Core\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_Loop.ogg", db+5, 1};
 		titles[] = {0,""};
 	};
 	class AUR_Rappel_Start
 	{
 		name = "AUR_Rappel_Start";
-		sound[] = {"101st_Aux_Mod\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_Start.ogg", db+10, 1};
+		sound[] = {"DBA_Core\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_Start.ogg", db+10, 1};
 		titles[] = {0,""};
 	};
 	class AUR_Rappel_End
 	{
 		name = "AUR_Rappel_End";
-		sound[] = {"101st_Aux_Mod\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_End.ogg", db+10, 1};
+		sound[] = {"DBA_Core\Addons\DBA_General\DBA_AdvancedUrbanRappelling\sounds\AUR_Rappel_End.ogg", db+10, 1};
 		titles[] = {0,""};
 	};
 };
@@ -64,6 +64,6 @@ class Extended_PreInit_EventHandlers
 {
     class DBA_AUR_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '101st_Aux_Mod\Addons\DBA_General\DBA_AdvancedUrbanRappelling\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_General\DBA_AdvancedUrbanRappelling\XEH_preInit.sqf'";
     };
 };

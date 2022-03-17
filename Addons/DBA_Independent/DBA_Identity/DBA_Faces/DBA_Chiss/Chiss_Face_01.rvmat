@@ -36,7 +36,7 @@ class Stage2
 };
 
 class Stage3 {
-	texture = "\101st_Aux_Mod\Addons\textures\Faces\Chiss_Face_01_CO.paa";
+	texture = "\DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Faces\DBA_Chiss\Chiss_Face_01_CO.paa";
 	uvSource = "tex";
 	
 	class uvTransform {

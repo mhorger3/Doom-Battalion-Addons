@@ -3,7 +3,7 @@ class CfgPatches
     class DBA_Aux_Mod_CapitalShips
     {
         author = "Ragwolf";
-        name = "101st Aux Mod Capital Ships";
+        name = "DBA Aux Mod Capital Ships";
 
         requiredAddons[] =
         {

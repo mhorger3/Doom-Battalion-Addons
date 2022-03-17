@@ -18,7 +18,7 @@ class CfgHeads
 	class DefaultHead_A3;
 	class DBA_SkullHead: DefaultHead_A3
 	{
-		model="101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Heads\DBA_Skull\Skull.p3d";
+		model="DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Heads\DBA_Skull\Skull.p3d";
 	};
 };
 class CfgFaces
@@ -32,7 +32,7 @@ class CfgFaces
 			head="DBA_SkullHead";
 			identityTypes[]={};
 			displayname="Skull";
-			texture="101st_Aux_Mod\Addons\DBA_Independent\DBA_Identity\DBA_Heads\DBA_Skull\Data\Skull_CO.paa";
+			texture="DBA_Independent\Addons\DBA_Independent\DBA_Identity\DBA_Heads\DBA_Skull\Data\Skull_CO.paa";
 			material = "";
 			materialWounded1="\ryanzombies\faces\face1.rvmat";
 			materialWounded2="\ryanzombies\faces\face1.rvmat";

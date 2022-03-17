@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_AircraftSpawner\functions";
+			file = "DBA_Core\Addons\DBA_General\DBA_AircraftSpawner\functions";
 
 			class achilles {};
             class create {};

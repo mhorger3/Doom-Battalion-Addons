@@ -49,7 +49,7 @@ class Extended_PreInit_EventHandlers
 {
     class DBA_Common_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '101st_Aux_Mod\Addons\DBA_General\DBA_Common\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_General\DBA_Common\XEH_preInit.sqf'";
     };
 };
 
@@ -59,8 +59,4 @@ class CfgEditorCategories
 	{
 		displayName="101st Assets";
 	};
-};
-class CfgEditorSubcategories
-{
-	#include "CfgEditorSubcategories.hpp"
 };

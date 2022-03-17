@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_AI\functions";
+			file = "DBA_Core\Addons\DBA_General\DBA_AI\functions";
 
 			class achilles {};
 			class garrison {};

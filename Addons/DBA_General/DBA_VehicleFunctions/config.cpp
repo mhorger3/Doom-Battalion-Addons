@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "101st_Aux_Mod\Addons\DBA_General\DBA_VehicleFunctions\functions";
+			file = "DBA_Core\Addons\DBA_General\DBA_VehicleFunctions\functions";
 
             class disableInteriorLight {};
 			class enableInteriorLight {};
@@ -32,6 +32,6 @@ class Extended_PreInit_EventHandlers
 {
     class DBA_VehicleFunctions_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '101st_Aux_Mod\Addons\DBA_General\DBA_VehicleFunctions\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_General\DBA_VehicleFunctions\XEH_preInit.sqf'";
     };
 };
