@@ -58,7 +58,7 @@ class CfgVehicles
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "$STR_A3_CfgVehicles_VTOL_02_base_F0";
-		model = "101st_Aux_Mod\Addons\DBA_Imperial\DBA_Vehicles\DBA_Airvehicles\DBA_TIEFighter\DBA_TIEFighter.p3d";
+		model = "DBA_Imperial\Addons\DBA_Imperial\DBA_Vehicles\DBA_Airvehicles\DBA_TIEFighter\DBA_TIEFighter.p3d";
 		icon = "\A3\Air_F_Exp\VTOL_02\Data\UI\Map_VTOL_02_vehicle_CA.paa";
 		picture = "\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_vehicle_CA.paa";
 		overviewPicture = "\A3\Data_F_Exp\Images\VehicleXian_ca.paa";
@@ -789,7 +789,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{ 
-			"\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Ballgun_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Body_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Left_wing_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\r2_CO.paa", "\101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Right_wing_CO.paa"
+			"\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Ballgun_CO.paa", "\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Body_CO.paa", "\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\YWing\Yellow\Cockpit_CO.paa", "\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Left_wing_CO.paa", "\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\r2_CO.paa", "\DBA_Imperial\Addons\DBA_Republic\DBA_Vehicles\DBA_AirVehicles\DBA_YWingFighter\Yellow\Right_wing_CO.paa"
 		};
 	};
 };
