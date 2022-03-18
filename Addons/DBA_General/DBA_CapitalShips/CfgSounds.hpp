@@ -6,7 +6,7 @@ class CfgSounds
 	{
 		name = "capital_ship_engines";
 		sound[] = {
-			"\DBA_Core\Addons\DBA_General\DBA_CapitalShips\sounds\capital_ship_engines.ogg", db + 10, 1
+			"\DBA_Core\Addons\DBA_CapitalShips\sounds\capital_ship_engines.ogg", db + 10, 1
 		};
         titles[] = {};
 	};
@@ -15,7 +15,7 @@ class CfgSounds
     {
         name = "imperial_alert";
         sound[] = {
-            "\DBA_Core\Addons\DBA_General\DBA_CapitalShips\sounds\imperial_alert.ogg", db + 10, 1
+            "\DBA_Core\Addons\DBA_CapitalShips\sounds\imperial_alert.ogg", db + 10, 1
         };
         titles[] = {};
     };

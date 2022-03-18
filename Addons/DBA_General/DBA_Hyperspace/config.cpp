@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "DBA_Core\Addons\DBA_General\DBA_Hyperspace\functions";
+			file = "DBA_Core\Addons\DBA_Hyperspace\functions";
 
 			class achilles {};
 			class createShip {};
@@ -47,7 +47,7 @@ class CfgSounds
 	{
 		name = "hyperspace_enter";
 		sound[] = {
-			"\DBA_Core\Addons\DBA_General\DBA_Hyperspace\sounds\hyperspace_enter.ogg", 1, 1
+			"\DBA_Core\Addons\DBA_Hyperspace\sounds\hyperspace_enter.ogg", 1, 1
 		};
 	};
 
@@ -55,7 +55,7 @@ class CfgSounds
 	{
 		name = "hyperspace_exit";
 		sound[] = {
-			"\DBA_Core\Addons\DBA_General\DBA_Hyperspace\sounds\hyperspace_exit.ogg", 1, 1
+			"\DBA_Core\Addons\DBA_Hyperspace\sounds\hyperspace_exit.ogg", 1, 1
 		};
 	};
 };
@@ -64,6 +64,6 @@ class Extended_PreInit_EventHandlers
 {
     class DBA_Hyperspace_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_General\DBA_Hyperspace\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'DBA_Core\Addons\DBA_Hyperspace\XEH_preInit.sqf'";
     };
 };

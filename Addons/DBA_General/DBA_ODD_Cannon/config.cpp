@@ -20,7 +20,7 @@ class CfgFunctions
 	{
 		class cannon
 		{
-			file = "DBA_Core\Addons\DBA_General\DBA_ODD_Cannon\functions\cannon";
+			file = "DBA_Core\Addons\DBA_ODD_Cannon\functions\cannon";
 
             class createControls {};
             class initLauncher {};
@@ -31,7 +31,7 @@ class CfgFunctions
 
         class gui
         {
-			file = "DBA_Core\Addons\DBA_General\DBA_ODD_Cannon\functions\gui";
+			file = "DBA_Core\Addons\DBA_ODD_Cannon\functions\gui";
 
             class cancelButton {};
             class controlSettingsOnLoad {};

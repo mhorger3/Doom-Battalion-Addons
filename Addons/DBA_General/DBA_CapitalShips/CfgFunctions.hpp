@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "DBA_Core\Addons\DBA_General\DBA_CapitalShips\functions";
+			file = "DBA_Core\Addons\DBA_CapitalShips\functions";
 
             class achilles {};
             class ambientFleet {};

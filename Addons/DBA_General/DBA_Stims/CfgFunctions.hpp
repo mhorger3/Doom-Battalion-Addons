@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "DBA_Core\Addons\DBA_General\DBA_Stims\functions";
+			file = "DBA_Core\Addons\DBA_Stims\functions";
 
             class adrenal {};
             class battle {};

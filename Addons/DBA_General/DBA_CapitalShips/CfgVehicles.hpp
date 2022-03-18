@@ -19,7 +19,7 @@ class CfgVehicles
 		displayName = "Capital Ship Ammo (Blue)";
 		scope = 2;
 		scopeCurator = 2;
-		model = "DBA_Core\Addons\DBA_General\DBA_CapitalShips\ammo\CapitalShipBlasterBoltBlue.p3d";
+		model = "DBA_Core\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltBlue.p3d";
 	};
 
 	class DBA_CapitalShips_Ammo_Green_Prop: DBA_CapitalShips_Ammo_Base_Prop
@@ -27,7 +27,7 @@ class CfgVehicles
 		displayName = "Capital Ship Ammo (Green)";
 		scope = 2;
 		scopeCurator = 2;
-		model = "DBA_Core\Addons\DBA_General\DBA_CapitalShips\ammo\CapitalShipBlasterBoltGreen.p3d";
+		model = "DBA_Core\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltGreen.p3d";
 	};
 
 	class DBA_CapitalShips_Ammo_Red_Prop: DBA_CapitalShips_Ammo_Base_Prop
@@ -35,7 +35,7 @@ class CfgVehicles
 		displayName = "Capital Ship Ammo (Red)";
 		scope = 2;
 		scopeCurator = 2;
-		model = "DBA_Core\Addons\DBA_General\DBA_CapitalShips\ammo\CapitalShipBlasterBoltRed.p3d";
+		model = "DBA_Core\Addons\DBA_CapitalShips\ammo\CapitalShipBlasterBoltRed.p3d";
 	};
 
 	class 442_acclamator_2;
