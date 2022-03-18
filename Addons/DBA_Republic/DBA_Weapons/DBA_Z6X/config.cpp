@@ -44,10 +44,10 @@ class GunParticles;
 class CfgRecoils{
 	class Default;
 	class DBA_Recoil_Z6X : Default {
-		muzzleOuter[]= {0.150000, 0.1500000, 0.1, 0.150000};
-		kickBack[]= {0.00075000, 0.00750000};
-		permanent = 0.00750000;
-		temporary = 0.0050000;
+		muzzleOuter[]= {0.1150000, 0.22500000, 0.065, 0.115};
+		kickBack[]= {0.00325000, 0.0550000};
+		permanent = 0.05000;
+		temporary = 0.05000;
 	};
 };
 class CfgWeapons{
@@ -67,9 +67,9 @@ class DBA_Z6X_P : Launcher_Base_F
 		UiPicture = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Effects\icons\Z6-X_CA.paa";
 		model = "101st_Aux_Mod\Addons\DBA_Republic\DBA_Weapons\DBA_Z6\DBA_Z6X.p3d";
 		simulation = "weapon";
-		ace_overpressure_angle = 2;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
-        ace_overpressure_range = 0.25;  // Range in meters in which the damage is applied
-        ace_overpressure_damage = 0.01;  // Damage multiplier
+		ace_overpressure_angle = 5;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 1;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.1;  // Damage multiplier
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
@@ -100,7 +100,10 @@ class DBA_Z6X_P : Launcher_Base_F
 		opticsZoomMin = 0.1083;
 		opticsZoomMax = 0.1083;
 		opticsZoomInit = 0.1083;
-		cameraDir = "look";
+		cameraDir = "eye";
+		dispersion = 0.002327104;
+		recoil = "DBA_Recoil_Z6X";
+		recoilProne = "DBA_Recoil_Z6X";
 		class GunParticles
 		{
 			class effect1
@@ -125,7 +128,7 @@ class DBA_Z6X_P : Launcher_Base_F
 				distanceZoomMin = 300;
 				distanceZoomMax = 300;
 				memoryPointCamera = "eye";
-				cameraDir = "look";
+				cameraDir = "eye";
 				visionMode[] = 
 				{ 
 					"Normal",
@@ -145,8 +148,7 @@ class DBA_Z6X_P : Launcher_Base_F
 		};
 		modes[] =
 		{
-			"Slow",
-			"Fast"
+			"Slow"
 		};
 		class Slow : Mode_FullAuto
 		{
@@ -161,9 +163,7 @@ class DBA_Z6X_P : Launcher_Base_F
 				begin1[] = { "3AS\3AS_Static\data\Sounds\HeavyRepeater\Blaster_Cannon_1",0.95,0.9,2000 };
 				soundBegin[] = { "begin1",0.1 };
 			};
-			reloadTime = 0.03243243243;
-			dispersion = 0.002327104;
-			recoil = "DBA_Recoil_Z6X";
+			reloadTime = 0.04938271605;
 			minRange = 2;
 			minRangeProbab = 0.95;
 			midRange = 300;
@@ -174,20 +174,6 @@ class DBA_Z6X_P : Launcher_Base_F
 			burst = 1;
 			displayName = "Full Auto";
 			textureType = "fullAuto";
-		};
-		class Fast : Slow {
-			reloadTime = 0.01818181818;
-			dispersion = 0.00872664;
-			minRange = 2;
-			minRangeProbab = 0.95;
-			midRange = 300;
-			midRangeProbab = 0.7;
-			maxRange = 600;
-			maxRangeProbab = 0.5;
-			soundBurst = 0;
-			burst = 1;
-			displayName = "Full Auto";
-			textureType = "fastAuto";
 		};
 		drySound[] =
 		{
@@ -225,16 +211,16 @@ class CfgMagazines{
 	class CA_Magazine;
 	class DBA_25mm_PL15SN_x1000_mag : CA_Magazine{
 		scope=2;
-		displayName="1000rnd PL15SN Drum";
+		displayName="500rnd PL15SN Drum";
 		ammo="DBA_25mm_PL15SN_SAPHEI";
 		tracersEvery=1;
 		lastRoundsTracer=28;
 		type="2*256";
 		ACE_isBelt=1;
-		count=1000;
+		count=500;
 		descriptionShort="PL15 Snub-Nose Ammo Drum";
 		displayNameShort="25mw Snub-Nose";
-		mass=200;
+		mass=100;
 		initSpeed=1000;
 		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 		model="\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
@@ -244,14 +230,14 @@ class CfgMagazines{
 class CfgAmmo{
 	class ammo_Penetrator_Base;
 	class DBA_PL15SM_Penetrator : ammo_Penetrator_Base{
-		hit=40;
+		hit=45;
 		warheadName = "Tandem";
-		caliber=7.666666667;
+		caliber=8.75;
 	};
 	class M_NLAW_AT_F;
 	class DBA_25mm_PL15SN_SAPHEI: M_NLAW_AT_F
 	{
-		hit=20;
+		hit=25;
 		indirectHit=10;
 		indirectHitRange=0.25;
 		explosive=1;
