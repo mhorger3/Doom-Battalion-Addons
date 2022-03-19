@@ -71,7 +71,7 @@ class CfgWeapons
 		};
 		class DBA_Imploder : ThrowMuzzle
 		{
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\imploder.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\imploder.p3d";
 			magazines[] =
 			{
 				"DBA_imploder_x1_mag"
@@ -79,7 +79,7 @@ class CfgWeapons
 		};
 		class DBA_Detonator : ThrowMuzzle
 		{
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 			magazines[] =
 			{
 				"DBA_thermaldet_x1_mag"
@@ -87,7 +87,7 @@ class CfgWeapons
 		};
 		class DBA_PurpleSmoke : ThrowMuzzle
 		{
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 			magazines[] =
 			{
 				"DBA_HandFlare_Purple"
@@ -130,18 +130,18 @@ class CfgVehicles
 	class DBA_ImploderBlock_F : ACE_Explosives_Place {
 		displayName = "Imploder Block";  // Name of the item // Path to your model
 		ACE_offset[] = { -3,14,2 };  // Offset of the interaction point from the model in meters on the X,Y,Z axis. Try setting this to the place where it makes most sense (e.g. to buttons/switches/pins)
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ImploderBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ImploderBlock.p3d";
 		hiddenSelections[] =
 		{
 			"camo1"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder.rvmat",
 		};
 
 	};
@@ -149,18 +149,18 @@ class CfgVehicles
 	class DBA_ThermalDetBlock_F : ACE_Explosives_Place
 	{
 		ACE_offset[] = { -3,14,2 };
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ThermalDetBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ThermalDetBlock.p3d";
 		hiddenSelections[] =
 		{
 			"camo1"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
 		};
 		displayName = "Thermal Det Block";
 	};
@@ -192,7 +192,7 @@ class CfgAmmo
 		hit = 7500;
 		indirectHit = 5500;
 		indirectHitRange = 11;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ImploderBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ImploderBlock.p3d";
 		defaultMagazine = "DBA_ImploderBlock_Mag"; 
 		explosive = 1;
 		explosionType = "bomb";
@@ -202,23 +202,23 @@ class CfgAmmo
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder.rvmat",
 		}; 
-		mineModelDisabled = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ImploderBlock.p3d";
+		mineModelDisabled = "DBA_Republic\Addons\DBA_Explosives\ImploderBlock.p3d";
 		soundHit1[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploderExplode1.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploderExplode1.ogg",
 			3.1622777,
 			1,
 			1500
 		};
 		soundHit2[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploderExplode2.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploderExplode2.ogg",
 			3.1622777,
 			1,
 			1500
@@ -232,7 +232,7 @@ class CfgAmmo
 		}; 
 		soundActivation[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\thermalimploderFly.ogg",1.5,1,150
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\thermalimploderFly.ogg",1.5,1,150
 		};
 		soundDeactivation[] =
 		{
@@ -261,20 +261,20 @@ class CfgAmmo
 		indirectHitRange = 0.2;
 		explosive = 0;
 		explosionType = "bomb";
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ThermalDetBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ThermalDetBlock.p3d";
 		hiddenSelections[] =
 		{
 			"camo1"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
 		};
-		mineModelDisabled = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ThermalDetBlock.p3d";
+		mineModelDisabled = "DBA_Republic\Addons\DBA_Explosives\ThermalDetBlock.p3d";
 		soundHit[] =
 		{
 			"A3\Sounds_F\arsenal\explosives\bombs\Explosive_Charge",
@@ -312,7 +312,7 @@ class CfgAmmo
 		simulation = "shotGrenade";
 		soundFly[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\thermalimploderFly.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\thermalimploderFly.ogg",
 			1.5,
 			1,
 			90
@@ -328,21 +328,21 @@ class CfgAmmo
 		};
 		soundHit1[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploderExplode1.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploderExplode1.ogg",
 			2,
 			1,
 			2000
 		};
 		soundHit2[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploderExplode2.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploderExplode2.ogg",
 			2,
 			1,
 			2000
 		};
 		soundHit3[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploderExplode3.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploderExplode3.ogg",
 			2,
 			1,
 			2000
@@ -390,18 +390,18 @@ class CfgAmmo
 			};
 		};
 		typicalspeed = 18;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\imploder.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\imploder.p3d";
 		hiddenselections[] =
 		{
 			"camo1"
 		};
 		hiddenselectionstextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\ThermalImploder_CO.paa"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\ThermalImploder_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalImploder\imploder.rvmat"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalImploder\imploder.rvmat"
 		};
 	};
 	class DBA_throwable_c_type_ammo : Grenade
@@ -416,24 +416,24 @@ class CfgAmmo
 		typicalspeed = 15;
 		explosionTime = 15;
 		timeToLive = 20;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ctype.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ctype.p3d";
 		hiddenselections[] =
 		{
 			"camo1"
 		};
 		hiddenselectionstextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\CType\TypeC_CO.paa"
+			"DBA_Republic\Addons\DBA_Explosives\data\CType\TypeC_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\CType\ctype.rvmat"
+			"DBA_Republic\Addons\DBA_Explosives\data\CType\ctype.rvmat"
 		};
 		ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
 		soundFly[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\CType\ctypeFly.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\CType\ctypeFly.ogg",
 			1,
 			1,
 			90
@@ -491,7 +491,7 @@ class CfgAmmo
 		indirectHitRange = 8;
 		soundFly[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",
 			1.5,
 			1,
 			90
@@ -540,18 +540,18 @@ class CfgAmmo
 			};
 		};
 		typicalspeed = 18;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 		hiddenselections[] =
 		{
 			"camo1"
 		};
 		hiddenselectionstextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\ThermalDetonator_CO.paa"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\ThermalDetonator_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\thermal.rvmat"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\thermal.rvmat"
 		};
 		fuseDistance = 0;
 	};
@@ -579,7 +579,7 @@ class CfgMagazines
 		ammo = "DBA_imploder_ammo";
 		descriptionShort = "DBA Thermal Imploder";
 		type = 256;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\imploder.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\imploder.p3d";
 	};
 	class DBA_throwable_c_type_x1_mag : HandGrenade
 	{
@@ -593,7 +593,7 @@ class CfgMagazines
 		ammo = "DBA_throwable_c_type_ammo";
 		descriptionShort = "DBA Throwable C-Type";
 		type = 256;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ctype.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ctype.p3d";
 	};
 	class ACE_HandFlare_Base;
 	class DBA_HandFlare_Purple : ACE_HandFlare_Base
@@ -618,7 +618,7 @@ class CfgMagazines
 		mass = 10;
 		descriptionShort = "DBA Thermal Detonator";
 		type = 256;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 		initSpeed = 18;
 		nameSound = "handgrenade";
 		maxLeadSpeed = 7;
@@ -635,7 +635,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "DBA Imploder Block";
 		picture = "\A3\Weapons_f\data\UI\gear_satchel_CA.paa";
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ImploderBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ImploderBlock.p3d";
 		descriptionShort = "DBA Demo Block";
 		hiddenSelections[] =
 		{
@@ -643,11 +643,11 @@ class CfgMagazines
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder_Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\DetBlock\Imploder.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\DetBlock\Imploder.rvmat",
 		};
 		class Library
 		{
@@ -709,7 +709,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "DBA Thermal Block";
 		picture = "\A3\Weapons_f\data\UI\gear_satchel_CA.paa";
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ThermalDetBlock.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\ThermalDetBlock.p3d";
 		descriptionShort = "DBA Demo Block";
 		hiddenSelections[] =
 		{
@@ -717,11 +717,11 @@ class CfgMagazines
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Det_Block_CO.paa",
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalBlock\Thermal.rvmat",
 		};
 		class Library
 		{
@@ -786,7 +786,7 @@ class CfgMagazines
 			ammo = "101st_imploder_ammo";
 			descriptionShort = "101st Thermal Imploder";
 			type = 256;
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\imploder.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\imploder.p3d";
 		};
 		class DBA_throwable_c_type_x1_mag : HandGrenade
 		{
@@ -800,7 +800,7 @@ class CfgMagazines
 			ammo = "101st_throwable_c_type_ammo";
 			descriptionShort = "101st Throwable C-Type";
 			type = 256;
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\ctype.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\ctype.p3d";
 		};
 		class ACE_HandFlare_Base;
 		class DBA_HandFlare_Purple : ACE_HandFlare_Base
@@ -825,7 +825,7 @@ class CfgMagazines
 			mass = 10;
 			descriptionShort = "101st Thermal Detonator";
 			type = 256;
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 			initSpeed = 18;
 			nameSound = "handgrenade";
 			maxLeadSpeed = 7;
