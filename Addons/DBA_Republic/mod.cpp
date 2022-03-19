@@ -1,0 +1,12 @@
+name = "101st Aux Mod";
+author = "Dutch";
+picture = "logo_ca.paa";
+logo = "logo_ca.paa";
+overview = "101st Doom Company Addons";
+description = "101st Mod Collection";
+tooltip = "101st Mod Pack";
+tooltipOwned = "101st Mod Pack Owned";
+overviewPicture = "logo_ca.paa";
+overviewText = "101st Mod Pack";
+action = "https://units.arma3.com/unit/101stdoomcompany";
+actionName = "Website";
