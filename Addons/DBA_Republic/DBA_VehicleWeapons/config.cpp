@@ -15231,7 +15231,7 @@ class CfgAmmo
 		reloadTime = 0;
 		drySound[] = 
 		{
-			"DBA_Core\Addons\DBA_Republic\DBA_Sound\Warthog_Music.ogg", 5, 1, 200
+			"DBA_Republic\Addons\DBA_Sound\Warthog_Music.ogg", 5, 1, 200
 		};
 		canLock = 0;
 		optics = 0;
