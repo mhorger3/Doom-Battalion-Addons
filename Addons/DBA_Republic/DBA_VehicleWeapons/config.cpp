@@ -1579,7 +1579,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1,
 					1,
 					2100
@@ -1716,7 +1716,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1.25,
 					0.65,
 					2500
@@ -1853,7 +1853,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.85,
 					2100
@@ -2190,7 +2190,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1.5,
 					0.7,
 					2100
@@ -2863,7 +2863,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					1.35,
 					2100
@@ -2974,7 +2974,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.8,
 					1,
 					2100
@@ -4080,7 +4080,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					1,
 					3000
@@ -4189,7 +4189,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.875,
 					3000
@@ -5928,7 +5928,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					10.25,
 					1.75,
 					5500
@@ -6305,7 +6305,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					1.0,
 					1.65,
 					2100
@@ -6626,7 +6626,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\sounds\bigboigun.ogg",
+					"DBA_Core\Addons\sounds\bigboigun.ogg",
 					10.25,
 					1.75,
 					5500
@@ -6748,7 +6748,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.95,
 					2100
@@ -6870,7 +6870,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					1.00,
 					2100
@@ -7001,7 +7001,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.57,
 					3000
@@ -7068,7 +7068,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.85,
 					3000
@@ -7441,7 +7441,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.15,
 					2100
@@ -7559,7 +7559,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_General\DBA_Sounds\cannon.ogg",
 					0.75,
 					1,
 					2100
@@ -15231,7 +15231,7 @@ class CfgAmmo
 		reloadTime = 0;
 		drySound[] = 
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Sound\Warthog_Music.ogg", 5, 1, 200
+			"DBA_Core\Addons\DBA_Republic\DBA_Sound\Warthog_Music.ogg", 5, 1, 200
 		};
 		canLock = 0;
 		optics = 0;
