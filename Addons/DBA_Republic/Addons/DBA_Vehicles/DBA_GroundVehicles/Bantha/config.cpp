@@ -2338,10 +2338,10 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\bantha-ext_arma_material_101st_co.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Tire_Arma_Material_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Turret_Arma_Material_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Int_Arma_Material_CO.paa"
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\bantha\bantha-ext_arma_material_101st_co.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Tire_Arma_Material_CO.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Turret_Arma_Material_CO.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\bantha\Bantha-Int_Arma_Material_CO.paa"
 		};
 
 		class TransportMagazines

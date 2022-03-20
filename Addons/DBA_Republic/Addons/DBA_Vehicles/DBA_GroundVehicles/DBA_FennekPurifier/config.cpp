@@ -1021,8 +1021,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Green_Flame_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Green_Flame_CO.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
 		};
 		class TextureSources
 		{
@@ -1032,8 +1032,8 @@ class CfgVehicles
 				author = "Vulgar";
 				textures[] =
 				{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Red_Flame_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Red_Flame_CO.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
 				};
 				factions[] =
 				{
@@ -1046,8 +1046,8 @@ class CfgVehicles
 				author = "Vulgar";
 				textures[] =
 				{
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Green_Flame_CO.paa",
-			"101st_Aux_Mod\Addons\DBA_Republic\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Green_Flame_CO.paa",
+			"DBA_Republic\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_FennekPurifier\Fennek_Flame_Turret_CO.paa"
 				};
 				factions[] =
 				{
