@@ -132,7 +132,7 @@ class CfgWeapons
 
 		author = "Dutch, Frisk";
 		scope = 2;
-		model = "101st_Aux_Mod\Addons\DBA_Republic\Addons\DBA_Weapons\DBA_Zillo\zillo.p3d";
+		model = "DBA_Republic\Addons\DBA_Weapons\DBA_Zillo\zillo.p3d";
 		aimTransitionSpeed = 0.5;
 		bullet1[] = { "A3\sounds_f\weapons\shells\7_62\metal_762_01",0.891251,1,25 };
 		bullet10[] = { "A3\sounds_f\weapons\shells\7_62\grass_762_02",0.707946,1,25 };
