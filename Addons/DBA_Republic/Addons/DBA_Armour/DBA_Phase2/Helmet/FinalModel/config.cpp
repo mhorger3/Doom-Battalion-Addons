@@ -402,4 +402,13 @@ class cfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shatterstorm_Helmet.rvmat",
 		};
 	};
+	class DBA_P2Helmet_Veron : DBA_P2HelmetBase
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Veron"
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Veron_Helmet_CO.paa"
+		};
+	};
 };
