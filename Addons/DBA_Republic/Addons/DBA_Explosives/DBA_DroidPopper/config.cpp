@@ -26,7 +26,7 @@ class cfgFunctions
 	{
 		class functions
 		{
-			file = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\DBA_DroidPopper\functions";
+			file = "DBA_Republic\Addons\DBA_Explosives\DBA_DroidPopper\functions";
 			class DroidPopper {};
 		};
 	};
@@ -50,7 +50,7 @@ class cfgWeapons
 		class ThrowMuzzle;
 		class DBA_DroidPopperMuzzle : ThrowMuzzle
 		{
-			model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+			model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 			magazines[] =
 			{
 				"DBA_DroidPopper_x1_mag"
@@ -75,7 +75,7 @@ class cfgammo
 		indirectHitRange = 8;
 		soundFly[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\thermalDetFly.ogg",
 			1.5,
 			1,
 			90
@@ -130,18 +130,18 @@ class cfgammo
 			};
 		};
 		typicalspeed = 18;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 		hiddenselections[] =
 		{
 			"camo1"
 		};
 		hiddenselectionstextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\ThermalDetonator_CO.paa"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\ThermalDetonator_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\data\ThermalDet\thermal.rvmat"
+			"DBA_Republic\Addons\DBA_Explosives\data\ThermalDet\thermal.rvmat"
 		};
 		fuseDistance = 0;
 	};
@@ -166,7 +166,7 @@ class CfgMagazines
 		mass = 10;
 		descriptionShort = "DBA Droid Popper";
 		type = 256;
-		model = "DBA_Republic\Addons\DBA_Explosives\DBA_Explosives\thermal.p3d";
+		model = "DBA_Republic\Addons\DBA_Explosives\thermal.p3d";
 		initSpeed = 18;
 		nameSound = "handgrenade";
 		maxLeadSpeed = 7;
