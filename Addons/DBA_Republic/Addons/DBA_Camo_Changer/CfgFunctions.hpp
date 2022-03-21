@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file = "DBA_Republic\Addons\DBA_General\DBA_Camo_Changer\functions";
+			file = "DBA_Republic\Addons\DBA_Camo_Changer\functions";
 
             class addInteractions {};
             class activateBlend {};
