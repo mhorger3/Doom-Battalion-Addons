@@ -29,7 +29,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "DBA_Republic\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"
+                "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\ARF_Arid_Backpack_CO.paa"
             };
             helmetClass = "DBA_ARF_Arid";
         };
@@ -44,7 +44,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "DBA_Republic\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"
+                "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\ARF_Night_Backpack_CO.paa"
             };
             helmetClass = "DBA_ARF_Night";
         };
@@ -59,7 +59,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "DBA_Republic\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"
+                "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\ARF_Tropic_Backpack_CO.paa"
             };
             helmetClass = "DBA_ARF_Tropic";
         };
@@ -74,7 +74,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "DBA_Republic\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"
+                "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\ARF_Urban_Backpack_CO.paa"
             };
             helmetClass = "DBA_ARF_Urban";
         };
@@ -89,7 +89,7 @@ class DBA_Camo
             };
             backpackTextures[] =
             {
-                "DBA_Republic\Addons\DBA_Republic\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"
+                "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\ARF_Winter_Backpack_CO.paa"
             };
             helmetClass = "DBA_ARF_Winter";
         };
