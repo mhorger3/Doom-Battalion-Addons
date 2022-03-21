@@ -124,7 +124,7 @@ class CfgWeapons {
 			"camo1",
 			"camo2"
 		};
-		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Sgt_Pauldron_CO.paa"};
+		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Sgt_Pauldron_CO.paa"};
 		class ItemInfo: VestItem
 		{
 			containerClass="Supply100";
@@ -203,7 +203,7 @@ class CfgWeapons {
 		scopeArsenal=2;
 		displayName="101st S. Sgt Pauldron (JLTS)";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
-		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_SSGT_Pauldron_CO.paa"};
+		hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa","DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_SSGT_Pauldron_CO.paa"};
 		ballisticsComputer = 0;
 		hiddenSelections[]=
 		{
@@ -230,7 +230,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Pauldron_CP_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Medical_Pauldron_CP_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -252,7 +252,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Pauldron_CP_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_RTO_Pauldron_CP_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -274,8 +274,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Kama_CP_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Medical_Pauldron_CP_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Medical_Kama_CP_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Medical_Pauldron_CP_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -302,8 +302,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Kama_CP_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_RTO_Pauldron_CP_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_RTO_Kama_CP_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_RTO_Pauldron_CP_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -330,7 +330,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Cpl_Pauldron_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Cpl_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -352,7 +352,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_SrCPL_Pauldron_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_SrCPL_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -374,8 +374,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Kama_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Kama_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Rigging_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -402,8 +402,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Medic_Kama_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_Medical_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Medic_Kama_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Rigging_Medical_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -430,8 +430,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Base_Kama_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_Base_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Base_Kama_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Rigging_Base_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -458,8 +458,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_RTO_Kama_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_RTO_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_RTO_Kama_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Rigging_RTO_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -728,7 +728,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\Medical_CSM_Pauldron_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Medical_CSM_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -750,7 +750,7 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\RTO_CSM_Pauldron_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_RTO_CSM_Pauldron_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -816,8 +816,8 @@ class CfgWeapons {
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Kama_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\101st_Airborne_Rigging_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Kama_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Vests\DBA_Airborne_Rigging_CO.paa"
 		};
 		hiddenSelections[]=
 		{
