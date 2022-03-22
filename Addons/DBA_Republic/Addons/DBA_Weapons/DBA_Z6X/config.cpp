@@ -103,7 +103,7 @@ class DBA_Z6X_P : Launcher_Base_F
 		opticsZoomMin = 0.1083;
 		opticsZoomMax = 0.1083;
 		opticsZoomInit = 0.1083;
-		cameraDir = "look";
+		cameraDir = "eye";
 		class GunParticles
 		{
 			class effect1
@@ -128,7 +128,7 @@ class DBA_Z6X_P : Launcher_Base_F
 				distanceZoomMin = 300;
 				distanceZoomMax = 300;
 				memoryPointCamera = "eye";
-				cameraDir = "look";
+				cameraDir = "eye";
 				visionMode[] = 
 				{ 
 					"Normal",
@@ -221,7 +221,7 @@ class CfgMagazines{
 		count=500;
 		descriptionShort="PL15 Snub-Nose Ammo Drum";
 		displayNameShort="25mw Snub-Nose";
-		mass=200;
+		mass=80;
 		initSpeed=1000;
 		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 		model="\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
