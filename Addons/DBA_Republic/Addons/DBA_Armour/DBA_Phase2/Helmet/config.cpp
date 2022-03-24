@@ -173,6 +173,7 @@ class CfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\Engineer\textures\ForgeCaptain_Helm_co.paa"
 		};
 	};
+	/*
 	class 101st_Phase1_helm: H_HelmetSpecB
 	{
 		scope=2;
@@ -292,7 +293,7 @@ class CfgWeapons
 			"Integrated_NVG_F"
 		};
 	};
-
+*/
 
 	class 101st_P2_Arid: JLTS_CloneHelmetP2
 	{
