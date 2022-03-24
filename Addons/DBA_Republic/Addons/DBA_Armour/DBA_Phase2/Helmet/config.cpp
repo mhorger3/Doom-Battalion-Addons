@@ -1338,7 +1338,7 @@ class CfgWeapons
 
 	class 101st_Recruit_Helmet: JLTS_CloneHelmetP2
 	{
-		author="Dutch";
+		author="Morn";
 		scope=2;
 		scopeArsenal=2;
 		dlc = "101st_Aux_Mod";
@@ -1346,8 +1346,10 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Recruit_Helm_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Recruit_Helmet_CO.paa"
 		};
+		};
+		hiddenSelectionsMaterials[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\data\Recruit_Helmet.rvmat"};
 	};
 	class 101st_RecruitPerson_Helmet: JLTS_CloneHelmetP2
 	{
