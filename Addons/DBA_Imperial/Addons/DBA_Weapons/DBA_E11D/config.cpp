@@ -75,17 +75,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11D_Bipod_CO.paa",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11D_Mag_CO.paa",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11D_Body_CO.paa",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11D_Grip_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11D_Bipod_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11D_Mag_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11D_Body_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11D_Grip_CO.paa",
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Bipod.rvmat",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Mag.rvmat",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Body.rvmat",
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Grip.rvmat",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Bipod.rvmat",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Mag.rvmat",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Body.rvmat",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\DBA_E11D_Grip.rvmat",
 		};
 		cursor = "srifle";
 		class Library
@@ -160,7 +160,7 @@ class cfgWeapons
 			class StandardSound
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11DShot.ogg",1,1,1800 };
+				begin1[] = { "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11DShot.ogg",1,1,1800 };
 				closure1[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure1",1 };
@@ -220,7 +220,7 @@ class cfgWeapons
 		author = "Vulgar";
 		_generalMacro = "srifle_DMR_02_F";
 		scope = 2;
-		model = "DBA_Imperial\Addons\DBA_Weapons\DBA_E11D\Data\E11D.p3d";
+		model = "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11D\Data\E11D.p3d";
 		dexterity = 1.6799999;
 		displayName = "DBA E11D";
 		picture = "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA.paa";

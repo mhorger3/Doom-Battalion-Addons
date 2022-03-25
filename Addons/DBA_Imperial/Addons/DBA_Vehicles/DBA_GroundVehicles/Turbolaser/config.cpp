@@ -91,8 +91,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Imperial\Addons\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_CO.paa",
-			"DBA_Imperial\Addons\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Gun_CO.paa"
+			"DBA_Imperial\Addons\\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Tower_Body_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\Data\Turbo_Laser_Gun_CO.paa"
 		};
 		extCameraPosition[] = { 0,1.5,-10 };
 		canFloat = 0;

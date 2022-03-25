@@ -94,11 +94,11 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\E11_CO.paa",
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\E11_CO.paa",
 		};
 		hiddenSelectionsMaterials[] = 
 		{
-			"DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\DBA_E11.rvmat"
+			"DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\DBA_E11.rvmat"
 		};
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -151,7 +151,7 @@ class cfgWeapons
 			class StandardSound
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\E11Shot.wav",1,1,1800};
+				begin1[] = { "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\E11Shot.wav",1,1,1800};
 				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure2",1 };
@@ -178,7 +178,7 @@ class cfgWeapons
 			class StandardSound
 			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] = { "DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\E11Shot.wav",1,1,1800};
+				begin1[] = { "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\E11Shot.wav",1,1,1800};
 				closure2[] = { "A3\sounds_f\weapons\closure\zafir_closure_2",0.5,1,10 };
 				soundBegin[] = { "begin1",1 };
 				soundClosure[] = { "closure2",1 };
@@ -250,7 +250,7 @@ class cfgWeapons
 		{
 			libTextDesc = "if you are reading this, please tell me where to find it :wave:";
 		};
-		model = "DBA_Imperial\Addons\DBA_Weapons\DBA_E11\data\DBA_E11.p3d";
+		model = "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\data\DBA_E11.p3d";
 		picture = "\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		class WeaponSlotsInfo : WeaponSlotsInfo
@@ -269,7 +269,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "E11 4x Scope";
 
-		model = "DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\scope\DBA_ScopeE11.p3d";
+		model = "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\scope\DBA_ScopeE11.p3d";
 
 		descriptionShort = "Standard Battle Sight";
 
@@ -342,7 +342,7 @@ class cfgWeapons
 		displayName = "[DBA] E11 Laser Pointer";
 		descriptionUse = "[DBA] E11 Laser Pointer";
 		picture = "\A3\weapons_F\Data\UI\gear_accv_pointer_CA.paa";
-		model = "DBA_Imperial\Addons\DBA_Weapons\DBA_E11\Data\pointer\DBA_E11LaserPointer.p3d";
+		model = "DBA_Imperial\Addons\\DBA_Weapons\DBA_E11\Data\pointer\DBA_E11LaserPointer.p3d";
 		descriptionShort = "$STR_A3_cfgWeapons_acc_pointer_IR1";
 		class ItemInfo : InventoryFlashLightItem_Base_F
 		{
