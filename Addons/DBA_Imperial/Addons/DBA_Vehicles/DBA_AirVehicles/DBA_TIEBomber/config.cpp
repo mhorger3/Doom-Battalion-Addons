@@ -58,7 +58,7 @@ class CfgVehicles
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "$STR_A3_CfgVehicles_VTOL_02_base_F0";
-		model = "DBA_Imperial\Addons\\DBA_Vehicles\DBA_Airvehicles\DBA_TIEBomber\DBA_TIEBomber.p3d";
+		model = "DBA_Imperial\Addons\DBA_Vehicles\DBA_Airvehicles\DBA_TIEBomber\DBA_TIEBomber.p3d";
 		icon = "\A3\Air_F_Exp\VTOL_02\Data\UI\Map_VTOL_02_vehicle_CA.paa";
 		picture = "\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_vehicle_CA.paa";
 		overviewPicture = "\A3\Data_F_Exp\Images\VehicleXian_ca.paa";
