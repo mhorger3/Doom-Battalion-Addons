@@ -1349,7 +1349,6 @@ class CfgWeapons
 		{
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Recruit_Helmet_CO.paa"
 		};
-		};
 		hiddenSelectionsMaterials[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\data\Recruit_Helmet.rvmat"};
 	};
 	class 101st_RecruitPerson_Helmet: JLTS_CloneHelmetP2
