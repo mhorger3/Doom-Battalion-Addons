@@ -3426,6 +3426,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="Leopard Cavalry Tank";
 		crew="101st_CloneTrooper_212th";
+		editorSubcategory = "EdSubcat_Tanks";
 		armor=950;
 		armorStructural=10;
 		hiddenSelections[]=
@@ -3706,6 +3707,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		displayName="Merkava Infantry Tank";
+		editorSubcategory = "EdSubcat_Tanks";
 		crew="101st_CloneTrooper_212th";
 		armor=1300;
 		armorStructural=12;
@@ -3900,6 +3902,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		displayName="T-14 Heavy Tank";
+		editorSubcategory = "EdSubcat_Tanks";
 		crew="101st_CloneTrooper_212th";
 		armor=1500;
 		armorStructural=16;
