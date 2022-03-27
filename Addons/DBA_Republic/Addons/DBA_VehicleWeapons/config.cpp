@@ -1579,7 +1579,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					1,
 					1,
 					2100
@@ -1716,7 +1716,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					1.25,
 					0.65,
 					2500
@@ -1853,7 +1853,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.85,
 					2100
@@ -2863,7 +2863,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.5,
 					1.35,
 					2100
@@ -2974,7 +2974,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.8,
 					1,
 					2100
@@ -6305,7 +6305,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					1.0,
 					1.65,
 					2100
@@ -6748,7 +6748,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.95,
 					2100
@@ -6870,7 +6870,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.5,
 					1.00,
 					2100
@@ -7559,7 +7559,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"\101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"\DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.75,
 					1,
 					2100

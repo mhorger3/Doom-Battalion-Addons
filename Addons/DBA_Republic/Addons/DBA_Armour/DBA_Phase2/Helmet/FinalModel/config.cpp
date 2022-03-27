@@ -402,6 +402,33 @@ class cfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Shatterstorm_Helmet.rvmat",
 		};
 	};
+	class DBA_P2Helmet_Panther : DBA_P2HelmetBase
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Panther"
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Panther_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Death : DBA_P2HelmetBase
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Death"
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Death_Helmet_CO.paa"
+		};
+	};
+	class DBA_P2Helmet_Sandman : DBA_P2HelmetBase
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Sandman"
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Sandman_Helmet_CO.paa"
+		};
+	};
 	class DBA_P2Helmet_Veron : DBA_P2HelmetBase
 	{
 		author = "Secutor";

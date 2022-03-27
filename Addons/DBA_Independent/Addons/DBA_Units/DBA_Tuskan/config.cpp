@@ -37,16 +37,16 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+			"DBA_Independent\Addons\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
+			"DBA_Independent\Addons\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
+			"DBA_Independent\Addons\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
+			"DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
 		};
 		genericNames = "JLTS_Clones";
-		model = "DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Tuskan";
+		model = "DBA_Independent\Addons\DBA_Armour\DBA_Tuskan\Armour\data\Base\DBA_Tuskan";
 		identityTypes[] =
 		{
 			"NoGlasses",

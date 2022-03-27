@@ -512,7 +512,7 @@ class CfgVehicles
 			};
 
 		};
-		memoryPointDriverOptics = "PilotCamera_pos";
+		memoryPointDriverOptics = "pos_pilotcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
 		class pilotCamera
@@ -559,11 +559,11 @@ class CfgVehicles
 				};
 			};
 			driverForceOptics = true;
-			minTurn = -0;
-			maxTurn = 0;
+			minTurn = -180;
+			maxTurn = 180;
 			initTurn = 0;
-			minElev = -0;
-			maxElev = 0;
+			minElev = -180;
+			maxElev = 180;
 			initElev = 0;
 			maxXRotSpeed = 1;
 			maxYRotSpeed = 1;

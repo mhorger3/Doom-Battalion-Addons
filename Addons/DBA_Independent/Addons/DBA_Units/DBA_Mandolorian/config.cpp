@@ -37,16 +37,16 @@ class CfgVehicles {
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest.RVMAT",
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs.RVMAT"
 		};
 		genericNames = "JLTS_Clones";
-		model = "DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Mandolorian";
+		model = "DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Mandolorian";
 		identityTypes[] =
 		{
 			"NoGlasses",
@@ -270,8 +270,8 @@ class CfgVehicles {
 		editorPreview = "\MRC\JLTS\characters\CloneLegions\data\ui\editorPreviews\JLTS_Clone_P2_DC15A_DC.jpg";
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
-			"DBA_Independent\Addons\DBA_Independent\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Chest_CO.paa",
+			"DBA_Independent\Addons\DBA_Armour\DBA_Mandolorian\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
 		};
 		uniformClass = "DBA_MandolorianTrooperUniform";
 	};
