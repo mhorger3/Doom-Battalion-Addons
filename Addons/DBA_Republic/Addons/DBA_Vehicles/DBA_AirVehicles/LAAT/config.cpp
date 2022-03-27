@@ -13142,7 +13142,7 @@ class cfgVehicles
         };
 		class EventHandlers: DefaultEventHandlers
 		{
-			init="[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\laat_lift_3.sqf';";
+			init="[_this select 0] execVM '\DBA_Core\Addons\DBA_Impulse\autocrate.sqf';[_this select 0] execVM '\DBA_Core\Addons\DBA_Impulse\laat_lift_3.sqf';";
 		};
 		class UserActions
 		{
@@ -13178,7 +13178,7 @@ class cfgVehicles
 				priority=21;
 				onlyForPlayer=1;
 				condition="(!(this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this) AND (speed this >10) )";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
+				statement="this execVM ""\DBA_Core\Addons\DBA_Impulse\fn_impulseS.sqf""";
 			};
 			class ThrusterDisngage: ThrusterEngage
 			{
@@ -13187,7 +13187,7 @@ class cfgVehicles
 				displayNameDefault="<t color='#FF9933'>[RepulsorBrake On]</t>";
 				textToolTip="<t color='#FF9933'>[RepulsorBrake On]</t>";
 				condition="((this getvariable [""impulsorStatus"",false]) AND (player == driver this) AND (alive this))";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
+				statement="this execVM ""\DBA_Core\Addons\DBA_Impulse\initTD.sqf""";
 			};
 			class ThrusterEngage_spam: ThrusterEngage
 			{
@@ -13199,7 +13199,7 @@ class cfgVehicles
 				priority=0;
 				onlyForPlayer=1;
 				condition="((player == driver this) AND (alive this) AND (speed this >10) )";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\fn_impulseS.sqf""";
+				statement="this execVM ""\DBA_Core\Addons\DBA_Impulse\fn_impulseS.sqf""";
 				shortcut="User19";
 			};
 			class ThrusterDisngage_spam: ThrusterEngage
@@ -13209,7 +13209,7 @@ class cfgVehicles
 				displayNameDefault="";
 				textToolTip="";
 				condition="((player == driver this) AND (alive this))";
-				statement="this execVM ""\101st_Aux_Mod\Addons\DBA_General\DBA_Impulse\initTD.sqf""";
+				statement="this execVM ""\DBA_Core\Addons\DBA_Impulse\initTD.sqf""";
 				shortcut="User20";
 			};
 		};
