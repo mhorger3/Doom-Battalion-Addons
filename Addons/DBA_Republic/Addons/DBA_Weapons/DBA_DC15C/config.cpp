@@ -87,7 +87,7 @@ class CfgWeapons
 		fireLightIntensity = 0.2;
 		fireLightDiffuse[] = {0,0,1};
 		fireLightDuration = 0.05;
-		modes[] = {"Single","FullAuto","close","short","medium"};
+		modes[] = {"Single","FullAuto"};
 		handAnim[] = {"OFP2_ManSkeleton","DBA_Republic\Addons\DBA_Weapons\DBA_DC15C\anims\DC15sHandAnim.rtm"};
 		class Stun: 101st_stun_muzzle
 		{

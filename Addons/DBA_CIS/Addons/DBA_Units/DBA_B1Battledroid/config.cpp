@@ -1719,3 +1719,111 @@ class CfgVehicles {
 		};
 	};
 };
+class CfgMovesBasic
+{
+	class Default;
+	class StandBase;
+	class BlendAnims;
+	class Actions
+	{
+		class Acts_CarFixingWheel_actions;
+		class DBA_B1Folding : Acts_CarFixingWheel_actions
+		{
+			Default = "B1FoldingTransport";
+		};
+	};
+};
+class CfgMovesMaleSdr : CfgMovesBasic
+{
+	class Default : Default
+	{
+		actions = "DBA_Droideka_MoveSet";
+		file = "DBA_CIS\addons\DBA_Units\DBA_Deka\Deka_Curl.rtm";
+	};
+	class StandBase : StandBase
+	{
+		actions = "DBA_Droideka_MoveSet";
+		file = "DBA_CIS\addons\DBA_Units\DBA_Deka\Deka_Curl.rtm";
+	};
+	class DefaultDie : Default
+	{
+		aiming = "aimingNo";
+		legs = "legsNo";
+		head = "headNo";
+		disableWeapons = 1;
+		interpolationRestart = 1;
+		soundOverride = "fallbody";
+		soundEdge[] = { 0.44999999 };
+		soundEnabled = 0;
+	};
+	class States
+	{
+		class B1FoldingTransport : StandBase
+		{
+			boundingSphere = 2;
+			interpolationSpeed = 3;
+			file = "DBA_CIS\addons\DBA_Units\DBA_B1Battledroid\B1FoldingTransport.rtm";
+			duty = -1;
+			actions = "DBA_B1Folding";
+			variantsAI[] = { };
+			speed = 1;
+			relSpeedMin = 1;
+			relSpeedMax = 1;
+			canPullTrigger = 0;
+			canReload = 0;
+			limitGunMovement = 1;
+			headBobStrength = -1;
+			headBobMode = 1;
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			enableMissile = 0;
+			enableOptics = 1;
+			ConnectTo[] =
+			{
+				"B1FoldedTransport",
+				0.01,
+			};
+			ConnectFrom[] =
+			{
+			};
+			InterpolateTo[] =
+			{
+				"B1FoldedTransport",
+				0.01,
+			};
+			InterpolateFrom[] =
+			{
+			};
+			preload = 1;
+		};
+		class B1FoldingUnload : B1FoldingTransport
+		{
+			file = "DBA_CIS\addons\DBA_Units\DBA_B1Battledroid\B1FoldingTransport.rtm";
+			variantsAI[] = {};
+			speed = -1;
+			disableWeapons = 1;
+			soundEdge[] = { 0.4,0.9 };
+			soundOverride = "Run";
+			soundEnabled = 1;
+			ConnectTo[] =
+			{
+				"Droideka_Roll",1.0
+			};
+		};
+		class B1FoldedTransport : B1FoldingTransport
+		{
+			file = "DBA_CIS\addons\DBA_Units\DBA_B1Battledroid\B1FoldedTransport.rtm";
+			looped = 1;
+			speed = 0.45;
+			ConnectFrom[] =
+			{
+				"B1FoldingUnload", 1.0
+			};
+			ConnectTo[] =
+			{
+				"B1FoldingTransport", 1.0
+			};
+
+		};
+	};
+};
