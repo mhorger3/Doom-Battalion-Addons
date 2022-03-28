@@ -83,7 +83,7 @@ class CfgVehicles
 		accuracy = 1;
 		editorPreview = "\A3\EditorPreviews_F_Jets\Data\Cfgvehicles\B_AAA_system_01_F.jpg";
 		unitInfoType = "RscUnitInfoTank";
-		model = "DBA_Imperial\Addons\\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\DBA_Turbolaser.p3d";
+		model = "DBA_Imperial\Addons\DBA_Vehicles\DBA_GroundVehicles\Turbolaser\DBA_Turbolaser.p3d";
 		hiddenSelections[] =
 		{
 			"Camo",
