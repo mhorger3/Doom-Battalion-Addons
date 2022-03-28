@@ -378,16 +378,6 @@ class CfgWeapons
 		magazineWell[] = {};
 		displayName = "[DBA] CR-8 Cannok";
 		descriptionShort = "CR-8 Revolver";
-		hiddenSelections[]=
-		{
-			"camo1", "camo2", "camo3"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"DBA_Republic\Addons\DBA_Weapons\DBA_Pistols\data\base_CO.paa",
-			"DBA_Republic\Addons\DBA_Weapons\DBA_Pistols\data\barrel_CO.paa",
-			"DBA_Republic\Addons\DBA_Weapons\DBA_Pistols\data\scope_CO.paa"
-		};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Zubr\reload_Zubr",0.562341,1,10};
 		reloadAction = "GestureReloadPistolHeavy02";
 		soundBullet[]={};
