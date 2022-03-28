@@ -12971,7 +12971,7 @@ class cfgVehicles
 				convexcomponent="engine_hit";
 				hitpoint="engine_hit";
 				name="engine_hit";
-				explosionShielding=2;
+				explosionShielding=0.5;
 				radius=0.1;
 				visual="";
 				passthrough=0.1;
