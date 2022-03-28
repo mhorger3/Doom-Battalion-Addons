@@ -36,7 +36,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "CQC Sight Aurek";
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 		descriptionShort = "Pistol Scope";
 		class ItemInfo: ItemInfo
 		{
@@ -203,7 +203,7 @@ class cfgWeapons
 		displayName="2x-6x Battlesight Aurek";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -274,7 +274,7 @@ class cfgWeapons
 		displayName="2x-6x Battlesight Besh";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_B.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_B.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -287,7 +287,7 @@ class cfgWeapons
 		displayName="2x-4x Battlesight Aurek";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -359,7 +359,7 @@ class cfgWeapons
 		displayName="2x-4x Battlesight Besh";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_B.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_B.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -369,7 +369,7 @@ class cfgWeapons
 	{
 		displayName = "CQC Sight Besh";
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 		descriptionShort = "Pistol Scope";
 	};
 	class DBA_MRCO_A_TI: optic_MRCO
@@ -379,7 +379,7 @@ class cfgWeapons
 		displayName="2x-6x LSW Battlesight Aurek";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -453,7 +453,7 @@ class cfgWeapons
 		displayName="2x-6x LSW Battlesight Besh";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_B.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_B.p3d";
 		
 		descriptionShort="Standard Battle Sight";
 
@@ -467,7 +467,7 @@ class cfgWeapons
 		displayName = "2x-4x LSW Battlesight Aurek";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_A.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_A.p3d";
 
 		descriptionShort = "Standard Battle Sight";
 
@@ -540,7 +540,7 @@ class cfgWeapons
 		displayName = "2x-4x LSW Battlesight Besh";
 
 		picture = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Reticle_A_ca.paa";
-		model = "DBA_Core\Addons\DBA_Holosights\data\101st_Aux_Pistol_Holo_B.p3d";
+		model = "DBA_Core\Addons\DBA_Holosights\data\DBA_Pistol_Holo_B.p3d";
 
 		descriptionShort = "Standard Battle Sight";
 
