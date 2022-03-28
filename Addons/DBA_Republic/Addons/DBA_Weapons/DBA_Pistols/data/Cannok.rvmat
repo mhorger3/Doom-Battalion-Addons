@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_nohq.paa";
+	texture="DBA_Republic\Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_as.paa";
+	texture="DBA_Republic\Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_SMDI.paa";
+	texture="DBA_Republic\Addons\DBA_Weapons\Pistols\data\data\Metal_Grae_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
