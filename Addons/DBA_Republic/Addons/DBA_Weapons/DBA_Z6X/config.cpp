@@ -44,7 +44,7 @@ class GunParticles;
 class CfgRecoils{
 	class Default;
 	class DBA_Recoil_Z6X : Default {
-		muzzleOuter[]= {0.1150000, 0.22500000, 0.065, 0.095};
+		muzzleOuter[]= {0.1150000, 0.22500000, 0.045, 0.055};
 		kickBack[]= {0.00325000, 0.0550000};
 		permanent = 0.05000;
 		temporary = 0.05000;
@@ -67,7 +67,7 @@ class DBA_Z6X_P : Launcher_Base_F
 		UiPicture = "DBA_Republic\Addons\DBA_Effects\icons\Z6-X_CA.paa";
 		model = "DBA_Republic\Addons\DBA_Weapons\DBA_Z6\DBA_Z6X.p3d";
 		recoil = "DBA_Recoil_Z6X";
-		recoilProne = "DBA_Recoil_Z6X_P";
+		recoilProne = "DBA_Recoil_Z6X";
 		dispersion = 0.00872664;
 		simulation = "Weapon";
 		ace_overpressure_angle = 2;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
