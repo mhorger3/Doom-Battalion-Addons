@@ -7303,8 +7303,8 @@ class CfgWeapons
 	};
 	class DBA_MG33A_AAM : MissileLauncher{
 		displayName="MG-33A AAM System";
-		reloadTime=5.25;
-		magazineReloadTime=2;
+		reloadTime=2.5;
+		magazineReloadTime=3.25;
 		cursor = "EmptyCursor";
 		cursoraim = "EmptyCursor";
 		reloadMagazineSound[]=
@@ -7365,7 +7365,7 @@ class CfgWeapons
 		midRangeProbab=0.95000002;
 		maxRange=5500;
 		maxRangeProbab=0.975000002;
-		aiRateOfFire=1;
+		aiRateOfFire=6.5;
 		aiRateOfFireDistance=5500;
 		aiRateOfFireDispersion=1;
 		canLock=2;

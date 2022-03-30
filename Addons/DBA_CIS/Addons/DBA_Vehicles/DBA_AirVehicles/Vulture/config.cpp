@@ -345,7 +345,7 @@ class CfgVehicles
 						{
 							"DBA_CIS_Fighter_Rail",
 						};
-						attachment="DBA_MG33A_x4_Pylon";
+						attachment="";
 						priority=5;
 						maxweight=5000;
 						UIposition[]={0.34999999,0.15000001};
@@ -373,7 +373,7 @@ class CfgVehicles
 						{
 							"DBA_CIS_Fighter_Rail",
 						};
-						attachment="DBA_MG33A_x4_Pylon";
+						attachment="";
 					};
 					class Pylons6: Pylons5
 					{
@@ -383,7 +383,7 @@ class CfgVehicles
 					class Pylons7: Pylons1
 					{
 						priority=10;
-						attachment="DBA_80mm_UP8R_x48_Pylon";
+						attachment="";
 						maxweight=1200;
 						UIposition[]={0.1,0.27000001};
 						hardpoints[]=
@@ -918,13 +918,23 @@ class CfgVehicles
 		weapons[]=
 		{
 			"DBA_30mw_G108K",
+			"DBA_MG33A_AAM",
+			"DBA_80mw_UP8R_Rockets",
 			"DBA_CIS_Chafflauncher"
 		};
 		editorPreview="DBA_CIS\Addons\EditorPreviews_F\Data\O_DBA_CIS_Vulture_Droid_3as_F.jpg";
 		magazines[]=
 		{
 			"DBA_30mm_STN_x800_mag",
-			"DBA_Chaff_x100_mag",
+			"DBA_80mm_UP8R_x48_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
+			"DBA_MG33A_x4_Pylon",
 			"DBA_Chaff_x100_mag"
 		};
 	};
