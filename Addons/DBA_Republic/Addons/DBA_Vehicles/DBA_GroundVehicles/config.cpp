@@ -3368,6 +3368,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="AV-7 Test Bed";
 		crew="101st_CloneTrooper_212th";
+		editorSubcategory = "EdSubcat_Artillery";
 		faction="B_DBA_Republic_F";
 		class Turrets: Turrets
 		{
