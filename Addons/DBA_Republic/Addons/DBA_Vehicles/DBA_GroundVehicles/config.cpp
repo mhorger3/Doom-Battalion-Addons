@@ -3367,7 +3367,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		displayName="AV-7 Test Bed";
-		crew="101st_CloneTrooper_212th";
+		crew="";
 		editorSubcategory = "EdSubcat_Artillery";
 		faction="B_DBA_Republic_F";
 		class Turrets: Turrets
@@ -3426,7 +3426,7 @@ class CfgVehicles
 		scopeCurator=2;
 		forceInGarage=1;
 		displayName="Leopard Cavalry Tank";
-		crew="101st_CloneTrooper_212th";
+		crew="";
 		editorSubcategory = "EdSubcat_Tanks";
 		armor=950;
 		armorStructural=10;
@@ -3709,7 +3709,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="Merkava Infantry Tank";
 		editorSubcategory = "EdSubcat_Tanks";
-		crew="101st_CloneTrooper_212th";
+		crew="";
 		armor=1300;
 		armorStructural=12;
 		transportSoldier=13;
@@ -3904,7 +3904,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="T-14 Heavy Tank";
 		editorSubcategory = "EdSubcat_Tanks";
-		crew="101st_CloneTrooper_212th";
+		crew="";
 		armor=1500;
 		armorStructural=16;
 		hiddenSelections[]=
