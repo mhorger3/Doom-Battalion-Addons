@@ -366,6 +366,13 @@ class cfgWeapons
 			"DBA_130mm_UR11_HE_x20_mag"
 		};
 		magazineReloadTime = 6.7;
+		modes[] =
+		{
+			"player",
+			"short",
+			"medium",
+			"far"
+		};
 		class player : Mode_SemiAuto
 		{
 			sounds[] =
@@ -401,6 +408,69 @@ class cfgWeapons
 			maxRange = 1750;
 			maxRangeProbab = 0.5;
 		};
+		class close : player
+		{
+			soundBurst = 0;
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 100;
+			minRange = 0;
+			minRangeProbab = 0.69999999;
+			midRange = 100;
+			midRangeProbab = 0.75;
+			maxRange = 300;
+			maxRangeProbab = 0.2;
+		};
+		class short : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 100;
+			minRangeProbab = 0.75;
+			midRange = 300;
+			midRangeProbab = 0.75;
+			maxRange = 600;
+			maxRangeProbab = 0.2;
+		};
+		class medium : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 3;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 600;
+			minRange = 300;
+			minRangeProbab = 0.75;
+			midRange = 600;
+			midRangeProbab = 0.64999998;
+			maxRange = 800;
+			maxRangeProbab = 0.1;
+		};
+		class far : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 1000;
+			minRange = 800;
+			minRangeProbab = 0.64999998;
+			midRange = 1000;
+			midRangeProbab = 0.30000001;
+			maxRange = 1750;
+			maxRangeProbab = 0.050000001;
+		};
 	};
 	class DBA_115mw_B5TC_Cannon : cannon_120mm {
 		displayName = "[DBA] 115mw B-5TC";
@@ -413,6 +483,13 @@ class cfgWeapons
 		};
 		magazineReloadTime = 8;
 		autoReload = 1;
+		modes[] =
+		{
+			"player",
+			"short",
+			"medium",
+			"far"
+		};
 		class player : Mode_SemiAuto
 		{
 			sounds[] =
@@ -447,6 +524,69 @@ class cfgWeapons
 			midRangeProbab = 0.80000001;
 			maxRange = 1750;
 			maxRangeProbab = 0.5;
+		};
+		class close : player
+		{
+			soundBurst = 0;
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 100;
+			minRange = 0;
+			minRangeProbab = 0.69999999;
+			midRange = 100;
+			midRangeProbab = 0.75;
+			maxRange = 300;
+			maxRangeProbab = 0.2;
+		};
+		class short : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 100;
+			minRangeProbab = 0.75;
+			midRange = 300;
+			midRangeProbab = 0.75;
+			maxRange = 600;
+			maxRangeProbab = 0.2;
+		};
+		class medium : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 3;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 600;
+			minRange = 300;
+			minRangeProbab = 0.75;
+			midRange = 600;
+			midRangeProbab = 0.64999998;
+			maxRange = 800;
+			maxRangeProbab = 0.1;
+		};
+		class far : close
+		{
+			aiBurstTerminable = 0;
+			showToPlayer = 0;
+			burst = 1;
+			burstRangeMax = 1;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 1250;
+			minRange = 1000;
+			minRangeProbab = 0.64999998;
+			midRange = 1250;
+			midRangeProbab = 0.30000001;
+			maxRange = 1750;
+			maxRangeProbab = 0.050000001;
 		};
 	};
 	class DBA_90mw_HFAH1_Cannon : CannonCore
@@ -739,7 +879,7 @@ class cfgWeapons
 			soundBurst = 0;
 			soundContinuous = 0;
 			aiRateOfFire = 1.5;
-			aiRateOfFireDistance = 500;
+			aiRateOfFireDistance = 100;
 			aiRateOfFireDispersion = 1;
 			minRange = 0;
 			minRangeProbab = 0.35;
