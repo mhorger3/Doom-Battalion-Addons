@@ -1454,10 +1454,18 @@ class CfgAmmo
 	};
 	class DBA_57mm_hef : B_35mm_AA_Tracer_Red
 	{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 2800;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 470;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2760;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_tiny_HD", "ACE_frag_tiny"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
 		displayName = "57mw UR-81 High Explosive Fragmentation";
 		hit = 50;
 		indirectHit = 25;
-		indirectHitRange = 10;
+		indirectHitRange = 3.25;
 		visibleFire = 42;
 		audibleFire = 42;
 		initSpeed = 1000;
@@ -1490,6 +1498,14 @@ class CfgAmmo
 		ace_frag_force = 1;
 	};
 	class DBA_130mm_UR11_HE : Sh_120mm_APFSDS {
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 33400;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 3640;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2320;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_medium_HD", "ACE_frag_medium"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
 		displayName = "130mw UR-11 High Explosive";
 		hit = 150;
 		indirectHit = 85;
@@ -1621,10 +1637,18 @@ class CfgAmmo
 	};
 	class DBA_115mm_UB11_HEF : Sh_120mm_APFSDS
 	{
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 8875;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 2760;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2440;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_medium_HD", "ACE_frag_medium"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
 		displayName = "115mw UB-11 High Explosive Fragmentation";
 		hit = 100;
 		indirectHit = 50;
-		indirectHitRange = 9.5;
+		indirectHitRange = 5.5;
 		warheadName = "HE-Frag";
 		visibleFire = 42;
 		audibleFire = 42;
@@ -1678,6 +1702,14 @@ class CfgAmmo
 		timeToLive = 10;
 	};
 	class DBA_165mm_C33_BESH : B_35mm_AA_Tracer_Red {
+		ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
+        ace_frag_metal = 30600;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 15870;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 2830;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_large_HD"};  // Type of fragments - information below
+        ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
+        ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
 		displayName = "165mw C-33 BESH";
 		hit = 1000;
 		indirectHit = 800;
