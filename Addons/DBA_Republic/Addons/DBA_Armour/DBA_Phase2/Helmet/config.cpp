@@ -697,7 +697,20 @@ class CfgWeapons
 		{
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Fresh_Helmet_AB_CO.paa"
 		};
-	}
+	};
+	class 101st_Byleth_Helmet: 101st_Dagger_Helmet
+	{
+		author="Gorman";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
+		displayName="101st Clone helmet (Byleth)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Byleth_Helmet_AB_CO.paa"
+		};
+	};
 	class 101st_Nickel_Helm: 101st_Dagger_Helmet
 	{
 		author="Spark";
