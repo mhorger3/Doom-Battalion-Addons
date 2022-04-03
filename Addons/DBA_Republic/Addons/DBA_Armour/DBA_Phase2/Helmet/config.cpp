@@ -3387,7 +3387,7 @@ class CfgWeapons
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetAB_ui_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Synn_Helmet_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Synn_Helmet_AB_CO.paa"
 		};
 		subItems[] = {"JLTS_CloneNVG_spec"};
 	};
