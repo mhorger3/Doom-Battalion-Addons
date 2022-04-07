@@ -89,20 +89,10 @@ class CfgWeapons{
 			class BaseSoundModeType
 			{
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",
-					1.9952624,
-					1,
-					1500
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+            begin1[] = {"swlw_rework\sounds\launcher\PLX_shot.wss",10,1.1,2000};
+            soundBegin[] = {"begin1",1};
 			};
 			aiRateOfFire=7;
 			aiRateOfFireDistance=600;
