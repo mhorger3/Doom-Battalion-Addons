@@ -61,6 +61,9 @@ class CfgWeapons{
 		uiPicture="MRC\JLTS\weapons\E60R\data\ui\E60R_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E60R\E60R.p3d";
 		modelSpecial="";
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 10;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
@@ -170,6 +173,9 @@ class CfgWeapons{
 		uiPicture="MRC\JLTS\weapons\E60R\data\ui\E60R_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E60R\E60R.p3d";
 		modelSpecial="";
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 10;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",

@@ -61,6 +61,9 @@ class CfgWeapons{
 		handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\rps6_hold.rtm"};
 		sounds[] = {"StandardSound"};
 		cameraDir = "look";
+		ace_overpressure_angle = 45;  // Cone in which the damage is applied (in degrees from the muzzle of the cannon)
+        ace_overpressure_range = 10;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.25;  // Damage multiplier
 		class Library
 		{
 			libtextdesc = "";
