@@ -347,7 +347,7 @@
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\101st_MedJumpack_CO.paa"};
 		model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
-				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
@@ -364,10 +364,27 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
+	class 101st_Jumppack_single : JLTS_Clone_jumppack_JT12
+	{
+		dlc = "101st_Aux_Mod";
+		displayname="DBA Single Use Jumppack (JLTS)";
+		maximumLoad=500;
+		JLTS_isJumppack=0;
+		RD501_jumppack_is_jumppack=1;
+		RD501_jumppack_spam_delay=1;
+		RD501_jumppack_energy_capacity=1;
+		RD501_jumppack_recharge=0;
+		RD501_jumppack_jump_effect_script="RD501_jumppack_fnc_effect_jt_21";
+		RD501_jumppack_jump_types[] = 
+            {
+                {"Half Power",{0,15,1,0,1,1}}
+                //{forward vel, vert vel, cost, angle, directional, can prone}
+            };
+	};
 	class 101_yeet_machine: RD501_JLTS_Clone_jumppack_mc
 	{
 		scope = 2;
-		displayname = "101st Experimental Jetpack";
+		displayname = "DBA Experimental Jetpack";
 		dlc = "101st_Aux_Mod";
 		RD501_jumppack_is_jumppack = 1;
 		RD501_jumppack_spam_delay = 1;
