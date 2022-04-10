@@ -48,7 +48,7 @@ class CfgMagazines
 		ammo = "DBA_65_base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 15;
+		mass = 10;
 		count = 30;
 		initspeed = 909;
 	};
@@ -81,7 +81,7 @@ class CfgMagazines
 		ammo = "DBA_65_base";
 		picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		mass = 10;
+		mass = 15;
 		count = 120;
 		initspeed = 909;
 	};
