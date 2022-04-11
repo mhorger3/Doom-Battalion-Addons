@@ -82,12 +82,13 @@ class CfgWeapons
 		model="DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\Pilot\pilotHelm.p3d";
 		picture = "3AS\3AS_Characters\Clones\Headgear\ui\p2pilot_ui_ca.paa";
 		hiddenSelections[]=
-		{
-			"camo1"
-		};
+        {
+            "Camo", "Camo4"
+        };
 		hiddenSelectionsTextures[]=
 		{
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\Pilot\textures\Pilot_co.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\Pilot\textures\Pilot_co.paa"
 		};
 		subItems[]=
 		{

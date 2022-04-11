@@ -881,25 +881,6 @@ class CfgWeapons {
 			vestType = "Rebreather";
 		};
 	};
-	class 101st_212_Rebreather: V_RebreatherB
-	{
-		author="Dutch";
-		dlc = "101st_Aux_Mod";
-		scope=2;
-		scopeArsenal=2;
-		displayName="Removing soon change to DBA one";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
-		model="-";
-		class ItemInfo: VestItem
-		{
-			containerClass="Supply100";
-			uniformType="Default";
-			mass=40;
-			hiddenSelections[] = {"camo1"};
-			uniformModel = "-";
-			vestType = "Rebreather";
-		};
-	};
 	class DBA_Rebreather: V_RebreatherB
 	{
 		author="Seatie";
