@@ -3,11 +3,44 @@ class CfgPatches
 	class DBA_AA
 	{
 		requiredAddons[] = {"A3_Armor_F_Beta"};
-		units[] = {"DBA_SM0L_ADGS", "101st_Tyrant", "101st_Overlord", "DBA_Arbalest_SAM", "DBA_ChiNoKu_SAM", "DBA_CIS_Tempestus"};
+		units[] = {"DBA_SM0L_ADGS", "101st_Tyrant", "101st_Overlord", "DBA_Arbalest_SAM", "DBA_Zara_AAA","DBA_ChiNoKu_SAM", "DBA_CIS_Tempestus"};
 		weapons[] = {};
 	};
 };
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
 class Mode_SemiAuto;
+class Optics_Armored;
+class Optics_Gunner_APC_01: Optics_Armored
+{
+	class Wide;
+	class Medium;
+	class Narrow;
+};
+class WeaponCloudsMGun;
 class CfgVehicles
 {
 	class B_SAM_System_02_F;
@@ -15,13 +48,19 @@ class CfgVehicles
 	class LandVehicle;
 	class StaticWeapon: LandVehicle
 	{
-		class Turrets;
+		class Turrets
+		{
+			class MainTurret;
+		};
 	};
 	class StaticMGWeapon: StaticWeapon
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret;
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+			};
 		};
 		class Components;
 	};
@@ -47,6 +86,263 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
 			};
+		};
+	};
+	class DBA_Zara_AAA : StaticMGWeapon
+	{
+		author="DBA Addons";
+		_generalMacro="HMG_01_base_F";
+		side=0;
+		editorSubcategory = "O_DBA_CIS_AAs";
+        vehicleClass = "O_DBA_CIS_AAs";
+        faction = "O_DBA_CIS_F";
+		scopeCurator=2;
+		scope=2;
+		displayName="Zara Anti-Air Gun";
+		editorPreview="";
+		crew="O_DBA_CIS_B1_Crew_Droid_F";
+		class Armory
+		{
+			description="Intermediate Triple-A Gun";
+		};
+		model="3AS\3AS_Static\FlakCannon\model\FlakCannon.p3d";
+		picture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
+		UiPicture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
+		threat[]={1,0.30000001,0.30000001};
+		cost=150000;
+		getInAction="";
+		getOutAction="";
+		extCameraPosition[]={0,7,-20};
+		armor=675;
+		armorStructured=1;
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"a3\static_f_gamma\data\staticturret_01.rvmat",
+				"a3\static_f_gamma\data\staticturret_01_damage.rvmat",
+				"a3\static_f_gamma\data\staticturret_01_destruct.rvmat"
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				optics=1;
+				discreteDistance[]={100,200,300,400,600,800,1000,1200,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500};
+				discreteDistanceInitIndex=2;
+				turretInfoType="RscOptics_APC_Tracked_01_gunner";
+				memoryPointGunnerOptics="gunnerview";
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_AAA_01_w_F";
+				minElev=-9;
+				maxElev=65;
+				minTurn=-360;
+				initelev=0;
+				maxVerticalRotSpeed=0.42;
+				maxHorizontalRotSpeed = 0.6666666667;
+				animationSourceBody="Mainturret";
+				Body="Mainturret";
+				animationSourceGun="Maingun";
+				Gun="Maingun";
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",
+					1.4125376,
+					1,
+					30
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",
+					1.4125376,
+					1,
+					30
+				};
+				maxTurn=360;
+				weapons[]=
+				{
+					"DBA_37mw_Brindisi_AAA"
+				};
+				magazines[]=
+				{
+					"DBA_37mm_UB38_x200_mag",
+					"DBA_37mm_UB38_x200_mag",
+					"DBA_37mm_UB38_x200_mag",
+					"DBA_37mm_UB38_x200_mag",
+					"DBA_37mm_UB38_x200_mag"
+				};
+				gunnerAction="ParticleCannon_Gunner";
+				gunnergetInAction="";
+				gunnergetOutAction="";
+				memoryPointsGetInGunner="pos_gunner";
+				memoryPointsGetInGunnerDir="pos_gunner_dir";
+				memoryPointGun[]=
+				{
+					"usti hlavne 1",
+					"usti hlavne 2",
+					"usti hlavne 3",
+					"usti hlavne 4"
+				};
+				gunBeg="usti hlavne";
+				gunEnd="konec hlavne";
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Wide: Wide
+					{
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_AAA_01_w_F";
+						gunnerOpticsEffect[]={};
+					};
+					class Medium: Medium
+					{
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_AAA_01_M_F";
+					};
+					class Narrow: Narrow
+					{
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_AAA_01_N_F";
+					};
+				};
+				gunnerRightHandAnimName="OtocHlaven_shake";
+				gunnerLeftHandAnimName="OtocHlaven_shake";
+				selectionFireAnim="zasleh";
+				ejectDeadGunner=0;
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+					{
+						class Components
+						{
+							class EmptyDisplay
+							{
+								componentType="EmptyDisplayComponent";
+							};
+							class MinimapDisplay
+							{
+								componentType="MinimapDisplayComponent";
+								resource="RscCustomInfoMiniMap";
+							};
+							class UAVDisplay
+							{
+								componentType="UAVFeedDisplayComponent";
+							};
+							class SensorDisplay
+							{
+								componentType="SensorsDisplayComponent";
+								range[]={3000,2000};
+								resource="RscCustomInfoSensors";
+							};
+						};
+					};
+					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+					{
+						defaultDisplay="SensorDisplay";
+						class Components
+						{
+							class EmptyDisplay
+							{
+								componentType="EmptyDisplayComponent";
+							};
+							class MinimapDisplay
+							{
+								componentType="MinimapDisplayComponent";
+								resource="RscCustomInfoMiniMap";
+							};
+							class UAVDisplay
+							{
+								componentType="UAVFeedDisplayComponent";
+							};
+							class SensorDisplay
+							{
+								componentType="SensorsDisplayComponent";
+								range[]={3000,2000};
+								resource="RscCustomInfoSensors";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=100;
+							maxRange=3000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=100;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						typeRecognitionDistance=5000;
+						maxTrackableSpeed=1500;
+						angleRangeHorizontal=160;
+						angleRangeVertical=110;
+						animDirection="mainGun";
+						aimDown=-0.5;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=3000;
+							maxRange=3000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=1500;
+							maxRange=1500;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=5000;
+						angleRangeHorizontal=160;
+						angleRangeVertical=110;
+						aimDown=-45;
+						maxTrackableSpeed=1500;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink
+					{
+					};
+				};
+			};
+		};
+		class AnimationSources
+		{
+		};
+		soundGetOut[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.001,
+			1,
+			5
+		};
+		soundGetIn[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			5
+		};
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"3as\3as_static\FlakCannon\Data\CIS_AA_co.paa"
 		};
 	};
 	class 101st_Tyrant : B_SAM_System_02_F

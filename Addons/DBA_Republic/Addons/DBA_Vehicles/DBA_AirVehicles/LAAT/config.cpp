@@ -12641,6 +12641,8 @@ class cfgVehicles
 		faction="B_DBA_Republic_F";
 		scope=2;
 		scopeCurator=2;
+		radarTargetSize = 0.8;
+		irTargetSize = 0.7;
 		memoryPointGun[] = {"L_Muzzle","R_muzzle"};
 		gunBeg[] = {"L_Muzzle","R_Muzzle"};
 		gunEnd[] ={"L_Chamber","R_Chamber"};
@@ -12709,11 +12711,11 @@ class cfgVehicles
 				turretinfotype="RscOptics_Heli_Attack_01_gunner";
 				weapons[]=
 				{
-					"DBA_23mw_GH197_AC",		
+					"DBA_30mw_P320E_AC",		
 				};
 				magazines[]=
 				{
-					"DBA_23mm_PS59_x400_mag"
+					"DBA_30mm_PM789_x640_mag"
 				};
 				class OpticsIn
 				{
@@ -12788,7 +12790,7 @@ class cfgVehicles
 				{
 					class Pylon1
 					{
-						attachment="DBA_107mm_R10P_x12_pod";
+						attachment="DBA_AD5S_x10_pylon";
 						priority=1;
 						hardpoints[]=
 						{
@@ -12796,6 +12798,22 @@ class cfgVehicles
 						};
 						turret[]={};
 						UIposition[] = {0.35,0.275};
+					};
+					class PylonLeft1
+					{
+						attachment="DBA_42mm_R4S_x50_pylon";
+						priority=5;
+						hardpoints[]=
+						{
+							"DBA_LE_Rail"
+						};
+						turret[]={};
+						UIposition[]={0.059999999,0.40000001};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.63999999,0.40000001};
 					};
 				};
 				class Presets
