@@ -8048,59 +8048,6 @@ class CfgWeapons
 			maxRangeProbab = 1;
 		};
 	}; 
-	//Zara Magazines
-	class DBA_37mm_UB38_x200_mag : VehicleMagazine{
-		displayname="UB-38 37mw HE-Frag";
-		ammo="DBA_37mm_UB38_Frag";
-		muzzleimpulsefactor[] = { 1,1 };
-		displaynamemagazine="UB-38 37mw HE-Frag";
-		shortnamemagazine="UB-38 HE-Frag";
-		displayNameMFDFormat="HE-Frag";
-		displayNameShort="HE-Frag";
-		count=200;
-		initspeed=800;
-		tracersevery=1;
-	};
-	//LAAT/LE Mags
-	class DBA_30mm_PM789_x640_mag : VehicleMagazine{
-		displayname="PM789 30mw HEDP";
-		ammo="DBA_30mm_PM789_HEDP";
-		displaynamemagazine="PM789 30mw HEDP";
-		shortnamemagazine="PM789 HEDP";
-		displayNameMFDFormat="HEDP";
-		displayNameShort="HEDP";
-		count=640;
-		initspeed=805;
-		tracersevery=1;
-	};
-	class DBA_AD5S_x10_pylon : VehicleMagazine{
-		ammo="DBA_AD5S_Missile";
-		count=10;
-		displayName="AD-5S AAM";
-		displayNameShort="AD-5S AAM";
-		tracersEvery=1;
-		model="a3\weapons_f\empty.p3d";
-		initspeed=50;
-		hardpoints[]=
-		{
-			"DBA_LE_Rail",
-		};
-		pylonWeapon="DBA_AD5S_AAM_Weapon";
-	};
-	class DBA_42mm_R4S_x50_pylon : VehicleMagazine{
-		ammo="DBA_42mm_R4S_Rocket";
-		count=50;
-		displayName="R-4S Rockets";
-		displayNameShort="R-4S Rockets";
-		tracersEvery=1;
-		initspeed=170;
-		model="a3\weapons_f\empty.p3d";
-		hardpoints[]=
-		{
-			"DBA_LE_Rail",
-		};
-		pylonWeapon="DBA_42mw_R4S_Rockets";
-	};
 	//Fennek Gun Start
 	class DBA_25mw_P25S_Cannon : HMG_127{
 		displayName = "P-25S Autogun";
@@ -10233,6 +10180,59 @@ class CfgMagazines
 		count = 200;
 		ammo = "CMflareAmmo";
 		initSpeed = 55;
+	};
+	//Zara Magazines
+	class DBA_37mm_UB38_x200_mag : VehicleMagazine{
+		displayname="UB-38 37mw HE-Frag";
+		ammo="DBA_37mm_UB38_Frag";
+		muzzleimpulsefactor[] = { 1,1 };
+		displaynamemagazine="UB-38 37mw HE-Frag";
+		shortnamemagazine="UB-38 HE-Frag";
+		displayNameMFDFormat="HE-Frag";
+		displayNameShort="HE-Frag";
+		count=200;
+		initspeed=800;
+		tracersevery=1;
+	};
+	//LAAT/LE Mags
+	class DBA_30mm_PM789_x640_mag : VehicleMagazine{
+		displayname="PM789 30mw HEDP";
+		ammo="DBA_30mm_PM789_HEDP";
+		displaynamemagazine="PM789 30mw HEDP";
+		shortnamemagazine="PM789 HEDP";
+		displayNameMFDFormat="HEDP";
+		displayNameShort="HEDP";
+		count=640;
+		initspeed=805;
+		tracersevery=1;
+	};
+	class DBA_AD5S_x10_pylon : VehicleMagazine{
+		ammo="DBA_AD5S_Missile";
+		count=10;
+		displayName="AD-5S AAM";
+		displayNameShort="AD-5S AAM";
+		tracersEvery=1;
+		model="a3\weapons_f\empty.p3d";
+		initspeed=50;
+		hardpoints[]=
+		{
+			"DBA_LE_Rail",
+		};
+		pylonWeapon="DBA_AD5S_AAM_Weapon";
+	};
+	class DBA_42mm_R4S_x50_pylon : VehicleMagazine{
+		ammo="DBA_42mm_R4S_Rocket";
+		count=50;
+		displayName="R-4S Rockets";
+		displayNameShort="R-4S Rockets";
+		tracersEvery=1;
+		initspeed=170;
+		model="a3\weapons_f\empty.p3d";
+		hardpoints[]=
+		{
+			"DBA_LE_Rail",
+		};
+		pylonWeapon="DBA_42mw_R4S_Rockets";
 	};
 	//Fennek Gun Start
 	class DBA_25mm_PL25S_x300_mag : VehicleMagazine{
