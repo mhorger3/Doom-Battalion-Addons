@@ -312,14 +312,27 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
-	class 101st_Breathmask_Backpack: JLTS_Clone_backpack	
+	class DBA_Breathmask_Backpack: JLTS_Clone_backpack	
 	{
 		displayname="DBA Breathmask Surival Gear (WIP)";
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=500;
 		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask.p3d";
-		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\Breathmask_CO.paa"};
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask_CO.paa"};
+	};
+	class DBA_Snowpack_Base: JLTS_Clone_backpack	
+	{
+		displayname="DBA HT-77 Cold Assault Canister (WIP)";
+		author="Seatie";
+		dlc = "101st_Aux_Mod";
+		maximumLoad=750;
+		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\snowpack.p3d";
+		hiddenSelections[]={"Camo"};
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\SnowCanister_CO.paa"};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
 	};
 	class 101st_Jumppack_Standard : RD501_JLTS_Clone_jumppack_mc
 	{
