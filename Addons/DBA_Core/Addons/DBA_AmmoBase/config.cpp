@@ -748,8 +748,8 @@ class CfgAmmo
 		visibleFireTime = 3; //Alerts AI from further away
 
 		tracerScale = 5;
-		model = "DBA_Core\Addons\DBA_AmmoBase\BlasterBoltRed.p3d";
-		effectfly = "DBA_Plasma_Red";
+		model="kobra\442_weapons\ammo\purple_tracer.p3d";
+		effectfly="442_plasma_purple";
 
 		dangerRadiusBulletClose = 8;
 		dangerRadiusHit = 12;
