@@ -2234,65 +2234,65 @@ class CfgWeapons
 			soundBurst=0;
 			aiBurstTerminable=1;
 			showToPlayer=0;
-			burst=50;
-			burstRangeMax=100;
+			burst=10;
+			burstRangeMax=30;
 			aiRateOfFire=1;
 			aiRateOfFireDispersion=1;
 			aiRateOfFireDistance=50;
 			minRange=0;
-			minRangeProbab=0.69999999;
+			minRangeProbab=0.9999;
 			midRange=100;
-			midRangeProbab=0.75;
+			midRangeProbab=0.99;
 			maxRange=300;
-			maxRangeProbab=0.2;
+			maxRangeProbab=0.99;
 		};
 		class short: close
 		{
 			aiBurstTerminable=1;
 			showToPlayer=0;
-			burst=50;
-			burstRangeMax=100;
+			burst=10;
+			burstRangeMax=30;
 			aiRateOfFire=2;
 			aiRateOfFireDispersion=2;
 			aiRateOfFireDistance=150;
 			minRange=100;
-			minRangeProbab=0.75;
+			minRangeProbab=0.99;
 			midRange=300;
-			midRangeProbab=0.75;
+			midRangeProbab=0.99;
 			maxRange=600;
-			maxRangeProbab=0.2;
+			maxRangeProbab=0.99;
 		};
 		class medium: close
 		{
 			aiBurstTerminable=1;
 			showToPlayer=0;
-			burst=50;
-			burstRangeMax=100;
-			aiRateOfFire=3;
+			burst=10;
+			burstRangeMax=30;
+			aiRateOfFire=2.5;
 			aiRateOfFireDispersion=2;
 			aiRateOfFireDistance=300;
 			minRange=300;
-			minRangeProbab=0.75;
+			minRangeProbab=0.99;
 			midRange=600;
-			midRangeProbab=0.64999998;
-			maxRange=100;
-			maxRangeProbab=0.1;
+			midRangeProbab=0.99999998;
+			maxRange=1000;
+			maxRangeProbab=0.7;
 		};
 		class far: close
 		{
 			aiBurstTerminable=1;
 			showToPlayer=0;
-			burst=50;
-			burstRangeMax=100;
+			burst=25;
+			burstRangeMax=40;
 			aiRateOfFire=4;
 			aiRateOfFireDispersion=4;
 			aiRateOfFireDistance=800;
 			minRange=1000;
-			minRangeProbab=0.64999998;
+			minRangeProbab=0.9999998;
 			midRange=2000;
-			midRangeProbab=0.30000001;
+			midRangeProbab=0.850000001;
 			maxRange=3500;
-			maxRangeProbab=0.050000001;
+			maxRangeProbab=0.450000001;
 		};
 	};
 	class DBA_25mw_P252G_AC : CannonCore{
