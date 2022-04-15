@@ -3588,6 +3588,19 @@ class CfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Vale_P2_Helmet_CO.paa"
 		};
 	};
+	class 101st_Bond_Helmet : JLTS_CloneHelmetP2
+	{
+		author = "Morn";
+		dlc = "101st_Aux_Mod";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "101st Clone helmet (Bond)";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Customs\Bond_JLTS_P2_Helmet_CO.paa"
+		};
+	};
 
 	// Clone Traitors
 
