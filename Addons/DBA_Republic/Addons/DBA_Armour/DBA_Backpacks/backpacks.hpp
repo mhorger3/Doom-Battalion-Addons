@@ -52,28 +52,28 @@
 			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Traitor_Backpack_CO.paa"};
 			hiddenSelectionsMaterials[] = { "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\TaitorBackpack.RVMAT" };
 	};
-	/*class 101st_Scuba_Backpack: JLTS_Clone_backpack	{
+	class 101st_Scuba_Backpack: JLTS_Clone_backpack{
 		dlc = "101st_Aux_Mod";
 			displayname="101st Scuba Canister (JLTS)";
 			maximumLoad=500;
 			model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\scubaBackpack.p3d";
-			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\Scuba_Backpack_CO.paa"};
-	};*/
-	class 101st_SCI_Backpack_EOD: JLTS_Clone_backpack_eod	{
+			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Scuba_Backpack_CO.paa"};
+	};
+	class 101st_SCI_Backpack_EOD: JLTS_Clone_backpack_eod{
 		dlc = "101st_Aux_Mod";
 			displayname="DBA Clone EOD Canister (JLTS)";
 			maximumLoad=750;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\EOD_Backpack_CO.paa"};
 	};
-	class 101st_SCI_Backpack_medic: JLTS_Clone_backpack_medic	{
+	class 101st_SCI_Backpack_medic: JLTS_Clone_backpack_medic{
 		dlc = "101st_Aux_Mod";
 			displayname="DBA Clone Medic Canister (JLTS)";
 			maximumLoad=650;
 			model = "\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\MED_Backpack_CO.paa"};
 	};
-	class 101st_SCI_Backpack_medic_LR: TFAR_rt1523g_big	{
+	class 101st_SCI_Backpack_medic_LR: TFAR_rt1523g_big{
 		dlc = "101st_Aux_Mod";
 			displayname="DBA Clone Medic Command";
 			maximumLoad=650;
@@ -289,7 +289,8 @@
 		mass=120;
 	};
 	
-	class 101st_Radio_Pack_Small : TFAR_rt1523g_big {
+	class 101st_Radio_Pack_Small : TFAR_rt1523g_big
+	{
 		dlc = "101st_Aux_Mod";
 		displayname="DBA Radio Pack White";
 		maximumLoad=500;		
@@ -301,7 +302,8 @@
 		tf_dialog = "anarc210_radio_dialog";
 	};
 	
-	class 101st_Radio_Pack_Attachment : TFAR_rt1523g_big {
+	class 101st_Radio_Pack_Attachment : TFAR_rt1523g_big 
+	{
 		dlc = "101st_Aux_Mod";
 		displayname="DBA Radio Pack Attachment";
 		maximumLoad=500;		
@@ -312,7 +314,7 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
-	class DBA_Breathmask_Backpack: JLTS_Clone_backpack	
+	class DBA_Breathmask_Backpack: JLTS_Clone_backpack
 	{
 		displayname="DBA Breathmask Surival Gear (WIP)";
 		author="Seatie";
@@ -321,9 +323,9 @@
 		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask.p3d";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask_CO.paa"};
 	};
-	class DBA_Snowpack_Base: JLTS_Clone_backpack	
+	class DBA_Snowpack_Base: JLTS_Clone_backpack
 	{
-		displayname="DBA HT-77 Cold Assault Canister (WIP)";
+		displayname="DBA HT-77 Cold Assault Canister";
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=750;
@@ -333,6 +335,31 @@
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
+	};
+	class DBA_Snowpack_101st: DBA_Snowpack_Base
+	{
+		displayname="DBA HT-77 Cold Assault Canister (101st)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\101st_SnowCanister_CO.paa"};
+	};
+	class DBA_Snowpack_501st: DBA_Snowpack_Base
+	{
+		displayname="DBA HT-77 Cold Assault Canister (501st)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\501st_SnowCanister_CO.paa"};
+	};
+	class DBA_Snowpack_91st: DBA_Snowpack_Base
+	{
+		displayname="DBA HT-77 Cold Assault Canister (91st)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\91st_SnowCanister_CO.paa"};
+	};
+	class DBA_Snowpack_327th: DBA_Snowpack_Base
+	{
+		displayname="DBA HT-77 Cold Assault Canister (327th)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\327th_SnowCanister_CO.paa"};
+	};
+	class DBA_Snowpack_212th: DBA_Snowpack_Base
+	{
+		displayname="DBA HT-77 Cold Assault Canister (212th)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\212th_SnowCanister_CO.paa"};
 	};
 	class 101st_Jumppack_Standard : RD501_JLTS_Clone_jumppack_mc
 	{
