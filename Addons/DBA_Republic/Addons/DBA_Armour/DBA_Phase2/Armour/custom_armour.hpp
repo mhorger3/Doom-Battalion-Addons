@@ -987,3 +987,31 @@ class DBA_P2CloneShatterstormUniform : DBA_P2cloneRecruitUniform
 		mass = 40;
 	};
 };
+class DBA_P2ClonePressUniform : DBA_P2cloneRecruitUniform
+{
+	author = "Seatie";
+	scope = 2;
+	displayName = "[DBA] Phase 2 Clone: Press Trooper";
+	hiddenSelectionsTextures[] =
+	{
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Press_Chest_CO.paa",
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Press_Chest.RVMAT"
+	};
+	class ItemInfo : UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "DBA_P2ClonePress_F";
+		containerClass = "Supply150";
+		uniformType = "Neopren";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1"
+		};
+		mass = 40;
+	};
+};

@@ -559,3 +559,19 @@ class B_DBA_P2CloneShatterstorm_F : B_DBA_P2CloneDutch_F
 	scope = 2;
 	scopeCurator = 2;
 };
+class DBA_P2ClonePress_F : B_DBA_P2CloneDutch_F
+{
+	displayName = "[DBA] Phase 2 Clone: Press Trooper";
+	uniformClass = "DBA_P2ClonePressUniform";
+	hiddenSelectionsTextures[] =
+	{
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Custom\Custom\Press_Chest_CO.paa",
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Base\DBA_Trooper_Legs_CO.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Armour\data\Custom\Legacy\data\Press_Chest.RVMAT"
+	};
+	scope = 2;
+	scopeCurator = 2;
+};

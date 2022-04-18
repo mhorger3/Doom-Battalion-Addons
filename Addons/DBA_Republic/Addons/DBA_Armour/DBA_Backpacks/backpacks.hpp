@@ -325,7 +325,7 @@
 	};
 	class DBA_Snowpack_Base: JLTS_Clone_backpack
 	{
-		displayname="DBA HT-77 Cold Assault Canister";
+		displayname="HT-77 Cold Assault Canister";
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=750;
@@ -338,27 +338,27 @@
 	};
 	class DBA_Snowpack_101st: DBA_Snowpack_Base
 	{
-		displayname="DBA HT-77 Cold Assault Canister (101st)";
+		displayname="HT-77 Cold Assault Canister (101st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\101st_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_501st: DBA_Snowpack_Base
 	{
-		displayname="DBA HT-77 Cold Assault Canister (501st)";
+		displayname="HT-77 Cold Assault Canister (501st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\501st_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_91st: DBA_Snowpack_Base
 	{
-		displayname="DBA HT-77 Cold Assault Canister (91st)";
+		displayname="HT-77 Cold Assault Canister (91st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\91st_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_327th: DBA_Snowpack_Base
 	{
-		displayname="DBA HT-77 Cold Assault Canister (327th)";
+		displayname="HT-77 Cold Assault Canister (327th)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\327th_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_212th: DBA_Snowpack_Base
 	{
-		displayname="DBA HT-77 Cold Assault Canister (212th)";
+		displayname="HT-77 Cold Assault Canister (212th)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\212th_SnowCanister_CO.paa"};
 	};
 	class 101st_Jumppack_Standard : RD501_JLTS_Clone_jumppack_mc
