@@ -426,7 +426,7 @@
 		RD501_jumppack_jump_effect_script="RD501_jumppack_fnc_effect_jt_21";
 		RD501_jumppack_jump_types[] = 
             {
-                {"Half Power",{0,15,1,0,1,1}}
+                {"Single Jump",{0,15,1,0,1,1}}
                 //{forward vel, vert vel, cost, angle, directional, can prone}
             };
 	};
