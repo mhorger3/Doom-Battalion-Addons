@@ -13114,7 +13114,7 @@ class cfgVehicles
 		waterLinearDampingCoefX=2;
 		waterAngularDampingCoef=3;
 		maxFordingDepth=110.65;
-		lockDetectionSystem="2+4+8+16";
+		weaponLockSystem ="2+4+8+16";
 		incomingMissileDetectionSystem="2+4+8+16";
 		armor=650;
 		armorStructural=2;
