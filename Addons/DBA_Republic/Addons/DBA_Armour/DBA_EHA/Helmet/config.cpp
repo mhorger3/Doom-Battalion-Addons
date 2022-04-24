@@ -19,6 +19,7 @@ class cfgPatches
 class cfgWeapons
 {
 	class H_HelmetSpecB;
+	class JLTS_CloneHelmetP2;
 	class InventoryItem_Base_F;
 	class HeadgearItem: InventoryItem_Base_F
 	{
@@ -27,36 +28,43 @@ class cfgWeapons
 		hiddenSelections[]={};
 		hitpointName="HitHead";
 	};
-	class DBA_EHA_Helmet_base: H_HelmetSpecB
+	//class DBA_EHA_Helmet_base: H_HelmetSpecB
+	class DBA_EHA_Helmet_base : H_HelmetSpecB
 	{
-		author = "Veerio";
+		author="Seatie";
+		scope=2;
+		scopeArsenal=2;
+		dlc = "101st_Aux_Mod";
 		displayName = "[DBA]Extreme Hazard Helmet";
-		model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d";
-		hiddenSelections[] =
+		model="DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d"
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		hiddenSelections[]=
 		{
 			"Camo"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Helmet.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\data\base\DBA_EHA_Helmet_CO.paa"
 		};
-		hiddenSelectionsMaterials[] =
+		CBRN_protection=1;
+		class ItemInfo: HeadgearItem
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Helmet.rvmat"
-		};
-		class ItemInfo : HeadgearItem
-		{
-			mass = 40;
-			model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d";
-			hiddenSelections[] = {"Camo"};
-		};
-		class HitpointsProtectionInfo
-		{
-			class Head
+			mass=10;
+			uniformModel="DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d";
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+			hiddenSelections[]=
 			{
-				hitPointName = "HitHead";
-				armor = 6;
-				passThrough = 0.5;
+				"Camo"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=8;
+					passThrough=0.5;
+				};
 			};
 		};
 	};
