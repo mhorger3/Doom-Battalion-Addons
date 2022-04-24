@@ -72,7 +72,10 @@ class CfgVehicles
 		faction = "O_DBA_CIS_F";
 		model = "DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD.p3d";
 		hiddenSelections[] = {"body", "lights"};
-		hiddenSelectionsTextures[] = {"DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Main_CO.paa","DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Lights_CO.paa"};
+		hiddenSelectionsTextures[] = {
+			"DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Main_CO.paa",
+			"DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_DSD\DSD_Lights_CO.paa"
+		};
 		editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
 		scope=2;
