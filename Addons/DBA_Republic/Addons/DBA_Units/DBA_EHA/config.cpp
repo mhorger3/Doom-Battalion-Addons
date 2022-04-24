@@ -36,7 +36,7 @@ class CfgVehicles
 		{
 			"Camo1",
 			"Camo2",
-			"Camo3"
+			"Camo"
 		};
 		hiddenSelectionsTextures[] =
 		{
