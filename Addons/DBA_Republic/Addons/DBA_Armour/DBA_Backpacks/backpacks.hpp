@@ -314,18 +314,35 @@
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";
 	};
-	class DBA_Breathmask_Backpack: JLTS_Clone_backpack
+	class DBA_JLTS_Breathmask_Backpack: JLTS_Clone_backpack
 	{
-		displayname="DBA Breathmask Surival Gear (WIP)";
+		displayname="Breathmask Survival Gear (JLTS)";
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=500;
-		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask.p3d";
-		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Breathmask_CO.paa"};
+		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\JLTS_Breathmask.p3d";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask_CO.paa"};
+	};
+	class DBA_LS_Breathmask_Backpack: JLTS_Clone_backpack
+	{
+		displayname="Breathmask Survival Gear (LS)";
+		author="Seatie";
+		dlc = "101st_Aux_Mod";
+		maximumLoad=500;
+		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\LS_Breathmask.p3d";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask_CO.paa"};
+	};
+	class DBA_Breathmask_Backpack: JLTS_Clone_backpack
+	{
+		displayname="Breathmask Survival Gear (DBA)";
+		author="Seatie";
+		dlc = "101st_Aux_Mod";
+		maximumLoad=500;
+		model = "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask.p3d";
 	};
 	class DBA_Snowpack_Base: JLTS_Clone_backpack
 	{
-		displayname="HT-77 Cold Assault Canister";
+		displayname="HT-77 Cold Assault Gear";
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=750;
@@ -338,27 +355,32 @@
 	};
 	class DBA_Snowpack_101st: DBA_Snowpack_Base
 	{
-		displayname="HT-77 Cold Assault Canister (101st)";
+		displayname="HT-77 Cold Assault Gear (101st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\101st_SnowCanister_CO.paa"};
+	};
+	class DBA_Snowpack_101stAlt: DBA_Snowpack_Base
+	{
+		displayname="HT-77 Cold Assault Gear (101st Alt)";
+		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\101st_Alt_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_501st: DBA_Snowpack_Base
 	{
-		displayname="HT-77 Cold Assault Canister (501st)";
+		displayname="HT-77 Cold Assault Gear (501st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\501st_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_91st: DBA_Snowpack_Base
 	{
-		displayname="HT-77 Cold Assault Canister (91st)";
+		displayname="HT-77 Cold Assault Gear (91st)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\91st_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_327th: DBA_Snowpack_Base
 	{
-		displayname="HT-77 Cold Assault Canister (327th)";
+		displayname="HT-77 Cold Assault Gear (327th)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\327th_SnowCanister_CO.paa"};
 	};
 	class DBA_Snowpack_212th: DBA_Snowpack_Base
 	{
-		displayname="HT-77 Cold Assault Canister (212th)";
+		displayname="HT-77 Cold Assault Gear (212th)";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\212th_SnowCanister_CO.paa"};
 	};
 	class 101st_Jumppack_Standard : RD501_JLTS_Clone_jumppack_mc
@@ -426,7 +448,7 @@
 		RD501_jumppack_jump_effect_script="RD501_jumppack_fnc_effect_jt_21";
 		RD501_jumppack_jump_types[] = 
             {
-                {"Single Jump",{0,15,1,0,1,1}}
+                {"Half Power",{0,15,1,0,1,1}}
                 //{forward vel, vert vel, cost, angle, directional, can prone}
             };
 	};

@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\Breathpack_NOHQ.paa";
+	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\DBA_Breathmask_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\Breathpack_AS.paa";
+	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\DBA_Breathmask_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\Breathpack_SMDI.paa";
+	texture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\data\DBA_Breathmask_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
