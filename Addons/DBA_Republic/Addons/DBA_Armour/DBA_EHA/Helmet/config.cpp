@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class DBA_Snowhelmet
+	class DBA_EHA_Helmet
 	{
 		author = "Vulgar";
 		requiredAddons[] =
@@ -11,7 +11,7 @@ class cfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"DBA_Snowhelmet_base"
+			"DBA_EHH"
 		};
 	};
 };
@@ -27,27 +27,27 @@ class cfgWeapons
 		hiddenSelections[]={};
 		hitpointName="HitHead";
 	};
-	class DBA_Snowhelmet_base: H_HelmetSpecB
+	class DBA_EHA_Helmet_base: H_HelmetSpecB
 	{
-		author = "Seatie";
-		displayName = "DBA Snowtrooper Helmet";
-		model = "DBA_Republic\Addons\DBA_Armour\DBA_Snowtrooper\Helmet\DBA_Snowhelmet.p3d";
+		author = "Veerio";
+		displayName = "[DBA]Extreme Hazard Helmet";
+		model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d";
 		hiddenSelections[] =
 		{
 			"Camo"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Snowtrooper\data\base\DBA_Snowtrooper_Helmet.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Helmet.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_Snowtrooper\data\base\DBA_Snowtrooper_Helmet.rvmat"
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Helmet.rvmat"
 		};
 		class ItemInfo : HeadgearItem
 		{
 			mass = 40;
-			model = "DBA_Republic\Addons\DBA_Armour\DBA_Snowtrooper\Helmet\DBA_Snowhelmet.p3d";
+			model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d";
 			hiddenSelections[] = {"Camo"};
 		};
 		class HitpointsProtectionInfo
