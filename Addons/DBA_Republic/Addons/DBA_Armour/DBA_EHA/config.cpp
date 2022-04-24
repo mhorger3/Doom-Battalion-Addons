@@ -25,10 +25,9 @@ class CfgWeapons
 	{
 		author = "Uwuario";
 		scope = 2;
-		displayName = "[DBA] Extreme Hazard Enviroment Armor";
+		displayName = "[DBA] Extreme Hazard Environment Armor";
 		picture = "";
 		model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\DBA_EHA.p3d";
-<<<<<<< Updated upstream
 		hiddenSelections[] = { "Camo1", "Camo2","Camo3"};
 		hiddenSelectionsTextures[] =
 		{
@@ -36,9 +35,6 @@ class CfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Legs_CO.paa",
 			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Kama_CO.paa"
 		};
-=======
-		hiddenSelections[] = { "Camo1", "Camo2","Camo"};
->>>>>>> Stashed changes
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";

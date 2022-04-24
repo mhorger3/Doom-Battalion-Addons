@@ -40,15 +40,15 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Chest_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Legs_CO.paa",
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Kama_CO.paa"
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Chest_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Legs_CO.paa",
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Kama_CO.paa"
 		};
 		hiddenSelectionsMaterials[] =
 		{
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Chest.rvmat",
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Legs.rvmat",
-			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\data\base\DBA_EHA_Kama.rvmat"
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Chest.rvmat",
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Legs.rvmat",
+			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\data\base\DBA_EHA_Kama.rvmat"
 		};
 		model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\DBA_EHA.p3d";
 		identityTypes[] =
