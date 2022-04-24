@@ -73,7 +73,7 @@ class CfgVehicles
 		};
 		armor=75;
 		model="DBA_CIS\Addons\DBA_Vehicles\DBA_GroundVehicles\DBA_EWEB\eweb.p3d";
-		 editorSubcategory = "O_DBA_CIS_Turrets";
+		editorSubcategory = "O_DBA_CIS_Turrets";
         vehicleClass = "O_DBA_CIS_Turrets";
 		faction = "O_DBA_CIS_F";
 		picture="\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
