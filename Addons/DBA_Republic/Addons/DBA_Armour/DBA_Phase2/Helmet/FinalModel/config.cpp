@@ -447,6 +447,15 @@ class cfgWeapons
 			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Raven_Helmet_CO.paa"
 		};
 	};
+		class DBA_P2Helmet_Vulgar : DBA_P2HelmetBase
+	{
+		author = "Secutor";
+		displayName = "DBA Clone trooper P2 Helmet: Vulgar"
+		hiddenSelectionsTextures[] =
+		{
+			"DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\data\Custom\Vulgar_Helmet_CO.paa"
+		};
+	};
 	class DBA_P2Helmet_Veron : DBA_P2HelmetBase
 	{
 		author = "Secutor";
