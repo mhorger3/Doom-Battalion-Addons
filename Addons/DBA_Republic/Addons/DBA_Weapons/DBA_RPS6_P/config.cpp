@@ -193,7 +193,7 @@ class CfgMagazines{
 		shortnamemagazine="IK60 HEP";
 		displayNameMFDFormat="IK60 HEP";
 		displayNameShort="IK60 HEP";
-		mass=77;
+		mass=70;
 		count=1;
 		initspeed=255;
 		tracersevery=1;
