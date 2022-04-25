@@ -52,13 +52,13 @@
 			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Traitor_Backpack_CO.paa"};
 			hiddenSelectionsMaterials[] = { "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\TaitorBackpack.RVMAT" };
 	};
-	class 101st_Scuba_Backpack: JLTS_Clone_backpack{
+	/*class 101st_Scuba_Backpack: JLTS_Clone_backpack{
 		dlc = "101st_Aux_Mod";
 			displayname="101st Scuba Canister (JLTS)";
 			maximumLoad=500;
 			model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\scubaBackpack.p3d";
 			hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\Scuba_Backpack_CO.paa"};
-	};
+	};*/
 	class 101st_SCI_Backpack_EOD: JLTS_Clone_backpack_eod{
 		dlc = "101st_Aux_Mod";
 			displayname="DBA Clone EOD Canister (JLTS)";
@@ -320,24 +320,19 @@
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=500;
-		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\JLTS_Breathmask.p3d";
+		picture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\editorpictures\Breathpack_CA.paa";
+		model = "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\JLTS_Breathmask.p3d";
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask_CO.paa"};
 	};
-	class DBA_LS_Breathmask_Backpack: JLTS_Clone_backpack
+	class DBA_LS_Breathmask_Backpack: DBA_JLTS_Breathmask_Backpack
 	{
 		displayname="Breathmask Survival Gear (LS)";
-		author="Seatie";
-		dlc = "101st_Aux_Mod";
-		maximumLoad=500;
-		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\LS_Breathmask.p3d";
-		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask_CO.paa"};
+		model = "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\LS_Breathmask.p3d";
 	};
-	class DBA_Breathmask_Backpack: JLTS_Clone_backpack
+	class DBA_Breathmask_Backpack: DBA_JLTS_Breathmask_Backpack
 	{
 		displayname="Breathmask Survival Gear (DBA)";
 		author="Seatie";
-		dlc = "101st_Aux_Mod";
-		maximumLoad=500;
 		model = "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\DBA_Breathmask.p3d";
 	};
 	class DBA_Snowpack_Base: JLTS_Clone_backpack
@@ -346,7 +341,8 @@
 		author="Seatie";
 		dlc = "101st_Aux_Mod";
 		maximumLoad=750;
-		model = "\DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\snowpack.p3d";
+		model = "DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\snowpack.p3d";
+		picture="DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\editorpictures\HT77_CA.paa";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[] = {"DBA_Republic\Addons\DBA_Armour\DBA_Backpacks\SnowCanister_CO.paa"};
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";

@@ -28,16 +28,14 @@ class cfgWeapons
 		hiddenSelections[]={};
 		hitpointName="HitHead";
 	};
-	//class DBA_EHA_Helmet_base: H_HelmetSpecB
 	class DBA_EHA_Helmet_base : H_HelmetSpecB
 	{
 		author="Seatie";
 		scope=2;
-		scopeArsenal=2;
-		dlc = "101st_Aux_Mod";
 		displayName = "[DBA]Extreme Hazard Helmet";
 		model="DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\DBA_EHA_Helmet.p3d"
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_ui_ca.paa";
+		picture ="DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\EHA_Helmet_CA.paa";
+		CBRN_protection=1;
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -46,7 +44,6 @@ class cfgWeapons
 		{
 			"DBA_Republic\Addons\DBA_Armour\DBA_EHA\Helmet\data\base\DBA_EHA_Helmet_CO.paa"
 		};
-		CBRN_protection=1;
 		class ItemInfo: HeadgearItem
 		{
 			mass=10;

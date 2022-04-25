@@ -26,7 +26,7 @@ class CfgWeapons
 		author = "Uwuario";
 		scope = 2;
 		displayName = "[DBA] Extreme Hazard Environment Armor";
-		picture = "";
+		picture = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\EHA_Armor_CA.paa";
 		model = "DBA_Republic\Addons\DBA_Armour\DBA_EHA\Armour\DBA_EHA.p3d";
 		hiddenSelections[] = { "Camo1", "Camo2","Camo3"};
 		hiddenSelectionsTextures[] =

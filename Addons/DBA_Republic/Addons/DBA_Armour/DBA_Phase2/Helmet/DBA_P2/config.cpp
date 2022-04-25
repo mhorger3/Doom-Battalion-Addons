@@ -31,7 +31,7 @@ class cfgWeapons
 	{
 		author = "Seatie";
 		displayName = "DBA Clone trooper P2 Helmet Base TEST";
-		picture = "DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\FinalModel\Blankp2Arsenal_ca.paa";
+		picture = "DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\DBA_P2\Blankp2Arsenal_ca.paa";
 		model = "DBA_Republic\Addons\DBA_Armour\DBA_Phase2\Helmet\DBA_P2\DBA_P2Helmet.p3d";
 		hiddenSelections[] = 
 		{
