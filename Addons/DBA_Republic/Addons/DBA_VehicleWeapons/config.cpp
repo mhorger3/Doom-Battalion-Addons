@@ -2202,7 +2202,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					1.5,
 					0.7,
 					2100
@@ -4232,7 +4232,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					1,
 					3000
@@ -4341,7 +4341,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.875,
 					3000
@@ -6080,7 +6080,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_Sounds\bigboigun.ogg",
 					10.25,
 					1.75,
 					5500
@@ -7631,7 +7631,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.57,
 					3000
@@ -7698,7 +7698,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\bigboigun.ogg",
+					"DBA_Core\Addons\DBA_Sounds\bigboigun.ogg",
 					15.555,
 					0.85,
 					3000
@@ -8071,7 +8071,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"101st_Aux_Mod\Addons\DBA_General\DBA_Sounds\cannon.ogg",
+					"DBA_Core\Addons\DBA_Sounds\cannon.ogg",
 					0.5,
 					0.15,
 					2100
