@@ -12070,7 +12070,8 @@ class cfgVehicles
 		scope=2;
 		displayName="101st Z-95 Headhunter";
 		faction="B_DBA_Republic_F";
-		
+		weaponLockSystem ="2+4+8+16";
+		incomingMissileDetectionSystem="2+4+8+16";
 		alwaysTarget=0;
 		radarTargetSize = 1.0;
 		irTargetSize = 1.0;
@@ -12646,6 +12647,8 @@ class cfgVehicles
 		memoryPointGun[] = {"L_Muzzle","R_muzzle"};
 		gunBeg[] = {"L_Muzzle","R_Muzzle"};
 		gunEnd[] ={"L_Chamber","R_Chamber"};
+		weaponLockSystem ="2+4+8+16";
+		incomingMissileDetectionSystem="2+4+8+16";
 		weapons[]=
 		{
 			"Laserdesignator_pilotCamera",
@@ -14017,6 +14020,7 @@ class cfgVehicles
 			"DBA_45mm_PS73_x80_mag",
 			"DBA_45mm_PS73_x80_mag",
 			"Laserbatteries",
+			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 		};
 		memoryPointGun[]=

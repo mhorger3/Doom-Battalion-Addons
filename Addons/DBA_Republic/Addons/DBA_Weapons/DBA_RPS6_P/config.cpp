@@ -165,7 +165,7 @@ class CfgMagazines{
 		displayNameShort="IK55 HEAT";
 		mass=77;
 		count=1;
-		initspeed=120;
+		initspeed=255;
 		tracersevery=1;
 	};
 	class DBA_90mm_IK55T_THEAT_x1_mag : CA_LauncherMagazine{
@@ -180,7 +180,7 @@ class CfgMagazines{
 		displayNameShort="IK55T Tandem";
 		mass=95;
 		count=1;
-		initspeed=80;
+		initspeed=210;
 		tracersevery=1;
 	};
 	class DBA_90mm_IK60_HEP_x1_mag : CA_LauncherMagazine{
@@ -193,9 +193,9 @@ class CfgMagazines{
 		shortnamemagazine="IK60 HEP";
 		displayNameMFDFormat="IK60 HEP";
 		displayNameShort="IK60 HEP";
-		mass=70;
+		mass=77;
 		count=1;
-		initspeed=210;
+		initspeed=255;
 		tracersevery=1;
 	};
 	class DBA_90mm_IK40_FRAG_x1_mag : CA_LauncherMagazine{
@@ -210,7 +210,7 @@ class CfgMagazines{
 		displayNameShort="IK40 FRAG";
 		mass=65;
 		count=1;
-		initspeed=100;
+		initspeed=255;
 		tracersevery=1;
 	};
 };
@@ -322,7 +322,7 @@ class CfgAmmo{
 		timeToLive=24;
 		airfriction=0.0;
 		sideAirFriction=0.00;
-		maxSpeed=275;
+		maxSpeed=310;
 		typicalspeed=10;
 		initTime=0.029999999;
 		thrustTime=1.75;

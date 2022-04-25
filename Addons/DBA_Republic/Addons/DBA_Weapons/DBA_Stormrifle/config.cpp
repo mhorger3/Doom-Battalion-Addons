@@ -10,8 +10,8 @@ class cfgPatches
 		magazines[]=
 		{
 			"DBA_792_LSPUR_x25_mag",
-			"DBA_65_Ainu_x32_mag",
-			"DBA_77_RRB_x40_mag",
+			"DBA_65_Ainu_x40_mag",
+			"DBA_77_RRB_x35_mag",
 		};
 		ammo[]=
 		{
@@ -153,7 +153,7 @@ class CfgWeapons
 			};
 			autoFire=0;
 			reloadTime=0.1090909091;
-			dispersion=0.000872664;
+			dispersion=0.000272664;
 			recoil="recoil_single_gm6";
 			recoilProne="recoil_single_prone_gm6";
 			aiRateOfFireDistance=1;
@@ -302,7 +302,7 @@ class CfgWeapons
 		displayName = "DC-24G Battle-Rifle Concept B";
 		magazines[] =
 		{
-			"DBA_65_Ainu_x35_mag",
+			"DBA_65_Ainu_x40_mag",
 		};
 		recoil="recoil_smg_02";
 		reloadAction = "GestureReloadDMR03";
@@ -541,7 +541,7 @@ class CfgWeapons
 		displayName = "DC-24G Battle-Rifle Concept C";
 		magazines[] =
 		{
-			"DBA_77_RRB_x40_mag"
+			"DBA_77_RRB_x35_mag"
 		};
 		recoil="recoil_sdar";
 		reloadAction = "GestureReloadDMR03";
@@ -630,7 +630,7 @@ class CfgWeapons
 				};
 			};
 			autoFire=0;
-			reloadTime=0.1411764706;
+			reloadTime=0.15;
 			dispersion=0.000872664;
 			recoil="recoil_single_ebr";
 			recoilProne="recoil_single_prone_ebr";
@@ -671,7 +671,7 @@ class CfgWeapons
 					1
 				};
 			};
-			reloadTime=0.1411764706;
+			reloadTime=0.15;
 			dispersion=0.000872664;
 			recoil="recoil_auto_dmr";
 			recoilProne="recoil_auto_prone_dmr";
@@ -790,38 +790,38 @@ class CfgMagazines{
 		displayNameMFDFormat="7.92mw";
 		displayNameShort="7.92mw";
 		count=25;
-		mass=25;
+		mass=17.5;
 		initspeed=878;
 		tracersevery=1;
 	};
-	class DBA_77_RRB_x40_mag : CA_Magazine{
-		displayname="7.7mw RRB Mag(40 Rounds)";
+	class DBA_77_RRB_x35_mag : CA_Magazine{
+		displayname="7.7mw RRB Mag(35 Rounds)";
 		dlc="DBA";
 		scope = 2;
 		ammo="DBA_77_RRB";
 		picture="\MRC\JLTS\weapons\E5\data\ui\E5_mag_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E5\E5_mag.p3d";
-		displaynamemagazine="7.7mw RRB Mag(40 Rounds)";
+		displaynamemagazine="7.7mw RRB Mag(35 Rounds)";
 		shortnamemagazine="7.7mw RRB Mag";
 		displayNameMFDFormat="7.7mw";
 		displayNameShort="7.7mw";
-		count=40;
+		count=35;
 		mass=20;
 		initspeed=844;
 		tracersevery=1;
 	};
-	class DBA_65_Ainu_x35_mag : CA_Magazine{
-		displayname="6.5mw Ainu Mag (35 Rounds)";
+	class DBA_65_Ainu_x40_mag : CA_Magazine{
+		displayname="6.5mw Ainu Mag (40 Rounds)";
 		dlc="DBA";
 		scope = 2;
 		ammo="DBA_65_Ainu";
 		picture="\MRC\JLTS\weapons\E5\data\ui\E5_mag_ui_ca.paa";
 		model="\MRC\JLTS\weapons\E5\E5_mag.p3d";
-		displaynamemagazine="6.5mw Ainu Mag (35 Rounds)";
+		displaynamemagazine="6.5mw Ainu Mag (40 Rounds)";
 		shortnamemagazine="6.5mw Ainu";
 		displayNameMFDFormat="6.5mw";
 		displayNameShort="6.5mw";
-		count=35;
+		count=40;
 		mass=15;
 		initspeed=770;
 		tracersevery=1;
@@ -830,7 +830,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class BulletBase;
 	class DBA_792_LSPUR : BulletBase{
-		hit = 13;
+		hit = 15;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;
@@ -838,7 +838,7 @@ class CfgAmmo{
 		caliber = 5;
 		deflecting = 1;
 		airFriction = 0;
-		timeToLive = 40;
+		timeToLive = 5;
 		initSpeed=878;
 		aiAmmoUsageFlags= "64 + 128 + 256";
 		cost = 1.2;
@@ -863,7 +863,7 @@ class CfgAmmo{
 		caliber = 3.5;
 		deflecting = 1;
 		airFriction = 0;
-		timeToLive = 40;
+		timeToLive = 5;
 		initSpeed=844;
 		aiAmmoUsageFlags= "64 + 128 + 256";
 		cost = 1.2;
@@ -888,7 +888,7 @@ class CfgAmmo{
 		caliber = 3.5;
 		deflecting = 1;
 		airFriction = 0;
-		timeToLive = 40;
+		timeToLive = 5;
 		initSpeed=770;
 		aiAmmoUsageFlags= "64 + 128 + 256";
 		cost = 1.2;
