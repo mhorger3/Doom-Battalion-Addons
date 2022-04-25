@@ -851,7 +851,7 @@ class CfgAmmo{
 		muzzleEffect = "";
 		typicalSpeed = 400;	
 		allowAgainstInfantry=1;
-		coefGravity=0.75;
+		coefGravity=0.5;
 		waterFriction=0;
 	};
 	class DBA_77_RRB : BulletBase{
@@ -876,7 +876,7 @@ class CfgAmmo{
 		muzzleEffect = "";
 		typicalSpeed = 400;	
 		allowAgainstInfantry=1;
-		coefGravity=0.75;
+		coefGravity=0.65;
 		waterFriction=0;
 	};
 	class DBA_65_Ainu : BulletBase{
