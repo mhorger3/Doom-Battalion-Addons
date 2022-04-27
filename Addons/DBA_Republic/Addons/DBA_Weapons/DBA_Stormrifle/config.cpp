@@ -830,7 +830,7 @@ class CfgMagazines{
 class CfgAmmo{
 	class BulletBase;
 	class DBA_792_LSPUR : BulletBase{
-		hit = 15;
+		hit = 14;
 		indirectHit = 0;
 		indirectHitRange = 0.0;
 		explosive= 0.0;
