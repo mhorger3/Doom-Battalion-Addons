@@ -3118,6 +3118,7 @@ class CfgVehicles
 		armor=500;
 		crew="B_DBA_P2CloneTrooper_F";
 		displayName="Fennek CAV (Testbed)";
+		editorSubcategory = "EdSubcat_Cars";
 		thrustDelay = 0.1;
 		dampingRateFullThrottle = 0.3;
 		dampingRateZeroThrottleClutchEngaged = 1.75;
